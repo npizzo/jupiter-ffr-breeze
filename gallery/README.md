@@ -2,6 +2,14 @@
 
 Figures below are generated from saved Breeze fields. They are preliminary numerical tests, not a reproduction of Jupiter's folded filamentary regions.
 
+## Controlled 48-hour convection experiment
+
+Four runs isolate bottom heating and initial-perturbation amplitude. All completed; the comparisons identify forcing and diffusion limitations in the initial setup.
+
+[Comparison gallery and data](convection48/README.md) · [Interpretation](../docs/convection48-results.md)
+
+![Paired convection histories](convection48/evolution.png)
+
 ## GPU convection pilot
 
 128 × 128 × 64 cells; four simulated hours on one NVIDIA L40S. Convective columns form below the stable cap. This is a transient dry-convection test; folded-filament morphology is not established.

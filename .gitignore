@@ -10,3 +10,6 @@ __pycache__/
 
 # Intermediate animation frames; publish the final image and GIF.
 gallery/**/frame_*.png
+
+# Full-resolution analysis figures; compact versions are published.
+gallery/**/*_full.png

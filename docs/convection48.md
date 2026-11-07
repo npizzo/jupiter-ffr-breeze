@@ -1,5 +1,7 @@
 # Controlled convection experiment
 
+**Completed:** see [results and interpretation](convection48-results.md).
+
 The objective is to determine whether the present Breeze setup sustains convection through its imposed bottom heat flux, as a first step toward Jupiter-like FFRs. There is no comparison with another solver.
 
 ## Cases

@@ -1,5 +1,7 @@
 # Preliminary Unity validation
 
+The subsequent [48-hour control experiment](convection48-results.md) identifies initial-transient convection and forcing limitations in this pilot setup.
+
 These tests establish basic numerical operation; they do not establish FFR morphology.
 
 ## CPU results

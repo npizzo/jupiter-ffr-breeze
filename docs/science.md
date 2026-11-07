@@ -4,6 +4,8 @@ The target is sustained morphology: folded filaments, interacting lobes, embedde
 
 The objective is to establish whether Breeze can sustain convectively driven flow and reproduce FFR-like morphology. Density stratification, upper-layer stability, cyclonic shear, and Jovian moist convection are candidate ingredients to test individually and together.
 
+The [first controlled experiment](convection48-results.md) found that the early convection decays in both heated and unheated cases, while the upper relaxation supplies heat and constant diffusion erodes the cap. Correcting that forcing/transport setup now precedes the morphology campaign.
+
 ## Sequence
 
 1. Validate dry stratified convection on CPU and GPU; verify hydrostatic rest, heating sign, finite states, reference density and pressure, and meaningful vertical motion.

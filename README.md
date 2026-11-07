@@ -2,9 +2,9 @@
 
 Regional, bottom-heated, rotating convection experiments to determine whether Breeze.jl can reproduce the dynamics and morphology of Jupiter’s folded filamentary regions (FFRs).
 
-**Status:** CPU rest/heating checks, CPU–GPU agreement, and a four-hour GPU convection pilot have passed on Unity. The pilot shows convective columns, not established FFR morphology.
+**Status:** CPU/GPU validation and four paired 48-hour convection runs are complete. The controls reveal initial-transient convection, unintended upper-layer heating, and strong diffusion of the stable cap. The next step is to correct those forcing/transport choices; sustained FFR dynamics are not yet established.
 
-[Output gallery](gallery/README.md) · [Validation results](docs/results.md) · [Scientific plan](docs/science.md) · [Unity instructions](docs/unity.md)
+[Output gallery](gallery/README.md) · [Convection results](docs/convection48-results.md) · [Initial validation](docs/results.md) · [Scientific plan](docs/science.md) · [Unity instructions](docs/unity.md)
 
 ## Initial configuration
 

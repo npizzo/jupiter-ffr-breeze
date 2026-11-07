@@ -1,0 +1,9 @@
+{
+  "status": "COMPLETED",
+  "batch_elapsed_seconds": 888,
+  "batch_peak_host_rss_kib": 3726692,
+  "slurm_sampled_gpu_memory_max_mib": 840,
+  "sampled_nvidia_smi_gpu_memory_mib": 849,
+  "gpu": "NVIDIA L40S",
+  "note": "GPU memory was sampled, not continuously profiled; short peaks may be missed."
+}
