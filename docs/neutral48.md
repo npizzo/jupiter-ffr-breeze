@@ -20,3 +20,5 @@ The 48-hour duration is an initial diagnostic window, not a claim that the weak 
 Submit `sbatch slurm/neutral48.sbatch`. Four runs execute sequentially on one L40S, with four CPUs, 8 GB host memory, and a one-hour limit. Outputs go to the new directory `data/neutral48-v1`. Previous results are preserved. No new beta, shear, or model choice is introduced.
 
 Requested snapshot output includes vertical velocity and departures from the horizontal-mean potential temperature at 6, 12, 24, and 48 hours for every case. Final comparisons use common color scales across cases. Time sequences use fixed scales within each sequence; color bars retain actual physical units.
+
+All four runs completed. See [results](neutral48-results.md) and the [snapshot gallery](../gallery/neutral48/README.md).

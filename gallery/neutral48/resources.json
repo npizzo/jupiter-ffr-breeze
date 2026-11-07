@@ -1,0 +1,13 @@
+{
+  "job_id": 66918778,
+  "status": "COMPLETED",
+  "exit_code": "0:0",
+  "gpu": "NVIDIA L40S",
+  "gpu_count": 1,
+  "elapsed_seconds": 1052,
+  "allocated_cpus": 4,
+  "allocated_host_memory_GiB": 8,
+  "batch_max_rss_KiB": 3939228,
+  "campaign": "neutral48-v1",
+  "note": "Includes initialization and all four cases; GPU memory peak not measured."
+}

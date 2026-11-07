@@ -1,6 +1,7 @@
 using Breeze, Oceananigans, CUDA, JLD2, TOML, Random, Statistics, Printf, SHA
 using Oceananigans.Units
 using Oceananigans: interior
+include("initial_turbulence.jl")
 
 @inline function upper_sink_weight(z, bottom, top)
     s = (z-bottom)/(top-bottom)
@@ -84,7 +85,14 @@ noise=rand(rng,FT,Nx,Ny,Nz).-0.5
 noise .-= mean(noise,dims=(1,2))
 theta = [theta_ref((k-0.5)*H/Nz) + cfg["perturbation"]*noise[i,j,k]*exp(-((k-0.5)*H/Nz/(0.35H))^2) for i=1:Nx,j=1:Ny,k=1:Nz]
 U = cfg["jet_speed"]
-set!(model; θ=theta, u=(x,y,z)->U*sin(2pi*y/Ly))
+initial_velocity_info = Dict{String,Any}()
+if get(cfg,"initial_velocity","rest") == "turbulence"
+    U == 0 || error("Do not combine a prescribed jet with the turbulence initialization")
+    u0,v0,w0,initial_velocity_info = initial_turbulence(cfg,rho,f)
+    set!(model; θ=theta,u=u0,v=v0,w=w0)
+else
+    set!(model; θ=theta, u=(x,y,z)->U*sin(2pi*y/Ly))
+end
 thetafield=Field(liquid_ice_potential_temperature(model))
 sim=Simulation(model; Δt=cfg["initial_dt"], stop_time=cfg["stop_seconds"])
 conjure_time_step_wizard!(sim; cfl=0.4, max_Δt=cfg["max_dt"])
@@ -96,7 +104,10 @@ metadata["script_sha256"]=bytes2hex(sha256(read(@__FILE__)))
 metadata["configuration_sha256"]=bytes2hex(sha256(read(args[1])))
 metadata["cooling_model"]=cooling_model; metadata["mixing_model"]=mixing_model
 metadata["discrete_fixed_upper_power_W_m2"]=cooling_model=="fixed_power" ? sum(upper_energy_source)*dz : 0.0
-metadata["diagnostics_version"]=2
+metadata["diagnostics_version"]=3
+merge!(metadata,initial_velocity_info)
+metadata["initial_turbulence_script_sha256"]=bytes2hex(sha256(read(joinpath(@__DIR__,"initial_turbulence.jl"))))
+metadata["diagnostic_height_m"]=get(cfg,"diagnostic_height",zi)
 open(joinpath(out,"metadata.toml"),"w") do io; TOML.print(io,metadata); end
 theta_target=theta_ref.(z)
 exner=(pressure./1e5).^(R/cp)
@@ -115,7 +126,7 @@ timings=Tuple{Float64,Float64}[]
 function save_frame(sim)
     m=sim.model; u,v,w=m.velocities
     compute!(thetafield)
-    k=clamp(round(Int,zi/H*Nz),1,Nz)
+    k=clamp(round(Int,get(cfg,"diagnostic_height",zi)/H*Nz),1,Nz)
     uc=Array(interior(u)); vc=Array(interior(v)); wc=Array(interior(w))
     th=Array(interior(thetafield))
     all(isfinite,th) && all(isfinite,wc) && all(isfinite,uc) && all(isfinite,vc) || error("non-finite state")
@@ -124,6 +135,8 @@ function save_frame(sim)
     sponge_power=-dz*sum(rhof .* spongemask .* vec(mean(wc.^2,dims=(1,2))))/cfg["sponge_time"]
     wcenter=(wc[:,:,1:end-1].+wc[:,:,2:end])./2
     theta_profile=vec(mean(th,dims=(1,2)))
+    horizontal_ke_profile=rho.*vec(mean(uc.^2 .+vc.^2,dims=(1,2)))./2
+    vertical_ke_profile=rho.*vec(mean(wcenter.^2,dims=(1,2)))./2
     theta_anomaly=th.-reshape(theta_profile,1,1,Nz)
     theta_column=dz*sum(rho .* theta_profile)
     # The legacy relaxation_* output names are retained as aliases for the total upper source.
@@ -150,7 +163,7 @@ function save_frame(sim)
     file=joinpath(out,@sprintf("frame_%05d.jld2",count[]))
     jldsave(file; t=m.clock.time, u=uc[:,:,k],v=vc[:,:,k],w=wc[:,:,k],zeta=zeta[:,:,k],
        theta=th[:,:,k],theta_xz=th[:,Ny÷2,:],w_xz=wc[:,Ny÷2,:],
-       theta_profile,w_rms=sqrt(mean(abs2,wc)),heat_flux_profile,diffusive_heat_flux_profile,kappa_profile,upper_energy_source,mean_N2_profile,
+       theta_profile,horizontal_ke_profile,vertical_ke_profile,w_rms=sqrt(mean(abs2,wc)),heat_flux_profile,diffusive_heat_flux_profile,kappa_profile,upper_energy_source,mean_N2_profile,
        kinetic_energy=ke,relaxation_theta,relaxation_enthalpy,sponge_power,buoyancy_power,
        x=((1:Nx).-0.5).*Lx/Nx,z,pressure,density=rho)
     @printf("frame=%d t=%.1fs iter=%d dt=%.3fs maxw=%.4g wall=%.1fs\n",count[],m.clock.time,m.clock.iteration,sim.Δt,maximum(abs,wc),time()-started)

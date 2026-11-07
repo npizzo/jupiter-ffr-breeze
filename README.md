@@ -2,9 +2,9 @@
 
 Regional, bottom-heated, rotating convection experiments to determine whether Breeze.jl can reproduce the dynamics and morphology of Jupiter’s folded filamentary regions (FFRs).
 
-**Status:** Six revised 48-hour convection runs and their validation checks are complete. Fixed upper cooling and reduced cap mixing correct the earlier thermal-source problems. Heating changes second-day vertical RMS speed by only 0.1–0.5%, and the unforced case evolves similarly: initial instability still dominates. Sustained bottom-driven FFR dynamics are not yet established.
+**Status:** Four neutral-layer 48-hour tests are complete. Bottom heating produces weak late growth while controls decay, but the horizontal structures are close to the grid scale. FFR dynamics and resolved developed convection are not yet established. Snapshots and numerical diagnostics are published.
 
-[Output gallery](gallery/README.md) · [Latest results](docs/controlled48-results.md) · [Initial validation](docs/results.md) · [Scientific plan](docs/science.md) · [Unity instructions](docs/unity.md)
+[Output gallery](gallery/README.md) · [Latest results](docs/neutral48-results.md) · [Initial validation](docs/results.md) · [Scientific plan](docs/science.md) · [Unity instructions](docs/unity.md)
 
 ## Initial configuration
 
@@ -55,4 +55,8 @@ The [completed revised experiment](docs/controlled48.md) replaces reference-prof
 
 ## Neutral initial-layer experiment
 
-The [neutral-layer test](docs/neutral48.md) removes the initial mean instability and reduces seeded temperature noise to 10⁻⁵ K. It compares heated/cooled, cooled-only, and unforced cases, with a vertically refined heated case. The campaign is running; snapshots at 6, 12, 24, and 48 hours will accompany the diagnostics.
+The [neutral-layer test](docs/neutral48.md) removes the initial mean instability and reduces seeded temperature noise to 10⁻⁵ K. It compares heated/cooled, cooled-only, and unforced cases, with a vertically refined heated case. All four runs completed; [snapshots at 6, 12, 24, and 48 hours](gallery/neutral48/README.md) and [results](docs/neutral48-results.md) are available.
+
+## Seeded turbulence and convection
+
+The [new comparison](docs/turbulence48.md) starts all three thermal-forcing cases from identical three-dimensional, band-limited velocity fields with initial eddy Rossby number 0.1. It tests how convection modifies decaying turbulence. Initial-condition constraint and reproducibility checks passed; the Unity campaign is in progress.

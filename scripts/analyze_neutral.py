@@ -9,6 +9,7 @@ import h5py
 import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
+from matplotlib.ticker import MaxNLocator
 import numpy as np
 from analyze_controlled import read_case, metrics
 from analyze_convection import save_figure, time_mean
@@ -27,6 +28,9 @@ def snapshot(path):
         d["t"] = float(f["t"][()])
     # h5py sees the reversed dimensions of Julia's x-z matrices.
     assert d["theta_xz"].shape[0] == len(d["theta_profile"])
+    assert d["w_xz"].shape[0] == len(d["theta_profile"])+1
+    # Saved vertical velocity lives on faces; center it for matching sections.
+    d["w_xz"] = (d["w_xz"][:-1]+d["w_xz"][1:])/2
     d["theta_anomaly"] = d["theta_xz"] - d["theta_profile"][:, None]
     return d
 
@@ -70,6 +74,12 @@ def main():
         result = metrics(c)
         frame = snapshot(root/c["name"]/"frame_00048.jld2")
         finals.append(frame)
+        lower_section = frame["w_xz"][c["z"] < 40000]
+        spectrum = np.sum(abs(np.fft.rfft(lower_section-lower_section.mean(axis=1, keepdims=True), axis=1))**2, axis=0)
+        # Account for the conjugate half of the real-valued section spectrum.
+        spectrum[1:-1] *= 2
+        modes = np.arange(len(spectrum))
+        peak_mode = int(np.argmax(spectrum[1:])+1)
         result.update({
             "late_mean_buoyancy_power_W_m2": time_mean(d["buoyancy_power_center_W_m2"], t),
             "late_mean_theta_variance_K2": time_mean(d["theta_variance_K2"], t),
@@ -77,6 +87,9 @@ def main():
             "final_lower_layer_theta_range_K": float(np.ptp(frame["theta_profile"][c["z"] < 60000])),
             "final_section_max_abs_w_m_s": float(np.max(abs(frame["w_xz"]))),
             "final_section_max_abs_theta_anomaly_K": float(np.max(abs(frame["theta_anomaly"]))),
+            "final_lower_section_peak_horizontal_wavelength_km": m["lx"]/peak_mode/1000,
+            "final_lower_section_power_fraction_wavelength_below_4dx": float(spectrum[modes > m["nx"]/4].sum()/spectrum[1:].sum()),
+            "section_spectrum_note": "One x-z slice below 40 km, not a full 3D spectrum or convergence test.",
         })
         summary["cases"][c["name"]] = result
         with gzip.open(dest/(c["name"]+"_diagnostics.csv.gz"), "wt", newline="") as stream:
@@ -122,11 +135,23 @@ def main():
         lo, hi = values.min(), values.max()
         pad = max((hi-lo)*.05, 1e-20)
         ax.set_xlim(lo-pad, hi+pad)
+        ax.xaxis.set_major_locator(MaxNLocator(4))
+        ax.ticklabel_format(axis="x", style="sci", scilimits=(-3, 3))
     axes[0].legend(fontsize=7)
     fig.suptitle("48-hour lower-layer profiles; excludes the stable cap")
     save_figure(fig, dest, "lower_profiles")
 
     plot_sections(cases, finals, dest, "final_sections", [c["label"] for c in cases], "48-hour comparison")
+    fig, axes = plt.subplots(1, 4, figsize=(14, 4), layout="constrained")
+    limit = max(float(np.max(abs(frame["zeta"]))/c["m"]["f"]) for c, frame in zip(cases, finals))
+    for ax, c, frame in zip(axes, cases, finals):
+        im = ax.imshow(frame["zeta"]/c["m"]["f"], origin="lower", cmap="RdBu_r",
+            extent=(0, c["m"]["lx"]/1000, 0, c["m"]["ly"]/1000),
+            vmin=-limit, vmax=limit, interpolation="nearest")
+        ax.set(title=c["label"], xlabel="x [km]", ylabel="y [km]")
+    fig.colorbar(im, ax=list(axes), shrink=.8, label="ζ/f near 80 km")
+    fig.suptitle("48-hour horizontal vorticity; common physical scale across cases")
+    save_figure(fig, dest, "final_vorticity")
     for c in cases:
         hours = [6, 12, 24, 48]
         frames = [snapshot(root/c["name"]/f"frame_{hour:05d}.jld2") for hour in hours]

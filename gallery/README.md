@@ -2,6 +2,14 @@
 
 Figures below are generated from saved Breeze fields. They are preliminary numerical tests, not a reproduction of Jupiter's folded filamentary regions.
 
+## Neutral initial layer: four completed runs
+
+Heating produces weak late growth while the controls decay. Short horizontal wavelengths require further resolution checks before interpreting the patterns.
+
+[Snapshots and data](neutral48/README.md) · [Interpretation](../docs/neutral48-results.md)
+
+![Heated-run snapshots](neutral48/neutral48_heated_snapshots.png)
+
 ## Revised forcing and cap mixing: six completed runs
 
 Fixed upper cooling and reduced thermal diffusion preserve the stable cap. Matched controls show that initial instability still dominates; heating-driven FFRs are not established.
