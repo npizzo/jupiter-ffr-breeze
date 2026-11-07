@@ -28,6 +28,7 @@ function check_controlled_diagnostics(root)
     println("Source and inventory checks passed: ",root)
 end
 
+if abspath(PROGRAM_FILE) == abspath(@__FILE__)
 root=length(ARGS)>0 ? ARGS[1] : "data/controlled48-v1"
 arch=length(ARGS)>1 ? ARGS[2] : "GPU"
 for name in ("rest","heating","controlled_check_sink","controlled_check_balance")
@@ -46,4 +47,6 @@ for name in cases
     check_output(out)
     check_controlled_diagnostics(out)
     GC.gc()
+end
+
 end

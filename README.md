@@ -52,3 +52,7 @@ All current runs use a **traditional f-plane**, not a beta plane: Ω = 1.7585 ×
 The [completed revised experiment](docs/controlled48.md) replaces reference-profile relaxation with a prescribed upper heat sink and reduces thermal mixing across the stable cap. It repeats the heating controls and adds an unforced case and a vertical-resolution check. The model and geometry remain dry anelastic on the same Jovian f-plane.
 
 [Revised gallery](gallery/controlled48/README.md) · [Measured results and next diagnostic](docs/controlled48-results.md)
+
+## Neutral initial-layer experiment
+
+The [neutral-layer test](docs/neutral48.md) removes the initial mean instability and reduces seeded temperature noise to 10⁻⁵ K. It compares heated/cooled, cooled-only, and unforced cases, with a vertically refined heated case. The campaign is running; snapshots at 6, 12, 24, and 48 hours will accompany the diagnostics.
