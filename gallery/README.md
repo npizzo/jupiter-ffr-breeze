@@ -2,6 +2,14 @@
 
 Figures below are generated from saved Breeze fields. They are preliminary numerical tests, not a reproduction of Jupiter's folded filamentary regions.
 
+## Revised forcing and cap mixing: six completed runs
+
+Fixed upper cooling and reduced thermal diffusion preserve the stable cap. Matched controls show that initial instability still dominates; heating-driven FFRs are not established.
+
+[Latest gallery and data](controlled48/README.md) · [Interpretation](../docs/controlled48-results.md)
+
+![Revised convection histories](controlled48/evolution.png)
+
 ## Controlled 48-hour convection experiment
 
 Four runs isolate bottom heating and initial-perturbation amplitude. All completed; the comparisons identify forcing and diffusion limitations in the initial setup.

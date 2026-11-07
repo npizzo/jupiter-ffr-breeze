@@ -2,9 +2,9 @@
 
 Regional, bottom-heated, rotating convection experiments to determine whether Breeze.jl can reproduce the dynamics and morphology of Jupiter’s folded filamentary regions (FFRs).
 
-**Status:** CPU/GPU validation and four paired 48-hour convection runs are complete. The controls reveal initial-transient convection, unintended upper-layer heating, and strong diffusion of the stable cap. The next step is to correct those forcing/transport choices; sustained FFR dynamics are not yet established.
+**Status:** Six revised 48-hour convection runs and their validation checks are complete. Fixed upper cooling and reduced cap mixing correct the earlier thermal-source problems. Heating changes second-day vertical RMS speed by only 0.1–0.5%, and the unforced case evolves similarly: initial instability still dominates. Sustained bottom-driven FFR dynamics are not yet established.
 
-[Output gallery](gallery/README.md) · [Convection results](docs/convection48-results.md) · [Initial validation](docs/results.md) · [Scientific plan](docs/science.md) · [Unity instructions](docs/unity.md)
+[Output gallery](gallery/README.md) · [Latest results](docs/controlled48-results.md) · [Initial validation](docs/results.md) · [Scientific plan](docs/science.md) · [Unity instructions](docs/unity.md)
 
 ## Initial configuration
 
@@ -49,4 +49,6 @@ All current runs use a **traditional f-plane**, not a beta plane: Ω = 1.7585 ×
 
 ## Revised forcing experiment
 
-The [next controlled experiment](docs/controlled48.md) replaces reference-profile relaxation with a prescribed upper heat sink and reduces thermal mixing across the stable cap. It repeats the heating controls and adds an unforced case and a vertical-resolution check. The model and geometry remain dry anelastic on the same Jovian f-plane.
+The [completed revised experiment](docs/controlled48.md) replaces reference-profile relaxation with a prescribed upper heat sink and reduces thermal mixing across the stable cap. It repeats the heating controls and adds an unforced case and a vertical-resolution check. The model and geometry remain dry anelastic on the same Jovian f-plane.
+
+[Revised gallery](gallery/controlled48/README.md) · [Measured results and next diagnostic](docs/controlled48-results.md)

@@ -7,6 +7,8 @@ from pathlib import Path
 import tomllib
 
 import h5py
+import matplotlib
+matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 import numpy as np
 from analyze_convection import cumulative_trapezoid, save_figure, time_mean
@@ -129,7 +131,7 @@ def main():
     fig,axes=plt.subplots(2,2,figsize=(11,8),layout="constrained")
     panels=[("w_rms_center_m_s","Vertical RMS speed [m/s]","log"),
             ("kinetic_energy_J_m2","Column kinetic energy [J/m²]","log"),
-            ("cap_contrast_ratio","Stable-cap contrast / initial contrast","linear"),
+            ("cap_mean_profile_departure_rms_K","Stable-cap mean-profile RMS change [K]","linear"),
             ("upper_enthalpy_W_m2","Prescribed upper heat input [W/m²]","linear")]
     for ax,(key,title,scale) in zip(axes.flat,panels):
         for c in cases:
