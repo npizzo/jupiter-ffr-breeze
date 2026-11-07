@@ -2,9 +2,9 @@
 
 Regional, bottom-heated, rotating convection experiments to determine whether Breeze.jl can reproduce the dynamics and morphology of Jupiter’s folded filamentary regions (FFRs).
 
-**Status:** Four neutral-layer 48-hour tests are complete. Bottom heating produces weak late growth while controls decay, but the horizontal structures are close to the grid scale. FFR dynamics and resolved developed convection are not yet established. Snapshots and numerical diagnostics are published.
+**Status:** Three matched Rossby-0.1 turbulence runs are complete, following the neutral-layer tests. At 5.4 W/m² over 48 hours, bottom heating changes second-day kinetic energy by +0.117% relative to the cooling-only control. Snapshots, spectra and comparisons are published; strong convective modification and FFR dynamics are not established.
 
-[Output gallery](gallery/README.md) · [Latest results](docs/neutral48-results.md) · [Initial validation](docs/results.md) · [Scientific plan](docs/science.md) · [Unity instructions](docs/unity.md)
+[Output gallery](gallery/README.md) · [Latest results](docs/turbulence48-results.md) · [Initial validation](docs/results.md) · [Scientific plan](docs/science.md) · [Unity instructions](docs/unity.md)
 
 ## Initial configuration
 
@@ -59,4 +59,4 @@ The [neutral-layer test](docs/neutral48.md) removes the initial mean instability
 
 ## Seeded turbulence and convection
 
-The [new comparison](docs/turbulence48.md) starts all three thermal-forcing cases from identical three-dimensional, band-limited velocity fields with initial eddy Rossby number 0.1. It tests how convection modifies decaying turbulence. Initial-condition constraint and reproducibility checks passed; the Unity campaign is in progress.
+The [new comparison](docs/turbulence48.md) starts all three thermal-forcing cases from identical three-dimensional, band-limited velocity fields with initial eddy Rossby number 0.1. It tests how convection modifies decaying turbulence. All checks and three runs completed. See [results](docs/turbulence48-results.md) and [snapshots](gallery/turbulence48/README.md).

@@ -1,0 +1,19 @@
+{
+  "job_id": 66919176,
+  "status": "COMPLETED",
+  "exit_code": "0:0",
+  "gpu": "NVIDIA L40S",
+  "gpu_count": 1,
+  "elapsed_seconds": 685,
+  "allocated_cpus": 4,
+  "allocated_host_memory_GiB": 8,
+  "batch_max_rss_KiB": 2485688,
+  "campaign": "turbulence48-v1",
+  "separate_cpu_initializer_validation": {
+    "job_id": 66919293,
+    "state": "COMPLETED",
+    "elapsed_seconds": 20,
+    "max_rss_KiB": 616356
+  },
+  "note": "GPU job includes initializer checks, short solver test, three long cases and output; GPU memory peak not measured."
+}

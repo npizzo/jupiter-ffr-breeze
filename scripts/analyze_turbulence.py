@@ -48,6 +48,11 @@ def main():
     for fields in initial_maps[1:]:
         assert all(np.array_equal(fields[k],initial_maps[0][k]) for k in fields), "Initial velocities differ"
     assert all(np.array_equal(c["initial_theta"],cases[0]["initial_theta"]) for c in cases)
+    keys=("nx","ny","nz","lx","ly","height","cap_height","cap_n2","convective_n2","rotation_rate","f","beta",
+          "viscosity","thermal_diffusivity","cap_diffusivity","diffusivity_taper_width","perturbation","seed",
+          "turbulence_seed","turbulence_rossby","turbulence_wavelength","turbulence_vertical_ratio",
+          "script_sha256","initial_turbulence_script_sha256")
+    assert all(all(case["m"][k]==cases[0]["m"][k] for k in keys) for case in cases), "Unmatched physical setup"
     summary={"duration_hours":48,"geometry":"55N Jovian f-plane; no beta or imposed shear","cases":{}}
     finals=[]; maps=[]
     for c, initial in zip(cases,initial_maps):
@@ -62,6 +67,7 @@ def main():
             "final_column_ke_J_m2":float(d["kinetic_energy_J_m2"][-1]),
             "final_ke_retention":float(d["kinetic_energy_J_m2"][-1]/d["kinetic_energy_J_m2"][0]),
             "initial_eddy_rossby":m["initial_eddy_rossby"],
+            "initial_eddy_reynolds":m["initial_horizontal_rms_lower_m_s"]*m["initial_eddy_length_m"]/m["viscosity"],
             "initial_horizontal_rms_lower_m_s":m["initial_horizontal_rms_lower_m_s"],
             "initial_vertical_rms_lower_m_s":m["initial_vertical_rms_lower_m_s"],
             "initial_mass_divergence_relative":m["initial_mass_divergence_relative"],
@@ -77,6 +83,8 @@ def main():
     a,b,c=[summary["cases"][x[0]] for x in CATALOG]
     summary["heating_increment"]={key+"_percent":100*(a[key]/b[key]-1) for key in ("late_mean_ke_J_m2","late_mean_w_rms_m_s","final_column_ke_J_m2")}
     summary["cooling_increment"]={key+"_percent":100*(b[key]/c[key]-1) for key in ("late_mean_ke_J_m2","late_mean_w_rms_m_s")}
+    summary["heating_increment"]["final_max_resolved_heat_flux_difference_W_m2"]=a["final_max_upward_convective_heat_flux_W_m2"]-b["final_max_upward_convective_heat_flux_W_m2"]
+    summary["heating_increment"]["final_map_vorticity_correlation"]=float(np.corrcoef(maps[0]["zeta"].ravel(),maps[1]["zeta"].ravel())[0,1])
     (dest/"summary.json").write_text(json.dumps(summary,indent=2,allow_nan=False)+"\n")
 
     fig,axes=plt.subplots(2,2,figsize=(11,8),layout="constrained")
@@ -111,9 +119,30 @@ def main():
         ax.set(title=case["label"],xlabel="x [km]",ylabel="y [km]")
     fig.colorbar(im,ax=list(axes),shrink=.8,label="ζ/f near 20 km");fig.suptitle("48-hour vorticity; common color scale")
     save_figure(fig,dest,"final_vorticity")
+    fig,axes=plt.subplots(1,2,figsize=(10,4),layout="constrained")
+    arrays=[(maps[0]["zeta"]-maps[1]["zeta"])/cases[0]["m"]["f"], finals[0]["w_xz"]-finals[1]["w_xz"]]
+    for ax,a,height,label in zip(axes,arrays,(1200,120),("Δζ/f near 20 km","Δw [m/s]")):
+        limit=max(float(np.max(abs(a))),1e-30)
+        im=ax.imshow(a,origin="lower",cmap="RdBu_r",vmin=-limit,vmax=limit,extent=(0,1200,0,height),aspect="auto")
+        ax.set(xlabel="x [km]",ylabel="y [km]" if height==1200 else "z [km]")
+        fig.colorbar(im,ax=ax,shrink=.8,label=label)
+    fig.suptitle("48-hour heated minus cooling-only fields; each panel has its own difference scale")
+    save_figure(fig,dest,"heating_difference")
+    case=cases[0];hours=[0,6,12,24,48]
+    frames=[velocity_map(root/case["name"]/f"frame_{h:05d}.jld2") for h in hours]
+    fig,axes=plt.subplots(1,5,figsize=(16,4),layout="constrained")
+    limit=max(float(np.max(abs(frame["zeta"]))/case["m"]["f"]) for frame in frames)
+    for ax,h,frame in zip(axes,hours,frames):
+        im=ax.imshow(frame["zeta"]/case["m"]["f"],origin="lower",cmap="RdBu_r",vmin=-limit,vmax=limit,
+            extent=(0,case["m"]["lx"]/1000,0,case["m"]["ly"]/1000))
+        ax.set(title=f"{h} h",xlabel="x [km]",ylabel="y [km]")
+    fig.colorbar(im,ax=list(axes),shrink=.8,label="ζ/f near 20 km")
+    fig.suptitle("Heated case: initial random field and subsequent evolution; fixed color scale")
+    save_figure(fig,dest,"heated_vorticity_snapshots")
     for case in cases:
         hours=[6,12,24,48]
         frames=[snapshot(root/case["name"]/f"frame_{h:05d}.jld2") for h in hours]
+        assert all(frame["t"]==h*3600 for frame,h in zip(frames,hours))
         plot_sections([case]*4,frames,dest,case["name"]+"_snapshots",[f"{h} h" for h in hours],case["label"]+": turbulence snapshots")
     print(json.dumps(summary,indent=2,allow_nan=False))
 

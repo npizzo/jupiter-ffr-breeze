@@ -2,6 +2,14 @@
 
 Figures below are generated from saved Breeze fields. They are preliminary numerical tests, not a reproduction of Jupiter's folded filamentary regions.
 
+## Seeded turbulence: three completed thermal-forcing controls
+
+Identical initial Rossby-0.1 velocity fields isolate the incremental effect of bottom heating. Changes in second-day bulk energy and vertical speed are small over 48 hours.
+
+[Snapshots, spectra and data](turbulence48/README.md) · [Interpretation](../docs/turbulence48-results.md)
+
+![Heated-case vorticity evolution](turbulence48/heated_vorticity_snapshots.png)
+
 ## Neutral initial layer: four completed runs
 
 Heating produces weak late growth while the controls decay. Short horizontal wavelengths require further resolution checks before interpreting the patterns.
