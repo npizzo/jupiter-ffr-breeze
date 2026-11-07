@@ -1,0 +1,50 @@
+# Idealized dry hydrogen-helium atmosphere; not a calibrated Jupiter realization.
+name = "strong48_f030_cooled"
+nx = 128
+ny = 128
+nz = 64
+lx = 1200000.0
+ly = 1200000.0
+height = 120000.0
+cap_height = 80000.0
+cap_n2 = 0.000025
+convective_n2 = 0.0
+theta0 = 170.0
+base_pressure = 2000000.0
+gravity = 25.0
+molar_mass = 0.0023
+heat_capacity = 13000.0
+latitude = 55.0
+rotation_rate = 0.00017585
+heat_flux = 0.0
+cooling_time = 864000.0
+sponge_time = 3600.0
+viscosity = 1000.0
+thermal_diffusivity = 1000.0
+perturbation = 0.00001
+seed = 42
+stop_seconds = 172800.0
+output_seconds = 3600.0
+diagnostic_seconds = 300.0
+max_dt = 30.0
+initial_dt = 1.0
+jet_speed = 0.0
+
+# Controlled source and prescribed stable-layer thermal mixing.
+cooling_model = "fixed_power"
+upper_cooling_flux = 162.0
+mixing_model = "tapered"
+cap_diffusivity = 1.0
+diffusivity_taper_width = 20000.0
+
+# Exactly neutral horizontal-mean lower layer; tiny perturbations seed symmetry breaking.
+
+initial_velocity = "turbulence"
+turbulence_seed = 31415
+turbulence_rossby = 0.1
+turbulence_wavelength = 300000.0
+turbulence_vertical_ratio = 0.2
+diagnostic_height = 20000.0
+
+# Enhanced-forcing sensitivity experiment: 30 times the physical-flux baseline.
+forcing_multiplier = 30

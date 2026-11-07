@@ -1,0 +1,44 @@
+{
+  "reference_convention": "Bottom reference density and temperature; depth 80 km; lower-layer viscosity/diffusivity. Heuristic comparison parameters for this stratified, capped setup; no claim of Boussinesq onset equivalence.",
+  "cases": [
+    {
+      "forcing_multiplier": 1,
+      "heat_flux_W_m2": 5.4,
+      "bottom_buoyancy_flux_m2_s3": 1.8770107916889632e-05,
+      "reference_depth_m": 80000.0,
+      "f_s_inverse": 0.0002880957739764384,
+      "Ekman": 0.0005423543630764217,
+      "lower_layer_Prandtl": 1.0,
+      "flux_Rayleigh": 768823.6202757994,
+      "modified_flux_Rayleigh": 0.000122652423065835,
+      "flux_Rossby_cube_root": 0.04968500952924987,
+      "initial_eddy_Rossby": 0.1
+    },
+    {
+      "forcing_multiplier": 30,
+      "heat_flux_W_m2": 162.0,
+      "bottom_buoyancy_flux_m2_s3": 0.0005631032375066889,
+      "reference_depth_m": 80000.0,
+      "f_s_inverse": 0.0002880957739764384,
+      "Ekman": 0.0005423543630764217,
+      "lower_layer_Prandtl": 1.0,
+      "flux_Rayleigh": 23064708.60827398,
+      "modified_flux_Rayleigh": 0.0036795726919750496,
+      "flux_Rossby_cube_root": 0.15438287666791242,
+      "initial_eddy_Rossby": 0.1
+    },
+    {
+      "forcing_multiplier": 100,
+      "heat_flux_W_m2": 540.0,
+      "bottom_buoyancy_flux_m2_s3": 0.0018770107916889632,
+      "reference_depth_m": 80000.0,
+      "f_s_inverse": 0.0002880957739764384,
+      "Ekman": 0.0005423543630764217,
+      "lower_layer_Prandtl": 1.0,
+      "flux_Rayleigh": 76882362.02757993,
+      "modified_flux_Rayleigh": 0.0122652423065835,
+      "flux_Rossby_cube_root": 0.2306173854289107,
+      "initial_eddy_Rossby": 0.1
+    }
+  ]
+}

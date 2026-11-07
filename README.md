@@ -60,3 +60,7 @@ The [neutral-layer test](docs/neutral48.md) removes the initial mean instability
 ## Seeded turbulence and convection
 
 The [new comparison](docs/turbulence48.md) starts all three thermal-forcing cases from identical three-dimensional, band-limited velocity fields with initial eddy Rossby number 0.1. It tests how convection modifies decaying turbulence. All checks and three runs completed. See [results](docs/turbulence48-results.md) and [snapshots](gallery/turbulence48/README.md).
+
+## Enhanced forcing campaign
+
+The [stronger-convection comparison](docs/strong48.md) raises heating to 30× and 100× baseline, with matching cooling-only controls and a horizontally refined 100× pair. This campaign is submitted on Unity; completed baseline galleries remain available. These fluxes are idealized sensitivity choices, not inferred Jovian heat fluxes.
