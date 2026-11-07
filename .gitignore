@@ -1,0 +1,9 @@
+data/
+runtime/
+depot/
+logs/
+*.out
+*.err
+local.env
+__pycache__/
+.DS_Store
