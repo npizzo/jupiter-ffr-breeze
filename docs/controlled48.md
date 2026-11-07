@@ -35,6 +35,8 @@ Before the six runs, short hydrostatic-rest, bottom-heating-only, fixed-cooling-
 
 New diagnostics record the actual upper power, net prescribed enthalpy input, stable-cap temperature-contrast retention, and mean-profile departure from the initial cap. Output profiles include the prescribed κ and volumetric sink. `relaxation_*` diagnostic columns are retained as compatibility aliases for the total upper source; canonical `upper_*` columns identify the fixed sink in these runs.
 
-Submit `sbatch slurm/controlled48.sbatch`. One GPU executes all cases sequentially in one Julia process. The allocation requests four CPUs, 8 GB host memory, and a 45-minute ceiling, including the larger vertical-resolution case. Outputs use a new directory, `data/controlled48-v1`; the previous experiments remain intact.
+Submit `sbatch slurm/controlled48.sbatch`. One L40S GPU executes all cases sequentially in one Julia process. The allocation requests four CPUs, 8 GB host memory, and a two-hour ceiling, including the larger vertical-resolution case. Outputs use a new directory, `data/controlled48-v2`; the previous experiments remain intact.
 
 The first 48 hours remain a diagnostic window. We will assess whether the corrected source stays controlled, the cap survives, and bulk convection depends on imposed forcing after its initial transient. A persistent flow alone would not establish FFR morphology or thermal equilibrium.
+
+The first allocation received an A16 GPU and could not complete the campaign within its original 45-minute limit. Its partial output is preserved under `data/controlled48-v1`; the replacement uses identical physical parameters and a new output directory. The four preliminary validation cases passed before the interrupted first long case. Full campaign results are pending.
