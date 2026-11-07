@@ -30,6 +30,7 @@ The GPU option fails if CUDA is unavailable rather than silently running on CPU.
 
 | Case | Grid | Simulated duration | Purpose |
 |---|---|---|---|
+| rest / heating | 16 × 16 × 24 | 60 s | hydrostatic rest and imposed heat-flux budget |
 | smoke | 16 × 16 × 24 | 60 s | construction, stepping, and output check |
 | pilot | 128 × 128 × 64 | 4 h | initial convection and measured resource use |
 | regional | 256 × 256 × 96 | 2 Earth days | optional longer experiment; not submitted automatically |

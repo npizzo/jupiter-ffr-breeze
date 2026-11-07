@@ -13,5 +13,7 @@ export JULIA_NUM_PRECOMPILE_TASKS=4
 "$JULIA_BIN" --project=. scripts/setup.jl
 "$JULIA_BIN" --project=. scripts/run.jl configs/rest.toml data/cpu-rest CPU
 "$JULIA_BIN" --project=. scripts/check_output.jl data/cpu-rest
+"$JULIA_BIN" --project=. scripts/run.jl configs/heating.toml data/cpu-heating CPU
+"$JULIA_BIN" --project=. scripts/check_output.jl data/cpu-heating
 "$JULIA_BIN" --project=. scripts/run.jl configs/smoke.toml data/cpu-smoke CPU
 "$JULIA_BIN" --project=. scripts/check_output.jl data/cpu-smoke

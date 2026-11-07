@@ -1,7 +1,13 @@
 # Output gallery
 
-Only actual solver output will be added here. No FFR result has yet been demonstrated.
+Figures below are generated from saved Breeze fields. They are preliminary numerical tests, not a reproduction of Jupiter's folded filamentary regions.
 
-Each run gets a final snapshot, animation, complete parameters, and a clear distinction between short validation tests and developed flow.
+## CPU smoke test
 
-Generate an entry with `python scripts/gallery.py data/pilot`.
+16 × 16 × 24 cells; 60 seconds of simulated time. This checks construction, stepping, and output. The initial random perturbations remain visible at this short duration.
+
+[Animation and run parameters](cpu-smoke/README.md)
+
+![CPU smoke-test final state](cpu-smoke/latest.png)
+
+The larger GPU convection pilot will be added after validation. No RBC performance or morphology comparison is available yet.

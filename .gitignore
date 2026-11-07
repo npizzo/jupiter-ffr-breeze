@@ -7,3 +7,6 @@ logs/
 local.env
 __pycache__/
 .DS_Store
+
+# Intermediate animation frames; publish the final image and GIF.
+gallery/**/frame_*.png

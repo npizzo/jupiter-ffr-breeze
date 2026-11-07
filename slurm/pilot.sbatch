@@ -15,5 +15,6 @@ export JULIA_NUM_THREADS=4
 nvidia-smi
 "$JULIA_BIN" --project=. scripts/run.jl configs/smoke.toml data/gpu-smoke GPU
 "$JULIA_BIN" --project=. scripts/check_output.jl data/gpu-smoke
+"$JULIA_BIN" --project=. scripts/compare_architectures.jl data/cpu-smoke data/gpu-smoke
 "$JULIA_BIN" --project=. scripts/run.jl configs/pilot.toml data/pilot GPU
 "$JULIA_BIN" --project=. scripts/check_output.jl data/pilot

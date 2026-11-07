@@ -57,6 +57,7 @@ Oceananigans.Diagnostics.erroring_NaNChecker!(sim)
 metadata=merge(cfg,Dict("architecture"=>archname,"float_type"=>string(FT),"f"=>f,"julia_version"=>string(VERSION),"breeze_commit"=>"0479d9c8ce006adcb1e3314c324b84980ad4871b","status"=>"RUNNING","physical_model"=>"dry anelastic, f-plane, periodic sides, heated free-slip bottom, stable cap; no clouds"))
 open(joinpath(out,"metadata.toml"),"w") do io; TOML.print(io,metadata); end
 started=time(); count=Ref(0)
+timings=Tuple{Float64,Float64}[]
 function save_frame(sim)
     m=sim.model; u,v,w=m.velocities
     compute!(thetafield)
@@ -73,12 +74,17 @@ function save_frame(sim)
        x=((1:Nx).-0.5).*Lx/Nx, z=((1:Nz).-0.5).*H/Nz,
        pressure=vec(Array(interior(ref.pressure))), density=vec(Array(interior(ref.density))))
     @printf("frame=%d t=%.1fs iter=%d dt=%.3fs maxw=%.4g wall=%.1fs\n",count[],m.clock.time,m.clock.iteration,sim.Δt,maximum(abs,wc),time()-started)
+    push!(timings,(Float64(m.clock.time),time()-started))
     flush(stdout);count[]+=1
 end
 add_callback!(sim,save_frame,TimeInterval(cfg["output_seconds"]))
 run!(sim)
 metadata["status"]="COMPLETE";metadata["wall_seconds"]=time()-started
 metadata["iterations"]=model.clock.iteration;metadata["simulated_seconds"]=model.clock.time
+if length(timings) >= 3
+    metadata["post_warmup_wall_seconds"]=last(timings)[2]-timings[2][2]
+    metadata["post_warmup_simulated_seconds"]=last(timings)[1]-timings[2][1]
+end
 open(joinpath(out,"metadata.toml"),"w") do io;TOML.print(io,metadata);end
 
 end

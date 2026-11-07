@@ -19,7 +19,7 @@ Visual comparison is the first screen. Across many snapshots and seeds measure f
 
 ## Numerical decisions
 
-Start with anelastic dynamics to retain density stratification while filtering sound. The first setup is f-plane; beta and spherical curvature are future controlled additions. Current Breeze PR #1103 provides compressible Yin–Yang support but excludes anelastic multi-region dynamics. Full-sphere coverage and overlap interpolation are unnecessary for the initial regional test.
+Start with anelastic dynamics to retain density stratification while filtering sound. The first setup uses the traditional f-plane approximation (vertical component of rotation only); beta, the horizontal rotation component, and spherical curvature are future controlled additions. At 55°N, the omitted horizontal rotation component can matter for deep convective plumes, so this approximation needs a sensitivity test. Current Breeze PR #1103 provides compressible Yin–Yang support but excludes anelastic multi-region dynamics. Full-sphere coverage and overlap interpolation are unnecessary for the initial regional test.
 
 Explicit diffusivities are numerical model parameters, not Jupiter's molecular diffusivities. The pilot uses Float64 as a validation reference. Benchmark Float32 only after comparing relevant fields and budgets. The pilot saves horizontal and vertical slices rather than large 3D archives. No automatic restart or campaign escalation is enabled.
 
@@ -33,3 +33,7 @@ Explicit diffusivities are numerical model parameters, not Jupiter's molecular d
 - [Sankar et al., shear and vapor transport](https://doi.org/10.3847/PSJ/adcc21)
 - [Leconte et al., heavy-condensable inhibition](https://doi.org/10.1051/0004-6361/201629140)
 - [Julien et al., efficient rapidly rotating convection](https://doi.org/10.1016/j.jcp.2025.114274)
+
+## Initial nondimensional regime
+
+Using the 80-km convecting depth, prescribed lower-layer buoyancy frequency squared of −10⁻⁷ s⁻², and explicit viscosity/diffusivity of 1,000 m²/s gives nominal Ra ≈ 4.1 × 10⁶, Ek = ν/(fH²) ≈ 5.4 × 10⁻⁴, Pr = 1, and convective Rossby number √(−N²)/f ≈ 1.1. These are local dry-layer estimates in a stratified atmosphere, not a matched RBC benchmark. The first pilot is therefore not in the asymptotic rapidly rotating limit. Varying superadiabaticity and diffusivity is necessary before claiming an advantage over rapidly rotating RBC. Numerical advection also contributes effective diffusion.
