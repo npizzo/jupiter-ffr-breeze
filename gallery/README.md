@@ -18,4 +18,4 @@ Figures below are generated from saved Breeze fields. They are preliminary numer
 
 ![CPU smoke-test final state](cpu-smoke/latest.png)
 
-No RBC performance or morphology comparison is available yet.
+The scientific target is sustained Jupiter-like FFR morphology.

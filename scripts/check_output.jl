@@ -1,5 +1,5 @@
 using JLD2, TOML, Test
-root=ARGS[1]
+function check_output(root)
 m=TOML.parsefile(joinpath(root,"metadata.toml"))
 files=sort(filter(f->endswith(f,".jld2"),readdir(root;join=true)))
 @test m["status"] == "COMPLETE"
@@ -24,3 +24,8 @@ else
     @test final["w_rms"] > 0
 end
 println("Output checks passed: ",root)
+
+end
+if abspath(PROGRAM_FILE) == abspath(@__FILE__)
+    check_output(ARGS[1])
+end

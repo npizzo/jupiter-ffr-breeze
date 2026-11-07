@@ -1,8 +1,8 @@
 # Jupiter folded filamentary regions with Breeze.jl
 
-Regional, bottom-heated, rotating convection experiments for exploring whether atmospheric stratification and shear improve folded filamentary region (FFR) morphology over rapidly rotating Rayleigh–Bénard convection.
+Regional, bottom-heated, rotating convection experiments to determine whether Breeze.jl can reproduce the dynamics and morphology of Jupiter’s folded filamentary regions (FFRs).
 
-**Status:** CPU rest/heating checks, CPU–GPU agreement, and a four-hour GPU convection pilot have passed on Unity. The pilot shows convective columns, not established FFR morphology. No claim of outperforming an RBC solver.
+**Status:** CPU rest/heating checks, CPU–GPU agreement, and a four-hour GPU convection pilot have passed on Unity. The pilot shows convective columns, not established FFR morphology.
 
 [Output gallery](gallery/README.md) · [Validation results](docs/results.md) · [Scientific plan](docs/science.md) · [Unity instructions](docs/unity.md)
 
@@ -40,3 +40,9 @@ The GPU option fails if CUDA is unavailable rather than silently running on CPU.
 ## Provenance
 
 Built with [Breeze.jl](https://github.com/NumericalEarth/Breeze.jl) and [Oceananigans.jl](https://github.com/CliMA/Oceananigans.jl). Upstream libraries retain their licenses. See the scientific plan for references and limitations.
+
+## Controlled convection experiment
+
+Four 48-hour experiments compare bottom heating on/off at two initial temperature-perturbation amplitudes (0.2 and 0.02 K; actual seeded noise is smaller than these amplitude parameters). The grid, reference stratification, and seed are identical. These runs isolate dependence on the imposed bottom heat flux from the initial instability. See [experiment design](docs/convection48.md).
+
+All current runs use a **traditional f-plane**, not a beta plane: Ω = 1.7585 × 10⁻⁴ s⁻¹, latitude 55°N, f = 2.88096 × 10⁻⁴ s⁻¹, beta = 0. Jupiter’s rotation rate stays fixed. Rotational dominance must be diagnosed from the flow; the initial convective Rossby number is about 1.1.

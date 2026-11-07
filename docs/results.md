@@ -1,6 +1,6 @@
 # Preliminary Unity validation
 
-These tests establish basic numerical operation; they do not establish FFR morphology or superiority to rotating RBC.
+These tests establish basic numerical operation; they do not establish FFR morphology.
 
 ## CPU results
 
@@ -27,6 +27,6 @@ The pilot developed convective columns beneath the stable cap. Peak whole-domain
 - Batch maximum host RSS: approximately **5.64 GiB**.
 - Slurm's sampled GPU-memory maximum: **776 MiB**. Sparse sampling may miss short peaks; this is not a guaranteed VRAM requirement. Direct high-frequency measurement is needed before aggressive GPU downsizing.
 
-The initial GPU request was one GPU, 16 GiB host memory, and one hour. Future pilot scripts request 8 GiB and 30 minutes based on these measurements. Runtime is short enough to make controlled parameter studies practical. Longer integration, larger domains, imposed-shear controls, stronger-rotation regimes, and resolution tests are needed before assessing FFR realism or comparing cost against RBC.
+The initial GPU request was one GPU, 16 GiB host memory, and one hour. Future pilot scripts request 8 GiB and 30 minutes based on these measurements. Runtime is short enough to make controlled parameter studies practical. Longer integration, larger domains, imposed-shear controls, stronger-rotation regimes, and resolution tests are needed before assessing FFR realism.
 
 [Gallery](../gallery/pilot/README.md) · [Run parameters](../gallery/pilot/metadata.json) · [Diagnostic time series and resource measurements](pilot-results.json).

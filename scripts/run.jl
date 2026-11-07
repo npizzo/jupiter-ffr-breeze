@@ -1,13 +1,13 @@
-using Breeze, Oceananigans, CUDA, JLD2, TOML, Random, Statistics, Printf
+using Breeze, Oceananigans, CUDA, JLD2, TOML, Random, Statistics, Printf, SHA
 using Oceananigans.Units
 using Oceananigans: interior
 
-function main()
-length(ARGS) >= 2 || error("usage: julia --project scripts/run.jl CONFIG OUTPUT_DIR [CPU|GPU]")
-cfg = TOML.parsefile(ARGS[1]); out = abspath(ARGS[2])
+function main(args=ARGS)
+length(args) >= 2 || error("usage: julia --project scripts/run.jl CONFIG OUTPUT_DIR [CPU|GPU]")
+cfg = TOML.parsefile(args[1]); out = abspath(args[2])
 isdir(out) && !isempty(readdir(out)) && error("Output exists and is nonempty: $out")
 mkpath(out)
-archname = length(ARGS) >= 3 ? ARGS[3] : "CPU"
+archname = length(args) >= 3 ? args[3] : "CPU"
 archname in ("CPU", "GPU") || error("architecture must be CPU or GPU")
 if archname == "GPU"
     CUDA.functional() || error("CUDA is not functional; refusing CPU fallback")
@@ -54,8 +54,26 @@ thetafield=Field(liquid_ice_potential_temperature(model))
 sim=Simulation(model; Δt=cfg["initial_dt"], stop_time=cfg["stop_seconds"])
 conjure_time_step_wizard!(sim; cfl=0.4, max_Δt=cfg["max_dt"])
 Oceananigans.Diagnostics.erroring_NaNChecker!(sim)
-metadata=merge(cfg,Dict("architecture"=>archname,"float_type"=>string(FT),"f"=>f,"julia_version"=>string(VERSION),"breeze_commit"=>"0479d9c8ce006adcb1e3314c324b84980ad4871b","status"=>"RUNNING","physical_model"=>"dry anelastic, f-plane, periodic sides, heated free-slip bottom, stable cap; no clouds"))
+metadata=merge(cfg,Dict("architecture"=>archname,"float_type"=>string(FT),"f"=>f,"julia_version"=>string(VERSION),"breeze_commit"=>"0479d9c8ce006adcb1e3314c324b84980ad4871b","status"=>"RUNNING","physical_model"=>"dry anelastic, f-plane, periodic sides, specified bottom heat flux, free-slip impermeable boundaries, stable cap; no clouds"))
+metadata["coriolis_model"]="f-plane"; metadata["beta"]=0.0
+metadata["rotation_period_seconds"]=2pi/cfg["rotation_rate"]
+metadata["script_sha256"]=bytes2hex(sha256(read(@__FILE__)))
+metadata["configuration_sha256"]=bytes2hex(sha256(read(args[1])))
 open(joinpath(out,"metadata.toml"),"w") do io; TOML.print(io,metadata); end
+z=((1:Nz).-0.5).*H/Nz; dz=H/Nz
+rho=vec(Array(interior(ref.density))); pressure=vec(Array(interior(ref.pressure)))
+theta_target=theta_ref.(z)
+exner=(pressure./1e5).^(R/cp)
+coolmask=clamp.((z.-zi)./(H-zi),0,1)
+zf=(0:Nz).*dz
+rhof=vcat(rho[1],(rho[1:end-1].+rho[2:end])./2,rho[end])
+spongemask=clamp.((zf.-0.9H)./(0.1H),0,1).^2
+diagnostic_seconds=min(get(cfg,"diagnostic_seconds",cfg["output_seconds"]),cfg["output_seconds"])
+isapprox(cfg["output_seconds"]/diagnostic_seconds,round(cfg["output_seconds"]/diagnostic_seconds)) || error("output_seconds must be a multiple of diagnostic_seconds")
+diagnostic_file=joinpath(out,"diagnostics.csv")
+open(diagnostic_file,"w") do io
+    println(io,"time_seconds,kinetic_energy_J_m2,w_rms_center_m_s,horizontal_rms_m_s,max_abs_w_m_s,theta_column_kg_K_m2,bottom_theta_flux_kg_K_m2_s,relaxation_theta_rate_kg_K_m2_s,relaxation_enthalpy_W_m2,sponge_power_W_m2,buoyancy_power_center_W_m2,vorticity_rms_over_f,theta_variance_K2")
+end
 started=time(); count=Ref(0)
 timings=Tuple{Float64,Float64}[]
 function save_frame(sim)
@@ -64,20 +82,41 @@ function save_frame(sim)
     k=clamp(round(Int,zi/H*Nz),1,Nz)
     uc=Array(interior(u)); vc=Array(interior(v)); wc=Array(interior(w))
     th=Array(interior(thetafield))
-    all(isfinite,th) && all(isfinite,wc) || error("non-finite state")
+    all(isfinite,th) && all(isfinite,wc) && all(isfinite,uc) && all(isfinite,vc) || error("non-finite state")
+    # Face-weighted kinetic energy. Vertical boundary velocities are zero.
+    ke=dz/2*(sum(rho .* vec(mean(uc.^2 .+ vc.^2,dims=(1,2)))) + sum(rhof .* vec(mean(wc.^2,dims=(1,2)))))
+    sponge_power=-dz*sum(rhof .* spongemask .* vec(mean(wc.^2,dims=(1,2))))/cfg["sponge_time"]
+    wcenter=(wc[:,:,1:end-1].+wc[:,:,2:end])./2
+    theta_profile=vec(mean(th,dims=(1,2)))
+    theta_anomaly=th.-reshape(theta_profile,1,1,Nz)
+    theta_column=dz*sum(rho .* theta_profile)
+    relaxation=-coolmask.*(theta_profile.-theta_target)./cfg["cooling_time"]
+    relaxation_theta=dz*sum(rho.*relaxation)
+    relaxation_enthalpy=dz*sum(rho.*cp.*exner.*relaxation)
+    # Resolved transport and buoyancy work, interpolated to cell centers.
+    # These are diagnostics, not the exact discrete WENO flux or a closed KE budget.
+    heat_flux_profile=rho.*cp.*exner.*vec(mean(wcenter.*theta_anomaly,dims=(1,2)))
+    buoyancy_power=dz*sum(rho.*g.*vec(mean(wcenter.*(1 .- reshape(theta_target,1,1,Nz)./th),dims=(1,2))))
+    theta_gradient=vcat((theta_profile[2]-theta_profile[1])/dz,(theta_profile[3:end].-theta_profile[1:end-2])./(2dz),(theta_profile[end]-theta_profile[end-1])/dz)
+    diffusive_heat_flux_profile=-rho.*cp.*exner.*cfg["thermal_diffusivity"].*theta_gradient
     uc=(uc+circshift(uc,(-1,0,0)))/2; vc=(vc+circshift(vc,(0,-1,0)))/2
     zeta=(circshift(vc,(-1,0,0))-circshift(vc,(1,0,0)))/(2Lx/Nx) - (circshift(uc,(0,-1,0))-circshift(uc,(0,1,0)))/(2Ly/Ny)
+    values=(m.clock.time,ke,sqrt(mean(abs2,wcenter)),sqrt(mean(uc.^2 .+ vc.^2)),maximum(abs,wc),theta_column,flux,relaxation_theta,relaxation_enthalpy,sponge_power,buoyancy_power,sqrt(mean(abs2,zeta))/abs(f),mean(abs2,theta_anomaly))
+    all(isfinite,values) || error("non-finite diagnostic")
+    open(diagnostic_file,"a") do io; println(io,join(values,",")); end
+    save_output=isapprox(m.clock.time/cfg["output_seconds"],round(m.clock.time/cfg["output_seconds"]);atol=1e-8) || m.clock.time >= cfg["stop_seconds"]
+    save_output || return nothing
     file=joinpath(out,@sprintf("frame_%05d.jld2",count[]))
     jldsave(file; t=m.clock.time, u=uc[:,:,k],v=vc[:,:,k],w=wc[:,:,k],zeta=zeta[:,:,k],
        theta=th[:,:,k],theta_xz=th[:,Ny÷2,:],w_xz=wc[:,Ny÷2,:],
-       theta_profile=vec(mean(th,dims=(1,2))),w_rms=sqrt(mean(abs2,wc)),
-       x=((1:Nx).-0.5).*Lx/Nx, z=((1:Nz).-0.5).*H/Nz,
-       pressure=vec(Array(interior(ref.pressure))), density=vec(Array(interior(ref.density))))
+       theta_profile,w_rms=sqrt(mean(abs2,wc)),heat_flux_profile,diffusive_heat_flux_profile,
+       kinetic_energy=ke,relaxation_theta,relaxation_enthalpy,sponge_power,buoyancy_power,
+       x=((1:Nx).-0.5).*Lx/Nx,z,pressure,density=rho)
     @printf("frame=%d t=%.1fs iter=%d dt=%.3fs maxw=%.4g wall=%.1fs\n",count[],m.clock.time,m.clock.iteration,sim.Δt,maximum(abs,wc),time()-started)
     push!(timings,(Float64(m.clock.time),time()-started))
     flush(stdout);count[]+=1
 end
-add_callback!(sim,save_frame,TimeInterval(cfg["output_seconds"]))
+add_callback!(sim,save_frame,TimeInterval(diagnostic_seconds))
 run!(sim)
 metadata["status"]="COMPLETE";metadata["wall_seconds"]=time()-started
 metadata["iterations"]=model.clock.iteration;metadata["simulated_seconds"]=model.clock.time
@@ -88,4 +127,6 @@ end
 open(joinpath(out,"metadata.toml"),"w") do io;TOML.print(io,metadata);end
 
 end
-main()
+if abspath(PROGRAM_FILE) == abspath(@__FILE__)
+    main()
+end

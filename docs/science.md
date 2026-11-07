@@ -1,8 +1,8 @@
 # Scientific rationale and comparison plan
 
-The target is sustained morphology: folded filaments, interacting lobes, embedded eddies, and intermittent convective outbreaks in cyclonic regions. GOFLOW training is outside this project's scope.
+The target is sustained morphology: folded filaments, interacting lobes, embedded eddies, and intermittent convective outbreaks in cyclonic regions.
 
-Rapidly rotating Rayleigh–Bénard convection is a substantive baseline: it already supports upscale energy transfer and organized large vortices. The alternative hypothesis is that density stratification, upper-layer stability, background shear, and eventually Jovian moist convection improve FFR morphology at practical cost.
+The objective is to establish whether Breeze can sustain convectively driven flow and reproduce FFR-like morphology. Density stratification, upper-layer stability, cyclonic shear, and Jovian moist convection are candidate ingredients to test individually and together.
 
 ## Sequence
 
@@ -11,7 +11,7 @@ Rapidly rotating Rayleigh–Bénard convection is a substantive baseline: it alr
 3. Vary stable-layer structure and domain width; establish resolution and numerical-diffusion sensitivity.
 4. Add cyclonic shear and a shear-only control. Track external energy input from the prescribed forcing.
 5. Introduce water thermodynamics only after testing heavy-vapor buoyancy and condensation in a hydrogen–helium atmosphere. Earth microphysics is not assumed portable unchanged.
-6. Compare with the existing RBC implementation when available. Match useful nondimensional measures and display the same diagnostic or passive tracer at the same resolution; do not treat different Rayleigh-number definitions as equivalent.
+6. Compare against observed FFR morphology across multiple seeds and resolutions. Record runtime and memory to guide feasible parameter studies.
 
 ## Morphology benchmark
 
@@ -26,14 +26,11 @@ Explicit diffusivities are numerical model parameters, not Jupiter's molecular d
 ## Reading
 
 - [Breeze Yin–Yang PR #1103](https://github.com/NumericalEarth/Breeze.jl/pull/1103)
-- [Rubio et al., upscale energy transfer](https://doi.org/10.1103/PhysRevLett.112.144501)
-- [Guervilly et al., large-scale vortices in rotating RBC](https://arxiv.org/abs/1403.7442)
 - [Fletcher et al., observed FFR structure](https://doi.org/10.1029/2025JE009315)
 - [Hyder et al., FFR morphology in shallow water](https://arxiv.org/abs/2206.08475)
 - [Sankar et al., shear and vapor transport](https://doi.org/10.3847/PSJ/adcc21)
 - [Leconte et al., heavy-condensable inhibition](https://doi.org/10.1051/0004-6361/201629140)
-- [Julien et al., efficient rapidly rotating convection](https://doi.org/10.1016/j.jcp.2025.114274)
 
 ## Initial nondimensional regime
 
-Using the 80-km convecting depth, prescribed lower-layer buoyancy frequency squared of −10⁻⁷ s⁻², and explicit viscosity/diffusivity of 1,000 m²/s gives nominal Ra ≈ 4.1 × 10⁶, Ek = ν/(fH²) ≈ 5.4 × 10⁻⁴, Pr = 1, and convective Rossby number √(−N²)/f ≈ 1.1. These are local dry-layer estimates in a stratified atmosphere, not a matched RBC benchmark. The first pilot is therefore not in the asymptotic rapidly rotating limit. Varying superadiabaticity and diffusivity is necessary before claiming an advantage over rapidly rotating RBC. Numerical advection also contributes effective diffusion.
+Using the 80-km convecting depth, prescribed lower-layer buoyancy frequency squared of −10⁻⁷ s⁻², and explicit viscosity/diffusivity of 1,000 m²/s gives nominal Ra ≈ 4.1 × 10⁶, Ek = ν/(fH²) ≈ 5.4 × 10⁻⁴, Pr = 1, and convective Rossby number √(−N²)/f ≈ 1.1. These are local dry-layer estimates in a stratified atmosphere. The first pilot is therefore not in the asymptotic rapidly rotating limit. Varying superadiabaticity and diffusivity will test stronger rotational constraint. Numerical advection also contributes effective diffusion.
