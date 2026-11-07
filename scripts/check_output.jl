@@ -20,7 +20,7 @@ elseif m["name"] == "heating"
     expected=m["heat_flux"]/(m["heat_capacity"]*exner)*(final["t"]-initial["t"])
     @test change > 0
     @test isapprox(change,expected;rtol=0.01)
-else
+elseif m["perturbation"] > 0
     @test final["w_rms"] > 0
 end
 println("Output checks passed: ",root)

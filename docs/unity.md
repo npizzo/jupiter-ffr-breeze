@@ -16,3 +16,5 @@ Inspect `sacct` MaxRSS, elapsed time, GPU model, and actual usage before allocat
 The runtime download must come from the official Julia distribution and match its published SHA-256. Keep the generated Manifest.toml with the project for reproducibility.
 
 The controlled 48-hour campaign uses `sbatch slurm/convection48.sbatch`. It first validates the added diagnostics, then runs four cases sequentially within one GPU allocation. See [experiment design](convection48.md). Analyze downloaded output with `python scripts/analyze_convection.py data/convection48-v1 --output gallery/convection48`.
+
+For the revised upper-sink and stable-cap experiment, use `sbatch slurm/controlled48.sbatch`. It requests one GPU and 45 minutes for validation plus six sequential 48-hour cases, including one vertically refined run. See [the design](controlled48.md).

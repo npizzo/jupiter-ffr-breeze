@@ -46,3 +46,7 @@ Built with [Breeze.jl](https://github.com/NumericalEarth/Breeze.jl) and [Oceanan
 Four 48-hour experiments compare bottom heating on/off at two initial temperature-perturbation amplitudes (0.2 and 0.02 K; actual seeded noise is smaller than these amplitude parameters). The grid, reference stratification, and seed are identical. These runs isolate dependence on the imposed bottom heat flux from the initial instability. See [experiment design](docs/convection48.md).
 
 All current runs use a **traditional f-plane**, not a beta plane: Ω = 1.7585 × 10⁻⁴ s⁻¹, latitude 55°N, f = 2.88096 × 10⁻⁴ s⁻¹, beta = 0. Jupiter’s rotation rate stays fixed. Rotational dominance must be diagnosed from the flow; the initial convective Rossby number is about 1.1.
+
+## Revised forcing experiment
+
+The [next controlled experiment](docs/controlled48.md) replaces reference-profile relaxation with a prescribed upper heat sink and reduces thermal mixing across the stable cap. It repeats the heating controls and adds an unforced case and a vertical-resolution check. The model and geometry remain dry anelastic on the same Jovian f-plane.
