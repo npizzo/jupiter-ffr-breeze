@@ -1,0 +1,161 @@
+{
+  "status": "COMPLETE",
+  "gpu": "NVIDIA L40S",
+  "batch_elapsed_seconds": 593,
+  "batch_max_host_rss_kib": 5910844,
+  "slurm_sampled_gpu_memory_max_mib": 776,
+  "gpu_memory_note": "Slurm samples usage and may miss short peaks; not a guaranteed VRAM requirement.",
+  "whole_domain_max_abs_w_from_log_m_per_s": 20.79,
+  "frames": [
+    {
+      "time_seconds": 0.0,
+      "w_rms": 0.0,
+      "slice_max_abs_w": 0.0,
+      "slice_max_abs_vorticity_over_f": 0.0
+    },
+    {
+      "time_seconds": 600.0,
+      "w_rms": 0.6088627298540497,
+      "slice_max_abs_w": 3.171486933166476,
+      "slice_max_abs_vorticity_over_f": 0.0027668735179064343
+    },
+    {
+      "time_seconds": 1200.0,
+      "w_rms": 1.0998697285239287,
+      "slice_max_abs_w": 5.77800447178907,
+      "slice_max_abs_vorticity_over_f": 0.012828279117427361
+    },
+    {
+      "time_seconds": 1800.0,
+      "w_rms": 1.4587314199196666,
+      "slice_max_abs_w": 7.696719192621944,
+      "slice_max_abs_vorticity_over_f": 0.03000785292983391
+    },
+    {
+      "time_seconds": 2400.0,
+      "w_rms": 1.7018825920230911,
+      "slice_max_abs_w": 8.778409818494971,
+      "slice_max_abs_vorticity_over_f": 0.051880742417532016
+    },
+    {
+      "time_seconds": 3000.0,
+      "w_rms": 1.862928104734713,
+      "slice_max_abs_w": 10.25999758278889,
+      "slice_max_abs_vorticity_over_f": 0.07742869768270287
+    },
+    {
+      "time_seconds": 3600.0,
+      "w_rms": 1.97546206962536,
+      "slice_max_abs_w": 11.724837838360278,
+      "slice_max_abs_vorticity_over_f": 0.10639454270746407
+    },
+    {
+      "time_seconds": 4200.0,
+      "w_rms": 2.065329141318789,
+      "slice_max_abs_w": 13.17470017316049,
+      "slice_max_abs_vorticity_over_f": 0.14018470744004616
+    },
+    {
+      "time_seconds": 4800.0,
+      "w_rms": 2.150031993591957,
+      "slice_max_abs_w": 14.602540582902023,
+      "slice_max_abs_vorticity_over_f": 0.18276957940142124
+    },
+    {
+      "time_seconds": 5400.0,
+      "w_rms": 2.2409166846398794,
+      "slice_max_abs_w": 16.337881430426034,
+      "slice_max_abs_vorticity_over_f": 0.265330672551762
+    },
+    {
+      "time_seconds": 6000.0,
+      "w_rms": 2.343442474349901,
+      "slice_max_abs_w": 18.263269535028275,
+      "slice_max_abs_vorticity_over_f": 0.46226497783421583
+    },
+    {
+      "time_seconds": 6600.0,
+      "w_rms": 2.457364029924288,
+      "slice_max_abs_w": 19.620145867243007,
+      "slice_max_abs_vorticity_over_f": 0.782857267520573
+    },
+    {
+      "time_seconds": 7200.0,
+      "w_rms": 2.578177373477052,
+      "slice_max_abs_w": 19.00490036169927,
+      "slice_max_abs_vorticity_over_f": 1.421122677802319
+    },
+    {
+      "time_seconds": 7800.0,
+      "w_rms": 2.6993292661246833,
+      "slice_max_abs_w": 15.908444822105315,
+      "slice_max_abs_vorticity_over_f": 1.5781122712060915
+    },
+    {
+      "time_seconds": 8400.0,
+      "w_rms": 2.8146456418044625,
+      "slice_max_abs_w": 15.132430620524074,
+      "slice_max_abs_vorticity_over_f": 1.780945910532771
+    },
+    {
+      "time_seconds": 9000.0,
+      "w_rms": 2.9182385611986237,
+      "slice_max_abs_w": 13.992990637046587,
+      "slice_max_abs_vorticity_over_f": 1.7308980081751824
+    },
+    {
+      "time_seconds": 9600.0,
+      "w_rms": 3.0037160894891337,
+      "slice_max_abs_w": 13.167941054614511,
+      "slice_max_abs_vorticity_over_f": 1.5668942757369555
+    },
+    {
+      "time_seconds": 10200.0,
+      "w_rms": 3.067283478104646,
+      "slice_max_abs_w": 12.364060663133706,
+      "slice_max_abs_vorticity_over_f": 1.6863428568121928
+    },
+    {
+      "time_seconds": 10800.0,
+      "w_rms": 3.106607185789989,
+      "slice_max_abs_w": 11.568073906467102,
+      "slice_max_abs_vorticity_over_f": 1.5847682459976316
+    },
+    {
+      "time_seconds": 11400.0,
+      "w_rms": 3.11957197155954,
+      "slice_max_abs_w": 11.708746103045629,
+      "slice_max_abs_vorticity_over_f": 1.5538134253423599
+    },
+    {
+      "time_seconds": 12000.0,
+      "w_rms": 3.1054340340809325,
+      "slice_max_abs_w": 11.928659680550803,
+      "slice_max_abs_vorticity_over_f": 1.4414442297957444
+    },
+    {
+      "time_seconds": 12600.0,
+      "w_rms": 3.064595067168241,
+      "slice_max_abs_w": 11.497790438933707,
+      "slice_max_abs_vorticity_over_f": 1.3754454505568652
+    },
+    {
+      "time_seconds": 13200.0,
+      "w_rms": 2.998638549744448,
+      "slice_max_abs_w": 10.976262018296401,
+      "slice_max_abs_vorticity_over_f": 1.2962136363590213
+    },
+    {
+      "time_seconds": 13800.0,
+      "w_rms": 2.9104031635820293,
+      "slice_max_abs_w": 10.790851348365791,
+      "slice_max_abs_vorticity_over_f": 1.250654321514371
+    },
+    {
+      "time_seconds": 14400.0,
+      "w_rms": 2.8037507428429262,
+      "slice_max_abs_w": 10.699218749535977,
+      "slice_max_abs_vorticity_over_f": 1.254471082544487
+    }
+  ]
+}

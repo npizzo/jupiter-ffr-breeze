@@ -2,9 +2,9 @@
 
 Regional, bottom-heated, rotating convection experiments for exploring whether atmospheric stratification and shear improve folded filamentary region (FFR) morphology over rapidly rotating Rayleigh–Bénard convection.
 
-**Status:** preliminary implementation and validation. No claim of reproducing Jupiter's FFRs or outperforming an RBC solver.
+**Status:** CPU rest/heating checks, CPU–GPU agreement, and a four-hour GPU convection pilot have passed on Unity. The pilot shows convective columns, not established FFR morphology. No claim of outperforming an RBC solver.
 
-[Output gallery](gallery/README.md) · [Scientific plan](docs/science.md) · [Unity instructions](docs/unity.md)
+[Output gallery](gallery/README.md) · [Validation results](docs/results.md) · [Scientific plan](docs/science.md) · [Unity instructions](docs/unity.md)
 
 ## Initial configuration
 

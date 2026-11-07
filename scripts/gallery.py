@@ -21,9 +21,13 @@ for file in files:
   ax.set(title=title,xlabel='x [km]',ylabel='z [km]' if j==3 else 'y [km]');fig.colorbar(im,ax=ax,shrink=.8)
  fig.suptitle(f"{m['name']} | t = {t/3600:.2f} h | dry anelastic pilot\n{m['nx']} × {m['ny']} × {m['nz']} | {m['architecture']} | autoscaled panels")
  fn=dest/(file.stem+'.png');fig.savefig(fn,dpi=110);plt.close(fig);frames.append(fn)
-Image.open(frames[-1]).save(dest/'latest.png')
-ims=[Image.open(f).convert('RGB') for f in frames]
-ims[0].save(dest/'evolution.gif',save_all=True,append_images=ims[1:],duration=200,loop=0)
+Image.open(frames[-1]).convert('RGB').resize((750,600),Image.Resampling.LANCZOS).quantize(colors=64,dither=Image.Dither.NONE).save(dest/'latest.png',optimize=True)
+# A compact animation preview; retain the full-resolution final PNG and frames.
+stride=4 if len(frames)>12 else 1
+preview_frames=frames[::stride]
+if preview_frames[-1] != frames[-1]: preview_frames.append(frames[-1])
+ims=[Image.open(f).convert('RGB').resize((400,320),Image.Resampling.LANCZOS).quantize(colors=32,dither=Image.Dither.NONE) for f in preview_frames]
+ims[0].save(dest/'evolution.gif',save_all=True,append_images=ims[1:],duration=200*stride,loop=0)
 (dest/'metadata.json').write_text(json.dumps(m,indent=2)+'\n')
 (dest/'README.md').write_text(f"# {m['name']}\n\nActual solver output. Status: **{m['status']}**. This is an engineering / convection test, not a demonstrated FFR.\n\n![Final snapshot](latest.png)\n\n![Evolution](evolution.gif)\n\nPanels autoscale independently in each frame; compare amplitudes using the color bars. [Run parameters](metadata.json).\n")
 print(dest)

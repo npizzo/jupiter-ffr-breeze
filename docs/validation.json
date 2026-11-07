@@ -1,0 +1,46 @@
+{
+  "cpu-rest": {
+    "max_vertical_velocity": 1.571840710043801e-29,
+    "rms_vertical_velocity": 6.379774675740539e-30,
+    "min_reference_pressure": 92641.94545997489,
+    "max_reference_pressure": 1912977.9731693896,
+    "density_contrast": 9.237320310097923
+  },
+  "cpu-heating": {
+    "max_vertical_velocity": 1.1266570187334217e-23,
+    "rms_vertical_velocity": 5.206293574417361e-24,
+    "min_reference_pressure": 92641.94545997489,
+    "max_reference_pressure": 1912977.9731693896,
+    "density_contrast": 9.237320310097923,
+    "heat_budget_relative_error": -2.990487435461375e-08
+  },
+  "cpu-smoke": {
+    "max_vertical_velocity": 0.06827876065689001,
+    "rms_vertical_velocity": 0.018613717337464745,
+    "min_reference_pressure": 92547.3515546358,
+    "max_reference_pressure": 1912977.5450215274,
+    "density_contrast": 9.241268724774988
+  },
+  "cpu_gpu_short_trajectory": {
+    "theta": {
+      "max_absolute_difference": 4.547473508864641e-13,
+      "relative_l2_difference": 1.2526244678697066e-15
+    },
+    "u": {
+      "max_absolute_difference": 1.2343858574181965e-13,
+      "relative_l2_difference": 4.366175650245349e-12
+    },
+    "v": {
+      "max_absolute_difference": 1.2084951095392427e-13,
+      "relative_l2_difference": 4.3597306671138535e-12
+    },
+    "w": {
+      "max_absolute_difference": 2.695465378677042e-13,
+      "relative_l2_difference": 6.151669460215903e-12
+    },
+    "zeta": {
+      "max_absolute_difference": 9.085751848282456e-21,
+      "relative_l2_difference": 3.0246173218991125e-12
+    }
+  }
+}
