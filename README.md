@@ -64,3 +64,7 @@ The [new comparison](docs/turbulence48.md) starts all three thermal-forcing case
 ## Enhanced forcing campaign
 
 The [stronger-convection comparison](docs/strong48.md) raises heating to 30× and 100× baseline, with matching cooling-only controls and a horizontally refined 100× pair. All six cases completed; see [results](docs/strong48-results.md) and [snapshots](gallery/strong48/README.md). These fluxes are idealized sensitivity choices, not inferred Jovian heat fluxes.
+
+## Five-day 30× experiment
+
+A [longer 30× campaign](docs/convection120.md) is running on Unity: matched heated/cooling-only pairs on 256 × 256 × 64 and 256 × 256 × 128 grids, for 120 Earth hours. Future result galleries include vorticity-evolution videos as well as snapshots.
