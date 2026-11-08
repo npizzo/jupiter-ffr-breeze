@@ -2,9 +2,9 @@
 
 Regional, bottom-heated, rotating convection experiments to determine whether Breeze.jl can reproduce the dynamics and morphology of Jupiter’s folded filamentary regions (FFRs).
 
-**Status:** Three matched Rossby-0.1 turbulence runs are complete, following the neutral-layer tests. At 5.4 W/m² over 48 hours, bottom heating changes second-day kinetic energy by +0.117% relative to the cooling-only control. Snapshots, spectra and comparisons are published; strong convective modification and FFR dynamics are not established.
+**Status:** Six stronger-heating runs completed. At 30× and 100× baseline forcing, convection increases second-day vertical RMS speed to 1.15–2.07 m/s, versus about 0.12 m/s in matched cooling-only controls. Bulk convection is clear; fine-scale vorticity is resolution-sensitive and FFR morphology remains unestablished.
 
-[Output gallery](gallery/README.md) · [Latest results](docs/turbulence48-results.md) · [Initial validation](docs/results.md) · [Scientific plan](docs/science.md) · [Unity instructions](docs/unity.md)
+[Output gallery](gallery/README.md) · [Latest results](docs/strong48-results.md) · [Initial validation](docs/results.md) · [Scientific plan](docs/science.md) · [Unity instructions](docs/unity.md)
 
 ## Initial configuration
 
@@ -63,4 +63,4 @@ The [new comparison](docs/turbulence48.md) starts all three thermal-forcing case
 
 ## Enhanced forcing campaign
 
-The [stronger-convection comparison](docs/strong48.md) raises heating to 30× and 100× baseline, with matching cooling-only controls and a horizontally refined 100× pair. This campaign is submitted on Unity; completed baseline galleries remain available. These fluxes are idealized sensitivity choices, not inferred Jovian heat fluxes.
+The [stronger-convection comparison](docs/strong48.md) raises heating to 30× and 100× baseline, with matching cooling-only controls and a horizontally refined 100× pair. All six cases completed; see [results](docs/strong48-results.md) and [snapshots](gallery/strong48/README.md). These fluxes are idealized sensitivity choices, not inferred Jovian heat fluxes.

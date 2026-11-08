@@ -69,6 +69,11 @@ def main():
             ax.set(title=f"{h} h",xlabel="x [km]",ylabel="y [km]")
         fig.colorbar(im,ax=list(axes),shrink=.8,label="ζ/f near 20 km");fig.suptitle(label+": heated vorticity, fixed scale")
         save_figure(fig,dest,tag+"_heated_vorticity")
+    coarse=summary["cases"]["strong48_f100_heated"]
+    fine=summary["cases"]["strong48_f100_heated_h256"]
+    summary["horizontal_refinement"]={key+"_change_percent":100*(fine[key]/coarse[key]-1) for key in
+        ("late_mean_ke_J_m2", "late_mean_w_rms_m_s", "late_mean_vorticity_rms_over_f",
+         "final_max_upward_convective_heat_flux_W_m2")}
     (dest/"summary.json").write_text(json.dumps(summary,indent=2,allow_nan=False)+"\n")
     fig,axes=plt.subplots(2,3,figsize=(13,7),layout="constrained")
     for col,(cases,(_,label,_)) in enumerate(zip(pairs,GROUPS)):

@@ -1,0 +1,14 @@
+{
+  "job_id": "66919897",
+  "state": "COMPLETED",
+  "elapsed": "00:42:07",
+  "elapsed_seconds": 2527,
+  "gpu": "NVIDIA L40S",
+  "gpus": 1,
+  "requested_cpus": 4,
+  "requested_host_memory_GB": 16,
+  "slurm_batch_MaxRSS": "4284360K",
+  "simulation_hours_each": 48,
+  "cases": 6,
+  "note": "Slurm MaxRSS is host memory, not GPU memory."
+}

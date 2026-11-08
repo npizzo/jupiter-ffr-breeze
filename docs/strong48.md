@@ -33,3 +33,5 @@ Existing continuity, initial-amplitude, finite-field and thermal-inventory check
 Submit `sbatch slurm/strong48.sbatch`. The six cases run sequentially on one L40S, with four CPUs, 16 GB host memory, and a two-hour time limit. The larger host-memory request covers the 256² horizontal grids. Output is isolated in `data/strong48-v1`; completed baseline results are preserved.
 
 Analysis entry point: `python scripts/analyze_strong.py data/strong48-v1 --output gallery/strong48`. The campaign must complete before the full comparison runs. It produces paired metrics, spectra, common-scale final sections and vorticity maps, and time-sequence snapshots.
+
+All six runs completed and passed validation. See [results](strong48-results.md) and [snapshots](../gallery/strong48/README.md).

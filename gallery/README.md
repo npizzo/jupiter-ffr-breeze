@@ -2,6 +2,14 @@
 
 Figures below are generated from saved Breeze fields. They are preliminary numerical tests, not a reproduction of Jupiter's folded filamentary regions.
 
+## Stronger convection: six completed runs
+
+30× and 100× heating produce vigorous convective columns and a large change relative to cooling-only controls. The finer 100× run gives similar bulk vertical speeds but substantially stronger vorticity.
+
+[Snapshots and data](strong48/README.md) · [Interpretation](../docs/strong48-results.md)
+
+![Stronger-convection snapshots](strong48/f100_h256_heated_snapshots.png)
+
 ## Seeded turbulence: three completed thermal-forcing controls
 
 Identical initial Rossby-0.1 velocity fields isolate the incremental effect of bottom heating. Changes in second-day bulk energy and vertical speed are small over 48 hours.
