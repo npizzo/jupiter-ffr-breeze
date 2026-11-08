@@ -2,9 +2,13 @@
 
 Figures below are generated from saved Breeze fields. They are preliminary numerical tests, not a reproduction of Jupiter's folded filamentary regions.
 
-## Next campaign: longer integrations and beta
+## Twenty-day runs: interim thermal finding
 
-[Design and diagnostics](../docs/regional20.md). Future results include matched beta/f-plane vorticity movies and depth-averaged spectral-transfer diagnostics. No production results are available yet.
+Three long runs completed. Part of the cap loses stability late in the integration, complicating inverse-cascade interpretation; beta changes final-day bulk energy by about 1%. Horizontal-resolution comparisons are still underway.
+
+[Interim figure and interpretation](regional20-interim/README.md) · [Campaign design](../docs/regional20.md)
+
+![Thermal evolution](regional20-interim/thermal_evolution.png)
 
 ## Five-day 30× convection: completed, with videos
 

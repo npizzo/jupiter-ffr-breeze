@@ -1,0 +1,218 @@
+{
+  "regional20_channel_beta": {
+    "status": "COMPLETE",
+    "windows": {
+      "240": {
+        "kinetic_energy_J_m2": 195776.2933209869,
+        "w_rms_center_m_s": 1.252173570317505,
+        "vorticity_rms_over_f": 0.5928238774266531,
+        "horizontal_rms_m_s": 1.5275737705557515,
+        "cap_mean_profile_departure_rms_K": 1.1720212146179145,
+        "buoyancy_power_center_W_m2": 21.2930122181554
+      },
+      "480": {
+        "kinetic_energy_J_m2": 368477.86219596764,
+        "w_rms_center_m_s": 2.0127536501656427,
+        "vorticity_rms_over_f": 0.847080339219739,
+        "horizontal_rms_m_s": 2.2194709213792816,
+        "cap_mean_profile_departure_rms_K": 2.3321539951395938,
+        "buoyancy_power_center_W_m2": 51.96230368093372
+      }
+    },
+    "frames": {
+      "0": {
+        "cap_min_N2": 2.2920258960385393e-05,
+        "cap_negative_N2_levels_km": [],
+        "barotropic_ke_specific": 0.18770757741261157,
+        "depth_dependent_horizontal_ke_specific": 0.566987327888272,
+        "zonal_mean_fraction": 0.15847195923713514
+      },
+      "120": {
+        "cap_min_N2": 1.4935659151562234e-05,
+        "cap_negative_N2_levels_km": [],
+        "barotropic_ke_specific": 0.32160579006100065,
+        "depth_dependent_horizontal_ke_specific": 1.1002680715025084,
+        "zonal_mean_fraction": 0.02553520002984964
+      },
+      "240": {
+        "cap_min_N2": 4.904093877061969e-06,
+        "cap_negative_N2_levels_km": [],
+        "barotropic_ke_specific": 0.31196654560707726,
+        "depth_dependent_horizontal_ke_specific": 1.161862567329401,
+        "zonal_mean_fraction": 0.032926021164581105
+      },
+      "360": {
+        "cap_min_N2": -6.225522596245738e-08,
+        "cap_negative_N2_levels_km": [
+          90.9375,
+          92.8125,
+          94.6875,
+          96.5625
+        ],
+        "barotropic_ke_specific": 0.30915734254357397,
+        "depth_dependent_horizontal_ke_specific": 1.1475371595197217,
+        "zonal_mean_fraction": 0.04988636716631422
+      },
+      "480": {
+        "cap_min_N2": -4.515065514502962e-08,
+        "cap_negative_N2_levels_km": [
+          81.5625,
+          83.4375,
+          85.3125,
+          87.1875,
+          89.0625,
+          90.9375,
+          92.8125,
+          94.6875
+        ],
+        "barotropic_ke_specific": 0.7433345629435661,
+        "depth_dependent_horizontal_ke_specific": 4.000194686338938,
+        "zonal_mean_fraction": 0.03693609504327072
+      }
+    }
+  },
+  "regional20_channel_f": {
+    "status": "COMPLETE",
+    "windows": {
+      "240": {
+        "kinetic_energy_J_m2": 195015.19718555242,
+        "w_rms_center_m_s": 1.2501177005694386,
+        "vorticity_rms_over_f": 0.5937470485212937,
+        "horizontal_rms_m_s": 1.5188773124314678,
+        "cap_mean_profile_departure_rms_K": 1.1720187216614495,
+        "buoyancy_power_center_W_m2": 21.335358602428556
+      },
+      "480": {
+        "kinetic_energy_J_m2": 364857.58326888917,
+        "w_rms_center_m_s": 2.0136231612541167,
+        "vorticity_rms_over_f": 0.8412959564867094,
+        "horizontal_rms_m_s": 2.1961933394148994,
+        "cap_mean_profile_departure_rms_K": 2.3321561545465235,
+        "buoyancy_power_center_W_m2": 51.94758829792298
+      }
+    },
+    "frames": {
+      "0": {
+        "cap_min_N2": 2.2920258960385393e-05,
+        "cap_negative_N2_levels_km": [],
+        "barotropic_ke_specific": 0.18770757741261157,
+        "depth_dependent_horizontal_ke_specific": 0.566987327888272,
+        "zonal_mean_fraction": 0.15847195923713514
+      },
+      "120": {
+        "cap_min_N2": 1.493586752528085e-05,
+        "cap_negative_N2_levels_km": [],
+        "barotropic_ke_specific": 0.3185433074595455,
+        "depth_dependent_horizontal_ke_specific": 1.116287187808508,
+        "zonal_mean_fraction": 0.04003068996078969
+      },
+      "240": {
+        "cap_min_N2": 4.9042389633421255e-06,
+        "cap_negative_N2_levels_km": [],
+        "barotropic_ke_specific": 0.3072689849325263,
+        "depth_dependent_horizontal_ke_specific": 1.13728651383417,
+        "zonal_mean_fraction": 0.04613801109571233
+      },
+      "360": {
+        "cap_min_N2": -6.27749827553152e-08,
+        "cap_negative_N2_levels_km": [
+          90.9375,
+          92.8125,
+          94.6875,
+          96.5625
+        ],
+        "barotropic_ke_specific": 0.2966606448054857,
+        "depth_dependent_horizontal_ke_specific": 1.155920808932043,
+        "zonal_mean_fraction": 0.039453800061701405
+      },
+      "480": {
+        "cap_min_N2": -4.2082192572300604e-08,
+        "cap_negative_N2_levels_km": [
+          81.5625,
+          83.4375,
+          85.3125,
+          87.1875,
+          89.0625,
+          90.9375,
+          92.8125,
+          94.6875
+        ],
+        "barotropic_ke_specific": 0.7438883794783868,
+        "depth_dependent_horizontal_ke_specific": 3.894653772949198,
+        "zonal_mean_fraction": 0.03068924372053237
+      }
+    }
+  },
+  "regional20_periodic_f": {
+    "status": "COMPLETE",
+    "windows": {
+      "240": {
+        "kinetic_energy_J_m2": 194628.05554492914,
+        "w_rms_center_m_s": 1.2445444333999445,
+        "vorticity_rms_over_f": 0.5946062003325989,
+        "horizontal_rms_m_s": 1.5198388964622205,
+        "cap_mean_profile_departure_rms_K": 1.1719621718003808,
+        "buoyancy_power_center_W_m2": 21.406423059582465
+      },
+      "480": {
+        "kinetic_energy_J_m2": 358297.4684027053,
+        "w_rms_center_m_s": 1.9948968540400198,
+        "vorticity_rms_over_f": 0.8404839934474927,
+        "horizontal_rms_m_s": 2.186646773628409,
+        "cap_mean_profile_departure_rms_K": 2.331931419598736,
+        "buoyancy_power_center_W_m2": 51.52614139547875
+      }
+    },
+    "frames": {
+      "0": {
+        "cap_min_N2": 2.2920258960385393e-05,
+        "cap_negative_N2_levels_km": [],
+        "barotropic_ke_specific": 0.17402710634856072,
+        "depth_dependent_horizontal_ke_specific": 0.5785943509346139,
+        "zonal_mean_fraction": 0.0302237618432972
+      },
+      "120": {
+        "cap_min_N2": 1.4937251620964048e-05,
+        "cap_negative_N2_levels_km": [],
+        "barotropic_ke_specific": 0.32670461062481787,
+        "depth_dependent_horizontal_ke_specific": 1.0915935310278635,
+        "zonal_mean_fraction": 0.02616728368778262
+      },
+      "240": {
+        "cap_min_N2": 4.907504521372727e-06,
+        "cap_negative_N2_levels_km": [],
+        "barotropic_ke_specific": 0.31444378721278665,
+        "depth_dependent_horizontal_ke_specific": 1.1238434353023785,
+        "zonal_mean_fraction": 0.021779165717992672
+      },
+      "360": {
+        "cap_min_N2": -6.285640448741307e-08,
+        "cap_negative_N2_levels_km": [
+          90.9375,
+          92.8125,
+          94.6875,
+          96.5625
+        ],
+        "barotropic_ke_specific": 0.30490669985316216,
+        "depth_dependent_horizontal_ke_specific": 1.1499010172979403,
+        "zonal_mean_fraction": 0.025536359160391917
+      },
+      "480": {
+        "cap_min_N2": -4.323901334885182e-08,
+        "cap_negative_N2_levels_km": [
+          81.5625,
+          83.4375,
+          85.3125,
+          87.1875,
+          89.0625,
+          90.9375,
+          92.8125,
+          94.6875
+        ],
+        "barotropic_ke_specific": 0.7211764371071425,
+        "depth_dependent_horizontal_ke_specific": 3.910834245178307,
+        "zonal_mean_fraction": 0.016031669244719257
+      }
+    }
+  }
+}

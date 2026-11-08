@@ -56,3 +56,7 @@ Submit `sbatch slurm/beta-check.sbatch NEW_CHECK_ROOT` first. The production arr
 Final preflight **66937526** completed successfully in 2 minutes 47 seconds on an L40S. Production array **66937528** was submitted with an `afterok` dependency and is now running, with the remaining cases queued at concurrency one. No production outcomes are claimed yet. The preceding preflight 66937496 also passed; the final run repeats validation against the finalized driver. See [exact parameter and launch record](../configs/regional20-parameters.json).
 
 The offline transfer diagnostic passed analytic single-mode and nonzero-triad checks, with conservative nonlinear work and correct Parseval normalization. On actual short channel output, solenoidal projection removed about 8.4 × 10⁻⁶ of retained-mode energy; the high-wavenumber truncation fraction remained below 7 × 10⁻⁷, and total self-transfer residuals were of order 10⁻²³ m²/s³. These validate the preflight calculation, not the accuracy of a future turbulent cascade measurement. Production loss diagnostics must be inspected separately. The channel comparison video was rendered and visually checked for correct labels, signed y coordinates and fixed f₀ normalization.
+
+## Interim finding after the three long runs
+
+All three 20-day runs completed, but part of the stable cap becomes nearly neutral or weakly unstable. The late energy increase therefore cannot be interpreted as an inverse cascade alone. See the [interim comparison](../gallery/regional20-interim/README.md). The finer-grid comparisons remain underway.
