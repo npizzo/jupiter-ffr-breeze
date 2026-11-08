@@ -2,9 +2,13 @@
 
 Figures below are generated from saved Breeze fields. They are preliminary numerical tests, not a reproduction of Jupiter's folded filamentary regions.
 
-## In progress: five-day 30× convection
+## Five-day 30× convection: completed, with videos
 
-The [longer resolution comparison](../docs/convection120.md) is running. Its gallery will include time-stamped vorticity MP4s with a fixed shared color scale, alongside still snapshots. Videos and five-day results are not available yet.
+Sustained convection, matched controls, and a vertical-resolution comparison.
+
+[Vorticity videos, snapshots and data](convection120/README.md) · [Interpretation](../docs/convection120-results.md)
+
+[![128-level vorticity movie poster](convection120/z128_vorticity.png)](convection120/z128_vorticity.mp4)
 
 ## Stronger convection: six completed runs
 

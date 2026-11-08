@@ -1,0 +1,214 @@
+{
+  "duration_hours": 120,
+  "windows_hours": {
+    "day2": [
+      24,
+      48
+    ],
+    "day5": [
+      96,
+      120
+    ]
+  },
+  "cases": {
+    "convection120_f030_heated_h256_z64": {
+      "nx": 256,
+      "ny": 256,
+      "nz": 64,
+      "bottom_heat_flux_W_m2": 162.0,
+      "upper_power_min_W_m2": -162.0,
+      "upper_power_max_W_m2": -162.0,
+      "final_w_rms_m_s": 1.2352463215955374,
+      "peak_w_rms_m_s": 1.9942665218891324,
+      "peak_max_abs_w_m_s": 13.374957195093904,
+      "cap_contrast_retention_82p5_to_117p5_km": 1.002943588129568,
+      "cap_profile_departure_rms_K": 0.6179143261492824,
+      "final_max_upward_convective_heat_flux_W_m2": 127.68249083888551,
+      "final_min_diffusive_heat_flux_W_m2": -1.0827120898036064,
+      "theta_budget_final_residual_kg_K_m2": 1.8820292098098435e-06,
+      "theta_budget_max_abs_residual_kg_K_m2": 1.8820292098098435e-06,
+      "theta_budget_relative_residual": 2.705291363120431e-10,
+      "wall_seconds": 2102.56418299675,
+      "iterations": 14654,
+      "script_sha256": "df36ac032261190feb198ab442be8b633ff0e488d8fb399e1a3bbd79d81f6a7d",
+      "day2": {
+        "kinetic_energy_J_m2": 191128.4220230303,
+        "w_rms_center_m_s": 1.1941930254873012,
+        "vorticity_rms_over_f": 0.5741623386758626,
+        "buoyancy_power_center_W_m2": 20.273726671261212
+      },
+      "day5": {
+        "kinetic_energy_J_m2": 194088.61710040944,
+        "w_rms_center_m_s": 1.2275088331576454,
+        "vorticity_rms_over_f": 0.5895042188753419,
+        "buoyancy_power_center_W_m2": 20.980568654387948
+      },
+      "day5_vs_day2_percent": {
+        "kinetic_energy_J_m2": 1.5487989939154456,
+        "w_rms_center_m_s": 2.789817639133285,
+        "vorticity_rms_over_f": 2.6720457205292814
+      },
+      "final_slice_low_mode_1_2_energy_fraction": 0.01361497600555817,
+      "final_slice_energy_weighted_length_m": 13251.898010530304
+    },
+    "convection120_f030_cooled_h256_z64": {
+      "nx": 256,
+      "ny": 256,
+      "nz": 64,
+      "bottom_heat_flux_W_m2": 0.0,
+      "upper_power_min_W_m2": -162.0,
+      "upper_power_max_W_m2": -162.0,
+      "final_w_rms_m_s": 0.031679023311834024,
+      "peak_w_rms_m_s": 0.22550309690886494,
+      "peak_max_abs_w_m_s": 1.817501722518739,
+      "cap_contrast_retention_82p5_to_117p5_km": 0.9942526060607684,
+      "cap_profile_departure_rms_K": 0.6173544494223491,
+      "final_max_upward_convective_heat_flux_W_m2": 0.0048469832272368335,
+      "final_min_diffusive_heat_flux_W_m2": -2.282305191264979,
+      "theta_budget_final_residual_kg_K_m2": 1.7649790606810711e-06,
+      "theta_budget_max_abs_residual_kg_K_m2": 1.7649790606810711e-06,
+      "theta_budget_relative_residual": 3.8231561907784867e-10,
+      "wall_seconds": 2116.2211558818817,
+      "iterations": 14654,
+      "script_sha256": "df36ac032261190feb198ab442be8b633ff0e488d8fb399e1a3bbd79d81f6a7d",
+      "day2": {
+        "kinetic_energy_J_m2": 19542.216721381446,
+        "w_rms_center_m_s": 0.12264392431035899,
+        "vorticity_rms_over_f": 0.04528690025186482,
+        "buoyancy_power_center_W_m2": -2.755358781435768e-05
+      },
+      "day5": {
+        "kinetic_energy_J_m2": 10579.425952506554,
+        "w_rms_center_m_s": 0.04138354788687333,
+        "vorticity_rms_over_f": 0.03337497538329123,
+        "buoyancy_power_center_W_m2": -0.0003058967920005985
+      },
+      "day5_vs_day2_percent": {
+        "kinetic_energy_J_m2": -45.86373642591203,
+        "w_rms_center_m_s": -66.25715613751125,
+        "vorticity_rms_over_f": -26.303246197741426
+      },
+      "final_slice_low_mode_1_2_energy_fraction": 0.10958368557440037,
+      "final_slice_energy_weighted_length_m": 59615.345824338525
+    },
+    "convection120_f030_heated_h256_z128": {
+      "nx": 256,
+      "ny": 256,
+      "nz": 128,
+      "bottom_heat_flux_W_m2": 162.0,
+      "upper_power_min_W_m2": -162.00000000000006,
+      "upper_power_max_W_m2": -162.00000000000006,
+      "final_w_rms_m_s": 1.2476190369488158,
+      "peak_w_rms_m_s": 1.9881512885923425,
+      "peak_max_abs_w_m_s": 15.089961342717636,
+      "cap_contrast_retention_82p5_to_117p5_km": 0.9986528337369789,
+      "cap_profile_departure_rms_K": 0.6103081145336384,
+      "final_max_upward_convective_heat_flux_W_m2": 125.42873819019954,
+      "final_min_diffusive_heat_flux_W_m2": -1.1701705483571436,
+      "theta_budget_final_residual_kg_K_m2": 1.9283061192254536e-06,
+      "theta_budget_max_abs_residual_kg_K_m2": 1.9283061192254536e-06,
+      "theta_budget_relative_residual": 2.7718013056558214e-10,
+      "wall_seconds": 4084.730623960495,
+      "iterations": 14710,
+      "script_sha256": "df36ac032261190feb198ab442be8b633ff0e488d8fb399e1a3bbd79d81f6a7d",
+      "day2": {
+        "kinetic_energy_J_m2": 197969.44067714503,
+        "w_rms_center_m_s": 1.2281396675399818,
+        "vorticity_rms_over_f": 0.5890528240055632,
+        "buoyancy_power_center_W_m2": 21.269174023953568
+      },
+      "day5": {
+        "kinetic_energy_J_m2": 201562.55931358566,
+        "w_rms_center_m_s": 1.253042271513188,
+        "vorticity_rms_over_f": 0.6018498765403124,
+        "buoyancy_power_center_W_m2": 21.866137524803143
+      },
+      "day5_vs_day2_percent": {
+        "kinetic_energy_J_m2": 1.814986507084404,
+        "w_rms_center_m_s": 2.0276687278643957,
+        "vorticity_rms_over_f": 2.172479616977152
+      },
+      "final_slice_low_mode_1_2_energy_fraction": 0.00928275419607261,
+      "final_slice_energy_weighted_length_m": 13284.341308255083
+    },
+    "convection120_f030_cooled_h256_z128": {
+      "nx": 256,
+      "ny": 256,
+      "nz": 128,
+      "bottom_heat_flux_W_m2": 0.0,
+      "upper_power_min_W_m2": -162.00000000000006,
+      "upper_power_max_W_m2": -162.00000000000006,
+      "final_w_rms_m_s": 0.030751901277346044,
+      "peak_w_rms_m_s": 0.22418819883721713,
+      "peak_max_abs_w_m_s": 1.7757616958498872,
+      "cap_contrast_retention_82p5_to_117p5_km": 0.9916362021700942,
+      "cap_profile_departure_rms_K": 0.6100607264410912,
+      "final_max_upward_convective_heat_flux_W_m2": 0.00021702643511372355,
+      "final_min_diffusive_heat_flux_W_m2": -1.1024616907384606,
+      "theta_budget_final_residual_kg_K_m2": 1.8448072296450846e-06,
+      "theta_budget_max_abs_residual_kg_K_m2": 1.8448072296450846e-06,
+      "theta_budget_relative_residual": 3.9960517915808106e-10,
+      "wall_seconds": 4076.388107061386,
+      "iterations": 14654,
+      "script_sha256": "df36ac032261190feb198ab442be8b633ff0e488d8fb399e1a3bbd79d81f6a7d",
+      "day2": {
+        "kinetic_energy_J_m2": 19217.008972775475,
+        "w_rms_center_m_s": 0.12073321921024274,
+        "vorticity_rms_over_f": 0.044953726969599775,
+        "buoyancy_power_center_W_m2": 1.875858381767753e-05
+      },
+      "day5": {
+        "kinetic_energy_J_m2": 10354.791252158027,
+        "w_rms_center_m_s": 0.039012420402843216,
+        "vorticity_rms_over_f": 0.033297534181739426,
+        "buoyancy_power_center_W_m2": -0.00017284372645740841
+      },
+      "day5_vs_day2_percent": {
+        "kinetic_energy_J_m2": -46.11653006548758,
+        "w_rms_center_m_s": -67.68708673715751,
+        "vorticity_rms_over_f": -25.9293134821567
+      },
+      "final_slice_low_mode_1_2_energy_fraction": 0.10908225203380668,
+      "final_slice_energy_weighted_length_m": 59666.21610342931
+    }
+  },
+  "pairs": {
+    "z64": {
+      "day2_heated_vs_control_percent": {
+        "kinetic_energy_J_m2": 878.028361613213,
+        "w_rms_center_m_s": 873.7074479656349,
+        "vorticity_rms_over_f": 1167.833160323707
+      },
+      "day5_heated_vs_control_percent": {
+        "kinetic_energy_J_m2": 1734.5855245049904,
+        "w_rms_center_m_s": 2866.1759221639995,
+        "vorticity_rms_over_f": 1666.3060784472364
+      },
+      "day5_buoyancy_work_increment_W_m2": 20.980874551179948
+    },
+    "z128": {
+      "day2_heated_vs_control_percent": {
+        "kinetic_energy_J_m2": 930.1782184605635,
+        "w_rms_center_m_s": 917.2342587845028,
+        "vorticity_rms_over_f": 1210.3536986019285
+      },
+      "day5_heated_vs_control_percent": {
+        "kinetic_energy_J_m2": 1846.563232470556,
+        "w_rms_center_m_s": 3111.9059996130522,
+        "vorticity_rms_over_f": 1707.4908287664452
+      },
+      "day5_buoyancy_work_increment_W_m2": 21.8663103685296
+    }
+  },
+  "vertical_refinement_day5_percent": {
+    "kinetic_energy_J_m2": 3.850788534038374,
+    "w_rms_center_m_s": 2.0801022091108123,
+    "vorticity_rms_over_f": 2.0942441580017235
+  },
+  "horizontal_refinement_day2_percent": {
+    "kinetic_energy_J_m2": 6.363957586194791,
+    "w_rms_center_m_s": 3.698617607385968,
+    "vorticity_rms_over_f": 51.65424073852745
+  },
+  "note": "Same seed, grid-dependent sampling; two grids do not establish convergence. Slice spectra do not measure spectral transfer."
+}

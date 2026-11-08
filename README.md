@@ -2,9 +2,9 @@
 
 Regional, bottom-heated, rotating convection experiments to determine whether Breeze.jl can reproduce the dynamics and morphology of Jupiter’s folded filamentary regions (FFRs).
 
-**Status:** Six stronger-heating runs completed. At 30× and 100× baseline forcing, convection increases second-day vertical RMS speed to 1.15–2.07 m/s, versus about 0.12 m/s in matched cooling-only controls. Bulk convection is clear; fine-scale vorticity is resolution-sensitive and FFR morphology remains unestablished.
+**Status:** Four five-day 30× convection runs completed. Heated vertical RMS remains near 1.23–1.25 m/s while controls decay to about 0.04 m/s. Vertical refinement changes bulk statistics by 2–4%; horizontal vorticity remains resolution-sensitive. Videos and snapshots are published; FFR morphology is not established.
 
-[Output gallery](gallery/README.md) · [Latest results](docs/strong48-results.md) · [Initial validation](docs/results.md) · [Scientific plan](docs/science.md) · [Unity instructions](docs/unity.md)
+[Output gallery](gallery/README.md) · [Latest results](docs/convection120-results.md) · [Initial validation](docs/results.md) · [Scientific plan](docs/science.md) · [Unity instructions](docs/unity.md)
 
 ## Initial configuration
 
@@ -67,4 +67,4 @@ The [stronger-convection comparison](docs/strong48.md) raises heating to 30× an
 
 ## Five-day 30× experiment
 
-A [longer 30× campaign](docs/convection120.md) is running on Unity: matched heated/cooling-only pairs on 256 × 256 × 64 and 256 × 256 × 128 grids, for 120 Earth hours. Future result galleries include vorticity-evolution videos as well as snapshots.
+The [longer 30× campaign](docs/convection120.md) completed: matched heated/cooling-only pairs on 256 × 256 × 64 and 256 × 256 × 128 grids, for 120 Earth hours. See [results](docs/convection120-results.md) and [vorticity videos and snapshots](gallery/convection120/README.md).

@@ -1,6 +1,6 @@
 # Five-day 30× convection and resolution experiment
 
-Four simulations are submitted as Unity array **66932767**, one L40S at a time. Each starts from the seeded initial state and runs for **120 Earth hours**; these are fresh integrations, not restarts of the 48-hour output. Output is isolated in `data/convection120-v1`.
+All four simulations completed as Unity array **66932767**, one L40S at a time. Each starts from the seeded initial state and runs for **120 Earth hours**; these are fresh integrations, not restarts of the 48-hour output. Output is isolated in `data/convection120-v1`.
 
 | Array task | Case | Bottom heat input [W/m²] | Upper heat input [W/m²] | Grid |
 |---|---|---:|---:|---|
@@ -40,3 +40,5 @@ python scripts/vorticity_video.py \
 ```
 
 At six frames per second, 121 hourly snapshots yield about 20 seconds per video. The renderer rejects missing frames and mismatched comparison grids/times by default. `--allow-sparse` is for explicitly labeled local previews, not completed gallery movies. Include clickable MP4 links and poster images in the gallery so the files remain usable even where Markdown does not play video inline. Render and inspect the movies before publication; no completed five-day results or movies are claimed at submission.
+
+Completed results: [interpretation](convection120-results.md) and [videos and snapshots](../gallery/convection120/README.md). Public MP4s are compact 800-pixel H.264 viewing copies (CRF 32) of the 1200-pixel renders; no frames are dropped. Full renders remain on Unity.

@@ -1,0 +1,31 @@
+{
+  "array_job_id": "66932767",
+  "state": "COMPLETED",
+  "gpu": "NVIDIA L40S",
+  "concurrency": 1,
+  "elapsed_total_seconds": 12732,
+  "elapsed_total": "03:32:12",
+  "tasks": [
+    {
+      "task": 1,
+      "elapsed": "00:36:34",
+      "MaxRSS": "2607436K"
+    },
+    {
+      "task": 2,
+      "elapsed": "00:36:40",
+      "MaxRSS": "2688112K"
+    },
+    {
+      "task": 3,
+      "elapsed": "01:09:36",
+      "MaxRSS": "3083832K"
+    },
+    {
+      "task": 4,
+      "elapsed": "01:09:22",
+      "MaxRSS": "3109112K"
+    }
+  ],
+  "note": "Elapsed totals include startup and validation. Slurm MaxRSS is host memory, not GPU memory."
+}
