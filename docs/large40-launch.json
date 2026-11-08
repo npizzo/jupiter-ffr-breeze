@@ -61,5 +61,7 @@
       "afterok": "66946548"
     }
   ],
-  "probe_job": "66946541"
+  "probe_job": "66946541",
+  "production_time_limit_hours": 12,
+  "time_limit_reason": "Full-grid H100 probe projects 2.34 h per 10 simulated days; 12 h retains about fivefold margin and enables shorter backfill windows."
 }

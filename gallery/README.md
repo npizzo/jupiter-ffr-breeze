@@ -2,9 +2,9 @@
 
 Figures below are generated from saved Breeze fields. They are preliminary numerical tests, not a reproduction of Jupiter's folded filamentary regions.
 
-## Larger domain and maintained cap: validation and launch
+## Maintained cap: 40-day validation completed
 
-[Campaign design](../docs/large40.md). New results will include three vorticity videos, near 20, 60 and 100 km above the model bottom. The older entries below predate this requirement and have not been reconstructed at missing depths.
+[Three-depth videos and findings](large40-validation/README.md) · [Campaign design](../docs/large40.md). The 40-day small-box cap test and full-size H100 probe passed; production is queued. All new results include videos near 20, 60 and 100 km. Older entries below predate this requirement and cannot be reconstructed at missing depths.
 
 ## Twenty-day runs: interim thermal finding
 

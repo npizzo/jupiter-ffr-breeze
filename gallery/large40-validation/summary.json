@@ -1,0 +1,36 @@
+{
+  "case": "cap40_small_channel",
+  "purpose": "600-km thermal validation; not the 6000-km production run",
+  "status": "COMPLETE",
+  "duration_earth_days": 40.0,
+  "grid": [
+    64,
+    64,
+    64
+  ],
+  "cap_core_min_N2": 2.4975081787327433e-05,
+  "cap_core_min_fraction_initial": 0.9990032714930973,
+  "cap_core_height_range_km": [
+    90,
+    115
+  ],
+  "video_heights_m": [
+    19687.5,
+    59062.5,
+    100312.5
+  ],
+  "last_day_means": {
+    "w_rms_center_m_s": 1.2262588887610804,
+    "horizontal_rms_m_s": 1.4286766874403514,
+    "upper_enthalpy_W_m2": 4.851447140460092,
+    "external_enthalpy_net_W_m2": 166.8514471404601,
+    "cap_contrast_ratio": 0.9898259392572327
+  },
+  "h100_probe": {
+    "note": "Startup throughput estimate; later turbulence may be slower. Runtime cap guard remains active.",
+    "status": "PASS",
+    "minimum_40day_cap_N2": 2.4975081787327433e-05,
+    "estimated_10day_wall_seconds": 8418.112564086914,
+    "estimated_10day_wall_hours": 2.338364601135254
+  }
+}

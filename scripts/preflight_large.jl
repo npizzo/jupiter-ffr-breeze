@@ -55,7 +55,7 @@ mincap=thermal["minimum_40day_cap_N2"]
 probe=experiment("large_grid_probe",Dict("stop_seconds"=>7200.0,"output_seconds"=>3600.0,"diagnostic_seconds"=>3600.0,"checkpoint_seconds"=>7200.0))
 m=TOML.parsefile(joinpath(probe,"metadata.toml"))
 projected10days=m["post_warmup_wall_seconds"]/m["post_warmup_simulated_seconds"]*10*86400
-@test projected10days < 80*3600 # leave 40 h margin within five-day allocation
+@test projected10days < 8*3600 # leave 4 h margin within the 12-hour allocation
 record=Dict("status"=>"PASS","minimum_40day_cap_N2"=>mincap,"estimated_10day_wall_seconds"=>projected10days,
             "note"=>"Startup throughput estimate; later turbulence may be slower. Runtime cap guard remains active.")
 open(joinpath(root,"PASS.toml"),"w") do io; TOML.print(io,record); end

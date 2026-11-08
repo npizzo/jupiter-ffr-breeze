@@ -2,7 +2,7 @@
 
 Regional, bottom-heated, rotating convection experiments to determine whether Breeze.jl can reproduce the dynamics and morphology of Jupiter’s folded filamentary regions (FFRs).
 
-**Status:** Submitted a 6,000-km matched f/beta channel pair with a maintained stable cap, targeting 40 Earth days. Thermal validation is running; production is queued behind successful validation and a full-grid probe. All new results will include vorticity videos at three depths. See the [large-domain design and execution checks](docs/large40.md).
+**Status:** The 40-day small-box cap validation and full-size H100 probe passed. The 6,000-km f/beta production pair is queued. [Three-depth validation movies and findings](gallery/large40-validation/README.md) are available; production results are not yet available.
 
 [Output gallery](gallery/README.md) · [Latest campaign](docs/large40.md) · [Initial validation](docs/results.md) · [Scientific plan](docs/science.md) · [Unity instructions](docs/unity.md)
 

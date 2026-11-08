@@ -44,7 +44,7 @@ Breeze's pinned [radiative convection example](https://github.com/NumericalEarth
 1. Compare the faster, separated horizontal/vertical turbulence construction against the original initializer; check mass-flux divergence, velocity amplitudes and impermeable walls.
 2. Compare an uninterrupted integration against a checkpoint continuation, including the three vorticity slices and depth-averaged fields. A checkpointed callback explicitly preserves the adaptive time-step setting, which is omitted by the pinned Simulation checkpoint implementation.
 3. Run 40 days in an inexpensive 600 × 600 km, 64² × 64 channel. Require the protected cap core to retain at least 50% of its initial mean N², and check the integrated rho-theta source budget using the measured time-dependent cap exchange. This validates the thermal treatment in a small box, not large-domain morphology.
-4. Run a two-hour probe on the actual 1,024² × 64 grid and H100. Check memory, outputs, checkpoints and initial throughput. Require a projected ten-day segment below 80 wall-clock hours, leaving margin within the five-day job limit. Mature turbulence may run more slowly.
+4. Run a two-hour probe on the actual 1,024² × 64 grid and H100. Check memory, outputs, checkpoints and initial throughput. Require a projected ten-day segment below 8 wall-clock hours, leaving margin within the 12-hour job limit. Mature turbulence may run more slowly.
 5. Run the f/beta pair in alternating ten-day segments, with scheduler dependencies preventing continuation after a failed segment. Physics and configuration must agree with the previous segment. The production runtime cap check remains active because a small-box test cannot guarantee large-box stability.
 
 Launch the thermal test with `slurm/large40-thermal.sbatch`, then `slurm/large40-preflight.sbatch` after successful completion. `slurm/large40.sbatch INDEX ROOT PREFLIGHT_ROOT` runs indices 1–8 in order: f10, beta10, f20, beta20, f30, beta30, f40, beta40. Each has a separate output directory and an exact restart from the same case's preceding segment. Existing campaigns use separate files and are unaffected.
@@ -67,7 +67,7 @@ Assess inverse transfer with depth-averaged transfer diagnostics alongside the m
 
 ## Submission record — November 8, 2026
 
-Thermal/restart validation: job **66946536**, running when submitted. Full-size H100 probe: **66946541**, dependent on validation. Production segments: **66946542–66946549**, ordered as in the table below. They are submitted with `afterok` dependencies and cancellation of invalid dependencies; no production segment can start before its predecessors succeed. At this publication, the checks are not yet claimed to have passed, and no new large-domain result is available.
+Thermal/restart validation: job **66946536**, running when submitted. Full-size H100 probe: **66946541**, dependent on validation. Production segments: **66946542–66946549**, ordered as in the table below. They are submitted with `afterok` dependencies and cancellation of invalid dependencies; no production segment can start before its predecessors succeed. The validation and full-size probe have now passed; production is waiting on scheduling priority. See the update below.
 
 | End day | f-plane job | beta-plane job |
 |---|---|---|
@@ -79,3 +79,9 @@ Thermal/restart validation: job **66946536**, running when submitted. Full-size 
 [Machine-readable launch record](large40-launch.json). The initial validation submission was replaced before production to preserve the adaptive time step explicitly across checkpoints. Raw records remain on Unity.
 
 For a fresh campaign, `bash scripts/submit_large.sh NEW_PRODUCTION_ROOT NEW_PREFLIGHT_ROOT` submits the complete dependency chain. This does not imply the scientific outcome is known: failed stability, restart, budget or throughput tests block production.
+
+## Validation update — November 8, 2026
+
+Both gates completed: thermal job 66946536 took 18 minutes 48 seconds including startup and restart tests; full-grid H100 probe 66946541 took 5 minutes 34 seconds. The 40-day small-box test retained at least 99.90% of initial protected-core mean-profile N². See [all three vorticity movies and the heat-budget interpretation](../gallery/large40-validation/README.md).
+
+The H100 probe's measured post-startup rate projects 2.34 wall-clock hours per ten simulated days. All eight production allocations were shortened to 12 hours (about fivefold margin), and the future-launch throughput gate tightened accordingly. This changes the scheduling request, not the physical integrations. At this update the first production segment is still pending on priority; no mature large-domain morphology or jets have yet been measured.
