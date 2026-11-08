@@ -1,5 +1,8 @@
 # Stable-cap validation: 40 Earth days
 
+**[Watch the movies on the gallery landing page](https://npizzo.github.io/jupiter-ffr-breeze/)**
+
+
 This is the **600 × 600 km, 64 × 64 × 64 thermal-validation box**, not the new 6,000-km production domain. It uses the same bottom heating, cap relaxation and vertical grid as production. All 321 saved times are shown, with no temporal interpolation.
 
 The protected 90–115 km cap core retains at least **99.90% of its initial mean-profile N²** throughout 40 Earth days. The source-budget and restart tests passed. Final-day domain-wide vertical RMS is **1.23 m/s**, so the cap remains stable in the presence of sustained convection.

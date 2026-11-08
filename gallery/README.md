@@ -1,5 +1,8 @@
 # Output gallery
 
+**[Watch the movies on the gallery landing page](https://npizzo.github.io/jupiter-ffr-breeze/)**
+
+
 Figures below are generated from saved Breeze fields. They are preliminary numerical tests, not a reproduction of Jupiter's folded filamentary regions.
 
 ## Maintained cap: 40-day validation completed

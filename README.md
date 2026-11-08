@@ -1,10 +1,13 @@
 # Jupiter folded filamentary regions with Breeze.jl
 
+**[Watch the movies on the gallery landing page](https://npizzo.github.io/jupiter-ffr-breeze/)**
+
+
 Regional, bottom-heated, rotating convection experiments to determine whether Breeze.jl can reproduce the dynamics and morphology of Jupiter’s folded filamentary regions (FFRs).
 
-**Status:** The 40-day small-box cap validation and full-size H100 probe passed. The 6,000-km f/beta production pair is queued. [Three-depth validation movies and findings](gallery/large40-validation/README.md) are available; production results are not yet available.
+**Status:** The 40-day small-box cap validation and full-size H100 probe passed. The 6,000-km f/beta production pair is underway. [Three-depth validation movies and findings](gallery/large40-validation/README.md) are available; production results are not yet available.
 
-[Output gallery](gallery/README.md) · [Latest campaign](docs/large40.md) · [Initial validation](docs/results.md) · [Scientific plan](docs/science.md) · [Unity instructions](docs/unity.md)
+[Watch gallery](https://npizzo.github.io/jupiter-ffr-breeze/) · [Latest campaign](docs/large40.md) · [Initial validation](docs/results.md) · [Scientific plan](docs/science.md) · [Unity instructions](docs/unity.md)
 
 ## Initial configuration
 
