@@ -68,3 +68,7 @@ The [stronger-convection comparison](docs/strong48.md) raises heating to 30× an
 ## Five-day 30× experiment
 
 The [longer 30× campaign](docs/convection120.md) completed: matched heated/cooling-only pairs on 256 × 256 × 64 and 256 × 256 × 128 grids, for 120 Earth hours. See [results](docs/convection120-results.md) and [vorticity videos and snapshots](gallery/convection120/README.md).
+
+## Longer runs and beta
+
+The [20-day campaign](docs/regional20.md) adds a physical Jupiter beta plane, matched f-plane channels, a longer periodic reference, and short 512² horizontal-resolution comparisons. New depth-averaged transfer diagnostics distinguish upscale energy transfer from morphology. Production is gated on GPU preflight checks.

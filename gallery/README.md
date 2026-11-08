@@ -2,6 +2,10 @@
 
 Figures below are generated from saved Breeze fields. They are preliminary numerical tests, not a reproduction of Jupiter's folded filamentary regions.
 
+## Next campaign: longer integrations and beta
+
+[Design and diagnostics](../docs/regional20.md). Future results include matched beta/f-plane vorticity movies and depth-averaged spectral-transfer diagnostics. No production results are available yet.
+
 ## Five-day 30× convection: completed, with videos
 
 Sustained convection, matched controls, and a vertical-resolution comparison.

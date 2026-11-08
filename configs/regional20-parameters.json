@@ -1,0 +1,25 @@
+{
+  "latitude_degrees_north": 55,
+  "rotation_rate_s-1": 0.00017585,
+  "reference_radius_m": 71492000,
+  "f0_s-1": 0.0002880957739764384,
+  "beta_m-1_s-1": 2.8216700143325537e-12,
+  "reference_horizontal_rms_m_s": 1.5623448325676639,
+  "reference_domain_crossing_days": 8.889771706840763,
+  "reference_Lbeta_km": 744.1069076491384,
+  "Lbeta_convention": "sqrt(U/beta); scale estimate, not predicted jet wavelength",
+  "relative_f_variation_across_channel": 0.011753049933582104,
+  "long_duration_Earth_days": 20,
+  "fine_comparison_duration_Earth_days": 2,
+  "production_job_id": "66937528",
+  "preflight_job_id": "66937526",
+  "array_concurrency": 1,
+  "preflight_status": "COMPLETED; all checks passed",
+  "preflight_elapsed_seconds": 167,
+  "production_status_at_submission_check": "task 1 running; other tasks queued",
+  "source_sha256": {
+    "run_regional.jl": "c4a4594e081c31f4d23a48a09a14068b78a809f3e3acf74a80bdcbea72556486",
+    "initial_channel_turbulence.jl": "596c0e625280e3f859e59712086642024d38e6bee1c00f10f255211e988c87aa",
+    "barotropic_transfer.py": "01edb1af9851246bee8e548ffdbefaa927565af799c04cf3e4130ec81a99398b"
+  }
+}

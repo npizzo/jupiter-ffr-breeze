@@ -26,10 +26,13 @@ def main():
     p.add_argument("cases", nargs="+", type=Path)
     p.add_argument("--output", required=True, type=Path, help="MP4 file; also writes a poster and JSON record")
     p.add_argument("--fps", type=int, default=6, help="Saved frames per video second")
+    p.add_argument("--labels", nargs="+", help="Optional panel labels, in case order")
     p.add_argument("--allow-sparse", action="store_true", help="Explicitly labeled preview of incomplete/sparse data")
     args = p.parse_args()
     if not 1 <= len(args.cases) <= 2 or args.fps < 1 or args.output.suffix != ".mp4":
         p.error("Supply one or two cases, positive fps, and an .mp4 output")
+    if args.labels and len(args.labels) != len(args.cases):
+        p.error("Supply one label per case")
     if not writers.is_available("ffmpeg"):
         raise RuntimeError("Install system ffmpeg with the libx264 encoder to render MP4 videos")
     cases = []
@@ -60,19 +63,22 @@ def main():
         keys = ("nx", "ny", "nz", "lx", "ly", "height", "diagnostic_height_m", "f", "upper_cooling_flux")
         if not np.array_equal(cases[0][2], cases[1][2]) or any(cases[0][0][k] != cases[1][0][k] for k in keys):
             raise ValueError("Paired video requires matching grids, map heights, f, cooling and frame times")
+        if cases[0][0].get("meridional_boundary", "periodic") != cases[1][0].get("meridional_boundary", "periodic"):
+            raise ValueError("Paired video requires matching meridional boundaries")
     limit = max(limit, 1e-12)
     fig, axes = plt.subplots(1, len(cases), figsize=(6 * len(cases), 5), squeeze=False, layout="constrained")
     artists = []
-    for ax, (m, files, _) in zip(axes.flat, cases):
+    for panel, (ax, (m, files, _)) in enumerate(zip(axes.flat, cases)):
         _, field = read_frame(files[0], m["f"])
         k = np.clip(round(m.get("diagnostic_height", m["cap_height"]) / m["height"] * m["nz"]), 1, m["nz"])
         z_km = (k - .5) * m["height"] / m["nz"] / 1000
+        ymin = -m["ly"] / 2000 if m.get("meridional_boundary") == "channel" else 0
         im = ax.imshow(field, origin="lower", cmap="RdBu_r", vmin=-limit, vmax=limit,
-                       extent=(0, m["lx"] / 1000, 0, m["ly"] / 1000), interpolation="nearest")
-        label = "Heated + cooled" if m["heat_flux"] > 0 else "Cooling only"
+                       extent=(0, m["lx"] / 1000, ymin, ymin + m["ly"] / 1000), interpolation="nearest")
+        label = args.labels[panel] if args.labels else ("Heated + cooled" if m["heat_flux"] > 0 else "Cooling only")
         ax.set(title=f"{label}: bottom {m['heat_flux']:g} W/m²\nz = {z_km:.2f} km", xlabel="x [km]", ylabel="y [km]")
         artists.append(im)
-    fig.colorbar(artists[0], ax=list(axes.flat), shrink=.8, label="Vertical vorticity ζ/f (fixed scale)")
+    fig.colorbar(artists[0], ax=list(axes.flat), shrink=.8, label="Vertical vorticity ζ/f₀ (fixed scale)")
     prefix = "Sparse preview | " if args.allow_sparse else ""
     title = fig.suptitle("")
     args.output.parent.mkdir(parents=True, exist_ok=True)
@@ -90,7 +96,7 @@ def main():
               "times_seconds": cases[0][2].tolist(), "frames_per_second": args.fps,
               "color_limits_zeta_over_f": [-limit, limit], "normalization": "one shared maximum over every frame and case; no clipping",
               "sparse_preview": args.allow_sparse, "poster": "final frame",
-              "note": "Horizontal dry-model vorticity; not cloud imagery. No temporal interpolation."}
+              "panel_labels": args.labels, "note": "Horizontal dry-model vorticity normalized by central f₀; not cloud imagery. No temporal interpolation."}
     args.output.with_suffix(".json").write_text(json.dumps(record, indent=2) + "\n")
     print(f"Rendered {record['frames']} frames: {args.output}")
 
