@@ -1,0 +1,72 @@
+{
+  "thermal_job": "66957582",
+  "probe_job": "66957673",
+  "preflight_root": "data/shear20-preflight-v4",
+  "production_root": "data/shear20-v2",
+  "moist_validation_job": "66957583",
+  "moist_root": "data/moist-validation-v3",
+  "segments": [
+    {
+      "index": 1,
+      "case": "shear20_heated",
+      "end_day": 10,
+      "job": "66957674",
+      "afterok": "66957673"
+    },
+    {
+      "index": 2,
+      "case": "shear20_control",
+      "end_day": 10,
+      "job": "66957675",
+      "afterok": "66957674"
+    },
+    {
+      "index": 3,
+      "case": "shear20_fine",
+      "end_day": 10,
+      "job": "66957676",
+      "afterok": "66957675"
+    },
+    {
+      "index": 4,
+      "case": "shear20_baseline",
+      "end_day": 10,
+      "job": "66957677",
+      "afterok": "66957676"
+    },
+    {
+      "index": 5,
+      "case": "shear20_heated",
+      "end_day": 20,
+      "job": "66957678",
+      "afterok": "66957677"
+    },
+    {
+      "index": 6,
+      "case": "shear20_control",
+      "end_day": 20,
+      "job": "66957679",
+      "afterok": "66957678"
+    },
+    {
+      "index": 7,
+      "case": "shear20_fine",
+      "end_day": 20,
+      "job": "66957680",
+      "afterok": "66957679"
+    },
+    {
+      "index": 8,
+      "case": "shear20_baseline",
+      "end_day": 20,
+      "job": "66957681",
+      "afterok": "66957680"
+    }
+  ],
+  "prior_attempts": {
+    "thermal_tracer_undershoot": "66956037",
+    "moist_water_undershoot": "66956208",
+    "thermal_halo_configuration": "66957256",
+    "moist_halo_configuration": "66957257"
+  }
+}

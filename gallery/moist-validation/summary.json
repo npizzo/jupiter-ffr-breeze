@@ -1,0 +1,30 @@
+{
+  "dry_plume": {
+    "grid": 64,
+    "peak_w_rms_m_s": 6.76029587428872,
+    "peak_condensate_mass_fraction": 0.0,
+    "initial_max_condensate": 0.0,
+    "max_water_relative_drift": 0,
+    "max_dye_relative_drift": 2.3314683517128287e-14,
+    "max_absolute_vertical_speed_m_s": 87.6355853646769
+  },
+  "moist_plume": {
+    "grid": 64,
+    "peak_w_rms_m_s": 7.987690037049974,
+    "peak_condensate_mass_fraction": 0.015372734838234703,
+    "initial_max_condensate": 0.0,
+    "max_water_relative_drift": 2.5091040356528538e-14,
+    "max_dye_relative_drift": 2.5757174171303632e-14,
+    "max_absolute_vertical_speed_m_s": 96.10443674560499
+  },
+  "moist_plume_fine": {
+    "grid": 96,
+    "peak_w_rms_m_s": 8.025902037447858,
+    "peak_condensate_mass_fraction": 0.016048772000573638,
+    "initial_max_condensate": 0.0,
+    "max_water_relative_drift": 3.885780586188048e-14,
+    "max_dye_relative_drift": 3.952393967665557e-14,
+    "max_absolute_vertical_speed_m_s": 142.57481348346133
+  },
+  "status": "implementation checks PASS; refinement comparison not a convergence proof"
+}

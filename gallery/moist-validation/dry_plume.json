@@ -1,0 +1,81 @@
+{
+  "case": "dry_plume",
+  "label": "dry plume | implementation validation",
+  "layout": "2 rows, three depth columns",
+  "row_fields": [
+    "vorticity_slices",
+    "tracer_slices"
+  ],
+  "height_m": [
+    4062.5,
+    12187.5,
+    24062.5
+  ],
+  "times_seconds": [
+    0.0,
+    120.0,
+    240.0,
+    360.0,
+    480.0,
+    600.0,
+    720.0,
+    840.0,
+    960.0,
+    1080.0,
+    1200.0,
+    1320.0,
+    1440.0,
+    1560.0,
+    1680.0,
+    1800.0,
+    1920.0,
+    2040.0,
+    2160.0,
+    2280.0,
+    2400.0,
+    2520.0,
+    2640.0,
+    2760.0,
+    2880.0,
+    3000.0,
+    3120.0,
+    3240.0,
+    3360.0,
+    3480.0,
+    3600.0
+  ],
+  "fps": 3,
+  "fixed_color_limits": [
+    [
+      [
+        -39.08659744262695,
+        39.08659744262695
+      ],
+      [
+        -36.0014533996582,
+        36.0014533996582
+      ],
+      [
+        -44.999107360839844,
+        44.999107360839844
+      ]
+    ],
+    [
+      [
+        0.0,
+        1.0
+      ],
+      [
+        0.0,
+        1.0
+      ],
+      [
+        0.0,
+        1.0
+      ]
+    ]
+  ],
+  "temporal_interpolation": false,
+  "preview": false,
+  "note": "Concentration is a passive mass fraction, not cloud brightness. Vorticity scales differ by depth; concentration scale is shared. No field is clipped."
+}

@@ -79,3 +79,9 @@ The [20-day campaign](docs/regional20.md) adds a physical Jupiter beta plane, ma
 ## Maintained cap and larger channel
 
 The [large-domain campaign](docs/large40.md) uses matched 6,000-km f/beta channels, a 1,024² × 64 grid and local cap relaxation. Every new results entry must include vorticity videos near 20, 60 and 100 km above the model bottom.
+
+## Shear, tracer, thermal feedback and moisture
+
+[Shear/tracer campaign](docs/shear20.md): matched heated, heating-off, no-shear and horizontally refined beta-plane cases are submitted behind validation and full-grid checks. A separate thermal-feedback control addresses net heat accumulation.
+
+[Moist-convection validation](docs/moist-validation.md): thermodynamic checks, a resting atmosphere, and dry/moist plumes at two resolutions completed. [Watch the synchronized three-depth movies](https://npizzo.github.io/jupiter-ffr-breeze/#moist-validation). Local plume extremes are still resolution-sensitive; moisture is not yet enabled in the FFR production campaign.
