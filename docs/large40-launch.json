@@ -1,0 +1,65 @@
+{
+  "thermal_job": "66946536",
+  "cancelled_initial_h100_preflight": "66945818",
+  "root": "data/large40-v1",
+  "preflight_root": "data/large40-preflight-v2",
+  "segments": [
+    {
+      "index": 1,
+      "case": "f",
+      "end_day": 10,
+      "job": "66946542",
+      "afterok": "66946541"
+    },
+    {
+      "index": 2,
+      "case": "beta",
+      "end_day": 10,
+      "job": "66946543",
+      "afterok": "66946542"
+    },
+    {
+      "index": 3,
+      "case": "f",
+      "end_day": 20,
+      "job": "66946544",
+      "afterok": "66946543"
+    },
+    {
+      "index": 4,
+      "case": "beta",
+      "end_day": 20,
+      "job": "66946545",
+      "afterok": "66946544"
+    },
+    {
+      "index": 5,
+      "case": "f",
+      "end_day": 30,
+      "job": "66946546",
+      "afterok": "66946545"
+    },
+    {
+      "index": 6,
+      "case": "beta",
+      "end_day": 30,
+      "job": "66946547",
+      "afterok": "66946546"
+    },
+    {
+      "index": 7,
+      "case": "f",
+      "end_day": 40,
+      "job": "66946548",
+      "afterok": "66946547"
+    },
+    {
+      "index": 8,
+      "case": "beta",
+      "end_day": 40,
+      "job": "66946549",
+      "afterok": "66946548"
+    }
+  ],
+  "probe_job": "66946541"
+}

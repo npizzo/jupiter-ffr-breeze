@@ -2,6 +2,10 @@
 
 Figures below are generated from saved Breeze fields. They are preliminary numerical tests, not a reproduction of Jupiter's folded filamentary regions.
 
+## Larger domain and maintained cap: validation and launch
+
+[Campaign design](../docs/large40.md). New results will include three vorticity videos, near 20, 60 and 100 km above the model bottom. The older entries below predate this requirement and have not been reconstructed at missing depths.
+
 ## Twenty-day runs: interim thermal finding
 
 Three long runs completed. Part of the cap loses stability late in the integration, complicating inverse-cascade interpretation; beta changes final-day bulk energy by about 1%. Horizontal-resolution comparisons are still underway.

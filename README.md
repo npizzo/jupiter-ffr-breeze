@@ -2,9 +2,9 @@
 
 Regional, bottom-heated, rotating convection experiments to determine whether Breeze.jl can reproduce the dynamics and morphology of Jupiter’s folded filamentary regions (FFRs).
 
-**Status:** Four five-day 30× convection runs completed. Heated vertical RMS remains near 1.23–1.25 m/s while controls decay to about 0.04 m/s. Vertical refinement changes bulk statistics by 2–4%; horizontal vorticity remains resolution-sensitive. Videos and snapshots are published; FFR morphology is not established.
+**Status:** Submitted a 6,000-km matched f/beta channel pair with a maintained stable cap, targeting 40 Earth days. Thermal validation is running; production is queued behind successful validation and a full-grid probe. All new results will include vorticity videos at three depths. See the [large-domain design and execution checks](docs/large40.md).
 
-[Output gallery](gallery/README.md) · [Latest results](docs/convection120-results.md) · [Initial validation](docs/results.md) · [Scientific plan](docs/science.md) · [Unity instructions](docs/unity.md)
+[Output gallery](gallery/README.md) · [Latest campaign](docs/large40.md) · [Initial validation](docs/results.md) · [Scientific plan](docs/science.md) · [Unity instructions](docs/unity.md)
 
 ## Initial configuration
 
@@ -45,7 +45,7 @@ Built with [Breeze.jl](https://github.com/NumericalEarth/Breeze.jl) and [Oceanan
 
 Four 48-hour experiments compare bottom heating on/off at two initial temperature-perturbation amplitudes (0.2 and 0.02 K; actual seeded noise is smaller than these amplitude parameters). The grid, reference stratification, and seed are identical. These runs isolate dependence on the imposed bottom heat flux from the initial instability. See [experiment design](docs/convection48.md).
 
-All current runs use a **traditional f-plane**, not a beta plane: Ω = 1.7585 × 10⁻⁴ s⁻¹, latitude 55°N, f = 2.88096 × 10⁻⁴ s⁻¹, beta = 0. Jupiter’s rotation rate stays fixed. Rotational dominance must be diagnosed from the flow; the initial convective Rossby number is about 1.1.
+The initial convection experiments used a **traditional f-plane**: Ω = 1.7585 × 10⁻⁴ s⁻¹, latitude 55°N, f = 2.88096 × 10⁻⁴ s⁻¹, beta = 0. Jupiter’s rotation rate stays fixed. Rotational dominance must be diagnosed from the flow; the initial convective Rossby number is about 1.1.
 
 ## Revised forcing experiment
 
@@ -72,3 +72,7 @@ The [longer 30× campaign](docs/convection120.md) completed: matched heated/cool
 ## Longer runs and beta
 
 The [20-day campaign](docs/regional20.md) adds a physical Jupiter beta plane, matched f-plane channels, a longer periodic reference, and short 512² horizontal-resolution comparisons. New depth-averaged transfer diagnostics distinguish upscale energy transfer from morphology. Production is gated on GPU preflight checks.
+
+## Maintained cap and larger channel
+
+The [large-domain campaign](docs/large40.md) uses matched 6,000-km f/beta channels, a 1,024² × 64 grid and local cap relaxation. Every new results entry must include vorticity videos near 20, 60 and 100 km above the model bottom.
