@@ -1,0 +1,205 @@
+{
+  "f20": {
+    "status": "COMPLETE",
+    "days": 20.0,
+    "segment_start_days": 10.0,
+    "grid": [
+      1024,
+      1024,
+      64
+    ],
+    "heat_flux_W_m2": 162.0,
+    "rotation_model": "f-plane",
+    "cap_min_fraction": 0.9995411325475381,
+    "wall_hours": 2.2641596247090234,
+    "last_day_w_rms_m_s": 1.230733994375346,
+    "last_day_kinetic_energy_J_m2": 189486.94334131732,
+    "last_day_horizontal_rms_m_s": 1.4823744893646529,
+    "final_w_rms_m_s": 1.2316237246827386,
+    "frame_count_in_segment": 80
+  },
+  "beta20": {
+    "status": "COMPLETE",
+    "days": 20.0,
+    "segment_start_days": 10.0,
+    "grid": [
+      1024,
+      1024,
+      64
+    ],
+    "heat_flux_W_m2": 162.0,
+    "rotation_model": "beta-plane",
+    "cap_min_fraction": 0.999538654606148,
+    "wall_hours": 2.2577362989054786,
+    "last_day_w_rms_m_s": 1.2304967725287788,
+    "last_day_kinetic_energy_J_m2": 189516.11201668208,
+    "last_day_horizontal_rms_m_s": 1.482312353393454,
+    "final_w_rms_m_s": 1.2284124668169982,
+    "frame_count_in_segment": 80
+  },
+  "shear_heated10": {
+    "status": "COMPLETE",
+    "days": 10.0,
+    "segment_start_days": 0.0,
+    "grid": [
+      1024,
+      1024,
+      64
+    ],
+    "heat_flux_W_m2": 162.0,
+    "rotation_model": "beta-plane",
+    "cap_min_fraction": 0.9999223754373598,
+    "wall_hours": 7.2539436427752175,
+    "last_day_w_rms_m_s": 1.175789119986077,
+    "last_day_kinetic_energy_J_m2": 14588833.445115207,
+    "last_day_horizontal_rms_m_s": 19.461032335356588,
+    "final_w_rms_m_s": 1.1776229035283023,
+    "frame_count_in_segment": 81,
+    "tracer_inventory_max_relative_drift": 5.355715870791755e-13,
+    "tracer_min": 5.0419715964830765e-11,
+    "tracer_max": 0.8010541820415984,
+    "mean_external_heat_residual_W_m2": 0.006365689557092112
+  },
+  "shear_control10": {
+    "status": "COMPLETE",
+    "days": 10.0,
+    "segment_start_days": 0.0,
+    "grid": [
+      1024,
+      1024,
+      64
+    ],
+    "heat_flux_W_m2": 0.0,
+    "rotation_model": "beta-plane",
+    "cap_min_fraction": 0.999966252453472,
+    "wall_hours": 6.052411970827315,
+    "last_day_w_rms_m_s": 0.0058168776383060415,
+    "last_day_kinetic_energy_J_m2": 14505451.004790884,
+    "last_day_horizontal_rms_m_s": 19.454468588136283,
+    "final_w_rms_m_s": 0.004901762415696201,
+    "frame_count_in_segment": 81,
+    "tracer_inventory_max_relative_drift": 3.432809592140984e-13,
+    "tracer_min": 2.5126358994245143e-12,
+    "tracer_max": 0.8001261900028216,
+    "mean_external_heat_residual_W_m2": 0.0004122822248007595
+  },
+  "day1_f_heated": {
+    "status": "COMPLETE",
+    "days": 1.0,
+    "segment_start_days": 0.0,
+    "grid": [
+      128,
+      128,
+      32
+    ],
+    "heat_flux_W_m2": 162.0,
+    "rotation_model": "f-plane",
+    "cap_min_fraction": 0.9981455909383907,
+    "wall_hours": 0.020292057262526617,
+    "last_day_w_rms_m_s": 0.006803081972206744,
+    "last_day_kinetic_energy_J_m2": 15659086.772982161,
+    "last_day_horizontal_rms_m_s": 20.211048816590413,
+    "final_w_rms_m_s": 0.07975880106287833,
+    "frame_count_in_segment": 25,
+    "tracer_inventory_max_relative_drift": 3.68594044175552e-14,
+    "tracer_min": 8.163077830835131e-10,
+    "tracer_max": 0.8001051559585239,
+    "mean_external_heat_residual_W_m2": 0.027727189272280517
+  },
+  "day1_f_control": {
+    "status": "COMPLETE",
+    "days": 1.0,
+    "segment_start_days": 0.0,
+    "grid": [
+      128,
+      128,
+      32
+    ],
+    "heat_flux_W_m2": 0.0,
+    "rotation_model": "f-plane",
+    "cap_min_fraction": 0.9981455795400803,
+    "wall_hours": 0.01957892888122135,
+    "last_day_w_rms_m_s": 4.418564609101356e-05,
+    "last_day_kinetic_energy_J_m2": 15659040.547066053,
+    "last_day_horizontal_rms_m_s": 20.211051276313214,
+    "final_w_rms_m_s": 2.232895979435206e-05,
+    "frame_count_in_segment": 25,
+    "tracer_inventory_max_relative_drift": 3.68594044175552e-14,
+    "tracer_min": 8.481281635657606e-10,
+    "tracer_max": 0.8001051559549475,
+    "mean_external_heat_residual_W_m2": 0.0019637820825397596
+  },
+  "day1_beta_heated": {
+    "status": "COMPLETE",
+    "days": 1.0,
+    "segment_start_days": 0.0,
+    "grid": [
+      128,
+      128,
+      32
+    ],
+    "heat_flux_W_m2": 162.0,
+    "rotation_model": "beta-plane",
+    "cap_min_fraction": 0.9981455909344912,
+    "wall_hours": 0.01931364529662662,
+    "last_day_w_rms_m_s": 0.006866205598352153,
+    "last_day_kinetic_energy_J_m2": 15659087.393219465,
+    "last_day_horizontal_rms_m_s": 20.211048371429747,
+    "final_w_rms_m_s": 0.08062924710200804,
+    "frame_count_in_segment": 25,
+    "tracer_inventory_max_relative_drift": 3.708144902248023e-14,
+    "tracer_min": 8.249890734479227e-10,
+    "tracer_max": 0.800105275075112,
+    "mean_external_heat_residual_W_m2": 0.027727255528992936
+  },
+  "day1_beta_control": {
+    "status": "COMPLETE",
+    "days": 1.0,
+    "segment_start_days": 0.0,
+    "grid": [
+      128,
+      128,
+      32
+    ],
+    "heat_flux_W_m2": 0.0,
+    "rotation_model": "beta-plane",
+    "cap_min_fraction": 0.9981455795403996,
+    "wall_hours": 0.01954678475856781,
+    "last_day_w_rms_m_s": 4.426082228502278e-05,
+    "last_day_kinetic_energy_J_m2": 15659040.429718915,
+    "last_day_horizontal_rms_m_s": 20.21105082655488,
+    "final_w_rms_m_s": 2.249652593091242e-05,
+    "frame_count_in_segment": 25,
+    "tracer_inventory_max_relative_drift": 3.68594044175552e-14,
+    "tracer_min": 8.507162864170355e-10,
+    "tracer_max": 0.8001052750715261,
+    "mean_external_heat_residual_W_m2": 0.001963781992479139
+  },
+  "grid1024_probe": {
+    "status": "COMPLETE",
+    "days": 0.08333333333333333,
+    "segment_start_days": 0.0,
+    "grid": [
+      1024,
+      1024,
+      64
+    ],
+    "heat_flux_W_m2": 162.0,
+    "rotation_model": "beta-plane",
+    "cap_min_fraction": 0.9999987259089874,
+    "wall_hours": 0.08531215449174245,
+    "last_day_w_rms_m_s": 5.4286395257179785e-05,
+    "last_day_kinetic_energy_J_m2": 15663250.026690459,
+    "last_day_horizontal_rms_m_s": 20.216236549901105,
+    "final_w_rms_m_s": 7.940154532791037e-05,
+    "frame_count_in_segment": 3,
+    "tracer_inventory_max_relative_drift": 5.773159728050814e-15,
+    "tracer_min": 8.413300051835597e-10,
+    "tracer_max": 0.8001232347387891,
+    "mean_external_heat_residual_W_m2": 0.0398559667718826
+  },
+  "eddy_grid_probe": {
+    "status": "PASS",
+    "estimated_10day_wall_hours": 6.347275066375732
+  }
+}
