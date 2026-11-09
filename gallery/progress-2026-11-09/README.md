@@ -29,3 +29,14 @@ At approximately 5:44 a.m. Eastern on November 9, none of the campaign jobs had 
 [Numerical summary](summary.json) · [Large-domain jobs](../../docs/large40-launch.json) · [Shear jobs](../../docs/shear20-launch.json)
 
 The movie inputs are lossless subsets of saved model planes with no spatial or temporal resampling before rendering. MP4 encoding is lossy. Metadata and movie manifests record actual heights, fixed scales, source hashes and times. Public diagnostic CSVs are sampled at the three-hour movie cadence; summary statistics use the full diagnostic histories retained on Unity.
+
+
+## Display correction: fixed contrast, unchanged saved fields
+
+The landing page now uses `shear_heated_contrast_web.mp4` and `balanced_heating_contrast_web.mp4`. Both retain all saved times and three real depth planes. The original movies remain available in their original paths.
+
+- Vorticity uses symmetric asinh normalization with linear width 0.1 in ζ/f₀ and the original full extrema at each depth, fixed throughout each movie. Rare extremes no longer flatten weak-field contrast. Tick labels remain physical ζ/f₀. The shear movie is rendered at 2250 × 1200; use fullscreen to inspect its fine structures.
+- Balanced-heating tracer uses `asinh((C − 0.08)/0.005)` with full limits 0–1, fixed across all frames and depths. The center is close to the initial horizontal mean 0.07930847. At day 40 the lower-plane ranges are 0.06868–0.08936 and 0.06828–0.08935; the prior zero-centered scale obscured these remaining variations. Concentration labels are physical C, not anomalies or transformed coordinates. No values are clipped.
+- Production-shear tracer retains its zero-centered asinh scale with width 0.01. The two tracer mappings differ and are labeled explicitly.
+
+No simulation drivers, initial conditions, forcing, or job dependencies were changed for this display correction. Live Unity check: heated continuation 66957678 is pending on 66957677; heating-off, fine, and no-shear first segments precede it in the existing chain. The first heated segment is complete, not currently running toward day 20.
