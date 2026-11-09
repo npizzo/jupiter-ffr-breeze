@@ -131,7 +131,14 @@
       "afterok": "66976521"
     }
   ],
-  "status": "RESUBMITTED_WITH_GPU_VALIDATION_GATES",
+  "status": "VALIDATION_PASSED_PRODUCTION_PENDING",
   "thermal_job": "66976504",
-  "probe_job": "66976514"
+  "probe_job": "66976514",
+  "validation": {
+    "initializer": "PASS",
+    "restart_and_four_one_day_cases": "PASS",
+    "production_grid_probe": "PASS",
+    "estimated_10day_wall_hours": 6.347275066375732
+  },
+  "queue_snapshot": "2026-11-09 15:56 America/New_York"
 }

@@ -1,0 +1,23 @@
+{
+  "source": "data/large40-v1/large40_channel_f/segment_1",
+  "frames": 81,
+  "resampling": false,
+  "fields": [
+    "t",
+    "x",
+    "y",
+    "z",
+    "video_heights",
+    "vorticity_slices",
+    "tracer_slices",
+    "condensate_slices",
+    "theta_profile",
+    "mean_N2_profile",
+    "w_rms",
+    "kinetic_energy",
+    "cap_min",
+    "cap_mean"
+  ],
+  "format": "HDF5 rendering subset; not a restart file",
+  "exporter_sha256": "6a1eea5301048b956af6c30885adc83d2888d735038c08ebd77d8abb669441c1"
+}

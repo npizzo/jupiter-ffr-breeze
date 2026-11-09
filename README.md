@@ -5,7 +5,7 @@
 
 Regional, bottom-heated, rotating convection experiments to determine whether Breeze.jl can reproduce the dynamics and morphology of Jupiter’s folded filamentary regions (FFRs).
 
-**Status (November 9):** Both 6000-km f/beta first ten-day segments and the first heated shear/tracer segment completed. Their continuations, controls and finer production case are queued. [Watch the new synchronized movies](https://npizzo.github.io/jupiter-ffr-breeze/).
+**Status (November 9, afternoon):** Both original f/beta cases completed twenty days, and the heated/heating-off shear pair completed ten days. The new large-eddy validation passed all gates. [Watch the updated synchronized comparisons and validation movies](https://npizzo.github.io/jupiter-ffr-breeze/).
 
 [Watch gallery](https://npizzo.github.io/jupiter-ffr-breeze/) · [Latest campaign](docs/large40.md) · [Initial validation](docs/results.md) · [Scientific plan](docs/science.md) · [Unity instructions](docs/unity.md)
 
@@ -82,9 +82,9 @@ The [large-domain campaign](docs/large40.md) uses matched 6,000-km f/beta channe
 
 ## Shear, tracer, thermal feedback and moisture
 
-[Shear/tracer campaign](docs/shear20.md): validation and full-grid checks passed; the first heated ten-day segment completed. Heating-off, no-shear and horizontally refined cases remain queued. A separate thermal-feedback control addresses net heat accumulation.
+[Shear/tracer campaign](docs/shear20.md): validation and full-grid checks passed; both heated and heating-off ten-day segments completed. No-shear and horizontally refined cases remain queued. A separate thermal-feedback control addresses net heat accumulation.
 
 [Moist-convection validation](docs/moist-validation.md): thermodynamic checks, a resting atmosphere, and dry/moist plumes at two resolutions completed. [Watch the synchronized three-depth movies](https://npizzo.github.io/jupiter-ffr-breeze/#moist-validation). Local plume extremes are still resolution-sensitive; moisture is not yet enabled in the FFR production campaign.
 
 
-New campaign: [larger random eddies on f and beta planes](docs/eddy20.md), four matched heating-on/off cases over twenty Earth days. [Queue record](docs/eddy20-launch.json). Production is gated on initializer, short-run and production-grid validation.
+New campaign: [larger random eddies on f and beta planes](docs/eddy20.md), four matched heating-on/off cases over twenty Earth days. [Queue record](docs/eddy20-launch.json). Initializer, short-run and production-grid validation passed; production is awaiting scheduling. Completed validation movies are included in the gallery.

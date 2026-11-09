@@ -1,0 +1,37 @@
+{
+  "shear_on_off_10days.mp4": {
+    "bytes": 5281709,
+    "width": 1500,
+    "height": 1480,
+    "r_frame_rate": "8/1",
+    "nb_frames": "81"
+  },
+  "large_eddy_beta_validation.mp4": {
+    "bytes": 695365,
+    "width": 1500,
+    "height": 1480,
+    "r_frame_rate": "2/1",
+    "nb_frames": "25"
+  },
+  "large_eddy_f_validation.mp4": {
+    "bytes": 696354,
+    "width": 1500,
+    "height": 1480,
+    "r_frame_rate": "2/1",
+    "nb_frames": "25"
+  },
+  "large_eddy_grid_probe.mp4": {
+    "bytes": 129597,
+    "width": 1500,
+    "height": 800,
+    "r_frame_rate": "1/1",
+    "nb_frames": "3"
+  },
+  "f_beta_20days.mp4": {
+    "bytes": 14389532,
+    "width": 1500,
+    "height": 740,
+    "r_frame_rate": "12/1",
+    "nb_frames": "161"
+  }
+}

@@ -85,3 +85,8 @@ For a fresh campaign, `bash scripts/submit_large.sh NEW_PRODUCTION_ROOT NEW_PREF
 Both gates completed: thermal job 66946536 took 18 minutes 48 seconds including startup and restart tests; full-grid H100 probe 66946541 took 5 minutes 34 seconds. The 40-day small-box test retained at least 99.90% of initial protected-core mean-profile N². See [all three vorticity movies and the heat-budget interpretation](../gallery/large40-validation/README.md).
 
 The H100 probe's measured post-startup rate projects 2.34 wall-clock hours per ten simulated days. All eight production allocations were shortened to 12 hours (about fivefold margin), and the future-launch throughput gate tightened accordingly. This changes the scheduling request, not the physical integrations. At this update the first production segment is still pending on priority; no mature large-domain morphology or jets have yet been measured.
+
+
+## Gallery update, November 9 afternoon
+
+Both original f-plane and beta-plane cases completed twenty days. The gallery now includes all 161 saved times for their matched twenty-day comparison. Longer segments continue toward forty days. [Watch the gallery](https://npizzo.github.io/jupiter-ffr-breeze/).

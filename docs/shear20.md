@@ -40,3 +40,8 @@ The 40-day heat-budget/tracer test and both full-grid probes passed. [Watch the 
 ## First production segment completed — November 9, 2026
 
 The heated 1024² × 64 case completed ten simulated days in 7 h 18 min of Slurm time and passed the cap, budget, tracer and checkpoint checks. [Watch its three-depth vorticity/tracer movie](https://npizzo.github.io/jupiter-ffr-breeze/). Mean residual external heat input was 0.00637 W/m² and tracer inventory drift stayed below 5.4e-13 relative. Heating-off, no-shear and refined production cases remain queued, so convection's incremental effect is not yet isolated. See [the timestamped status and numerical summary](../gallery/progress-2026-11-09/README.md).
+
+
+## Gallery update, November 9 afternoon
+
+Both heated and heating-off first ten-day segments are complete and their matched four-row / three-depth movie is published in the gallery. Finer-grid and no-shear segments remain queued. [Watch the gallery](https://npizzo.github.io/jupiter-ffr-breeze/).

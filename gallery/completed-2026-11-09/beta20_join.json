@@ -1,0 +1,9 @@
+{
+  "source_directories": [
+    "large40-beta-first10-fields",
+    "gallery-update-beta-second10"
+  ],
+  "frame_count": 161,
+  "duplicate_frames": 0,
+  "resampling": false
+}

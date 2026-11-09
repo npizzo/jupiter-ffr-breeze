@@ -36,3 +36,14 @@ All retain the full 6000-km physical domain. The random flow has wavelengths aro
 Vorticity uses an asinh scale with linear width 0.1 in ζ/f₀. In each comparison, each depth shares the full extrema of both cases over all saved times. Concentration uses a shared fixed asinh scale with width 0.01 and limits 0–1. Colorbar labels are physical values; no saved field values are clipped. No per-frame normalization or temporal interpolation is applied. Standard video encoding is lossy; the figures are for visualization, and numerical analysis uses the saved fields.
 
 `summary.json` records diagnostics computed from the complete histories. Metadata, rendering-export records, sampled diagnostics and per-movie manifests accompany the movies. The join records identify the two original rotation segments. Raw simulation volumes and restart files remain on Unity and are not committed to the repository.
+
+## Re-rendering
+
+Use `scripts/export_video_fields.py` on each completed segment. For a twenty-day case, place its two exported folders under a common parent named `segment_1` and `segment_2`; the renderer's collector reads them in order and requires every expected timestamp. Then run:
+
+```sh
+python scripts/compare_flow_tracer_movies.py render/f20 render/beta20 --labels f-plane beta-plane --title '6000-km domain | first 20 Earth days | same color scales' --fps 12 --output f_beta_20days.mp4
+python scripts/compare_flow_tracer_movies.py render/shear_heated10 render/shear_control10 --labels 'Heating ON' 'Heating OFF' --title 'Cyclonic shear | matched first 10 Earth days | same color scales' --tracer --fps 8 --output shear_on_off_10days.mp4
+```
+
+The validation pairs use the same comparison command with `--tracer --fps 2`; the full-grid probe uses `flow_tracer_video.py --vorticity-linear-width 0.1 --fps 1`. Movie manifests record normalization, frame times and renderer hashes.

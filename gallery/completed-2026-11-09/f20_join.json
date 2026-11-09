@@ -1,0 +1,9 @@
+{
+  "source_directories": [
+    "large40-first10-fields",
+    "gallery-update-f-second10"
+  ],
+  "frame_count": 161,
+  "duplicate_frames": 0,
+  "resampling": false
+}

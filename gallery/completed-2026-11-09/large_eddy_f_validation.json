@@ -1,0 +1,85 @@
+{
+  "labels": [
+    "Heating ON",
+    "Heating OFF"
+  ],
+  "case_names": [
+    "day1_f_heated",
+    "day1_f_control"
+  ],
+  "title": "VALIDATION ONLY | f-plane | 1200-km seeds | 128 x 128 x 32",
+  "layout": "4 rows, three depth columns",
+  "row_order": [
+    "Heating ON: vorticity",
+    "Heating ON: tracer",
+    "Heating OFF: vorticity",
+    "Heating OFF: tracer"
+  ],
+  "times_seconds": [
+    0.0,
+    3600.0,
+    7200.0,
+    10800.0,
+    14400.0,
+    18000.0,
+    21600.0,
+    25200.0,
+    28800.0,
+    32400.0,
+    36000.0,
+    39600.0,
+    43200.0,
+    46800.0,
+    50400.0,
+    54000.0,
+    57600.0,
+    61200.0,
+    64800.0,
+    68400.0,
+    72000.0,
+    75600.0,
+    79200.0,
+    82800.0,
+    86400.0
+  ],
+  "heights_m": [
+    20625.0,
+    58125.0,
+    99375.0
+  ],
+  "fps": 2,
+  "frames": 25,
+  "crf": 29,
+  "vorticity_normalization": {
+    "type": "asinh",
+    "linear_width": 0.1,
+    "limits_by_depth": [
+      [
+        -0.3122478425502777,
+        0.3122478425502777
+      ],
+      [
+        -0.3122531473636627,
+        0.3122531473636627
+      ],
+      [
+        -0.31225377321243286,
+        0.31225377321243286
+      ]
+    ],
+    "shared_between_cases": true,
+    "fixed_in_time": true
+  },
+  "tracer_normalization": {
+    "type": "asinh",
+    "linear_width": 0.01,
+    "limits": [
+      0.0,
+      1.0
+    ],
+    "shared_between_cases_and_depths": true,
+    "fixed_in_time": true
+  },
+  "renderer_sha256": "b274baae5d91c81d559a520f828a39e254fb98fe0991938f7811664b64be8842",
+  "note": "Every saved time included. No field clipping or temporal interpolation. Values on colorbars are physical C or \u03b6/f\u2080. Rendering uses nearest-neighbor display sampling."
+}

@@ -44,3 +44,8 @@ Submission IDs and gate status are recorded in [eddy20-launch.json](eddy20-launc
 The initializer log reports 18 checks passed, and the saved `UNIT_PASS.toml` initializer hash matches the deployed source. Unity subsequently marked the original job chain cancelled without a recorded reason. No GPU-validation or production output had been created.
 
 The GPU short-run validation was resubmitted as **66976504**, followed by the full-grid probe **66976514** and production jobs **66976515–66976522**. They reuse the verified initializer pass and retain the success dependencies between the GPU checks and production. The cancellation cause remains unknown; this is a resubmission, not a claim that the underlying cause has been diagnosed. The launch record preserves the original job IDs and the replacement chain.
+
+
+## Gallery update, November 9 afternoon
+
+All validation gates passed: initializer checks, restart, four one-day small-grid cases, and the two-hour 1024² × 64 probe. The gallery now includes the one-day comparisons and the full-grid probe. Production is awaiting scheduling; these validation movies are not twenty-day production results. [Watch the gallery](https://npizzo.github.io/jupiter-ffr-breeze/).
