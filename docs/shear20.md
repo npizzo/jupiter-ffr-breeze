@@ -36,3 +36,7 @@ Successful morphology alone will not demonstrate an inverse energy cascade. Asse
 ## Validation completed — November 8, 2026
 
 The 40-day heat-budget/tracer test and both full-grid probes passed. [Watch the validation movie and read the measured budgets](https://npizzo.github.io/jupiter-ffr-breeze/#heat-budget). Post-warmup probe costs project 6.39 wall hours per ten simulated days on 1024², and 15.33 hours on 1536². These two-hour probes are preliminary runtime estimates. The first production job is now waiting for resources; it is no longer blocked on validation.
+
+## First production segment completed — November 9, 2026
+
+The heated 1024² × 64 case completed ten simulated days in 7 h 18 min of Slurm time and passed the cap, budget, tracer and checkpoint checks. [Watch its three-depth vorticity/tracer movie](https://npizzo.github.io/jupiter-ffr-breeze/). Mean residual external heat input was 0.00637 W/m² and tracer inventory drift stayed below 5.4e-13 relative. Heating-off, no-shear and refined production cases remain queued, so convection's incremental effect is not yet isolated. See [the timestamped status and numerical summary](../gallery/progress-2026-11-09/README.md).

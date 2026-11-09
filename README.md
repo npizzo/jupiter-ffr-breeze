@@ -5,7 +5,7 @@
 
 Regional, bottom-heated, rotating convection experiments to determine whether Breeze.jl can reproduce the dynamics and morphology of Jupiter’s folded filamentary regions (FFRs).
 
-**Status:** The first ten-day, 6000-km f-plane segment completed; beta is running. The new heat-budget/tracer validation and both 1024² and 1536² H100 probes passed; shear production is queued for resources. [Watch the synchronized movies](https://npizzo.github.io/jupiter-ffr-breeze/).
+**Status (November 9):** Both 6000-km f/beta first ten-day segments and the first heated shear/tracer segment completed. Their continuations, controls and finer production case are queued. [Watch the new synchronized movies](https://npizzo.github.io/jupiter-ffr-breeze/).
 
 [Watch gallery](https://npizzo.github.io/jupiter-ffr-breeze/) · [Latest campaign](docs/large40.md) · [Initial validation](docs/results.md) · [Scientific plan](docs/science.md) · [Unity instructions](docs/unity.md)
 
@@ -82,6 +82,6 @@ The [large-domain campaign](docs/large40.md) uses matched 6,000-km f/beta channe
 
 ## Shear, tracer, thermal feedback and moisture
 
-[Shear/tracer campaign](docs/shear20.md): matched heated, heating-off, no-shear and horizontally refined beta-plane cases are submitted behind validation and full-grid checks. A separate thermal-feedback control addresses net heat accumulation.
+[Shear/tracer campaign](docs/shear20.md): validation and full-grid checks passed; the first heated ten-day segment completed. Heating-off, no-shear and horizontally refined cases remain queued. A separate thermal-feedback control addresses net heat accumulation.
 
 [Moist-convection validation](docs/moist-validation.md): thermodynamic checks, a resting atmosphere, and dry/moist plumes at two resolutions completed. [Watch the synchronized three-depth movies](https://npizzo.github.io/jupiter-ffr-breeze/#moist-validation). Local plume extremes are still resolution-sensitive; moisture is not yet enabled in the FFR production campaign.

@@ -5,6 +5,10 @@
 
 Figures below are generated from saved Breeze fields. They are preliminary numerical tests, not a reproduction of Jupiter's folded filamentary regions.
 
+## November 9: beta and heated-shear segments completed
+
+[Watch the gallery](https://npizzo.github.io/jupiter-ffr-breeze/) · [Run records](progress-2026-11-09/README.md). A matched f/beta movie uses two case rows and three depth columns with common scales. The new heated-shear movie has vorticity above passive concentration. All three runs completed ten-day segments; controls and further segments remain queued.
+
 ## New production and heat-budget movies
 
 [Watch the gallery](https://npizzo.github.io/jupiter-ffr-breeze/) · [Run records](progress-2026-11-08/README.md). First ten days of the 6000-km f-plane run, plus forty days of the new heat-budget/tracer validation. The beta segment is in progress; shear production is awaiting resources after passing validation.
