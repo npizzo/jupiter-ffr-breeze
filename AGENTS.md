@@ -9,3 +9,7 @@ The public gallery landing page is https://npizzo.github.io/jupiter-ffr-breeze/ 
 Tracer movies use a labeled asinh color scale with linear width 0.01 and physical concentration ticks, fixed across time and all depths, so diluted tracer is visible. Preserve unchanged data and explicit scale provenance; do not silently rescale each frame.
 
 The balanced-heating validation has an explicitly labeled contrast variant requested by the user: tracer asinh centered at C=0.08 with width 0.005, range 0–1, fixed across all times and depths. Production shear keeps the original tracer scale. The contrast variants use symmetric asinh vorticity with width 0.1 in ζ/f0 and full per-depth extrema; retain original renderings and label normalization in provenance. Never use automatic per-frame limits.
+
+## Compute and data locality
+
+Run simulations, diagnostics, field exports, analysis, movie rendering, and media validation on Unity. Do not download model fields or run these computations locally unless strictly necessary. Prefer publication directly from Unity when supported; transfer only the minimal finished publication assets when required by the available GitHub upload mechanism. Lightweight repository editing and browser playback checks are allowed as necessary publication work. This user instruction applies to all future runs and gallery updates.
