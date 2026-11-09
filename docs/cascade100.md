@@ -62,3 +62,5 @@ Movies will continue to show three depths simultaneously, vorticity above tracer
 Unit gate **66992547**, GPU restart/one-day/throughput gate **66992548**, followed by twenty production segments **66992549–66992568**. The order alternates heating on/off at day 10, then day 20, up to day 100. The machine-readable [launch record](cascade100-launch.json) contains every dependency. Production is submitted but still requires both validation gates; do not read submission as a passing GPU validation result.
 
 Ten initial-condition checks passed on Unity. The transfer self-tests also passed on Unity after correcting the normalization for analytically zero transfer. The earlier development test failure and repeat job are retained in the launch record. No existing production job was cancelled or modified.
+
+The submitted unit gate 66992547 subsequently **passed** (14 seconds elapsed), including all ten initialization checks and the spectral-transfer tests. GPU gate 66992548 is pending scheduling priority; all twenty production segments remain dependent on its success.

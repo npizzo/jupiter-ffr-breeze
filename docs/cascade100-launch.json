@@ -1,7 +1,7 @@
 {
   "production_root": "data/cascade100-v1",
   "preflight_root": "data/cascade100-preflight-v1",
-  "status": "SUBMITTED_VALIDATION_GATED",
+  "status": "UNIT_PASSED_GPU_VALIDATION_PENDING",
   "unit_job": "66992547",
   "gpu_validation_job": "66992548",
   "initial_condition_development_job": "66992232",
@@ -163,5 +163,9 @@
       "job": "66992568",
       "afterok": "66992567"
     }
-  ]
+  ],
+  "unit_state": "COMPLETED",
+  "unit_wall_seconds": 14,
+  "gpu_validation_state": "PENDING_PRIORITY",
+  "queue_snapshot": "2026-11-09 17:32 America/New_York"
 }
