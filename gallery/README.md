@@ -5,6 +5,10 @@
 
 Figures below are generated from saved Breeze fields. They are preliminary numerical tests, not a reproduction of Jupiter's folded filamentary regions.
 
+## New production and heat-budget movies
+
+[Watch the gallery](https://npizzo.github.io/jupiter-ffr-breeze/) · [Run records](progress-2026-11-08/README.md). First ten days of the 6000-km f-plane run, plus forty days of the new heat-budget/tracer validation. The beta segment is in progress; shear production is awaiting resources after passing validation.
+
 ## Maintained cap: 40-day validation completed
 
 [Three-depth videos and findings](large40-validation/README.md) · [Campaign design](../docs/large40.md). The 40-day small-box cap test and full-size H100 probe passed; production is queued. All new results include videos near 20, 60 and 100 km. Older entries below predate this requirement and cannot be reconstructed at missing depths.

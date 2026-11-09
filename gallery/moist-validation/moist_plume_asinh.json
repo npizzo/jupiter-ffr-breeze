@@ -1,0 +1,102 @@
+{
+  "case": "moist_plume",
+  "label": "moist plume | implementation validation",
+  "layout": "3 rows, three depth columns",
+  "row_fields": [
+    "vorticity_slices",
+    "tracer_slices",
+    "condensate_slices"
+  ],
+  "height_m": [
+    4062.5,
+    12187.5,
+    24062.5
+  ],
+  "times_seconds": [
+    0.0,
+    120.0,
+    240.0,
+    360.0,
+    480.0,
+    600.0,
+    720.0,
+    840.0,
+    960.0,
+    1080.0,
+    1200.0,
+    1320.0,
+    1440.0,
+    1560.0,
+    1680.0,
+    1800.0,
+    1920.0,
+    2040.0,
+    2160.0,
+    2280.0,
+    2400.0,
+    2520.0,
+    2640.0,
+    2760.0,
+    2880.0,
+    3000.0,
+    3120.0,
+    3240.0,
+    3360.0,
+    3480.0,
+    3600.0
+  ],
+  "fps": 3,
+  "fixed_color_limits": [
+    [
+      [
+        -38.781620025634766,
+        38.781620025634766
+      ],
+      [
+        -35.76445388793945,
+        35.76445388793945
+      ],
+      [
+        -31.713600158691406,
+        31.713600158691406
+      ]
+    ],
+    [
+      [
+        0.0,
+        1.0
+      ],
+      [
+        0.0,
+        1.0
+      ],
+      [
+        0.0,
+        1.0
+      ]
+    ],
+    [
+      [
+        0,
+        0.011156256310641766
+      ],
+      [
+        0,
+        0.011156256310641766
+      ],
+      [
+        0,
+        0.011156256310641766
+      ]
+    ]
+  ],
+  "tracer_color_normalization": {
+    "type": "asinh",
+    "linear_width": 0.01,
+    "fixed_across_time_and_depth": true,
+    "tick_labels": "physical concentration"
+  },
+  "temporal_interpolation": false,
+  "preview": false,
+  "note": "Concentration is a passive mass fraction, not cloud brightness. Vorticity scales differ by depth; concentration scale is shared. No field is clipped."
+}

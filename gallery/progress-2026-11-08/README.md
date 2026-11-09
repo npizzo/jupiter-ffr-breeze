@@ -12,7 +12,7 @@ The protected cap core retained at least 99.974% of its initial N². Final domai
 
 ## New heat-budget and tracer test: forty days complete
 
-[Synchronized flow and tracer movie](shear40_budget.mp4) has three depth columns, vorticity above concentration, and all 321 saved times. This is the 600-km, 64³ validation box, not the new 6000-km shear production run.
+[Synchronized flow and tracer movie](shear40_budget_asinh.mp4) has three depth columns, vorticity above concentration, and all 321 saved times. This is the 600-km, 64³ validation box, not the new 6000-km shear production run.
 
 The 40-day mean residual external enthalpy input was **0.00173 W/m²**, compared with 162 W/m² imposed at the bottom. The maximum sampled imbalance just before a controller update was **0.0951 W/m²**. The protected cap retained at least **99.991%** of its initial N². The tracer stayed nonnegative and the source-budget, inventory, passivity and restart checks passed.
 
@@ -27,3 +27,7 @@ As of November 8 at 8:56 p.m. Eastern, the first shear production job was eligib
 [Numerical summary](summary.json) · [Campaign job IDs](../../docs/shear20-launch.json)
 
 Movie data are lossless subsets of the original saved vorticity/tracer planes; no spatial or temporal resampling is applied before rendering. MP4 encoding is lossy. Per-movie JSON records the fixed color scales and saved times; metadata records actual heights and source hashes. Diagnostic CSVs here are sampled at the three-hour movie cadence. Summary extrema and integrated budgets use the full diagnostic histories, retained with the raw fields on Unity.
+
+## Tracer display correction
+
+The revised movie uses an asinh color normalization with linear width 0.01 and fixed concentration limits 0–1, shared across all times and depths. Colorbar labels are actual concentrations. This reveals diluted tracer that was compressed into the purple end of the earlier linear scale. The final full-domain concentration range is 0.01888–0.12975. The fields are unchanged and no values are clipped. Late-time spatial uniformity can still reflect real mixing. The [earlier linear-scale render](shear40_budget.mp4) is retained for comparison.

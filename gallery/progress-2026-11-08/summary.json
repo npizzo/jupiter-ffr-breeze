@@ -1,0 +1,67 @@
+{
+  "large40_f_first10": {
+    "duration_earth_days": 10.0,
+    "grid": [
+      1024,
+      1024,
+      64
+    ],
+    "cap_minimum_N2": 2.499340894045638e-05,
+    "cap_min_fraction": 0.9997363576182552,
+    "wall_hours": 2.2805739110708236,
+    "w_rms_center_m_s": {
+      "initial": 0.22550309690886491,
+      "final": 1.224916104991674,
+      "minimum": 0.17722842771892766,
+      "maximum": 1.9686622806856557
+    },
+    "external_enthalpy_net_W_m2": {
+      "initial": 162.00000000000347,
+      "final": 166.04812053754455,
+      "minimum": 162.00000000000347,
+      "maximum": 166.04812053754455
+    }
+  },
+  "shear40_budget": {
+    "duration_earth_days": 40.0,
+    "grid": [
+      64,
+      64,
+      64
+    ],
+    "cap_minimum_N2": 2.4997860862737586e-05,
+    "cap_min_fraction": 0.9999144345095033,
+    "wall_hours": 0.39555263499418897,
+    "w_rms_center_m_s": {
+      "initial": 0.22550309690886494,
+      "final": 1.1980205445443108,
+      "minimum": 0.18585064559860176,
+      "maximum": 1.8737895157412219
+    },
+    "external_enthalpy_net_W_m2": {
+      "initial": -1.1624479157035239e-11,
+      "final": -2.1884716261411086e-12,
+      "minimum": -2.7426949600339867e-11,
+      "maximum": 3.456079866737127e-11
+    },
+    "tracer_min": {
+      "initial": 1.325715818729029e-09,
+      "final": 0.018881237518359323,
+      "minimum": 1.0861927395291085e-10,
+      "maximum": 0.01888288525709411
+    },
+    "tracer_max": {
+      "initial": 0.7961714478761673,
+      "final": 0.12975446555504333,
+      "minimum": 0.12975446555504333,
+      "maximum": 0.8148501701737763
+    },
+    "max_preupdate_net_W_m2": {
+      "initial": 0.0,
+      "final": 0.09509559439663917,
+      "minimum": 0.0,
+      "maximum": 0.09509559439663917
+    },
+    "mean_residual_enthalpy_W_m2": 0.0017297761218728152
+  }
+}

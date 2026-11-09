@@ -32,3 +32,7 @@ New movies have three depth columns, with vorticity above tracer concentration, 
 The first unbounded-WENO trial failed the tracer range check (minimum concentration -0.0357). Its dependent production jobs were automatically cancelled. The replacement uses bounded WENO5 for water and dye, SSPRK3, a summed advective CFL target of 0.2, and the extra halo cells required by the limiter. Checks were tightened to numerical-tolerance bounds, rather than clipping concentrations or relaxing acceptance thresholds. The failed attempts and replacement job IDs are retained in the launch record.
 
 Successful morphology alone will not demonstrate an inverse energy cascade. Assess tracer stretching, folding and persistence together with shear evolution, cap stability, transfer diagnostics and resolution sensitivity.
+
+## Validation completed — November 8, 2026
+
+The 40-day heat-budget/tracer test and both full-grid probes passed. [Watch the validation movie and read the measured budgets](https://npizzo.github.io/jupiter-ffr-breeze/#heat-budget). Post-warmup probe costs project 6.39 wall hours per ten simulated days on 1024², and 15.33 hours on 1536². These two-hour probes are preliminary runtime estimates. The first production job is now waiting for resources; it is no longer blocked on validation.
