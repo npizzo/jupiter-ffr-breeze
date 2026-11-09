@@ -37,3 +37,10 @@ Save every three hours at the actual planes nearest 20, 60 and 100 km above the 
 This comparison asks whether convection deforms, fragments, stretches or sustains pre-existing larger eddies and their tracer patterns, and how beta changes that response. Seeded large structures by themselves do not establish an inverse cascade or Jupiter folded-filament reproduction. The model remains a dry, idealized anelastic atmosphere.
 
 Submission IDs and gate status are recorded in [eddy20-launch.json](eddy20-launch.json).
+
+
+## Resubmission status, November 9
+
+The initializer log reports 18 checks passed, and the saved `UNIT_PASS.toml` initializer hash matches the deployed source. Unity subsequently marked the original job chain cancelled without a recorded reason. No GPU-validation or production output had been created.
+
+The GPU short-run validation was resubmitted as **66976504**, followed by the full-grid probe **66976514** and production jobs **66976515–66976522**. They reuse the verified initializer pass and retain the success dependencies between the GPU checks and production. The cancellation cause remains unknown; this is a resubmission, not a claim that the underlying cause has been diagnosed. The launch record preserves the original job IDs and the replacement chain.

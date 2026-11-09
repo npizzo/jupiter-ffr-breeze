@@ -1,66 +1,137 @@
 {
-  "unit_job": "66975408",
   "preflight_root": "data/eddy20-preflight-v1",
   "production_root": "data/eddy20-v1",
+  "initializer_checks": "18 passed; saved PASS hash matches deployed initializer",
+  "unit_job": "66975408",
+  "unit_scheduler_state": "CANCELLED after a saved passing result",
+  "previous_attempt": {
+    "unit_job": "66975408",
+    "preflight_root": "data/eddy20-preflight-v1",
+    "production_root": "data/eddy20-v1",
+    "segments": [
+      {
+        "index": 1,
+        "case": "eddy20_f_heated",
+        "end_day": 10,
+        "job": "66975421",
+        "afterok": "66975420"
+      },
+      {
+        "index": 2,
+        "case": "eddy20_f_control",
+        "end_day": 10,
+        "job": "66975422",
+        "afterok": "66975421"
+      },
+      {
+        "index": 3,
+        "case": "eddy20_beta_heated",
+        "end_day": 10,
+        "job": "66975423",
+        "afterok": "66975422"
+      },
+      {
+        "index": 4,
+        "case": "eddy20_beta_control",
+        "end_day": 10,
+        "job": "66975425",
+        "afterok": "66975423"
+      },
+      {
+        "index": 5,
+        "case": "eddy20_f_heated",
+        "end_day": 20,
+        "job": "66975426",
+        "afterok": "66975425"
+      },
+      {
+        "index": 6,
+        "case": "eddy20_f_control",
+        "end_day": 20,
+        "job": "66975427",
+        "afterok": "66975426"
+      },
+      {
+        "index": 7,
+        "case": "eddy20_beta_heated",
+        "end_day": 20,
+        "job": "66975428",
+        "afterok": "66975427"
+      },
+      {
+        "index": 8,
+        "case": "eddy20_beta_control",
+        "end_day": 20,
+        "job": "66975429",
+        "afterok": "66975428"
+      }
+    ],
+    "thermal_job": "66975418",
+    "probe_job": "66975420",
+    "status": "CANCELLED_BEFORE_GPU_VALIDATION",
+    "status_note": "Unity accounting reports cancellation of the entire chain on 2026-11-09. UNIT_PASS.toml and the log show 18 initializer checks passed; GPU validation and production did not start. Cancellation reason is not recorded; awaiting clarification before resubmission.",
+    "initializer_checks": "18 passed",
+    "unit_pass_initializer_sha256": "1a40b5bf61f236f846e88292ee0be8617d446fb1fd63fb73dc89f96445436989"
+  },
   "segments": [
     {
       "index": 1,
       "case": "eddy20_f_heated",
       "end_day": 10,
-      "job": "66975421",
-      "afterok": "66975420"
+      "job": "66976515",
+      "afterok": "66976514"
     },
     {
       "index": 2,
       "case": "eddy20_f_control",
       "end_day": 10,
-      "job": "66975422",
-      "afterok": "66975421"
+      "job": "66976516",
+      "afterok": "66976515"
     },
     {
       "index": 3,
       "case": "eddy20_beta_heated",
       "end_day": 10,
-      "job": "66975423",
-      "afterok": "66975422"
+      "job": "66976517",
+      "afterok": "66976516"
     },
     {
       "index": 4,
       "case": "eddy20_beta_control",
       "end_day": 10,
-      "job": "66975425",
-      "afterok": "66975423"
+      "job": "66976518",
+      "afterok": "66976517"
     },
     {
       "index": 5,
       "case": "eddy20_f_heated",
       "end_day": 20,
-      "job": "66975426",
-      "afterok": "66975425"
+      "job": "66976519",
+      "afterok": "66976518"
     },
     {
       "index": 6,
       "case": "eddy20_f_control",
       "end_day": 20,
-      "job": "66975427",
-      "afterok": "66975426"
+      "job": "66976520",
+      "afterok": "66976519"
     },
     {
       "index": 7,
       "case": "eddy20_beta_heated",
       "end_day": 20,
-      "job": "66975428",
-      "afterok": "66975427"
+      "job": "66976521",
+      "afterok": "66976520"
     },
     {
       "index": 8,
       "case": "eddy20_beta_control",
       "end_day": 20,
-      "job": "66975429",
-      "afterok": "66975428"
+      "job": "66976522",
+      "afterok": "66976521"
     }
   ],
-  "thermal_job": "66975418",
-  "probe_job": "66975420",
-  "status": "SUBMITTED_WITH_VALIDATION_GATES"
+  "status": "RESUBMITTED_WITH_GPU_VALIDATION_GATES",
+  "thermal_job": "66976504",
+  "probe_job": "66976514"
 }
