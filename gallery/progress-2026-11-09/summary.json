@@ -1,0 +1,58 @@
+{
+  "f": {
+    "status": "COMPLETE",
+    "days": 10.0,
+    "wall_hours": 2.2805739110708236,
+    "grid": [
+      1024,
+      1024,
+      64
+    ],
+    "cap_min_fraction": 0.9997363576182552,
+    "final_w_rms_m_s": 1.224916104991674,
+    "last_day_w_rms_m_s": 1.2258477270420736,
+    "last_day_horizontal_rms_m_s": 1.4835033369509172,
+    "last_day_kinetic_energy_J_m2": 189400.260649683,
+    "last_day_external_heat_W_m2": 165.97065764046653,
+    "frame_count": 81
+  },
+  "beta": {
+    "status": "COMPLETE",
+    "days": 10.0,
+    "wall_hours": 2.2863683377371893,
+    "grid": [
+      1024,
+      1024,
+      64
+    ],
+    "cap_min_fraction": 0.9997376267602633,
+    "final_w_rms_m_s": 1.2265685293350643,
+    "last_day_w_rms_m_s": 1.225547674201781,
+    "last_day_horizontal_rms_m_s": 1.4823267752482678,
+    "last_day_kinetic_energy_J_m2": 189084.09031333608,
+    "last_day_external_heat_W_m2": 165.9696269971271,
+    "frame_count": 81
+  },
+  "shear_heated": {
+    "status": "COMPLETE",
+    "days": 10.0,
+    "wall_hours": 7.2539436427752175,
+    "grid": [
+      1024,
+      1024,
+      64
+    ],
+    "cap_min_fraction": 0.9999223754373598,
+    "final_w_rms_m_s": 1.1776229035283023,
+    "last_day_w_rms_m_s": 1.175790825530984,
+    "last_day_horizontal_rms_m_s": 19.461034163611643,
+    "last_day_kinetic_energy_J_m2": 14588834.827569213,
+    "last_day_external_heat_W_m2": 4.970838555588367e-13,
+    "frame_count": 81,
+    "tracer_inventory_max_relative_drift": 5.355715870791755e-13,
+    "tracer_min": 5.0419715964830765e-11,
+    "tracer_max": 0.8010541820415984,
+    "mean_external_heat_residual_W_m2": 0.006365689557092112,
+    "maximum_preupdate_heat_imbalance_W_m2": 0.09348462014983738
+  }
+}
