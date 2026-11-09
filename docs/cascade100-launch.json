@@ -1,0 +1,167 @@
+{
+  "production_root": "data/cascade100-v1",
+  "preflight_root": "data/cascade100-preflight-v1",
+  "status": "SUBMITTED_VALIDATION_GATED",
+  "unit_job": "66992547",
+  "gpu_validation_job": "66992548",
+  "initial_condition_development_job": "66992232",
+  "initial_condition_checks": "10 passed on Unity; the first transfer test exposed a near-zero relative-normalization issue, corrected before campaign submission.",
+  "transfer_self_tests": "Passed on Unity after correction: known energy, Parseval, channel parity, conservation, transfer reversal/scaling, stress-work identity.",
+  "repeat_unit_development_job": "66992278",
+  "grid": [
+    256,
+    256,
+    64
+  ],
+  "duration_earth_days_per_case": 100,
+  "rotation": "f-plane",
+  "seed_wavelength_m": 1200000,
+  "shear_rossby": 0,
+  "heating_W_m2": [
+    162,
+    0
+  ],
+  "compute_and_render_location": "Unity",
+  "segments": [
+    {
+      "index": 1,
+      "case": "cascade100_f_heated",
+      "end_day": 10,
+      "job": "66992549",
+      "afterok": "66992548"
+    },
+    {
+      "index": 2,
+      "case": "cascade100_f_control",
+      "end_day": 10,
+      "job": "66992550",
+      "afterok": "66992549"
+    },
+    {
+      "index": 3,
+      "case": "cascade100_f_heated",
+      "end_day": 20,
+      "job": "66992551",
+      "afterok": "66992550"
+    },
+    {
+      "index": 4,
+      "case": "cascade100_f_control",
+      "end_day": 20,
+      "job": "66992552",
+      "afterok": "66992551"
+    },
+    {
+      "index": 5,
+      "case": "cascade100_f_heated",
+      "end_day": 30,
+      "job": "66992553",
+      "afterok": "66992552"
+    },
+    {
+      "index": 6,
+      "case": "cascade100_f_control",
+      "end_day": 30,
+      "job": "66992554",
+      "afterok": "66992553"
+    },
+    {
+      "index": 7,
+      "case": "cascade100_f_heated",
+      "end_day": 40,
+      "job": "66992555",
+      "afterok": "66992554"
+    },
+    {
+      "index": 8,
+      "case": "cascade100_f_control",
+      "end_day": 40,
+      "job": "66992556",
+      "afterok": "66992555"
+    },
+    {
+      "index": 9,
+      "case": "cascade100_f_heated",
+      "end_day": 50,
+      "job": "66992557",
+      "afterok": "66992556"
+    },
+    {
+      "index": 10,
+      "case": "cascade100_f_control",
+      "end_day": 50,
+      "job": "66992558",
+      "afterok": "66992557"
+    },
+    {
+      "index": 11,
+      "case": "cascade100_f_heated",
+      "end_day": 60,
+      "job": "66992559",
+      "afterok": "66992558"
+    },
+    {
+      "index": 12,
+      "case": "cascade100_f_control",
+      "end_day": 60,
+      "job": "66992560",
+      "afterok": "66992559"
+    },
+    {
+      "index": 13,
+      "case": "cascade100_f_heated",
+      "end_day": 70,
+      "job": "66992561",
+      "afterok": "66992560"
+    },
+    {
+      "index": 14,
+      "case": "cascade100_f_control",
+      "end_day": 70,
+      "job": "66992562",
+      "afterok": "66992561"
+    },
+    {
+      "index": 15,
+      "case": "cascade100_f_heated",
+      "end_day": 80,
+      "job": "66992563",
+      "afterok": "66992562"
+    },
+    {
+      "index": 16,
+      "case": "cascade100_f_control",
+      "end_day": 80,
+      "job": "66992564",
+      "afterok": "66992563"
+    },
+    {
+      "index": 17,
+      "case": "cascade100_f_heated",
+      "end_day": 90,
+      "job": "66992565",
+      "afterok": "66992564"
+    },
+    {
+      "index": 18,
+      "case": "cascade100_f_control",
+      "end_day": 90,
+      "job": "66992566",
+      "afterok": "66992565"
+    },
+    {
+      "index": 19,
+      "case": "cascade100_f_heated",
+      "end_day": 100,
+      "job": "66992567",
+      "afterok": "66992566"
+    },
+    {
+      "index": 20,
+      "case": "cascade100_f_control",
+      "end_day": 100,
+      "job": "66992568",
+      "afterok": "66992567"
+    }
+  ]
+}
