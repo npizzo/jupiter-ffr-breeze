@@ -1,0 +1,13 @@
+{
+  "programs": [],
+  "stream_groups": [],
+  "streams": [
+    {
+      "width": 1500,
+      "height": 400,
+      "duration": "20.083333",
+      "nb_frames": "241"
+    }
+  ],
+  "bytes": 12638691
+}

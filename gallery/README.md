@@ -1,5 +1,7 @@
 # Output gallery
 
+**New: f-plane completed through day 30.** [Watch all three depths](https://npizzo.github.io/jupiter-ffr-breeze/#f-plane30). The paired f/beta movie remains at twenty days until the matching beta segment finishes.
+
 **[Watch the movies on the gallery landing page](https://npizzo.github.io/jupiter-ffr-breeze/)**
 
 

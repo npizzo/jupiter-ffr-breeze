@@ -47,3 +47,17 @@ python scripts/compare_flow_tracer_movies.py render/shear_heated10 render/shear_
 ```
 
 The validation pairs use the same comparison command with `--tracer --fps 2`; the full-grid probe uses `flow_tracer_video.py --vorticity-linear-width 0.1 --fps 1`. Movie manifests record normalization, frame times and renderer hashes.
+
+## Additional completed f-plane segment: day 30
+
+[Watch the three-depth movie](https://npizzo.github.io/jupiter-ffr-breeze/#f-plane30). Job **66946546** completed day 20–30 successfully (2:17:31 elapsed). `f_plane_30days.mp4` covers **all 241 saved times from day 0 to day 30** at 12 frames/s, with no missing or repeated restart-boundary frames. The three synchronized columns use actual heights 19.6875, 59.0625 and 100.3125 km above the bottom.
+
+Symmetric asinh vorticity scales use width 0.1 in ζ/f₀ and full extrema over all 241 frames, fixed separately for each depth. Limits may differ from the twenty-day f/beta comparison. This older run saved no passive tracer and retains the original cap relaxation, not the later balanced-heating feedback. It continues to gain heat overall. The matching beta-plane day 20–30 segment remains queued; the campaign target remains forty days per case. A longer movie alone does not establish an inverse cascade or jets.
+
+Records: `f30_provenance.json`, `f30_segment3_metadata.toml`, `f30_segment3_export.json`, `f30_segment3_sampled_diagnostics.csv`, `f_plane_30days.json`, and `f30_media_check.json`. Earlier segments retain their original records in this directory.
+
+Reproduction, with rendering exports joined chronologically in `work/gallery-update-f-first30`:
+
+```sh
+python scripts/flow_tracer_video.py work/gallery-update-f-first30 --vorticity-only --vorticity-linear-width 0.1 --label 'f-plane | 6000-km domain | completed through day 30' --fps 12 --crf 28 --output gallery/completed-2026-11-09/f_plane_30days.mp4
+```

@@ -1,0 +1,17 @@
+{
+  "status": "COMPLETE",
+  "job_id": 66946546,
+  "end_day": 30,
+  "frame_count": 241,
+  "source_directories": [
+    "large40-first10-fields",
+    "gallery-update-f-second10",
+    "gallery-update-f-third10"
+  ],
+  "temporal_interpolation": false,
+  "cap_min_fraction_segment3": 0.9992751552288947,
+  "segment3_wall_seconds": 8116.359289884567,
+  "renderer_sha256": "889510b735c17ea44c1911698120ae01c20c9c5537a5185029a2f7241d1738d7",
+  "no_tracer_saved": true,
+  "note": "Complete through day 30; planned campaign extends to day 40. Fixed vorticity scales span all 241 frames, separately for each depth."
+}

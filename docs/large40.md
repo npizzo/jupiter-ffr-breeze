@@ -90,3 +90,9 @@ The H100 probe's measured post-startup rate projects 2.34 wall-clock hours per t
 ## Gallery update, November 9 afternoon
 
 Both original f-plane and beta-plane cases completed twenty days. The gallery now includes all 161 saved times for their matched twenty-day comparison. Longer segments continue toward forty days. [Watch the gallery](https://npizzo.github.io/jupiter-ffr-breeze/).
+
+## F-plane day 30 completed — November 9, 2026
+
+Job 66946546 completed the day 20–30 segment successfully in 2 hours 17 minutes 31 seconds. The gallery now contains a continuous three-depth movie covering all 241 saved times from day 0 to day 30. The beta-plane day 20–30 job 66946547 remains queued, so the paired comparison remains at day 20. The forty-day campaign is not yet finished.
+
+[Watch the thirty-day movie](https://npizzo.github.io/jupiter-ffr-breeze/#f-plane30). Metadata, sampled diagnostics, export records and fixed-scale rendering provenance are in `gallery/completed-2026-11-09/`. No tracer was saved by this older campaign.
