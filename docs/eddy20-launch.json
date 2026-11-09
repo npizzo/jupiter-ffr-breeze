@@ -1,0 +1,66 @@
+{
+  "unit_job": "66975408",
+  "preflight_root": "data/eddy20-preflight-v1",
+  "production_root": "data/eddy20-v1",
+  "segments": [
+    {
+      "index": 1,
+      "case": "eddy20_f_heated",
+      "end_day": 10,
+      "job": "66975421",
+      "afterok": "66975420"
+    },
+    {
+      "index": 2,
+      "case": "eddy20_f_control",
+      "end_day": 10,
+      "job": "66975422",
+      "afterok": "66975421"
+    },
+    {
+      "index": 3,
+      "case": "eddy20_beta_heated",
+      "end_day": 10,
+      "job": "66975423",
+      "afterok": "66975422"
+    },
+    {
+      "index": 4,
+      "case": "eddy20_beta_control",
+      "end_day": 10,
+      "job": "66975425",
+      "afterok": "66975423"
+    },
+    {
+      "index": 5,
+      "case": "eddy20_f_heated",
+      "end_day": 20,
+      "job": "66975426",
+      "afterok": "66975425"
+    },
+    {
+      "index": 6,
+      "case": "eddy20_f_control",
+      "end_day": 20,
+      "job": "66975427",
+      "afterok": "66975426"
+    },
+    {
+      "index": 7,
+      "case": "eddy20_beta_heated",
+      "end_day": 20,
+      "job": "66975428",
+      "afterok": "66975427"
+    },
+    {
+      "index": 8,
+      "case": "eddy20_beta_control",
+      "end_day": 20,
+      "job": "66975429",
+      "afterok": "66975428"
+    }
+  ],
+  "thermal_job": "66975418",
+  "probe_job": "66975420",
+  "status": "SUBMITTED_WITH_VALIDATION_GATES"
+}

@@ -85,3 +85,6 @@ The [large-domain campaign](docs/large40.md) uses matched 6,000-km f/beta channe
 [Shear/tracer campaign](docs/shear20.md): validation and full-grid checks passed; the first heated ten-day segment completed. Heating-off, no-shear and horizontally refined cases remain queued. A separate thermal-feedback control addresses net heat accumulation.
 
 [Moist-convection validation](docs/moist-validation.md): thermodynamic checks, a resting atmosphere, and dry/moist plumes at two resolutions completed. [Watch the synchronized three-depth movies](https://npizzo.github.io/jupiter-ffr-breeze/#moist-validation). Local plume extremes are still resolution-sensitive; moisture is not yet enabled in the FFR production campaign.
+
+
+New campaign: [larger random eddies on f and beta planes](docs/eddy20.md), four matched heating-on/off cases over twenty Earth days. [Queue record](docs/eddy20-launch.json). Production is gated on initializer, short-run and production-grid validation.

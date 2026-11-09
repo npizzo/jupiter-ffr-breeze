@@ -1,0 +1,18 @@
+{
+  "configs/eddy20_beta_control.toml": "bffbb1d11df1420521f28ea8a4b1cbd8fb7f0edaef47ce83f0d87a65f7db4530",
+  "configs/eddy20_beta_heated.toml": "96489b1045882b4e762abf0423dfcd6db3c773f3c5bcdaff520e8459ebb25943",
+  "configs/eddy20_f_control.toml": "63b22315e5fc57ecb32314fdd62b92bd8f0cab040d19cfdfbfbc3e768237ca4c",
+  "configs/eddy20_f_heated.toml": "7de06ecc94182d16fe3149e302655a73b11b0727044f0569948d052ce726660b",
+  "scripts/eddy1200/campaign.jl": "ce5fa4e37e7f68c8d2f88cc05807db44e975d94459e35639c815a3d6bfb30939",
+  "scripts/eddy1200/check_initial.jl": "6c711b380153267c4571f372f3fbf57e66663107166abdaf2a618cc5854fd8b0",
+  "scripts/eddy1200/check_large.jl": "fd7b64342ac60612e70a71c82358ca53d9119cf1197959787f89704262044bb7",
+  "scripts/eddy1200/check_output.jl": "5ca05e66ac8889640565ae7e42a885982686b7c3f77d892316fd75617c937c12",
+  "scripts/eddy1200/initial_flow.jl": "1a40b5bf61f236f846e88292ee0be8617d446fb1fd63fb73dc89f96445436989",
+  "scripts/eddy1200/preflight.jl": "a15c23983b1158421fd1267743fdde7dc0c61b15b5ad09d68e23d992afb2d543",
+  "scripts/eddy1200/run.jl": "0885ee121d8a0df628ec8583bd7dca765cb684c446e3e4f8eda7a648ca4a7ee8",
+  "scripts/eddy1200/thermal_budget_controller.jl": "35404ad7bb8a5071c9d51a3992c8c4ecbb452133c9ffdff1376928b1e6679c27",
+  "slurm/eddy-probe.sbatch": "a0c233be61bd285c245ce149d7da67df5b1484a1b21ba0d5809cc6efefbdd3f0",
+  "slurm/eddy-thermal.sbatch": "cc8f13bea9f9150d4dde511e166eae3923d301c6f1b213089645e8461cd9ac01",
+  "slurm/eddy-unit.sbatch": "6405b994bda944d5240fd4a8dd5dcb7dae3cbce1dbf8f5f4973b9dd75e93c939",
+  "slurm/eddy20.sbatch": "1d43f11383d671dda42703a6a46e6ce9846fcd007f287a06caafc0d2f4c2e474"
+}
