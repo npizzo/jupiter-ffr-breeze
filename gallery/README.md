@@ -1,5 +1,7 @@
 # Output gallery
 
+**New: matched large-eddy cases completed through day 50.** [Watch the comparison and separate heated/unheated movies](https://npizzo.github.io/jupiter-ffr-breeze/#cascade50), with synchronized three-depth vorticity and tracer. [Parameters, scales and provenance](cascade100-first50/README.md). This is the first fifty days of the hundred-day campaign.
+
 **New: f-plane completed through day 30.** [Watch all three depths](https://npizzo.github.io/jupiter-ffr-breeze/#f-plane30). The paired f/beta movie remains at twenty days until the matching beta segment finishes.
 
 **[Watch the movies on the gallery landing page](https://npizzo.github.io/jupiter-ffr-breeze/)**
@@ -7,7 +9,7 @@
 
 Figures below are generated from saved Breeze fields. They are preliminary numerical tests, not a reproduction of Jupiter's folded filamentary regions.
 
-## Latest: matched controls, twenty-day rotation comparison and large-eddy validation
+## November 9: matched controls, twenty-day rotation comparison and large-eddy validation
 
 [Watch the updated gallery](https://npizzo.github.io/jupiter-ffr-breeze/) · [Completed-run records](completed-2026-11-09/README.md). Five new synchronized movies show the heating-on/off ten-day pair, both original rotation cases through twenty days, the two one-day large-eddy validation pairs, and the two-hour production-grid probe. Every movie includes three actual depths; tracer accompanies runs that saved it.
 

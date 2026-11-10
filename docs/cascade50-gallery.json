@@ -1,5 +1,5 @@
 {
-  "status": "RENDER_QUEUED",
+  "status": "PUBLISHED",
   "render_job": "67036876",
   "dependency_job": "66992558",
   "heated_end50_job": "66992557",
@@ -12,5 +12,12 @@
     "comparison_0_50days.mp4",
     "heated_0_50days.mp4",
     "unheated_0_50days.mp4"
-  ]
+  ],
+  "render_status": "COMPLETED",
+  "simulation_end50_status": "COMPLETED_BOTH_CASES",
+  "media_verified_on": "Unity",
+  "published_date": "2026-11-10",
+  "gallery_url": "https://npizzo.github.io/jupiter-ffr-breeze/#cascade50",
+  "asset_commit": "910bb8b58c3e43349664359f2df99568e611646b",
+  "provenance": "gallery/cascade100-first50/provenance.json"
 }

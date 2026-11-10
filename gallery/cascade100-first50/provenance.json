@@ -1,0 +1,117 @@
+{
+  "status": "COMPLETE",
+  "end_day": 50,
+  "campaign_target_day": 100,
+  "expected_frames_per_movie": 401,
+  "compute_location": "Unity",
+  "raw_fields_downloaded": false,
+  "cases": {
+    "heated": [
+      {
+        "segment": 1,
+        "source": "data/cascade100-v1/cascade100_f_heated/segment_1",
+        "frames": 81,
+        "driver_sha256": "0885ee121d8a0df628ec8583bd7dca765cb684c446e3e4f8eda7a648ca4a7ee8",
+        "configuration_sha256": "7f7595486294a6141477d263b5be590da2dba68a0b6b75e388bd43b009acf6af"
+      },
+      {
+        "segment": 2,
+        "source": "data/cascade100-v1/cascade100_f_heated/segment_2",
+        "frames": 80,
+        "driver_sha256": "0885ee121d8a0df628ec8583bd7dca765cb684c446e3e4f8eda7a648ca4a7ee8",
+        "configuration_sha256": "024e380fcdbb3a846185e89414b06fda5e328e8269723ce3b7c11f25d1d19a83"
+      },
+      {
+        "segment": 3,
+        "source": "data/cascade100-v1/cascade100_f_heated/segment_3",
+        "frames": 80,
+        "driver_sha256": "0885ee121d8a0df628ec8583bd7dca765cb684c446e3e4f8eda7a648ca4a7ee8",
+        "configuration_sha256": "c82f6b69b565e976bd37e59cf812a88fde7ea342980df96bf8b8840d8e02b782"
+      },
+      {
+        "segment": 4,
+        "source": "data/cascade100-v1/cascade100_f_heated/segment_4",
+        "frames": 80,
+        "driver_sha256": "0885ee121d8a0df628ec8583bd7dca765cb684c446e3e4f8eda7a648ca4a7ee8",
+        "configuration_sha256": "af68701207c111b7e0893ab32b3ca213ba58d5ad574d5906a258561473ed22cf"
+      },
+      {
+        "segment": 5,
+        "source": "data/cascade100-v1/cascade100_f_heated/segment_5",
+        "frames": 80,
+        "driver_sha256": "0885ee121d8a0df628ec8583bd7dca765cb684c446e3e4f8eda7a648ca4a7ee8",
+        "configuration_sha256": "93c5517c7abb2b4990461a6020a2bfc24f5719b8e67431bec824e46a7e3a3ea9"
+      }
+    ],
+    "control": [
+      {
+        "segment": 1,
+        "source": "data/cascade100-v1/cascade100_f_control/segment_1",
+        "frames": 81,
+        "driver_sha256": "0885ee121d8a0df628ec8583bd7dca765cb684c446e3e4f8eda7a648ca4a7ee8",
+        "configuration_sha256": "8e31cddca00c7985e405394d99c8bb82ae56dc4bc3edc66c810dd7897555b63e"
+      },
+      {
+        "segment": 2,
+        "source": "data/cascade100-v1/cascade100_f_control/segment_2",
+        "frames": 80,
+        "driver_sha256": "0885ee121d8a0df628ec8583bd7dca765cb684c446e3e4f8eda7a648ca4a7ee8",
+        "configuration_sha256": "01eae074162b92e7e5165db360e98ae190a3421e731a15d2d2ae0ec091e0c1f3"
+      },
+      {
+        "segment": 3,
+        "source": "data/cascade100-v1/cascade100_f_control/segment_3",
+        "frames": 80,
+        "driver_sha256": "0885ee121d8a0df628ec8583bd7dca765cb684c446e3e4f8eda7a648ca4a7ee8",
+        "configuration_sha256": "50c2e48ef37f98bf6ad6fa003f30a16e7e70e32892178b20cc06c89b4cd83c2e"
+      },
+      {
+        "segment": 4,
+        "source": "data/cascade100-v1/cascade100_f_control/segment_4",
+        "frames": 80,
+        "driver_sha256": "0885ee121d8a0df628ec8583bd7dca765cb684c446e3e4f8eda7a648ca4a7ee8",
+        "configuration_sha256": "d5bc83429dfb54971e5831d32d966f0ce7360e61dbbdfa223c45e45506f3f559"
+      },
+      {
+        "segment": 5,
+        "source": "data/cascade100-v1/cascade100_f_control/segment_5",
+        "frames": 80,
+        "driver_sha256": "0885ee121d8a0df628ec8583bd7dca765cb684c446e3e4f8eda7a648ca4a7ee8",
+        "configuration_sha256": "736e4fbed481431ea939a73abca930c2499ff2e3de346ca6c9aae9eba471b3e8"
+      }
+    ]
+  },
+  "renderer_sha256": "b331a28b2898923152dc86c8cd391f17467325543b5a636a39d6209dee354693",
+  "media": {
+    "comparison_0_50days.mp4": {
+      "frames": 401,
+      "duration_seconds": 33.41,
+      "bytes": 13550694,
+      "sha256": "ec1fd42f0470912f6df0e4a9ea0a988ffa124b7d594576fafd54459ea6212e1e",
+      "poster_pixels": [
+        1500,
+        1480
+      ]
+    },
+    "heated_0_50days.mp4": {
+      "frames": 401,
+      "duration_seconds": 33.41,
+      "bytes": 10732394,
+      "sha256": "4f5f76443017e8f7fcff336ca2c30f97e521ad8250506554a774e47cf445e8a9",
+      "poster_pixels": [
+        1500,
+        740
+      ]
+    },
+    "unheated_0_50days.mp4": {
+      "frames": 401,
+      "duration_seconds": 33.41,
+      "bytes": 2451790,
+      "sha256": "75eddfce98421a817b5c81a964ae8492f39bd402d088370b8ff517b0547c1992",
+      "poster_pixels": [
+        1500,
+        740
+      ]
+    }
+  }
+}

@@ -64,3 +64,12 @@ Unit gate **66992547**, GPU restart/one-day/throughput gate **66992548**, follow
 Ten initial-condition checks passed on Unity. The transfer self-tests also passed on Unity after correcting the normalization for analytically zero transfer. The earlier development test failure and repeat job are retained in the launch record. No existing production job was cancelled or modified.
 
 The submitted unit gate 66992547 subsequently **passed** (14 seconds elapsed), including all ten initialization checks and the spectral-transfer tests. GPU gate 66992548 is pending scheduling priority; all twenty production segments remain dependent on its success.
+
+
+## Fifty-day publication — November 10, 2026
+
+The validation gates passed and both matched cases completed days 0–50, including all five segment diagnostics. Heated segment five was job 66992557 and unheated segment five was 66992558. Dependent rendering job 67036876 completed on Unity.
+
+[Watch the comparison and separate-case movies](https://npizzo.github.io/jupiter-ffr-breeze/#cascade50). Each contains all 401 real saved times, three depth columns, vorticity above passive tracer, and shared fixed color scales. [Publication records](../gallery/cascade100-first50/README.md) include scale definitions, source/configuration hashes and segment metadata. Scientific computation, rendering and media validation stayed on Unity.
+
+This publishes the first fifty days of the hundred-day campaign; it does not report later queue progress or infer inverse transfer from appearance. Earlier submission and queue observations above are retained as dated history.
