@@ -1,0 +1,16 @@
+{
+  "status": "RENDER_QUEUED",
+  "render_job": "67036876",
+  "dependency_job": "66992558",
+  "heated_end50_job": "66992557",
+  "target_end_day": 50,
+  "expected_frames": 401,
+  "render_location": "Unity",
+  "remote_artifact_directory": "rendered/cascade100-first50-gallery",
+  "gallery_path": "gallery/cascade100-first50",
+  "movies": [
+    "comparison_0_50days.mp4",
+    "heated_0_50days.mp4",
+    "unheated_0_50days.mp4"
+  ]
+}
