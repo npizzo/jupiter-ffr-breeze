@@ -41,7 +41,8 @@ sponge and global thermal feedback remain idealizations. It is not yet a
   geometry callback. [Revision 3](gamma2026_v3-gpu-callback.md) fixes that GPU
   compatibility issue while preserving the SI equations and configurations.
   CPU validation **1402727** passed 20 checks and 1024² GPU gate **1402728**
-  passed. First science run **1402729** has started. Remaining science jobs are
+  passed. First polar science run **1402729** completed 75 days in 1 h 7 min;
+  matched flat-plane control **1402730** has started. Remaining science jobs are
   **1402730–1402734, 1402736–1402737**, with a separate 2048² gate **1402735**.
 - Ferrel's first initialization **1401859** passed, but GPU gate **1401860**
   stopped before stepping because the initial pressure diagnostic read stale
@@ -63,10 +64,13 @@ sponge and global thermal feedback remain idealizations. It is not yet a
   the shared CUDA cache had no runtime selected after CPU precompilation; its
   dependent jobs cancelled automatically. The [isolated GPU environment](ferrel2026-gpu-runtime.md)
   preserves v3 physics and resolved package versions. Runtime setup **1409245**
-  gates initialization **1409338**, CPU checks **1409339**, GPU quick **1409340**
-  and full-grid pilot **1409341**. On success, fine pilot **1409342** and the
-  three 48-hour cases **1409343–1409345** start automatically. These jobs are
-  submitted; their new environment still requires actual runtime validation.
+  passed with actual L40S execution and unchanged package versions. Initialization
+  **1409338** passed 104 checks; CPU checks **1409339** and GPU quick **1409340**
+  passed restart, native momentum/mass closure, tracer, cap and axisymmetric
+  controls. Full-grid pilot **1409341** is now running at 512² × 96. On its
+  successful completion, fine pilot **1409342** and the serialized 48-hour cases
+  **1409343–1409345** release automatically. These longer cases remain queued;
+  full-grid validation and physical interpretation are not yet complete.
 - The preliminary γ-plane chain stopped at an overly strict bitwise FFT equality
   check; its dependent jobs were automatically cancelled before any science run.
   The isolated replacement uses a roundoff tolerance and the recovered reference

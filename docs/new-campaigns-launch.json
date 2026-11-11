@@ -151,7 +151,7 @@
     "science_runs_started": false
   },
   "github_record_url": "https://github.com/npizzo/jupiter-ffr-breeze/blob/main/docs/new-campaigns.md",
-  "recorded_at_utc": "2026-11-11T03:27:37.863863+00:00",
+  "recorded_at_utc": "2026-11-11T03:48:42.722975+00:00",
   "gamma_v2_initial_environment": {
     "root": "data/gamma2026-v2a",
     "unit_job": "1397848",
@@ -374,7 +374,10 @@
         ],
         "seed": 11,
         "job": "1402729",
-        "afterok": "1402728"
+        "afterok": "1402728",
+        "status": "COMPLETED",
+        "completed_days": 75,
+        "wall_elapsed": "01:07:15"
       },
       {
         "kind": "flat",
@@ -384,7 +387,8 @@
         ],
         "seed": 11,
         "job": "1402730",
-        "afterok": "1402729"
+        "afterok": "1402729",
+        "status": "RUNNING"
       },
       {
         "kind": "polar",
@@ -448,7 +452,7 @@
       }
     ],
     "estimated_75day_wall_hours_1024": 1.1662050720704298,
-    "first_science_status": "RUNNING",
+    "first_science_status": "COMPLETED",
     "science_runs_started": true
   },
   "ferrel_v1_pressure_halo_failure": {
@@ -600,11 +604,11 @@
     "source": "scripts/ferrel2026_v3",
     "configs": "configs/ferrel2026",
     "unit_job": "1409338",
-    "unit_status": "PENDING_DEPENDENCY",
+    "unit_status": "COMPLETED_PASS",
     "cpu_closure_job": "1409339",
-    "cpu_closure_status": "PENDING_DEPENDENCY",
+    "cpu_closure_status": "COMPLETED_PASS",
     "quick96_job": "1409340",
-    "quick96_status": "PENDING_DEPENDENCY",
+    "quick96_status": "COMPLETED_PASS",
     "pilot512_job": "1409341",
     "pilot1024_job": "1409342",
     "production_grid": [
@@ -659,13 +663,12 @@
     },
     "derived_streamfunction_criterion": "Measured native mass-flux difference integral consistency, accumulated roundoff and individual reconstruction; supported by Unity audit1403720",
     "scope": "Transient eddy-circulation screening; not statistically steady or deep Jovian Ferrel-cell fidelity",
-    "science_runs_started": false,
     "environment": "environments/ferrel2026_gpu",
     "runtime_wrappers": "scripts/ferrel2026_gpu",
     "runtime_setup_job": "1409245",
-    "runtime_setup_status": "PENDING",
+    "runtime_setup_status": "COMPLETED_PASS",
     "runtime_and_compiler_preference": "12.2",
-    "pilot512_status": "PENDING_DEPENDENCY",
+    "pilot512_status": "RUNNING",
     "pilot1024_status": "PENDING_DEPENDENCY",
     "previous_cpu_evidence": {
       "unit_job": "1405388",
@@ -673,7 +676,38 @@
       "cpu_closure_job": "1405389",
       "cpu_closure_status": "COMPLETED_PASS",
       "scientific_source_unchanged": true
-    }
+    },
+    "initialization_checks_passed": 104,
+    "runtime_validation": {
+      "gpu": "NVIDIA L40S",
+      "runtime": "12.2.0",
+      "host_driver": "580.178.04",
+      "package_versions_unchanged": true,
+      "device_execution_probe": "PASS",
+      "original_manifest_sha256": "0ed2ee7d2e5e72a5558acdda0a87adc921adc7609f408ffafe81111eb9fb567d",
+      "repaired_manifest_sha256": "0ed2ee7d2e5e72a5558acdda0a87adc921adc7609f408ffafe81111eb9fb567d"
+    },
+    "cpu_verified_checks": [
+      "sampled native momentum closure",
+      "native mass circulation closure",
+      "continuous/restart agreement",
+      "heated and unheated axisymmetric controls",
+      "tracer and cap checks",
+      "derived streamfunction consistency"
+    ],
+    "full_grid_pilot_started": true,
+    "bounded_48h_runs_started": false,
+    "gpu_verified_checks": [
+      "continuous/restart agreement: 17 checks",
+      "sampled native momentum closure",
+      "native mass circulation closure",
+      "heated and unheated axisymmetric controls",
+      "tracer and cap checks",
+      "derived streamfunction consistency",
+      "sampled GPU memory headroom"
+    ],
+    "quick_gpu_memory_peak_fraction": 0.0154,
+    "automated_release": "Successful full-grid pilot1409341 releases independent refinement1409342 and serialized48h cases1409343,1409344,1409345; no manual approval required."
   },
   "ferrel_v3_cuda_runtime_failure": {
     "root": "data/ferrel2026-v3",
@@ -714,26 +748,26 @@
       {
         "name": "b0",
         "heat_W_m2": 0,
-        "job": "1409343",
-        "afterok": "1409341",
+        "job": "1405393",
+        "afterok": "1405391",
         "days": 2,
-        "status": "PENDING_DEPENDENCY"
+        "status": "CANCELLED_AUTOMATICALLY_AFTER_FAILED_DEPENDENCY"
       },
       {
         "name": "b162",
         "heat_W_m2": 162,
-        "job": "1409344",
-        "afterok": "1409343",
+        "job": "1405394",
+        "afterok": "1405393",
         "days": 2,
-        "status": "PENDING_DEPENDENCY"
+        "status": "CANCELLED_AUTOMATICALLY_AFTER_FAILED_DEPENDENCY"
       },
       {
         "name": "boundary162",
         "heat_W_m2": 162,
-        "job": "1409345",
-        "afterok": "1409344",
+        "job": "1405395",
+        "afterok": "1405394",
         "days": 2,
-        "status": "PENDING_DEPENDENCY"
+        "status": "CANCELLED_AUTOMATICALLY_AFTER_FAILED_DEPENDENCY"
       }
     ],
     "physical_field_restart_tolerances_unchanged": {

@@ -1,6 +1,6 @@
 # Jupiter folded filamentary regions with Breeze.jl
 
-**Current experiments:** the first 75-day polar γ-plane run is running after CPU/GPU checks passed. Ferrel revision 3 passed all 104 initialization checks and the full CPU momentum/mass, restart and axisymmetric tests. Its GPU test stopped before stepping because CUDA did not select a runtime; an [isolated environment repair](docs/ferrel2026-gpu-runtime.md) and replacement validation/48-hour experiment chain are queued. Longer cases release automatically only after the GPU and full-grid checks pass. [Current launch record](docs/new-campaigns-launch.json).
+**Current experiments:** the first 75-day polar γ-plane case completed and its matched flat-plane control is running. Ferrel initialization, CPU and GPU validation passed after an [isolated runtime repair](docs/ferrel2026-gpu-runtime.md). The 512² × 96 full-grid Ferrel pilot is running on Unity; three 48-hour cases and a 1024² refinement are queued to release automatically after it passes. These tests assess transient mechanism credibility; steady Jovian cells are not yet established. [Current launch record](docs/new-campaigns-launch.json).
 
 **Submitted November 10:** [Polar γ-plane reproduction and dry-convection pilots](docs/new-campaigns.md), with matched controls, resolution checks and Unity job records. These are staged experiments; no new science results are claimed yet.
 
