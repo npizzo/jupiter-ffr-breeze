@@ -1,0 +1,113 @@
+{
+  "file": "boundary162_vorticity_tracer.mp4",
+  "poster": "boundary162_vorticity_tracer.png",
+  "cases": [
+    "boundary162"
+  ],
+  "layout": "2 rows \u00d7 3 actual depth columns",
+  "row_order": [
+    "boundary162: vorticity",
+    "boundary162: tracer"
+  ],
+  "frames": 49,
+  "fps": 6,
+  "duration_seconds": 8.16,
+  "times_seconds": [
+    0.0,
+    3600.0,
+    7200.0,
+    10800.0,
+    14400.0,
+    18000.0,
+    21600.0,
+    25200.0,
+    28800.0,
+    32400.0,
+    36000.0,
+    39600.0,
+    43200.0,
+    46800.0,
+    50400.0,
+    54000.0,
+    57600.0,
+    61200.0,
+    64800.0,
+    68400.0,
+    72000.0,
+    75600.0,
+    79200.0,
+    82800.0,
+    86400.0,
+    90000.0,
+    93600.0,
+    97200.0,
+    100800.0,
+    104400.0,
+    108000.0,
+    111600.0,
+    115200.0,
+    118800.0,
+    122400.0,
+    126000.0,
+    129600.0,
+    133200.0,
+    136800.0,
+    140400.0,
+    144000.0,
+    147600.0,
+    151200.0,
+    154800.0,
+    158400.0,
+    162000.0,
+    165600.0,
+    169200.0,
+    172800.0
+  ],
+  "heights_actual_m": [
+    19375.0,
+    59375.0,
+    99375.0
+  ],
+  "vorticity_asinh_width": 0.1,
+  "vorticity_limits_by_depth": [
+    [
+      -1.3841203912547868,
+      1.3841203912547868
+    ],
+    [
+      -2.213326343309465,
+      2.213326343309465
+    ],
+    [
+      -0.4571460055457666,
+      0.4571460055457666
+    ]
+  ],
+  "tracer_asinh_width": 0.01,
+  "tracer_limits": [
+    0.0,
+    1.0
+  ],
+  "fixed_across_time": true,
+  "shared_between_cases": true,
+  "no_field_clipping_or_interpolation": true,
+  "sha256": "872afe99d09c3df23fad50f5a6b1f1b904ca2fd312f7107494012e265bc3982b",
+  "bytes": 829419,
+  "decode_validation": "PASS",
+  "stream_probe": {
+    "ffmpeg_version": "n9.0.2-17-g2a571b6068-20260930 built with gcc 16.2.0 (crosstool-NG 1.29.0.7_b1a94f6)",
+    "codec": "h264",
+    "pix_fmt": "yuv420p(progressive)",
+    "fps": 6.0,
+    "source_size": [
+      1350,
+      648
+    ],
+    "size": [
+      1350,
+      648
+    ],
+    "rotate": 0,
+    "duration": 8.17
+  }
+}

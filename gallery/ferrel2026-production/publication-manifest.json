@@ -1,0 +1,241 @@
+{
+  "status": "READY_FOR_REVIEW",
+  "stage": "production",
+  "assets": [
+    {
+      "file": "README.md",
+      "bytes": 2541,
+      "sha256": "97485964ddf7ac4e23f35880bf9cf3d32801a197f1c04b07af590d136e84a2b6"
+    },
+    {
+      "file": "axis0_circulation.png",
+      "bytes": 331732,
+      "sha256": "654992c651b6c8d237e543e9f868893b9f1ae533c2fd4e89af7eeac0415256e7"
+    },
+    {
+      "file": "axis0_diagnostics.csv",
+      "bytes": 4458,
+      "sha256": "3aa62930eeef102929e6c7351ff0b709b11d4a5d1ecbcbf8d7dd2a59c096a527"
+    },
+    {
+      "file": "axis0_momentum.png",
+      "bytes": 272967,
+      "sha256": "fbbf1ab428db8617424288728ae653bdbd17ea864e36222a9cb0a40719b3f7c1"
+    },
+    {
+      "file": "axis0_tracer_transport.png",
+      "bytes": 169187,
+      "sha256": "60f446c59d584bca14a1b4626f7d0171c93043a3a01106fe1f80ea7331837436"
+    },
+    {
+      "file": "axis0_vorticity_tracer.json",
+      "bytes": 1376,
+      "sha256": "aada4094ac5243d3430e31da5123e545fd43542b757208a617af386fb24291a7"
+    },
+    {
+      "file": "axis0_vorticity_tracer.mp4",
+      "bytes": 57974,
+      "sha256": "61d7e6db6cea0a225a314edad51e9c2a0a5c2ab09970e9111dc61cae07333717"
+    },
+    {
+      "file": "axis0_vorticity_tracer.png",
+      "bytes": 146259,
+      "sha256": "562cdb6f70cde6f99e033e39951825faf26219f5bf5f9fd7b593251848617a3b"
+    },
+    {
+      "file": "axis162_circulation.png",
+      "bytes": 351662,
+      "sha256": "8654284d477166f73d35050b245dfecd07291868155b1645c49ba030f31e0b90"
+    },
+    {
+      "file": "axis162_diagnostics.csv",
+      "bytes": 4451,
+      "sha256": "0f508ee44f365b92ed8c50cbe4ef0b3bc4ca73e13fe4fa805607ed0cba6eb1af"
+    },
+    {
+      "file": "axis162_momentum.png",
+      "bytes": 267501,
+      "sha256": "351eb97d174070bc9fb31325b72310473305bbb67f49a45b7a132963ad9b1cd5"
+    },
+    {
+      "file": "axis162_tracer_transport.png",
+      "bytes": 159624,
+      "sha256": "7bb31c4ac6de22399592dd3f49cb29ed8dc119f056b28562b59b0353ab921569"
+    },
+    {
+      "file": "axis162_vorticity_tracer.json",
+      "bytes": 1386,
+      "sha256": "3edb44d3046176472d7f022ed7a177288d9375a87fd9994dbf2d3393a4fcc7fa"
+    },
+    {
+      "file": "axis162_vorticity_tracer.mp4",
+      "bytes": 57633,
+      "sha256": "cfff347ce407fefae3db35a695bdbd768a01bbad32c28b96fe25ac9f92345e50"
+    },
+    {
+      "file": "axis162_vorticity_tracer.png",
+      "bytes": 145728,
+      "sha256": "75e301b54a45a1f8370403d95984d030b23356fa0f5fdbd0be5bcf8dc58f3809"
+    },
+    {
+      "file": "axisymmetric_comparison.json",
+      "bytes": 1445,
+      "sha256": "cab0529067ac862505f7c66c8c719b4158edad7aaafedfffcadddaefc355885a"
+    },
+    {
+      "file": "axisymmetric_comparison.mp4",
+      "bytes": 110129,
+      "sha256": "a1f4390d4398b6c7c33729228888a77cda33cc14fe4c3bfad69f31048d39d0e7"
+    },
+    {
+      "file": "axisymmetric_comparison.png",
+      "bytes": 290072,
+      "sha256": "bb138e81174133a1f218f5bb56dcb37c8f777ce298b870dfcc890a8ca142c6bb"
+    },
+    {
+      "file": "b0_circulation.png",
+      "bytes": 312054,
+      "sha256": "ebbf0a236687a21506c349f2932b63698d3bc2d0688df92cf0abdd7058ac1be2"
+    },
+    {
+      "file": "b0_diagnostics.csv",
+      "bytes": 25697,
+      "sha256": "a3878139a7aeb24ee78f3d074d3c286e15a8c0f71d9506f96ce3f5291209c33e"
+    },
+    {
+      "file": "b0_momentum.png",
+      "bytes": 197462,
+      "sha256": "0dd8186e00b895d194f2d25d31ceec82ad032ec105396044b6ca6d159bc80efb"
+    },
+    {
+      "file": "b0_tracer_transport.png",
+      "bytes": 171374,
+      "sha256": "4f7db33af7382ed052f62aa611b9399617b034c41fe88c958450ba5b58666e2e"
+    },
+    {
+      "file": "b0_vorticity_tracer.json",
+      "bytes": 1932,
+      "sha256": "6b8413b7a6332fcc91aad713a672a2152e48a48de86c57628ff883f6d04f048e"
+    },
+    {
+      "file": "b0_vorticity_tracer.mp4",
+      "bytes": 268801,
+      "sha256": "0eb57897a63d49c6e61272ff3cadbfbba42e4bc9f1b933ef866f624915e75f48"
+    },
+    {
+      "file": "b0_vorticity_tracer.png",
+      "bytes": 513553,
+      "sha256": "52abd9d8f3a5d757c4317a0c54388a9dd9bd8757b8c234c314612b4a22db264d"
+    },
+    {
+      "file": "b162_circulation.png",
+      "bytes": 315207,
+      "sha256": "94641ec26e787130cda61fb9c25f3158a04ae60e78e0b74f35d1b0c84a1e1fe6"
+    },
+    {
+      "file": "b162_diagnostics.csv",
+      "bytes": 25204,
+      "sha256": "40aea8cae5289b1289fa79cd8c015e2d44afe0b51ea1c58a0911c03c91874143"
+    },
+    {
+      "file": "b162_momentum.png",
+      "bytes": 190174,
+      "sha256": "07f55bd1252b7f1bb6c80157aa28c09b3419f23f7e0a8a67adc718f7e420ade5"
+    },
+    {
+      "file": "b162_tracer_transport.png",
+      "bytes": 171694,
+      "sha256": "48cb98a79de31d1b152ff43227a837353af47d06432d818276ab627db59e5524"
+    },
+    {
+      "file": "b162_vorticity_tracer.json",
+      "bytes": 1942,
+      "sha256": "338f81658a8f34e3c59274636f614c68b1ef11fb34629371adf6eb2dd9e1b8f5"
+    },
+    {
+      "file": "b162_vorticity_tracer.mp4",
+      "bytes": 825137,
+      "sha256": "44c2378c34ab23d02426aa3cfc99534760156acafdd5d9595dc3d86fb6ab4009"
+    },
+    {
+      "file": "b162_vorticity_tracer.png",
+      "bytes": 790038,
+      "sha256": "fa9f6beddec1bbc405dc5fe8d05f6d37aec779755414d5614bbcfbb83e27ec48"
+    },
+    {
+      "file": "boundary162_circulation.png",
+      "bytes": 315723,
+      "sha256": "777412224a4dc7cae7679d2f7ea08c29b2ec30c01595a984f36f259905a3d156"
+    },
+    {
+      "file": "boundary162_diagnostics.csv",
+      "bytes": 25204,
+      "sha256": "be32e361d1669679a510e3851329c11f474e27f0e192432201d52b19602cc235"
+    },
+    {
+      "file": "boundary162_momentum.png",
+      "bytes": 190308,
+      "sha256": "323aa3cf2f7a4153e60e33bd7c9c115005c9820b99b6601c802fd9ea52c3ed88"
+    },
+    {
+      "file": "boundary162_tracer_transport.png",
+      "bytes": 171863,
+      "sha256": "6fce11607bb1dae6c7726b294c56c32eaea29e67682dd4ad56f900fcf2668094"
+    },
+    {
+      "file": "boundary162_vorticity_tracer.json",
+      "bytes": 1977,
+      "sha256": "237cb1960e6ac8d215d3484624bd5d51f4393cbff0c9966697db35e35e48141c"
+    },
+    {
+      "file": "boundary162_vorticity_tracer.mp4",
+      "bytes": 829419,
+      "sha256": "872afe99d09c3df23fad50f5a6b1f1b904ca2fd312f7107494012e265bc3982b"
+    },
+    {
+      "file": "boundary162_vorticity_tracer.png",
+      "bytes": 790064,
+      "sha256": "acc5cd17134cdfc282a2d238e324d72a77fc1bcd1e5d8f04ea969b228a0298c1"
+    },
+    {
+      "file": "boundary_comparison.json",
+      "bytes": 2017,
+      "sha256": "895a62fa4647e609aefa19bc7169c5073432813a0e7218ecdbf399d1815f3d38"
+    },
+    {
+      "file": "boundary_comparison.mp4",
+      "bytes": 1708256,
+      "sha256": "551ec90c148072a576782bbcaab973f41547ae37a329e346ff9983e93526fb08"
+    },
+    {
+      "file": "boundary_comparison.png",
+      "bytes": 1641374,
+      "sha256": "b0d682bb0273182b18d4c13261abe9f79286c23350fc0e4594ddde046ed66cf4"
+    },
+    {
+      "file": "diagnostics.png",
+      "bytes": 178784,
+      "sha256": "20cba1f63d257cddf3627bb1fcd56c981d238658f9cdd0fa9704dbb03fd937f8"
+    },
+    {
+      "file": "heating_comparison.json",
+      "bytes": 1988,
+      "sha256": "341e24b46374b3c58c655c34c92f0c49dca6c9f1b515573e6ff92eae4675f0b5"
+    },
+    {
+      "file": "heating_comparison.mp4",
+      "bytes": 1110393,
+      "sha256": "4ad36f071b5d085744b6ae74ad868bac44a34da1e850f781ca524c8a70b31cb0"
+    },
+    {
+      "file": "heating_comparison.png",
+      "bytes": 1351041,
+      "sha256": "955efc0880b88fcd74df173fd1b29dff4ed9b357a5dd140f3638a7bece38e7c9"
+    },
+    {
+      "file": "report.json",
+      "bytes": 105863,
+      "sha256": "5e176c835ef46a45f83887811de24442f2d37cca2459f1c04fc517c798ae5091"
+    }
+  ]
+}

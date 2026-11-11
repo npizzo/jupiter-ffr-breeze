@@ -1,0 +1,2652 @@
+{
+  "status": "COMPLETE",
+  "stage": "production",
+  "compute_location": "Unity allocated CPU job",
+  "generated_at_utc": "2026-11-11T11:24:43.634944+00:00",
+  "slurm_job_id": "1411366",
+  "renderer_sha256": "ad5fc63bf40dcccdcc7ce7ac88608f3e4545f52bdb043d35a25add181b407697",
+  "successful_prerequisite_jobs": {
+    "1409341": [
+      "COMPLETED",
+      "0:0"
+    ],
+    "1409343": [
+      "COMPLETED",
+      "0:0"
+    ],
+    "1409344": [
+      "COMPLETED",
+      "0:0"
+    ],
+    "1409345": [
+      "COMPLETED",
+      "0:0"
+    ]
+  },
+  "raw_fields_downloaded": false,
+  "gates": [
+    {
+      "file": "data/ferrel2026-preflight-gpu-v1/PASS512.toml",
+      "sha256": "142b5201f112445fc097a97ed4e43999e018de1de81e92940220b383d0194663",
+      "status": "PASS"
+    }
+  ],
+  "caveats": [
+    "Dry anelastic beta-channel transient mechanism screening; no steady or deep Jovian-cell claim.",
+    "The first 12 Earth hours are excluded as a conservative startup window, not a demonstrated equilibration timescale. Six-hour pilots and controls lie entirely within that window.",
+    "Native momentum closure samples complete SSPRK3 steps; it is not a continuous long-run integrated momentum budget.",
+    "Centered covariance stresses, force work and mean-flow transfer are approximate diagnostics, not exact WENO fluxes or a closed kinetic-energy budget.",
+    "Positive covariance times mean shear feeds zonal-mean kinetic energy. This is not by itself proof of an inverse cascade.",
+    "A single seed, short duration, cap relaxation, sponge and global thermal feedback limit physical attribution.",
+    "The boundary case changes both cap relaxation and vertical-velocity damping; it cannot isolate their individual effects.",
+    "No residual/TEM circulation is inferred in the nearly neutral layer; mean and eddy tracer fluxes are reported directly.",
+    "Psi is overturning transport per unit zonal length in kg/(m s), not a planet-integrated kg/s streamfunction.",
+    "Temporal variability and coherence are descriptive; short windows and a single seed do not establish statistical significance."
+  ],
+  "cases": {
+    "b0": {
+      "case": "b0",
+      "label": "Unheated",
+      "source": "data/ferrel2026-gpu-v1/ferrel2026_b0",
+      "status": "COMPLETE",
+      "grid": [
+        512,
+        512,
+        96
+      ],
+      "heat_flux_W_m2": 0.0,
+      "stop_seconds": 172800.0,
+      "frames": 49,
+      "window_seconds": [
+        43200.0,
+        172800.0
+      ],
+      "window_scope": "12 h startup exclusion applied; equilibration unproven",
+      "mean_centered_eddy_to_mean_ke_transfer_W_m2": 0.16241326299970027,
+      "mean_mass_streamfunction_max_abs_kg_m_s": 0.06822270608512986,
+      "mass_streamfunction_temporal_std_spatial_rms_kg_m_s": 0.019777670885549922,
+      "mass_streamfunction_abs_mean_over_mean_abs": 0.4253203076568539,
+      "coherence_definition": "sum(abs(time-mean Psi))/sum(time-mean abs(Psi)); descriptive only",
+      "native_sampled_steps": 32,
+      "native_step_max_absolute_residual_kg_m2_s": 1.7166444047506113e-15,
+      "native_step_max_relative_to_leading_increment": 7.349965641930126e-11,
+      "native_step_max_roundoff_units": 1.903123435266215,
+      "max_mass_divergence_kg_m3_s": 5.441604040764913e-18,
+      "max_mass_flux_reconstruction_error_kg_m2_s": 1.3508887700988909e-14,
+      "metadata_sha256": "2d6e67a38f508e47ee15ca243ea472aad962fc8b35b310696e15e4446a5f8d6a",
+      "native_checks_sha256": "ebf92203f0b3e1bf96a92e771a1f5520198fe2d29b28265b7b18c168a76ddad8",
+      "scientific_driver_sha256": "f6544588517ebf00e12b23cc6335eb1686c30bc0e945faa4a3b60c48bf53f5ef",
+      "configuration_sha256": "b4cab413c1f9e05c25465bc3c2ccfe4c7dd35cc347885b6df5d8629b9af1d2e4",
+      "heights_actual_m": [
+        19375.0,
+        59375.0,
+        99375.0
+      ],
+      "wall_seconds": 6135.648611068726,
+      "frame_manifest": [
+        {
+          "file": "frame_00000.jld2",
+          "time_seconds": 0.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "9d30d99ddea8291859d29ad072d419c6f20ef21995c4870af8070a0bed09ee64",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00001.jld2",
+          "time_seconds": 3600.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "400fe5371dd633a0db937ba6d302ba586b911f43768e3a537d550cd9c9086649",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00002.jld2",
+          "time_seconds": 7200.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "970af7162078592c0c3f45f0e535352f946b3bf357c52332192153235099ef2e",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00003.jld2",
+          "time_seconds": 10800.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "22996580ac4d27f2a188a6f0204a3a9b8259cd1f427a288932851712a7b0c0ef",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00004.jld2",
+          "time_seconds": 14400.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "3aec475e83ca13c85bbd1da7cd6f8385e9a218becad8cf59c18feef8ebaecf25",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00005.jld2",
+          "time_seconds": 18000.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "20f2ef1ffd94d5ea7f81b3bb2244ecbc2c64813e5ed67da2a3345c38838eae58",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00006.jld2",
+          "time_seconds": 21600.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "990ba20cf7df03710a53cf72c84e19f778a64d5baee00b6fdc63144e835eb8f0",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00007.jld2",
+          "time_seconds": 25200.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "2c77403c70f982402c8698fab75a768be2305b9755ae533331d4cbafe5e93756",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00008.jld2",
+          "time_seconds": 28800.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "dea15ca8b8ff8f4b4d9e54e6cbcf0e5a5d41ae5523659065e5f2bf7ad2a40910",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00009.jld2",
+          "time_seconds": 32400.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "7d7fd243cfddb113aa7846582b065eaf9e40b6f260ef0b2302a3ab36ee726c59",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00010.jld2",
+          "time_seconds": 36000.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "ba76deb2d971fef29b28c6eef86c86ba8aba5eda60fa9df8a1969c4eb6a3d94f",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00011.jld2",
+          "time_seconds": 39600.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "57365a0c0e9faa6268b3b74f71e40cb2a86408ba68872689c4d7f9088a608191",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00012.jld2",
+          "time_seconds": 43200.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "fab981a00936877c2daa15e8cce293f10250f1f0490fb26f2b419b7fe85d3d43",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00013.jld2",
+          "time_seconds": 46800.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "6cc60bb730f5a82cf3d1c466fa576181fc1be97e711483241a8cc6755a78f257",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00014.jld2",
+          "time_seconds": 50400.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "60970a660fec9bc5399324e645ae1a209683dc0071431ab6f1c6c8a3ec4d0ad8",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00015.jld2",
+          "time_seconds": 54000.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "ba1749d64e36a9ed7367b67257bac176664406c141b9b6e293387c34d23e4de0",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00016.jld2",
+          "time_seconds": 57600.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "d934c0ad15ec3fe5b20fdc10b6dc0f21b33c5828bce7d76eaee0d33f26492a37",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00017.jld2",
+          "time_seconds": 61200.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "9a11a8eeb8c5535c92d8a1ce03f24f4df4731d041fdb3fd7410d56f085f31701",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00018.jld2",
+          "time_seconds": 64800.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "c364bab3f2abbce849408cd2ed51c8e66bc7f87166c41cd061f0f5628896057e",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00019.jld2",
+          "time_seconds": 68400.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "502828f5e9e25b8347b38e893712edca0c437bb689e80229e26fccbe430fd48e",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00020.jld2",
+          "time_seconds": 72000.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "826318b79fc05e190b8328291e98764dbc921be9fea5020f0790fde5ff6f0e8d",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00021.jld2",
+          "time_seconds": 75600.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "0b45c52a92d44d3f5ffb4e161c41de101aad5c98d408aacc651a8ba20010cfcc",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00022.jld2",
+          "time_seconds": 79200.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "1a9ea7828e081dc50aa666b88370fe9fc853936a75e12860ee65c028333a39fa",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00023.jld2",
+          "time_seconds": 82800.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "4aea76e854f00d10536c3082ac8f228a5150b027f5756dab5380a5109f278f9f",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00024.jld2",
+          "time_seconds": 86400.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "5bc7c160190315e6f2bbe613b3f935d5a4bc1b10fb93d87a6e482cc7b4213134",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00025.jld2",
+          "time_seconds": 90000.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "4043609027bad96b4dc64a6020b5c17cd1c497a70b06c1ff6c7e53b393c11683",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00026.jld2",
+          "time_seconds": 93600.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "29ec56dff4c2930ed715e2bc09c2b4a6ce88451ab56890e52f9fa6331b524354",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00027.jld2",
+          "time_seconds": 97200.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "fcaebda99558d8b7c9f0c26dc9199b63fff07e5a5e683e801343ab19b0e774cd",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00028.jld2",
+          "time_seconds": 100800.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "735298160f64f60613893cbfe1d318490ed4fe7313f70f0ec0a95d007a8ed172",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00029.jld2",
+          "time_seconds": 104400.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "2197858515d3142c325c338cfb6b459af6d80d3b3bb2eb9fb2c626923c7be6cf",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00030.jld2",
+          "time_seconds": 108000.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "286dbbb6156de6cf66385ee52d427df03d26e96b6def418bd4848cbfcd780a0d",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00031.jld2",
+          "time_seconds": 111600.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "268793002382db09af58685be0f65722057c714e9086fd310f3d18f4c8dc00f7",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00032.jld2",
+          "time_seconds": 115200.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "42a202539e182c60ed9d21874538b10c913762d2accb352375088471364976ad",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00033.jld2",
+          "time_seconds": 118800.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "264dc7b00113add32915175b73f20fb88b3093cdc8507a0c31e78e2a296a7299",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00034.jld2",
+          "time_seconds": 122400.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "645cc72ef5b823632a74a33a155a68454d6d8d75c79bc281d44221b8df6f6cd5",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00035.jld2",
+          "time_seconds": 126000.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "9c1728f815a7727fdf7f65bdcab7bfd2d6da22a75abf8321f81bdb1922be7514",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00036.jld2",
+          "time_seconds": 129600.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "36181c911a90447c6c487b87dec48951702db9902eda2f709037d2bdb2f60708",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00037.jld2",
+          "time_seconds": 133200.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "dac14b31461068361f12d95ef807ee09436765cbc87cafc487c2088be322bca7",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00038.jld2",
+          "time_seconds": 136800.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "5f606987eb0f4236cb93db8f03d5998dae80abced49b8e6ed22038613adf0440",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00039.jld2",
+          "time_seconds": 140400.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "cb1a772ce4e1b9eae54699d8c7538977a6540e93cc505ef4b525d7f39dc3a1ab",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00040.jld2",
+          "time_seconds": 144000.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "d9dc1900508f452b2a71fef024fdf97bc763aafa70019858b9cf4fbf9d705896",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00041.jld2",
+          "time_seconds": 147600.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "a4085b20cf4aecc0039c42dd63caf0a708f9dc28f027e7f8cce98cd271b3a4fa",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00042.jld2",
+          "time_seconds": 151200.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "c4b2b1be0856d42227b868a95e99a80ac619700ade3e9d600cbb45ffdec1fe90",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00043.jld2",
+          "time_seconds": 154800.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "c7ba561061668f506e81fab07591c98645d8f1dfd55d22083bdfddc69e98d6b8",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00044.jld2",
+          "time_seconds": 158400.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "5c13bef710ba56b5eb07a4b32f2b2e223f437d323124fc9a165da4d07c5628f6",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00045.jld2",
+          "time_seconds": 162000.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "3c1d9bd548f2ec8f0cea6f28fc1f5afc9041863f12eb119f35925bc27189d707",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00046.jld2",
+          "time_seconds": 165600.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "64e2795e613104700baca79cc0e10c3218cfc052785f11b8163fbfc6d1ac7493",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00047.jld2",
+          "time_seconds": 169200.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "03764024284e1552d382060830ca26865e03dccf463546ac656204355f247bcd",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00048.jld2",
+          "time_seconds": 172800.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "dce9a96b82fb94615706add85b33ead7a749ff4cb339bee1cf0cfd43d1e83844",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        }
+      ],
+      "first": {
+        "time_seconds": 0.0,
+        "earth_day": 0.0,
+        "max_abs_mass_streamfunction_kg_m_s": 4.215378046623641e-12,
+        "density_weighted_zonal_mean_v_rms_m_s": 2.5006719573867e-17,
+        "density_weighted_zonal_mean_w_rms_m_s": 1.7860630138184207e-18,
+        "mass_divergence_max_kg_m3_s": 2.1921072236800133e-20,
+        "mass_flux_reconstruction_max_kg_m2_s": 1.3890542227415177e-16,
+        "psi_native_integration_max_error_kg_m_s": 0.0,
+        "native_advection_rms_kg_m2_s2": 3.299055614633748e-06,
+        "centered_advection_remainder_rms_kg_m2_s2": 7.820275582454285e-09,
+        "eddy_to_mean_ke_transfer_W_m2": -0.04739498062309417,
+        "centered_eddy_force_work_W_m2": -0.04739949007608841,
+        "mean_ke_J_m2": 76650.56027998897,
+        "kinetic_energy": 1236928.0559160188,
+        "tracer_column": 6079.0149391080095,
+        "tracer_min": 8.67349452474473e-10,
+        "tracer_max": 0.8000457356795774,
+        "cap_min": 2.500000651041525e-05,
+        "cap_mean": 2.5000006510417207e-05,
+        "cap_enthalpy": 1.521255608439796e-12,
+        "budget_correction": -2.483969723424797e-12,
+        "buoyancy_power": 5.606684704751986e-23,
+        "mean_rho_vtracer_rms_kg_m2_s": 2.1830699417329994e-18,
+        "mean_rho_wtracer_rms_kg_m2_s": 1.3903777461708816e-19,
+        "zonal_rho_vtracer_rms_kg_m2_s": 0.012096687889972034,
+        "zonal_rho_wtracer_rms_kg_m2_s": 1.665657774167739e-19
+      },
+      "last": {
+        "time_seconds": 172800.0,
+        "earth_day": 2.0,
+        "max_abs_mass_streamfunction_kg_m_s": 0.07496660231115504,
+        "density_weighted_zonal_mean_v_rms_m_s": 6.466220065530857e-07,
+        "density_weighted_zonal_mean_w_rms_m_s": 6.669210807756247e-07,
+        "mass_divergence_max_kg_m3_s": 5.441604040764913e-18,
+        "mass_flux_reconstruction_max_kg_m2_s": 1.3074376845585516e-14,
+        "psi_native_integration_max_error_kg_m_s": 0.0,
+        "native_advection_rms_kg_m2_s2": 4.422369417401376e-06,
+        "centered_advection_remainder_rms_kg_m2_s2": 5.6779651971826895e-08,
+        "eddy_to_mean_ke_transfer_W_m2": 0.19279396333612436,
+        "centered_eddy_force_work_W_m2": 0.19285201344569208,
+        "mean_ke_J_m2": 97396.78553345843,
+        "kinetic_energy": 1224067.3047940184,
+        "tracer_column": 6079.014939108443,
+        "tracer_min": 4.188026561228085e-10,
+        "tracer_max": 0.7994899706539761,
+        "cap_min": 2.499948068474896e-05,
+        "cap_mean": 2.4999602214386437e-05,
+        "cap_enthalpy": 0.759484086566078,
+        "budget_correction": -0.7594840865616898,
+        "buoyancy_power": 1.646568992246212e-09,
+        "mean_rho_vtracer_rms_kg_m2_s": 5.599703486436301e-08,
+        "mean_rho_wtracer_rms_kg_m2_s": 4.505741382210896e-08,
+        "zonal_rho_vtracer_rms_kg_m2_s": 0.03394689466694907,
+        "zonal_rho_wtracer_rms_kg_m2_s": 4.52454573286451e-08
+      },
+      "direct_tracer_flux_rms_of_time_mean_kg_m2_s": {
+        "mean_rho_vtracer": 1.78499266125357e-08,
+        "mean_rho_wtracer": 6.920753982426448e-08,
+        "zonal_rho_vtracer": 0.036253952029584646,
+        "zonal_rho_wtracer": 6.103261977964957e-08
+      }
+    },
+    "b162": {
+      "case": "b162",
+      "label": "Heated \u00b7 162 W/m\u00b2",
+      "source": "data/ferrel2026-gpu-v1/ferrel2026_b162",
+      "status": "COMPLETE",
+      "grid": [
+        512,
+        512,
+        96
+      ],
+      "heat_flux_W_m2": 162.0,
+      "stop_seconds": 172800.0,
+      "frames": 49,
+      "window_seconds": [
+        43200.0,
+        172800.0
+      ],
+      "window_scope": "12 h startup exclusion applied; equilibration unproven",
+      "mean_centered_eddy_to_mean_ke_transfer_W_m2": 0.151828185765179,
+      "mean_mass_streamfunction_max_abs_kg_m_s": 3926.3946655426744,
+      "mass_streamfunction_temporal_std_spatial_rms_kg_m_s": 712.5027915613701,
+      "mass_streamfunction_abs_mean_over_mean_abs": 0.5422359022100428,
+      "coherence_definition": "sum(abs(time-mean Psi))/sum(time-mean abs(Psi)); descriptive only",
+      "native_sampled_steps": 43,
+      "native_step_max_absolute_residual_kg_m2_s": 1.7980408828499606e-15,
+      "native_step_max_relative_to_leading_increment": 7.032080758442315e-11,
+      "native_step_max_roundoff_units": 1.9780710123154654,
+      "max_mass_divergence_kg_m3_s": 4.8939997736056334e-18,
+      "max_mass_flux_reconstruction_error_kg_m2_s": 1.2116730077507513e-14,
+      "metadata_sha256": "2e2d85e54b93b4a9ebbfbfac4b7bdf749f84ee54d513585fce97c9f6f6b2b8ee",
+      "native_checks_sha256": "e80ae4ad153d370e25c0474fa85705481d629567004c139bd2e39933aa0d7680",
+      "scientific_driver_sha256": "f6544588517ebf00e12b23cc6335eb1686c30bc0e945faa4a3b60c48bf53f5ef",
+      "configuration_sha256": "31787c88c22be2af9c57539794ee81d6027f9eba25a2339421a88ea8fb43999f",
+      "heights_actual_m": [
+        19375.0,
+        59375.0,
+        99375.0
+      ],
+      "wall_seconds": 8341.045691013336,
+      "frame_manifest": [
+        {
+          "file": "frame_00000.jld2",
+          "time_seconds": 0.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "9d30d99ddea8291859d29ad072d419c6f20ef21995c4870af8070a0bed09ee64",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00001.jld2",
+          "time_seconds": 3600.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "1da37ef74e8f2c57941da9ded85141960bf28fc3f8ff0cf13930a1f15d3024ea",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00002.jld2",
+          "time_seconds": 7200.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "d505125ca195291ef784faf268568593b30b6082848db5a54b2d654603c1ccfe",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00003.jld2",
+          "time_seconds": 10800.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "f6307717f5b6c194bd442ee7a2e2f831317e637c314182d5ad1999676439c9b4",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00004.jld2",
+          "time_seconds": 14400.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "a517b0a392f90de52173c39ef9125582803cb1beaec2bbc5d38cfd017a6cef1b",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00005.jld2",
+          "time_seconds": 18000.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "77285089404a8a7984dba2db2be48d29dac29514dcb6d0ba897cdd027e34796d",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00006.jld2",
+          "time_seconds": 21600.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "8f60af954dbf80c9b8e6f08a656b5fb54d80e6442829ef46e953166b9d53c170",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00007.jld2",
+          "time_seconds": 25200.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "75dd10e80d91142af85df8efc05b3cea3c40ee31dc5bf4216b5cc09949d0674a",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00008.jld2",
+          "time_seconds": 28800.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "10c63c3bc575e9030043500364862a91f9daad77e93a618827b9262254ecdc24",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00009.jld2",
+          "time_seconds": 32400.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "b347f3289a7ad80766c0c165d79a243e79fced9889ca3a229b5d7f7b890a9c0d",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00010.jld2",
+          "time_seconds": 36000.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "6ced500f908baa5063c3038fd9aebdfc5b84ef25a5143046e5e2ccf6bac4cd06",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00011.jld2",
+          "time_seconds": 39600.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "c935c2d9ce9f10cc6abb2b8a352765c7150c4dc93163fd7a1a69babfb7bf2c2c",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00012.jld2",
+          "time_seconds": 43200.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "49b6861ebd67ae4e046f52a60ac4d2ab15d7d354f6ec0a2d4e9cdc126bcaa14f",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00013.jld2",
+          "time_seconds": 46800.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "9417f498d133db94a8a855ec0cfef749d98ec265966640f48ffa20a513a73163",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00014.jld2",
+          "time_seconds": 50400.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "86d7141d1bc1ff49c16bffd7b06ee7ac7ae62f28ad7f21ebfbeceb80221ee83a",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00015.jld2",
+          "time_seconds": 54000.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "50f1455b9b551bd8ed298f79090002514910791791c6fd91fd85aa41b308e839",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00016.jld2",
+          "time_seconds": 57600.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "69334eef136e30ee5589aea5a21bb28e68186d7bda2599f694260e1bdea40ebc",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00017.jld2",
+          "time_seconds": 61200.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "292183a2088dc1638620816edca2e89ac8d466c1de7d24ea6b18bb2e7f80a586",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00018.jld2",
+          "time_seconds": 64800.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "14163ebf3e663e88a765067564d30cf3b59f32cd7e1163e978b7b00729e7543c",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00019.jld2",
+          "time_seconds": 68400.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "03f5ee49fd9332b12479959b0aeaae43c534919cfe5570717f656a87dc32310b",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00020.jld2",
+          "time_seconds": 72000.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "fccc1c1be3df18023554f71954c075c06644645b5f5a577c658b62399374562d",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00021.jld2",
+          "time_seconds": 75600.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "9c99c5a1b1f55d4f31e1468836da0ae31d5213de4f58ce3db1924a2e93727f02",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00022.jld2",
+          "time_seconds": 79200.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "eeece63f637695327bc19155523ebc2fc2c6fc7f2325b1ed2c0a47ec455732a5",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00023.jld2",
+          "time_seconds": 82800.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "9cc1e72565ac2fb5b902f57114e5eb8039aaf3fe766a403b62f9eb850aca0530",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00024.jld2",
+          "time_seconds": 86400.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "fbd4c372da87d8addfe02e15ba51fd135dbd3804a562910807b4391fb7fa1658",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00025.jld2",
+          "time_seconds": 90000.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "cdf9132948e7e9fe801801d7be0db242ad17e542950f2d55d84b13d93e73569b",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00026.jld2",
+          "time_seconds": 93600.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "37fad901997ef8ca11eec806d104a037b8e93189f4f791f1898ab504580d5e53",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00027.jld2",
+          "time_seconds": 97200.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "9f37f7c84ab3c27971563b3b47fd4c7d2ec821dd6b36cf1a53589d993b90b1a4",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00028.jld2",
+          "time_seconds": 100800.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "f3ba54bc72c2daf96870bd383723e920c3d887f57ae45caff0cef63c879dba78",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00029.jld2",
+          "time_seconds": 104400.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "6dfc2c115bd8f5cfbe81408e1cd5b7b2e5b096306dc481b83ff653634d40e362",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00030.jld2",
+          "time_seconds": 108000.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "59902866361db0423a7a2f202f685ca4231636212818772571ed99e3ec001658",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00031.jld2",
+          "time_seconds": 111600.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "0e9e6bfb516222e74267793dddf67975b4034b2ffca01c6220734a6ca6465d10",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00032.jld2",
+          "time_seconds": 115200.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "ecdaa94a148f681ffe4198930483903c5a599095566abdba7731572cd530a5ca",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00033.jld2",
+          "time_seconds": 118800.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "fbdcaacc0ba57cf05ac417da092d933e3e437522237b867f1886105da538ff97",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00034.jld2",
+          "time_seconds": 122400.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "b2401da23944abb7a75a643f20dde6523fa1bc9f4929db7c53fc03365d6a6a4d",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00035.jld2",
+          "time_seconds": 126000.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "cc5bfa2810313b0eb1b16d58523478c55aba9f2dccbe87e579566ab1fd4af3b9",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00036.jld2",
+          "time_seconds": 129600.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "4653bcac4741af1e0a75d671cd3d127da0c18288f145c732d079bdb91d0b0b07",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00037.jld2",
+          "time_seconds": 133200.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "a1626f1f48a8aa40402dd2c9a3c7ca0e8b520306dc04a722053bfdd5946f8895",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00038.jld2",
+          "time_seconds": 136800.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "cc8acf30d3f6602bb8ac6120b5cb7540c11aac286cf5c38a98d4365dfd045172",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00039.jld2",
+          "time_seconds": 140400.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "91e1463126e8a1b111f9ca7d33676d9f0ca79d96c71beb68030cdc43d1d6ae10",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00040.jld2",
+          "time_seconds": 144000.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "07f959e563cd30e13d528cf1af0cfd4932fabd231d697c8f7933b24699ad8db9",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00041.jld2",
+          "time_seconds": 147600.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "343af5a90ebc1bb7355dd35add9faa0887549de594e7db237b297a39b805dcc9",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00042.jld2",
+          "time_seconds": 151200.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "9387e8353f60d8003dc0109ef0923b62f7fab3c14499d39da955cf5b515e29ba",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00043.jld2",
+          "time_seconds": 154800.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "9001b56af00ddfe258f78973341bcdaa2131b932b58501bbc0e8cd37c0bea805",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00044.jld2",
+          "time_seconds": 158400.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "6d57a2c5cfa116238925abdc0e40ff442870db87c049b5b0077be6ef945f1f96",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00045.jld2",
+          "time_seconds": 162000.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "6dedabd20c9e05e971cce3c5cb88dcdc3e944cc3b62a71db68b18dad4afe2f4e",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00046.jld2",
+          "time_seconds": 165600.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "a80829d0bd37cfce7352a12d3210181ce632815f3139da57cd8b84d829d6e051",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00047.jld2",
+          "time_seconds": 169200.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "94c0cb4164c79076b5524a32e7bf58cb5072affdfde0fcf4b4d44bbab62430de",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00048.jld2",
+          "time_seconds": 172800.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "410859bf74cb808428eddfabfc577fe2938cc139f2756b4ad5fb3dd5b316766c",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        }
+      ],
+      "first": {
+        "time_seconds": 0.0,
+        "earth_day": 0.0,
+        "max_abs_mass_streamfunction_kg_m_s": 4.215378046623641e-12,
+        "density_weighted_zonal_mean_v_rms_m_s": 2.5006719573867e-17,
+        "density_weighted_zonal_mean_w_rms_m_s": 1.7860630138184207e-18,
+        "mass_divergence_max_kg_m3_s": 2.1921072236800133e-20,
+        "mass_flux_reconstruction_max_kg_m2_s": 1.3890542227415177e-16,
+        "psi_native_integration_max_error_kg_m_s": 0.0,
+        "native_advection_rms_kg_m2_s2": 3.299055614633748e-06,
+        "centered_advection_remainder_rms_kg_m2_s2": 7.820275582454285e-09,
+        "eddy_to_mean_ke_transfer_W_m2": -0.04739498062309417,
+        "centered_eddy_force_work_W_m2": -0.04739949007608841,
+        "mean_ke_J_m2": 76650.56027998897,
+        "kinetic_energy": 1236928.0559160188,
+        "tracer_column": 6079.0149391080095,
+        "tracer_min": 8.67349452474473e-10,
+        "tracer_max": 0.8000457356795774,
+        "cap_min": 2.500000651041525e-05,
+        "cap_mean": 2.5000006510417207e-05,
+        "cap_enthalpy": 1.521255608439796e-12,
+        "budget_correction": -162.00000000000247,
+        "buoyancy_power": 5.606684704751986e-23,
+        "mean_rho_vtracer_rms_kg_m2_s": 2.1830699417329994e-18,
+        "mean_rho_wtracer_rms_kg_m2_s": 1.3903777461708816e-19,
+        "zonal_rho_vtracer_rms_kg_m2_s": 0.012096687889972034,
+        "zonal_rho_wtracer_rms_kg_m2_s": 1.665657774167739e-19
+      },
+      "last": {
+        "time_seconds": 172800.0,
+        "earth_day": 2.0,
+        "max_abs_mass_streamfunction_kg_m_s": 7775.060250415844,
+        "density_weighted_zonal_mean_v_rms_m_s": 0.03800580552499257,
+        "density_weighted_zonal_mean_w_rms_m_s": 0.09802105763558236,
+        "mass_divergence_max_kg_m3_s": 3.755744088125568e-18,
+        "mass_flux_reconstruction_max_kg_m2_s": 9.686695889854491e-15,
+        "psi_native_integration_max_error_kg_m_s": 0.0,
+        "native_advection_rms_kg_m2_s2": 9.30740976167997e-06,
+        "centered_advection_remainder_rms_kg_m2_s2": 2.484685681764577e-05,
+        "eddy_to_mean_ke_transfer_W_m2": 0.18416668951679863,
+        "centered_eddy_force_work_W_m2": 0.18257413873350178,
+        "mean_ke_J_m2": 96661.14992818829,
+        "kinetic_energy": 1319604.1992508366,
+        "tracer_column": 6079.014939108648,
+        "tracer_min": 1.3519391531242508e-10,
+        "tracer_max": 0.799664183869042,
+        "cap_min": 2.4998475314954236e-05,
+        "cap_mean": 2.5000152094104558e-05,
+        "cap_enthalpy": 12.287762334048663,
+        "budget_correction": -174.28776233405125,
+        "buoyancy_power": 18.87786207962315,
+        "mean_rho_vtracer_rms_kg_m2_s": 0.002681472124276395,
+        "mean_rho_wtracer_rms_kg_m2_s": 0.006614718537300213,
+        "zonal_rho_vtracer_rms_kg_m2_s": 0.03334405557678672,
+        "zonal_rho_wtracer_rms_kg_m2_s": 0.00938184568337942
+      },
+      "direct_tracer_flux_rms_of_time_mean_kg_m2_s": {
+        "mean_rho_vtracer": 0.0009363383496290934,
+        "mean_rho_wtracer": 0.003159961445305185,
+        "zonal_rho_vtracer": 0.03596548416910631,
+        "zonal_rho_wtracer": 0.0036905434379613995
+      }
+    },
+    "boundary162": {
+      "case": "boundary162",
+      "label": "Heated \u00b7 boundary sensitivity",
+      "source": "data/ferrel2026-gpu-v1/ferrel2026_boundary162",
+      "status": "COMPLETE",
+      "grid": [
+        512,
+        512,
+        96
+      ],
+      "heat_flux_W_m2": 162.0,
+      "stop_seconds": 172800.0,
+      "frames": 49,
+      "window_seconds": [
+        43200.0,
+        172800.0
+      ],
+      "window_scope": "12 h startup exclusion applied; equilibration unproven",
+      "mean_centered_eddy_to_mean_ke_transfer_W_m2": 0.15182614844927728,
+      "mean_mass_streamfunction_max_abs_kg_m_s": 3926.3689338344293,
+      "mass_streamfunction_temporal_std_spatial_rms_kg_m_s": 712.5157740489717,
+      "mass_streamfunction_abs_mean_over_mean_abs": 0.542158095144011,
+      "coherence_definition": "sum(abs(time-mean Psi))/sum(time-mean abs(Psi)); descriptive only",
+      "native_sampled_steps": 43,
+      "native_step_max_absolute_residual_kg_m2_s": 2.3006499049599283e-15,
+      "native_step_max_relative_to_leading_increment": 7.888406686894705e-11,
+      "native_step_max_roundoff_units": 2.3176181977029238,
+      "max_mass_divergence_kg_m3_s": 4.939836591382976e-18,
+      "max_mass_flux_reconstruction_error_kg_m2_s": 1.1926657578209543e-14,
+      "metadata_sha256": "124ad67e408e18b413b26bdfa818270d37ef4f7ec00d44929d1fae99bd4dd7ee",
+      "native_checks_sha256": "4f758b33e66ad7ff1d7d6c68275423d21d137773f43a43fe166eee903cf3b89a",
+      "scientific_driver_sha256": "f6544588517ebf00e12b23cc6335eb1686c30bc0e945faa4a3b60c48bf53f5ef",
+      "configuration_sha256": "731663fe149d3799499df19b78a33f4d956d699d14c2cf9e574b05dc56a761ed",
+      "heights_actual_m": [
+        19375.0,
+        59375.0,
+        99375.0
+      ],
+      "wall_seconds": 8343.468727111816,
+      "frame_manifest": [
+        {
+          "file": "frame_00000.jld2",
+          "time_seconds": 0.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "9d30d99ddea8291859d29ad072d419c6f20ef21995c4870af8070a0bed09ee64",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00001.jld2",
+          "time_seconds": 3600.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "75b063b036d2707e9a3a5ebe70381272a29a8f50e064dd6deaf3217543d722f5",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00002.jld2",
+          "time_seconds": 7200.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "bbf1f2ceff9d8918cd11ed849c0b4c021fceb093ac257d7e2df76428af391860",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00003.jld2",
+          "time_seconds": 10800.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "bd22b7ec77082e92b25ce29c1e2cf7cc9e415f38e568f5d9ab47ddd7391221ac",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00004.jld2",
+          "time_seconds": 14400.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "cc59c7ea3e720c51973872ce5e1e9e92f5d3dfa69f9d87d46bd9d9b758299a95",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00005.jld2",
+          "time_seconds": 18000.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "a71ec6a43054ed93e6958e4764e31b8b4eb82d1693a546463a1bfb3d5133f73d",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00006.jld2",
+          "time_seconds": 21600.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "c56c19d8df85202549cf50763cd288e73e692716938f35a65e5bb2520b0ab4cd",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00007.jld2",
+          "time_seconds": 25200.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "2ddc2ace109c4741595629cb7320ec581f7e7342f93ffc088a65868d4b625b8e",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00008.jld2",
+          "time_seconds": 28800.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "b5775cc0f407a0b664c34ade764a62a7fde76581d8bbece47e682a3a6559c670",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00009.jld2",
+          "time_seconds": 32400.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "17a5b5aad171e5fb6a35af77ff46bbe103d9254132269ecb8460bde45271467f",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00010.jld2",
+          "time_seconds": 36000.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "986c088b23a141425bf47dcc3fd184a7b303107c0b134e13c12149df3fedc0ed",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00011.jld2",
+          "time_seconds": 39600.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "c6e5fc3bde5ce09edd29e13d34d7f1a00e30cbb4ec6a7bd7fa3dedf3fad0a316",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00012.jld2",
+          "time_seconds": 43200.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "2e41f5e57b3262882f23847ebea7761a88108bb4571d5f6200cc134aca9f39cb",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00013.jld2",
+          "time_seconds": 46800.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "45c5912141196524773a3de0c6674c56f1e4ff737b83519fd9f2117e95a9f998",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00014.jld2",
+          "time_seconds": 50400.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "2c7c08946dca2a4d1f8d8e2fa91113af0bbae97112e98b759a6e276768d67e3f",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00015.jld2",
+          "time_seconds": 54000.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "ffb124bb5eafae29244c5e89d8b4e061e086c28c2da5109fe468cecbf46a1b2e",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00016.jld2",
+          "time_seconds": 57600.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "8b56feaf53000730d1828e158d86f4a77ab9fd5fef968e5f11499adac1d0ac2f",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00017.jld2",
+          "time_seconds": 61200.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "c1f07d9cd1ec83d17a3efd3d083714893e36f3bd0e2ad7a52803c051e818daf2",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00018.jld2",
+          "time_seconds": 64800.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "472068b15cf9b0896c094d0100149efe87002644727464a8a4dc875b604a12ba",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00019.jld2",
+          "time_seconds": 68400.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "4cf60afde3cb7d45b9e2aceddbfdee00ac8364b31bffe74a01f2473f67a80046",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00020.jld2",
+          "time_seconds": 72000.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "f55a34eca4d17ea90f7803e27127b4737e4e385e5a8a401dd39aebdccc724d93",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00021.jld2",
+          "time_seconds": 75600.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "d6e84e7d8cdb054987b78546a7afba0680e83d22db1108912f8f53dc17235561",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00022.jld2",
+          "time_seconds": 79200.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "79b82aee9ffd9d76713d0d0911aa9b9c53bcf64c64fbc1954ff81d0a7b558355",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00023.jld2",
+          "time_seconds": 82800.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "6e834c64045efd9ce119c04622d0ab95f48d8ffd896aa8a8f4e36359842708ec",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00024.jld2",
+          "time_seconds": 86400.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "43592a72c5078fd85ca0d7349e2e278f188d2db7f44ff42c307e28f79f495ca1",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00025.jld2",
+          "time_seconds": 90000.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "f244588ed0fef348be40137f1c5d926120d94914ebd29d2f3ff2de5c42e371d7",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00026.jld2",
+          "time_seconds": 93600.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "e5eeaa02fd8d8ea81cb9dfe320dbd1c7031e82108b67fa17f4b1a6133e5a0126",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00027.jld2",
+          "time_seconds": 97200.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "c1d6d7e0833392397761c8d4e499a8f834e2adb5cbab65d3b157da4b9b4c4795",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00028.jld2",
+          "time_seconds": 100800.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "eb27b2c2b84badac3ff8cf5fe15132e4f6e47c121ca2b9d5d9c08feaf858d47f",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00029.jld2",
+          "time_seconds": 104400.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "604f7d8c7900c0628e202249a7bc4a146b860fa6a081262572444f827ba134e2",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00030.jld2",
+          "time_seconds": 108000.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "0a353aa3111a54f2556865bb0f42cc93703a1be00d44478cfbc42ac0ded22cb2",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00031.jld2",
+          "time_seconds": 111600.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "592db6b69f75d5699d9c2c2a30723d9ead250dec917cf666c62dbce2c850050d",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00032.jld2",
+          "time_seconds": 115200.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "0e918cd23b1ae05f508d6e49942f3b4e7e1e400519fb54669f55fb587687c671",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00033.jld2",
+          "time_seconds": 118800.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "612b982af3d9a8d5b4168966516797ffdb773257f4f2757a0b3f8fcad0f781c4",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00034.jld2",
+          "time_seconds": 122400.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "b7d9e93ccfeba85e09a8f9dddeaf537f6b39a36728f1bf7e1d0944b0409820d7",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00035.jld2",
+          "time_seconds": 126000.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "d3aa995ad369216adf0b92e42aee302a0b0de6ea8cf98557e18087950710a70b",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00036.jld2",
+          "time_seconds": 129600.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "010199233b6d88dbbc8ee74af408e6ac79457df49b89db389e161318c3239adf",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00037.jld2",
+          "time_seconds": 133200.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "9f36706913dc1d882c39a4aa88afa915a72c73bd44c3858845d361ea1f72caa5",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00038.jld2",
+          "time_seconds": 136800.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "50f0f7b2e434c65bec306481b45dc9d7d0a4020e54e10b5441b7554311137ec5",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00039.jld2",
+          "time_seconds": 140400.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "3b51c51e6751a05773bf170d59a84bcec479c5444fd0d3dafcf7e4440d7e92a4",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00040.jld2",
+          "time_seconds": 144000.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "ebc7e3c1bd7fe87858d0ce822965d6964a27f7101e140ea5d2add81d468865ae",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00041.jld2",
+          "time_seconds": 147600.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "9f99b33b67ca5194564596896be5be5c7fd6892d4046d8a34ed1a8b04f97ab71",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00042.jld2",
+          "time_seconds": 151200.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "72c055a6b4fbda1f965d32f0bafb857b7e94cbc5a7d41e2bbe705d0b549c1be9",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00043.jld2",
+          "time_seconds": 154800.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "f0ce4107ac082f54d82499b414653d57f06108380a83b7f200814ea3b6728c7b",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00044.jld2",
+          "time_seconds": 158400.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "a984293fdf3b11cbc8969345fbfbb5f2801c27679a229d618ad925033b95cebb",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00045.jld2",
+          "time_seconds": 162000.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "934a2706ca3bce692f7da9e5bfdcb99f8ce40034024fa8ab81b34d0a0a88d67d",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00046.jld2",
+          "time_seconds": 165600.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "37587fc79c0b4ff66a4ec2e86a419da6528a509e391e3a5d5f014d4f0b990437",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00047.jld2",
+          "time_seconds": 169200.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "bacec9a7872f6bee4a6aa58b17285d0b62d034cba19a1786ac8671947dd515bb",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00048.jld2",
+          "time_seconds": 172800.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "8d1228ba7525eab464bed53cc5b35ff432be5296ad0c98fb3c806d7274823bc3",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        }
+      ],
+      "first": {
+        "time_seconds": 0.0,
+        "earth_day": 0.0,
+        "max_abs_mass_streamfunction_kg_m_s": 4.215378046623641e-12,
+        "density_weighted_zonal_mean_v_rms_m_s": 2.5006719573867e-17,
+        "density_weighted_zonal_mean_w_rms_m_s": 1.7860630138184207e-18,
+        "mass_divergence_max_kg_m3_s": 2.1921072236800133e-20,
+        "mass_flux_reconstruction_max_kg_m2_s": 1.3890542227415177e-16,
+        "psi_native_integration_max_error_kg_m_s": 0.0,
+        "native_advection_rms_kg_m2_s2": 3.299055614633748e-06,
+        "centered_advection_remainder_rms_kg_m2_s2": 7.820275582454285e-09,
+        "eddy_to_mean_ke_transfer_W_m2": -0.04739498062309417,
+        "centered_eddy_force_work_W_m2": -0.04739949007608841,
+        "mean_ke_J_m2": 76650.56027998897,
+        "kinetic_energy": 1236928.0559160188,
+        "tracer_column": 6079.0149391080095,
+        "tracer_min": 8.67349452474473e-10,
+        "tracer_max": 0.8000457356795774,
+        "cap_min": 2.500000651041525e-05,
+        "cap_mean": 2.5000006510417207e-05,
+        "cap_enthalpy": 7.60627804219898e-13,
+        "budget_correction": -162.00000000000128,
+        "buoyancy_power": 5.606684704751986e-23,
+        "mean_rho_vtracer_rms_kg_m2_s": 2.1830699417329994e-18,
+        "mean_rho_wtracer_rms_kg_m2_s": 1.3903777461708816e-19,
+        "zonal_rho_vtracer_rms_kg_m2_s": 0.012096687889972034,
+        "zonal_rho_wtracer_rms_kg_m2_s": 1.665657774167739e-19
+      },
+      "last": {
+        "time_seconds": 172800.0,
+        "earth_day": 2.0,
+        "max_abs_mass_streamfunction_kg_m_s": 7776.829097091393,
+        "density_weighted_zonal_mean_v_rms_m_s": 0.03800649116513535,
+        "density_weighted_zonal_mean_w_rms_m_s": 0.09803334309913839,
+        "mass_divergence_max_kg_m3_s": 3.127245641262877e-18,
+        "mass_flux_reconstruction_max_kg_m2_s": 1.0047518372857667e-14,
+        "psi_native_integration_max_error_kg_m_s": 0.0,
+        "native_advection_rms_kg_m2_s2": 9.30730154458629e-06,
+        "centered_advection_remainder_rms_kg_m2_s2": 2.484419065782966e-05,
+        "eddy_to_mean_ke_transfer_W_m2": 0.1841645802561381,
+        "centered_eddy_force_work_W_m2": 0.18258662641624662,
+        "mean_ke_J_m2": 96661.00254143345,
+        "kinetic_energy": 1319610.9505250247,
+        "tracer_column": 6079.014939108647,
+        "tracer_min": 1.3501442297098523e-10,
+        "tracer_max": 0.7996563311681023,
+        "cap_min": 2.4997675837327957e-05,
+        "cap_mean": 2.499994520349244e-05,
+        "cap_enthalpy": 8.443815295601581,
+        "budget_correction": -170.44381529560326,
+        "buoyancy_power": 18.878918260156166,
+        "mean_rho_vtracer_rms_kg_m2_s": 0.0026810710220800693,
+        "mean_rho_wtracer_rms_kg_m2_s": 0.006614897780505631,
+        "zonal_rho_vtracer_rms_kg_m2_s": 0.03334399871510226,
+        "zonal_rho_wtracer_rms_kg_m2_s": 0.009379886556763174
+      },
+      "direct_tracer_flux_rms_of_time_mean_kg_m2_s": {
+        "mean_rho_vtracer": 0.0009363582679090342,
+        "mean_rho_wtracer": 0.0031599908685412464,
+        "zonal_rho_vtracer": 0.035966181727530244,
+        "zonal_rho_wtracer": 0.0036903187488313183
+      }
+    },
+    "axis0": {
+      "case": "axis0",
+      "label": "Axisymmetric \u00b7 unheated",
+      "source": "data/ferrel2026-preflight-gpu-v1/pilot512_axis0",
+      "status": "COMPLETE",
+      "grid": [
+        512,
+        512,
+        96
+      ],
+      "heat_flux_W_m2": 0.0,
+      "stop_seconds": 21600.0,
+      "frames": 7,
+      "window_seconds": [
+        0.0,
+        21600.0
+      ],
+      "window_scope": "entirely within excluded startup window",
+      "mean_centered_eddy_to_mean_ke_transfer_W_m2": 1.5556273190071706e-30,
+      "mean_mass_streamfunction_max_abs_kg_m_s": 1.2460282311119998e-06,
+      "mass_streamfunction_temporal_std_spatial_rms_kg_m_s": 1.6855479984439322e-07,
+      "mass_streamfunction_abs_mean_over_mean_abs": 0.9323671770599732,
+      "coherence_definition": "sum(abs(time-mean Psi))/sum(time-mean abs(Psi)); descriptive only",
+      "native_sampled_steps": 11,
+      "native_step_max_absolute_residual_kg_m2_s": 6.654002126916487e-16,
+      "native_step_max_relative_to_leading_increment": 1.9653429691180986e-07,
+      "native_step_max_roundoff_units": 1.067643458567576,
+      "max_mass_divergence_kg_m3_s": 1.6068146726302008e-17,
+      "max_mass_flux_reconstruction_error_kg_m2_s": 1.4547714847378298e-14,
+      "metadata_sha256": "f5343c7099c49885c959ca7e4f33de4bff61ef376f746f24c4978af31aab20fc",
+      "native_checks_sha256": "ad6d30530118191c0f161fe64910cec6d93b069da10fa094d832b20627d1d06f",
+      "scientific_driver_sha256": "f6544588517ebf00e12b23cc6335eb1686c30bc0e945faa4a3b60c48bf53f5ef",
+      "configuration_sha256": "cc6b70b6cbed154b2529c11095caadbd978255ee21969fdefac9948563ed0e62",
+      "heights_actual_m": [
+        19375.0,
+        59375.0,
+        99375.0
+      ],
+      "wall_seconds": 949.497887134552,
+      "frame_manifest": [
+        {
+          "file": "frame_00000.jld2",
+          "time_seconds": 0.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "ee02834aff121ae1b9f571d960cc99f5c4cce21ad177eb946d3798e20147cf5e",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00001.jld2",
+          "time_seconds": 3600.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "2e3162b20b5c04b9692a222664603826cef52ac6af327bd6c0d91ae742b3389c",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00002.jld2",
+          "time_seconds": 7200.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "65d79a4d058b70b1cc9ebb18d5c745ab25926d934f8c0a21f9c10902c4674580",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00003.jld2",
+          "time_seconds": 10800.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "6809b8f4d3f492ba48fee0cd209a9a37d9aa301ea21b45ac30643e93a74bd3af",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00004.jld2",
+          "time_seconds": 14400.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "68bc83773257aa92b7a378f194302a32c89dca1bc2b6637b8c09a1738172076f",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00005.jld2",
+          "time_seconds": 18000.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "56f3cfdce7dbfa5f502ba653219d2fdf8cdfb2c2386f8a2ac7b8b350f7e58545",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00006.jld2",
+          "time_seconds": 21600.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "eb65664ee77a9b76cb0c63fff0d22b291277001fa9e03ac1338d47892af52aba",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        }
+      ],
+      "first": {
+        "time_seconds": 0.0,
+        "earth_day": 0.0,
+        "max_abs_mass_streamfunction_kg_m_s": 1.4825848963284167e-11,
+        "density_weighted_zonal_mean_v_rms_m_s": 8.879667796399541e-17,
+        "density_weighted_zonal_mean_w_rms_m_s": 7.466139442537676e-18,
+        "mass_divergence_max_kg_m3_s": 1.0801501209923884e-20,
+        "mass_flux_reconstruction_max_kg_m2_s": 1.1067284099778233e-16,
+        "psi_native_integration_max_error_kg_m_s": 0.0,
+        "native_advection_rms_kg_m2_s2": 3.6716243337098996e-21,
+        "centered_advection_remainder_rms_kg_m2_s2": 2.27253370019719e-21,
+        "eddy_to_mean_ke_transfer_W_m2": -1.367437604078329e-34,
+        "centered_eddy_force_work_W_m2": 1.4276148811366668e-34,
+        "mean_ke_J_m2": 76650.560279989,
+        "kinetic_energy": 76650.56027998896,
+        "tracer_column": 6079.0149391080095,
+        "tracer_min": 8.67349452474473e-10,
+        "tracer_max": 0.8000457356795774,
+        "cap_min": 2.500000651037036e-05,
+        "cap_mean": 2.500000651041841e-05,
+        "cap_enthalpy": -6.254195453402522e-11,
+        "budget_correction": 4.724228221593352e-11,
+        "buoyancy_power": -7.674412537258998e-30,
+        "mean_rho_vtracer_rms_kg_m2_s": 6.465088273112721e-18,
+        "mean_rho_wtracer_rms_kg_m2_s": 5.367185030988441e-19,
+        "zonal_rho_vtracer_rms_kg_m2_s": 4.909267708009472e-33,
+        "zonal_rho_wtracer_rms_kg_m2_s": 4.385087213478314e-34,
+        "axisymmetry_max_velocity_departure_m_s": 8.881784197001252e-16
+      },
+      "last": {
+        "time_seconds": 21600.0,
+        "earth_day": 0.25,
+        "max_abs_mass_streamfunction_kg_m_s": 4.217937929777198e-06,
+        "density_weighted_zonal_mean_v_rms_m_s": 1.2022803448758593e-11,
+        "density_weighted_zonal_mean_w_rms_m_s": 5.416187578864938e-11,
+        "mass_divergence_max_kg_m3_s": 1.1789596513639695e-17,
+        "mass_flux_reconstruction_max_kg_m2_s": 1.3618619452848568e-14,
+        "psi_native_integration_max_error_kg_m_s": 0.0,
+        "native_advection_rms_kg_m2_s2": 1.2656740503170975e-17,
+        "centered_advection_remainder_rms_kg_m2_s2": 3.496005150397116e-15,
+        "eddy_to_mean_ke_transfer_W_m2": -9.12056715722657e-31,
+        "centered_eddy_force_work_W_m2": -2.6779839731262544e-28,
+        "mean_ke_J_m2": 76646.92929689428,
+        "kinetic_energy": 76646.92929689428,
+        "tracer_column": 6079.014939108076,
+        "tracer_min": 8.677894929429908e-10,
+        "tracer_max": 0.8001006376534636,
+        "cap_min": 2.499987544239825e-05,
+        "cap_mean": 2.4999901377611805e-05,
+        "cap_enthalpy": 0.1838540190786966,
+        "budget_correction": -0.18385401901620146,
+        "buoyancy_power": 3.163716068943895e-18,
+        "mean_rho_vtracer_rms_kg_m2_s": 9.717545822438617e-13,
+        "mean_rho_wtracer_rms_kg_m2_s": 3.94833951138407e-12,
+        "zonal_rho_vtracer_rms_kg_m2_s": 7.681131713111866e-28,
+        "zonal_rho_wtracer_rms_kg_m2_s": 3.1576346832716806e-27,
+        "axisymmetry_max_velocity_departure_m_s": 8.881784197001252e-16
+      },
+      "direct_tracer_flux_rms_of_time_mean_kg_m2_s": {
+        "mean_rho_vtracer": 4.2805383423551795e-13,
+        "mean_rho_wtracer": 1.3942385183193062e-12,
+        "zonal_rho_vtracer": 1.8541283380455138e-28,
+        "zonal_rho_wtracer": 5.789609429006188e-28
+      },
+      "axisymmetric_full_window_checks": {
+        "max_velocity_departure_m_s": 8.881784197001252e-16,
+        "max_abs_centered_eddy_transfer_W_m2": 9.717476421531823e-30
+      }
+    },
+    "axis162": {
+      "case": "axis162",
+      "label": "Axisymmetric \u00b7 heated",
+      "source": "data/ferrel2026-preflight-gpu-v1/pilot512_axis162",
+      "status": "COMPLETE",
+      "grid": [
+        512,
+        512,
+        96
+      ],
+      "heat_flux_W_m2": 162.0,
+      "stop_seconds": 21600.0,
+      "frames": 7,
+      "window_seconds": [
+        0.0,
+        21600.0
+      ],
+      "window_scope": "entirely within excluded startup window",
+      "mean_centered_eddy_to_mean_ke_transfer_W_m2": 1.7958431110934102e-30,
+      "mean_mass_streamfunction_max_abs_kg_m_s": 9.14275942105164e-07,
+      "mass_streamfunction_temporal_std_spatial_rms_kg_m_s": 1.2549428206513682e-07,
+      "mass_streamfunction_abs_mean_over_mean_abs": 0.9186795312858943,
+      "coherence_definition": "sum(abs(time-mean Psi))/sum(time-mean abs(Psi)); descriptive only",
+      "native_sampled_steps": 11,
+      "native_step_max_absolute_residual_kg_m2_s": 6.653842642358484e-16,
+      "native_step_max_relative_to_leading_increment": 1.965295863355116e-07,
+      "native_step_max_roundoff_units": 1.0676178690589093,
+      "max_mass_divergence_kg_m3_s": 1.453968583533447e-17,
+      "max_mass_flux_reconstruction_error_kg_m2_s": 1.4971000862174692e-14,
+      "metadata_sha256": "3d9bf68575cb1799b848b43517d8a5506ea322e58dfe9635d8368f5b43e2f86b",
+      "native_checks_sha256": "d16182878b1e099c20651d0e3a31f43ec610bdefa66210dd785b5949fecd041d",
+      "scientific_driver_sha256": "f6544588517ebf00e12b23cc6335eb1686c30bc0e945faa4a3b60c48bf53f5ef",
+      "configuration_sha256": "8341bd56840cf652e8119f9402a7cf6b17fe603c4b5a270f9cb4bb1238a49a22",
+      "heights_actual_m": [
+        19375.0,
+        59375.0,
+        99375.0
+      ],
+      "wall_seconds": 952.2578060626984,
+      "frame_manifest": [
+        {
+          "file": "frame_00000.jld2",
+          "time_seconds": 0.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "ee02834aff121ae1b9f571d960cc99f5c4cce21ad177eb946d3798e20147cf5e",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00001.jld2",
+          "time_seconds": 3600.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "2e3162b20b5c04b9692a222664603826cef52ac6af327bd6c0d91ae742b3389c",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00002.jld2",
+          "time_seconds": 7200.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "65df238ae338b2c43c810bca0cbf99e2b4f57bb7ab0e4eccb6248787f7f2c0bb",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00003.jld2",
+          "time_seconds": 10800.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "1bbcec8bb832fcc10a60283b3a6e41180e172f25e25d7ef7d93bd5564f1af142",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00004.jld2",
+          "time_seconds": 14400.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "61e36447a77f262a04ef07c3715ff0be0745a5a83b27d2f46d35c4535b44fd21",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00005.jld2",
+          "time_seconds": 18000.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "1abf5a23f97e796ad3bd832cf70169a45181fc46c9204d1ec4b4b03132a39292",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00006.jld2",
+          "time_seconds": 21600.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "4c5c1528ad1b504bc12941ad63c00c1d930685d1b199993644f64423f8c1c688",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        }
+      ],
+      "first": {
+        "time_seconds": 0.0,
+        "earth_day": 0.0,
+        "max_abs_mass_streamfunction_kg_m_s": 1.4825848963284167e-11,
+        "density_weighted_zonal_mean_v_rms_m_s": 8.879667796399541e-17,
+        "density_weighted_zonal_mean_w_rms_m_s": 7.466139442537676e-18,
+        "mass_divergence_max_kg_m3_s": 1.0801501209923884e-20,
+        "mass_flux_reconstruction_max_kg_m2_s": 1.1067284099778233e-16,
+        "psi_native_integration_max_error_kg_m_s": 0.0,
+        "native_advection_rms_kg_m2_s2": 3.6716243337098996e-21,
+        "centered_advection_remainder_rms_kg_m2_s2": 2.27253370019719e-21,
+        "eddy_to_mean_ke_transfer_W_m2": -1.367437604078329e-34,
+        "centered_eddy_force_work_W_m2": 1.4276148811366668e-34,
+        "mean_ke_J_m2": 76650.560279989,
+        "kinetic_energy": 76650.56027998896,
+        "tracer_column": 6079.0149391080095,
+        "tracer_min": 8.67349452474473e-10,
+        "tracer_max": 0.8000457356795774,
+        "cap_min": 2.500000651037036e-05,
+        "cap_mean": 2.500000651041841e-05,
+        "cap_enthalpy": -6.254195453402522e-11,
+        "budget_correction": -161.99999999995282,
+        "buoyancy_power": -7.674412537258998e-30,
+        "mean_rho_vtracer_rms_kg_m2_s": 6.465088273112721e-18,
+        "mean_rho_wtracer_rms_kg_m2_s": 5.367185030988441e-19,
+        "zonal_rho_vtracer_rms_kg_m2_s": 4.909267708009472e-33,
+        "zonal_rho_wtracer_rms_kg_m2_s": 4.385087213478314e-34,
+        "axisymmetry_max_velocity_departure_m_s": 8.881784197001252e-16
+      },
+      "last": {
+        "time_seconds": 21600.0,
+        "earth_day": 0.25,
+        "max_abs_mass_streamfunction_kg_m_s": 1.8584566935523796e-06,
+        "density_weighted_zonal_mean_v_rms_m_s": 1.1776341948803346e-11,
+        "density_weighted_zonal_mean_w_rms_m_s": 3.7134507853421815e-11,
+        "mass_divergence_max_kg_m3_s": 1.1685099401686172e-17,
+        "mass_flux_reconstruction_max_kg_m2_s": 1.4017766260085886e-14,
+        "psi_native_integration_max_error_kg_m_s": 0.0,
+        "native_advection_rms_kg_m2_s2": 1.4725044930457165e-17,
+        "centered_advection_remainder_rms_kg_m2_s2": 2.6411890900508488e-15,
+        "eddy_to_mean_ke_transfer_W_m2": -5.753260540612364e-30,
+        "centered_eddy_force_work_W_m2": -8.678127994383872e-28,
+        "mean_ke_J_m2": 76646.92929689428,
+        "kinetic_energy": 76646.92929689426,
+        "tracer_column": 6079.014939108076,
+        "tracer_min": 8.677894929434862e-10,
+        "tracer_max": 0.800100637653462,
+        "cap_min": 2.4999875442486606e-05,
+        "cap_mean": 2.4999908285549216e-05,
+        "cap_enthalpy": 2.6742882632086684,
+        "budget_correction": -164.67428826313736,
+        "buoyancy_power": -1.2268148048206941e-14,
+        "mean_rho_vtracer_rms_kg_m2_s": 1.044196230426423e-12,
+        "mean_rho_wtracer_rms_kg_m2_s": 2.9017100070312082e-12,
+        "zonal_rho_vtracer_rms_kg_m2_s": 8.406642182171428e-28,
+        "zonal_rho_wtracer_rms_kg_m2_s": 2.3045187235284166e-27,
+        "axisymmetry_max_velocity_departure_m_s": 8.881784197001252e-16
+      },
+      "direct_tracer_flux_rms_of_time_mean_kg_m2_s": {
+        "mean_rho_vtracer": 4.636658701767538e-13,
+        "mean_rho_wtracer": 1.1933691693196812e-12,
+        "zonal_rho_vtracer": 1.9180438352592035e-28,
+        "zonal_rho_wtracer": 4.635792944503736e-28
+      },
+      "axisymmetric_full_window_checks": {
+        "max_velocity_departure_m_s": 8.881784197001252e-16,
+        "max_abs_centered_eddy_transfer_W_m2": 5.753260540612364e-30
+      }
+    }
+  },
+  "comparisons": {
+    "b162_minus_b0": {
+      "window_seconds": [
+        43200.0,
+        172800.0
+      ],
+      "common_times": 49,
+      "metrics": {
+        "mean_ke_J_m2": {
+          "mean_difference": 49.03254499265355,
+          "final_difference": -735.6356052701449
+        },
+        "eddy_to_mean_ke_transfer_W_m2": {
+          "mean_difference": -0.01058507723452132,
+          "final_difference": -0.008627273819325737
+        },
+        "max_abs_mass_streamfunction_kg_m_s": {
+          "mean_difference": 6178.067597086211,
+          "final_difference": 7774.985283813533
+        },
+        "density_weighted_zonal_mean_v_rms_m_s": {
+          "mean_difference": 0.03579461557385808,
+          "final_difference": 0.038005158902986017
+        },
+        "density_weighted_zonal_mean_w_rms_m_s": {
+          "mean_difference": 0.06642798963731887,
+          "final_difference": 0.09802039071450158
+        }
+      },
+      "scope": "Matched diagnostics at coincident saved times; not statistical significance or fieldwise convergence."
+    },
+    "boundary162_minus_b162": {
+      "window_seconds": [
+        43200.0,
+        172800.0
+      ],
+      "common_times": 49,
+      "metrics": {
+        "mean_ke_J_m2": {
+          "mean_difference": -0.09487823359369132,
+          "final_difference": -0.14738675483386032
+        },
+        "eddy_to_mean_ke_transfer_W_m2": {
+          "mean_difference": -2.0373159017357764e-06,
+          "final_difference": -2.109260660521084e-06
+        },
+        "max_abs_mass_streamfunction_kg_m_s": {
+          "mean_difference": -0.13020581949998808,
+          "final_difference": 1.7688466755489571
+        },
+        "density_weighted_zonal_mean_v_rms_m_s": {
+          "mean_difference": 1.9636425416870756e-06,
+          "final_difference": 6.856401427862702e-07
+        },
+        "density_weighted_zonal_mean_w_rms_m_s": {
+          "mean_difference": 1.21183547476314e-06,
+          "final_difference": 1.2285463556027665e-05
+        }
+      },
+      "scope": "Matched diagnostics at coincident saved times; not statistical significance or fieldwise convergence."
+    },
+    "axis162_minus_axis0": {
+      "window_seconds": [
+        0.0,
+        21600.0
+      ],
+      "common_times": 7,
+      "metrics": {
+        "mean_ke_J_m2": {
+          "mean_difference": -4.850638409455617e-12,
+          "final_difference": 0.0
+        },
+        "eddy_to_mean_ke_transfer_W_m2": {
+          "mean_difference": 2.4021579208623957e-31,
+          "final_difference": -4.841203824889707e-30
+        },
+        "max_abs_mass_streamfunction_kg_m_s": {
+          "mean_difference": -4.0939523656338864e-07,
+          "final_difference": -2.3594812362248188e-06
+        },
+        "density_weighted_zonal_mean_v_rms_m_s": {
+          "mean_difference": -1.7968819551938065e-14,
+          "final_difference": -2.464614999552468e-13
+        },
+        "density_weighted_zonal_mean_w_rms_m_s": {
+          "mean_difference": -4.051637443279058e-12,
+          "final_difference": -1.7027367935227568e-11
+        }
+      },
+      "scope": "Matched diagnostics at coincident saved times; not statistical significance or fieldwise convergence."
+    },
+    "b0_minus_axis0": {
+      "window_seconds": [
+        0.0,
+        21600.0
+      ],
+      "common_times": 7,
+      "metrics": {
+        "mean_ke_J_m2": {
+          "mean_difference": -369.4342156857383,
+          "final_difference": -596.49508774688
+        },
+        "eddy_to_mean_ke_transfer_W_m2": {
+          "mean_difference": -0.027614189593009982,
+          "final_difference": -0.006948919906002732
+        },
+        "max_abs_mass_streamfunction_kg_m_s": {
+          "mean_difference": 0.33884235065633866,
+          "final_difference": 0.4840719489890034
+        },
+        "density_weighted_zonal_mean_v_rms_m_s": {
+          "mean_difference": 2.0829731880974524e-06,
+          "final_difference": 1.948257881397201e-06
+        },
+        "density_weighted_zonal_mean_w_rms_m_s": {
+          "mean_difference": 3.7543965879952917e-06,
+          "final_difference": 4.3787323156843235e-06
+        }
+      },
+      "scope": "Matched diagnostics at coincident saved times; not statistical significance or fieldwise convergence."
+    },
+    "b162_minus_axis162": {
+      "window_seconds": [
+        0.0,
+        21600.0
+      ],
+      "common_times": 7,
+      "metrics": {
+        "mean_ke_J_m2": {
+          "mean_difference": -369.43421544865,
+          "final_difference": -596.495086715775
+        },
+        "eddy_to_mean_ke_transfer_W_m2": {
+          "mean_difference": -0.027614189596746903,
+          "final_difference": -0.006948919905202993
+        },
+        "max_abs_mass_streamfunction_kg_m_s": {
+          "mean_difference": 0.3672456774179889,
+          "final_difference": 0.6484133943941035
+        },
+        "density_weighted_zonal_mean_v_rms_m_s": {
+          "mean_difference": 2.3183847811919096e-06,
+          "final_difference": 2.873226400016438e-06
+        },
+        "density_weighted_zonal_mean_w_rms_m_s": {
+          "mean_difference": 4.2884675857418155e-06,
+          "final_difference": 6.956695762764216e-06
+        }
+      },
+      "scope": "Matched diagnostics at coincident saved times; not statistical significance or fieldwise convergence."
+    }
+  },
+  "media": [
+    {
+      "file": "b0_vorticity_tracer.mp4",
+      "poster": "b0_vorticity_tracer.png",
+      "cases": [
+        "b0"
+      ],
+      "layout": "2 rows \u00d7 3 actual depth columns",
+      "row_order": [
+        "b0: vorticity",
+        "b0: tracer"
+      ],
+      "frames": 49,
+      "fps": 6,
+      "duration_seconds": 8.16,
+      "times_seconds": [
+        0.0,
+        3600.0,
+        7200.0,
+        10800.0,
+        14400.0,
+        18000.0,
+        21600.0,
+        25200.0,
+        28800.0,
+        32400.0,
+        36000.0,
+        39600.0,
+        43200.0,
+        46800.0,
+        50400.0,
+        54000.0,
+        57600.0,
+        61200.0,
+        64800.0,
+        68400.0,
+        72000.0,
+        75600.0,
+        79200.0,
+        82800.0,
+        86400.0,
+        90000.0,
+        93600.0,
+        97200.0,
+        100800.0,
+        104400.0,
+        108000.0,
+        111600.0,
+        115200.0,
+        118800.0,
+        122400.0,
+        126000.0,
+        129600.0,
+        133200.0,
+        136800.0,
+        140400.0,
+        144000.0,
+        147600.0,
+        151200.0,
+        154800.0,
+        158400.0,
+        162000.0,
+        165600.0,
+        169200.0,
+        172800.0
+      ],
+      "heights_actual_m": [
+        19375.0,
+        59375.0,
+        99375.0
+      ],
+      "vorticity_asinh_width": 0.1,
+      "vorticity_limits_by_depth": [
+        [
+          -1.3841203912547868,
+          1.3841203912547868
+        ],
+        [
+          -2.213326343309465,
+          2.213326343309465
+        ],
+        [
+          -0.4571460055457666,
+          0.4571460055457666
+        ]
+      ],
+      "tracer_asinh_width": 0.01,
+      "tracer_limits": [
+        0.0,
+        1.0
+      ],
+      "fixed_across_time": true,
+      "shared_between_cases": true,
+      "no_field_clipping_or_interpolation": true,
+      "sha256": "0eb57897a63d49c6e61272ff3cadbfbba42e4bc9f1b933ef866f624915e75f48",
+      "bytes": 268801,
+      "decode_validation": "PASS",
+      "stream_probe": {
+        "ffmpeg_version": "n9.0.2-17-g2a571b6068-20260930 built with gcc 16.2.0 (crosstool-NG 1.29.0.7_b1a94f6)",
+        "codec": "h264",
+        "pix_fmt": "yuv420p(progressive)",
+        "fps": 6.0,
+        "source_size": [
+          1350,
+          648
+        ],
+        "size": [
+          1350,
+          648
+        ],
+        "rotate": 0,
+        "duration": 8.17
+      }
+    },
+    {
+      "file": "b162_vorticity_tracer.mp4",
+      "poster": "b162_vorticity_tracer.png",
+      "cases": [
+        "b162"
+      ],
+      "layout": "2 rows \u00d7 3 actual depth columns",
+      "row_order": [
+        "b162: vorticity",
+        "b162: tracer"
+      ],
+      "frames": 49,
+      "fps": 6,
+      "duration_seconds": 8.16,
+      "times_seconds": [
+        0.0,
+        3600.0,
+        7200.0,
+        10800.0,
+        14400.0,
+        18000.0,
+        21600.0,
+        25200.0,
+        28800.0,
+        32400.0,
+        36000.0,
+        39600.0,
+        43200.0,
+        46800.0,
+        50400.0,
+        54000.0,
+        57600.0,
+        61200.0,
+        64800.0,
+        68400.0,
+        72000.0,
+        75600.0,
+        79200.0,
+        82800.0,
+        86400.0,
+        90000.0,
+        93600.0,
+        97200.0,
+        100800.0,
+        104400.0,
+        108000.0,
+        111600.0,
+        115200.0,
+        118800.0,
+        122400.0,
+        126000.0,
+        129600.0,
+        133200.0,
+        136800.0,
+        140400.0,
+        144000.0,
+        147600.0,
+        151200.0,
+        154800.0,
+        158400.0,
+        162000.0,
+        165600.0,
+        169200.0,
+        172800.0
+      ],
+      "heights_actual_m": [
+        19375.0,
+        59375.0,
+        99375.0
+      ],
+      "vorticity_asinh_width": 0.1,
+      "vorticity_limits_by_depth": [
+        [
+          -1.3841203912547868,
+          1.3841203912547868
+        ],
+        [
+          -2.213326343309465,
+          2.213326343309465
+        ],
+        [
+          -0.4571460055457666,
+          0.4571460055457666
+        ]
+      ],
+      "tracer_asinh_width": 0.01,
+      "tracer_limits": [
+        0.0,
+        1.0
+      ],
+      "fixed_across_time": true,
+      "shared_between_cases": true,
+      "no_field_clipping_or_interpolation": true,
+      "sha256": "44c2378c34ab23d02426aa3cfc99534760156acafdd5d9595dc3d86fb6ab4009",
+      "bytes": 825137,
+      "decode_validation": "PASS",
+      "stream_probe": {
+        "ffmpeg_version": "n9.0.2-17-g2a571b6068-20260930 built with gcc 16.2.0 (crosstool-NG 1.29.0.7_b1a94f6)",
+        "codec": "h264",
+        "pix_fmt": "yuv420p(progressive)",
+        "fps": 6.0,
+        "source_size": [
+          1350,
+          648
+        ],
+        "size": [
+          1350,
+          648
+        ],
+        "rotate": 0,
+        "duration": 8.17
+      }
+    },
+    {
+      "file": "boundary162_vorticity_tracer.mp4",
+      "poster": "boundary162_vorticity_tracer.png",
+      "cases": [
+        "boundary162"
+      ],
+      "layout": "2 rows \u00d7 3 actual depth columns",
+      "row_order": [
+        "boundary162: vorticity",
+        "boundary162: tracer"
+      ],
+      "frames": 49,
+      "fps": 6,
+      "duration_seconds": 8.16,
+      "times_seconds": [
+        0.0,
+        3600.0,
+        7200.0,
+        10800.0,
+        14400.0,
+        18000.0,
+        21600.0,
+        25200.0,
+        28800.0,
+        32400.0,
+        36000.0,
+        39600.0,
+        43200.0,
+        46800.0,
+        50400.0,
+        54000.0,
+        57600.0,
+        61200.0,
+        64800.0,
+        68400.0,
+        72000.0,
+        75600.0,
+        79200.0,
+        82800.0,
+        86400.0,
+        90000.0,
+        93600.0,
+        97200.0,
+        100800.0,
+        104400.0,
+        108000.0,
+        111600.0,
+        115200.0,
+        118800.0,
+        122400.0,
+        126000.0,
+        129600.0,
+        133200.0,
+        136800.0,
+        140400.0,
+        144000.0,
+        147600.0,
+        151200.0,
+        154800.0,
+        158400.0,
+        162000.0,
+        165600.0,
+        169200.0,
+        172800.0
+      ],
+      "heights_actual_m": [
+        19375.0,
+        59375.0,
+        99375.0
+      ],
+      "vorticity_asinh_width": 0.1,
+      "vorticity_limits_by_depth": [
+        [
+          -1.3841203912547868,
+          1.3841203912547868
+        ],
+        [
+          -2.213326343309465,
+          2.213326343309465
+        ],
+        [
+          -0.4571460055457666,
+          0.4571460055457666
+        ]
+      ],
+      "tracer_asinh_width": 0.01,
+      "tracer_limits": [
+        0.0,
+        1.0
+      ],
+      "fixed_across_time": true,
+      "shared_between_cases": true,
+      "no_field_clipping_or_interpolation": true,
+      "sha256": "872afe99d09c3df23fad50f5a6b1f1b904ca2fd312f7107494012e265bc3982b",
+      "bytes": 829419,
+      "decode_validation": "PASS",
+      "stream_probe": {
+        "ffmpeg_version": "n9.0.2-17-g2a571b6068-20260930 built with gcc 16.2.0 (crosstool-NG 1.29.0.7_b1a94f6)",
+        "codec": "h264",
+        "pix_fmt": "yuv420p(progressive)",
+        "fps": 6.0,
+        "source_size": [
+          1350,
+          648
+        ],
+        "size": [
+          1350,
+          648
+        ],
+        "rotate": 0,
+        "duration": 8.17
+      }
+    },
+    {
+      "file": "axis0_vorticity_tracer.mp4",
+      "poster": "axis0_vorticity_tracer.png",
+      "cases": [
+        "axis0"
+      ],
+      "layout": "2 rows \u00d7 3 actual depth columns",
+      "row_order": [
+        "axis0: vorticity",
+        "axis0: tracer"
+      ],
+      "frames": 7,
+      "fps": 1,
+      "duration_seconds": 7.0,
+      "times_seconds": [
+        0.0,
+        3600.0,
+        7200.0,
+        10800.0,
+        14400.0,
+        18000.0,
+        21600.0
+      ],
+      "heights_actual_m": [
+        19375.0,
+        59375.0,
+        99375.0
+      ],
+      "vorticity_asinh_width": 0.1,
+      "vorticity_limits_by_depth": [
+        [
+          -1.3841203912547868,
+          1.3841203912547868
+        ],
+        [
+          -2.213326343309465,
+          2.213326343309465
+        ],
+        [
+          -0.4571460055457666,
+          0.4571460055457666
+        ]
+      ],
+      "tracer_asinh_width": 0.01,
+      "tracer_limits": [
+        0.0,
+        1.0
+      ],
+      "fixed_across_time": true,
+      "shared_between_cases": true,
+      "no_field_clipping_or_interpolation": true,
+      "sha256": "61d7e6db6cea0a225a314edad51e9c2a0a5c2ab09970e9111dc61cae07333717",
+      "bytes": 57974,
+      "decode_validation": "PASS",
+      "stream_probe": {
+        "ffmpeg_version": "n9.0.2-17-g2a571b6068-20260930 built with gcc 16.2.0 (crosstool-NG 1.29.0.7_b1a94f6)",
+        "codec": "h264",
+        "pix_fmt": "yuv420p(progressive)",
+        "fps": 1.0,
+        "source_size": [
+          1350,
+          648
+        ],
+        "size": [
+          1350,
+          648
+        ],
+        "rotate": 0,
+        "duration": 7.0
+      }
+    },
+    {
+      "file": "axis162_vorticity_tracer.mp4",
+      "poster": "axis162_vorticity_tracer.png",
+      "cases": [
+        "axis162"
+      ],
+      "layout": "2 rows \u00d7 3 actual depth columns",
+      "row_order": [
+        "axis162: vorticity",
+        "axis162: tracer"
+      ],
+      "frames": 7,
+      "fps": 1,
+      "duration_seconds": 7.0,
+      "times_seconds": [
+        0.0,
+        3600.0,
+        7200.0,
+        10800.0,
+        14400.0,
+        18000.0,
+        21600.0
+      ],
+      "heights_actual_m": [
+        19375.0,
+        59375.0,
+        99375.0
+      ],
+      "vorticity_asinh_width": 0.1,
+      "vorticity_limits_by_depth": [
+        [
+          -1.3841203912547868,
+          1.3841203912547868
+        ],
+        [
+          -2.213326343309465,
+          2.213326343309465
+        ],
+        [
+          -0.4571460055457666,
+          0.4571460055457666
+        ]
+      ],
+      "tracer_asinh_width": 0.01,
+      "tracer_limits": [
+        0.0,
+        1.0
+      ],
+      "fixed_across_time": true,
+      "shared_between_cases": true,
+      "no_field_clipping_or_interpolation": true,
+      "sha256": "cfff347ce407fefae3db35a695bdbd768a01bbad32c28b96fe25ac9f92345e50",
+      "bytes": 57633,
+      "decode_validation": "PASS",
+      "stream_probe": {
+        "ffmpeg_version": "n9.0.2-17-g2a571b6068-20260930 built with gcc 16.2.0 (crosstool-NG 1.29.0.7_b1a94f6)",
+        "codec": "h264",
+        "pix_fmt": "yuv420p(progressive)",
+        "fps": 1.0,
+        "source_size": [
+          1350,
+          648
+        ],
+        "size": [
+          1350,
+          648
+        ],
+        "rotate": 0,
+        "duration": 7.0
+      }
+    },
+    {
+      "file": "heating_comparison.mp4",
+      "poster": "heating_comparison.png",
+      "cases": [
+        "b0",
+        "b162"
+      ],
+      "layout": "4 rows \u00d7 3 actual depth columns",
+      "row_order": [
+        "b0: vorticity",
+        "b0: tracer",
+        "b162: vorticity",
+        "b162: tracer"
+      ],
+      "frames": 49,
+      "fps": 6,
+      "duration_seconds": 8.16,
+      "times_seconds": [
+        0.0,
+        3600.0,
+        7200.0,
+        10800.0,
+        14400.0,
+        18000.0,
+        21600.0,
+        25200.0,
+        28800.0,
+        32400.0,
+        36000.0,
+        39600.0,
+        43200.0,
+        46800.0,
+        50400.0,
+        54000.0,
+        57600.0,
+        61200.0,
+        64800.0,
+        68400.0,
+        72000.0,
+        75600.0,
+        79200.0,
+        82800.0,
+        86400.0,
+        90000.0,
+        93600.0,
+        97200.0,
+        100800.0,
+        104400.0,
+        108000.0,
+        111600.0,
+        115200.0,
+        118800.0,
+        122400.0,
+        126000.0,
+        129600.0,
+        133200.0,
+        136800.0,
+        140400.0,
+        144000.0,
+        147600.0,
+        151200.0,
+        154800.0,
+        158400.0,
+        162000.0,
+        165600.0,
+        169200.0,
+        172800.0
+      ],
+      "heights_actual_m": [
+        19375.0,
+        59375.0,
+        99375.0
+      ],
+      "vorticity_asinh_width": 0.1,
+      "vorticity_limits_by_depth": [
+        [
+          -1.3841203912547868,
+          1.3841203912547868
+        ],
+        [
+          -2.213326343309465,
+          2.213326343309465
+        ],
+        [
+          -0.4571460055457666,
+          0.4571460055457666
+        ]
+      ],
+      "tracer_asinh_width": 0.01,
+      "tracer_limits": [
+        0.0,
+        1.0
+      ],
+      "fixed_across_time": true,
+      "shared_between_cases": true,
+      "no_field_clipping_or_interpolation": true,
+      "sha256": "4ad36f071b5d085744b6ae74ad868bac44a34da1e850f781ca524c8a70b31cb0",
+      "bytes": 1110393,
+      "decode_validation": "PASS",
+      "stream_probe": {
+        "ffmpeg_version": "n9.0.2-17-g2a571b6068-20260930 built with gcc 16.2.0 (crosstool-NG 1.29.0.7_b1a94f6)",
+        "codec": "h264",
+        "pix_fmt": "yuv420p(progressive)",
+        "fps": 6.0,
+        "source_size": [
+          1350,
+          1296
+        ],
+        "size": [
+          1350,
+          1296
+        ],
+        "rotate": 0,
+        "duration": 8.17
+      }
+    },
+    {
+      "file": "boundary_comparison.mp4",
+      "poster": "boundary_comparison.png",
+      "cases": [
+        "b162",
+        "boundary162"
+      ],
+      "layout": "4 rows \u00d7 3 actual depth columns",
+      "row_order": [
+        "b162: vorticity",
+        "b162: tracer",
+        "boundary162: vorticity",
+        "boundary162: tracer"
+      ],
+      "frames": 49,
+      "fps": 6,
+      "duration_seconds": 8.16,
+      "times_seconds": [
+        0.0,
+        3600.0,
+        7200.0,
+        10800.0,
+        14400.0,
+        18000.0,
+        21600.0,
+        25200.0,
+        28800.0,
+        32400.0,
+        36000.0,
+        39600.0,
+        43200.0,
+        46800.0,
+        50400.0,
+        54000.0,
+        57600.0,
+        61200.0,
+        64800.0,
+        68400.0,
+        72000.0,
+        75600.0,
+        79200.0,
+        82800.0,
+        86400.0,
+        90000.0,
+        93600.0,
+        97200.0,
+        100800.0,
+        104400.0,
+        108000.0,
+        111600.0,
+        115200.0,
+        118800.0,
+        122400.0,
+        126000.0,
+        129600.0,
+        133200.0,
+        136800.0,
+        140400.0,
+        144000.0,
+        147600.0,
+        151200.0,
+        154800.0,
+        158400.0,
+        162000.0,
+        165600.0,
+        169200.0,
+        172800.0
+      ],
+      "heights_actual_m": [
+        19375.0,
+        59375.0,
+        99375.0
+      ],
+      "vorticity_asinh_width": 0.1,
+      "vorticity_limits_by_depth": [
+        [
+          -1.3841203912547868,
+          1.3841203912547868
+        ],
+        [
+          -2.213326343309465,
+          2.213326343309465
+        ],
+        [
+          -0.4571460055457666,
+          0.4571460055457666
+        ]
+      ],
+      "tracer_asinh_width": 0.01,
+      "tracer_limits": [
+        0.0,
+        1.0
+      ],
+      "fixed_across_time": true,
+      "shared_between_cases": true,
+      "no_field_clipping_or_interpolation": true,
+      "sha256": "551ec90c148072a576782bbcaab973f41547ae37a329e346ff9983e93526fb08",
+      "bytes": 1708256,
+      "decode_validation": "PASS",
+      "stream_probe": {
+        "ffmpeg_version": "n9.0.2-17-g2a571b6068-20260930 built with gcc 16.2.0 (crosstool-NG 1.29.0.7_b1a94f6)",
+        "codec": "h264",
+        "pix_fmt": "yuv420p(progressive)",
+        "fps": 6.0,
+        "source_size": [
+          1350,
+          1296
+        ],
+        "size": [
+          1350,
+          1296
+        ],
+        "rotate": 0,
+        "duration": 8.17
+      }
+    },
+    {
+      "file": "axisymmetric_comparison.mp4",
+      "poster": "axisymmetric_comparison.png",
+      "cases": [
+        "axis0",
+        "axis162"
+      ],
+      "layout": "4 rows \u00d7 3 actual depth columns",
+      "row_order": [
+        "axis0: vorticity",
+        "axis0: tracer",
+        "axis162: vorticity",
+        "axis162: tracer"
+      ],
+      "frames": 7,
+      "fps": 1,
+      "duration_seconds": 7.0,
+      "times_seconds": [
+        0.0,
+        3600.0,
+        7200.0,
+        10800.0,
+        14400.0,
+        18000.0,
+        21600.0
+      ],
+      "heights_actual_m": [
+        19375.0,
+        59375.0,
+        99375.0
+      ],
+      "vorticity_asinh_width": 0.1,
+      "vorticity_limits_by_depth": [
+        [
+          -1.3841203912547868,
+          1.3841203912547868
+        ],
+        [
+          -2.213326343309465,
+          2.213326343309465
+        ],
+        [
+          -0.4571460055457666,
+          0.4571460055457666
+        ]
+      ],
+      "tracer_asinh_width": 0.01,
+      "tracer_limits": [
+        0.0,
+        1.0
+      ],
+      "fixed_across_time": true,
+      "shared_between_cases": true,
+      "no_field_clipping_or_interpolation": true,
+      "sha256": "a1f4390d4398b6c7c33729228888a77cda33cc14fe4c3bfad69f31048d39d0e7",
+      "bytes": 110129,
+      "decode_validation": "PASS",
+      "stream_probe": {
+        "ffmpeg_version": "n9.0.2-17-g2a571b6068-20260930 built with gcc 16.2.0 (crosstool-NG 1.29.0.7_b1a94f6)",
+        "codec": "h264",
+        "pix_fmt": "yuv420p(progressive)",
+        "fps": 1.0,
+        "source_size": [
+          1350,
+          1296
+        ],
+        "size": [
+          1350,
+          1296
+        ],
+        "rotate": 0,
+        "duration": 7.0
+      }
+    }
+  ],
+  "normalization": {
+    "vorticity": "asinh \u03b6/f0, width0.1; per-depth full extrema shared over all cases and times",
+    "tracer": "asinh C, width0.01; physical bounds expanded to observed extrema; common across all cases, depths and times"
+  }
+}
