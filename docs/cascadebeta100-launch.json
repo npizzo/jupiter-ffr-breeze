@@ -1,0 +1,105 @@
+{
+  "submitted_utc": "2026-11-11T17:37:03.984006+00:00",
+  "status": "SUBMITTED_VALIDATION_REQUIRED",
+  "compute_location": "Unity",
+  "production_root": "data/cascadebeta100-v1",
+  "preflight_root": "data/cascadebeta100-preflight-v1",
+  "reference_root": "data/cascade100-v1/cascade100_f_heated",
+  "gallery_output": "rendered/cascadebeta100-full100",
+  "configuration": "configs/cascadebeta100_heated.toml",
+  "beta_m_inv_s_inv": 2.8216700143325537e-12,
+  "changed_configuration_keys": [
+    "name",
+    "rotation_model",
+    "beta"
+  ],
+  "jobs": [
+    {
+      "stage": "validation",
+      "end_day": 1,
+      "job_id": 1434570,
+      "afterok": null
+    },
+    {
+      "stage": "production",
+      "end_day": 10,
+      "job_id": 1434571,
+      "afterok": 1434570
+    },
+    {
+      "stage": "production",
+      "end_day": 20,
+      "job_id": 1434572,
+      "afterok": 1434571
+    },
+    {
+      "stage": "production",
+      "end_day": 30,
+      "job_id": 1434573,
+      "afterok": 1434572
+    },
+    {
+      "stage": "production",
+      "end_day": 40,
+      "job_id": 1434574,
+      "afterok": 1434573
+    },
+    {
+      "stage": "production",
+      "end_day": 50,
+      "job_id": 1434575,
+      "afterok": 1434574
+    },
+    {
+      "stage": "production",
+      "end_day": 60,
+      "job_id": 1434576,
+      "afterok": 1434575
+    },
+    {
+      "stage": "production",
+      "end_day": 70,
+      "job_id": 1434577,
+      "afterok": 1434576
+    },
+    {
+      "stage": "production",
+      "end_day": 80,
+      "job_id": 1434578,
+      "afterok": 1434577
+    },
+    {
+      "stage": "production",
+      "end_day": 90,
+      "job_id": 1434579,
+      "afterok": 1434578
+    },
+    {
+      "stage": "production",
+      "end_day": 100,
+      "job_id": 1434580,
+      "afterok": 1434579
+    },
+    {
+      "stage": "rendering",
+      "end_day": 100,
+      "job_id": 1434581,
+      "afterok": 1434580
+    }
+  ],
+  "source_hashes": {
+    "scripts/cascadebeta100/initial_flow.jl": "1a40b5bf61f236f846e88292ee0be8617d446fb1fd63fb73dc89f96445436989",
+    "scripts/cascadebeta100/preflight.jl": "f1738bb38ef41d8189863760e30ef399ffec9c63955cff9ac938a31990d88672",
+    "scripts/cascadebeta100/thermal_budget_controller.jl": "35404ad7bb8a5071c9d51a3992c8c4ecbb452133c9ffdff1376928b1e6679c27",
+    "scripts/cascadebeta100/check_output.jl": "5ca05e66ac8889640565ae7e42a885982686b7c3f77d892316fd75617c937c12",
+    "scripts/cascadebeta100/campaign.jl": "1ea5a2491ae8cea06b59039c9bb9a0d72b6bfe7e71612217cba128a5d0ebb1a5",
+    "scripts/cascadebeta100/render_movies.py": "1bc44776fb8bde312b5114b1c62b93c49fb7949318d8fe89e8c511f9063324e3",
+    "scripts/cascadebeta100/check_large.jl": "fd7b64342ac60612e70a71c82358ca53d9119cf1197959787f89704262044bb7",
+    "scripts/cascadebeta100/prepare_gallery.py": "52189166966a7b4b6a5342e46a114090146ce1527e6ba776f6ebf1db04a3d576",
+    "scripts/cascadebeta100/submit.sh": "8969739bc082b9379c2fd348f94e1df8055e2e8f7c9b711f04908879879b31e3",
+    "scripts/cascadebeta100/transfer.py": "7efe1c88a7d2473360aa5be3b966da966005c67f1e23f03f6b5df50b5e2f1352",
+    "scripts/cascadebeta100/vorticity_depth_videos_ordered.py": "4d2a00a86f0547ce45e44de462af8f84d007ebb8f84470c6070ce92adbb0bb15",
+    "scripts/cascadebeta100/run.jl": "0885ee121d8a0df628ec8583bd7dca765cb684c446e3e4f8eda7a648ca4a7ee8"
+  },
+  "note": "No existing simulations changed. Model source matches original passing f-plane validation. Actual initial fields, beta restart, cap, tracer, thermal and throughput gates still require GPU validation."
+}
