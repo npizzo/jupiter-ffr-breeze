@@ -1,0 +1,191 @@
+{
+  "status": "READY_FOR_REVIEW",
+  "stage": "pilot",
+  "assets": [
+    {
+      "file": "README.md",
+      "bytes": 2470,
+      "sha256": "e80f5cb52b6864541a211801efe28d395f9582459c55ae146ec817921e93e651"
+    },
+    {
+      "file": "axis0_circulation.png",
+      "bytes": 331732,
+      "sha256": "654992c651b6c8d237e543e9f868893b9f1ae533c2fd4e89af7eeac0415256e7"
+    },
+    {
+      "file": "axis0_diagnostics.csv",
+      "bytes": 4458,
+      "sha256": "3aa62930eeef102929e6c7351ff0b709b11d4a5d1ecbcbf8d7dd2a59c096a527"
+    },
+    {
+      "file": "axis0_momentum.png",
+      "bytes": 272967,
+      "sha256": "fbbf1ab428db8617424288728ae653bdbd17ea864e36222a9cb0a40719b3f7c1"
+    },
+    {
+      "file": "axis0_tracer_transport.png",
+      "bytes": 169187,
+      "sha256": "60f446c59d584bca14a1b4626f7d0171c93043a3a01106fe1f80ea7331837436"
+    },
+    {
+      "file": "axis0_vorticity_tracer.json",
+      "bytes": 1378,
+      "sha256": "cc54e0159e87c7a9f7d443193280fa429b59ffabbe330b9127f08268b2f61e84"
+    },
+    {
+      "file": "axis0_vorticity_tracer.mp4",
+      "bytes": 57771,
+      "sha256": "8ab25b0c4de448be2f165ea8fc6280a034548ebecd7651dae72201e1b3b66d3e"
+    },
+    {
+      "file": "axis0_vorticity_tracer.png",
+      "bytes": 142792,
+      "sha256": "f0880a4e89b367f4f1ee9bb84301dd7eb44d76c74c00bddf635b949db024dd10"
+    },
+    {
+      "file": "axis162_circulation.png",
+      "bytes": 351662,
+      "sha256": "8654284d477166f73d35050b245dfecd07291868155b1645c49ba030f31e0b90"
+    },
+    {
+      "file": "axis162_diagnostics.csv",
+      "bytes": 4451,
+      "sha256": "0f508ee44f365b92ed8c50cbe4ef0b3bc4ca73e13fe4fa805607ed0cba6eb1af"
+    },
+    {
+      "file": "axis162_momentum.png",
+      "bytes": 267501,
+      "sha256": "351eb97d174070bc9fb31325b72310473305bbb67f49a45b7a132963ad9b1cd5"
+    },
+    {
+      "file": "axis162_tracer_transport.png",
+      "bytes": 159624,
+      "sha256": "7bb31c4ac6de22399592dd3f49cb29ed8dc119f056b28562b59b0353ab921569"
+    },
+    {
+      "file": "axis162_vorticity_tracer.json",
+      "bytes": 1388,
+      "sha256": "0747172dbcb719098ebc3202fbc26ca84f5d96f3434e27f6971393f7e0327168"
+    },
+    {
+      "file": "axis162_vorticity_tracer.mp4",
+      "bytes": 57362,
+      "sha256": "e4ccae001be22797e5e95bf490f1eb110189c732f9aca971c7785b3c71390583"
+    },
+    {
+      "file": "axis162_vorticity_tracer.png",
+      "bytes": 142276,
+      "sha256": "d6e85419f59b6feb79148728cac0e049da6bc44551f088535ca72963c29e09f4"
+    },
+    {
+      "file": "axisymmetric_comparison.json",
+      "bytes": 1447,
+      "sha256": "79753054e5a7734bf8326f4cad3c03586d1a7f4269f962a3fcd163d88e8ab225"
+    },
+    {
+      "file": "axisymmetric_comparison.mp4",
+      "bytes": 110149,
+      "sha256": "0fe196bb0ed441a253b934e7c904fb07e9a2f28434429e879a42ea04bb633dbe"
+    },
+    {
+      "file": "axisymmetric_comparison.png",
+      "bytes": 284315,
+      "sha256": "efa64e981edb024392705c54bd83feeeb3c5f9ffdd51fb6095ec57d8db066aaa"
+    },
+    {
+      "file": "b0_circulation.png",
+      "bytes": 338895,
+      "sha256": "3570c246f0c661a6bc586d1ae7733c0cf069f236b8b4d0c51597c8fe4dc6ee05"
+    },
+    {
+      "file": "b0_diagnostics.csv",
+      "bytes": 4221,
+      "sha256": "925c69b6ada727f39991111ede922dcffb528a8ae2ad770a4a16f24c5fdc0486"
+    },
+    {
+      "file": "b0_momentum.png",
+      "bytes": 217029,
+      "sha256": "5e6a0f1e49d78a66de0aac796cc81afff8d53617cbd9fb22b7b94b9ca9f12f12"
+    },
+    {
+      "file": "b0_tracer_transport.png",
+      "bytes": 168125,
+      "sha256": "c2ff5d1705b17e5259d70fa0cc53946c81926dde6a8e110f0631eb6471feddd3"
+    },
+    {
+      "file": "b0_vorticity_tracer.json",
+      "bytes": 1364,
+      "sha256": "c84ecca4c35742892869c51c68e5ce99df7e2beea3fbeac63692558541a266c2"
+    },
+    {
+      "file": "b0_vorticity_tracer.mp4",
+      "bytes": 121799,
+      "sha256": "920853d3147a20af78c304d6ea6fdf0d3f17073b1d03dacb6433f5a553fc9d98"
+    },
+    {
+      "file": "b0_vorticity_tracer.png",
+      "bytes": 365767,
+      "sha256": "efe49aeda84269562f747abd3955fd8433b0123142c646a94be2dd7ae60e1983"
+    },
+    {
+      "file": "b162_circulation.png",
+      "bytes": 340522,
+      "sha256": "8e467c56030268a8e13782df4337e4da16572903f1024bb9b4cc7a9460991734"
+    },
+    {
+      "file": "b162_diagnostics.csv",
+      "bytes": 4200,
+      "sha256": "7b041a5ebe0e5475e772dcb30baab6d806dda2003d0e821b79d130fba9eae48b"
+    },
+    {
+      "file": "b162_momentum.png",
+      "bytes": 215316,
+      "sha256": "f5e1783ad01d315808f0892fcd59b17b7fabad039a040bcf335a23658ec2a42f"
+    },
+    {
+      "file": "b162_tracer_transport.png",
+      "bytes": 169851,
+      "sha256": "105bb059ec979f3295f9271ce63ddf6bdb8a88446575915e4060e14c56d59e22"
+    },
+    {
+      "file": "b162_vorticity_tracer.json",
+      "bytes": 1374,
+      "sha256": "f4a4250747fef0f15cd42d2eb119b08b74fe2ebedd6d5ec017a3dec3a8209a06"
+    },
+    {
+      "file": "b162_vorticity_tracer.mp4",
+      "bytes": 123627,
+      "sha256": "49d2010946b722432e5d264b3464db6e9aee8e87b4f8472b114deff77fb1e46e"
+    },
+    {
+      "file": "b162_vorticity_tracer.png",
+      "bytes": 369903,
+      "sha256": "125d4456c552cf7b7bd65cc0e0c4f0965ed63b9d5a782cb6842b3c8b75a809d5"
+    },
+    {
+      "file": "diagnostics.png",
+      "bytes": 132627,
+      "sha256": "c6d91cabffac8c5152fd379676d0548408aac25b9c16a8158fe5289d74dc43b7"
+    },
+    {
+      "file": "heating_comparison.json",
+      "bytes": 1419,
+      "sha256": "f604685ac68f3359fde1ae74893ff8d62400ce0a9ce293962923986d6e7b74a6"
+    },
+    {
+      "file": "heating_comparison.mp4",
+      "bytes": 243820,
+      "sha256": "567cb5fb8adc406cfe2f8a1aa705319d6a0232f756a5b75fcab28e4b886fa0da"
+    },
+    {
+      "file": "heating_comparison.png",
+      "bytes": 747325,
+      "sha256": "02fc9089d6b8d87bd212fe13d9bbe35a73376e731c2bb1eab986d683ceb6dd90"
+    },
+    {
+      "file": "report.json",
+      "bytes": 46737,
+      "sha256": "6e58c4694e65c3e9bd605d1f051e1faaf65ae74cca99d9dc0c0e86752dd36363"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "file": "b0_vorticity_tracer.mp4",
+  "poster": "b0_vorticity_tracer.png",
+  "cases": [
+    "b0"
+  ],
+  "layout": "2 rows \u00d7 3 actual depth columns",
+  "row_order": [
+    "b0: vorticity",
+    "b0: tracer"
+  ],
+  "frames": 7,
+  "fps": 1,
+  "duration_seconds": 7.0,
+  "times_seconds": [
+    0.0,
+    3600.0,
+    7200.0,
+    10800.0,
+    14400.0,
+    18000.0,
+    21600.0
+  ],
+  "heights_actual_m": [
+    19375.0,
+    59375.0,
+    99375.0
+  ],
+  "vorticity_asinh_width": 0.1,
+  "vorticity_limits_by_depth": [
+    [
+      -0.4545304611941271,
+      0.4545304611941271
+    ],
+    [
+      -0.4545261172751158,
+      0.4545261172751158
+    ],
+    [
+      -0.4545143987959227,
+      0.4545143987959227
+    ]
+  ],
+  "tracer_asinh_width": 0.01,
+  "tracer_limits": [
+    0.0,
+    1.0
+  ],
+  "fixed_across_time": true,
+  "shared_between_cases": true,
+  "no_field_clipping_or_interpolation": true,
+  "sha256": "920853d3147a20af78c304d6ea6fdf0d3f17073b1d03dacb6433f5a553fc9d98",
+  "bytes": 121799,
+  "decode_validation": "PASS",
+  "stream_probe": {
+    "ffmpeg_version": "n9.0.2-17-g2a571b6068-20260930 built with gcc 16.2.0 (crosstool-NG 1.29.0.7_b1a94f6)",
+    "codec": "h264",
+    "pix_fmt": "yuv420p(progressive)",
+    "fps": 1.0,
+    "source_size": [
+      1350,
+      648
+    ],
+    "size": [
+      1350,
+      648
+    ],
+    "rotate": 0,
+    "duration": 7.0
+  }
+}

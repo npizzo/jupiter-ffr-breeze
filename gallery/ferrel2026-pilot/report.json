@@ -1,0 +1,1220 @@
+{
+  "status": "COMPLETE",
+  "stage": "pilot",
+  "compute_location": "Unity allocated CPU job",
+  "generated_at_utc": "2026-11-11T04:54:58.574072+00:00",
+  "slurm_job_id": "1411365",
+  "renderer_sha256": "ad5fc63bf40dcccdcc7ce7ac88608f3e4545f52bdb043d35a25add181b407697",
+  "successful_prerequisite_jobs": {
+    "1409341": [
+      "COMPLETED",
+      "0:0"
+    ]
+  },
+  "raw_fields_downloaded": false,
+  "gates": [
+    {
+      "file": "data/ferrel2026-preflight-gpu-v1/PASS512.toml",
+      "sha256": "142b5201f112445fc097a97ed4e43999e018de1de81e92940220b383d0194663",
+      "status": "PASS"
+    }
+  ],
+  "caveats": [
+    "Dry anelastic beta-channel transient mechanism screening; no steady or deep Jovian-cell claim.",
+    "The first 12 Earth hours are excluded as a conservative startup window, not a demonstrated equilibration timescale. Six-hour pilots and controls lie entirely within that window.",
+    "Native momentum closure samples complete SSPRK3 steps; it is not a continuous long-run integrated momentum budget.",
+    "Centered covariance stresses, force work and mean-flow transfer are approximate diagnostics, not exact WENO fluxes or a closed kinetic-energy budget.",
+    "Positive covariance times mean shear feeds zonal-mean kinetic energy. This is not by itself proof of an inverse cascade.",
+    "A single seed, short duration, cap relaxation, sponge and global thermal feedback limit physical attribution.",
+    "The boundary case changes both cap relaxation and vertical-velocity damping; it cannot isolate their individual effects.",
+    "No residual/TEM circulation is inferred in the nearly neutral layer; mean and eddy tracer fluxes are reported directly.",
+    "Psi is overturning transport per unit zonal length in kg/(m s), not a planet-integrated kg/s streamfunction.",
+    "Temporal variability and coherence are descriptive; short windows and a single seed do not establish statistical significance."
+  ],
+  "cases": {
+    "b0": {
+      "case": "b0",
+      "label": "Unheated",
+      "source": "data/ferrel2026-preflight-gpu-v1/pilot512_b0",
+      "status": "COMPLETE",
+      "grid": [
+        512,
+        512,
+        96
+      ],
+      "heat_flux_W_m2": 0.0,
+      "stop_seconds": 21600.0,
+      "frames": 7,
+      "window_seconds": [
+        0.0,
+        21600.0
+      ],
+      "window_scope": "entirely within excluded startup window",
+      "mean_centered_eddy_to_mean_ke_transfer_W_m2": -0.027614189593009982,
+      "mean_mass_streamfunction_max_abs_kg_m_s": 0.2502288757480949,
+      "mass_streamfunction_temporal_std_spatial_rms_kg_m_s": 0.030745299682357823,
+      "mass_streamfunction_abs_mean_over_mean_abs": 0.7886260121823772,
+      "coherence_definition": "sum(abs(time-mean Psi))/sum(time-mean abs(Psi)); descriptive only",
+      "native_sampled_steps": 11,
+      "native_step_max_absolute_residual_kg_m2_s": 1.186127341094509e-15,
+      "native_step_max_relative_to_leading_increment": 7.349965641930126e-11,
+      "native_step_max_roundoff_units": 1.903123435266215,
+      "max_mass_divergence_kg_m3_s": 3.992541495671429e-18,
+      "max_mass_flux_reconstruction_error_kg_m2_s": 1.0777733618224337e-14,
+      "metadata_sha256": "04faa82c774ebb1573bd32bfc383270100304e4fd13b04ece013c592f2df9f97",
+      "native_checks_sha256": "b400769d2ea17504d1caf552dc4ce884eb46105a68d5711f2df374aa637df2c3",
+      "scientific_driver_sha256": "f6544588517ebf00e12b23cc6335eb1686c30bc0e945faa4a3b60c48bf53f5ef",
+      "configuration_sha256": "6348f6cda850a97901790572cce9fa995ce3a5fa49ba8a566a88cba391db4b79",
+      "heights_actual_m": [
+        19375.0,
+        59375.0,
+        99375.0
+      ],
+      "wall_seconds": 985.3116919994354,
+      "frame_manifest": [
+        {
+          "file": "frame_00000.jld2",
+          "time_seconds": 0.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "9d30d99ddea8291859d29ad072d419c6f20ef21995c4870af8070a0bed09ee64",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00001.jld2",
+          "time_seconds": 3600.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "400fe5371dd633a0db937ba6d302ba586b911f43768e3a537d550cd9c9086649",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00002.jld2",
+          "time_seconds": 7200.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "970af7162078592c0c3f45f0e535352f946b3bf357c52332192153235099ef2e",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00003.jld2",
+          "time_seconds": 10800.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "22996580ac4d27f2a188a6f0204a3a9b8259cd1f427a288932851712a7b0c0ef",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00004.jld2",
+          "time_seconds": 14400.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "3aec475e83ca13c85bbd1da7cd6f8385e9a218becad8cf59c18feef8ebaecf25",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00005.jld2",
+          "time_seconds": 18000.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "20f2ef1ffd94d5ea7f81b3bb2244ecbc2c64813e5ed67da2a3345c38838eae58",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00006.jld2",
+          "time_seconds": 21600.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "990ba20cf7df03710a53cf72c84e19f778a64d5baee00b6fdc63144e835eb8f0",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        }
+      ],
+      "first": {
+        "time_seconds": 0.0,
+        "earth_day": 0.0,
+        "max_abs_mass_streamfunction_kg_m_s": 4.215378046623641e-12,
+        "density_weighted_zonal_mean_v_rms_m_s": 2.5006719573867e-17,
+        "density_weighted_zonal_mean_w_rms_m_s": 1.7860630138184207e-18,
+        "mass_divergence_max_kg_m3_s": 2.1921072236800133e-20,
+        "mass_flux_reconstruction_max_kg_m2_s": 1.3890542227415177e-16,
+        "psi_native_integration_max_error_kg_m_s": 0.0,
+        "native_advection_rms_kg_m2_s2": 3.299055614633748e-06,
+        "centered_advection_remainder_rms_kg_m2_s2": 7.820275582454285e-09,
+        "eddy_to_mean_ke_transfer_W_m2": -0.04739498062309417,
+        "centered_eddy_force_work_W_m2": -0.04739949007608841,
+        "mean_ke_J_m2": 76650.56027998897,
+        "kinetic_energy": 1236928.0559160188,
+        "tracer_column": 6079.0149391080095,
+        "tracer_min": 8.67349452474473e-10,
+        "tracer_max": 0.8000457356795774,
+        "cap_min": 2.500000651041525e-05,
+        "cap_mean": 2.5000006510417207e-05,
+        "cap_enthalpy": 1.521255608439796e-12,
+        "budget_correction": -2.483969723424797e-12,
+        "buoyancy_power": 5.606684704751986e-23,
+        "mean_rho_vtracer_rms_kg_m2_s": 2.1830699417329994e-18,
+        "mean_rho_wtracer_rms_kg_m2_s": 1.3903777461708816e-19,
+        "zonal_rho_vtracer_rms_kg_m2_s": 0.012096687889972034,
+        "zonal_rho_wtracer_rms_kg_m2_s": 1.665657774167739e-19
+      },
+      "last": {
+        "time_seconds": 21600.0,
+        "earth_day": 0.25,
+        "max_abs_mass_streamfunction_kg_m_s": 0.48407616692693317,
+        "density_weighted_zonal_mean_v_rms_m_s": 1.9482699042006495e-06,
+        "density_weighted_zonal_mean_w_rms_m_s": 4.378786477560112e-06,
+        "mass_divergence_max_kg_m3_s": 3.652785330871399e-18,
+        "mass_flux_reconstruction_max_kg_m2_s": 1.0389104102353987e-14,
+        "psi_native_integration_max_error_kg_m_s": 0.0,
+        "native_advection_rms_kg_m2_s2": 3.3304090958308635e-06,
+        "centered_advection_remainder_rms_kg_m2_s2": 8.404153299853868e-09,
+        "eddy_to_mean_ke_transfer_W_m2": -0.006948919906002732,
+        "centered_eddy_force_work_W_m2": -0.006960265769066963,
+        "mean_ke_J_m2": 76050.4342091474,
+        "kinetic_energy": 1235325.6737506217,
+        "tracer_column": 6079.0149391080795,
+        "tracer_min": 8.726103593520132e-10,
+        "tracer_max": 0.800046498506789,
+        "cap_min": 2.4999875437935518e-05,
+        "cap_mean": 2.4999901377386182e-05,
+        "cap_enthalpy": 0.183854575945185,
+        "budget_correction": -0.18385457594845306,
+        "buoyancy_power": 8.371951529558101e-08,
+        "mean_rho_vtracer_rms_kg_m2_s": 1.6730862690241948e-07,
+        "mean_rho_wtracer_rms_kg_m2_s": 3.477871908631561e-07,
+        "zonal_rho_vtracer_rms_kg_m2_s": 0.023316353829651627,
+        "zonal_rho_wtracer_rms_kg_m2_s": 3.2112044349083645e-07
+      },
+      "direct_tracer_flux_rms_of_time_mean_kg_m2_s": {
+        "mean_rho_vtracer": 1.3112725127585978e-07,
+        "mean_rho_wtracer": 2.6488261061567904e-07,
+        "zonal_rho_vtracer": 0.015447375144388915,
+        "zonal_rho_wtracer": 2.5977503900039786e-07
+      }
+    },
+    "b162": {
+      "case": "b162",
+      "label": "Heated \u00b7 162 W/m\u00b2",
+      "source": "data/ferrel2026-preflight-gpu-v1/pilot512_b162",
+      "status": "COMPLETE",
+      "grid": [
+        512,
+        512,
+        96
+      ],
+      "heat_flux_W_m2": 162.0,
+      "stop_seconds": 21600.0,
+      "frames": 7,
+      "window_seconds": [
+        0.0,
+        21600.0
+      ],
+      "window_scope": "entirely within excluded startup window",
+      "mean_centered_eddy_to_mean_ke_transfer_W_m2": -0.027614189596746903,
+      "mean_mass_streamfunction_max_abs_kg_m_s": 0.27421805473882027,
+      "mass_streamfunction_temporal_std_spatial_rms_kg_m_s": 0.035090368751912335,
+      "mass_streamfunction_abs_mean_over_mean_abs": 0.799922823319198,
+      "coherence_definition": "sum(abs(time-mean Psi))/sum(time-mean abs(Psi)); descriptive only",
+      "native_sampled_steps": 11,
+      "native_step_max_absolute_residual_kg_m2_s": 1.1348356514027739e-15,
+      "native_step_max_relative_to_leading_increment": 7.032080758442315e-11,
+      "native_step_max_roundoff_units": 1.8208347260025697,
+      "max_mass_divergence_kg_m3_s": 4.739638824015289e-18,
+      "max_mass_flux_reconstruction_error_kg_m2_s": 1.1199933802651454e-14,
+      "metadata_sha256": "d26db07f649e660ecf45c5515250d89156f4b0bf308d8dad1e6b13fef8d942a1",
+      "native_checks_sha256": "cf8519f40a03b32e0880d942156b204a6860f824736aa7aa9a4bbcdc7ef674a3",
+      "scientific_driver_sha256": "f6544588517ebf00e12b23cc6335eb1686c30bc0e945faa4a3b60c48bf53f5ef",
+      "configuration_sha256": "845b5efe1eb8713a97b49418177b437df61948c2ecd49bc0c90984c99d2a0a19",
+      "heights_actual_m": [
+        19375.0,
+        59375.0,
+        99375.0
+      ],
+      "wall_seconds": 953.6056408882141,
+      "frame_manifest": [
+        {
+          "file": "frame_00000.jld2",
+          "time_seconds": 0.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "9d30d99ddea8291859d29ad072d419c6f20ef21995c4870af8070a0bed09ee64",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00001.jld2",
+          "time_seconds": 3600.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "1da37ef74e8f2c57941da9ded85141960bf28fc3f8ff0cf13930a1f15d3024ea",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00002.jld2",
+          "time_seconds": 7200.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "d505125ca195291ef784faf268568593b30b6082848db5a54b2d654603c1ccfe",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00003.jld2",
+          "time_seconds": 10800.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "f6307717f5b6c194bd442ee7a2e2f831317e637c314182d5ad1999676439c9b4",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00004.jld2",
+          "time_seconds": 14400.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "a517b0a392f90de52173c39ef9125582803cb1beaec2bbc5d38cfd017a6cef1b",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00005.jld2",
+          "time_seconds": 18000.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "77285089404a8a7984dba2db2be48d29dac29514dcb6d0ba897cdd027e34796d",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00006.jld2",
+          "time_seconds": 21600.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "8f60af954dbf80c9b8e6f08a656b5fb54d80e6442829ef46e953166b9d53c170",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        }
+      ],
+      "first": {
+        "time_seconds": 0.0,
+        "earth_day": 0.0,
+        "max_abs_mass_streamfunction_kg_m_s": 4.215378046623641e-12,
+        "density_weighted_zonal_mean_v_rms_m_s": 2.5006719573867e-17,
+        "density_weighted_zonal_mean_w_rms_m_s": 1.7860630138184207e-18,
+        "mass_divergence_max_kg_m3_s": 2.1921072236800133e-20,
+        "mass_flux_reconstruction_max_kg_m2_s": 1.3890542227415177e-16,
+        "psi_native_integration_max_error_kg_m_s": 0.0,
+        "native_advection_rms_kg_m2_s2": 3.299055614633748e-06,
+        "centered_advection_remainder_rms_kg_m2_s2": 7.820275582454285e-09,
+        "eddy_to_mean_ke_transfer_W_m2": -0.04739498062309417,
+        "centered_eddy_force_work_W_m2": -0.04739949007608841,
+        "mean_ke_J_m2": 76650.56027998897,
+        "kinetic_energy": 1236928.0559160188,
+        "tracer_column": 6079.0149391080095,
+        "tracer_min": 8.67349452474473e-10,
+        "tracer_max": 0.8000457356795774,
+        "cap_min": 2.500000651041525e-05,
+        "cap_mean": 2.5000006510417207e-05,
+        "cap_enthalpy": 1.521255608439796e-12,
+        "budget_correction": -162.00000000000247,
+        "buoyancy_power": 5.606684704751986e-23,
+        "mean_rho_vtracer_rms_kg_m2_s": 2.1830699417329994e-18,
+        "mean_rho_wtracer_rms_kg_m2_s": 1.3903777461708816e-19,
+        "zonal_rho_vtracer_rms_kg_m2_s": 0.012096687889972034,
+        "zonal_rho_wtracer_rms_kg_m2_s": 1.665657774167739e-19
+      },
+      "last": {
+        "time_seconds": 21600.0,
+        "earth_day": 0.25,
+        "max_abs_mass_streamfunction_kg_m_s": 0.648415252850797,
+        "density_weighted_zonal_mean_v_rms_m_s": 2.8732381763583867e-06,
+        "density_weighted_zonal_mean_w_rms_m_s": 6.9567328972720696e-06,
+        "mass_divergence_max_kg_m3_s": 3.72968541728831e-18,
+        "mass_flux_reconstruction_max_kg_m2_s": 1.1199933802651454e-14,
+        "psi_native_integration_max_error_kg_m_s": 0.0,
+        "native_advection_rms_kg_m2_s2": 3.3304091617739683e-06,
+        "centered_advection_remainder_rms_kg_m2_s2": 8.572599004448658e-09,
+        "eddy_to_mean_ke_transfer_W_m2": -0.006948919905202993,
+        "centered_eddy_force_work_W_m2": -0.0069602657020498,
+        "mean_ke_J_m2": 76050.4342101785,
+        "kinetic_energy": 1235325.6763772403,
+        "tracer_column": 6079.014939108081,
+        "tracer_min": 8.726021696370957e-10,
+        "tracer_max": 0.8000465097953761,
+        "cap_min": 2.4999875438041604e-05,
+        "cap_mean": 2.499990828532646e-05,
+        "cap_enthalpy": 2.674288830017163,
+        "budget_correction": -164.67428883001946,
+        "buoyancy_power": 1.089561092508294e-06,
+        "mean_rho_vtracer_rms_kg_m2_s": 2.651670748931984e-07,
+        "mean_rho_wtracer_rms_kg_m2_s": 6.026962399006892e-07,
+        "zonal_rho_vtracer_rms_kg_m2_s": 0.023316353829227875,
+        "zonal_rho_wtracer_rms_kg_m2_s": 5.426255945676618e-07
+      },
+      "direct_tracer_flux_rms_of_time_mean_kg_m2_s": {
+        "mean_rho_vtracer": 1.5153951713423173e-07,
+        "mean_rho_wtracer": 3.12138401690517e-07,
+        "zonal_rho_vtracer": 0.01544737514507789,
+        "zonal_rho_wtracer": 2.995394612895693e-07
+      }
+    },
+    "axis0": {
+      "case": "axis0",
+      "label": "Axisymmetric \u00b7 unheated",
+      "source": "data/ferrel2026-preflight-gpu-v1/pilot512_axis0",
+      "status": "COMPLETE",
+      "grid": [
+        512,
+        512,
+        96
+      ],
+      "heat_flux_W_m2": 0.0,
+      "stop_seconds": 21600.0,
+      "frames": 7,
+      "window_seconds": [
+        0.0,
+        21600.0
+      ],
+      "window_scope": "entirely within excluded startup window",
+      "mean_centered_eddy_to_mean_ke_transfer_W_m2": 1.5556273190071706e-30,
+      "mean_mass_streamfunction_max_abs_kg_m_s": 1.2460282311119998e-06,
+      "mass_streamfunction_temporal_std_spatial_rms_kg_m_s": 1.6855479984439322e-07,
+      "mass_streamfunction_abs_mean_over_mean_abs": 0.9323671770599732,
+      "coherence_definition": "sum(abs(time-mean Psi))/sum(time-mean abs(Psi)); descriptive only",
+      "native_sampled_steps": 11,
+      "native_step_max_absolute_residual_kg_m2_s": 6.654002126916487e-16,
+      "native_step_max_relative_to_leading_increment": 1.9653429691180986e-07,
+      "native_step_max_roundoff_units": 1.067643458567576,
+      "max_mass_divergence_kg_m3_s": 1.6068146726302008e-17,
+      "max_mass_flux_reconstruction_error_kg_m2_s": 1.4547714847378298e-14,
+      "metadata_sha256": "f5343c7099c49885c959ca7e4f33de4bff61ef376f746f24c4978af31aab20fc",
+      "native_checks_sha256": "ad6d30530118191c0f161fe64910cec6d93b069da10fa094d832b20627d1d06f",
+      "scientific_driver_sha256": "f6544588517ebf00e12b23cc6335eb1686c30bc0e945faa4a3b60c48bf53f5ef",
+      "configuration_sha256": "cc6b70b6cbed154b2529c11095caadbd978255ee21969fdefac9948563ed0e62",
+      "heights_actual_m": [
+        19375.0,
+        59375.0,
+        99375.0
+      ],
+      "wall_seconds": 949.497887134552,
+      "frame_manifest": [
+        {
+          "file": "frame_00000.jld2",
+          "time_seconds": 0.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "ee02834aff121ae1b9f571d960cc99f5c4cce21ad177eb946d3798e20147cf5e",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00001.jld2",
+          "time_seconds": 3600.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "2e3162b20b5c04b9692a222664603826cef52ac6af327bd6c0d91ae742b3389c",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00002.jld2",
+          "time_seconds": 7200.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "65d79a4d058b70b1cc9ebb18d5c745ab25926d934f8c0a21f9c10902c4674580",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00003.jld2",
+          "time_seconds": 10800.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "6809b8f4d3f492ba48fee0cd209a9a37d9aa301ea21b45ac30643e93a74bd3af",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00004.jld2",
+          "time_seconds": 14400.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "68bc83773257aa92b7a378f194302a32c89dca1bc2b6637b8c09a1738172076f",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00005.jld2",
+          "time_seconds": 18000.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "56f3cfdce7dbfa5f502ba653219d2fdf8cdfb2c2386f8a2ac7b8b350f7e58545",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00006.jld2",
+          "time_seconds": 21600.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "eb65664ee77a9b76cb0c63fff0d22b291277001fa9e03ac1338d47892af52aba",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        }
+      ],
+      "first": {
+        "time_seconds": 0.0,
+        "earth_day": 0.0,
+        "max_abs_mass_streamfunction_kg_m_s": 1.4825848963284167e-11,
+        "density_weighted_zonal_mean_v_rms_m_s": 8.879667796399541e-17,
+        "density_weighted_zonal_mean_w_rms_m_s": 7.466139442537676e-18,
+        "mass_divergence_max_kg_m3_s": 1.0801501209923884e-20,
+        "mass_flux_reconstruction_max_kg_m2_s": 1.1067284099778233e-16,
+        "psi_native_integration_max_error_kg_m_s": 0.0,
+        "native_advection_rms_kg_m2_s2": 3.6716243337098996e-21,
+        "centered_advection_remainder_rms_kg_m2_s2": 2.27253370019719e-21,
+        "eddy_to_mean_ke_transfer_W_m2": -1.367437604078329e-34,
+        "centered_eddy_force_work_W_m2": 1.4276148811366668e-34,
+        "mean_ke_J_m2": 76650.560279989,
+        "kinetic_energy": 76650.56027998896,
+        "tracer_column": 6079.0149391080095,
+        "tracer_min": 8.67349452474473e-10,
+        "tracer_max": 0.8000457356795774,
+        "cap_min": 2.500000651037036e-05,
+        "cap_mean": 2.500000651041841e-05,
+        "cap_enthalpy": -6.254195453402522e-11,
+        "budget_correction": 4.724228221593352e-11,
+        "buoyancy_power": -7.674412537258998e-30,
+        "mean_rho_vtracer_rms_kg_m2_s": 6.465088273112721e-18,
+        "mean_rho_wtracer_rms_kg_m2_s": 5.367185030988441e-19,
+        "zonal_rho_vtracer_rms_kg_m2_s": 4.909267708009472e-33,
+        "zonal_rho_wtracer_rms_kg_m2_s": 4.385087213478314e-34,
+        "axisymmetry_max_velocity_departure_m_s": 8.881784197001252e-16
+      },
+      "last": {
+        "time_seconds": 21600.0,
+        "earth_day": 0.25,
+        "max_abs_mass_streamfunction_kg_m_s": 4.217937929777198e-06,
+        "density_weighted_zonal_mean_v_rms_m_s": 1.2022803448758593e-11,
+        "density_weighted_zonal_mean_w_rms_m_s": 5.416187578864938e-11,
+        "mass_divergence_max_kg_m3_s": 1.1789596513639695e-17,
+        "mass_flux_reconstruction_max_kg_m2_s": 1.3618619452848568e-14,
+        "psi_native_integration_max_error_kg_m_s": 0.0,
+        "native_advection_rms_kg_m2_s2": 1.2656740503170975e-17,
+        "centered_advection_remainder_rms_kg_m2_s2": 3.496005150397116e-15,
+        "eddy_to_mean_ke_transfer_W_m2": -9.12056715722657e-31,
+        "centered_eddy_force_work_W_m2": -2.6779839731262544e-28,
+        "mean_ke_J_m2": 76646.92929689428,
+        "kinetic_energy": 76646.92929689428,
+        "tracer_column": 6079.014939108076,
+        "tracer_min": 8.677894929429908e-10,
+        "tracer_max": 0.8001006376534636,
+        "cap_min": 2.499987544239825e-05,
+        "cap_mean": 2.4999901377611805e-05,
+        "cap_enthalpy": 0.1838540190786966,
+        "budget_correction": -0.18385401901620146,
+        "buoyancy_power": 3.163716068943895e-18,
+        "mean_rho_vtracer_rms_kg_m2_s": 9.717545822438617e-13,
+        "mean_rho_wtracer_rms_kg_m2_s": 3.94833951138407e-12,
+        "zonal_rho_vtracer_rms_kg_m2_s": 7.681131713111866e-28,
+        "zonal_rho_wtracer_rms_kg_m2_s": 3.1576346832716806e-27,
+        "axisymmetry_max_velocity_departure_m_s": 8.881784197001252e-16
+      },
+      "direct_tracer_flux_rms_of_time_mean_kg_m2_s": {
+        "mean_rho_vtracer": 4.2805383423551795e-13,
+        "mean_rho_wtracer": 1.3942385183193062e-12,
+        "zonal_rho_vtracer": 1.8541283380455138e-28,
+        "zonal_rho_wtracer": 5.789609429006188e-28
+      },
+      "axisymmetric_full_window_checks": {
+        "max_velocity_departure_m_s": 8.881784197001252e-16,
+        "max_abs_centered_eddy_transfer_W_m2": 9.717476421531823e-30
+      }
+    },
+    "axis162": {
+      "case": "axis162",
+      "label": "Axisymmetric \u00b7 heated",
+      "source": "data/ferrel2026-preflight-gpu-v1/pilot512_axis162",
+      "status": "COMPLETE",
+      "grid": [
+        512,
+        512,
+        96
+      ],
+      "heat_flux_W_m2": 162.0,
+      "stop_seconds": 21600.0,
+      "frames": 7,
+      "window_seconds": [
+        0.0,
+        21600.0
+      ],
+      "window_scope": "entirely within excluded startup window",
+      "mean_centered_eddy_to_mean_ke_transfer_W_m2": 1.7958431110934102e-30,
+      "mean_mass_streamfunction_max_abs_kg_m_s": 9.14275942105164e-07,
+      "mass_streamfunction_temporal_std_spatial_rms_kg_m_s": 1.2549428206513682e-07,
+      "mass_streamfunction_abs_mean_over_mean_abs": 0.9186795312858943,
+      "coherence_definition": "sum(abs(time-mean Psi))/sum(time-mean abs(Psi)); descriptive only",
+      "native_sampled_steps": 11,
+      "native_step_max_absolute_residual_kg_m2_s": 6.653842642358484e-16,
+      "native_step_max_relative_to_leading_increment": 1.965295863355116e-07,
+      "native_step_max_roundoff_units": 1.0676178690589093,
+      "max_mass_divergence_kg_m3_s": 1.453968583533447e-17,
+      "max_mass_flux_reconstruction_error_kg_m2_s": 1.4971000862174692e-14,
+      "metadata_sha256": "3d9bf68575cb1799b848b43517d8a5506ea322e58dfe9635d8368f5b43e2f86b",
+      "native_checks_sha256": "d16182878b1e099c20651d0e3a31f43ec610bdefa66210dd785b5949fecd041d",
+      "scientific_driver_sha256": "f6544588517ebf00e12b23cc6335eb1686c30bc0e945faa4a3b60c48bf53f5ef",
+      "configuration_sha256": "8341bd56840cf652e8119f9402a7cf6b17fe603c4b5a270f9cb4bb1238a49a22",
+      "heights_actual_m": [
+        19375.0,
+        59375.0,
+        99375.0
+      ],
+      "wall_seconds": 952.2578060626984,
+      "frame_manifest": [
+        {
+          "file": "frame_00000.jld2",
+          "time_seconds": 0.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "ee02834aff121ae1b9f571d960cc99f5c4cce21ad177eb946d3798e20147cf5e",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00001.jld2",
+          "time_seconds": 3600.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "2e3162b20b5c04b9692a222664603826cef52ac6af327bd6c0d91ae742b3389c",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00002.jld2",
+          "time_seconds": 7200.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "65df238ae338b2c43c810bca0cbf99e2b4f57bb7ab0e4eccb6248787f7f2c0bb",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00003.jld2",
+          "time_seconds": 10800.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "1bbcec8bb832fcc10a60283b3a6e41180e172f25e25d7ef7d93bd5564f1af142",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00004.jld2",
+          "time_seconds": 14400.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "61e36447a77f262a04ef07c3715ff0be0745a5a83b27d2f46d35c4535b44fd21",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00005.jld2",
+          "time_seconds": 18000.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "1abf5a23f97e796ad3bd832cf70169a45181fc46c9204d1ec4b4b03132a39292",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        },
+        {
+          "file": "frame_00006.jld2",
+          "time_seconds": 21600.0,
+          "bytes": 46573546,
+          "video_fields_sha256": "4c5c1528ad1b504bc12941ad63c00c1d930685d1b199993644f64423f8c1c688",
+          "video_hash_encoding": "C-order little-endian Float64: concatenated zeta/f0 then tracer, each shape(3,ny,nx)"
+        }
+      ],
+      "first": {
+        "time_seconds": 0.0,
+        "earth_day": 0.0,
+        "max_abs_mass_streamfunction_kg_m_s": 1.4825848963284167e-11,
+        "density_weighted_zonal_mean_v_rms_m_s": 8.879667796399541e-17,
+        "density_weighted_zonal_mean_w_rms_m_s": 7.466139442537676e-18,
+        "mass_divergence_max_kg_m3_s": 1.0801501209923884e-20,
+        "mass_flux_reconstruction_max_kg_m2_s": 1.1067284099778233e-16,
+        "psi_native_integration_max_error_kg_m_s": 0.0,
+        "native_advection_rms_kg_m2_s2": 3.6716243337098996e-21,
+        "centered_advection_remainder_rms_kg_m2_s2": 2.27253370019719e-21,
+        "eddy_to_mean_ke_transfer_W_m2": -1.367437604078329e-34,
+        "centered_eddy_force_work_W_m2": 1.4276148811366668e-34,
+        "mean_ke_J_m2": 76650.560279989,
+        "kinetic_energy": 76650.56027998896,
+        "tracer_column": 6079.0149391080095,
+        "tracer_min": 8.67349452474473e-10,
+        "tracer_max": 0.8000457356795774,
+        "cap_min": 2.500000651037036e-05,
+        "cap_mean": 2.500000651041841e-05,
+        "cap_enthalpy": -6.254195453402522e-11,
+        "budget_correction": -161.99999999995282,
+        "buoyancy_power": -7.674412537258998e-30,
+        "mean_rho_vtracer_rms_kg_m2_s": 6.465088273112721e-18,
+        "mean_rho_wtracer_rms_kg_m2_s": 5.367185030988441e-19,
+        "zonal_rho_vtracer_rms_kg_m2_s": 4.909267708009472e-33,
+        "zonal_rho_wtracer_rms_kg_m2_s": 4.385087213478314e-34,
+        "axisymmetry_max_velocity_departure_m_s": 8.881784197001252e-16
+      },
+      "last": {
+        "time_seconds": 21600.0,
+        "earth_day": 0.25,
+        "max_abs_mass_streamfunction_kg_m_s": 1.8584566935523796e-06,
+        "density_weighted_zonal_mean_v_rms_m_s": 1.1776341948803346e-11,
+        "density_weighted_zonal_mean_w_rms_m_s": 3.7134507853421815e-11,
+        "mass_divergence_max_kg_m3_s": 1.1685099401686172e-17,
+        "mass_flux_reconstruction_max_kg_m2_s": 1.4017766260085886e-14,
+        "psi_native_integration_max_error_kg_m_s": 0.0,
+        "native_advection_rms_kg_m2_s2": 1.4725044930457165e-17,
+        "centered_advection_remainder_rms_kg_m2_s2": 2.6411890900508488e-15,
+        "eddy_to_mean_ke_transfer_W_m2": -5.753260540612364e-30,
+        "centered_eddy_force_work_W_m2": -8.678127994383872e-28,
+        "mean_ke_J_m2": 76646.92929689428,
+        "kinetic_energy": 76646.92929689426,
+        "tracer_column": 6079.014939108076,
+        "tracer_min": 8.677894929434862e-10,
+        "tracer_max": 0.800100637653462,
+        "cap_min": 2.4999875442486606e-05,
+        "cap_mean": 2.4999908285549216e-05,
+        "cap_enthalpy": 2.6742882632086684,
+        "budget_correction": -164.67428826313736,
+        "buoyancy_power": -1.2268148048206941e-14,
+        "mean_rho_vtracer_rms_kg_m2_s": 1.044196230426423e-12,
+        "mean_rho_wtracer_rms_kg_m2_s": 2.9017100070312082e-12,
+        "zonal_rho_vtracer_rms_kg_m2_s": 8.406642182171428e-28,
+        "zonal_rho_wtracer_rms_kg_m2_s": 2.3045187235284166e-27,
+        "axisymmetry_max_velocity_departure_m_s": 8.881784197001252e-16
+      },
+      "direct_tracer_flux_rms_of_time_mean_kg_m2_s": {
+        "mean_rho_vtracer": 4.636658701767538e-13,
+        "mean_rho_wtracer": 1.1933691693196812e-12,
+        "zonal_rho_vtracer": 1.9180438352592035e-28,
+        "zonal_rho_wtracer": 4.635792944503736e-28
+      },
+      "axisymmetric_full_window_checks": {
+        "max_velocity_departure_m_s": 8.881784197001252e-16,
+        "max_abs_centered_eddy_transfer_W_m2": 5.753260540612364e-30
+      }
+    }
+  },
+  "comparisons": {
+    "b162_minus_b0": {
+      "window_seconds": [
+        0.0,
+        21600.0
+      ],
+      "common_times": 7,
+      "metrics": {
+        "mean_ke_J_m2": {
+          "mean_difference": 2.3708344087935984e-07,
+          "final_difference": 1.03110505733639e-06
+        },
+        "eddy_to_mean_ke_transfer_W_m2": {
+          "mean_difference": -3.736911243408987e-12,
+          "final_difference": 7.997387474478757e-13
+        },
+        "max_abs_mass_streamfunction_kg_m_s": {
+          "mean_difference": 0.02840291736641368,
+          "final_difference": 0.16433908592386387
+        },
+        "density_weighted_zonal_mean_v_rms_m_s": {
+          "mean_difference": 2.3541157512563781e-07,
+          "final_difference": 9.249682721577372e-07
+        },
+        "density_weighted_zonal_mean_w_rms_m_s": {
+          "mean_difference": 5.340669461090809e-07,
+          "final_difference": 2.5779464197119577e-06
+        }
+      },
+      "scope": "Matched diagnostics at coincident saved times; not statistical significance or fieldwise convergence."
+    },
+    "axis162_minus_axis0": {
+      "window_seconds": [
+        0.0,
+        21600.0
+      ],
+      "common_times": 7,
+      "metrics": {
+        "mean_ke_J_m2": {
+          "mean_difference": -4.850638409455617e-12,
+          "final_difference": 0.0
+        },
+        "eddy_to_mean_ke_transfer_W_m2": {
+          "mean_difference": 2.4021579208623957e-31,
+          "final_difference": -4.841203824889707e-30
+        },
+        "max_abs_mass_streamfunction_kg_m_s": {
+          "mean_difference": -4.0939523656338864e-07,
+          "final_difference": -2.3594812362248188e-06
+        },
+        "density_weighted_zonal_mean_v_rms_m_s": {
+          "mean_difference": -1.7968819551938065e-14,
+          "final_difference": -2.464614999552468e-13
+        },
+        "density_weighted_zonal_mean_w_rms_m_s": {
+          "mean_difference": -4.051637443279058e-12,
+          "final_difference": -1.7027367935227568e-11
+        }
+      },
+      "scope": "Matched diagnostics at coincident saved times; not statistical significance or fieldwise convergence."
+    },
+    "b0_minus_axis0": {
+      "window_seconds": [
+        0.0,
+        21600.0
+      ],
+      "common_times": 7,
+      "metrics": {
+        "mean_ke_J_m2": {
+          "mean_difference": -369.4342156857383,
+          "final_difference": -596.49508774688
+        },
+        "eddy_to_mean_ke_transfer_W_m2": {
+          "mean_difference": -0.027614189593009982,
+          "final_difference": -0.006948919906002732
+        },
+        "max_abs_mass_streamfunction_kg_m_s": {
+          "mean_difference": 0.33884235065633866,
+          "final_difference": 0.4840719489890034
+        },
+        "density_weighted_zonal_mean_v_rms_m_s": {
+          "mean_difference": 2.0829731880974524e-06,
+          "final_difference": 1.948257881397201e-06
+        },
+        "density_weighted_zonal_mean_w_rms_m_s": {
+          "mean_difference": 3.7543965879952917e-06,
+          "final_difference": 4.3787323156843235e-06
+        }
+      },
+      "scope": "Matched diagnostics at coincident saved times; not statistical significance or fieldwise convergence."
+    },
+    "b162_minus_axis162": {
+      "window_seconds": [
+        0.0,
+        21600.0
+      ],
+      "common_times": 7,
+      "metrics": {
+        "mean_ke_J_m2": {
+          "mean_difference": -369.43421544865,
+          "final_difference": -596.495086715775
+        },
+        "eddy_to_mean_ke_transfer_W_m2": {
+          "mean_difference": -0.027614189596746903,
+          "final_difference": -0.006948919905202993
+        },
+        "max_abs_mass_streamfunction_kg_m_s": {
+          "mean_difference": 0.3672456774179889,
+          "final_difference": 0.6484133943941035
+        },
+        "density_weighted_zonal_mean_v_rms_m_s": {
+          "mean_difference": 2.3183847811919096e-06,
+          "final_difference": 2.873226400016438e-06
+        },
+        "density_weighted_zonal_mean_w_rms_m_s": {
+          "mean_difference": 4.2884675857418155e-06,
+          "final_difference": 6.956695762764216e-06
+        }
+      },
+      "scope": "Matched diagnostics at coincident saved times; not statistical significance or fieldwise convergence."
+    }
+  },
+  "media": [
+    {
+      "file": "b0_vorticity_tracer.mp4",
+      "poster": "b0_vorticity_tracer.png",
+      "cases": [
+        "b0"
+      ],
+      "layout": "2 rows \u00d7 3 actual depth columns",
+      "row_order": [
+        "b0: vorticity",
+        "b0: tracer"
+      ],
+      "frames": 7,
+      "fps": 1,
+      "duration_seconds": 7.0,
+      "times_seconds": [
+        0.0,
+        3600.0,
+        7200.0,
+        10800.0,
+        14400.0,
+        18000.0,
+        21600.0
+      ],
+      "heights_actual_m": [
+        19375.0,
+        59375.0,
+        99375.0
+      ],
+      "vorticity_asinh_width": 0.1,
+      "vorticity_limits_by_depth": [
+        [
+          -0.4545304611941271,
+          0.4545304611941271
+        ],
+        [
+          -0.4545261172751158,
+          0.4545261172751158
+        ],
+        [
+          -0.4545143987959227,
+          0.4545143987959227
+        ]
+      ],
+      "tracer_asinh_width": 0.01,
+      "tracer_limits": [
+        0.0,
+        1.0
+      ],
+      "fixed_across_time": true,
+      "shared_between_cases": true,
+      "no_field_clipping_or_interpolation": true,
+      "sha256": "920853d3147a20af78c304d6ea6fdf0d3f17073b1d03dacb6433f5a553fc9d98",
+      "bytes": 121799,
+      "decode_validation": "PASS",
+      "stream_probe": {
+        "ffmpeg_version": "n9.0.2-17-g2a571b6068-20260930 built with gcc 16.2.0 (crosstool-NG 1.29.0.7_b1a94f6)",
+        "codec": "h264",
+        "pix_fmt": "yuv420p(progressive)",
+        "fps": 1.0,
+        "source_size": [
+          1350,
+          648
+        ],
+        "size": [
+          1350,
+          648
+        ],
+        "rotate": 0,
+        "duration": 7.0
+      }
+    },
+    {
+      "file": "b162_vorticity_tracer.mp4",
+      "poster": "b162_vorticity_tracer.png",
+      "cases": [
+        "b162"
+      ],
+      "layout": "2 rows \u00d7 3 actual depth columns",
+      "row_order": [
+        "b162: vorticity",
+        "b162: tracer"
+      ],
+      "frames": 7,
+      "fps": 1,
+      "duration_seconds": 7.0,
+      "times_seconds": [
+        0.0,
+        3600.0,
+        7200.0,
+        10800.0,
+        14400.0,
+        18000.0,
+        21600.0
+      ],
+      "heights_actual_m": [
+        19375.0,
+        59375.0,
+        99375.0
+      ],
+      "vorticity_asinh_width": 0.1,
+      "vorticity_limits_by_depth": [
+        [
+          -0.4545304611941271,
+          0.4545304611941271
+        ],
+        [
+          -0.4545261172751158,
+          0.4545261172751158
+        ],
+        [
+          -0.4545143987959227,
+          0.4545143987959227
+        ]
+      ],
+      "tracer_asinh_width": 0.01,
+      "tracer_limits": [
+        0.0,
+        1.0
+      ],
+      "fixed_across_time": true,
+      "shared_between_cases": true,
+      "no_field_clipping_or_interpolation": true,
+      "sha256": "49d2010946b722432e5d264b3464db6e9aee8e87b4f8472b114deff77fb1e46e",
+      "bytes": 123627,
+      "decode_validation": "PASS",
+      "stream_probe": {
+        "ffmpeg_version": "n9.0.2-17-g2a571b6068-20260930 built with gcc 16.2.0 (crosstool-NG 1.29.0.7_b1a94f6)",
+        "codec": "h264",
+        "pix_fmt": "yuv420p(progressive)",
+        "fps": 1.0,
+        "source_size": [
+          1350,
+          648
+        ],
+        "size": [
+          1350,
+          648
+        ],
+        "rotate": 0,
+        "duration": 7.0
+      }
+    },
+    {
+      "file": "axis0_vorticity_tracer.mp4",
+      "poster": "axis0_vorticity_tracer.png",
+      "cases": [
+        "axis0"
+      ],
+      "layout": "2 rows \u00d7 3 actual depth columns",
+      "row_order": [
+        "axis0: vorticity",
+        "axis0: tracer"
+      ],
+      "frames": 7,
+      "fps": 1,
+      "duration_seconds": 7.0,
+      "times_seconds": [
+        0.0,
+        3600.0,
+        7200.0,
+        10800.0,
+        14400.0,
+        18000.0,
+        21600.0
+      ],
+      "heights_actual_m": [
+        19375.0,
+        59375.0,
+        99375.0
+      ],
+      "vorticity_asinh_width": 0.1,
+      "vorticity_limits_by_depth": [
+        [
+          -0.4545304611941271,
+          0.4545304611941271
+        ],
+        [
+          -0.4545261172751158,
+          0.4545261172751158
+        ],
+        [
+          -0.4545143987959227,
+          0.4545143987959227
+        ]
+      ],
+      "tracer_asinh_width": 0.01,
+      "tracer_limits": [
+        0.0,
+        1.0
+      ],
+      "fixed_across_time": true,
+      "shared_between_cases": true,
+      "no_field_clipping_or_interpolation": true,
+      "sha256": "8ab25b0c4de448be2f165ea8fc6280a034548ebecd7651dae72201e1b3b66d3e",
+      "bytes": 57771,
+      "decode_validation": "PASS",
+      "stream_probe": {
+        "ffmpeg_version": "n9.0.2-17-g2a571b6068-20260930 built with gcc 16.2.0 (crosstool-NG 1.29.0.7_b1a94f6)",
+        "codec": "h264",
+        "pix_fmt": "yuv420p(progressive)",
+        "fps": 1.0,
+        "source_size": [
+          1350,
+          648
+        ],
+        "size": [
+          1350,
+          648
+        ],
+        "rotate": 0,
+        "duration": 7.0
+      }
+    },
+    {
+      "file": "axis162_vorticity_tracer.mp4",
+      "poster": "axis162_vorticity_tracer.png",
+      "cases": [
+        "axis162"
+      ],
+      "layout": "2 rows \u00d7 3 actual depth columns",
+      "row_order": [
+        "axis162: vorticity",
+        "axis162: tracer"
+      ],
+      "frames": 7,
+      "fps": 1,
+      "duration_seconds": 7.0,
+      "times_seconds": [
+        0.0,
+        3600.0,
+        7200.0,
+        10800.0,
+        14400.0,
+        18000.0,
+        21600.0
+      ],
+      "heights_actual_m": [
+        19375.0,
+        59375.0,
+        99375.0
+      ],
+      "vorticity_asinh_width": 0.1,
+      "vorticity_limits_by_depth": [
+        [
+          -0.4545304611941271,
+          0.4545304611941271
+        ],
+        [
+          -0.4545261172751158,
+          0.4545261172751158
+        ],
+        [
+          -0.4545143987959227,
+          0.4545143987959227
+        ]
+      ],
+      "tracer_asinh_width": 0.01,
+      "tracer_limits": [
+        0.0,
+        1.0
+      ],
+      "fixed_across_time": true,
+      "shared_between_cases": true,
+      "no_field_clipping_or_interpolation": true,
+      "sha256": "e4ccae001be22797e5e95bf490f1eb110189c732f9aca971c7785b3c71390583",
+      "bytes": 57362,
+      "decode_validation": "PASS",
+      "stream_probe": {
+        "ffmpeg_version": "n9.0.2-17-g2a571b6068-20260930 built with gcc 16.2.0 (crosstool-NG 1.29.0.7_b1a94f6)",
+        "codec": "h264",
+        "pix_fmt": "yuv420p(progressive)",
+        "fps": 1.0,
+        "source_size": [
+          1350,
+          648
+        ],
+        "size": [
+          1350,
+          648
+        ],
+        "rotate": 0,
+        "duration": 7.0
+      }
+    },
+    {
+      "file": "heating_comparison.mp4",
+      "poster": "heating_comparison.png",
+      "cases": [
+        "b0",
+        "b162"
+      ],
+      "layout": "4 rows \u00d7 3 actual depth columns",
+      "row_order": [
+        "b0: vorticity",
+        "b0: tracer",
+        "b162: vorticity",
+        "b162: tracer"
+      ],
+      "frames": 7,
+      "fps": 1,
+      "duration_seconds": 7.0,
+      "times_seconds": [
+        0.0,
+        3600.0,
+        7200.0,
+        10800.0,
+        14400.0,
+        18000.0,
+        21600.0
+      ],
+      "heights_actual_m": [
+        19375.0,
+        59375.0,
+        99375.0
+      ],
+      "vorticity_asinh_width": 0.1,
+      "vorticity_limits_by_depth": [
+        [
+          -0.4545304611941271,
+          0.4545304611941271
+        ],
+        [
+          -0.4545261172751158,
+          0.4545261172751158
+        ],
+        [
+          -0.4545143987959227,
+          0.4545143987959227
+        ]
+      ],
+      "tracer_asinh_width": 0.01,
+      "tracer_limits": [
+        0.0,
+        1.0
+      ],
+      "fixed_across_time": true,
+      "shared_between_cases": true,
+      "no_field_clipping_or_interpolation": true,
+      "sha256": "567cb5fb8adc406cfe2f8a1aa705319d6a0232f756a5b75fcab28e4b886fa0da",
+      "bytes": 243820,
+      "decode_validation": "PASS",
+      "stream_probe": {
+        "ffmpeg_version": "n9.0.2-17-g2a571b6068-20260930 built with gcc 16.2.0 (crosstool-NG 1.29.0.7_b1a94f6)",
+        "codec": "h264",
+        "pix_fmt": "yuv420p(progressive)",
+        "fps": 1.0,
+        "source_size": [
+          1350,
+          1296
+        ],
+        "size": [
+          1350,
+          1296
+        ],
+        "rotate": 0,
+        "duration": 7.0
+      }
+    },
+    {
+      "file": "axisymmetric_comparison.mp4",
+      "poster": "axisymmetric_comparison.png",
+      "cases": [
+        "axis0",
+        "axis162"
+      ],
+      "layout": "4 rows \u00d7 3 actual depth columns",
+      "row_order": [
+        "axis0: vorticity",
+        "axis0: tracer",
+        "axis162: vorticity",
+        "axis162: tracer"
+      ],
+      "frames": 7,
+      "fps": 1,
+      "duration_seconds": 7.0,
+      "times_seconds": [
+        0.0,
+        3600.0,
+        7200.0,
+        10800.0,
+        14400.0,
+        18000.0,
+        21600.0
+      ],
+      "heights_actual_m": [
+        19375.0,
+        59375.0,
+        99375.0
+      ],
+      "vorticity_asinh_width": 0.1,
+      "vorticity_limits_by_depth": [
+        [
+          -0.4545304611941271,
+          0.4545304611941271
+        ],
+        [
+          -0.4545261172751158,
+          0.4545261172751158
+        ],
+        [
+          -0.4545143987959227,
+          0.4545143987959227
+        ]
+      ],
+      "tracer_asinh_width": 0.01,
+      "tracer_limits": [
+        0.0,
+        1.0
+      ],
+      "fixed_across_time": true,
+      "shared_between_cases": true,
+      "no_field_clipping_or_interpolation": true,
+      "sha256": "0fe196bb0ed441a253b934e7c904fb07e9a2f28434429e879a42ea04bb633dbe",
+      "bytes": 110149,
+      "decode_validation": "PASS",
+      "stream_probe": {
+        "ffmpeg_version": "n9.0.2-17-g2a571b6068-20260930 built with gcc 16.2.0 (crosstool-NG 1.29.0.7_b1a94f6)",
+        "codec": "h264",
+        "pix_fmt": "yuv420p(progressive)",
+        "fps": 1.0,
+        "source_size": [
+          1350,
+          1296
+        ],
+        "size": [
+          1350,
+          1296
+        ],
+        "rotate": 0,
+        "duration": 7.0
+      }
+    }
+  ],
+  "normalization": {
+    "vorticity": "asinh \u03b6/f0, width0.1; per-depth full extrema shared over all cases and times",
+    "tracer": "asinh C, width0.01; physical bounds expanded to observed extrema; common across all cases, depths and times"
+  }
+}
