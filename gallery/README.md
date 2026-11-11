@@ -1,3 +1,5 @@
+[Watch the three completed 75-day gamma/control comparisons](https://npizzo.github.io/jupiter-ffr-breeze/#gamma75). These separate 2D reference runs have no convection or depth panels. [Review and refinement decision](gamma2026-ensemble1024/review.md).
+
 [Watch the new six-hour Ferrel pilots on the gallery landing page](https://npizzo.github.io/jupiter-ffr-breeze/#ferrel-pilot). These are numerical/initialization checks with underresolved weak vertical motion, not validated convection or Ferrel cells. [Scientific review](ferrel2026-pilot/review.md).
 
 # Output gallery
