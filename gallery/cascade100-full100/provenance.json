@@ -1,0 +1,191 @@
+{
+  "status": "COMPLETE",
+  "end_day": 100,
+  "campaign_target_day": 100,
+  "expected_frames_per_movie": 801,
+  "compute_location": "Unity",
+  "raw_fields_downloaded": false,
+  "cases": {
+    "heated": [
+      {
+        "segment": 1,
+        "source": "data/cascade100-v1/cascade100_f_heated/segment_1",
+        "frames": 81,
+        "driver_sha256": "0885ee121d8a0df628ec8583bd7dca765cb684c446e3e4f8eda7a648ca4a7ee8",
+        "configuration_sha256": "7f7595486294a6141477d263b5be590da2dba68a0b6b75e388bd43b009acf6af"
+      },
+      {
+        "segment": 2,
+        "source": "data/cascade100-v1/cascade100_f_heated/segment_2",
+        "frames": 80,
+        "driver_sha256": "0885ee121d8a0df628ec8583bd7dca765cb684c446e3e4f8eda7a648ca4a7ee8",
+        "configuration_sha256": "024e380fcdbb3a846185e89414b06fda5e328e8269723ce3b7c11f25d1d19a83"
+      },
+      {
+        "segment": 3,
+        "source": "data/cascade100-v1/cascade100_f_heated/segment_3",
+        "frames": 80,
+        "driver_sha256": "0885ee121d8a0df628ec8583bd7dca765cb684c446e3e4f8eda7a648ca4a7ee8",
+        "configuration_sha256": "c82f6b69b565e976bd37e59cf812a88fde7ea342980df96bf8b8840d8e02b782"
+      },
+      {
+        "segment": 4,
+        "source": "data/cascade100-v1/cascade100_f_heated/segment_4",
+        "frames": 80,
+        "driver_sha256": "0885ee121d8a0df628ec8583bd7dca765cb684c446e3e4f8eda7a648ca4a7ee8",
+        "configuration_sha256": "af68701207c111b7e0893ab32b3ca213ba58d5ad574d5906a258561473ed22cf"
+      },
+      {
+        "segment": 5,
+        "source": "data/cascade100-v1/cascade100_f_heated/segment_5",
+        "frames": 80,
+        "driver_sha256": "0885ee121d8a0df628ec8583bd7dca765cb684c446e3e4f8eda7a648ca4a7ee8",
+        "configuration_sha256": "93c5517c7abb2b4990461a6020a2bfc24f5719b8e67431bec824e46a7e3a3ea9"
+      },
+      {
+        "segment": 6,
+        "source": "data/cascade100-v1/cascade100_f_heated/segment_6",
+        "frames": 80,
+        "driver_sha256": "0885ee121d8a0df628ec8583bd7dca765cb684c446e3e4f8eda7a648ca4a7ee8",
+        "configuration_sha256": "6e0d9f60e8a582cd25e8b2220108132c450957b46fe41c09363a19b2ebadfd41"
+      },
+      {
+        "segment": 7,
+        "source": "data/cascade100-v1/cascade100_f_heated/segment_7",
+        "frames": 80,
+        "driver_sha256": "0885ee121d8a0df628ec8583bd7dca765cb684c446e3e4f8eda7a648ca4a7ee8",
+        "configuration_sha256": "195e77d9ad0615b1f6db96f1a6bb99daa07de4f192a1546b79c7c119182dc4a7"
+      },
+      {
+        "segment": 8,
+        "source": "data/cascade100-v1/cascade100_f_heated/segment_8",
+        "frames": 80,
+        "driver_sha256": "0885ee121d8a0df628ec8583bd7dca765cb684c446e3e4f8eda7a648ca4a7ee8",
+        "configuration_sha256": "8109961cb6dac6a6914d91342d9eda19922a57133cd88e9706a8928d62458f9f"
+      },
+      {
+        "segment": 9,
+        "source": "data/cascade100-v1/cascade100_f_heated/segment_9",
+        "frames": 80,
+        "driver_sha256": "0885ee121d8a0df628ec8583bd7dca765cb684c446e3e4f8eda7a648ca4a7ee8",
+        "configuration_sha256": "775d3d0975cc5ec6ea819f3ad1e0385ccd2519b216612e7afd7989433e35f931"
+      },
+      {
+        "segment": 10,
+        "source": "data/cascade100-v1/cascade100_f_heated/segment_10",
+        "frames": 80,
+        "driver_sha256": "0885ee121d8a0df628ec8583bd7dca765cb684c446e3e4f8eda7a648ca4a7ee8",
+        "configuration_sha256": "3265e6b63a0107e03f2c7f256d6b4383f17be9567966186313eb139e4a5a94ad"
+      }
+    ],
+    "control": [
+      {
+        "segment": 1,
+        "source": "data/cascade100-v1/cascade100_f_control/segment_1",
+        "frames": 81,
+        "driver_sha256": "0885ee121d8a0df628ec8583bd7dca765cb684c446e3e4f8eda7a648ca4a7ee8",
+        "configuration_sha256": "8e31cddca00c7985e405394d99c8bb82ae56dc4bc3edc66c810dd7897555b63e"
+      },
+      {
+        "segment": 2,
+        "source": "data/cascade100-v1/cascade100_f_control/segment_2",
+        "frames": 80,
+        "driver_sha256": "0885ee121d8a0df628ec8583bd7dca765cb684c446e3e4f8eda7a648ca4a7ee8",
+        "configuration_sha256": "01eae074162b92e7e5165db360e98ae190a3421e731a15d2d2ae0ec091e0c1f3"
+      },
+      {
+        "segment": 3,
+        "source": "data/cascade100-v1/cascade100_f_control/segment_3",
+        "frames": 80,
+        "driver_sha256": "0885ee121d8a0df628ec8583bd7dca765cb684c446e3e4f8eda7a648ca4a7ee8",
+        "configuration_sha256": "50c2e48ef37f98bf6ad6fa003f30a16e7e70e32892178b20cc06c89b4cd83c2e"
+      },
+      {
+        "segment": 4,
+        "source": "data/cascade100-v1/cascade100_f_control/segment_4",
+        "frames": 80,
+        "driver_sha256": "0885ee121d8a0df628ec8583bd7dca765cb684c446e3e4f8eda7a648ca4a7ee8",
+        "configuration_sha256": "d5bc83429dfb54971e5831d32d966f0ce7360e61dbbdfa223c45e45506f3f559"
+      },
+      {
+        "segment": 5,
+        "source": "data/cascade100-v1/cascade100_f_control/segment_5",
+        "frames": 80,
+        "driver_sha256": "0885ee121d8a0df628ec8583bd7dca765cb684c446e3e4f8eda7a648ca4a7ee8",
+        "configuration_sha256": "736e4fbed481431ea939a73abca930c2499ff2e3de346ca6c9aae9eba471b3e8"
+      },
+      {
+        "segment": 6,
+        "source": "data/cascade100-v1/cascade100_f_control/segment_6",
+        "frames": 80,
+        "driver_sha256": "0885ee121d8a0df628ec8583bd7dca765cb684c446e3e4f8eda7a648ca4a7ee8",
+        "configuration_sha256": "3fddfc9943c0186a93e1302551df2aceb66f7760112060477178cccbd3437065"
+      },
+      {
+        "segment": 7,
+        "source": "data/cascade100-v1/cascade100_f_control/segment_7",
+        "frames": 80,
+        "driver_sha256": "0885ee121d8a0df628ec8583bd7dca765cb684c446e3e4f8eda7a648ca4a7ee8",
+        "configuration_sha256": "889c657cd8ec9621c68abf871e6189eef7b1f2f60f9144017702906592fc3180"
+      },
+      {
+        "segment": 8,
+        "source": "data/cascade100-v1/cascade100_f_control/segment_8",
+        "frames": 80,
+        "driver_sha256": "0885ee121d8a0df628ec8583bd7dca765cb684c446e3e4f8eda7a648ca4a7ee8",
+        "configuration_sha256": "15d40f958154cb646f3abdb75971fa81e004c3cb6a25abf7fdea40f7624acbb8"
+      },
+      {
+        "segment": 9,
+        "source": "data/cascade100-v1/cascade100_f_control/segment_9",
+        "frames": 80,
+        "driver_sha256": "0885ee121d8a0df628ec8583bd7dca765cb684c446e3e4f8eda7a648ca4a7ee8",
+        "configuration_sha256": "8dbbc175342a05402f5858000827234a0f56227f1ca13200d26a62e0ea6fb89c"
+      },
+      {
+        "segment": 10,
+        "source": "data/cascade100-v1/cascade100_f_control/segment_10",
+        "frames": 80,
+        "driver_sha256": "0885ee121d8a0df628ec8583bd7dca765cb684c446e3e4f8eda7a648ca4a7ee8",
+        "configuration_sha256": "f555dcb532db334c305a14e401569ca055434a93afc67cf068124bbd09414d19"
+      }
+    ]
+  },
+  "renderer_sha256": "1bc44776fb8bde312b5114b1c62b93c49fb7949318d8fe89e8c511f9063324e3",
+  "media": {
+    "comparison_0_100days.mp4": {
+      "frames": 801,
+      "duration_seconds": 66.75,
+      "bytes": 6111342,
+      "sha256": "8397fb781dfaf63946dbbf6502a941a550dde85efa1578328312f8f4d05af72e",
+      "poster_pixels": [
+        1500,
+        1480
+      ],
+      "full_decode_passed": true
+    },
+    "heated_0_100days.mp4": {
+      "frames": 801,
+      "duration_seconds": 66.75,
+      "bytes": 4319158,
+      "sha256": "a300e01d3ee43548360bafb1d70ccbfdd86671555f90f88ba5b9b8a7f546b4ad",
+      "poster_pixels": [
+        1500,
+        740
+      ],
+      "full_decode_passed": true
+    },
+    "unheated_0_100days.mp4": {
+      "frames": 801,
+      "duration_seconds": 66.75,
+      "bytes": 3267774,
+      "sha256": "564a7d021e8017ada69c22dbfd239baec374968aa99abd725f82448dbf2f00e8",
+      "poster_pixels": [
+        1500,
+        740
+      ],
+      "full_decode_passed": true
+    }
+  },
+  "web_encoder_sha256": "53432c7b8380e38a6bf8ae9e1e948d30622ea9077d2fd12e014f98681b3c24d0"
+}

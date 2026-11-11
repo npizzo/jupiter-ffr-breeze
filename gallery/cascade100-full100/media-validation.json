@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "compute_location": "Unity",
+  "checks": [
+    {
+      "file": "comparison_0_100days.mp4",
+      "frames": 801,
+      "full_decode_passed": true,
+      "start_day": 0,
+      "end_day": 100
+    },
+    {
+      "file": "heated_0_100days.mp4",
+      "frames": 801,
+      "full_decode_passed": true,
+      "start_day": 0,
+      "end_day": 100
+    },
+    {
+      "file": "unheated_0_100days.mp4",
+      "frames": 801,
+      "full_decode_passed": true,
+      "start_day": 0,
+      "end_day": 100
+    }
+  ]
+}
