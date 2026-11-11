@@ -1,0 +1,96 @@
+{
+  "status": "COMPLETE",
+  "compute_location": "Unity",
+  "audit_job": 1437416,
+  "render_array": 1437852,
+  "movies": [
+    {
+      "status": "COMPLETE",
+      "file": "comparison_contrast_0_100days.mp4",
+      "poster": "comparison_contrast_0_100days.png",
+      "frames": 801,
+      "duration_seconds": 66.75,
+      "sha256": "ada293c34fc28152b5992b14f46b479b9f4234b6c5a17db382af0615776c3bcf",
+      "bytes": 9833801,
+      "full_decode_passed": true
+    },
+    {
+      "status": "COMPLETE",
+      "file": "heated_contrast_0_100days.mp4",
+      "poster": "heated_contrast_0_100days.png",
+      "frames": 801,
+      "duration_seconds": 66.75,
+      "sha256": "27e28f01075a588d416dc05f36d9584389b178f76dbdd8800a7bee314e7d4755",
+      "bytes": 5860863,
+      "full_decode_passed": true
+    },
+    {
+      "status": "COMPLETE",
+      "file": "unheated_contrast_0_100days.mp4",
+      "poster": "unheated_contrast_0_100days.png",
+      "frames": 801,
+      "duration_seconds": 66.75,
+      "sha256": "82671f44513009498f9ce9e733f8e1e5e61d6fb1498e62f50c35c37a6efb15b3",
+      "bytes": 8385590,
+      "full_decode_passed": true
+    }
+  ],
+  "scientific_data_unchanged": true,
+  "vorticity_normalization_unchanged": true,
+  "tracer_center": 0.0793082,
+  "tracer_asinh_width": 0.001,
+  "tracer_colormap": "BrBG",
+  "tracer_scale_fixed_across_cases_depths_times": true,
+  "assets": {
+    "audit.json": {
+      "bytes": 19095,
+      "sha256": "1a93b138866997a4ef8c33f7d963745496f665e56df96425a232ca7f9968acc8",
+      "git_blob_sha1": "14a7f728620bdd7053c2692c7fc29f0d0a7c40c3"
+    },
+    "comparison_contrast_0_100days.mp4": {
+      "bytes": 9833801,
+      "sha256": "ada293c34fc28152b5992b14f46b479b9f4234b6c5a17db382af0615776c3bcf",
+      "git_blob_sha1": "48d65b66004c4135729baa7340e853241446fbd9"
+    },
+    "comparison_contrast_0_100days.png": {
+      "bytes": 1346480,
+      "sha256": "b057559d283c53c518d87ef98d770264c7015e7b476cc9f8418b6fd8b652cae1",
+      "git_blob_sha1": "df6a0c95e48dd1edb79fd79e980158b16749b528"
+    },
+    "comparison_contrast_0_100days.json": {
+      "bytes": 13993,
+      "sha256": "ebbe132dd987bb58795077340aa9d50e97d03b02b28ed857ee6353e9e9a44797",
+      "git_blob_sha1": "fc41fbcae90e5c4adf9b0561d97312577e7bc0a5"
+    },
+    "heated_contrast_0_100days.mp4": {
+      "bytes": 5860863,
+      "sha256": "27e28f01075a588d416dc05f36d9584389b178f76dbdd8800a7bee314e7d4755",
+      "git_blob_sha1": "6077239a446976bf3b3c58dbfc7c126be1c3b348"
+    },
+    "heated_contrast_0_100days.png": {
+      "bytes": 948618,
+      "sha256": "2021f9cca1c0e23a8faa7b13e40f9ef8216b55e8376c7cf0f1eb50b75d304c70",
+      "git_blob_sha1": "552d8becc609e31bd50d1237041b44b5ed88e8ec"
+    },
+    "heated_contrast_0_100days.json": {
+      "bytes": 13889,
+      "sha256": "9fe62909f3e915be6b24f81a02f6511c9e4cf6b1279b6d06da5ad9e0858f5929",
+      "git_blob_sha1": "b36605328afdb3157269466a512ed4f9c4cd2749"
+    },
+    "unheated_contrast_0_100days.mp4": {
+      "bytes": 8385590,
+      "sha256": "82671f44513009498f9ce9e733f8e1e5e61d6fb1498e62f50c35c37a6efb15b3",
+      "git_blob_sha1": "4dd4ce323304d801284398725e9abc1120b6e0fe"
+    },
+    "unheated_contrast_0_100days.png": {
+      "bytes": 370106,
+      "sha256": "ff7865636f3ceb09c67986451381595522a9b681eea80fe8b9c6419228d8762f",
+      "git_blob_sha1": "4424bad91904ab9d3f5ed092052ffd68182c491a"
+    },
+    "unheated_contrast_0_100days.json": {
+      "bytes": 13867,
+      "sha256": "996a3699b28aa424f973402f7b41d5b9af95208cb2e72aece7ce8446c469a6c6",
+      "git_blob_sha1": "bd5dd5326aace2b5510ce9f67186bb46edc0601a"
+    }
+  }
+}
