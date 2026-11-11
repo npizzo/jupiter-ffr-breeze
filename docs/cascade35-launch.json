@@ -1,0 +1,136 @@
+{
+  "submitted_utc": "2026-11-11T17:49:39.768167+00:00",
+  "status": "SUBMITTED_VALIDATION_REQUIRED",
+  "compute_location": "Unity",
+  "latitude": 35,
+  "f0_s_inv": 0.0002017268326646629,
+  "beta_m_inv_s_inv": 4.02976240665303e-12,
+  "initial_rossby": 0.14281480067421148,
+  "initial_velocity_policy": "Same dimensional eddy pattern and speed as the 55 N reference; pressure estimate uses new f0",
+  "production_root": "data/cascade35-v1",
+  "preflight_root": "data/cascade35-preflight-v1",
+  "comparison_root": "data/cascadebeta100-v1/cascadebeta100_heated",
+  "initial_reference_root": "data/cascade100-v1/cascade100_f_heated/segment_1",
+  "gallery_output": "rendered/cascade35-full100",
+  "configuration": "configs/cascade35_heated.toml",
+  "changed_configuration_keys_vs_55N_beta": [
+    "name",
+    "latitude",
+    "beta",
+    "turbulence_rossby"
+  ],
+  "jobs": [
+    {
+      "stage": "validation",
+      "end_day": 1,
+      "job_id": 1435746,
+      "afterok": []
+    },
+    {
+      "stage": "production",
+      "end_day": 10,
+      "job_id": 1435747,
+      "afterok": [
+        1435746
+      ]
+    },
+    {
+      "stage": "production",
+      "end_day": 20,
+      "job_id": 1435748,
+      "afterok": [
+        1435747
+      ]
+    },
+    {
+      "stage": "production",
+      "end_day": 30,
+      "job_id": 1435749,
+      "afterok": [
+        1435748
+      ]
+    },
+    {
+      "stage": "production",
+      "end_day": 40,
+      "job_id": 1435750,
+      "afterok": [
+        1435749
+      ]
+    },
+    {
+      "stage": "production",
+      "end_day": 50,
+      "job_id": 1435751,
+      "afterok": [
+        1435750
+      ]
+    },
+    {
+      "stage": "production",
+      "end_day": 60,
+      "job_id": 1435752,
+      "afterok": [
+        1435751
+      ]
+    },
+    {
+      "stage": "production",
+      "end_day": 70,
+      "job_id": 1435753,
+      "afterok": [
+        1435752
+      ]
+    },
+    {
+      "stage": "production",
+      "end_day": 80,
+      "job_id": 1435754,
+      "afterok": [
+        1435753
+      ]
+    },
+    {
+      "stage": "production",
+      "end_day": 90,
+      "job_id": 1435755,
+      "afterok": [
+        1435754
+      ]
+    },
+    {
+      "stage": "production",
+      "end_day": 100,
+      "job_id": 1435756,
+      "afterok": [
+        1435755
+      ]
+    },
+    {
+      "stage": "rendering",
+      "end_day": 100,
+      "job_id": 1435757,
+      "afterok": [
+        1435756,
+        1434580
+      ]
+    }
+  ],
+  "source_hashes": {
+    "scripts/cascade35/zonal_output.jl": "2c91bed904b2d206983aa5402f9790b65ee6a6f2c2065e171176b7725defa113",
+    "scripts/cascade35/initial_flow.jl": "1a40b5bf61f236f846e88292ee0be8617d446fb1fd63fb73dc89f96445436989",
+    "scripts/cascade35/preflight.jl": "c7a752c411ad5756c3f8d662af78f3751b8f05c5817de67fd7c74d69ff1a242d",
+    "scripts/cascade35/thermal_budget_controller.jl": "35404ad7bb8a5071c9d51a3992c8c4ecbb452133c9ffdff1376928b1e6679c27",
+    "scripts/cascade35/check_output.jl": "5ca05e66ac8889640565ae7e42a885982686b7c3f77d892316fd75617c937c12",
+    "scripts/cascade35/campaign.jl": "4fbe1f8738adae5d58fd015f4da95de28cbaef56224d152c2244b879abe3f106",
+    "scripts/cascade35/render_movies.py": "72a3051b73100c18ce59b8bffcd8fb77d911ef6e78ec2d55258ecba4104310de",
+    "scripts/cascade35/check_large.jl": "fd7b64342ac60612e70a71c82358ca53d9119cf1197959787f89704262044bb7",
+    "scripts/cascade35/prepare_gallery.py": "ad8ad591bb8f50d114fde966857a3d2e96c27f4e6e8ef9828fa32e695083602d",
+    "scripts/cascade35/submit.sh": "cd26567962d0be65846fdaa265e7452e90b19d80ed5a6f07edf4f93bc5197987",
+    "scripts/cascade35/transfer.py": "7efe1c88a7d2473360aa5be3b966da966005c67f1e23f03f6b5df50b5e2f1352",
+    "scripts/cascade35/jet_plots.py": "05a9ace12088453d1991a59852d67ca48541fb2fd5cb434887f6619ac2e03c59",
+    "scripts/cascade35/vorticity_depth_videos_ordered.py": "4d2a00a86f0547ce45e44de462af8f84d007ebb8f84470c6070ce92adbb0bb15",
+    "scripts/cascade35/run.jl": "c88181647a803e1673bf6496fe651e08641f5c1abd2a58de4ff8a27e449528bb"
+  },
+  "note": "Dynamical driver unchanged apart from read-only zonal diagnostic output. GPU validation pending. No existing runs changed. No extensions beyond day 100 submitted. Full checkpoints retained for future continuation."
+}
