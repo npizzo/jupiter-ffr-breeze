@@ -151,7 +151,7 @@
     "science_runs_started": false
   },
   "github_record_url": "https://github.com/npizzo/jupiter-ffr-breeze/blob/main/docs/new-campaigns.md",
-  "recorded_at_utc": "2026-11-11T03:11:36.841302+00:00",
+  "recorded_at_utc": "2026-11-11T03:27:37.863863+00:00",
   "gamma_v2_initial_environment": {
     "root": "data/gamma2026-v2a",
     "unit_job": "1397848",
@@ -595,6 +595,87 @@
     "science_runs_started": false
   },
   "ferrel": {
+    "root": "data/ferrel2026-gpu-v1",
+    "preflight_root": "data/ferrel2026-preflight-gpu-v1",
+    "source": "scripts/ferrel2026_v3",
+    "configs": "configs/ferrel2026",
+    "unit_job": "1409338",
+    "unit_status": "PENDING_DEPENDENCY",
+    "cpu_closure_job": "1409339",
+    "cpu_closure_status": "PENDING_DEPENDENCY",
+    "quick96_job": "1409340",
+    "quick96_status": "PENDING_DEPENDENCY",
+    "pilot512_job": "1409341",
+    "pilot1024_job": "1409342",
+    "production_grid": [
+      512,
+      512,
+      96
+    ],
+    "fine_grid": [
+      1024,
+      1024,
+      96
+    ],
+    "latitude_deg": 55,
+    "domain_km": [
+      12000,
+      12000,
+      120
+    ],
+    "jet_amplitude_m_s": 2,
+    "jet_wavelength_km": 6000,
+    "eddy_Rossby": 0.1,
+    "eddy_wavelength_km": 1200,
+    "cases": [
+      {
+        "name": "b0",
+        "heat_W_m2": 0,
+        "job": "1409343",
+        "afterok": "1409341",
+        "days": 2,
+        "status": "PENDING_DEPENDENCY"
+      },
+      {
+        "name": "b162",
+        "heat_W_m2": 162,
+        "job": "1409344",
+        "afterok": "1409343",
+        "days": 2,
+        "status": "PENDING_DEPENDENCY"
+      },
+      {
+        "name": "boundary162",
+        "heat_W_m2": 162,
+        "job": "1409345",
+        "afterok": "1409344",
+        "days": 2,
+        "status": "PENDING_DEPENDENCY"
+      }
+    ],
+    "physical_field_restart_tolerances_unchanged": {
+      "rtol": 1e-09,
+      "atol": 1e-10
+    },
+    "derived_streamfunction_criterion": "Measured native mass-flux difference integral consistency, accumulated roundoff and individual reconstruction; supported by Unity audit1403720",
+    "scope": "Transient eddy-circulation screening; not statistically steady or deep Jovian Ferrel-cell fidelity",
+    "science_runs_started": false,
+    "environment": "environments/ferrel2026_gpu",
+    "runtime_wrappers": "scripts/ferrel2026_gpu",
+    "runtime_setup_job": "1409245",
+    "runtime_setup_status": "PENDING",
+    "runtime_and_compiler_preference": "12.2",
+    "pilot512_status": "PENDING_DEPENDENCY",
+    "pilot1024_status": "PENDING_DEPENDENCY",
+    "previous_cpu_evidence": {
+      "unit_job": "1405388",
+      "initialization_checks_passed": 104,
+      "cpu_closure_job": "1405389",
+      "cpu_closure_status": "COMPLETED_PASS",
+      "scientific_source_unchanged": true
+    }
+  },
+  "ferrel_v3_cuda_runtime_failure": {
     "root": "data/ferrel2026-v3",
     "preflight_root": "data/ferrel2026-preflight-v3",
     "source": "scripts/ferrel2026_v3",
@@ -606,7 +687,7 @@
     "cpu_closure_job": "1405389",
     "cpu_closure_status": "COMPLETED_PASS",
     "quick96_job": "1405390",
-    "quick96_status": "PENDING_PRIORITY",
+    "quick96_status": "FAILED_BEFORE_STEPPING_CUDA_RUNTIME",
     "pilot512_job": "1405391",
     "pilot1024_job": "1405392",
     "production_grid": [
@@ -633,23 +714,26 @@
       {
         "name": "b0",
         "heat_W_m2": 0,
-        "job": "1405393",
-        "afterok": "1405391",
-        "days": 2
+        "job": "1409343",
+        "afterok": "1409341",
+        "days": 2,
+        "status": "PENDING_DEPENDENCY"
       },
       {
         "name": "b162",
         "heat_W_m2": 162,
-        "job": "1405394",
-        "afterok": "1405393",
-        "days": 2
+        "job": "1409344",
+        "afterok": "1409343",
+        "days": 2,
+        "status": "PENDING_DEPENDENCY"
       },
       {
         "name": "boundary162",
         "heat_W_m2": 162,
-        "job": "1405395",
-        "afterok": "1405394",
-        "days": 2
+        "job": "1409345",
+        "afterok": "1409344",
+        "days": 2,
+        "status": "PENDING_DEPENDENCY"
       }
     ],
     "physical_field_restart_tolerances_unchanged": {
@@ -666,6 +750,15 @@
       "heated and unheated axisymmetric controls",
       "tracer and cap checks",
       "derived streamfunction consistency"
+    ],
+    "failure_reason": "Driverless CPU precompilation left the shared CUDA environment without a selected runtime on the allocated L40S. No model step ran.",
+    "dependent_status": "CANCELLED_AUTOMATICALLY_AFTER_FAILED_DEPENDENCY",
+    "dependent_jobs": [
+      "1405391",
+      "1405392",
+      "1405393",
+      "1405394",
+      "1405395"
     ]
   }
 }

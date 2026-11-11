@@ -1,0 +1,6 @@
+# Set before importing CUDA or precompiling on either CPU or GPU nodes.
+[CUDA_Runtime_jll]
+version = "12.2"
+
+[CUDA_Compiler_jll]
+version = "12.2"
