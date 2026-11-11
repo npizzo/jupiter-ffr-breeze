@@ -1,0 +1,416 @@
+{
+  "status": "SUBMITTED_VALIDATION_REQUIRED",
+  "utc": "2026-11-11T20:15:13.447417+00:00",
+  "runtime_probe_job": 1447116,
+  "runtime": "12.2",
+  "archive": "data/cuda122-failed-attempt-20261111",
+  "jobs": [
+    {
+      "stage": "validation",
+      "latitude": 55,
+      "end_day": 1,
+      "job_id": 1447338,
+      "afterok": [
+        1447116
+      ]
+    },
+    {
+      "stage": "production",
+      "latitude": 55,
+      "end_day": 10,
+      "job_id": 1447339,
+      "afterok": [
+        1447338
+      ]
+    },
+    {
+      "stage": "production",
+      "latitude": 55,
+      "end_day": 20,
+      "job_id": 1447340,
+      "afterok": [
+        1447339
+      ]
+    },
+    {
+      "stage": "production",
+      "latitude": 55,
+      "end_day": 30,
+      "job_id": 1447341,
+      "afterok": [
+        1447340
+      ]
+    },
+    {
+      "stage": "production",
+      "latitude": 55,
+      "end_day": 40,
+      "job_id": 1447342,
+      "afterok": [
+        1447341
+      ]
+    },
+    {
+      "stage": "production",
+      "latitude": 55,
+      "end_day": 50,
+      "job_id": 1447343,
+      "afterok": [
+        1447342
+      ]
+    },
+    {
+      "stage": "production",
+      "latitude": 55,
+      "end_day": 60,
+      "job_id": 1447344,
+      "afterok": [
+        1447343
+      ]
+    },
+    {
+      "stage": "production",
+      "latitude": 55,
+      "end_day": 70,
+      "job_id": 1447345,
+      "afterok": [
+        1447344
+      ]
+    },
+    {
+      "stage": "production",
+      "latitude": 55,
+      "end_day": 80,
+      "job_id": 1447346,
+      "afterok": [
+        1447345
+      ]
+    },
+    {
+      "stage": "production",
+      "latitude": 55,
+      "end_day": 90,
+      "job_id": 1447347,
+      "afterok": [
+        1447346
+      ]
+    },
+    {
+      "stage": "production",
+      "latitude": 55,
+      "end_day": 100,
+      "job_id": 1447348,
+      "afterok": [
+        1447347
+      ]
+    },
+    {
+      "stage": "rendering",
+      "latitude": 55,
+      "end_day": 100,
+      "job_id": 1447349,
+      "afterok": [
+        1447348
+      ]
+    },
+    {
+      "stage": "validation",
+      "latitude": 35,
+      "end_day": 1,
+      "job_id": 1447350,
+      "afterok": [
+        1447116
+      ]
+    },
+    {
+      "stage": "production",
+      "latitude": 35,
+      "end_day": 10,
+      "job_id": 1447351,
+      "afterok": [
+        1447350
+      ]
+    },
+    {
+      "stage": "production",
+      "latitude": 35,
+      "end_day": 20,
+      "job_id": 1447352,
+      "afterok": [
+        1447351
+      ]
+    },
+    {
+      "stage": "production",
+      "latitude": 35,
+      "end_day": 30,
+      "job_id": 1447353,
+      "afterok": [
+        1447352
+      ]
+    },
+    {
+      "stage": "production",
+      "latitude": 35,
+      "end_day": 40,
+      "job_id": 1447354,
+      "afterok": [
+        1447353
+      ]
+    },
+    {
+      "stage": "production",
+      "latitude": 35,
+      "end_day": 50,
+      "job_id": 1447355,
+      "afterok": [
+        1447354
+      ]
+    },
+    {
+      "stage": "production",
+      "latitude": 35,
+      "end_day": 60,
+      "job_id": 1447356,
+      "afterok": [
+        1447355
+      ]
+    },
+    {
+      "stage": "production",
+      "latitude": 35,
+      "end_day": 70,
+      "job_id": 1447357,
+      "afterok": [
+        1447356
+      ]
+    },
+    {
+      "stage": "production",
+      "latitude": 35,
+      "end_day": 80,
+      "job_id": 1447358,
+      "afterok": [
+        1447357
+      ]
+    },
+    {
+      "stage": "production",
+      "latitude": 35,
+      "end_day": 90,
+      "job_id": 1447359,
+      "afterok": [
+        1447358
+      ]
+    },
+    {
+      "stage": "production",
+      "latitude": 35,
+      "end_day": 100,
+      "job_id": 1447360,
+      "afterok": [
+        1447359
+      ]
+    },
+    {
+      "stage": "rendering",
+      "latitude": 35,
+      "end_day": 100,
+      "job_id": 1447361,
+      "afterok": [
+        1447360,
+        1447348
+      ]
+    },
+    {
+      "stage": "production",
+      "latitude": 35,
+      "end_day": 110,
+      "job_id": 1447362,
+      "afterok": [
+        1447360
+      ]
+    },
+    {
+      "stage": "production",
+      "latitude": 35,
+      "end_day": 120,
+      "job_id": 1447363,
+      "afterok": [
+        1447362
+      ]
+    },
+    {
+      "stage": "production",
+      "latitude": 35,
+      "end_day": 130,
+      "job_id": 1447364,
+      "afterok": [
+        1447363
+      ]
+    },
+    {
+      "stage": "production",
+      "latitude": 35,
+      "end_day": 140,
+      "job_id": 1447365,
+      "afterok": [
+        1447364
+      ]
+    },
+    {
+      "stage": "production",
+      "latitude": 35,
+      "end_day": 150,
+      "job_id": 1447366,
+      "afterok": [
+        1447365
+      ]
+    },
+    {
+      "stage": "production",
+      "latitude": 35,
+      "end_day": 160,
+      "job_id": 1447367,
+      "afterok": [
+        1447366
+      ]
+    },
+    {
+      "stage": "production",
+      "latitude": 35,
+      "end_day": 170,
+      "job_id": 1447368,
+      "afterok": [
+        1447367
+      ]
+    },
+    {
+      "stage": "production",
+      "latitude": 35,
+      "end_day": 180,
+      "job_id": 1447369,
+      "afterok": [
+        1447368
+      ]
+    },
+    {
+      "stage": "production",
+      "latitude": 35,
+      "end_day": 190,
+      "job_id": 1447370,
+      "afterok": [
+        1447369
+      ]
+    },
+    {
+      "stage": "production",
+      "latitude": 35,
+      "end_day": 200,
+      "job_id": 1447371,
+      "afterok": [
+        1447370
+      ]
+    },
+    {
+      "stage": "production",
+      "latitude": 35,
+      "end_day": 210,
+      "job_id": 1447372,
+      "afterok": [
+        1447371
+      ]
+    },
+    {
+      "stage": "production",
+      "latitude": 35,
+      "end_day": 220,
+      "job_id": 1447373,
+      "afterok": [
+        1447372
+      ]
+    },
+    {
+      "stage": "production",
+      "latitude": 35,
+      "end_day": 230,
+      "job_id": 1447374,
+      "afterok": [
+        1447373
+      ]
+    },
+    {
+      "stage": "production",
+      "latitude": 35,
+      "end_day": 240,
+      "job_id": 1447375,
+      "afterok": [
+        1447374
+      ]
+    },
+    {
+      "stage": "production",
+      "latitude": 35,
+      "end_day": 250,
+      "job_id": 1447376,
+      "afterok": [
+        1447375
+      ]
+    },
+    {
+      "stage": "production",
+      "latitude": 35,
+      "end_day": 260,
+      "job_id": 1447377,
+      "afterok": [
+        1447376
+      ]
+    },
+    {
+      "stage": "production",
+      "latitude": 35,
+      "end_day": 270,
+      "job_id": 1447378,
+      "afterok": [
+        1447377
+      ]
+    },
+    {
+      "stage": "production",
+      "latitude": 35,
+      "end_day": 280,
+      "job_id": 1447379,
+      "afterok": [
+        1447378
+      ]
+    },
+    {
+      "stage": "production",
+      "latitude": 35,
+      "end_day": 290,
+      "job_id": 1447380,
+      "afterok": [
+        1447379
+      ]
+    },
+    {
+      "stage": "production",
+      "latitude": 35,
+      "end_day": 300,
+      "job_id": 1447381,
+      "afterok": [
+        1447380
+      ]
+    },
+    {
+      "stage": "rendering",
+      "latitude": 35,
+      "end_day": 300,
+      "job_id": 1447382,
+      "afterok": [
+        1447381
+      ]
+    }
+  ],
+  "science_source_unchanged": true
+}
