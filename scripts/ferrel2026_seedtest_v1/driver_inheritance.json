@@ -1,0 +1,37 @@
+{
+  "base_driver_sha256": "f6544588517ebf00e12b23cc6335eb1686c30bc0e945faa4a3b60c48bf53f5ef",
+  "base_directory": "scripts/ferrel2026_v3",
+  "copied_components": {
+    "initial_flow.jl": "1a40b5bf61f236f846e88292ee0be8617d446fb1fd63fb73dc89f96445436989",
+    "thermal_budget_controller.jl": "35404ad7bb8a5071c9d51a3992c8c4ecbb452133c9ffdff1376928b1e6679c27",
+    "native_budget.jl": "621506ac35e8a7d0dc97b62083638ad15b6fb1f2a1c7b233ccf0d1d12e7e97db",
+    "jet_initialization.jl": "3893fdcee4c92da6e1cab6cf71fc8530e2c2308912b8c7f4341e0fc403130d52"
+  },
+  "edits": [
+    {
+      "old": "include(\"jet_initialization.jl\")",
+      "new": "include(\"jet_initialization.jl\")\ninclude(\"thermal_seed.jl\")"
+    },
+    {
+      "old": "function run_eddy(args=ARGS)\nlength(args) >= 2 || error(\"usage: julia --project scripts/ferrel2026_v3/run.jl CONFIG OUTPUT_DIR [CPU|GPU] [CHECKPOINT]\")",
+      "new": "function run_eddy(args=ARGS)\nhaskey(ENV,\"SLURM_JOB_ID\") || error(\"Scientific execution requires a Unity allocation\")\nlength(args) in (2,3) || error(\"Seed tests require fresh initialization; checkpoints are not accepted\")"
+    },
+    {
+      "old": "rng=MersenneTwister(cfg[\"seed\"])\nnoise=rand(rng,FT,Nx,Ny,Nz).-0.5\nnoise .-= mean(noise,dims=(1,2))\ntheta = [theta_ref((k-0.5)*H/Nz) + cfg[\"perturbation\"]*noise[i,j,k]*exp(-((k-0.5)*H/Nz/(0.35H))^2) for i=1:Nx,j=1:Ny,k=1:Nz]",
+      "new": "theta,thermal_seed_info=build_seeded_theta(cfg,theta_ref)\nopen(joinpath(out,\"thermal_seed.toml\"),\"w\") do io;TOML.print(io,thermal_seed_info);end"
+    },
+    {
+      "old": "metadata[\"diagnostics_version\"]=8\nmetadata[\"diagnostic_revision\"]=\"ferrel2026_v3: pressure halos refreshed and derived-streamfunction restart criterion; physical operators unchanged\"",
+      "new": "metadata[\"diagnostics_version\"]=9\nmetadata[\"diagnostic_revision\"]=\"ferrel2026_seedtest_v1: thermal initialization and Float64 diagnostic planes only; physical operators inherited unchanged from v3\"\nmetadata[\"thermal_seed_model\"]=cfg[\"thermal_seed_model\"]\nmetadata[\"thermal_seed_record_sha256\"]=bytes2hex(sha256(read(joinpath(out,\"thermal_seed.toml\"))))\nmetadata[\"thermal_seed_source_sha256\"]=bytes2hex(sha256(read(joinpath(@__DIR__,\"thermal_seed.jl\"))))"
+    },
+    {
+      "old": "metadata[\"video_heights_actual_m\"]=z[video_indices]",
+      "new": "metadata[\"video_heights_actual_m\"]=z[video_indices]\nprecision_indices=[argmin(abs.(z.-h)) for h in cfg[\"precision_diagnostic_heights\"]]\nlength(unique(precision_indices))==5 || error(\"Require five distinct precision planes\")\nmetadata[\"precision_diagnostic_indices_julia_1based\"]=precision_indices\nmetadata[\"precision_diagnostic_heights_actual_m\"]=z[precision_indices]\nmetadata[\"precision_diagnostic_definition\"]=\"Float64 centered w and theta minus same-plane mean; includes all3 exact video planes and fixed5.625/9.375km planes; no change to dynamics\""
+    },
+    {
+      "old": "       wcenter_slices=Float32.(wcenter[:,:,video_indices]),theta_slices=Float32.(th[:,:,video_indices]),",
+      "new": "       wcenter_slices=Float32.(wcenter[:,:,video_indices]),theta_slices=Float32.(th[:,:,video_indices]),\n       precision_wcenter_slices=wcenter[:,:,precision_indices],\n       precision_theta_anomaly_slices=theta_anomaly[:,:,precision_indices],\n       precision_heights=z[precision_indices],precision_indices_julia_1based=precision_indices,"
+    }
+  ],
+  "scope": "Only thermal initialization, fresh-run/allocation guards, provenance and added Float64 diagnostic outputs; dynamical operators unchanged."
+}
