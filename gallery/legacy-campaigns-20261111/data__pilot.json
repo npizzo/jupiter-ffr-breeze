@@ -1,0 +1,54 @@
+{
+  "cases": [
+    "pilot"
+  ],
+  "frames": 25,
+  "times_seconds": [
+    0.0,
+    600.0,
+    1200.0,
+    1800.0,
+    2400.0,
+    3000.0,
+    3600.0,
+    4200.0,
+    4800.0,
+    5400.0,
+    6000.0,
+    6600.0,
+    7200.0,
+    7800.0,
+    8400.0,
+    9000.0,
+    9600.0,
+    10200.0,
+    10800.0,
+    11400.0,
+    12000.0,
+    12600.0,
+    13200.0,
+    13800.0,
+    14400.0
+  ],
+  "frames_per_second": 3,
+  "color_limits_zeta_over_f": [
+    -1.780945910532771,
+    1.780945910532771
+  ],
+  "normalization": "fixed symmetric asinh, width 0.1; maximum over all frames; no clipping",
+  "actual_height_m": 79687.5,
+  "single_height_legacy": true,
+  "missing_outputs": "Other vorticity heights and passive tracer were not saved",
+  "sparse_preview": false,
+  "poster": "final frame",
+  "panel_labels": [
+    "pilot"
+  ],
+  "note": "Horizontal dry-model vorticity normalized by central f\u2080; not cloud imagery. No temporal interpolation.",
+  "source": "data/pilot",
+  "compute_location": "Unity",
+  "full_decode_passed": true,
+  "duration_seconds": 8.33,
+  "sha256": "763cb4264b4c7bad2a8b36bb9b497e050967ffafeae4e99f7dc00a75222a7d80",
+  "renderer_sha256": "b469fb88694d6298121fd5ffb509d3d2120e27d97604590c7eb26bed3505e30b"
+}
