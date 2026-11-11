@@ -1,0 +1,678 @@
+{
+  "status": "COMPLETE_WITH_PV_DIAGNOSTIC_DISCREPANCY",
+  "compute_location": "Unity allocated CPU job",
+  "slurm_job_id": "1422447",
+  "output_dimension": 2,
+  "raw_fields_downloaded": false,
+  "requested_pairs": [
+    "1024:11",
+    "1024:22",
+    "1024:33"
+  ],
+  "cases_included": [
+    "polar_n1024_seed11",
+    "flat_n1024_seed11",
+    "polar_n1024_seed22",
+    "flat_n1024_seed22",
+    "polar_n1024_seed33",
+    "flat_n1024_seed33"
+  ],
+  "campaign_inventory_at_rendering": [
+    {
+      "case": "polar_n1024_seed11",
+      "grid": 1024,
+      "seed": 11,
+      "kind": "polar",
+      "status": "COMPLETE",
+      "completed_days": 75.0,
+      "requested_days": 75.0
+    },
+    {
+      "case": "flat_n1024_seed11",
+      "grid": 1024,
+      "seed": 11,
+      "kind": "flat",
+      "status": "COMPLETE",
+      "completed_days": 75.0,
+      "requested_days": 75.0
+    },
+    {
+      "case": "polar_n1024_seed22",
+      "grid": 1024,
+      "seed": 22,
+      "kind": "polar",
+      "status": "COMPLETE",
+      "completed_days": 75.0,
+      "requested_days": 75.0
+    },
+    {
+      "case": "flat_n1024_seed22",
+      "grid": 1024,
+      "seed": 22,
+      "kind": "flat",
+      "status": "COMPLETE",
+      "completed_days": 75.0,
+      "requested_days": 75.0
+    },
+    {
+      "case": "polar_n1024_seed33",
+      "grid": 1024,
+      "seed": 33,
+      "kind": "polar",
+      "status": "COMPLETE",
+      "completed_days": 75.0,
+      "requested_days": 75.0
+    },
+    {
+      "case": "flat_n1024_seed33",
+      "grid": 1024,
+      "seed": 33,
+      "kind": "flat",
+      "status": "COMPLETE",
+      "completed_days": 75.0,
+      "requested_days": 75.0
+    },
+    {
+      "case": "polar_n2048_seed11",
+      "grid": 2048,
+      "seed": 11,
+      "kind": "polar",
+      "status": "NOT_FOUND"
+    },
+    {
+      "case": "flat_n2048_seed11",
+      "grid": 2048,
+      "seed": 11,
+      "kind": "flat",
+      "status": "NOT_FOUND"
+    }
+  ],
+  "cases_not_included": [
+    {
+      "case": "polar_n2048_seed11",
+      "grid": 2048,
+      "seed": 11,
+      "kind": "polar",
+      "status": "NOT_FOUND"
+    },
+    {
+      "case": "flat_n2048_seed11",
+      "grid": 2048,
+      "seed": 11,
+      "kind": "flat",
+      "status": "NOT_FOUND"
+    }
+  ],
+  "media": [
+    {
+      "frames": 76,
+      "duration_seconds": 12.66,
+      "fps": 6,
+      "bytes": 1496776,
+      "sha256": "6c76c15a990f9055a662b3c8f744b24d3e0469a88a35f031a4ed3746ee32889a",
+      "full_decode_passed": true,
+      "file": "gamma_flat_n1024_seed11_0_75days.mp4",
+      "cases": [
+        "polar_n1024_seed11",
+        "flat_n1024_seed11"
+      ],
+      "dimension": 2,
+      "layout": "1 row \u00d7 2 matched cases; no physical depths exist",
+      "every_saved_time_included": true,
+      "temporal_interpolation": false,
+      "field_clipping": false,
+      "time_days": [
+        0.0,
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0,
+        6.0,
+        7.0,
+        8.000000000000002,
+        9.000000000000002,
+        10.000000000000002,
+        11.000000000000004,
+        12.000000000000004,
+        13.000000000000004,
+        14.000000000000004,
+        15.000000000000005,
+        16.000000000000007,
+        17.000000000000007,
+        18.000000000000007,
+        19.000000000000007,
+        20.000000000000007,
+        21.000000000000007,
+        22.000000000000007,
+        23.000000000000007,
+        24.000000000000007,
+        25.000000000000007,
+        26.000000000000007,
+        27.000000000000007,
+        28.000000000000007,
+        29.00000000000001,
+        30.00000000000001,
+        31.00000000000001,
+        32.000000000000014,
+        33.000000000000014,
+        34.000000000000014,
+        35.000000000000014,
+        36.000000000000014,
+        37.000000000000014,
+        38.000000000000014,
+        39.000000000000014,
+        40.000000000000014,
+        41.000000000000014,
+        42.000000000000014,
+        43.000000000000014,
+        44.000000000000014,
+        45.000000000000014,
+        46.000000000000014,
+        47.000000000000014,
+        48.000000000000014,
+        49.000000000000014,
+        50.000000000000014,
+        51.000000000000014,
+        52.000000000000014,
+        53.000000000000014,
+        54.000000000000014,
+        55.000000000000014,
+        56.000000000000014,
+        57.000000000000014,
+        58.00000000000002,
+        59.00000000000002,
+        60.00000000000002,
+        61.00000000000002,
+        62.00000000000002,
+        63.00000000000002,
+        64.00000000000003,
+        65.00000000000003,
+        66.00000000000003,
+        67.00000000000003,
+        68.00000000000003,
+        69.00000000000003,
+        70.00000000000003,
+        71.00000000000003,
+        72.00000000000003,
+        73.00000000000003,
+        74.00000000000003,
+        75.0
+      ],
+      "normalization": {
+        "type": "asinh",
+        "linear_width_s_inv": 4e-05,
+        "limits_s_inv": [
+          -0.010192091576755047,
+          0.010192091576755047
+        ],
+        "fixed_in_time": true,
+        "shared_between_cases": true,
+        "scale_reference_cases": [
+          "polar_n1024_seed11",
+          "flat_n1024_seed11",
+          "polar_n1024_seed22",
+          "flat_n1024_seed22",
+          "polar_n1024_seed33",
+          "flat_n1024_seed33"
+        ],
+        "definition": "Full vorticity extrema across all selected completed pairs; physical linear width = 0.1 U/Linit"
+      }
+    },
+    {
+      "frames": 76,
+      "duration_seconds": 12.66,
+      "fps": 6,
+      "bytes": 1450724,
+      "sha256": "5a4a806dd8594a0d259d6bc319fcf524482e4a715e5e0a7845298785c80857b5",
+      "full_decode_passed": true,
+      "file": "gamma_flat_n1024_seed22_0_75days.mp4",
+      "cases": [
+        "polar_n1024_seed22",
+        "flat_n1024_seed22"
+      ],
+      "dimension": 2,
+      "layout": "1 row \u00d7 2 matched cases; no physical depths exist",
+      "every_saved_time_included": true,
+      "temporal_interpolation": false,
+      "field_clipping": false,
+      "time_days": [
+        0.0,
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0,
+        6.0,
+        7.0,
+        8.000000000000002,
+        9.000000000000002,
+        10.000000000000002,
+        11.000000000000004,
+        12.000000000000004,
+        13.000000000000004,
+        14.000000000000004,
+        15.000000000000005,
+        16.000000000000007,
+        17.000000000000007,
+        18.000000000000007,
+        19.000000000000007,
+        20.000000000000007,
+        21.000000000000007,
+        22.000000000000007,
+        23.000000000000007,
+        24.000000000000007,
+        25.000000000000007,
+        26.000000000000007,
+        27.000000000000007,
+        28.000000000000007,
+        29.00000000000001,
+        30.00000000000001,
+        31.00000000000001,
+        32.000000000000014,
+        33.000000000000014,
+        34.000000000000014,
+        35.000000000000014,
+        36.000000000000014,
+        37.000000000000014,
+        38.000000000000014,
+        39.000000000000014,
+        40.000000000000014,
+        41.000000000000014,
+        42.000000000000014,
+        43.000000000000014,
+        44.000000000000014,
+        45.000000000000014,
+        46.000000000000014,
+        47.000000000000014,
+        48.000000000000014,
+        49.000000000000014,
+        50.000000000000014,
+        51.000000000000014,
+        52.000000000000014,
+        53.000000000000014,
+        54.000000000000014,
+        55.000000000000014,
+        56.000000000000014,
+        57.000000000000014,
+        58.00000000000002,
+        59.00000000000002,
+        60.00000000000002,
+        61.00000000000002,
+        62.00000000000002,
+        63.00000000000002,
+        64.00000000000003,
+        65.00000000000003,
+        66.00000000000003,
+        67.00000000000003,
+        68.00000000000003,
+        69.00000000000003,
+        70.00000000000003,
+        71.00000000000003,
+        72.00000000000003,
+        73.00000000000003,
+        74.00000000000003,
+        75.0
+      ],
+      "normalization": {
+        "type": "asinh",
+        "linear_width_s_inv": 4e-05,
+        "limits_s_inv": [
+          -0.010192091576755047,
+          0.010192091576755047
+        ],
+        "fixed_in_time": true,
+        "shared_between_cases": true,
+        "scale_reference_cases": [
+          "polar_n1024_seed11",
+          "flat_n1024_seed11",
+          "polar_n1024_seed22",
+          "flat_n1024_seed22",
+          "polar_n1024_seed33",
+          "flat_n1024_seed33"
+        ],
+        "definition": "Full vorticity extrema across all selected completed pairs; physical linear width = 0.1 U/Linit"
+      }
+    },
+    {
+      "frames": 76,
+      "duration_seconds": 12.66,
+      "fps": 6,
+      "bytes": 1471042,
+      "sha256": "685d3393adc55afbd3bca8532c5f7fd5025f817d0609177992db0e7e58346296",
+      "full_decode_passed": true,
+      "file": "gamma_flat_n1024_seed33_0_75days.mp4",
+      "cases": [
+        "polar_n1024_seed33",
+        "flat_n1024_seed33"
+      ],
+      "dimension": 2,
+      "layout": "1 row \u00d7 2 matched cases; no physical depths exist",
+      "every_saved_time_included": true,
+      "temporal_interpolation": false,
+      "field_clipping": false,
+      "time_days": [
+        0.0,
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0,
+        6.0,
+        7.0,
+        8.000000000000002,
+        9.000000000000002,
+        10.000000000000002,
+        11.000000000000004,
+        12.000000000000004,
+        13.000000000000004,
+        14.000000000000004,
+        15.000000000000005,
+        16.000000000000007,
+        17.000000000000007,
+        18.000000000000007,
+        19.000000000000007,
+        20.000000000000007,
+        21.000000000000007,
+        22.000000000000007,
+        23.000000000000007,
+        24.000000000000007,
+        25.000000000000007,
+        26.000000000000007,
+        27.000000000000007,
+        28.000000000000007,
+        29.00000000000001,
+        30.00000000000001,
+        31.00000000000001,
+        32.000000000000014,
+        33.000000000000014,
+        34.000000000000014,
+        35.000000000000014,
+        36.000000000000014,
+        37.000000000000014,
+        38.000000000000014,
+        39.000000000000014,
+        40.000000000000014,
+        41.000000000000014,
+        42.000000000000014,
+        43.000000000000014,
+        44.000000000000014,
+        45.000000000000014,
+        46.000000000000014,
+        47.000000000000014,
+        48.000000000000014,
+        49.000000000000014,
+        50.000000000000014,
+        51.000000000000014,
+        52.000000000000014,
+        53.000000000000014,
+        54.000000000000014,
+        55.000000000000014,
+        56.000000000000014,
+        57.000000000000014,
+        58.00000000000002,
+        59.00000000000002,
+        60.00000000000002,
+        61.00000000000002,
+        62.00000000000002,
+        63.00000000000002,
+        64.00000000000003,
+        65.00000000000003,
+        66.00000000000003,
+        67.00000000000003,
+        68.00000000000003,
+        69.00000000000003,
+        70.00000000000003,
+        71.00000000000003,
+        72.00000000000003,
+        73.00000000000003,
+        74.00000000000003,
+        75.0
+      ],
+      "normalization": {
+        "type": "asinh",
+        "linear_width_s_inv": 4e-05,
+        "limits_s_inv": [
+          -0.010192091576755047,
+          0.010192091576755047
+        ],
+        "fixed_in_time": true,
+        "shared_between_cases": true,
+        "scale_reference_cases": [
+          "polar_n1024_seed11",
+          "flat_n1024_seed11",
+          "polar_n1024_seed22",
+          "flat_n1024_seed22",
+          "polar_n1024_seed33",
+          "flat_n1024_seed33"
+        ],
+        "definition": "Full vorticity extrema across all selected completed pairs; physical linear width = 0.1 U/Linit"
+      }
+    }
+  ],
+  "grid_sensitivity": [],
+  "paired_radial_separation_changes": [
+    {
+      "grid": 1024,
+      "seed": 11,
+      "polar_separation_change_Lgamma": -0.6204307132507365,
+      "flat_separation_change_Lgamma": -1.1384749687992,
+      "polar_minus_flat_change_Lgamma": 0.5180442555484635
+    },
+    {
+      "grid": 1024,
+      "seed": 22,
+      "polar_separation_change_Lgamma": -0.34293605491096835,
+      "flat_separation_change_Lgamma": -0.9546971789926426,
+      "polar_minus_flat_change_Lgamma": 0.6117611240816743
+    },
+    {
+      "grid": 1024,
+      "seed": 33,
+      "polar_separation_change_Lgamma": -0.5104967227855302,
+      "flat_separation_change_Lgamma": -0.9655883487237047,
+      "polar_minus_flat_change_Lgamma": 0.45509162593817454
+    }
+  ],
+  "seed_summaries": [
+    {
+      "grid": 1024,
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "pairs": 3,
+      "mean_polar_minus_flat_change_Lgamma": 0.5282990018561041,
+      "range_Lgamma": [
+        0.45509162593817454,
+        0.6117611240816743
+      ],
+      "sample_standard_deviation_Lgamma": 0.07883655737352797
+    }
+  ],
+  "snapshot_crosscheck_passed": false,
+  "vorticity_energy_and_relative_enstrophy_checks_passed": true,
+  "pv_snapshot_crosscheck_passed": false,
+  "pv_audit_failures": {
+    "flat_n1024_seed11": {
+      "rtol": 5e-06,
+      "atol": 1e-18,
+      "all_passed": false,
+      "vorticity_energy_and_relative_enstrophy_all_passed": true,
+      "pv_enstrophy_all_passed": false,
+      "pv_failed_days": [
+        1.0
+      ],
+      "pv_audit_interpretation": "Observed total-PV discrepancy is unresolved; it is not presumed to be Float32 roundoff. Original tolerance retained. Relative-vorticity movies and derived diagnostics pass their independent energy and relative-enstrophy checks.",
+      "max_energy_relative_error": 1.0942725836571299e-07,
+      "max_relative_enstrophy_relative_error": 1.115421288666596e-07,
+      "max_pv_enstrophy_relative_error": 5.896023195450795e-06
+    },
+    "flat_n1024_seed33": {
+      "rtol": 5e-06,
+      "atol": 1e-18,
+      "all_passed": false,
+      "vorticity_energy_and_relative_enstrophy_all_passed": true,
+      "pv_enstrophy_all_passed": false,
+      "pv_failed_days": [
+        1.0
+      ],
+      "pv_audit_interpretation": "Observed total-PV discrepancy is unresolved; it is not presumed to be Float32 roundoff. Original tolerance retained. Relative-vorticity movies and derived diagnostics pass their independent energy and relative-enstrophy checks.",
+      "max_energy_relative_error": 1.0847343734354808e-07,
+      "max_relative_enstrophy_relative_error": 1.1122693788223614e-07,
+      "max_pv_enstrophy_relative_error": 6.625797408621459e-06
+    }
+  },
+  "publication_scope": "Verified actual vorticity movies and descriptive vorticity diagnostics; total-PV consistency assessed separately, with unresolved failures retained",
+  "renderer_sha256": "7570daa965e55daace0e1c01e03a541989910d6fb6eaba6acc4cb96dcc46e374",
+  "limitations": [
+    "No convection, physical depth samples or tracer in this model",
+    "Any failed total-PV snapshot/solver comparison is unresolved and disallows a tight total-PV conservation claim",
+    "75 days is an early-organization pilot, not a mature-crystal test",
+    "Sign-weighted field centroids are not tracked vortices",
+    "No nonlinear spectral-transfer diagnostic; no inverse-cascade inference",
+    "One refined seed pair cannot establish ensemble convergence"
+  ],
+  "rendered_at_utc": "2026-11-11T09:48:27.738426+00:00",
+  "publication_runtime": {
+    "numpy": "2.5.4",
+    "matplotlib": "3.11.2",
+    "h5py": "3.16.0",
+    "imageio_ffmpeg": "0.8.1"
+  },
+  "assets": {
+    "README.md": {
+      "bytes": 5844,
+      "sha256": "cb4019307ea9613cf709ebbb9eb07039a04a2181e4632f89de3994a7447fa7fa"
+    },
+    "flat_n1024_seed11_diagnostics.csv": {
+      "bytes": 57948,
+      "sha256": "a782bad4d32d25d2ec8c72c7eb9de9a9e4274b55a62dbeaf0b7e476c741fd294"
+    },
+    "flat_n1024_seed11_metadata.toml": {
+      "bytes": 1514,
+      "sha256": "0351c6eb94de68f439eb761cdf2315e220815e9eface3a7a2694a21e76e3d0a0"
+    },
+    "flat_n1024_seed11_summary.json": {
+      "bytes": 20937,
+      "sha256": "ef89dd1748df9dbfaac7397b2890b4447ef89ac520809d9462653c4d0d906f77"
+    },
+    "flat_n1024_seed22_diagnostics.csv": {
+      "bytes": 58091,
+      "sha256": "51985b1fd88e6cebb38ca2248ead87e548aaf90b99ad5109b6699d6b7da4c605"
+    },
+    "flat_n1024_seed22_metadata.toml": {
+      "bytes": 1524,
+      "sha256": "be910adfeaa3a40823a44c2a5d1129e4520c5358dca5d6fc47e037b53a3f7a61"
+    },
+    "flat_n1024_seed22_summary.json": {
+      "bytes": 20917,
+      "sha256": "b0a7a629b50ead02a3cde94f3a82c666b215c72e7f8fbb70cd4ba6f00ff7b67c"
+    },
+    "flat_n1024_seed33_diagnostics.csv": {
+      "bytes": 58196,
+      "sha256": "a4ffec795d1f747e954cf7fe16d94115c5ec77c0ed5d5d82dbffab26785b9385"
+    },
+    "flat_n1024_seed33_metadata.toml": {
+      "bytes": 1516,
+      "sha256": "bbdb3357c8d410ac46c61b4926749a2f0368157dd48de6ac5b624265c0f7a8f0"
+    },
+    "flat_n1024_seed33_summary.json": {
+      "bytes": 20940,
+      "sha256": "b7dd7feab09e2bab61ce84426d89abf66370a429c70e8ebf97eeb893936a79e9"
+    },
+    "gamma_diagnostics.png": {
+      "bytes": 218424,
+      "sha256": "3013b4008c780920ae740333b90d5ba34e7e5ed7f9c9db65ef87e828bbb06cd0"
+    },
+    "gamma_flat_n1024_seed11_0_75days.mp4": {
+      "bytes": 1496776,
+      "sha256": "6c76c15a990f9055a662b3c8f744b24d3e0469a88a35f031a4ed3746ee32889a"
+    },
+    "gamma_flat_n1024_seed11_0_75days_contact.png": {
+      "bytes": 1202544,
+      "sha256": "c71bb46b295c72d4fc94bef59e16e4e48502f0b5f9bb5c7fda49ca9a92b9e047"
+    },
+    "gamma_flat_n1024_seed11_0_75days_poster.png": {
+      "bytes": 1016216,
+      "sha256": "6b74ebc1c7caf60406270a3b1fb146957f6fcfc82f8f7eddb7ef1afb03e3e397"
+    },
+    "gamma_flat_n1024_seed11_0_75days_video.json": {
+      "bytes": 2728,
+      "sha256": "d9de6531165d75e99b4c36fc5eec7388afb5d06df0e887a1350beb35e150cee2"
+    },
+    "gamma_flat_n1024_seed22_0_75days.mp4": {
+      "bytes": 1450724,
+      "sha256": "5a4a806dd8594a0d259d6bc319fcf524482e4a715e5e0a7845298785c80857b5"
+    },
+    "gamma_flat_n1024_seed22_0_75days_contact.png": {
+      "bytes": 1173977,
+      "sha256": "ffed826e7e1cff2857662ac8dc3acb8dafbf5d0fd40bfb490bf265d825ca8879"
+    },
+    "gamma_flat_n1024_seed22_0_75days_poster.png": {
+      "bytes": 966085,
+      "sha256": "d99fe4ecb0ce87c0ddddb065d541bc569eed76c6e3ddb6b03aa79b2b1736aa03"
+    },
+    "gamma_flat_n1024_seed22_0_75days_video.json": {
+      "bytes": 2728,
+      "sha256": "fb013e938517572b83a78cea8d24b25955861d34330c3653c1cbe63551db736f"
+    },
+    "gamma_flat_n1024_seed33_0_75days.mp4": {
+      "bytes": 1471042,
+      "sha256": "685d3393adc55afbd3bca8532c5f7fd5025f817d0609177992db0e7e58346296"
+    },
+    "gamma_flat_n1024_seed33_0_75days_contact.png": {
+      "bytes": 1194718,
+      "sha256": "18e6fb76ab6027bef5aef72aa36e276ab147a1c4c43e330febcd16a9f4565f9b"
+    },
+    "gamma_flat_n1024_seed33_0_75days_poster.png": {
+      "bytes": 995608,
+      "sha256": "41a3810bd74481e177a33e4a5ec08d3c796f30d16683317a419ab0ccc4848c4c"
+    },
+    "gamma_flat_n1024_seed33_0_75days_video.json": {
+      "bytes": 2728,
+      "sha256": "fad8a1875374fe40d815df668379446ff75f2f194df90a31f75d92fe62590ab2"
+    },
+    "gamma_radial_profiles.png": {
+      "bytes": 77643,
+      "sha256": "1bec6f0121e8f395c1a7e83b7ed7c0d073d08e00b984b8479d95b3a704743986"
+    },
+    "polar_n1024_seed11_diagnostics.csv": {
+      "bytes": 58382,
+      "sha256": "9f11d04389c5028304baa6a96882e363fdd80c18c006b02fb19fa747732f1909"
+    },
+    "polar_n1024_seed11_metadata.toml": {
+      "bytes": 1516,
+      "sha256": "ad9324efd63bc80c549aa62677947f2cb047d3b00951f563194e9cb8cab83b98"
+    },
+    "polar_n1024_seed11_summary.json": {
+      "bytes": 20948,
+      "sha256": "a6bf3fd77f6be5c28f128048724f841240046c9bf9c77b4f9eab3ddf656bb06a"
+    },
+    "polar_n1024_seed22_diagnostics.csv": {
+      "bytes": 58367,
+      "sha256": "462dc15fb5b05025ab3fdbc3313f7256b3ef1c81caee4d0b2c4af08c6ab41531"
+    },
+    "polar_n1024_seed22_metadata.toml": {
+      "bytes": 1528,
+      "sha256": "d0f71858c58f6593e762a4cc48bc533e3c1b943fbe3e69658d74989becb34c70"
+    },
+    "polar_n1024_seed22_summary.json": {
+      "bytes": 20937,
+      "sha256": "6014a611b56324fc7c74e567ed2241b80e09d16550763a2f831be718159d0d0a"
+    },
+    "polar_n1024_seed33_diagnostics.csv": {
+      "bytes": 58100,
+      "sha256": "c98a6018b0c96ad16a2fa5c44994cc27fc6e343ae5b73df209ec17c481cb56b5"
+    },
+    "polar_n1024_seed33_metadata.toml": {
+      "bytes": 1515,
+      "sha256": "993dde93a5adc46b192ea751a3ffb989fd939598825ec2a77a99fb89dc48efe2"
+    },
+    "polar_n1024_seed33_summary.json": {
+      "bytes": 20946,
+      "sha256": "280c907a44048328fed46290d368d3c77185361e8070b4e1eac7eb44dded8300"
+    }
+  }
+}
