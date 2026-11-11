@@ -1,3 +1,5 @@
+**Subsequent diagnostic:** The [fixed-region analysis](regions/review.md) now shows positive interior separation in both prespecified interior masks for all three polar seeds, while the whole-trap sign remains negative. The refinement-first recommendation is unchanged. The initial review below is retained as the record that motivated that test.
+
 # Review of the completed 1024² gamma-plane ensemble
 
 Recommendation: finish the already queued, unchanged 2048² matched pair before selecting a long extension. The 1024² results contain a repeatable descriptive effect of polar PV geometry, but the trap boundary and numerical scale dependence remain important alternative explanations for some of the visual organization. More elapsed time cannot resolve those uncertainties.
