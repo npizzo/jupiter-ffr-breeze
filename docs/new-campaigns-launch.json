@@ -125,9 +125,12 @@
     "unit_status": "COMPLETED_PASS",
     "initialization_checks_passed": 52,
     "spectral_self_tests": "PASS",
-    "pilot512_status": "RUNNING"
+    "pilot512_status": "COMPLETED_PASS",
+    "restart_checks_passed": 14,
+    "sampled_peak_gpu_memory_fraction": 0.1912,
+    "first_production_segment_status": "RUNNING"
   },
-  "deferred": "Multiyear gamma crystals,4096 refinement,long convection ensembles,matched mechanical forcing and Ferrel-cell production require pilot assessment.",
+  "deferred": "Multiyear gamma crystals,4096 refinement,long convection/Ferrel ensembles and matched mechanical forcing await pilot assessment.",
   "gamma_provisional": {
     "root": "data/gamma2026-v1",
     "unit_job": "1394580",
@@ -147,10 +150,12 @@
     "source_preserved": true,
     "superseded_by": "SI-corrected isolated gamma2026_v2"
   },
-  "gamma": {
+  "github_record_url": "https://github.com/npizzo/jupiter-ffr-breeze/blob/main/docs/new-campaigns.md",
+  "recorded_at_utc": "2026-11-11T02:22:30.833786+00:00",
+  "gamma_v2_initial_environment": {
     "root": "data/gamma2026-v2a",
     "unit_job": "1397848",
-    "unit_status": "SUBMITTED_VALIDATION_PENDING",
+    "unit_status": "COMPLETED_PASS",
     "gpu_1024_job": "1397849",
     "gpu_2048_job": "1397856",
     "end_days": 75,
@@ -238,6 +243,163 @@
         "afterok": "1397857"
       }
     ],
-    "submission_note": "Completed setup job aged out of Slurm dependency lookup; first v2 submission created no jobs. Environment verified installed, then fresh v2a root submitted without obsolete setup dependency."
+    "submission_note": "Completed setup job aged out of Slurm dependency lookup; first v2 submission created no jobs. Environment verified installed, then fresh v2a root submitted without obsolete setup dependency.",
+    "unit_checks_passed": 17,
+    "gpu_1024_status": "FAILED_CUDA_RUNTIME_SELECTION",
+    "dependent_status": "CANCELLED_AUTOMATICALLY_ON_FAILED_DEPENDENCY",
+    "simulations_started": false
+  },
+  "gamma": {
+    "root": "data/gamma2026-v2gpu1",
+    "runtime_setup_job": "1401300",
+    "unit_job": "1401301",
+    "gpu_1024_job": "1401302",
+    "gpu_2048_job": "1401309",
+    "runtime_setup_status": "COMPLETED_PASS",
+    "numerical_sources": "scripts/gamma2026_v2",
+    "environment": "environments/gamma2026_gpu",
+    "runtime_preference": "12.2",
+    "end_days": 75,
+    "cases": [
+      {
+        "kind": "polar",
+        "grid": [
+          1024,
+          1024
+        ],
+        "seed": 11,
+        "job": "1401303",
+        "afterok": "1401302"
+      },
+      {
+        "kind": "flat",
+        "grid": [
+          1024,
+          1024
+        ],
+        "seed": 11,
+        "job": "1401304",
+        "afterok": "1401303"
+      },
+      {
+        "kind": "polar",
+        "grid": [
+          1024,
+          1024
+        ],
+        "seed": 22,
+        "job": "1401305",
+        "afterok": "1401304"
+      },
+      {
+        "kind": "flat",
+        "grid": [
+          1024,
+          1024
+        ],
+        "seed": 22,
+        "job": "1401306",
+        "afterok": "1401305"
+      },
+      {
+        "kind": "polar",
+        "grid": [
+          1024,
+          1024
+        ],
+        "seed": 33,
+        "job": "1401307",
+        "afterok": "1401306"
+      },
+      {
+        "kind": "flat",
+        "grid": [
+          1024,
+          1024
+        ],
+        "seed": 33,
+        "job": "1401308",
+        "afterok": "1401307"
+      },
+      {
+        "kind": "polar",
+        "grid": [
+          2048,
+          2048
+        ],
+        "seed": 11,
+        "job": "1401310",
+        "afterok": "1401309"
+      },
+      {
+        "kind": "flat",
+        "grid": [
+          2048,
+          2048
+        ],
+        "seed": 11,
+        "job": "1401311",
+        "afterok": "1401310"
+      }
+    ],
+    "verified_runtime": "12.2.0",
+    "package_versions_unchanged": true,
+    "unit_status": "COMPLETED_PASS",
+    "unit_checks_passed": 17
+  },
+  "ferrel": {
+    "root": "data/ferrel2026-v1",
+    "preflight_root": "data/ferrel2026-preflight-v1",
+    "unit_job": "1401859",
+    "quick96_job": "1401860",
+    "pilot512_job": "1401861",
+    "pilot1024_job": "1401862",
+    "unit_status": "COMPLETED_PASS",
+    "production_grid": [
+      512,
+      512,
+      96
+    ],
+    "fine_grid": [
+      1024,
+      1024,
+      96
+    ],
+    "latitude_deg": 55,
+    "domain_km": [
+      12000,
+      12000,
+      120
+    ],
+    "jet_amplitude_m_s": 2,
+    "jet_wavelength_km": 6000,
+    "eddy_Rossby": 0.1,
+    "eddy_wavelength_km": 1200,
+    "cases": [
+      {
+        "name": "b0",
+        "heat_W_m2": 0,
+        "job": "1401863",
+        "afterok": "1401861",
+        "days": 2
+      },
+      {
+        "name": "b162",
+        "heat_W_m2": 162,
+        "job": "1401864",
+        "afterok": "1401863",
+        "days": 2
+      },
+      {
+        "name": "boundary162",
+        "heat_W_m2": 162,
+        "job": "1401865",
+        "afterok": "1401864",
+        "days": 2
+      }
+    ],
+    "scope": "Transient eddy-circulation and diagnostic validation; no claim of statistically steady or deep Jovian Ferrel-cell fidelity",
+    "fidelity_screen": "native momentum and mass closure, eddy-to-mean transfer sign, heated-minus-unheated response beyond axisymmetric adjustment, boundary and resolution sensitivity",
+    "initialization_checks_passed": 98
   }
 }

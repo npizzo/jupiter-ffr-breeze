@@ -1,5 +1,7 @@
 # Jupiter folded filamentary regions with Breeze.jl
 
+**Now queued:** [Midlatitude Ferrel-mechanism validation](docs/ferrel2026.md), with weak balanced jets, matched heating controls, native momentum/mass diagnostics and automatic numerical gates. [Current launch record](docs/new-campaigns-launch.json). The polar QG CUDA runtime repair is isolated from its numerical setup.
+
 **Submitted November 10:** [Polar γ-plane reproduction and dry-convection pilots](docs/new-campaigns.md), with matched controls, resolution checks and Unity job records. These are staged experiments; no new science results are claimed yet.
 
 **New: matched large-eddy cases completed through day 50.** [Watch the comparison and separate heated/unheated movies](https://npizzo.github.io/jupiter-ffr-breeze/#cascade50), with synchronized three-depth vorticity and tracer. [Parameters, scales and provenance](gallery/cascade100-first50/README.md). This is the first fifty days of the hundred-day campaign.
