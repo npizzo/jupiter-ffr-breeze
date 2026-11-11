@@ -1,0 +1,7 @@
+[files]
+"campaign.jl" = "dc36f78291df44c6acc3a60ab05050fdb03467b830492cfaf54e23054b79e784"
+"jet_review.py" = "c287accbc805bfc19f7fd2409ea28faee8f17f7dfa8726b95767a7eafcdd5407"
+"prepare_gallery.py" = "6d341d71d4bd12cd70d6514566bc37aa7356057b364a6582421fe36d4cceced1"
+"render_movie.py" = "07ad0c2080caa6b7a3b831753c3c109aa72f4e0cd64df0bd1afbd949566e180c"
+"submit.sh" = "65299b9253c61e4eab6e2d1c2f2858d5e5635ab22a4c8d8b7c5366494d5df62b"
+"vorticity_depth_videos_ordered.py" = "4d2a00a86f0547ce45e44de462af8f84d007ebb8f84470c6070ce92adbb0bb15"

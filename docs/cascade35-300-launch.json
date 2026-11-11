@@ -1,0 +1,194 @@
+{
+  "submitted_utc": "2026-11-11T18:00:59.454770+00:00",
+  "status": "SUBMITTED_DEPENDS_ON_ORIGINAL_DAY100",
+  "compute_location": "Unity",
+  "latitude": 35,
+  "target_total_earth_days": 300,
+  "extension_earth_days": 200,
+  "original_day100_job": 1435756,
+  "original_root": "data/cascade35-v1",
+  "extension_root": "data/cascade35-300-v1",
+  "preflight_root": "data/cascade35-preflight-v1",
+  "gallery_output": "rendered/cascade35-full300",
+  "jobs": [
+    {
+      "stage": "production",
+      "end_day": 110,
+      "job_id": 1437375,
+      "afterok": [
+        1435756
+      ]
+    },
+    {
+      "stage": "production",
+      "end_day": 120,
+      "job_id": 1437376,
+      "afterok": [
+        1437375
+      ]
+    },
+    {
+      "stage": "production",
+      "end_day": 130,
+      "job_id": 1437377,
+      "afterok": [
+        1437376
+      ]
+    },
+    {
+      "stage": "production",
+      "end_day": 140,
+      "job_id": 1437378,
+      "afterok": [
+        1437377
+      ]
+    },
+    {
+      "stage": "production",
+      "end_day": 150,
+      "job_id": 1437379,
+      "afterok": [
+        1437378
+      ]
+    },
+    {
+      "stage": "production",
+      "end_day": 160,
+      "job_id": 1437380,
+      "afterok": [
+        1437379
+      ]
+    },
+    {
+      "stage": "production",
+      "end_day": 170,
+      "job_id": 1437381,
+      "afterok": [
+        1437380
+      ]
+    },
+    {
+      "stage": "production",
+      "end_day": 180,
+      "job_id": 1437382,
+      "afterok": [
+        1437381
+      ]
+    },
+    {
+      "stage": "production",
+      "end_day": 190,
+      "job_id": 1437383,
+      "afterok": [
+        1437382
+      ]
+    },
+    {
+      "stage": "production",
+      "end_day": 200,
+      "job_id": 1437384,
+      "afterok": [
+        1437383
+      ]
+    },
+    {
+      "stage": "production",
+      "end_day": 210,
+      "job_id": 1437385,
+      "afterok": [
+        1437384
+      ]
+    },
+    {
+      "stage": "production",
+      "end_day": 220,
+      "job_id": 1437386,
+      "afterok": [
+        1437385
+      ]
+    },
+    {
+      "stage": "production",
+      "end_day": 230,
+      "job_id": 1437387,
+      "afterok": [
+        1437386
+      ]
+    },
+    {
+      "stage": "production",
+      "end_day": 240,
+      "job_id": 1437388,
+      "afterok": [
+        1437387
+      ]
+    },
+    {
+      "stage": "production",
+      "end_day": 250,
+      "job_id": 1437389,
+      "afterok": [
+        1437388
+      ]
+    },
+    {
+      "stage": "production",
+      "end_day": 260,
+      "job_id": 1437390,
+      "afterok": [
+        1437389
+      ]
+    },
+    {
+      "stage": "production",
+      "end_day": 270,
+      "job_id": 1437391,
+      "afterok": [
+        1437390
+      ]
+    },
+    {
+      "stage": "production",
+      "end_day": 280,
+      "job_id": 1437392,
+      "afterok": [
+        1437391
+      ]
+    },
+    {
+      "stage": "production",
+      "end_day": 290,
+      "job_id": 1437393,
+      "afterok": [
+        1437392
+      ]
+    },
+    {
+      "stage": "production",
+      "end_day": 300,
+      "job_id": 1437394,
+      "afterok": [
+        1437393
+      ]
+    },
+    {
+      "stage": "rendering",
+      "end_day": 300,
+      "job_id": 1437395,
+      "afterok": [
+        1437394
+      ]
+    }
+  ],
+  "files_sha256": {
+    "scripts/cascade35_extend/jet_review.py": "c287accbc805bfc19f7fd2409ea28faee8f17f7dfa8726b95767a7eafcdd5407",
+    "scripts/cascade35_extend/campaign.jl": "dc36f78291df44c6acc3a60ab05050fdb03467b830492cfaf54e23054b79e784",
+    "scripts/cascade35_extend/prepare_gallery.py": "6d341d71d4bd12cd70d6514566bc37aa7356057b364a6582421fe36d4cceced1",
+    "scripts/cascade35_extend/submit.sh": "65299b9253c61e4eab6e2d1c2f2858d5e5635ab22a4c8d8b7c5366494d5df62b",
+    "scripts/cascade35_extend/render_movie.py": "07ad0c2080caa6b7a3b831753c3c109aa72f4e0cd64df0bd1afbd949566e180c",
+    "scripts/cascade35_extend/vorticity_depth_videos_ordered.py": "4d2a00a86f0547ce45e44de462af8f84d007ebb8f84470c6070ce92adbb0bb15",
+    "scripts/cascade35_extend/FROZEN.toml": "6f008aa4ae9540e38e66fd5e655a2090b6d3a1b672defdd92e79ec1a83db931b"
+  },
+  "day500": "Conditional on day-300 review; not submitted",
+  "original_campaign_modified": false
+}
