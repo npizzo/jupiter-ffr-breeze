@@ -1,5 +1,6 @@
 include("run.jl")
 include("check_output.jl")
+include("restart_comparison.jl")
 root=only(ARGS);mkpath(root)
 base=TOML.parsefile("configs/cascade35_heated.toml")
 reference=TOML.parsefile("configs/cascade100_f_heated.toml")
@@ -39,9 +40,18 @@ part=experiment("restart_first",merge(small,Dict("stop_seconds"=>600.0)))
 resumed=experiment("restart_second",merge(small,Dict("stop_seconds"=>1200.0));pickup=latest_checkpoint(part))
 @testset "Beta-plane restart" begin
     a=load(joinpath(full,"frame_00002.jld2"));b=load(joinpath(resumed,"frame_00002.jld2"))
-    for key in ("u","v","w","theta_profile","vorticity_slices","tracer_slices","ubar","vbar","Rxx","Rxy","Ryy","zonal_u","zonal_v","zonal_w","eddy_uv","eddy_uw","native_rhov","native_rhow","mass_streamfunction")
-        @test isapprox(a[key],b[key];rtol=1e-9,atol=1e-10)
+    for key in ("u","v","w","theta_profile","vorticity_slices","tracer_slices","ubar","vbar","Rxx","Rxy","Ryy","zonal_u","zonal_v","zonal_w","eddy_uv","eddy_uw","native_rhov","native_rhow")
+        @testset "$key" begin
+            @test isapprox(a[key],b[key];rtol=1e-9,atol=1e-10)
+        end
     end
+    report=streamfunction_restart_report(a,b,base["height"])
+    @testset "Depth-integrated mass streamfunction" begin
+        @test report["native_flux_pass"]
+        @test report["depth_normalized_pass"]
+        @test report["propagated_error_pass"]
+    end
+    open(joinpath(root,"restart_streamfunction.toml"),"w") do io;TOML.print(io,report);end
 end
 out=experiment("day1_beta",Dict("stop_seconds"=>86400.0,"checkpoint_seconds"=>86400.0))
 @testset "Actual saved initial fields match completed f-plane reference" begin
