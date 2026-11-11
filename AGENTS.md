@@ -17,3 +17,7 @@ Run simulations, diagnostics, field exports, analysis, movie rendering, and medi
 ## Historical single-height exception
 
 On November 11, 2026, the user explicitly requested clearly labeled single-height movies for older campaigns that saved only one vorticity level. Show the actual saved height, state that other depths and tracer were not saved, and never fabricate missing panels. This exception applies to historical output only; retain the synchronized three-depth vorticity/tracer layout for new simulation output.
+
+## Full 100-day tracer contrast variant
+
+On November 11, 2026 the user requested clearer late-time tracer gradients in the completed 100-day movies. The labeled contrast variant uses unchanged absolute concentration, BrBG colors, fixed center C=0.0793082, and two-sided asinh width 0.001 with the full concentration range. The same mapping applies to both cases, all depths and all times; no framewise normalization, mean subtraction or clipping. Preserve original movies and original vorticity normalization. Do not modify frozen model or renderer source used by queued campaigns; add separate rendering variants when needed.
