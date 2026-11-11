@@ -1,0 +1,759 @@
+{
+  "status": "COMPLETE_RESOLUTION_SCREEN_NOT_CONVERGENCE",
+  "stage": "production",
+  "compute_location": "Unity allocated CPU job",
+  "slurm_job_id": "1412331",
+  "generated_at_utc": "2026-11-11T11:23:02.515254+00:00",
+  "observer_sha256": "10c489bead71a4f305e3d1f8c00a53e8398e05375896c405548c484da2daf7cd",
+  "analytical_checks": {
+    "status": "PASS",
+    "checks": [
+      "even-wall single Fourier mode variance and physical wavelength",
+      "plane/zonal projection and positive/negative covariance signs",
+      "weak absolute Float32 theta correctly labeled indeterminate",
+      "derived precision envelope accepts valid weak profile and rejects inconsistent heat flux"
+    ]
+  },
+  "successful_prerequisite_jobs": {
+    "1409341": [
+      "COMPLETED",
+      "0:0"
+    ],
+    "1409343": [
+      "COMPLETED",
+      "0:0"
+    ],
+    "1409344": [
+      "COMPLETED",
+      "0:0"
+    ],
+    "1409345": [
+      "COMPLETED",
+      "0:0"
+    ]
+  },
+  "gates": [
+    {
+      "file": "data/ferrel2026-preflight-gpu-v1/PASS512.toml",
+      "sha256": "142b5201f112445fc097a97ed4e43999e018de1de81e92940220b383d0194663",
+      "status": "PASS"
+    }
+  ],
+  "cases": {
+    "b0": {
+      "case": "b0",
+      "label": "Unheated",
+      "source": "data/ferrel2026-gpu-v1/ferrel2026_b0",
+      "grid": [
+        512,
+        512,
+        96
+      ],
+      "dx_m": 23437.5,
+      "dy_m": 23437.5,
+      "dz_m": 1250.0,
+      "metadata_sha256": "2d6e67a38f508e47ee15ca243ea472aad962fc8b35b310696e15e4446a5f8d6a",
+      "driver_sha256": "f6544588517ebf00e12b23cc6335eb1686c30bc0e945faa4a3b60c48bf53f5ef",
+      "configuration_sha256": "b4cab413c1f9e05c25465bc3c2ccfe4c7dd35cc347885b6df5d8629b9af1d2e4",
+      "frames": 49,
+      "end_seconds": 172800.0,
+      "heights_m": [
+        19375.0,
+        59375.0,
+        99375.0
+      ],
+      "nominal_regime": {
+        "active_depth_assumption_m": 80000.0,
+        "active_depth_basis": "configured neutral-layer cap height; not a measured mixing depth",
+        "lower_Pr": 1.0,
+        "cap_nominal_Pr": 1000.0,
+        "local_Ek_nu_over_f_H2": 0.0005423543630764217,
+        "bottom_buoyancy_flux_analogue_m2_s3": 0.0,
+        "flux_Rayleigh_analogue": 0.0,
+        "flux_velocity_analogue_m_s": 0.0,
+        "flux_Rossby_analogue": 0.0,
+        "reference_density_log_contrast_to_cap": 1.2767337326015806,
+        "density_reference_height_m": 625.0,
+        "cap_density_height_m": 79375.0,
+        "scope": "Explicit-coefficient, local-f nominal analogues only; tapered diffusivity, anelasticity, boundaries and numerical diffusion prevent direct RBC criticality claims"
+      },
+      "timestep": {
+        "scope": "sampled actual SSPRK3 clock increments, not continuous limiter telemetry",
+        "sample_count": 18,
+        "configured_cap_seconds": 30.0,
+        "minimum_sampled_dt_seconds": 30.0,
+        "median_sampled_dt_seconds": 30.0,
+        "maximum_sampled_dt_seconds": 30.0,
+        "native_diffusive_limit_configured": false,
+        "native_internal_wave_limit_configured": false,
+        "warning": "Current wizard controls advection and max_dt; no inference of the active limiter from these samples alone."
+      },
+      "windows": {
+        "early_0_6h": {
+          "start_seconds": 0.0,
+          "end_seconds": 21600.0,
+          "planes": {
+            "0_plane": {
+              "w_variance_m2_s2": 2.2377972145908097e-08,
+              "w_power_l1_error_bound_m2_s2": 2.066721832797433e-15,
+              "signed_heat_covariance_K_m_s": 3.89452251392277e-11,
+              "absolute_heat_mode_throughput_K_m_s": 4.102598650763912e-11,
+              "heat_cospectrum_l1_error_bound_K_m_s": 1.4031670893708664e-12,
+              "heat_throughput_status": "BOUNDED_NOT_MODEWISE_CONVERGED"
+            },
+            "0_zonal": {
+              "w_variance_m2_s2": 2.2343916407358673e-08,
+              "w_power_l1_error_bound_m2_s2": 2.0437712252849404e-15,
+              "signed_heat_covariance_K_m_s": 3.8881502652311775e-11,
+              "absolute_heat_mode_throughput_K_m_s": 4.0951918611578765e-11,
+              "heat_cospectrum_l1_error_bound_K_m_s": 2.7625900053592435e-15,
+              "heat_throughput_status": "BOUNDED_NOT_MODEWISE_CONVERGED"
+            },
+            "1_plane": {
+              "w_variance_m2_s2": 2.9083574198833425e-09,
+              "w_power_l1_error_bound_m2_s2": 2.6808538397713837e-16,
+              "signed_heat_covariance_K_m_s": 0.0,
+              "absolute_heat_mode_throughput_K_m_s": 0.0,
+              "heat_cospectrum_l1_error_bound_K_m_s": 3.838124711354299e-10,
+              "heat_throughput_status": "INDETERMINATE_PRECISION_FLOOR"
+            },
+            "1_zonal": {
+              "w_variance_m2_s2": 2.902546151179499e-09,
+              "w_power_l1_error_bound_m2_s2": 2.6550520807445943e-16,
+              "signed_heat_covariance_K_m_s": 0.0,
+              "absolute_heat_mode_throughput_K_m_s": 0.0,
+              "heat_cospectrum_l1_error_bound_K_m_s": 3.8293479511168944e-10,
+              "heat_throughput_status": "INDETERMINATE_PRECISION_FLOOR"
+            },
+            "2_plane": {
+              "w_variance_m2_s2": 2.0715600466169964e-13,
+              "w_power_l1_error_bound_m2_s2": 1.906394892421552e-20,
+              "signed_heat_covariance_K_m_s": 0.0,
+              "absolute_heat_mode_throughput_K_m_s": 0.0,
+              "heat_cospectrum_l1_error_bound_K_m_s": 3.263620703864879e-12,
+              "heat_throughput_status": "INDETERMINATE_PRECISION_FLOOR"
+            },
+            "2_zonal": {
+              "w_variance_m2_s2": 2.0621143026262242e-13,
+              "w_power_l1_error_bound_m2_s2": 1.8890448454003657e-20,
+              "signed_heat_covariance_K_m_s": 0.0,
+              "absolute_heat_mode_throughput_K_m_s": 0.0,
+              "heat_cospectrum_l1_error_bound_K_m_s": 3.251566611829018e-12,
+              "heat_throughput_status": "INDETERMINATE_PRECISION_FLOOR"
+            }
+          }
+        },
+        "startup_excluded_12_48h": {
+          "start_seconds": 43200.0,
+          "end_seconds": 172800.0,
+          "planes": {
+            "0_plane": {
+              "w_variance_m2_s2": 1.884394782877733e-09,
+              "w_power_l1_error_bound_m2_s2": 1.7668582289279466e-16,
+              "signed_heat_covariance_K_m_s": 1.058138699986934e-12,
+              "absolute_heat_mode_throughput_K_m_s": 1.6438727083940494e-12,
+              "heat_cospectrum_l1_error_bound_K_m_s": 3.846424144638971e-13,
+              "heat_throughput_status": "BOUNDED_NOT_MODEWISE_CONVERGED"
+            },
+            "0_zonal": {
+              "w_variance_m2_s2": 1.8801406355280793e-09,
+              "w_power_l1_error_bound_m2_s2": 1.7202649802967666e-16,
+              "signed_heat_covariance_K_m_s": 1.0557212333674587e-12,
+              "absolute_heat_mode_throughput_K_m_s": 1.6382521581499091e-12,
+              "heat_cospectrum_l1_error_bound_K_m_s": 7.564814153222838e-16,
+              "heat_throughput_status": "BOUNDED_NOT_MODEWISE_CONVERGED"
+            },
+            "1_plane": {
+              "w_variance_m2_s2": 9.60027993611234e-10,
+              "w_power_l1_error_bound_m2_s2": 8.933154145450684e-17,
+              "signed_heat_covariance_K_m_s": 4.768153117113097e-15,
+              "absolute_heat_mode_throughput_K_m_s": 1.1781600331774266e-13,
+              "heat_cospectrum_l1_error_bound_K_m_s": 2.138973473565266e-10,
+              "heat_throughput_status": "INDETERMINATE_PRECISION_FLOOR"
+            },
+            "1_zonal": {
+              "w_variance_m2_s2": 9.57362055791806e-10,
+              "w_power_l1_error_bound_m2_s2": 8.764950012170135e-17,
+              "signed_heat_covariance_K_m_s": 4.791460327602368e-15,
+              "absolute_heat_mode_throughput_K_m_s": 1.174766193249653e-13,
+              "heat_cospectrum_l1_error_bound_K_m_s": 2.1331835926908483e-10,
+              "heat_throughput_status": "INDETERMINATE_PRECISION_FLOOR"
+            },
+            "2_plane": {
+              "w_variance_m2_s2": 3.618048903857118e-14,
+              "w_power_l1_error_bound_m2_s2": 3.335390001088288e-21,
+              "signed_heat_covariance_K_m_s": 8.933239009652814e-19,
+              "absolute_heat_mode_throughput_K_m_s": 4.825325104974548e-16,
+              "heat_cospectrum_l1_error_bound_K_m_s": 1.386345126828986e-12,
+              "heat_throughput_status": "INDETERMINATE_PRECISION_FLOOR"
+            },
+            "2_zonal": {
+              "w_variance_m2_s2": 3.5960364785785606e-14,
+              "w_power_l1_error_bound_m2_s2": 3.2974595680081728e-21,
+              "signed_heat_covariance_K_m_s": 9.209040791705036e-19,
+              "absolute_heat_mode_throughput_K_m_s": 4.784984616398559e-16,
+              "heat_cospectrum_l1_error_bound_K_m_s": 1.380176405705584e-12,
+              "heat_throughput_status": "INDETERMINATE_PRECISION_FLOOR"
+            }
+          }
+        }
+      },
+      "heat_cospectrum_precision_indeterminate_records": 196,
+      "total_plane_demeaning_records": 294,
+      "profile_checks": "WITHIN_DERIVED_QUANTIZATION_PLUS_ARITHMETIC_BOUNDS"
+    },
+    "b162": {
+      "case": "b162",
+      "label": "Heated 162 W/m\u00b2",
+      "source": "data/ferrel2026-gpu-v1/ferrel2026_b162",
+      "grid": [
+        512,
+        512,
+        96
+      ],
+      "dx_m": 23437.5,
+      "dy_m": 23437.5,
+      "dz_m": 1250.0,
+      "metadata_sha256": "2e2d85e54b93b4a9ebbfbfac4b7bdf749f84ee54d513585fce97c9f6f6b2b8ee",
+      "driver_sha256": "f6544588517ebf00e12b23cc6335eb1686c30bc0e945faa4a3b60c48bf53f5ef",
+      "configuration_sha256": "31787c88c22be2af9c57539794ee81d6027f9eba25a2339421a88ea8fb43999f",
+      "frames": 49,
+      "end_seconds": 172800.0,
+      "heights_m": [
+        19375.0,
+        59375.0,
+        99375.0
+      ],
+      "nominal_regime": {
+        "active_depth_assumption_m": 80000.0,
+        "active_depth_basis": "configured neutral-layer cap height; not a measured mixing depth",
+        "lower_Pr": 1.0,
+        "cap_nominal_Pr": 1000.0,
+        "local_Ek_nu_over_f_H2": 0.0005423543630764217,
+        "bottom_buoyancy_flux_analogue_m2_s3": 0.0005676214273278373,
+        "flux_Rayleigh_analogue": 23249773.663348217,
+        "flux_velocity_analogue_m_s": 3.5676555938553243,
+        "flux_Rossby_analogue": 0.154794686182515,
+        "reference_density_log_contrast_to_cap": 1.2767337326015806,
+        "density_reference_height_m": 625.0,
+        "cap_density_height_m": 79375.0,
+        "scope": "Explicit-coefficient, local-f nominal analogues only; tapered diffusivity, anelasticity, boundaries and numerical diffusion prevent direct RBC criticality claims"
+      },
+      "timestep": {
+        "scope": "sampled actual SSPRK3 clock increments, not continuous limiter telemetry",
+        "sample_count": 29,
+        "configured_cap_seconds": 30.0,
+        "minimum_sampled_dt_seconds": 14.463610657156096,
+        "median_sampled_dt_seconds": 16.618225137062836,
+        "maximum_sampled_dt_seconds": 30.0,
+        "native_diffusive_limit_configured": false,
+        "native_internal_wave_limit_configured": false,
+        "warning": "Current wizard controls advection and max_dt; no inference of the active limiter from these samples alone."
+      },
+      "windows": {
+        "early_0_6h": {
+          "start_seconds": 0.0,
+          "end_seconds": 21600.0,
+          "planes": {
+            "0_plane": {
+              "w_variance_m2_s2": 3.0515864400947085e-08,
+              "w_power_l1_error_bound_m2_s2": 2.8223461278201502e-15,
+              "signed_heat_covariance_K_m_s": 4.317977649787511e-11,
+              "absolute_heat_mode_throughput_K_m_s": 4.521737383909315e-11,
+              "heat_cospectrum_l1_error_bound_K_m_s": 1.6144589825686626e-12,
+              "heat_throughput_status": "BOUNDED_NOT_MODEWISE_CONVERGED"
+            },
+            "0_zonal": {
+              "w_variance_m2_s2": 3.047057681671545e-08,
+              "w_power_l1_error_bound_m2_s2": 2.7886136319506778e-15,
+              "signed_heat_covariance_K_m_s": 4.3109420714164135e-11,
+              "absolute_heat_mode_throughput_K_m_s": 4.5136685299565286e-11,
+              "heat_cospectrum_l1_error_bound_K_m_s": 3.178583948258776e-15,
+              "heat_throughput_status": "BOUNDED_NOT_MODEWISE_CONVERGED"
+            },
+            "1_plane": {
+              "w_variance_m2_s2": 3.0000684710783105e-09,
+              "w_power_l1_error_bound_m2_s2": 2.7646236449377724e-16,
+              "signed_heat_covariance_K_m_s": 1.835912407080137e-13,
+              "absolute_heat_mode_throughput_K_m_s": 1.9164983664016745e-12,
+              "heat_cospectrum_l1_error_bound_K_m_s": 3.89059312536999e-10,
+              "heat_throughput_status": "INDETERMINATE_PRECISION_FLOOR"
+            },
+            "1_zonal": {
+              "w_variance_m2_s2": 2.9940328154301915e-09,
+              "w_power_l1_error_bound_m2_s2": 2.7380018810261296e-16,
+              "signed_heat_covariance_K_m_s": 1.83442454347973e-13,
+              "absolute_heat_mode_throughput_K_m_s": 1.9118221559757533e-12,
+              "heat_cospectrum_l1_error_bound_K_m_s": 3.8816733136194503e-10,
+              "heat_throughput_status": "INDETERMINATE_PRECISION_FLOOR"
+            },
+            "2_plane": {
+              "w_variance_m2_s2": 2.0724327947495652e-13,
+              "w_power_l1_error_bound_m2_s2": 1.9072885603811874e-20,
+              "signed_heat_covariance_K_m_s": 0.0,
+              "absolute_heat_mode_throughput_K_m_s": 0.0,
+              "heat_cospectrum_l1_error_bound_K_m_s": 3.264451825903861e-12,
+              "heat_throughput_status": "INDETERMINATE_PRECISION_FLOOR"
+            },
+            "2_zonal": {
+              "w_variance_m2_s2": 2.0629774504983795e-13,
+              "w_power_l1_error_bound_m2_s2": 1.889928560559436e-20,
+              "signed_heat_covariance_K_m_s": 0.0,
+              "absolute_heat_mode_throughput_K_m_s": 0.0,
+              "heat_cospectrum_l1_error_bound_K_m_s": 3.252389812483226e-12,
+              "heat_throughput_status": "INDETERMINATE_PRECISION_FLOOR"
+            }
+          }
+        },
+        "startup_excluded_12_48h": {
+          "start_seconds": 43200.0,
+          "end_seconds": 172800.0,
+          "planes": {
+            "0_plane": {
+              "w_variance_m2_s2": 2.334986626368363,
+              "w_power_l1_error_bound_m2_s2": 2.151999693622707e-07,
+              "signed_heat_covariance_K_m_s": 0.0033288584266210237,
+              "absolute_heat_mode_throughput_K_m_s": 0.00341671575594542,
+              "heat_cospectrum_l1_error_bound_K_m_s": 1.400694497837442e-08,
+              "heat_throughput_status": "BOUNDED_NOT_MODEWISE_CONVERGED"
+            },
+            "0_zonal": {
+              "w_variance_m2_s2": 2.3256848534609853,
+              "w_power_l1_error_bound_m2_s2": 2.1345155038921088e-07,
+              "signed_heat_covariance_K_m_s": 0.0033176289652162203,
+              "absolute_heat_mode_throughput_K_m_s": 0.003404777223048777,
+              "heat_cospectrum_l1_error_bound_K_m_s": 2.4392949869257383e-10,
+              "heat_throughput_status": "BOUNDED_NOT_MODEWISE_CONVERGED"
+            },
+            "1_plane": {
+              "w_variance_m2_s2": 1.6094745726788464,
+              "w_power_l1_error_bound_m2_s2": 1.490120682637214e-07,
+              "signed_heat_covariance_K_m_s": 0.0013317496677873828,
+              "absolute_heat_mode_throughput_K_m_s": 0.0015491483473495334,
+              "heat_cospectrum_l1_error_bound_K_m_s": 8.453478635428761e-06,
+              "heat_throughput_status": "BOUNDED_NOT_MODEWISE_CONVERGED"
+            },
+            "1_zonal": {
+              "w_variance_m2_s2": 1.6043127550998093,
+              "w_power_l1_error_bound_m2_s2": 1.4696028579434754e-07,
+              "signed_heat_covariance_K_m_s": 0.001327385631505276,
+              "absolute_heat_mode_throughput_K_m_s": 0.0015424509365291224,
+              "heat_cospectrum_l1_error_bound_K_m_s": 8.42852077255153e-06,
+              "heat_throughput_status": "BOUNDED_NOT_MODEWISE_CONVERGED"
+            },
+            "2_plane": {
+              "w_variance_m2_s2": 3.2532147916309985e-05,
+              "w_power_l1_error_bound_m2_s2": 3.0433055334454823e-12,
+              "signed_heat_covariance_K_m_s": -5.983360293223833e-07,
+              "absolute_heat_mode_throughput_K_m_s": 4.2648274744968566e-06,
+              "heat_cospectrum_l1_error_bound_K_m_s": 3.6379615971517216e-08,
+              "heat_throughput_status": "BOUNDED_NOT_MODEWISE_CONVERGED"
+            },
+            "2_zonal": {
+              "w_variance_m2_s2": 3.2419052739463664e-05,
+              "w_power_l1_error_bound_m2_s2": 2.968898214188668e-12,
+              "signed_heat_covariance_K_m_s": -5.875157977454755e-07,
+              "absolute_heat_mode_throughput_K_m_s": 4.218391095624506e-06,
+              "heat_cospectrum_l1_error_bound_K_m_s": 3.626145028079374e-08,
+              "heat_throughput_status": "BOUNDED_NOT_MODEWISE_CONVERGED"
+            }
+          }
+        }
+      },
+      "heat_cospectrum_precision_indeterminate_records": 70,
+      "total_plane_demeaning_records": 294,
+      "profile_checks": "WITHIN_DERIVED_QUANTIZATION_PLUS_ARITHMETIC_BOUNDS"
+    },
+    "boundary162": {
+      "case": "boundary162",
+      "label": "Boundary sensitivity",
+      "source": "data/ferrel2026-gpu-v1/ferrel2026_boundary162",
+      "grid": [
+        512,
+        512,
+        96
+      ],
+      "dx_m": 23437.5,
+      "dy_m": 23437.5,
+      "dz_m": 1250.0,
+      "metadata_sha256": "124ad67e408e18b413b26bdfa818270d37ef4f7ec00d44929d1fae99bd4dd7ee",
+      "driver_sha256": "f6544588517ebf00e12b23cc6335eb1686c30bc0e945faa4a3b60c48bf53f5ef",
+      "configuration_sha256": "731663fe149d3799499df19b78a33f4d956d699d14c2cf9e574b05dc56a761ed",
+      "frames": 49,
+      "end_seconds": 172800.0,
+      "heights_m": [
+        19375.0,
+        59375.0,
+        99375.0
+      ],
+      "nominal_regime": {
+        "active_depth_assumption_m": 80000.0,
+        "active_depth_basis": "configured neutral-layer cap height; not a measured mixing depth",
+        "lower_Pr": 1.0,
+        "cap_nominal_Pr": 1000.0,
+        "local_Ek_nu_over_f_H2": 0.0005423543630764217,
+        "bottom_buoyancy_flux_analogue_m2_s3": 0.0005676214273278373,
+        "flux_Rayleigh_analogue": 23249773.663348217,
+        "flux_velocity_analogue_m_s": 3.5676555938553243,
+        "flux_Rossby_analogue": 0.154794686182515,
+        "reference_density_log_contrast_to_cap": 1.2767337326015806,
+        "density_reference_height_m": 625.0,
+        "cap_density_height_m": 79375.0,
+        "scope": "Explicit-coefficient, local-f nominal analogues only; tapered diffusivity, anelasticity, boundaries and numerical diffusion prevent direct RBC criticality claims"
+      },
+      "timestep": {
+        "scope": "sampled actual SSPRK3 clock increments, not continuous limiter telemetry",
+        "sample_count": 29,
+        "configured_cap_seconds": 30.0,
+        "minimum_sampled_dt_seconds": 14.463329797261395,
+        "median_sampled_dt_seconds": 16.467543153150473,
+        "maximum_sampled_dt_seconds": 30.0,
+        "native_diffusive_limit_configured": false,
+        "native_internal_wave_limit_configured": false,
+        "warning": "Current wizard controls advection and max_dt; no inference of the active limiter from these samples alone."
+      },
+      "windows": {
+        "early_0_6h": {
+          "start_seconds": 0.0,
+          "end_seconds": 21600.0,
+          "planes": {
+            "0_plane": {
+              "w_variance_m2_s2": 3.051586122989648e-08,
+              "w_power_l1_error_bound_m2_s2": 2.8223478061675147e-15,
+              "signed_heat_covariance_K_m_s": 4.317976507103907e-11,
+              "absolute_heat_mode_throughput_K_m_s": 4.521737013026685e-11,
+              "heat_cospectrum_l1_error_bound_K_m_s": 1.6144589302623938e-12,
+              "heat_throughput_status": "BOUNDED_NOT_MODEWISE_CONVERGED"
+            },
+            "0_zonal": {
+              "w_variance_m2_s2": 3.047057365267168e-08,
+              "w_power_l1_error_bound_m2_s2": 2.788615311888337e-15,
+              "signed_heat_covariance_K_m_s": 4.3109409368874e-11,
+              "absolute_heat_mode_throughput_K_m_s": 4.513668159373264e-11,
+              "heat_cospectrum_l1_error_bound_K_m_s": 3.178583845578216e-15,
+              "heat_throughput_status": "BOUNDED_NOT_MODEWISE_CONVERGED"
+            },
+            "1_plane": {
+              "w_variance_m2_s2": 3.0000485866292054e-09,
+              "w_power_l1_error_bound_m2_s2": 2.764609521243079e-16,
+              "signed_heat_covariance_K_m_s": 0.0,
+              "absolute_heat_mode_throughput_K_m_s": 0.0,
+              "heat_cospectrum_l1_error_bound_K_m_s": 3.890581166104276e-10,
+              "heat_throughput_status": "INDETERMINATE_PRECISION_FLOOR"
+            },
+            "1_zonal": {
+              "w_variance_m2_s2": 2.9940129932108343e-09,
+              "w_power_l1_error_bound_m2_s2": 2.7379876691127287e-16,
+              "signed_heat_covariance_K_m_s": 0.0,
+              "absolute_heat_mode_throughput_K_m_s": 0.0,
+              "heat_cospectrum_l1_error_bound_K_m_s": 3.881661395991169e-10,
+              "heat_throughput_status": "INDETERMINATE_PRECISION_FLOOR"
+            },
+            "2_plane": {
+              "w_variance_m2_s2": 2.1960861690560904e-13,
+              "w_power_l1_error_bound_m2_s2": 2.020602673202724e-20,
+              "signed_heat_covariance_K_m_s": 0.0,
+              "absolute_heat_mode_throughput_K_m_s": 0.0,
+              "heat_cospectrum_l1_error_bound_K_m_s": 3.364385991409059e-12,
+              "heat_throughput_status": "INDETERMINATE_PRECISION_FLOOR"
+            },
+            "2_zonal": {
+              "w_variance_m2_s2": 2.1860903725702197e-13,
+              "w_power_l1_error_bound_m2_s2": 2.002274869065691e-20,
+              "signed_heat_covariance_K_m_s": 0.0,
+              "absolute_heat_mode_throughput_K_m_s": 0.0,
+              "heat_cospectrum_l1_error_bound_K_m_s": 3.351978891335055e-12,
+              "heat_throughput_status": "INDETERMINATE_PRECISION_FLOOR"
+            }
+          }
+        },
+        "startup_excluded_12_48h": {
+          "start_seconds": 43200.0,
+          "end_seconds": 172800.0,
+          "planes": {
+            "0_plane": {
+              "w_variance_m2_s2": 2.3349943936262427,
+              "w_power_l1_error_bound_m2_s2": 2.1520024642307786e-07,
+              "signed_heat_covariance_K_m_s": 0.0033288692441409548,
+              "absolute_heat_mode_throughput_K_m_s": 0.003416728609031125,
+              "heat_cospectrum_l1_error_bound_K_m_s": 1.4006984045325725e-08,
+              "heat_throughput_status": "BOUNDED_NOT_MODEWISE_CONVERGED"
+            },
+            "0_zonal": {
+              "w_variance_m2_s2": 2.325692390230519,
+              "w_power_l1_error_bound_m2_s2": 2.1345193163143854e-07,
+              "signed_heat_covariance_K_m_s": 0.0033176396894702685,
+              "absolute_heat_mode_throughput_K_m_s": 0.0034047899600617142,
+              "heat_cospectrum_l1_error_bound_K_m_s": 2.4393010398671177e-10,
+              "heat_throughput_status": "BOUNDED_NOT_MODEWISE_CONVERGED"
+            },
+            "1_plane": {
+              "w_variance_m2_s2": 1.609562812261311,
+              "w_power_l1_error_bound_m2_s2": 1.4901947729626865e-07,
+              "signed_heat_covariance_K_m_s": 0.0013318134866445396,
+              "absolute_heat_mode_throughput_K_m_s": 0.0015492383128452478,
+              "heat_cospectrum_l1_error_bound_K_m_s": 8.453732703881366e-06,
+              "heat_throughput_status": "BOUNDED_NOT_MODEWISE_CONVERGED"
+            },
+            "1_zonal": {
+              "w_variance_m2_s2": 1.6044004543072052,
+              "w_power_l1_error_bound_m2_s2": 1.469677750419871e-07,
+              "signed_heat_covariance_K_m_s": 0.0013274502653579227,
+              "absolute_heat_mode_throughput_K_m_s": 0.001542540936747033,
+              "heat_cospectrum_l1_error_bound_K_m_s": 8.428773384349136e-06,
+              "heat_throughput_status": "BOUNDED_NOT_MODEWISE_CONVERGED"
+            },
+            "2_plane": {
+              "w_variance_m2_s2": 3.4228930183442375e-05,
+              "w_power_l1_error_bound_m2_s2": 3.20124716523278e-12,
+              "signed_heat_covariance_K_m_s": -4.986304797471941e-07,
+              "absolute_heat_mode_throughput_K_m_s": 4.488907386897283e-06,
+              "heat_cospectrum_l1_error_bound_K_m_s": 3.73277126949686e-08,
+              "heat_throughput_status": "BOUNDED_NOT_MODEWISE_CONVERGED"
+            },
+            "2_zonal": {
+              "w_variance_m2_s2": 3.410988607196302e-05,
+              "w_power_l1_error_bound_m2_s2": 3.1239908634739203e-12,
+              "signed_heat_covariance_K_m_s": -4.902065925111836e-07,
+              "absolute_heat_mode_throughput_K_m_s": 4.440574537964167e-06,
+              "heat_cospectrum_l1_error_bound_K_m_s": 3.720693564664534e-08,
+              "heat_throughput_status": "BOUNDED_NOT_MODEWISE_CONVERGED"
+            }
+          }
+        }
+      },
+      "heat_cospectrum_precision_indeterminate_records": 70,
+      "total_plane_demeaning_records": 294,
+      "profile_checks": "WITHIN_DERIVED_QUANTIZATION_PLUS_ARITHMETIC_BOUNDS"
+    },
+    "axis0": {
+      "case": "axis0",
+      "label": "Axisymmetric unheated",
+      "source": "data/ferrel2026-preflight-gpu-v1/pilot512_axis0",
+      "grid": [
+        512,
+        512,
+        96
+      ],
+      "dx_m": 23437.5,
+      "dy_m": 23437.5,
+      "dz_m": 1250.0,
+      "metadata_sha256": "f5343c7099c49885c959ca7e4f33de4bff61ef376f746f24c4978af31aab20fc",
+      "driver_sha256": "f6544588517ebf00e12b23cc6335eb1686c30bc0e945faa4a3b60c48bf53f5ef",
+      "configuration_sha256": "cc6b70b6cbed154b2529c11095caadbd978255ee21969fdefac9948563ed0e62",
+      "frames": 7,
+      "end_seconds": 21600.0,
+      "heights_m": [
+        19375.0,
+        59375.0,
+        99375.0
+      ],
+      "nominal_regime": {
+        "active_depth_assumption_m": 80000.0,
+        "active_depth_basis": "configured neutral-layer cap height; not a measured mixing depth",
+        "lower_Pr": 1.0,
+        "cap_nominal_Pr": 1000.0,
+        "local_Ek_nu_over_f_H2": 0.0005423543630764217,
+        "bottom_buoyancy_flux_analogue_m2_s3": 0.0,
+        "flux_Rayleigh_analogue": 0.0,
+        "flux_velocity_analogue_m_s": 0.0,
+        "flux_Rossby_analogue": 0.0,
+        "reference_density_log_contrast_to_cap": 1.2767337326015806,
+        "density_reference_height_m": 625.0,
+        "cap_density_height_m": 79375.0,
+        "scope": "Explicit-coefficient, local-f nominal analogues only; tapered diffusivity, anelasticity, boundaries and numerical diffusion prevent direct RBC criticality claims"
+      },
+      "timestep": {
+        "scope": "sampled actual SSPRK3 clock increments, not continuous limiter telemetry",
+        "sample_count": 11,
+        "configured_cap_seconds": 30.0,
+        "minimum_sampled_dt_seconds": 1.0999999999999996,
+        "median_sampled_dt_seconds": 1.1,
+        "maximum_sampled_dt_seconds": 30.0,
+        "native_diffusive_limit_configured": false,
+        "native_internal_wave_limit_configured": false,
+        "warning": "Current wizard controls advection and max_dt; no inference of the active limiter from these samples alone."
+      },
+      "windows": {
+        "early_0_6h": {
+          "start_seconds": 0.0,
+          "end_seconds": 21600.0,
+          "planes": {
+            "0_plane": {
+              "w_variance_m2_s2": 8.3077213253245845e-22,
+              "w_power_l1_error_bound_m2_s2": 7.789871498869902e-29,
+              "signed_heat_covariance_K_m_s": 1.1357753949646773e-24,
+              "absolute_heat_mode_throughput_K_m_s": 1.3036097436269083e-24,
+              "heat_cospectrum_l1_error_bound_K_m_s": 2.180177125905933e-19,
+              "heat_throughput_status": "INDETERMINATE_PRECISION_FLOOR"
+            },
+            "0_zonal": {
+              "w_variance_m2_s2": 0.0,
+              "w_power_l1_error_bound_m2_s2": 1.668360487951381e-36,
+              "signed_heat_covariance_K_m_s": 0.0,
+              "absolute_heat_mode_throughput_K_m_s": 0.0,
+              "heat_cospectrum_l1_error_bound_K_m_s": 1.9203343941419512e-29,
+              "heat_throughput_status": "INDETERMINATE_PRECISION_FLOOR"
+            },
+            "1_plane": {
+              "w_variance_m2_s2": 7.085229235073864e-22,
+              "w_power_l1_error_bound_m2_s2": 6.591249098230961e-29,
+              "signed_heat_covariance_K_m_s": 0.0,
+              "absolute_heat_mode_throughput_K_m_s": 0.0,
+              "heat_cospectrum_l1_error_bound_K_m_s": 1.5869618462197723e-16,
+              "heat_throughput_status": "INDETERMINATE_PRECISION_FLOOR"
+            },
+            "1_zonal": {
+              "w_variance_m2_s2": 0.0,
+              "w_power_l1_error_bound_m2_s2": 1.4012130003042184e-36,
+              "signed_heat_covariance_K_m_s": 0.0,
+              "absolute_heat_mode_throughput_K_m_s": 0.0,
+              "heat_cospectrum_l1_error_bound_K_m_s": 7.045891573608583e-24,
+              "heat_throughput_status": "INDETERMINATE_PRECISION_FLOOR"
+            },
+            "2_plane": {
+              "w_variance_m2_s2": 5.761362476640291e-25,
+              "w_power_l1_error_bound_m2_s2": 5.242641059498357e-32,
+              "signed_heat_covariance_K_m_s": 0.0,
+              "absolute_heat_mode_throughput_K_m_s": 0.0,
+              "heat_cospectrum_l1_error_bound_K_m_s": 5.3887396129028324e-18,
+              "heat_throughput_status": "INDETERMINATE_PRECISION_FLOOR"
+            },
+            "2_zonal": {
+              "w_variance_m2_s2": 0.0,
+              "w_power_l1_error_bound_m2_s2": 1.0879435124472456e-39,
+              "signed_heat_covariance_K_m_s": 0.0,
+              "absolute_heat_mode_throughput_K_m_s": 0.0,
+              "heat_cospectrum_l1_error_bound_K_m_s": 2.3420920292791713e-25,
+              "heat_throughput_status": "INDETERMINATE_PRECISION_FLOOR"
+            }
+          }
+        }
+      },
+      "heat_cospectrum_precision_indeterminate_records": 42,
+      "total_plane_demeaning_records": 42,
+      "profile_checks": "WITHIN_DERIVED_QUANTIZATION_PLUS_ARITHMETIC_BOUNDS"
+    },
+    "axis162": {
+      "case": "axis162",
+      "label": "Axisymmetric heated",
+      "source": "data/ferrel2026-preflight-gpu-v1/pilot512_axis162",
+      "grid": [
+        512,
+        512,
+        96
+      ],
+      "dx_m": 23437.5,
+      "dy_m": 23437.5,
+      "dz_m": 1250.0,
+      "metadata_sha256": "3d9bf68575cb1799b848b43517d8a5506ea322e58dfe9635d8368f5b43e2f86b",
+      "driver_sha256": "f6544588517ebf00e12b23cc6335eb1686c30bc0e945faa4a3b60c48bf53f5ef",
+      "configuration_sha256": "8341bd56840cf652e8119f9402a7cf6b17fe603c4b5a270f9cb4bb1238a49a22",
+      "frames": 7,
+      "end_seconds": 21600.0,
+      "heights_m": [
+        19375.0,
+        59375.0,
+        99375.0
+      ],
+      "nominal_regime": {
+        "active_depth_assumption_m": 80000.0,
+        "active_depth_basis": "configured neutral-layer cap height; not a measured mixing depth",
+        "lower_Pr": 1.0,
+        "cap_nominal_Pr": 1000.0,
+        "local_Ek_nu_over_f_H2": 0.0005423543630764217,
+        "bottom_buoyancy_flux_analogue_m2_s3": 0.0005676214273278373,
+        "flux_Rayleigh_analogue": 23249773.663348217,
+        "flux_velocity_analogue_m_s": 3.5676555938553243,
+        "flux_Rossby_analogue": 0.154794686182515,
+        "reference_density_log_contrast_to_cap": 1.2767337326015806,
+        "density_reference_height_m": 625.0,
+        "cap_density_height_m": 79375.0,
+        "scope": "Explicit-coefficient, local-f nominal analogues only; tapered diffusivity, anelasticity, boundaries and numerical diffusion prevent direct RBC criticality claims"
+      },
+      "timestep": {
+        "scope": "sampled actual SSPRK3 clock increments, not continuous limiter telemetry",
+        "sample_count": 11,
+        "configured_cap_seconds": 30.0,
+        "minimum_sampled_dt_seconds": 1.0999999999999996,
+        "median_sampled_dt_seconds": 1.1,
+        "maximum_sampled_dt_seconds": 30.0,
+        "native_diffusive_limit_configured": false,
+        "native_internal_wave_limit_configured": false,
+        "warning": "Current wizard controls advection and max_dt; no inference of the active limiter from these samples alone."
+      },
+      "windows": {
+        "early_0_6h": {
+          "start_seconds": 0.0,
+          "end_seconds": 21600.0,
+          "planes": {
+            "0_plane": {
+              "w_variance_m2_s2": 4.831174404193582e-22,
+              "w_power_l1_error_bound_m2_s2": 4.392589705774337e-29,
+              "signed_heat_covariance_K_m_s": 6.391822630245839e-25,
+              "absolute_heat_mode_throughput_K_m_s": 8.38795225893465e-25,
+              "heat_cospectrum_l1_error_bound_K_m_s": 1.7154426874275254e-19,
+              "heat_throughput_status": "INDETERMINATE_PRECISION_FLOOR"
+            },
+            "0_zonal": {
+              "w_variance_m2_s2": 0.0,
+              "w_power_l1_error_bound_m2_s2": 9.11084007911929e-37,
+              "signed_heat_covariance_K_m_s": 0.0,
+              "absolute_heat_mode_throughput_K_m_s": 0.0,
+              "heat_cospectrum_l1_error_bound_K_m_s": 1.4728708778890513e-29,
+              "heat_throughput_status": "INDETERMINATE_PRECISION_FLOOR"
+            },
+            "1_plane": {
+              "w_variance_m2_s2": 4.1523764654953175e-22,
+              "w_power_l1_error_bound_m2_s2": 3.7715742215811605e-29,
+              "signed_heat_covariance_K_m_s": 0.0,
+              "absolute_heat_mode_throughput_K_m_s": 0.0,
+              "heat_cospectrum_l1_error_bound_K_m_s": 1.285412300808246e-16,
+              "heat_throughput_status": "INDETERMINATE_PRECISION_FLOOR"
+            },
+            "1_zonal": {
+              "w_variance_m2_s2": 0.0,
+              "w_power_l1_error_bound_m2_s2": 7.80356046090964e-37,
+              "signed_heat_covariance_K_m_s": 0.0,
+              "absolute_heat_mode_throughput_K_m_s": 0.0,
+              "heat_cospectrum_l1_error_bound_K_m_s": 5.569733871134208e-24,
+              "heat_throughput_status": "INDETERMINATE_PRECISION_FLOOR"
+            },
+            "2_plane": {
+              "w_variance_m2_s2": 5.648863535553623e-25,
+              "w_power_l1_error_bound_m2_s2": 5.20753531949219e-32,
+              "signed_heat_covariance_K_m_s": 0.0,
+              "absolute_heat_mode_throughput_K_m_s": 0.0,
+              "heat_cospectrum_l1_error_bound_K_m_s": 5.3384528197170625e-18,
+              "heat_throughput_status": "INDETERMINATE_PRECISION_FLOOR"
+            },
+            "2_zonal": {
+              "w_variance_m2_s2": 0.0,
+              "w_power_l1_error_bound_m2_s2": 1.095867733209824e-39,
+              "signed_heat_covariance_K_m_s": 0.0,
+              "absolute_heat_mode_throughput_K_m_s": 0.0,
+              "heat_cospectrum_l1_error_bound_K_m_s": 2.3493713584139487e-25,
+              "heat_throughput_status": "INDETERMINATE_PRECISION_FLOOR"
+            }
+          }
+        }
+      },
+      "heat_cospectrum_precision_indeterminate_records": 42,
+      "total_plane_demeaning_records": 42,
+      "profile_checks": "WITHIN_DERIVED_QUANTIZATION_PLUS_ARITHMETIC_BOUNDS"
+    }
+  },
+  "fourier_convention": "Full complex fft2 norm=forward on periodic x and even y reflection to2Ly. ky increments pi/Ly. No mode filtering. Radial shells of width min(2pi/Lx,pi/Ly).",
+  "precision_convention": "Half-ULP Float32 input bounds, contractive L2 mean removal, Cauchy/Parseval L1 spectral error bounds; Float64 arithmetic allowances reported separately. Matching Float64 theta used at the first actual video plane.",
+  "arithmetic_assumption": "Float64 FFT is numerically stable; gamma_(32*N_extended) is a conservative arithmetic-model allowance, not certified interval arithmetic for arbitrary FFT implementations/twiddles. Quantization and arithmetic budgets remain separate.",
+  "interpretation_limits": [
+    "Three horizontal planes cannot establish all-depth, vertical or bottom-boundary-layer resolution.",
+    "1024\u00b2\u00d796 is horizontal refinement only. Six-hour comparison covers startup, not developed48h convection.",
+    "First12h exclusion is a convention, not a measured equilibration time.",
+    "Hourly snapshots cannot resolve the reference cap buoyancy-wave period; no temporal wave/convection classification is attempted.",
+    "Positive instantaneous heat cospectrum alone does not identify sustained convection; examine temporal averages, profile transport and matched controls.",
+    "Tail fractions and peak scales are screens, not numerical convergence or physical-fidelity proofs. Uncertainty is global/subset bounded, not independent mode errors.",
+    "Nominal regime parameters omit numerical diffusion and do not supply a calibrated Boussinesq onset threshold.",
+    "No raw model fields are exported or modified; these compact diagnostics remain on Unity until publication review."
+  ]
+}

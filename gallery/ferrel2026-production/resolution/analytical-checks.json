@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "checks": [
+    "even-wall single Fourier mode variance and physical wavelength",
+    "plane/zonal projection and positive/negative covariance signs",
+    "weak absolute Float32 theta correctly labeled indeterminate",
+    "derived precision envelope accepts valid weak profile and rejects inconsistent heat flux"
+  ]
+}
