@@ -1,0 +1,84 @@
+{
+  "case": "convection2026_f0",
+  "label": "85 N unheated pilot | completed days 0-2",
+  "layout": "2 rows, three depth columns",
+  "row_fields": [
+    "vorticity_slices",
+    "tracer_slices"
+  ],
+  "height_m": [
+    19375.0,
+    59375.0,
+    99375.0
+  ],
+  "times_seconds": [
+    0.0,
+    10800.0,
+    21600.0,
+    32400.0,
+    43200.0,
+    54000.0,
+    64800.0,
+    75600.0,
+    86400.0,
+    97200.0,
+    108000.0,
+    118800.0,
+    129600.0,
+    140400.0,
+    151200.0,
+    162000.0,
+    172800.0
+  ],
+  "fps": 2,
+  "dpi": 100,
+  "fixed_color_limits": [
+    [
+      [
+        -0.3105272948741913,
+        0.3105272948741913
+      ],
+      [
+        -0.3105272948741913,
+        0.3105272948741913
+      ],
+      [
+        -0.3105272948741913,
+        0.3105272948741913
+      ]
+    ],
+    [
+      [
+        0.0,
+        1.0
+      ],
+      [
+        0.0,
+        1.0
+      ],
+      [
+        0.0,
+        1.0
+      ]
+    ]
+  ],
+  "vorticity_color_normalization": {
+    "type": "asinh",
+    "linear_width": 0.1,
+    "fixed_across_time": true,
+    "tick_labels": "physical vorticity divided by f0"
+  },
+  "tracer_color_normalization": {
+    "type": "asinh",
+    "center": 0,
+    "linear_width": 0.01,
+    "fixed_across_time_and_depth": true,
+    "tick_labels": "physical concentration"
+  },
+  "temporal_interpolation": false,
+  "preview": false,
+  "note": "Concentration is a passive mass fraction, not cloud brightness. Vorticity scales differ by depth; concentration scale is shared. No field is clipped.",
+  "original_render_fps": 12,
+  "playback_retiming": "Same saved frames in order; no temporal interpolation.",
+  "final_mp4_sha256": "bce2049eef444817c828dcc97e98e90a21cb79003fbebb1f553db69586960e1c"
+}

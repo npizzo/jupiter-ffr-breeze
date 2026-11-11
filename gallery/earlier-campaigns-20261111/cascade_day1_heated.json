@@ -1,0 +1,74 @@
+{
+  "case": "day1_heated",
+  "label": "100-day campaign validation | Heating ON | first day",
+  "layout": "2 rows, three depth columns",
+  "row_fields": [
+    "vorticity_slices",
+    "tracer_slices"
+  ],
+  "height_m": [
+    19687.5,
+    59062.5,
+    100312.5
+  ],
+  "times_seconds": [
+    0.0,
+    10800.0,
+    21600.0,
+    32400.0,
+    43200.0,
+    54000.0,
+    64800.0,
+    75600.0,
+    86400.0
+  ],
+  "fps": 1,
+  "dpi": 100,
+  "fixed_color_limits": [
+    [
+      [
+        -0.9769561290740967,
+        0.9769561290740967
+      ],
+      [
+        -1.2326478958129883,
+        1.2326478958129883
+      ],
+      [
+        -0.3103192448616028,
+        0.3103192448616028
+      ]
+    ],
+    [
+      [
+        0.0,
+        1.0
+      ],
+      [
+        0.0,
+        1.0
+      ],
+      [
+        0.0,
+        1.0
+      ]
+    ]
+  ],
+  "vorticity_color_normalization": {
+    "type": "asinh",
+    "linear_width": 0.1,
+    "fixed_across_time": true,
+    "tick_labels": "physical vorticity divided by f0"
+  },
+  "tracer_color_normalization": {
+    "type": "asinh",
+    "center": 0,
+    "linear_width": 0.01,
+    "fixed_across_time_and_depth": true,
+    "tick_labels": "physical concentration"
+  },
+  "temporal_interpolation": false,
+  "preview": false,
+  "note": "Concentration is a passive mass fraction, not cloud brightness. Vorticity scales differ by depth; concentration scale is shared. No field is clipped.",
+  "final_mp4_sha256": "42bbcbbc0ba57e66d10227d165ecb6cb6f6781685edb016b6a746fd9b9aacb3b"
+}

@@ -1,0 +1,49 @@
+{
+  "case": "large_grid_probe",
+  "label": "Large-domain validation | two hours",
+  "layout": "1 rows, three depth columns",
+  "row_fields": [
+    "vorticity_slices"
+  ],
+  "height_m": [
+    19687.5,
+    59062.5,
+    100312.5
+  ],
+  "times_seconds": [
+    0.0,
+    3600.0,
+    7200.0
+  ],
+  "fps": 1,
+  "dpi": 100,
+  "fixed_color_limits": [
+    [
+      [
+        -0.5391809940338135,
+        0.5391809940338135
+      ],
+      [
+        -0.8318473696708679,
+        0.8318473696708679
+      ],
+      [
+        -0.014808799140155315,
+        0.014808799140155315
+      ]
+    ]
+  ],
+  "vorticity_color_normalization": {
+    "type": "asinh",
+    "linear_width": 0.1,
+    "fixed_across_time": true,
+    "tick_labels": "physical vorticity divided by f0"
+  },
+  "tracer_color_normalization": null,
+  "temporal_interpolation": false,
+  "preview": false,
+  "note": "Concentration is a passive mass fraction, not cloud brightness. Vorticity scales differ by depth; concentration scale is shared. No field is clipped.",
+  "original_render_fps": 12,
+  "playback_retiming": "Same saved frames in order; no temporal interpolation.",
+  "final_mp4_sha256": "32db4a031abe6f42ed9e87f0a389556bee3d2625e4481c60044d0b836950e500"
+}

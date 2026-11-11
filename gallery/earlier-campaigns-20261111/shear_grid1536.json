@@ -1,0 +1,70 @@
+{
+  "case": "grid_probe_1536",
+  "label": "Shear validation | 1536\u00b2 grid | two hours",
+  "layout": "2 rows, three depth columns",
+  "row_fields": [
+    "vorticity_slices",
+    "tracer_slices"
+  ],
+  "height_m": [
+    19687.5,
+    59062.5,
+    100312.5
+  ],
+  "times_seconds": [
+    0.0,
+    3600.0,
+    7200.0
+  ],
+  "fps": 1,
+  "dpi": 100,
+  "fixed_color_limits": [
+    [
+      [
+        -0.7375704050064087,
+        0.7375704050064087
+      ],
+      [
+        -1.0180480480194092,
+        1.0180480480194092
+      ],
+      [
+        -0.058845147490501404,
+        0.058845147490501404
+      ]
+    ],
+    [
+      [
+        0.0,
+        1.0
+      ],
+      [
+        0.0,
+        1.0
+      ],
+      [
+        0.0,
+        1.0
+      ]
+    ]
+  ],
+  "vorticity_color_normalization": {
+    "type": "asinh",
+    "linear_width": 0.1,
+    "fixed_across_time": true,
+    "tick_labels": "physical vorticity divided by f0"
+  },
+  "tracer_color_normalization": {
+    "type": "asinh",
+    "center": 0,
+    "linear_width": 0.01,
+    "fixed_across_time_and_depth": true,
+    "tick_labels": "physical concentration"
+  },
+  "temporal_interpolation": false,
+  "preview": false,
+  "note": "Concentration is a passive mass fraction, not cloud brightness. Vorticity scales differ by depth; concentration scale is shared. No field is clipped.",
+  "original_render_fps": 12,
+  "playback_retiming": "Same saved frames in order; no temporal interpolation.",
+  "final_mp4_sha256": "27e8c3d03fdb6a7e51cd13f2c54ace568497ef4e7357bb549dac85f3dacf2f09"
+}

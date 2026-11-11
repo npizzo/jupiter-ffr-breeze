@@ -1,0 +1,151 @@
+{
+  "compute_location": "Unity",
+  "raw_fields_downloaded": false,
+  "status": "COMPLETE",
+  "movies": [
+    {
+      "name": "polar_unheated_2days",
+      "source": "data/convection2026-v1/convection2026_f0/segment_1",
+      "preview": false,
+      "start_day": 0.0,
+      "end_day": 2.0,
+      "frames": 17,
+      "duration_seconds": 8.5,
+      "full_decode_passed": true,
+      "sha256": "bce2049eef444817c828dcc97e98e90a21cb79003fbebb1f553db69586960e1c"
+    },
+    {
+      "name": "polar_pilot_f0",
+      "source": "data/convection2026-preflight-v1/pilot512_f0",
+      "preview": false,
+      "start_day": 0.0,
+      "end_day": 0.25,
+      "frames": 7,
+      "duration_seconds": 7.0,
+      "full_decode_passed": true,
+      "sha256": "f9d55a41f88470d73289c3ecf87483321ca01004df16b72b31bcd431916f2efd"
+    },
+    {
+      "name": "polar_pilot_f54",
+      "source": "data/convection2026-preflight-v1/pilot512_f54",
+      "preview": false,
+      "start_day": 0.0,
+      "end_day": 0.25,
+      "frames": 7,
+      "duration_seconds": 7.0,
+      "full_decode_passed": true,
+      "sha256": "f6c0cc18faf4264be7edb3d14f5cb3197fd1b06a1381b532b7f1889ab4b8a185"
+    },
+    {
+      "name": "polar_pilot_f162",
+      "source": "data/convection2026-preflight-v1/pilot512_f162",
+      "preview": false,
+      "start_day": 0.0,
+      "end_day": 0.25,
+      "frames": 7,
+      "duration_seconds": 7.0,
+      "full_decode_passed": true,
+      "sha256": "1b4a5bae37f38d759802e4be1fc1bf3585ba99d4d49c94938186d6321ed3bbb9"
+    },
+    {
+      "name": "shear_fine_partial",
+      "source": "data/shear20-v2/shear20_fine/segment_1",
+      "preview": true,
+      "start_day": 0.0,
+      "end_day": 9.5,
+      "frames": 77,
+      "duration_seconds": 12.83,
+      "full_decode_passed": true,
+      "sha256": "fc6445b3306dfa14f209f81a89bfe4e1989dcdd72861817690713c0955428cce"
+    },
+    {
+      "name": "moist_rest",
+      "source": "data/moist-validation-v3/moist_rest",
+      "preview": false,
+      "start_day": 0.0,
+      "end_day": 0.041666666666666664,
+      "frames": 31,
+      "duration_seconds": 7.75,
+      "full_decode_passed": true,
+      "sha256": "913291dec34c2ee1a67069bf47a14bcb3c740479bb242b615c9b15f9a26fb93f"
+    },
+    {
+      "name": "shear_grid1024",
+      "source": "data/shear20-preflight-v4/grid_probe_1024",
+      "preview": false,
+      "start_day": 0.0,
+      "end_day": 0.08333333333333333,
+      "frames": 3,
+      "duration_seconds": 3.0,
+      "full_decode_passed": true,
+      "sha256": "60004a38fc3b70a1908eaeb3bb83ff9599c0cd98113bcce427d804f3ed8e3602"
+    },
+    {
+      "name": "shear_grid1536",
+      "source": "data/shear20-preflight-v4/grid_probe_1536",
+      "preview": false,
+      "start_day": 0.0,
+      "end_day": 0.08333333333333333,
+      "frames": 3,
+      "duration_seconds": 3.0,
+      "full_decode_passed": true,
+      "sha256": "27e8c3d03fdb6a7e51cd13f2c54ace568497ef4e7357bb549dac85f3dacf2f09"
+    },
+    {
+      "name": "shear_balanced_rest",
+      "source": "data/shear20-preflight-v4/balanced_rest",
+      "preview": false,
+      "start_day": 0.0,
+      "end_day": 1.0,
+      "frames": 25,
+      "duration_seconds": 8.33,
+      "full_decode_passed": true,
+      "sha256": "eb2ed3550785862edd2e4b7ad069ec04a35e1bf9c65933fc6b7ed73a8541445c"
+    },
+    {
+      "name": "shear_uniform_tracer",
+      "source": "data/shear20-preflight-v4/passivity_uniform",
+      "preview": false,
+      "start_day": 0.0,
+      "end_day": 0.041666666666666664,
+      "frames": 7,
+      "duration_seconds": 7.0,
+      "full_decode_passed": true,
+      "sha256": "89074a0a50209af1d626ab604929b59d8c50752ea57dc95290f7238f01e1fd66"
+    },
+    {
+      "name": "large_grid_probe",
+      "source": "data/large40-preflight-v2/large_grid_probe",
+      "preview": false,
+      "start_day": 0.0,
+      "end_day": 0.08333333333333333,
+      "frames": 3,
+      "duration_seconds": 3.0,
+      "full_decode_passed": true,
+      "sha256": "32db4a031abe6f42ed9e87f0a389556bee3d2625e4481c60044d0b836950e500"
+    },
+    {
+      "name": "cascade_day1_heated",
+      "source": "data/cascade100-preflight-v1/day1_heated",
+      "preview": false,
+      "start_day": 0,
+      "end_day": 1,
+      "frames": 9,
+      "duration_seconds": 9.0,
+      "full_decode_passed": true,
+      "sha256": "42bbcbbc0ba57e66d10227d165ecb6cb6f6781685edb016b6a746fd9b9aacb3b"
+    },
+    {
+      "name": "cascade_day1_control",
+      "source": "data/cascade100-preflight-v1/day1_control",
+      "preview": false,
+      "start_day": 0,
+      "end_day": 1,
+      "frames": 9,
+      "duration_seconds": 9.0,
+      "full_decode_passed": true,
+      "sha256": "6c32c8659150f2a15d625997be92e89be104903d1affc36a14c3c7dad110795c"
+    }
+  ],
+  "source_script_sha256": "bced3834c81916e655f108161b2206005618ec2f345d00eea96e05d17474f298"
+}
