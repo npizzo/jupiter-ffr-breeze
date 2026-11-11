@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "tests": [
+    "exact half-open radial boundaries",
+    "constructed two-sign constant annuli",
+    "physical-threshold/normalized-moment equivalence",
+    "constant positive field moments",
+    "two-dimensional constant annulus",
+    "rotation and sign reversal",
+    "absent sign",
+    "zero field",
+    "empty masks",
+    "partition/cumulative integral and weighted-moment identities"
+  ],
+  "identity_relative_tolerance": 2.1316282072803006e-14,
+  "max_scaled_additive_residual": 1.6512249487525933e-16
+}
