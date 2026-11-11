@@ -57,6 +57,10 @@ sponge and global thermal feedback remain idealizations. It is not yet a
   Audit **1403720** passed: the observed streamfunction difference is explained
   by the integrated native mass-flux difference to roundoff. All original
   physical-field restart tolerances passed and remain unchanged.
+  The current [revision 3](ferrel2026-v3.md) passed all 104 initialization checks
+  in **1405388** and the full CPU closure/restart/axisymmetric checks in
+  **1405389**. GPU quick **1405390** and full-grid pilot **1405391** gate fine
+  pilot **1405392** and the three 48-hour cases **1405393–1405395**.
 - The preliminary γ-plane chain stopped at an overly strict bitwise FFT equality
   check; its dependent jobs were automatically cancelled before any science run.
   The isolated replacement uses a roundoff tolerance and the recovered reference
@@ -67,8 +71,8 @@ sponge and global thermal feedback remain idealizations. It is not yet a
 The [machine-readable launch record](new-campaigns-launch.json) gives every
 dependency and the latest recorded validation status. Current output roots are
 `data/gamma2026-v3`, `data/convection2026-v1`,
-`data/convection2026-preflight-v1`, `data/ferrel2026-v2` and
-`data/ferrel2026-preflight-v2` on Unity. Failed gates stop their dependent
+`data/convection2026-preflight-v1`, `data/ferrel2026-v3` and
+`data/ferrel2026-preflight-v3` on Unity. Failed gates stop their dependent
 chain; they do not alter older experiments.
 
 ## Decisions after this batch

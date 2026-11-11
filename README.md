@@ -1,6 +1,6 @@
 # Jupiter folded filamentary regions with Breeze.jl
 
-**Current experiments:** the first 75-day polar γ-plane run is running after CPU/GPU checks passed. [Midlatitude Ferrel-mechanism validation](docs/ferrel2026.md) has passed native momentum/mass checks; its derived streamfunction restart comparison is being corrected using a measured error-propagation audit. [Current launch record](docs/new-campaigns-launch.json).
+**Current experiments:** the first 75-day polar γ-plane run is running after CPU/GPU checks passed. [Ferrel validation revision 3](docs/ferrel2026-v3.md) passed all 104 initialization checks and the full CPU momentum/mass, restart and axisymmetric tests. GPU checks gate automatic release of the matched 48-hour experiments. [Current launch record](docs/new-campaigns-launch.json).
 
 **Submitted November 10:** [Polar γ-plane reproduction and dry-convection pilots](docs/new-campaigns.md), with matched controls, resolution checks and Unity job records. These are staged experiments; no new science results are claimed yet.
 

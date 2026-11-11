@@ -1,11 +1,12 @@
 # Midlatitude circulation mechanism pilot
 
-**Current implementation:** [diagnostic revision 2](ferrel2026-v2.md), with
-unchanged physics and a mandatory CPU closure/restart check before GPU validation.
-The first GPU gate stopped before stepping on an unrefreshed pressure-halo
-diagnostic; its downstream jobs were cancelled automatically. See the
-[launch record](new-campaigns-launch.json) for the current jobs and validation.
-Submitting these experiments is not a claim of physical fidelity.
+**Current implementation:** [validation revision 3](ferrel2026-v3.md), with
+unchanged physics. All 104 initialization checks and the mandatory CPU
+momentum/mass closure, restart and axisymmetric controls passed on Unity.
+GPU validation is queued; the 48-hour cases release automatically only after
+the GPU and full-grid checks pass. See the [launch record](new-campaigns-launch.json)
+for current jobs and the preserved history of earlier diagnostic failures.
+These checks establish numerical readiness; physical fidelity remains to be assessed.
 
 This isolated dry anelastic Breeze campaign asks whether convection changes the eddy torque and overturning associated with weak midlatitude jets. It is a **48-hour transient mechanism and diagnostic test**, not a steady Ferrel-cell simulation, a reproduction of Jupiter's deep circulation, or evidence that its stacked cells have been explained. The preceding 85°N convection pilots establish numerical readiness; they do not establish midlatitude fidelity.
 
