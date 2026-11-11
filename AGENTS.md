@@ -13,3 +13,7 @@ The balanced-heating validation has an explicitly labeled contrast variant reque
 ## Compute and data locality
 
 Run simulations, diagnostics, field exports, analysis, movie rendering, and media validation on Unity. Do not download model fields or run these computations locally unless strictly necessary. Prefer publication directly from Unity when supported; transfer only the minimal finished publication assets when required by the available GitHub upload mechanism. Lightweight repository editing and browser playback checks are allowed as necessary publication work. This user instruction applies to all future runs and gallery updates.
+
+## Historical single-height exception
+
+On November 11, 2026, the user explicitly requested clearly labeled single-height movies for older campaigns that saved only one vorticity level. Show the actual saved height, state that other depths and tracer were not saved, and never fabricate missing panels. This exception applies to historical output only; retain the synchronized three-depth vorticity/tracer layout for new simulation output.

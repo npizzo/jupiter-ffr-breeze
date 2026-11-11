@@ -1,0 +1,15 @@
+{
+  "status": "COMPLETE",
+  "part": 0,
+  "cases": [
+    "data/controlled48-v1/controlled48_on_p020",
+    "data/controlled48-v2/controlled48_on_p020",
+    "data/convection120-v1/convection120_f030_cooled_h256_z64",
+    "data/convection48-v1/convection48_off_p020",
+    "data/neutral48-v1/neutral48_heated",
+    "data/regional20-v1/regional20_channel_beta",
+    "data/regional20-v1/regional48_channel_f_h512",
+    "data/strong48-v1/strong48_f100_cooled_h256",
+    "data/turbulence48-v1/turbulence48_heated"
+  ]
+}

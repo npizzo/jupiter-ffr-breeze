@@ -1,5 +1,7 @@
 [Watch the three completed 75-day gamma/control comparisons](https://npizzo.github.io/jupiter-ffr-breeze/#gamma75). These separate 2D reference runs have no convection or depth panels. [Review and refinement decision](gamma2026-ensemble1024/review.md).
 
+**Complete archive update:** [100-day heating/control movies](https://npizzo.github.io/jupiter-ffr-breeze/#cascade100) · [48-hour Ferrel movies](https://npizzo.github.io/jupiter-ffr-breeze/#ferrel48) · [Earlier three-depth runs](https://npizzo.github.io/jupiter-ffr-breeze/#earlier-archive) · [Historical single-height movies](https://npizzo.github.io/jupiter-ffr-breeze/#legacy-archive). All 58 newly published movie files were rendered and decoded on Unity; existing entries remain available.
+
 [Watch the new six-hour Ferrel pilots on the gallery landing page](https://npizzo.github.io/jupiter-ffr-breeze/#ferrel-pilot). These are numerical/initialization checks with underresolved weak vertical motion, not validated convection or Ferrel cells. [Scientific review](ferrel2026-pilot/review.md).
 
 # Output gallery

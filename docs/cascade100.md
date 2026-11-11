@@ -73,3 +73,8 @@ The validation gates passed and both matched cases completed days 0–50, includ
 [Watch the comparison and separate-case movies](https://npizzo.github.io/jupiter-ffr-breeze/#cascade50). Each contains all 401 real saved times, three depth columns, vorticity above passive tracer, and shared fixed color scales. [Publication records](../gallery/cascade100-first50/README.md) include scale definitions, source/configuration hashes and segment metadata. Scientific computation, rendering and media validation stayed on Unity.
 
 This publishes the first fifty days of the hundred-day campaign; it does not report later queue progress or infer inverse transfer from appearance. Earlier submission and queue observations above are retained as dated history.
+
+
+## Full 100-day publication — November 11, 2026
+
+Both matched cases completed all ten segments, through day 100. Final jobs 66992567 and 66992568 completed successfully, and all segment transfer diagnostics completed. [Watch the complete comparison and separate movies](https://npizzo.github.io/jupiter-ffr-breeze/#cascade100). Each contains all 801 three-hour outputs at three actual depths. [Publication and encoding provenance](../gallery/cascade100-full100/README.md). Earlier queue observations above are dated history, not current status.

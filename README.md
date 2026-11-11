@@ -1,14 +1,14 @@
 # Jupiter folded filamentary regions with Breeze.jl
 
-**Current experiments (November 11):** [Watch the completed six-hour Ferrel pilots](https://npizzo.github.io/jupiter-ffr-breeze/#ferrel-pilot), with synchronized three-depth vorticity and tracer. Numerical checks passed, but weak early vertical motion peaks near two grid cells; resolved convection and Ferrel cells are not established. Both 48-hour heated/unheated cases and all three 75-day gamma/control pairs completed. The Ferrel boundary case is running, its finer pilot remains queued, and the cancelled gamma refinement pair has been resubmitted on H100s behind an unchanged throughput gate. [Review, job IDs and next tests](docs/campaign-status-2026-11-11.md).
+**Published November 11:** [Watch the complete 0–100-day heated/unheated movies](https://npizzo.github.io/jupiter-ffr-breeze/#cascade100), [48-hour Ferrel comparisons](https://npizzo.github.io/jupiter-ffr-breeze/#ferrel48), and [earlier-campaign archive](https://npizzo.github.io/jupiter-ffr-breeze/#earlier-archive). The historical archive includes explicitly labeled single-height movies where other depths were not saved. All rendering and validation stayed on Unity. [Publication record](docs/gallery-publication-2026-11-11.md).
 
 **Gamma reference movies:** [All three 75-day polar/control comparisons are playable](https://npizzo.github.io/jupiter-ffr-breeze/#gamma75). The geometry effect is repeatable across these seeds, but the trap-edge ring limits interpretation. [Refinement-first review](gallery/gamma2026-ensemble1024/review.md).
 
 **Submitted November 10:** [Polar γ-plane reproduction and dry-convection pilots](docs/new-campaigns.md), with matched controls, resolution checks and Unity job records. These are staged experiments; no new science results are claimed yet.
 
-**New: matched large-eddy cases completed through day 50.** [Watch the comparison and separate heated/unheated movies](https://npizzo.github.io/jupiter-ffr-breeze/#cascade50), with synchronized three-depth vorticity and tracer. [Parameters, scales and provenance](gallery/cascade100-first50/README.md). This is the first fifty days of the hundred-day campaign.
+**Earlier fifty-day publication:** [Watch the comparison and separate heated/unheated movies](https://npizzo.github.io/jupiter-ffr-breeze/#cascade50), with synchronized three-depth vorticity and tracer. [Parameters, scales and provenance](gallery/cascade100-first50/README.md). This is the first fifty days of the hundred-day campaign.
 
-**New experiment:** [100-day coarse f-plane heating/control pair](docs/cascade100.md), with 1,200-km eddies, no imposed shear, and scale-transfer diagnostics computed on Unity. Validation passed; both matched cases completed the first fifty days.
+**New experiment:** [100-day coarse f-plane heating/control pair](docs/cascade100.md), with 1,200-km eddies, no imposed shear, and scale-transfer diagnostics computed on Unity. Validation passed; both matched cases completed all one hundred days.
 
 **New: f-plane completed through day 30.** [Watch all three depths](https://npizzo.github.io/jupiter-ffr-breeze/#f-plane30). The paired f/beta movie remains at twenty days until the matching beta segment finishes.
 
