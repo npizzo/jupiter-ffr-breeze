@@ -1,3 +1,5 @@
+[Watch the new six-hour Ferrel pilots on the gallery landing page](https://npizzo.github.io/jupiter-ffr-breeze/#ferrel-pilot). These are numerical/initialization checks with underresolved weak vertical motion, not validated convection or Ferrel cells. [Scientific review](ferrel2026-pilot/review.md).
+
 # Output gallery
 
 **New: matched large-eddy cases completed through day 50.** [Watch the comparison and separate heated/unheated movies](https://npizzo.github.io/jupiter-ffr-breeze/#cascade50), with synchronized three-depth vorticity and tracer. [Parameters, scales and provenance](cascade100-first50/README.md). This is the first fifty days of the hundred-day campaign.

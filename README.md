@@ -1,6 +1,6 @@
 # Jupiter folded filamentary regions with Breeze.jl
 
-**Current experiments:** the first 75-day polar γ-plane case completed and its matched flat-plane control is running. Ferrel initialization, CPU and GPU validation passed after an [isolated runtime repair](docs/ferrel2026-gpu-runtime.md). The 512² × 96 full-grid Ferrel pilot is running on Unity; three 48-hour cases and a 1024² refinement are queued to release automatically after it passes. These tests assess transient mechanism credibility; steady Jovian cells are not yet established. [Current launch record](docs/new-campaigns-launch.json).
+**Current experiments (November 11):** [Watch the completed six-hour Ferrel pilots](https://npizzo.github.io/jupiter-ffr-breeze/#ferrel-pilot), with synchronized three-depth vorticity and tracer. Numerical checks passed, but weak early vertical motion peaks near two grid cells; resolved convection and Ferrel cells are not established. Both 48-hour heated/unheated cases and all three 75-day gamma/control pairs completed. The Ferrel boundary case is running, its finer pilot remains queued, and the cancelled gamma refinement pair has been resubmitted on H100s behind an unchanged throughput gate. [Review, job IDs and next tests](docs/campaign-status-2026-11-11.md).
 
 **Submitted November 10:** [Polar γ-plane reproduction and dry-convection pilots](docs/new-campaigns.md), with matched controls, resolution checks and Unity job records. These are staged experiments; no new science results are claimed yet.
 
