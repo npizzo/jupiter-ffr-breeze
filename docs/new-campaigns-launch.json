@@ -1,0 +1,243 @@
+{
+  "status": "SUBMITTED_VALIDATION_PENDING",
+  "submitted_date_local": "2026-11-10",
+  "timezone": "America/New_York",
+  "compute_location": "Unity",
+  "unchanged_existing_campaigns": true,
+  "gamma_setup_job": "1393765",
+  "convection": {
+    "root": "data/convection2026-v1",
+    "preflight_root": "data/convection2026-preflight-v1",
+    "unit_job": "1394136",
+    "pilot512_job": "1394137",
+    "pilot1024_job": "1394138",
+    "latitude_deg": 85,
+    "grids": [
+      [
+        512,
+        512,
+        96
+      ],
+      [
+        1024,
+        1024,
+        96
+      ]
+    ],
+    "heating_W_m2": [
+      0,
+      54,
+      162
+    ],
+    "end_days": 10,
+    "segments": [
+      {
+        "heat_W_m2": 0,
+        "end_day": 2,
+        "job": "1394139",
+        "afterok": "1394137"
+      },
+      {
+        "heat_W_m2": 54,
+        "end_day": 2,
+        "job": "1394140",
+        "afterok": "1394139"
+      },
+      {
+        "heat_W_m2": 162,
+        "end_day": 2,
+        "job": "1394141",
+        "afterok": "1394140"
+      },
+      {
+        "heat_W_m2": 0,
+        "end_day": 4,
+        "job": "1394142",
+        "afterok": "1394141"
+      },
+      {
+        "heat_W_m2": 54,
+        "end_day": 4,
+        "job": "1394143",
+        "afterok": "1394142"
+      },
+      {
+        "heat_W_m2": 162,
+        "end_day": 4,
+        "job": "1394144",
+        "afterok": "1394143"
+      },
+      {
+        "heat_W_m2": 0,
+        "end_day": 6,
+        "job": "1394145",
+        "afterok": "1394144"
+      },
+      {
+        "heat_W_m2": 54,
+        "end_day": 6,
+        "job": "1394146",
+        "afterok": "1394145"
+      },
+      {
+        "heat_W_m2": 162,
+        "end_day": 6,
+        "job": "1394147",
+        "afterok": "1394146"
+      },
+      {
+        "heat_W_m2": 0,
+        "end_day": 8,
+        "job": "1394148",
+        "afterok": "1394147"
+      },
+      {
+        "heat_W_m2": 54,
+        "end_day": 8,
+        "job": "1394149",
+        "afterok": "1394148"
+      },
+      {
+        "heat_W_m2": 162,
+        "end_day": 8,
+        "job": "1394150",
+        "afterok": "1394149"
+      },
+      {
+        "heat_W_m2": 0,
+        "end_day": 10,
+        "job": "1394151",
+        "afterok": "1394150"
+      },
+      {
+        "heat_W_m2": 54,
+        "end_day": 10,
+        "job": "1394152",
+        "afterok": "1394151"
+      },
+      {
+        "heat_W_m2": 162,
+        "end_day": 10,
+        "job": "1394153",
+        "afterok": "1394152"
+      }
+    ],
+    "unit_status": "COMPLETED_PASS",
+    "initialization_checks_passed": 52,
+    "spectral_self_tests": "PASS",
+    "pilot512_status": "RUNNING"
+  },
+  "deferred": "Multiyear gamma crystals,4096 refinement,long convection ensembles,matched mechanical forcing and Ferrel-cell production require pilot assessment.",
+  "gamma_provisional": {
+    "root": "data/gamma2026-v1",
+    "unit_job": "1394580",
+    "unit_status": "FAILED_OVERSTRICT_BITWISE_FFT_EQUALITY",
+    "observed_absolute_difference": 1.4380373887290168e-12,
+    "dependent_jobs": [
+      "1394581",
+      "1394582",
+      "1394583",
+      "1394584",
+      "1394585",
+      "1394586",
+      "1394587"
+    ],
+    "dependent_status": "CANCELLED_AUTOMATICALLY_ON_FAILED_DEPENDENCY",
+    "simulations_started": false,
+    "source_preserved": true,
+    "superseded_by": "SI-corrected isolated gamma2026_v2"
+  },
+  "gamma": {
+    "root": "data/gamma2026-v2a",
+    "unit_job": "1397848",
+    "unit_status": "SUBMITTED_VALIDATION_PENDING",
+    "gpu_1024_job": "1397849",
+    "gpu_2048_job": "1397856",
+    "end_days": 75,
+    "model": "GeophysicalFlows SingleLayerQG; no explicit convection",
+    "source_directory": "scripts/gamma2026_v2",
+    "cases": [
+      {
+        "kind": "polar",
+        "grid": [
+          1024,
+          1024
+        ],
+        "seed": 11,
+        "job": "1397850",
+        "afterok": "1397849"
+      },
+      {
+        "kind": "flat",
+        "grid": [
+          1024,
+          1024
+        ],
+        "seed": 11,
+        "job": "1397851",
+        "afterok": "1397850"
+      },
+      {
+        "kind": "polar",
+        "grid": [
+          1024,
+          1024
+        ],
+        "seed": 22,
+        "job": "1397852",
+        "afterok": "1397851"
+      },
+      {
+        "kind": "flat",
+        "grid": [
+          1024,
+          1024
+        ],
+        "seed": 22,
+        "job": "1397853",
+        "afterok": "1397852"
+      },
+      {
+        "kind": "polar",
+        "grid": [
+          1024,
+          1024
+        ],
+        "seed": 33,
+        "job": "1397854",
+        "afterok": "1397853"
+      },
+      {
+        "kind": "flat",
+        "grid": [
+          1024,
+          1024
+        ],
+        "seed": 33,
+        "job": "1397855",
+        "afterok": "1397854"
+      },
+      {
+        "kind": "polar",
+        "grid": [
+          2048,
+          2048
+        ],
+        "seed": 11,
+        "job": "1397857",
+        "afterok": "1397856"
+      },
+      {
+        "kind": "flat",
+        "grid": [
+          2048,
+          2048
+        ],
+        "seed": 11,
+        "job": "1397858",
+        "afterok": "1397857"
+      }
+    ],
+    "submission_note": "Completed setup job aged out of Slurm dependency lookup; first v2 submission created no jobs. Environment verified installed, then fresh v2a root submitted without obsolete setup dependency."
+  }
+}

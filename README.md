@@ -1,5 +1,7 @@
 # Jupiter folded filamentary regions with Breeze.jl
 
+**Submitted November 10:** [Polar γ-plane reproduction and dry-convection pilots](docs/new-campaigns.md), with matched controls, resolution checks and Unity job records. These are staged experiments; no new science results are claimed yet.
+
 **New: matched large-eddy cases completed through day 50.** [Watch the comparison and separate heated/unheated movies](https://npizzo.github.io/jupiter-ffr-breeze/#cascade50), with synchronized three-depth vorticity and tracer. [Parameters, scales and provenance](gallery/cascade100-first50/README.md). This is the first fifty days of the hundred-day campaign.
 
 **New experiment:** [100-day coarse f-plane heating/control pair](docs/cascade100.md), with 1,200-km eddies, no imposed shear, and scale-transfer diagnostics computed on Unity. Validation passed; both matched cases completed the first fifty days.
