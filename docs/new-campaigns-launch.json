@@ -146,12 +146,12 @@
       "1394587"
     ],
     "dependent_status": "CANCELLED_AUTOMATICALLY_ON_FAILED_DEPENDENCY",
-    "simulations_started": false,
     "source_preserved": true,
-    "superseded_by": "SI-corrected isolated gamma2026_v2"
+    "superseded_by": "SI-corrected isolated gamma2026_v2",
+    "science_runs_started": false
   },
   "github_record_url": "https://github.com/npizzo/jupiter-ffr-breeze/blob/main/docs/new-campaigns.md",
-  "recorded_at_utc": "2026-11-11T02:22:30.833786+00:00",
+  "recorded_at_utc": "2026-11-11T02:54:13.829220+00:00",
   "gamma_v2_initial_environment": {
     "root": "data/gamma2026-v2a",
     "unit_job": "1397848",
@@ -247,9 +247,9 @@
     "unit_checks_passed": 17,
     "gpu_1024_status": "FAILED_CUDA_RUNTIME_SELECTION",
     "dependent_status": "CANCELLED_AUTOMATICALLY_ON_FAILED_DEPENDENCY",
-    "simulations_started": false
+    "science_runs_started": false
   },
-  "gamma": {
+  "gamma_v2_gpu_callback_failure": {
     "root": "data/gamma2026-v2gpu1",
     "runtime_setup_job": "1401300",
     "unit_job": "1401301",
@@ -345,9 +345,113 @@
     "verified_runtime": "12.2.0",
     "package_versions_unchanged": true,
     "unit_status": "COMPLETED_PASS",
-    "unit_checks_passed": 17
+    "unit_checks_passed": 17,
+    "gpu_1024_status": "FAILED_GPU_CALLBACK_CAPTURED_STRING",
+    "dependent_status": "CANCELLED_AUTOMATICALLY_ON_FAILED_DEPENDENCY",
+    "science_runs_started": false
   },
-  "ferrel": {
+  "gamma": {
+    "root": "data/gamma2026-v3",
+    "unit_job": "1402727",
+    "unit_status": "COMPLETED_PASS",
+    "unit_checks_passed": 20,
+    "gpu_1024_job": "1402728",
+    "gpu_2048_job": "1402735",
+    "gpu_1024_status": "COMPLETED_PASS",
+    "numerical_sources": "scripts/gamma2026_v3",
+    "configs": "configs/gamma2026_v2",
+    "environment": "environments/gamma2026_gpu",
+    "runtime_preference": "12.2",
+    "runtime_setup_job": "1401300",
+    "runtime_setup_status": "COMPLETED_PASS",
+    "end_days": 75,
+    "cases": [
+      {
+        "kind": "polar",
+        "grid": [
+          1024,
+          1024
+        ],
+        "seed": 11,
+        "job": "1402729",
+        "afterok": "1402728"
+      },
+      {
+        "kind": "flat",
+        "grid": [
+          1024,
+          1024
+        ],
+        "seed": 11,
+        "job": "1402730",
+        "afterok": "1402729"
+      },
+      {
+        "kind": "polar",
+        "grid": [
+          1024,
+          1024
+        ],
+        "seed": 22,
+        "job": "1402731",
+        "afterok": "1402730"
+      },
+      {
+        "kind": "flat",
+        "grid": [
+          1024,
+          1024
+        ],
+        "seed": 22,
+        "job": "1402732",
+        "afterok": "1402731"
+      },
+      {
+        "kind": "polar",
+        "grid": [
+          1024,
+          1024
+        ],
+        "seed": 33,
+        "job": "1402733",
+        "afterok": "1402732"
+      },
+      {
+        "kind": "flat",
+        "grid": [
+          1024,
+          1024
+        ],
+        "seed": 33,
+        "job": "1402734",
+        "afterok": "1402733"
+      },
+      {
+        "kind": "polar",
+        "grid": [
+          2048,
+          2048
+        ],
+        "seed": 11,
+        "job": "1402736",
+        "afterok": "1402735"
+      },
+      {
+        "kind": "flat",
+        "grid": [
+          2048,
+          2048
+        ],
+        "seed": 11,
+        "job": "1402737",
+        "afterok": "1402736"
+      }
+    ],
+    "estimated_75day_wall_hours_1024": 1.1662050720704298,
+    "first_science_status": "RUNNING",
+    "science_runs_started": true
+  },
+  "ferrel_v1_pressure_halo_failure": {
     "root": "data/ferrel2026-v1",
     "preflight_root": "data/ferrel2026-preflight-v1",
     "unit_job": "1401859",
@@ -400,6 +504,95 @@
     ],
     "scope": "Transient eddy-circulation and diagnostic validation; no claim of statistically steady or deep Jovian Ferrel-cell fidelity",
     "fidelity_screen": "native momentum and mass closure, eddy-to-mean transfer sign, heated-minus-unheated response beyond axisymmetric adjustment, boundary and resolution sensitivity",
-    "initialization_checks_passed": 98
+    "initialization_checks_passed": 98,
+    "quick96_status": "FAILED_INITIAL_PRESSURE_HALO_DIAGNOSTIC",
+    "initial_pressure_gradient_mean": 0.0005639795803662246,
+    "dependent_status": "CANCELLED_AUTOMATICALLY_ON_FAILED_DEPENDENCY",
+    "independent_cpu_probe_job": "1402491",
+    "independent_cpu_probe_status": "PENDING_PRIORITY",
+    "science_runs_started": false
+  },
+  "ferrel": {
+    "root": "data/ferrel2026-v2",
+    "preflight_root": "data/ferrel2026-preflight-v2",
+    "unit_job": "1403142",
+    "quick96_job": "1403144",
+    "pilot512_job": "1403145",
+    "pilot1024_job": "1403154",
+    "unit_status": "COMPLETED_PASS",
+    "production_grid": [
+      512,
+      512,
+      96
+    ],
+    "fine_grid": [
+      1024,
+      1024,
+      96
+    ],
+    "latitude_deg": 55,
+    "domain_km": [
+      12000,
+      12000,
+      120
+    ],
+    "jet_amplitude_m_s": 2,
+    "jet_wavelength_km": 6000,
+    "eddy_Rossby": 0.1,
+    "eddy_wavelength_km": 1200,
+    "cases": [
+      {
+        "name": "b0",
+        "heat_W_m2": 0,
+        "job": "1403155",
+        "afterok": "1403145",
+        "days": 2
+      },
+      {
+        "name": "b162",
+        "heat_W_m2": 162,
+        "job": "1403156",
+        "afterok": "1403155",
+        "days": 2
+      },
+      {
+        "name": "boundary162",
+        "heat_W_m2": 162,
+        "job": "1403157",
+        "afterok": "1403156",
+        "days": 2
+      }
+    ],
+    "scope": "Transient eddy-circulation and diagnostic validation; no claim of statistically steady or deep Jovian Ferrel-cell fidelity",
+    "fidelity_screen": "native momentum and mass closure, eddy-to-mean transfer sign, heated-minus-unheated response beyond axisymmetric adjustment, boundary and resolution sensitivity",
+    "quick96_status": "PENDING_DEPENDENCY",
+    "source": "scripts/ferrel2026_v2",
+    "configs": "configs/ferrel2026",
+    "cpu_closure_job": "1403143",
+    "cpu_closure_status": "FAILED_DERIVED_STREAMFUNCTION_RESTART_NORM",
+    "initialization_checks_passed": 98,
+    "native_closure_continuous_and_restart": "PASS",
+    "physical_fields_original_restart_tolerances": "PASS",
+    "cpu_restart_test_counts": {
+      "pass": 18,
+      "fail": 1
+    },
+    "initial_pressure_mean_pre_halo_fill": 0.0010955180829220763,
+    "initial_pressure_mean_post_halo_fill": 3.161157286749192e-19,
+    "dependent_status": "CANCELLED_AUTOMATICALLY_ON_FAILED_DEPENDENCY",
+    "restart_audit_job": "1403720",
+    "restart_audit_status": "COMPLETED_PASS",
+    "restart_audit": {
+      "job": "1403720",
+      "max_velocity_difference_m_s": 8.52651e-14,
+      "max_native_rhov_difference": 1.68667e-14,
+      "max_streamfunction_difference": 3.25163e-10,
+      "streamfunction_integration_bound": 2.02401e-09,
+      "difference_identity_residual": 4.33681e-19,
+      "integration_roundoff_bound": 2.41407e-15,
+      "all_original_physical_field_criteria_passed": true
+    },
+    "science_runs_started": false
   }
 }
+

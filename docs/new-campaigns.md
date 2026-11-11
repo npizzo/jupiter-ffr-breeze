@@ -37,12 +37,26 @@ sponge and global thermal feedback remain idealizations. It is not yet a
   runtime. Its science jobs were cancelled automatically before starting.
   The [isolated CUDA repair](gamma2026_gpu-runtime.md) passed on an L40S in
   **1401300**, with unchanged numerical sources and resolved package versions.
-  Replacement CPU validation is **1401301**, GPU gates are **1401302/1401309**,
-  and science cases are **1401303–1401308, 1401310–1401311**.
-- Ferrel initialization **1401859** passed. Quick numerical closure/restart
-  validation is **1401860**, followed by four full-grid six-hour screens in
-  **1401861**. The fine check is **1401862**; the three 48-hour cases are
-  **1401863–1401865**, conditional on the successful full-grid gate.
+  A subsequent GPU test caught a text-valued configuration captured by the
+  geometry callback. [Revision 3](gamma2026_v3-gpu-callback.md) fixes that GPU
+  compatibility issue while preserving the SI equations and configurations.
+  CPU validation **1402727** passed 20 checks and 1024² GPU gate **1402728**
+  passed. First science run **1402729** has started. Remaining science jobs are
+  **1402730–1402734, 1402736–1402737**, with a separate 2048² gate **1402735**.
+- Ferrel's first initialization **1401859** passed, but GPU gate **1401860**
+  stopped before stepping because the initial pressure diagnostic read stale
+  periodic ghost cells. Its dependent jobs were cancelled automatically.
+  [Diagnostic revision 2](ferrel2026-v2.md) retains the original tolerance and
+  records the actual pre/post halo-fill means. Its unit job is **1403142**,
+  mandatory CPU closure/restart check **1403143**, GPU quick check **1403144**,
+  and full-grid pilot **1403145**. Fine pilot **1403154** and 48-hour cases
+  **1403155–1403157** require the full-grid pilot to pass.
+  The revised CPU run confirmed pressure cancellation at roundoff and passed
+  native momentum/mass closure, but its mixed-unit restart comparison failed for
+  the derived streamfunction alone. The dependent jobs therefore stopped.
+  Audit **1403720** passed: the observed streamfunction difference is explained
+  by the integrated native mass-flux difference to roundoff. All original
+  physical-field restart tolerances passed and remain unchanged.
 - The preliminary γ-plane chain stopped at an overly strict bitwise FFT equality
   check; its dependent jobs were automatically cancelled before any science run.
   The isolated replacement uses a roundoff tolerance and the recovered reference
@@ -52,9 +66,9 @@ sponge and global thermal feedback remain idealizations. It is not yet a
 
 The [machine-readable launch record](new-campaigns-launch.json) gives every
 dependency and the latest recorded validation status. Current output roots are
-`data/gamma2026-v2gpu1`, `data/convection2026-v1`,
-`data/convection2026-preflight-v1`, `data/ferrel2026-v1` and
-`data/ferrel2026-preflight-v1` on Unity. Failed gates stop their dependent
+`data/gamma2026-v3`, `data/convection2026-v1`,
+`data/convection2026-preflight-v1`, `data/ferrel2026-v2` and
+`data/ferrel2026-preflight-v2` on Unity. Failed gates stop their dependent
 chain; they do not alter older experiments.
 
 ## Decisions after this batch
