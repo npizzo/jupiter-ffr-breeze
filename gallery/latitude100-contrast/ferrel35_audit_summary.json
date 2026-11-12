@@ -1,0 +1,95 @@
+{
+  "status": "COMPLETE",
+  "compute_location": "Unity",
+  "source": "data/cascade35-v1/cascade35_heated",
+  "end_day": 100,
+  "frames_analyzed": 401,
+  "windows": [
+    {
+      "window_earth_days": "50\u201375",
+      "mean_v_rms_m_s": 0.010681829507251604,
+      "mean_w_rms_m_s": 0.16530058683972992,
+      "v_persistence_ratio": 0.21855097193896433,
+      "w_persistence_ratio": 0.5903165127540458,
+      "mean_u_rms_m_s": 2.0137975872792957,
+      "psi_max_abs_kg_m_s": 32372.276898059554,
+      "acceleration_rms_m_s2": {
+        "du_dt": 3.9655646891725547e-07,
+        "f_v": 2.193090219093484e-06,
+        "eddy_horizontal": 5.62815377695734e-07,
+        "eddy_vertical": 4.149777151180538e-06,
+        "mean_advection": 6.177440995716164e-07,
+        "unclosed_residual": 4.096347892700933e-06
+      },
+      "eddy_vs_minus_fv_cosine": 0.25963410161481254,
+      "horizontal_eddy_vs_minus_fv_cosine": 0.006982660090832355,
+      "vertical_eddy_vs_minus_fv_cosine": 0.2572075116123132,
+      "residual_over_fv_rms": 1.8678428534482099,
+      "smoothed_eddy_vs_minus_fv_cosine": 0.8243336035826769
+    },
+    {
+      "window_earth_days": "75\u2013100",
+      "mean_v_rms_m_s": 0.012193796620076051,
+      "mean_w_rms_m_s": 0.36790523143474235,
+      "v_persistence_ratio": 0.250918889151253,
+      "w_persistence_ratio": 0.8329285538856991,
+      "mean_u_rms_m_s": 1.727940268673312,
+      "psi_max_abs_kg_m_s": 33383.12688786432,
+      "acceleration_rms_m_s2": {
+        "du_dt": 3.5712175478310384e-07,
+        "f_v": 2.4485906148100585e-06,
+        "eddy_horizontal": 5.628333635046078e-07,
+        "eddy_vertical": 5.804619220562848e-06,
+        "mean_advection": 1.517709075909668e-06,
+        "unclosed_residual": 6.025885234867055e-06
+      },
+      "eddy_vs_minus_fv_cosine": 0.0333469290595772,
+      "horizontal_eddy_vs_minus_fv_cosine": 0.025031687462656115,
+      "vertical_eddy_vs_minus_fv_cosine": 0.030820963965304447,
+      "residual_over_fv_rms": 2.4609606842483522,
+      "smoothed_eddy_vs_minus_fv_cosine": 0.6082065883091535
+    },
+    {
+      "window_earth_days": "50\u2013100",
+      "mean_v_rms_m_s": 0.009456783687574436,
+      "mean_w_rms_m_s": 0.237093202171192,
+      "v_persistence_ratio": 0.1940397241386337,
+      "w_persistence_ratio": 0.6411309241474495,
+      "mean_u_rms_m_s": 1.8390409243604846,
+      "psi_max_abs_kg_m_s": 32834.05698995484,
+      "acceleration_rms_m_s2": {
+        "du_dt": 2.490078439479422e-07,
+        "f_v": 1.916306017853846e-06,
+        "eddy_horizontal": 4.0055910953549315e-07,
+        "eddy_vertical": 4.27423558470753e-06,
+        "mean_advection": 9.832103466137292e-07,
+        "unclosed_residual": 4.497908436768192e-06
+      },
+      "eddy_vs_minus_fv_cosine": 0.041880705745180505,
+      "horizontal_eddy_vs_minus_fv_cosine": -0.05542434274633181,
+      "vertical_eddy_vs_minus_fv_cosine": 0.046857672542236224,
+      "residual_over_fv_rms": 2.347176492095764,
+      "smoothed_eddy_vs_minus_fv_cosine": 0.709515300675144
+    }
+  ],
+  "half_window_streamfunction_cosine": 0.5294905640289052,
+  "half_window_smoothed_streamfunction_cosine": 0.5149259432203785,
+  "half_window_v_cosine": 0.3644198630756173,
+  "half_window_w_cosine": 0.5111753118623121,
+  "jet_ke_fraction_last50_mean": 0.7792493188511644,
+  "jet_ke_fraction_day100": 0.8621904401902131,
+  "quality_maxima": {
+    "mass_divergence_max": 4.858580985450667e-18,
+    "mass_flux_reconstruction_max": 1.4029529101633855e-14,
+    "top_streamfunction_max": 7.968030938830181e-09
+  },
+  "metric_region": "|y| <= 2400 km, 10 <= z <= 75 km; density weighting for centered field norms",
+  "streamfunction_definition": "rho*v=-dPsi/dz; rho*w=dPsi/dy; kg/(m s); Eulerian zonal mean",
+  "limitations": [
+    "Centered resolved covariance budget, not exact discrete momentum closure. Residual includes viscosity, numerical stresses and diagnostic errors.",
+    "No test of residual/Lagrangian circulation or thermodynamic indirectness.",
+    "Time-window persistence is a descriptive check, not a statistical significance test.",
+    "Stable cap, sponge, free-slip rigid walls and imposed thermal feedback can affect circulation."
+  ],
+  "script_sha256": "ff20c8e8016971a5c5d8bac1336f93ea515216353fe9230a80f66e7e3e44754a"
+}
