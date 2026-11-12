@@ -1,0 +1,994 @@
+{
+  "status": "FROZEN_PARTIAL_INVENTORY",
+  "latitude": 35,
+  "captured_utc": "2026-11-12T03:22:23.736390+00:00",
+  "start_day": 0,
+  "end_day": 20.0,
+  "frames": [
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_1/frame_00000.jld2",
+      "time_seconds": 0.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "cf48cbca3b4d19226a5b800476f89e2735c393e1185ab79b4794bcdd436fe1d5"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_1/frame_00001.jld2",
+      "time_seconds": 10800.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "e7467fe351eacdf60606eec29c97aa506b2719c2d0a2f4b93b661e0c8bbfe9f3"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_1/frame_00002.jld2",
+      "time_seconds": 21600.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "a70571081bf20850266d1c0d624cfa552c4ce9abcd39441f0c4d40dc0ae62bf2"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_1/frame_00003.jld2",
+      "time_seconds": 32400.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "00d823f6003e96e9ca45917ee032b121ec6170bdf916631193ea7a7962eaa437"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_1/frame_00004.jld2",
+      "time_seconds": 43200.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "0d15d39b1b02a9373378d04d3487b24f0753dedcdb56e20c630096983310b948"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_1/frame_00005.jld2",
+      "time_seconds": 54000.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "84234f9587c9390c19ee7c1ed730d3a32b218222b1a876a0f9bfae87d1fe7f65"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_1/frame_00006.jld2",
+      "time_seconds": 64800.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "637b4b4a995d4f293469e3dd9d37ab0821f4d31bd63ff4382029bc717703b275"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_1/frame_00007.jld2",
+      "time_seconds": 75600.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "49ebfa89b8526ba0575afd9265ee2f8d4350e0d6c05470f7b031d4dc16117bad"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_1/frame_00008.jld2",
+      "time_seconds": 86400.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "2859f6670df9e7785df40b4eb085879ce1824a58d4ce489514b9ebcc25e5844a"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_1/frame_00009.jld2",
+      "time_seconds": 97200.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "d6a077def36c0dc390b4a3fa110852eebb829f5c7257ada4f833a49421e5bd37"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_1/frame_00010.jld2",
+      "time_seconds": 108000.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "991befc7de26db8c966079f09b17334e480d13ebe6d0f8f79fb29a2fe888887d"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_1/frame_00011.jld2",
+      "time_seconds": 118800.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "c21af5ce8dea8c4731513669007ada1ea197d1103c25a4a9c5d5fef012411dda"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_1/frame_00012.jld2",
+      "time_seconds": 129600.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "b27d2433dea76ff55478bd32488100f5ed2976abe85964839286d4d27eac2200"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_1/frame_00013.jld2",
+      "time_seconds": 140400.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "81869bd091c0315211c388fe4aa8d77c7379256dbe936edc078701051b016efc"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_1/frame_00014.jld2",
+      "time_seconds": 151200.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "6bc7a00cc2241604a7dc573ad2596cf6c1f26a373a02267742ecfdaffafedbb5"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_1/frame_00015.jld2",
+      "time_seconds": 162000.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "ee5877fa8ad3c2df33df16ed9076d60e5b51204fd7d82e7b88cd9e6fedbf7fda"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_1/frame_00016.jld2",
+      "time_seconds": 172800.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "2030c16cf4f921a2355cdecf0bb382a71d6bce00b0aae88bc3e88d53f9ca5a04"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_1/frame_00017.jld2",
+      "time_seconds": 183600.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "a925dccb084d3e9f6c6e3a9a56d997ec92454311c7e02d6f700acec47cc10f04"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_1/frame_00018.jld2",
+      "time_seconds": 194400.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "7e9c4ee2bb8a34a1cbe2c59712e686d4248f31f933558dd6155a704e6acb814e"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_1/frame_00019.jld2",
+      "time_seconds": 205200.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "28fa8de04687f5e35d324954afb42d36738f45c87524b14ca39c0e8ed49fae27"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_1/frame_00020.jld2",
+      "time_seconds": 216000.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "13d6e75b1ec521cf42958b378d4c3237e9796e5e54d60ed9de542c0cd0b7e167"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_1/frame_00021.jld2",
+      "time_seconds": 226800.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "f24ef632304ee15f51dbf0b867d0cb441c75255cafb325e339b72308ddd0bee4"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_1/frame_00022.jld2",
+      "time_seconds": 237600.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "a97029eff750ac1690edaf270aa120d7f503557dc592fad01f3e0cd18ee099e6"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_1/frame_00023.jld2",
+      "time_seconds": 248400.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "c46273d0272cf261a90f3c31237b29103859c0624816ced7727f7aba4e03fd1f"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_1/frame_00024.jld2",
+      "time_seconds": 259200.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "35d5fd659eb8baaee0bf83c57e289ef90d621421fe6f33309a8387f13c1c3336"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_1/frame_00025.jld2",
+      "time_seconds": 270000.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "831f8ea3b4a61765ad19ed4436067bffbca97a867b64275e8c65fb9f0de7d4b7"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_1/frame_00026.jld2",
+      "time_seconds": 280800.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "25970aa4ee4e349c5c6892d90aa2625feb05083682d5fbcc3ab7a06c1db78e0c"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_1/frame_00027.jld2",
+      "time_seconds": 291600.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "024515739e942c4a821914ffee96893173e7803e7a36ce9c96f19601dd060754"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_1/frame_00028.jld2",
+      "time_seconds": 302400.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "53a2e839e62457b1de3a68288411c4909a61d1d7718147ab440ad6990adeaea4"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_1/frame_00029.jld2",
+      "time_seconds": 313200.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "3f33e6961aa62f7a367eb5fe99c7b7f8de3c04e59632428cf7f85925e1469ef2"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_1/frame_00030.jld2",
+      "time_seconds": 324000.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "432e0404517dee5ddb3701b643919ece9592b2e4a00870eef32c555660095923"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_1/frame_00031.jld2",
+      "time_seconds": 334800.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "41a1b128e75899227a20b1b70ec61d0e8ad5179ef4c4156f4a0b152cddd888e5"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_1/frame_00032.jld2",
+      "time_seconds": 345600.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "86082629dec3b7df0adaf14536514b70f340f8640f0f67db40d0e582eab84039"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_1/frame_00033.jld2",
+      "time_seconds": 356400.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "7bef67b2aa604ba1c4ba19fd944ee22c874a9a91c22649729c87109790ad8c08"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_1/frame_00034.jld2",
+      "time_seconds": 367200.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "8880387130ab140c4bbddb99efa953adc2a2051170fe12355261f5e292a0b312"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_1/frame_00035.jld2",
+      "time_seconds": 378000.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "6918199def9a6d8e4ea0637462526bdb50ad8cfd44c66e86e45bac5975d0dc73"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_1/frame_00036.jld2",
+      "time_seconds": 388800.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "eeb23df2fa01d20d2474a9957ee89ad003c758625aab67d8c4c85d65e12ba893"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_1/frame_00037.jld2",
+      "time_seconds": 399600.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "76a7e6d11025e7fa7e117f290879c546700ffe5b99d2d04b4cff1b65801d60fe"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_1/frame_00038.jld2",
+      "time_seconds": 410400.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "f800b50f03948bea575d5b2b766cc70e80ee90e25382b588ec3afa1703bd79f8"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_1/frame_00039.jld2",
+      "time_seconds": 421200.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "15fa4e9bf96d8cf2a0969ce75b0e0051882b7a2e0d617a07a379fac7d8bf8026"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_1/frame_00040.jld2",
+      "time_seconds": 432000.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "f07ad25e10ebf0b0ea28b39a06e8287c0898c05a9bcafbb5674ed4d1b10bc1af"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_1/frame_00041.jld2",
+      "time_seconds": 442800.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "22349c82e640fffd18cd702c72dc992f24066fb92f13a81dc5abc3ab05bca5ea"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_1/frame_00042.jld2",
+      "time_seconds": 453600.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "a1126bcbea44b7b78d174ed4e8a64e728969eac3027342acc7ff09cd315938d6"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_1/frame_00043.jld2",
+      "time_seconds": 464400.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "54a8c5c9a0cdb69fd22e732ae0b072c08b0a9d015df3773fba1f07da8a0b725a"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_1/frame_00044.jld2",
+      "time_seconds": 475200.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "65fc27ad64c1779d64cffbb0f9063e18cc2ad9e5f2fc16548ca3a802c343790a"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_1/frame_00045.jld2",
+      "time_seconds": 486000.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "f16e0ad81f02f5f7ae31f3eb30ef8391d9c3cfe2f92db4c485d5c3adf507b33a"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_1/frame_00046.jld2",
+      "time_seconds": 496800.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "0906e4ac57ad14059a536cc5bf89b2c709b780496bde72f490eeea57b00b64fd"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_1/frame_00047.jld2",
+      "time_seconds": 507600.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "a4bc9e86b8f9a9cefeca6f2fe9b8c1b285e88841e8a3d0e2e4767182ad6a2931"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_1/frame_00048.jld2",
+      "time_seconds": 518400.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "ee87ea29d14c54510173134c20cd60b852357356f7c993506048fb37a4bc0c9f"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_1/frame_00049.jld2",
+      "time_seconds": 529200.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "511ed8a3d1c7b780945ec0cf7096ea735814f1f484264319edfc748924219b16"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_1/frame_00050.jld2",
+      "time_seconds": 540000.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "c7f12f1b44f1a761ca42ce1cc2bad5f48fdd13961f695bc7f47275cc449dc102"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_1/frame_00051.jld2",
+      "time_seconds": 550800.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "70eb8f3f2e33fa4a6f6027f217a7b3c69e9d5fc338da5a309c33370bb2aaf5db"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_1/frame_00052.jld2",
+      "time_seconds": 561600.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "c5d35453607d1279ed0e3354bfc958b7ff690f445b0730648b4861858609cb69"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_1/frame_00053.jld2",
+      "time_seconds": 572400.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "94a617da02dcdf4c9ac0b4ece0ad2d6b6861d89ba432bba387195fd740d19d80"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_1/frame_00054.jld2",
+      "time_seconds": 583200.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "498adc41bacf739e7c5d13d9aa1886740ead739c4a1503f283bcd4018861870a"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_1/frame_00055.jld2",
+      "time_seconds": 594000.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "f70f9409e125bcce8f378bc790e3e4f92cbeed705977efab1a439ffd04b298fa"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_1/frame_00056.jld2",
+      "time_seconds": 604800.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "2eebfb44f2d397802f975fabbe43ea06a5dd278adcb17bcb13143b1e9f9ff42b"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_1/frame_00057.jld2",
+      "time_seconds": 615600.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "6cfca8d4b8cd98b285d6728e8109b61feb26592d2cb0ce592f92a247e092b95d"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_1/frame_00058.jld2",
+      "time_seconds": 626400.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "95b728c64a49fd384fd3d09f15474bd52db556c6b4489498308386dee048bd5e"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_1/frame_00059.jld2",
+      "time_seconds": 637200.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "ad7eaaca2bf9907012d54a55c80ea33add896f89a6aee09e19c2725757bb667e"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_1/frame_00060.jld2",
+      "time_seconds": 648000.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "25589240a43e46ed3e4cc4ccfbfcd269641315e96599cb6657faa322a7c6f23a"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_1/frame_00061.jld2",
+      "time_seconds": 658800.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "381b997dda69e829d6f9c8bbb9dc16d9806b78cfef950a9ecdde2e45a0061ad2"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_1/frame_00062.jld2",
+      "time_seconds": 669600.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "1be64bb515d890eedcc463b30f3c67ff300b61583b942abca096bf2751f1cdb3"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_1/frame_00063.jld2",
+      "time_seconds": 680400.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "c444324b0c5a36326ffd9226d458050033bb44fc2ec60a68e8e3b5548048b92f"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_1/frame_00064.jld2",
+      "time_seconds": 691200.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "8eae4d8e731bd04f3901f81b005edd541186437f36a325892ef5c097938a2f50"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_1/frame_00065.jld2",
+      "time_seconds": 702000.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "34262140ab345479ad6b1bcf88a7eb1e7706b307a66c41ef0670f74b4bc1ed9f"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_1/frame_00066.jld2",
+      "time_seconds": 712800.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "90d04532571e4d92e25c0b72cc20fccb6dc0f17ad56284f1c86e62cfc0143bd6"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_1/frame_00067.jld2",
+      "time_seconds": 723600.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "1acdd24b1ea9b11db0edca785408fe9671569487e22bc05aaf2f4c47c2a60bff"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_1/frame_00068.jld2",
+      "time_seconds": 734400.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "d6074157664f5db5c6dd9a397f833d16da0162c69cb00f389a33b5244319d55b"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_1/frame_00069.jld2",
+      "time_seconds": 745200.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "9c70cf0182eeb5b63502fb8692629e5e185eebab8d4da7b6dacb611c1e4cc094"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_1/frame_00070.jld2",
+      "time_seconds": 756000.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "2018465f30eb80819e953ac3cfa1a31a0a8ad07d73a49e164cdffb51bd5b164d"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_1/frame_00071.jld2",
+      "time_seconds": 766800.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "58b1aa5baee534f5b1343ed3983a2c0c791e157b9d5675378cffe601e8349019"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_1/frame_00072.jld2",
+      "time_seconds": 777600.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "ab630228c65bb804aed99b37812226ce5080f2168092136d539bf10ffa64aaac"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_1/frame_00073.jld2",
+      "time_seconds": 788400.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "a42a99004ff9c979128f616da408991057ae2817af64c6438b223641b5185c6e"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_1/frame_00074.jld2",
+      "time_seconds": 799200.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "f71dc671b731a121890df5477a66dc047ea8a6577aa8220d0ff47da589c3fdd7"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_1/frame_00075.jld2",
+      "time_seconds": 810000.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "fba2d7b48cacd16f289dd6b1a3e2e0d047698bf67a8593e917eb3b527c9a7218"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_1/frame_00076.jld2",
+      "time_seconds": 820800.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "e6ff459ea7da637d2d34b11d312ac34cf8a08495c9b9e3fcf46e8c78cb822dbc"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_1/frame_00077.jld2",
+      "time_seconds": 831600.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "3be21242148b001461346a96bc8eafd75647200b326ba8dd96d5fc62a1f3f858"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_1/frame_00078.jld2",
+      "time_seconds": 842400.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "ada96062995ffd3da1287169bfa78a46631f3ad547960f8e66742ab6c8ef8022"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_1/frame_00079.jld2",
+      "time_seconds": 853200.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "fd76b722f8daf48485cd391512250553b3bb4ad17f2771cd4b389d0ceb9a4214"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_1/frame_00080.jld2",
+      "time_seconds": 864000.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "ca6b20328ce13737354bd61e78e5efed9359dfe085b769bd7e07930aaacc79d3"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_2/frame_00081.jld2",
+      "time_seconds": 874800.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "afcc8c8d9a50fbe353d1e96e6fd6da44fafc74ac6e22380e951404b50f24b8cb"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_2/frame_00082.jld2",
+      "time_seconds": 885600.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "077db6302be373681e7a4dfbf8b6394f2168ad40aae1e2015525cdf5aa0674cd"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_2/frame_00083.jld2",
+      "time_seconds": 896400.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "25dc010ed9d36236592827ca55ac35a443e1d1493b8d80e2ca2827a0efcbf369"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_2/frame_00084.jld2",
+      "time_seconds": 907200.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "f3b7a439e41a0858d458925f9c9ad885a64c01d32220fea7141859d31ef37a4a"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_2/frame_00085.jld2",
+      "time_seconds": 918000.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "54de485b349584effa164c0126eb494601faabda4bc0679627e7897607e778f6"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_2/frame_00086.jld2",
+      "time_seconds": 928800.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "e57471d40942170489bab1e0751cba917ba0a3975b78025f4fb1a449860554cb"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_2/frame_00087.jld2",
+      "time_seconds": 939600.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "975fc43dfabda861d4f81e85916a6b786244c4ce9c00463497c04589fe7ea010"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_2/frame_00088.jld2",
+      "time_seconds": 950400.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "6342654fa720743548e7f97de16902d93865d0bbab3e272a29b710e7f67ef555"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_2/frame_00089.jld2",
+      "time_seconds": 961200.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "3fd66556451c254c69118543f6171a2b0aa6c1d8e189d7c4659c543a55814829"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_2/frame_00090.jld2",
+      "time_seconds": 972000.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "ea81394f453571d9eef6ce33c4e9adc5c92b7ec4e1b208cb3f13c56257d7ca70"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_2/frame_00091.jld2",
+      "time_seconds": 982800.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "5fa1ed637bceefab2337354ca06664cc2e37e2194aac7d09ef4fa43b2bdbe7f0"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_2/frame_00092.jld2",
+      "time_seconds": 993600.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "1dca26b573d04411e5d12836dfd7bf94fd7fd6d72c50733ff1a2cbe0e8cb8dcc"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_2/frame_00093.jld2",
+      "time_seconds": 1004400.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "ed847e0cec84ee35598d2b520c86f14b9c52dd32868589abde010a5328828603"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_2/frame_00094.jld2",
+      "time_seconds": 1015200.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "6f85d6f147f2e4db267b91236a76833dfae9d73e2519a4bdf306caa4077076b1"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_2/frame_00095.jld2",
+      "time_seconds": 1026000.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "90de31aec62a83e914f9013d1433d515ccaba007cf519db94fc407162463c4a7"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_2/frame_00096.jld2",
+      "time_seconds": 1036800.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "36a580bd2a21eafc155847af5de66321a601b7a2a01e9bf00f53447f03480b62"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_2/frame_00097.jld2",
+      "time_seconds": 1047600.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "760fd0df07654f1e69ef1630f08d135f425de438a8ae76b01a6f868c162a9488"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_2/frame_00098.jld2",
+      "time_seconds": 1058400.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "b0592cbc8b46033ec4c7d10c513fb7d93a50935e4815c8963d9b4d84978c863c"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_2/frame_00099.jld2",
+      "time_seconds": 1069200.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "9b982d6a45e1de9e3afef86b7a34b9429f29dcad6c3e8c113a4bc825a7163c9f"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_2/frame_00100.jld2",
+      "time_seconds": 1080000.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "b19c3be2237d3c74309f89be2323d5c436304f3633d722eb969e7c273f994e25"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_2/frame_00101.jld2",
+      "time_seconds": 1090800.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "4dcc3affbb0eaec8b87976b9afa139af7fdc3b36f6d6cb6d28eadbb9d50bf544"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_2/frame_00102.jld2",
+      "time_seconds": 1101600.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "568038b78681df5c3301f26a482363b768fed66e7136dbf65eec55aca8485cbe"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_2/frame_00103.jld2",
+      "time_seconds": 1112400.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "7d4b7813acd862885fbcb1b2353672033c3fe96ea572116d2d4ad4bf66b97af5"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_2/frame_00104.jld2",
+      "time_seconds": 1123200.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "bf7e25eeb0ad7c0c49760014e85c6f892f3b94b40eb3ef79c2ef31fe47557294"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_2/frame_00105.jld2",
+      "time_seconds": 1134000.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "d29782bf9304987e036a704a29b1bd07767e928f841ca314f90fb6dd8e7d997c"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_2/frame_00106.jld2",
+      "time_seconds": 1144800.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "bbc32fa3018f830d95433829727ccffb094c16a1b5c8dc1eac9a418fd181252b"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_2/frame_00107.jld2",
+      "time_seconds": 1155600.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "4a7b9dc6ce77cf45e3166e5c777f471e8363a410928e8c72377734793bf864a2"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_2/frame_00108.jld2",
+      "time_seconds": 1166400.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "e1744bc5dc7ca1a54bf3a5c1a271b7833b5c358f78ba0a2fdca9537d8c7b87cf"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_2/frame_00109.jld2",
+      "time_seconds": 1177200.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "c50a43cca44d9435806cf85c55f2f6f46276764c65f3f883819b7624344bf7f0"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_2/frame_00110.jld2",
+      "time_seconds": 1188000.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "b3bdf13bfd307544234e68dc2fdcbc825cf77438f0a9f7fa9dee25ba344de1b6"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_2/frame_00111.jld2",
+      "time_seconds": 1198800.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "484c44e0798dc8937acf4e286572a86cb9f6eba2ca4b5fbf9a36421c5b898149"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_2/frame_00112.jld2",
+      "time_seconds": 1209600.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "499aae5f654e8755e131367fd62acd4608db5b7cd777b89c3cd3b7484a36a413"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_2/frame_00113.jld2",
+      "time_seconds": 1220400.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "34afc38c6cc4f2a4d93fb7db232742775dbe64b3a2733c0c9ade410f00d98860"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_2/frame_00114.jld2",
+      "time_seconds": 1231200.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "8060091d3ded46f543fff1dcb4dce09bc1de38f01d7b8151c3a89803962818b0"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_2/frame_00115.jld2",
+      "time_seconds": 1242000.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "b0d7b1da7309ec016a52619243e6c9b2f59f2e9bd7bc93bf917994d353010700"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_2/frame_00116.jld2",
+      "time_seconds": 1252800.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "8d657b8e5cd61be810d5a457b2852bc1b006210aa53b232adcb0dbf1c3edf452"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_2/frame_00117.jld2",
+      "time_seconds": 1263600.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "c9df07b6f3734d1b02d0cb39f9ca9148ddcdbc80be240c54ee696c2b422b3f30"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_2/frame_00118.jld2",
+      "time_seconds": 1274400.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "3ab62aa5e4734f8dc1940941766053bff2912454ccd52b7867fdd816f448f990"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_2/frame_00119.jld2",
+      "time_seconds": 1285200.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "4f67b532ea9d211695fc4156e53b0cc61e1dd1e4eaca85c328e2430c181f045a"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_2/frame_00120.jld2",
+      "time_seconds": 1296000.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "305d20a6cd23e8ace74cdf08b6cf5be664e5bff3ea80c7ed65885aaae4ed4615"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_2/frame_00121.jld2",
+      "time_seconds": 1306800.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "1ba3d6a8d2996e05140fe4e245a7e68136c2ee2675a5d4a09e05df292a56a03a"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_2/frame_00122.jld2",
+      "time_seconds": 1317600.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "24459c8e2d65f158c152c01913301f3d35e6fadd207c5ef12ba0dc438d51bf41"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_2/frame_00123.jld2",
+      "time_seconds": 1328400.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "0be40b94cd766aeb4fa06a92480021ab2797004dc587ba424d81644dee37bcee"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_2/frame_00124.jld2",
+      "time_seconds": 1339200.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "548365f89e3c99e901c2a82453d3853cbb2d2450adb4b999aa61d23f9495d3f8"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_2/frame_00125.jld2",
+      "time_seconds": 1350000.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "9e7294e17c155c3fd3e2818a10c4873f346feb135344a645c7534a91d160e61e"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_2/frame_00126.jld2",
+      "time_seconds": 1360800.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "5893082d278106627a0267881354b2fb16e7af8598d7b716da63749e3564cea3"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_2/frame_00127.jld2",
+      "time_seconds": 1371600.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "001db3f4204db424d61acb057530ed62d740b86c1ad92b741fc5ced3157cc587"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_2/frame_00128.jld2",
+      "time_seconds": 1382400.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "ad616d56f6bca5627c5e1b16fedc05b01499d51956214fb92a0742e21982a17b"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_2/frame_00129.jld2",
+      "time_seconds": 1393200.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "682e077246f958072e23e6f5a21bd0ede785b949addc275dd3105b68700acfbf"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_2/frame_00130.jld2",
+      "time_seconds": 1404000.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "3bf4f4e12aab808c6ea06af792f44ba045483ecf5ca7c6a1528fce149015d867"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_2/frame_00131.jld2",
+      "time_seconds": 1414800.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "c25591e590a880c47ad8ac2e36df6a93baf50e6f88bad279ddd76a8e0e5233ef"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_2/frame_00132.jld2",
+      "time_seconds": 1425600.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "0764832bb96bdb421cfc9bcdf2b44da110add7ce4297a84d4b4ea615c45d705e"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_2/frame_00133.jld2",
+      "time_seconds": 1436400.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "067b4f7800a37fcb81160550d0d841c89a8a4f0984b281a1f5b5785fe5ecc1dd"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_2/frame_00134.jld2",
+      "time_seconds": 1447200.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "698c043ef29abb46801354af3e026dcb0f2e8bac77ae4a551bc8c8d8625ef9dd"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_2/frame_00135.jld2",
+      "time_seconds": 1458000.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "e1b8ebab957b0cd941151cf01a94077e8d5d937c9b72d8dbab772ea4538669d3"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_2/frame_00136.jld2",
+      "time_seconds": 1468800.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "234509e3fd07f3de638f9f0d170a06a750c3a91eee2abafa5c530b298155bbcb"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_2/frame_00137.jld2",
+      "time_seconds": 1479600.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "8a92463d2f7105e875dd32cb56ae48179f30a640ed3ea091cf85d4586c508bfa"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_2/frame_00138.jld2",
+      "time_seconds": 1490400.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "b59e3c8bf55ce9bf35af1c406fd1cf602e6da0f20c5bd71d712c0048f005ab60"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_2/frame_00139.jld2",
+      "time_seconds": 1501200.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "f137f567f94f0e327771e238b9be8ab7dc8ae65859a3425ac7a3508e82568a9d"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_2/frame_00140.jld2",
+      "time_seconds": 1512000.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "0ba4158879567a0c2afc6049a2068b26645c52890dcf71512256e624a18538c8"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_2/frame_00141.jld2",
+      "time_seconds": 1522800.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "332b75e15e829a91b33672c8512d6083197b3616c79713e3fa28914438d94d9c"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_2/frame_00142.jld2",
+      "time_seconds": 1533600.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "1a707cae7cc06ab57b584d7d208e2336485bbbbc3db3bc7fb3bf70caa86e2173"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_2/frame_00143.jld2",
+      "time_seconds": 1544400.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "98586879533ab3127f52091f516106095e6e5ee32547de446c6cb96b11d9265b"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_2/frame_00144.jld2",
+      "time_seconds": 1555200.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "df0156ca650bf78335aea19c3c6489a96c7ec4628a12666a0d7d852d04cfa9a1"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_2/frame_00145.jld2",
+      "time_seconds": 1566000.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "3646b5cc74583dfcde0b6667eb82abb9279a084e2792962da130b4909f917fcd"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_2/frame_00146.jld2",
+      "time_seconds": 1576800.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "164b3cc1b0559ccd587786f8cb1d799198dc7d9be0ae5b05ff067288f093b983"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_2/frame_00147.jld2",
+      "time_seconds": 1587600.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "3802cb4fc6e62f3b2760150ba955611048495538d1be66d2ddc91e997c4bf244"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_2/frame_00148.jld2",
+      "time_seconds": 1598400.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "a58f2e5feba32439d6e04f6e1ef6251e802d15854ca0984959884c3b74c800a8"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_2/frame_00149.jld2",
+      "time_seconds": 1609200.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "b7f407cb3e770259f3bedbacaafdf0f80cda5fa1033ec195fd3803dc45e34284"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_2/frame_00150.jld2",
+      "time_seconds": 1620000.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "7a1bd19a107cd6e9e20841747187e84d5a9fe30ef08e3ce0c2c2735beca5f6c9"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_2/frame_00151.jld2",
+      "time_seconds": 1630800.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "1d9830df0329d22ec177a51c07234927ec95231df0ccbb3acf99a2d039452959"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_2/frame_00152.jld2",
+      "time_seconds": 1641600.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "1952e45d1e9f747fd833899b5b3ab486ea598caf060a096b9c4c2cf79f51da77"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_2/frame_00153.jld2",
+      "time_seconds": 1652400.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "8033f1a766546de8d286affd601398b8575d300d6e5f2548efe1c4e441bcd896"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_2/frame_00154.jld2",
+      "time_seconds": 1663200.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "0561081b1ae381fd49097258fd932eaecd392046aa6b553327293414f72ffc5b"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_2/frame_00155.jld2",
+      "time_seconds": 1674000.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "b839fc83b097acd2b42623459cf2936fc3f07d9eddaf1666df6b0debab64b51f"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_2/frame_00156.jld2",
+      "time_seconds": 1684800.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "d455af3b62af176aa8a0b4af6d64a9c411817b5ee771a94a784cbcd147e834de"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_2/frame_00157.jld2",
+      "time_seconds": 1695600.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "d0d443a824ecd1339193fd3e99c6760701edc9035982bb0abaf7f659ef6b477b"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_2/frame_00158.jld2",
+      "time_seconds": 1706400.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "377574f865c2ec471b41bb011f7ffdd7b3cb28efbbda6410c7094556b52e92cc"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_2/frame_00159.jld2",
+      "time_seconds": 1717200.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "a41936ec6ab14a7533e49f17d3125cc3f6dae4ca2993f314cf1b596538e7abdb"
+    },
+    {
+      "file": "data/cascade35-v1/cascade35_heated/segment_2/frame_00160.jld2",
+      "time_seconds": 1728000.0,
+      "bytes": 8941194,
+      "vorticity_tracer_native_bytes_sha256": "44399f96835aec2c34d53e8ff18955ec4cccbbc19aba86dbde928961a51ac58d"
+    }
+  ],
+  "segments": [
+    {
+      "segment": "segment_1",
+      "original_status": "COMPLETE",
+      "metadata_sha256": "cd6f678aa40b5789665ca32f1d10aa4f72f07bb232f665e12ccd15f3b85df63f",
+      "script_sha256": "c88181647a803e1673bf6496fe651e08641f5c1abd2a58de4ff8a27e449528bb",
+      "configuration_sha256": "12646058533c5a9e6825844ae369a324c6bc5c7f8c781dbfdebf5b7a14f5d8a8"
+    },
+    {
+      "segment": "segment_2",
+      "original_status": "COMPLETE",
+      "metadata_sha256": "10ff6645061b35d45ed3ef56d441079512d6fda736e8478d776a8987c329532a",
+      "script_sha256": "c88181647a803e1673bf6496fe651e08641f5c1abd2a58de4ff8a27e449528bb",
+      "configuration_sha256": "1d9e3ca3e34e18964d52eb0305fb23ac6cac238c63e1e9d070efb29493ec4790"
+    }
+  ],
+  "compute_location": "Unity",
+  "original_fields_unchanged": true,
+  "partial_campaign": true
+}

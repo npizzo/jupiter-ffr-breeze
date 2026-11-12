@@ -1,0 +1,1968 @@
+{
+  "status": "FROZEN_PARTIAL_INVENTORY",
+  "latitude": 55,
+  "captured_utc": "2026-11-12T03:12:46.770161+00:00",
+  "start_day": 0,
+  "end_day": 40.0,
+  "frames": [
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_1/frame_00000.jld2",
+      "time_seconds": 0.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "cf48cbca3b4d19226a5b800476f89e2735c393e1185ab79b4794bcdd436fe1d5"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_1/frame_00001.jld2",
+      "time_seconds": 10800.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "c92e0fab05737d3d6f1dc6640fe4d79768a885ed8d1dd04b36676064c5a73440"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_1/frame_00002.jld2",
+      "time_seconds": 21600.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "fd3b05525d72bf7caa967088c3806c14d8f900a7717965be69b45a1a4547d4a3"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_1/frame_00003.jld2",
+      "time_seconds": 32400.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "0c1a0c9155fc907f8818ea58417045ad3de36aad4749b595771d517a4820de28"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_1/frame_00004.jld2",
+      "time_seconds": 43200.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "74169c84ad1726cc50984e67c7b61dcd38c34897be9891ecef12d1a7312f3f86"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_1/frame_00005.jld2",
+      "time_seconds": 54000.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "7fc616f24888901e32bb17f33b158974bd6d1c94831fbef026860ebbcbb33c50"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_1/frame_00006.jld2",
+      "time_seconds": 64800.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "bf63b7b99340e7ed2f38bd786a8402baa2c934457f7dbb2180e8d2904086e0f2"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_1/frame_00007.jld2",
+      "time_seconds": 75600.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "a59a6e9980e86795cf95b8e27a59ba4a1aa779d8393fa3db4067bce6330f0cf7"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_1/frame_00008.jld2",
+      "time_seconds": 86400.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "62abc2a66f74bd5aa49613abdacd79f8feccaa8a5f9ea5b0d4183b9f917126aa"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_1/frame_00009.jld2",
+      "time_seconds": 97200.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "465e1317fc7316ac6ed2a33c617e6f7a6e0df501f3734c17bf6c2904b68f1b20"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_1/frame_00010.jld2",
+      "time_seconds": 108000.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "fec7d4891730281e8eed44058d7c000445d06a681ec0394c02c4efa9f7fd08c3"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_1/frame_00011.jld2",
+      "time_seconds": 118800.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "90b8c0043795a72079acb4382761181379c26c011bd0e2d56b341ce53c313d07"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_1/frame_00012.jld2",
+      "time_seconds": 129600.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "876aff812d8eb4f1e6c1b83054d33d64f0de5d7658cf559be1f702d16333f5bb"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_1/frame_00013.jld2",
+      "time_seconds": 140400.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "4f1248d21ec67100516f25dbcf191513629d3531174c229f82532147b75ae1fa"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_1/frame_00014.jld2",
+      "time_seconds": 151200.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "c421df08d274722550a643540b46ad664555b229803e68bd820a09bfa4cbd285"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_1/frame_00015.jld2",
+      "time_seconds": 162000.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "cb0f58cece491f81a52935a3244bc858968a049c787cedf8fc7379edff8978ff"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_1/frame_00016.jld2",
+      "time_seconds": 172800.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "aeee48920ff7f419ea100d3ac32c9567251694fa5420bf5fa9ed7aaf620ad966"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_1/frame_00017.jld2",
+      "time_seconds": 183600.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "c8cbd42b9230566bcb727a7d8704a876aa7e325e4a50d8529082b454f3c80f2e"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_1/frame_00018.jld2",
+      "time_seconds": 194400.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "58ad7d802e0a8d75c5a5364535f340dddfe827aa47d3e77421fe3701a52f3669"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_1/frame_00019.jld2",
+      "time_seconds": 205200.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "2b4bb39bfb333f520a59bec6e9830d65288c9ffc78307d4e3ea70911de004c7f"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_1/frame_00020.jld2",
+      "time_seconds": 216000.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "274ffd349b925b613007f62f65fdc107324286d5f32a72979d90475bae2f4931"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_1/frame_00021.jld2",
+      "time_seconds": 226800.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "60e3762860383283b327b012a2da2fb7ed28057e97f6e6b2ca53f7fb24a518a2"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_1/frame_00022.jld2",
+      "time_seconds": 237600.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "65c8f0950feae76c6cc876c67a0ce9e8560fe7503a6a8290110aefe6d4005da1"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_1/frame_00023.jld2",
+      "time_seconds": 248400.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "694d906f782abaad6d8c9a98afb13778eece30cf0ce84fac44f424d08c3ca71d"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_1/frame_00024.jld2",
+      "time_seconds": 259200.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "6b774889385e814fdbd5d44eb9110254ef41dac840a7fd3025b00595d0377c2b"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_1/frame_00025.jld2",
+      "time_seconds": 270000.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "229b9b9a07a9133820386d9b63b59e50120e73c5a733084a141fdc4a7a71872e"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_1/frame_00026.jld2",
+      "time_seconds": 280800.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "aa7728672c8eb868adee9469538032ebb0e7132d12f76eec3c23fdd92864fb62"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_1/frame_00027.jld2",
+      "time_seconds": 291600.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "a54afc9e57973b532f0054311fe3cf8bcac8b7d18cc96de84bfc3edd24bea7ca"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_1/frame_00028.jld2",
+      "time_seconds": 302400.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "a19cdbf9c41662b75bcc74b47a06ff5b4fb55fc9a71ee0b39ae53679955f6dbc"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_1/frame_00029.jld2",
+      "time_seconds": 313200.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "5f8fc6d9112b44385cd2ea7de57f8df918cd1b42211f8d443afb89ffbef6b9c7"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_1/frame_00030.jld2",
+      "time_seconds": 324000.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "7ee6c7e87b30f031f8a80f70974cf37f164f7f9634067f0b80097c20f3868527"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_1/frame_00031.jld2",
+      "time_seconds": 334800.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "a12de02db3e5f16fa2013a169c3359ee9e3563437510e9a8461f5ea7aa065b4f"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_1/frame_00032.jld2",
+      "time_seconds": 345600.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "eeadde40a9f06369e075419021853534612da2a42bec8cbe1c9dfe3243a338f2"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_1/frame_00033.jld2",
+      "time_seconds": 356400.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "647e9162456f7cd6b9819aac66db1a01703db8c6efdef51e70c9c51f5282f35d"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_1/frame_00034.jld2",
+      "time_seconds": 367200.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "62345e2cfcb3b767c6a5620d51377c658e9b352778a1169ae3458d0beb92bf98"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_1/frame_00035.jld2",
+      "time_seconds": 378000.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "71fe5dbf70454b624d0329bcba5959faaff42e2f271ff8ba9181cc981d26ea94"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_1/frame_00036.jld2",
+      "time_seconds": 388800.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "c607ab1dc9bd69d0eaca18e4f06412ac29adcdd3c2bce86c70ec9888ba177015"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_1/frame_00037.jld2",
+      "time_seconds": 399600.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "3093b32b1283002b2ac74a34e1a593daec2176d79d8be8b60db31ee3ade9262a"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_1/frame_00038.jld2",
+      "time_seconds": 410400.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "a34f24c91244b5273006d29952abedd476f6756a08b0351966508f539c18b774"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_1/frame_00039.jld2",
+      "time_seconds": 421200.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "ad6106cbf1e7d736d0460e1ee138562738fdc0f3d74f2c5997c6a51d50d7733b"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_1/frame_00040.jld2",
+      "time_seconds": 432000.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "158976b34f4acb052aeefc277793b4f93f9b441d1b300312e05447d4515dc689"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_1/frame_00041.jld2",
+      "time_seconds": 442800.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "a1a435e9312ec0050282a362aed856ce09f4c607668fc7ff787f758b1454abb4"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_1/frame_00042.jld2",
+      "time_seconds": 453600.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "d0fbed7544c3223a8fd16fcdc5d984209d73e61e74d5346618c75e105a437b1b"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_1/frame_00043.jld2",
+      "time_seconds": 464400.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "4933b7ce4cb1800dfae1ead1545cf7470605ed7480cd2ba6f1bb75f78fab71ba"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_1/frame_00044.jld2",
+      "time_seconds": 475200.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "64eac5e2ab422ba53a5757af9585df9523ebca4dcea0a3233192a19abdd4853e"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_1/frame_00045.jld2",
+      "time_seconds": 486000.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "4eef0ba41eb69ba69526fc6b20253e1b0de3289a757c1acf27a5c4338c08bfc3"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_1/frame_00046.jld2",
+      "time_seconds": 496800.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "ec0f5892e056d6e9c18d8ecc918562c37a9505da0e7c3ab2c93761c6474a979d"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_1/frame_00047.jld2",
+      "time_seconds": 507600.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "3a302e4abbf695b2c77e3f23c1850c590b624b44c3a3f329cc9685d3d22e09ec"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_1/frame_00048.jld2",
+      "time_seconds": 518400.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "fca7f9e7451cd96d1d0be50a48ea42532c4ab06cb29edcf89b5acdfe2ee845e6"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_1/frame_00049.jld2",
+      "time_seconds": 529200.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "afee9943425a7cd755ac4bf4e97d1d52d5624a2d75eb125a8b55d21a0f541ad0"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_1/frame_00050.jld2",
+      "time_seconds": 540000.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "a4775d0d84ce88bfc2a5fabcda70e8e9279b6816699208a8786eeae9f3a29577"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_1/frame_00051.jld2",
+      "time_seconds": 550800.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "5ca1779e8814d4c0c5c6ff2f63bcc31c839b40feed0946d009bf4a60e986cef8"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_1/frame_00052.jld2",
+      "time_seconds": 561600.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "37d098ffd15209e20b954b9f038e414fe707800491d894decfc85e583b5de698"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_1/frame_00053.jld2",
+      "time_seconds": 572400.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "3079f61aa7c7b9d599c488e338ec5f62e8949c4f71da645b8bcf843aea34a5fb"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_1/frame_00054.jld2",
+      "time_seconds": 583200.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "8bbdba12d2df8975b8709e26e6c4ef7d5e825386528bb575b3335f6950c915a1"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_1/frame_00055.jld2",
+      "time_seconds": 594000.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "b868daac23cc51696b0793898ef14f69216819d5cd7166cad4451f17062dfb6e"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_1/frame_00056.jld2",
+      "time_seconds": 604800.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "b91d5d42abac673f68fb87c3f86330b4ae776fa549e6977d0c1d5e0a0e7c14ab"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_1/frame_00057.jld2",
+      "time_seconds": 615600.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "1a604921d64f79a952691217543226210199d763774fb437d50f3f155119c0bb"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_1/frame_00058.jld2",
+      "time_seconds": 626400.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "a3e8962b7049ada25e1230148d74885f3d9dde9d0e63d7d6613ef38b466ca24c"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_1/frame_00059.jld2",
+      "time_seconds": 637200.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "628e9bd0e8f9a05381c176af9db41f537b2a20981938a4b4b83071b9ca105c9a"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_1/frame_00060.jld2",
+      "time_seconds": 648000.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "b7c674e66ecd635c0c6882562dc20ed17bb540482416a7ac3b83161df12e9dfc"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_1/frame_00061.jld2",
+      "time_seconds": 658800.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "7df0e11fef28d706263c1833c369e6af32ce810d3ac4edd52d167f63b2feb802"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_1/frame_00062.jld2",
+      "time_seconds": 669600.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "5b83f9a70916db69a1bbbaecc58c2e7cd0b899d3e0576fb7bd462a4e422ac188"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_1/frame_00063.jld2",
+      "time_seconds": 680400.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "d53fea5b0116bd2f9e1855f0c1d16d5625a14e1cd4eaa8c1355743229c3ea12f"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_1/frame_00064.jld2",
+      "time_seconds": 691200.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "4355d961f88bacf11144b8a2f7edba7e154c8ae7fc8b9a9eccb15b698feb5b11"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_1/frame_00065.jld2",
+      "time_seconds": 702000.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "f87d6bfa16dde413b038f07e897b8904dbe72605e05ebc332071b537805625c0"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_1/frame_00066.jld2",
+      "time_seconds": 712800.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "1e012a856cc2fca17bdbd8656fd1e651c865b8482c28112d6505a6cc09103a16"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_1/frame_00067.jld2",
+      "time_seconds": 723600.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "efad2712d13a0c0c6bcc92db1a09fdf195883d073a78b257ba8f709ef688e28f"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_1/frame_00068.jld2",
+      "time_seconds": 734400.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "b9cd59f10c2f7f7aaea238ffe1cca9e2717334b2e2414c35737ab1464478dba7"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_1/frame_00069.jld2",
+      "time_seconds": 745200.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "819f77bde8be066755b57b406f52190d2f71e677139049affc41859902d7d0d1"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_1/frame_00070.jld2",
+      "time_seconds": 756000.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "708669a4319c2f8a51b4c9a757e8cc3f03fc8033701d8fd8c92a05066bb6b725"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_1/frame_00071.jld2",
+      "time_seconds": 766800.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "647b032bd49893bfc1b15e1b6e5245e8852eca6d3abb5ada733ccac040d59b4a"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_1/frame_00072.jld2",
+      "time_seconds": 777600.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "05c9f6038c7c21834fbde4eedfc373ec2d0beb9d8878ac373fe82e93aa5cce6e"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_1/frame_00073.jld2",
+      "time_seconds": 788400.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "faa54d5d44962f448e6e16ec58157284af22e1727a66a5092d0d88d9524712f2"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_1/frame_00074.jld2",
+      "time_seconds": 799200.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "50bdac1b00e3eb869e79be3797a2d5f4887ea4815369b0e6d98c93e3b69845b6"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_1/frame_00075.jld2",
+      "time_seconds": 810000.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "05362cdf0e166b461532d30fc3066a4fdf66bb2b561bb4ae5dd61ac5aedf06c6"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_1/frame_00076.jld2",
+      "time_seconds": 820800.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "45280d630f8167cb6ef6e813e600a57866ef06d4ad3b6a324df4e767deaf6ee2"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_1/frame_00077.jld2",
+      "time_seconds": 831600.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "4f2864aaa47cb20d1b0b0f253e725f6ba881b6fa500718bf4e68c1a69da62450"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_1/frame_00078.jld2",
+      "time_seconds": 842400.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "907a4b22a0b9e41ed18349354b6bbbf983e24bf1b76a91f0df6d8f8d311f6c36"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_1/frame_00079.jld2",
+      "time_seconds": 853200.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "e3b0423cd69e47f64270b85a44fa51aaffddbe7a8f9dc6a1b3c19f9e80dcee1c"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_1/frame_00080.jld2",
+      "time_seconds": 864000.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "36405f1e95bdfe650216893261b3912cc77ec5a4a5969adf6d64c714c560add8"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_2/frame_00081.jld2",
+      "time_seconds": 874800.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "da39c9c02c6cde5f4813070b8330a15f0f87aec00bf14e57b9bb4a2da270a6eb"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_2/frame_00082.jld2",
+      "time_seconds": 885600.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "1e278858fc5db9ea638f43887e5d4683ce6e2b33f2c1b6e0aa2316c11f62b89d"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_2/frame_00083.jld2",
+      "time_seconds": 896400.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "ce2886c8a6dbaf2ad007c2e3427d2e70a43bea05d61bb6ec2de62e95ff9d9841"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_2/frame_00084.jld2",
+      "time_seconds": 907200.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "3ab03b0f2274447017f87214c6553ef7f8766500330b67de3c23cdcd29a037af"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_2/frame_00085.jld2",
+      "time_seconds": 918000.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "373dc4093dabb7a04b4008d9ec585136aece18e85741935eb7982ccf58793b1f"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_2/frame_00086.jld2",
+      "time_seconds": 928800.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "95f132317a46aa2e504ef09c43a90d68ca3fbc7aee0a89ddd8bba68d02a44f0b"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_2/frame_00087.jld2",
+      "time_seconds": 939600.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "d72d01a0ee1df2c457abbf1dbb9ec8afc5dac4eccea0559c4ce698a9400c681f"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_2/frame_00088.jld2",
+      "time_seconds": 950400.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "341662a83ce562b20aec29e11e7d87a056d54fd1714c6e2788c114b7ddd60093"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_2/frame_00089.jld2",
+      "time_seconds": 961200.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "a225457b66b0e1ebcaa8f4acfe498e8a5b2e2abb70d8d4cda2f886e676ecd2f6"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_2/frame_00090.jld2",
+      "time_seconds": 972000.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "bacee6a5b7c6e8198d3a9245f51f893e1ddd30597775ba19838f6fb1eb531eb8"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_2/frame_00091.jld2",
+      "time_seconds": 982800.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "d701c6c2eb998260a60ee22eaa080a53a89ed2e17a19268d109b1eb3814e0d06"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_2/frame_00092.jld2",
+      "time_seconds": 993600.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "7bfd3ec49dee5984233d2deaac50db9843f3ea4bcd6cf612e3f75eb2adf70bd9"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_2/frame_00093.jld2",
+      "time_seconds": 1004400.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "bf3c43b9de642e1033ba64087049295981059a0c2c239d6bd1b6e12491103423"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_2/frame_00094.jld2",
+      "time_seconds": 1015200.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "ba76c787987a7a42cfcd732ee3e067b9d824c60ed315af876e34b7989efe6c0b"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_2/frame_00095.jld2",
+      "time_seconds": 1026000.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "095534850c06a30eff26b1a78a3ed7c7102e1272ff235e3b49c62ad8762c09b9"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_2/frame_00096.jld2",
+      "time_seconds": 1036800.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "f99c06661fce63fc0dbf62f2292fa0bbe2e2edcffa1002100706504dd58dcacc"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_2/frame_00097.jld2",
+      "time_seconds": 1047600.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "6c1e8d55438ae14f7cf36df8554f1cef2ccaeaf10cfc9a7b5aa1876ccc0ae272"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_2/frame_00098.jld2",
+      "time_seconds": 1058400.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "df4b3f45c24846de82ff42197abe06e5f01bcb205c706733cbe5913793ba8de3"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_2/frame_00099.jld2",
+      "time_seconds": 1069200.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "5b7069a954153bebf65f963e8143585c36ad4d1b2ead8c93ad6f0fd6cea06882"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_2/frame_00100.jld2",
+      "time_seconds": 1080000.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "2f6a617a405e06e98b4ad00e500b32143c9d8e8b5fc4c6abfaf13bd38ee93f03"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_2/frame_00101.jld2",
+      "time_seconds": 1090800.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "7cd801d567e962a1ec57460cb44fb68bc722bb344be51950c9b7ee1710d48523"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_2/frame_00102.jld2",
+      "time_seconds": 1101600.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "7f0fb2cc6f3fc7c286d9fb2a411039cb4bc1d5c26e825f70bcec94aef0d84fa1"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_2/frame_00103.jld2",
+      "time_seconds": 1112400.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "ae17af54fcd204f5820d2afd492ba0b3b463e16708e0d97b279ca5b77533023a"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_2/frame_00104.jld2",
+      "time_seconds": 1123200.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "1955247ba723c5f8973ab0bb80b9fc34f6885d8f47d945bd9c5087b8f9455a8d"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_2/frame_00105.jld2",
+      "time_seconds": 1134000.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "83d84db76d9609bac97dbeb725efe8d7c7a4810878a0489bb6d04cf23923cc5f"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_2/frame_00106.jld2",
+      "time_seconds": 1144800.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "d12c4993cc93e8ccf4ae358dd2837b4900c45d66cc003704fb5ebd59e0f2142c"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_2/frame_00107.jld2",
+      "time_seconds": 1155600.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "c60e803b857aafe4537e724f1691bcedca0add76b0280fbdb6299c16f0ba9ec4"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_2/frame_00108.jld2",
+      "time_seconds": 1166400.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "c54f2deac896d231b3f26812c89838f58cdba3fcedc0383fe5f339ac6e5d04b7"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_2/frame_00109.jld2",
+      "time_seconds": 1177200.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "2de7e9066bac8a69401fbd559a7e67d52a4543ef217fbef41ec779c1c543a91d"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_2/frame_00110.jld2",
+      "time_seconds": 1188000.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "276d1af3a478d97169d6636c0f08b10e3122345990447d6bfe98ba543d98db44"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_2/frame_00111.jld2",
+      "time_seconds": 1198800.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "0837346c0b22795ff5b047761bd8a05eeb9fe40c181eb419c16a14229e799230"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_2/frame_00112.jld2",
+      "time_seconds": 1209600.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "d8282ff71aba928edeafdb57054ef9ec9f71f13bd61abce1e09b9bd6be0ab922"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_2/frame_00113.jld2",
+      "time_seconds": 1220400.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "942509e8e23a105ff4617d392dfd5ad908783466c6b4abe1751bb49fd82f0c9c"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_2/frame_00114.jld2",
+      "time_seconds": 1231200.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "b3b0f3b682f3990327f4889f60fd3c0fb3b379a32b03ce11653f43431bd677a3"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_2/frame_00115.jld2",
+      "time_seconds": 1242000.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "ba0d0b1d69dd2b5a4a3cb8946d26df43675f19746d6608d75a1545394217ae74"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_2/frame_00116.jld2",
+      "time_seconds": 1252800.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "0abca0e541fd7cb103f6575bcbd15277da9bef58d9f0f285e77c8fdee3357a77"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_2/frame_00117.jld2",
+      "time_seconds": 1263600.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "9b62a6e6097f23008264e2c71eccfa5608c355e2e71401981544c996a517eb14"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_2/frame_00118.jld2",
+      "time_seconds": 1274400.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "1dc143bc0c897f596692927213e28ddd7a44d35df84931edbe0c8e1c21723795"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_2/frame_00119.jld2",
+      "time_seconds": 1285200.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "32ad9ba12b901a27cd51a3961fc66fd7d1199502324a9ba8d9b23c9e975e896f"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_2/frame_00120.jld2",
+      "time_seconds": 1296000.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "de4503ad5e19fbd6cb08e903d2282500ef582898604fc8d5a3bf67d250a933c1"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_2/frame_00121.jld2",
+      "time_seconds": 1306800.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "9e37f6cb9ca86f75b82987b738d0fdd071d4cc77607359b02c1817567b1c220c"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_2/frame_00122.jld2",
+      "time_seconds": 1317600.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "6f304380c0b1b51cf29282a24c3ed6e2f097074940514d2d7afb9757fa9cdfc8"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_2/frame_00123.jld2",
+      "time_seconds": 1328400.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "ee51d84aceb136cf94712d7d0414c088bdd1236c1686f3057118ee680fdfe0bc"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_2/frame_00124.jld2",
+      "time_seconds": 1339200.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "535d336999729a040a0b6f39cc8415b31dd47cc40f24858637d09146da3259e2"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_2/frame_00125.jld2",
+      "time_seconds": 1350000.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "44db49c81ee1858393d3a95d03bb6903321a9b34d36862c7104beba2d60e0e0d"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_2/frame_00126.jld2",
+      "time_seconds": 1360800.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "1f3f8b40dd83de6f14a77c468b68ed72c703e6159da6f194cafdfba8b705588c"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_2/frame_00127.jld2",
+      "time_seconds": 1371600.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "a643818f828c16091dec7141f01eed89d569ee428cf80607cd3f0eb013cce7fd"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_2/frame_00128.jld2",
+      "time_seconds": 1382400.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "eaaf9fe933760d617432c275d36a22f9094c95ea8f935861c1f6eddf10440636"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_2/frame_00129.jld2",
+      "time_seconds": 1393200.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "84976ca7c9c04859cb266034e9cdf9029a96493cde932e1a202996a0becb7bb4"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_2/frame_00130.jld2",
+      "time_seconds": 1404000.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "ed119add893c734a5b19b9282bbf4365721d2088a1268a0bf5b4428d84e69467"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_2/frame_00131.jld2",
+      "time_seconds": 1414800.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "b184f1ceb9ce0af44727edef82f49da70028e0b9235347e471aab3c3fa2eb1c6"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_2/frame_00132.jld2",
+      "time_seconds": 1425600.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "02426421ed7f1db951aa585b60a50488122d1dca7b7dcd4ffddf9eb822588ece"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_2/frame_00133.jld2",
+      "time_seconds": 1436400.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "ef77ef2327e6323f52b021e37c46ccd9ea6655e554e09776dff564654bb5176b"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_2/frame_00134.jld2",
+      "time_seconds": 1447200.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "f3971dd642686e2db6702238e76a89490f2699617f9be2d3e02c8d3002f044ef"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_2/frame_00135.jld2",
+      "time_seconds": 1458000.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "daea499212a6800f082ffd92a3dd4c41e87922adeabf2e3a6708cb1768764c27"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_2/frame_00136.jld2",
+      "time_seconds": 1468800.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "740b72775111d0ce7c6c0dfa0e1d90e92abcfa202d62331dd947814fa8c9aa59"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_2/frame_00137.jld2",
+      "time_seconds": 1479600.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "38765440eee1d736f75e75264a021f77519caa528dec2bc205a7410954ea73ab"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_2/frame_00138.jld2",
+      "time_seconds": 1490400.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "a399c51f88d1f669a7da2d6ca69a5d6a2ab7745e6bacdd3b47560fcaece4709f"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_2/frame_00139.jld2",
+      "time_seconds": 1501200.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "e348f2746f373db29826ebb6897c1c738200c64723562b915552b8d2613a4570"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_2/frame_00140.jld2",
+      "time_seconds": 1512000.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "419f25ba1d1af67666e30b5de92c5b292ad80f7a7a7ebfd284721df7e5731b55"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_2/frame_00141.jld2",
+      "time_seconds": 1522800.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "6234b1e2066e574c9761209f6a5b674fa19839f157c17d92b36662966df57265"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_2/frame_00142.jld2",
+      "time_seconds": 1533600.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "a6f524adf9fdb3b49ce238a43725dd4d4559932cc3ef0aad763308bb1608b019"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_2/frame_00143.jld2",
+      "time_seconds": 1544400.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "ad5c26b13d8e586bba2ca96ed135748ab65d2668eeb0ba0ce09897d2dbdb54cc"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_2/frame_00144.jld2",
+      "time_seconds": 1555200.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "08a6a1e9647ded6a728f50ede3c0fee1f56ad9b769cc39721fd1626e48ad6829"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_2/frame_00145.jld2",
+      "time_seconds": 1566000.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "da379f54170a2b9956d8fba41963c0ba4c3f17e1d522fb062228b3d77131a3d1"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_2/frame_00146.jld2",
+      "time_seconds": 1576800.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "434ee9b407c13dae8732df07ba296ce0395c6cc42c90db8d37f8cc4f8da05f6f"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_2/frame_00147.jld2",
+      "time_seconds": 1587600.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "e1ce8a788d012d026e2c1b94b56000150e11ffd335ee0fb04b64b179be4145ae"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_2/frame_00148.jld2",
+      "time_seconds": 1598400.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "ff48b1fb69e5bd6c13929fd697d9cc6ed9e7a6ec739674df4a9274638f8cbbd0"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_2/frame_00149.jld2",
+      "time_seconds": 1609200.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "28fddadd3b4aa5a2e3ac59ed573c82e174f4a749a576ea411f9d99d89018d9d1"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_2/frame_00150.jld2",
+      "time_seconds": 1620000.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "83fb840981597ef456048fc95afab48202d36b185987f953a258069c2ffe8e8d"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_2/frame_00151.jld2",
+      "time_seconds": 1630800.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "2559ce73a6dc74b17ef00e467ef95aa195ff4c3330dae10acb5e5cdfb5a8d20b"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_2/frame_00152.jld2",
+      "time_seconds": 1641600.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "0a93ac3b5e0bdabe9f1869a6c2fc5c3d808456651bac80c67647ecbd7e3e6783"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_2/frame_00153.jld2",
+      "time_seconds": 1652400.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "ab85d6ebb1b807ad7a36a45239b1c2e5e8302af299b5f18f124a6876140a9555"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_2/frame_00154.jld2",
+      "time_seconds": 1663200.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "9b4ed6b6cdaac29e5acd09360f8966473c74004410103ada4a916a7bb78f9d1b"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_2/frame_00155.jld2",
+      "time_seconds": 1674000.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "eedc987758c4e944c23cde9176906951c73f5fe58b0ca5112da6ecd6d8c5fd99"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_2/frame_00156.jld2",
+      "time_seconds": 1684800.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "e53fbbf34d8bc19f3395755c51086379b50b19c3ff9293f2287c703f6437c648"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_2/frame_00157.jld2",
+      "time_seconds": 1695600.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "e5f9847743df3942525d061f884bd6e443c1d446d946feae28ccf6b2b14b201a"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_2/frame_00158.jld2",
+      "time_seconds": 1706400.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "222d4fa6983d1ce21a55fe36faab98139b39417b9808fe2a1f6bd3c0e8138d98"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_2/frame_00159.jld2",
+      "time_seconds": 1717200.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "571f7bb666aea62cfa7d4564cd6fc3a589a4ac90ae32eed5b61dd08a5a8d1f21"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_2/frame_00160.jld2",
+      "time_seconds": 1728000.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "07c57a2e339b0ca5025b070c85c864bce050ddbfa7e1e8cf1210345c95583741"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_3/frame_00161.jld2",
+      "time_seconds": 1738800.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "786ade9e7c33940f603bec05550c7e3ca7d2dfdc65267aa27073c6bcfacb31bc"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_3/frame_00162.jld2",
+      "time_seconds": 1749600.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "98560762adcd2af7570ee436c8c8da845241791cc2284f35d895e6e247b55034"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_3/frame_00163.jld2",
+      "time_seconds": 1760400.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "a14e43e62172e523e7797a7987bdbd5e58fa34eefb3e45c019f48f252d6e0971"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_3/frame_00164.jld2",
+      "time_seconds": 1771200.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "7fb687320ec1f8fe6baf47c0523801282388647a55f87bec1a93babbcb88122f"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_3/frame_00165.jld2",
+      "time_seconds": 1782000.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "5631e52d92f2a5bfb2710cfad0bfd1cad6dbc0230956d2a5ee3f20eff3d54892"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_3/frame_00166.jld2",
+      "time_seconds": 1792800.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "8de01860356b5c452d6a4e5eb0fe6fd231bbc6cea028dfebc236484d365963b3"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_3/frame_00167.jld2",
+      "time_seconds": 1803600.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "3deaa816ae116e5937acfcc53f47cbe69ee5efbfd6de441ed2b99a797a4eff60"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_3/frame_00168.jld2",
+      "time_seconds": 1814400.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "6fd56e1a24ca5a4290c1a70ab2edc63c6b5f39d1b2d7beeb9f4aec47f93176b9"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_3/frame_00169.jld2",
+      "time_seconds": 1825200.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "dcaba02d03b4e553c6bbe37a37c5d0b814773df815b4c25a1e33787d2e0f18ad"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_3/frame_00170.jld2",
+      "time_seconds": 1836000.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "e9522a717383412447488bd51fbdc2117d5158cbb732e47ad0fb816e4a91851d"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_3/frame_00171.jld2",
+      "time_seconds": 1846800.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "bed9dc0b6f7db2c65e07407264e9425f2d6e767a334464d54538e8b889567a91"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_3/frame_00172.jld2",
+      "time_seconds": 1857600.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "367376faccf7c6b338001007c21ba475eccb9f0c78fc2f41c9c110ba020d8d73"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_3/frame_00173.jld2",
+      "time_seconds": 1868400.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "138275b9009c5461fe6879313731a849732757f4678b5163c7367ebfab2b1a17"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_3/frame_00174.jld2",
+      "time_seconds": 1879200.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "ee1d683a935df1cbc4489fefc87f20f5c69cf54c61d1224c45aa387940aece39"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_3/frame_00175.jld2",
+      "time_seconds": 1890000.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "15403365be4a689fa7904a224e3487be7f493e9affe59dc30003c8a7b50a21b4"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_3/frame_00176.jld2",
+      "time_seconds": 1900800.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "58bae65d693766901797dc46c84a48188a1e1e25263300861e6964a574f84ea2"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_3/frame_00177.jld2",
+      "time_seconds": 1911600.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "45ce9bf6b4d2533bf69799fe2683686ff75cce3136d388500ce9775070a9d75a"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_3/frame_00178.jld2",
+      "time_seconds": 1922400.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "704bb25394c290625819db46a73cc6cfbe3283e91334f197f7207cf793ec4296"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_3/frame_00179.jld2",
+      "time_seconds": 1933200.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "1e8442b1efe1ac7608d379ca0287b0daa8d669e5c64af2b93275c62bd55963bf"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_3/frame_00180.jld2",
+      "time_seconds": 1944000.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "db0328af6282261e8fe2865073c5ab9766287c24011ee0597025e4f8a917e9f4"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_3/frame_00181.jld2",
+      "time_seconds": 1954800.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "1ada62c48395431e92add7570bdec1af7424339a9e7175a4b602092d6a303c59"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_3/frame_00182.jld2",
+      "time_seconds": 1965600.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "8db65fa0a9edf2ab47c967512b38ab10409c216176b1a49ba6f4f0df002039b9"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_3/frame_00183.jld2",
+      "time_seconds": 1976400.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "d9f87ccc4dfc5c3ef5f440e9ceb789058d3f58900bb8f477b33317efa51f5daa"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_3/frame_00184.jld2",
+      "time_seconds": 1987200.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "1a8dd0a5a32bbed5d44a3b03356bd61d8f9f78189d739ec73221e0c1586a960e"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_3/frame_00185.jld2",
+      "time_seconds": 1998000.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "f6f17a2f49e1e0f4008dea2e5d3d2e0a145d3e6ba584c5ddeaae4c7ab9c44de9"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_3/frame_00186.jld2",
+      "time_seconds": 2008800.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "01abedc933b809d1e9d2ede43bbd27f04ea900cb3646ee3419fe62302be1a91e"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_3/frame_00187.jld2",
+      "time_seconds": 2019600.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "7c228f399bc9ceb29e197559908cb6a57255295ebf233f62d248dc874e3245bc"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_3/frame_00188.jld2",
+      "time_seconds": 2030400.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "c0a40638f0f2941c43bc9af8e9537cf2e9d47d7f0ce6ea7d36245293b99f0084"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_3/frame_00189.jld2",
+      "time_seconds": 2041200.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "b032066efb32053ce3917624c326ed32d8a21c59ac28f548fc39e080c16c41f9"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_3/frame_00190.jld2",
+      "time_seconds": 2052000.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "63c0b8a17fb6b59e16b87f4c1534c2ab45cd7123e48a3710d06c1bdb8793c9dd"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_3/frame_00191.jld2",
+      "time_seconds": 2062800.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "c1e1795ea49e22be49f27aba94a8f0dad58228f88e8f6bd4d67496ff44fbc404"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_3/frame_00192.jld2",
+      "time_seconds": 2073600.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "c91521008a7fb978dcf00632e843c3a4f1949e49f90e602b7206e2eecddd3203"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_3/frame_00193.jld2",
+      "time_seconds": 2084400.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "e08c15863d1c7b4cdbf3c1ac8a803e0556b836b2ccce4a9bdb1604c55ae3000e"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_3/frame_00194.jld2",
+      "time_seconds": 2095200.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "bc11e9e58b7e4a0867ccd45db4369d76048f144ae4b58d22e758dce0cf5c4a93"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_3/frame_00195.jld2",
+      "time_seconds": 2106000.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "f515904faf4a5f41a0b8e4621fdd06e33c67bf69181ae0558a88f2b433dfd219"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_3/frame_00196.jld2",
+      "time_seconds": 2116800.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "60240b68eadd03660bab6b921650ee973a219844c6b199099c41d895ea45bdf4"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_3/frame_00197.jld2",
+      "time_seconds": 2127600.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "1634ef8835ccdc446d95198db60709bdd3819dae48d234d73ab6d1ccb90021a9"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_3/frame_00198.jld2",
+      "time_seconds": 2138400.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "5c292d45e8fb34822061046ae388989ab6049e416bce22fe52e08dbcf12712fa"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_3/frame_00199.jld2",
+      "time_seconds": 2149200.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "a1f30e6e6166a03afee3e20f129cbca31b2f257ed156637fbd0dd629f6d97714"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_3/frame_00200.jld2",
+      "time_seconds": 2160000.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "690e00a7369e37cb865122ed7f9cf25ddfd16e260257b4943d370cdd9e121348"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_3/frame_00201.jld2",
+      "time_seconds": 2170800.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "f8921b59f81518792bf5e8188c4c2a6f8c83befe1ecfe3fc5786ecbd05884c59"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_3/frame_00202.jld2",
+      "time_seconds": 2181600.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "a5be5df0f251bbe10ecd9fa9712305fc6c0d91719600999451165ceb8152f4c2"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_3/frame_00203.jld2",
+      "time_seconds": 2192400.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "5c59528edccde073cef612b2dcfc6508f972e2cfe593c1685c7e96173ccc717f"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_3/frame_00204.jld2",
+      "time_seconds": 2203200.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "4be6ef8c14b1f5824a6d92d4c6b4fa0b9be500dd80ca4a65643a810ee38c5894"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_3/frame_00205.jld2",
+      "time_seconds": 2214000.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "174b9b68515ba89e526f9a71deb2c5aaea7869b3f4114b949547698446d453bb"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_3/frame_00206.jld2",
+      "time_seconds": 2224800.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "835ecf6a03abfa610424741a2fb02f36241daf6a987da86543fe91b3fa9788be"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_3/frame_00207.jld2",
+      "time_seconds": 2235600.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "133f1b832a0c99dcc938e1833c3225edc20b58b9fda78f07a248a9497c3f1a7b"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_3/frame_00208.jld2",
+      "time_seconds": 2246400.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "f76bda57ae00712974cd786573250eabe7e2da7761fab1a27b332537e9389ee6"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_3/frame_00209.jld2",
+      "time_seconds": 2257200.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "266835f9d734da636cba74ec5013d3c36c2e7ec4e0e17ea2f2cfe566c2d652f7"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_3/frame_00210.jld2",
+      "time_seconds": 2268000.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "b1e36dac92df1ebda6663475fb8f769f88b5cc08bb3545952f57b7109e3354ca"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_3/frame_00211.jld2",
+      "time_seconds": 2278800.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "c644bc97c1272ad2f5481e2a34b1de7abaef40ad40b6b7b404f0d9a0b349323c"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_3/frame_00212.jld2",
+      "time_seconds": 2289600.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "facc25a549ca204dd69d323925ebc75758afac9431ed9a42b93743b462929fde"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_3/frame_00213.jld2",
+      "time_seconds": 2300400.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "1917320087f3f6044d6493306df50ccdc070765c67497731c5a8c01356cc1f71"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_3/frame_00214.jld2",
+      "time_seconds": 2311200.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "8204939e88b94729026a88fe7ecebcd8158c83182c3ceaa4818758d96ff766c7"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_3/frame_00215.jld2",
+      "time_seconds": 2322000.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "7e837f9d36f87fef27b29fce5813e09a7aa39bc5dccca170018f418a8d7317d5"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_3/frame_00216.jld2",
+      "time_seconds": 2332800.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "713e7f0f7aef6b520a0d5b99f4dbc6d4570ea79577120496325507ab661db0b9"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_3/frame_00217.jld2",
+      "time_seconds": 2343600.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "a4f697c3eea5425cc32ded4ca1348638f17246ba02894c7338fdf45d60871576"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_3/frame_00218.jld2",
+      "time_seconds": 2354400.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "6c36340608cea26ebe73d44c1e9e288da09cf656bc094f8d99a6bcd8f22b35c9"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_3/frame_00219.jld2",
+      "time_seconds": 2365200.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "827d13f6e0064c77b4f23e095eeec284ee6afefd237236a98c339ceff623275b"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_3/frame_00220.jld2",
+      "time_seconds": 2376000.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "8fd19010a73d4abc62af79596c6c947c09b655563888f21d34ce98ee1050a8ac"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_3/frame_00221.jld2",
+      "time_seconds": 2386800.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "eb7595b8aa478359751c3d013fc16ea288eed30ec9cce2e041d57df1997024bb"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_3/frame_00222.jld2",
+      "time_seconds": 2397600.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "75ab8a9987ef66b8dc9f49f5643f52ce7b76de38f4369af4b4f88c703a371042"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_3/frame_00223.jld2",
+      "time_seconds": 2408400.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "4ee851450e3ea48f983e01cb969367fd0e92994c25ff11b493e980dad9022610"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_3/frame_00224.jld2",
+      "time_seconds": 2419200.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "91cbcec39d17271aba8eaff81890e6b3733f79e56f60dfb34b999315292e73bc"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_3/frame_00225.jld2",
+      "time_seconds": 2430000.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "aeda55f20594b911eb1b120bbe2683eaa7566ec3d7e8391f0e3a4244c49503a1"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_3/frame_00226.jld2",
+      "time_seconds": 2440800.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "9de5c6d90fd00839245b5aaa5078ad2c4e442d9cea82fb04140bdcd10c0d1605"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_3/frame_00227.jld2",
+      "time_seconds": 2451600.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "73965348c204d5bb1d69b108261988d1e036e66407f128b25f565a38a94aef15"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_3/frame_00228.jld2",
+      "time_seconds": 2462400.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "3ce47358ccb5cb5f572d62367287a52df8daec99f7986539554d11a8c7af4ebe"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_3/frame_00229.jld2",
+      "time_seconds": 2473200.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "c8d79b18ab9999df97e294775fa67f693a07a6a2bdd791111f25b2b82e203afb"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_3/frame_00230.jld2",
+      "time_seconds": 2484000.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "85a5e392b1642364c25f245b65d1b04b337b67e353936aada27e7da00ca010ac"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_3/frame_00231.jld2",
+      "time_seconds": 2494800.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "0f006dee8c117f442d9805bdda8460fbd972fe6077bb88e7a4bef6a1bae2ac7b"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_3/frame_00232.jld2",
+      "time_seconds": 2505600.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "3e9409884a3856315ba67e23e258fa521a1e8ce0baf2a5e8cfb7c95663450654"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_3/frame_00233.jld2",
+      "time_seconds": 2516400.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "eca6a119aa198bbfc576db8cd6c21dcb3626d7f75bef9bbc8db8ec71e30e67e2"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_3/frame_00234.jld2",
+      "time_seconds": 2527200.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "ecae2fb848ee5e330607e0995c0d2d39e4f90c6be7b2bcc62992be78b732b7cf"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_3/frame_00235.jld2",
+      "time_seconds": 2538000.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "a9afb16e37c44c28780ae503bc7f794e8b2ec3774c0220e62d7e9a74036d7ced"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_3/frame_00236.jld2",
+      "time_seconds": 2548800.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "657465f070842ae44a46fa919a00129a4ce64bb5aebb7149183255605cf4b44f"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_3/frame_00237.jld2",
+      "time_seconds": 2559600.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "d50f67c636346680a7050c75fdf0d29c2cf53d1fdb819af0e7d38102212f42d5"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_3/frame_00238.jld2",
+      "time_seconds": 2570400.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "636ab778a64f530af4b040b33b5a5b8e57ea1762f65092fe6158448573d6a245"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_3/frame_00239.jld2",
+      "time_seconds": 2581200.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "e4a271764f806d5dd0bd3678fb01011404f4cbfd5cd54702c86301d0421c4e34"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_3/frame_00240.jld2",
+      "time_seconds": 2592000.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "1990b31cba0f27a0aa64e7fd707eca50746d70227a549a6d3c08d7e539057e1d"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_4/frame_00241.jld2",
+      "time_seconds": 2602800.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "2bd6808216082214a9b550bec9825d24defc2a47f30d96c0bf0ef15c20a6309a"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_4/frame_00242.jld2",
+      "time_seconds": 2613600.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "831f9e3cd36dd2082c54030e149761b40a7b3c9c6a8069b00f7a3ddf98dff2fd"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_4/frame_00243.jld2",
+      "time_seconds": 2624400.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "4e7898f609d180d66e3f349bcd3d1e9c79749a31f783ec6854dd04b8e57f431f"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_4/frame_00244.jld2",
+      "time_seconds": 2635200.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "945ee0e1f48fef45a13dd47bedbbc4ea90de8022d2fd050c86e18c6270218666"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_4/frame_00245.jld2",
+      "time_seconds": 2646000.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "8206eefde56873b4d45c98b9d4e9f5e1a6be999b32012d3a022b60cbc481d637"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_4/frame_00246.jld2",
+      "time_seconds": 2656800.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "61d243bb6f8fdac14505bcb820c0349726d3fb37e83158d4b84c4f5e6df61190"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_4/frame_00247.jld2",
+      "time_seconds": 2667600.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "7231c88a0dc6908cd274ee92372c48d2c7b80eaacbf7414d8741d22c096d7ef8"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_4/frame_00248.jld2",
+      "time_seconds": 2678400.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "14b17aae24ebd35eaeca6e66b9e27197fdb91969485c8ae47ab78023428fcea2"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_4/frame_00249.jld2",
+      "time_seconds": 2689200.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "f9cf2a88920841d5fe4abeb963aff9eb1101490a0359f12b223b1f404c97468f"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_4/frame_00250.jld2",
+      "time_seconds": 2700000.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "f9fa51b1a5edb22ee658876740742da6a582c4b0166531f6910806459ac966a4"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_4/frame_00251.jld2",
+      "time_seconds": 2710800.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "caef6b40ab30831e3fd9b75fad64458db344aeae7daeb7c64d0dc04855dd983a"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_4/frame_00252.jld2",
+      "time_seconds": 2721600.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "9acd0419dc404a205040686c1174810cb6f346dd879db22cfcf9f3c27bf4358c"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_4/frame_00253.jld2",
+      "time_seconds": 2732400.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "4975f33c9e82e06559c116fc8bbacf84cb6f8e1b36461eb69d5dd8e7db484f6e"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_4/frame_00254.jld2",
+      "time_seconds": 2743200.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "3aabc0a6a962bd1dae356f0950e3eff5ce1c68a973543d096b7fde6e6d4cd185"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_4/frame_00255.jld2",
+      "time_seconds": 2754000.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "987dd35651345b8e3cfc68e8157fa069c55cc0b86cb74ec124d08ad8fe1bafd5"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_4/frame_00256.jld2",
+      "time_seconds": 2764800.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "9ef20a3b8cd9179ffbc12c357e7f18257056079dda24fb046fce7333d9808aa8"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_4/frame_00257.jld2",
+      "time_seconds": 2775600.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "d705388ff96664d87d80ce3b6726ba527794aa3b6417160aa2734b87429b6ecb"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_4/frame_00258.jld2",
+      "time_seconds": 2786400.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "8b7d76f2e77993140002a39fab8f90fa037b6aec62e5e9fa5eeb9643621f334e"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_4/frame_00259.jld2",
+      "time_seconds": 2797200.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "9a5d77ae7e7eca44e930da9a68add471f5f84451741021ee63cfc170d95f8a18"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_4/frame_00260.jld2",
+      "time_seconds": 2808000.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "7aa14a22f29d41179a9134151928fd09a6a605a4e945d157cfa9872ece64ac3b"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_4/frame_00261.jld2",
+      "time_seconds": 2818800.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "6d336add26340e9c778427408623281407befd36aacb6ea2511aac1571bfbfcf"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_4/frame_00262.jld2",
+      "time_seconds": 2829600.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "41492afb2219aa3bd9ddf72058dcc996ed46ff42d87b3302ca88aa5755876dfd"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_4/frame_00263.jld2",
+      "time_seconds": 2840400.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "61cdad3885e86b1f8b8ad2f95b94f45733a5ae923f8e12ccc75eda80a3226bd9"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_4/frame_00264.jld2",
+      "time_seconds": 2851200.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "8e0f7cab2a1deffa1da9c7569fd0796a49b0bfa68cdb35a3c948be884280579a"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_4/frame_00265.jld2",
+      "time_seconds": 2862000.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "cb7db15037e79fe392251e9f12b67cf3fe62017f7a7820ed331c0fdbe605ad38"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_4/frame_00266.jld2",
+      "time_seconds": 2872800.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "89fa8d255bdaa0ff0b6666a7582f33650b3e51e978b0fc5df836a9c61cf9d745"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_4/frame_00267.jld2",
+      "time_seconds": 2883600.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "4ed23692b3403dd959611ab332775913cfba422171163816349a55c01d0f1b88"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_4/frame_00268.jld2",
+      "time_seconds": 2894400.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "6b37190be20fdccc7a77556814897a1d69b77f104dfadc197fb68d2b2b708949"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_4/frame_00269.jld2",
+      "time_seconds": 2905200.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "5f91f40612e57da84b2a32bd4e95aba8b5ca892dd441182899c279a2dab9c89e"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_4/frame_00270.jld2",
+      "time_seconds": 2916000.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "f64a62ff937f8c4f44eac0688780b3b63f46b3f97778722bf682ac7196c0c590"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_4/frame_00271.jld2",
+      "time_seconds": 2926800.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "03002c18b1ca3305cb5441e866b6d889e4e0f4f7313d86d6e2feed4955e37766"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_4/frame_00272.jld2",
+      "time_seconds": 2937600.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "70b65839b111e1fdd1c0ad64143d002892593300d3803d47304003313f63eae1"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_4/frame_00273.jld2",
+      "time_seconds": 2948400.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "87fef4eeb260f5b719c78da12cca64f408d4b2bb653b05bb09f40a7ed83cb5c4"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_4/frame_00274.jld2",
+      "time_seconds": 2959200.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "f2fadf81c391e8c6330773e3bf75f6f43ec314b7b4e218a32f611f578e8bd4f6"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_4/frame_00275.jld2",
+      "time_seconds": 2970000.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "6d4ed88a6ca6c7fdefa0b727bd29b14ef7ed9bc0e0fa724f28c4d60d7456a044"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_4/frame_00276.jld2",
+      "time_seconds": 2980800.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "36f8f2986932b680785d753e0e24c901c70adbd07f1c327cb16d4e328703251f"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_4/frame_00277.jld2",
+      "time_seconds": 2991600.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "e2a006e03bd6d28d21d3a9d4f6ebac4028bb9d9a08dc55430cbc0f7b3a3b2873"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_4/frame_00278.jld2",
+      "time_seconds": 3002400.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "f01baf4069a4b1a972c95e294304701096e2eada0049a93087601cbe6e964b4d"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_4/frame_00279.jld2",
+      "time_seconds": 3013200.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "870fc650f8b4d885975fa6f5df016b3d5585b89b7ead4901c547a2382fc4e546"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_4/frame_00280.jld2",
+      "time_seconds": 3024000.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "76c5f1e3708fda82ed22616044c12626a71686630390c594837ef55d9bfe25fc"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_4/frame_00281.jld2",
+      "time_seconds": 3034800.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "302de88ab92878b4b2dd3f7c49e23b7c2b468f9aa2d0b90ca91b7cdbdba217fb"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_4/frame_00282.jld2",
+      "time_seconds": 3045600.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "8a3cf5ae4179fdb61e5f893817733a57dcd3fcb133034aba8ff9f35b6a3c40c5"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_4/frame_00283.jld2",
+      "time_seconds": 3056400.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "3394785e4b0999bad082739ce02a880a758baa3ff452715579d19184a6887a66"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_4/frame_00284.jld2",
+      "time_seconds": 3067200.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "ee0297f6c855449c695d193c52c2694c6bfea8ec1d2038e55fe92868ec9d8b32"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_4/frame_00285.jld2",
+      "time_seconds": 3078000.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "c223f8acf4c8f64b94f1a95df6db0234271ad8d5e2dcdb2b9020cf4c56db6f88"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_4/frame_00286.jld2",
+      "time_seconds": 3088800.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "330364c6b1bf272bfade9d7e3161ca87ae04af04cc92906931eeb63501871a51"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_4/frame_00287.jld2",
+      "time_seconds": 3099600.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "90c52a56fb86acdaf90c9e305c4b5173450268a75e5886b1efe77ef9be002ca3"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_4/frame_00288.jld2",
+      "time_seconds": 3110400.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "e7dcd9929d43b136c2e47b40d4e7aa5f6505e5005632ca011fdab646b358406c"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_4/frame_00289.jld2",
+      "time_seconds": 3121200.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "9c5339bcb52316e40fa11a1a0685cfdeb70dbfc1e13529de0a81a2aa0c856557"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_4/frame_00290.jld2",
+      "time_seconds": 3132000.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "fcb3b9a51a7dcfc66eb9e53de15329b5289cda73342ff87c59fa710e94b2c0b1"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_4/frame_00291.jld2",
+      "time_seconds": 3142800.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "d1dc55d8c7259d3a8267e22fa09c1e39f4dc855ded25320c61543f22e986525e"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_4/frame_00292.jld2",
+      "time_seconds": 3153600.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "02e6a8f92cb4ead0801c602b1f8064b1ae799c86e104b2f4f83519d56c7bb2ad"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_4/frame_00293.jld2",
+      "time_seconds": 3164400.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "0da0930475539014d6d14b66947dc5f669ef77a45c63c11abab3f5f7c016b64f"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_4/frame_00294.jld2",
+      "time_seconds": 3175200.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "eaec1be9254dafa1800cc9ae79c141b5610926aa27596c5ee3b4c6445b9ef86d"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_4/frame_00295.jld2",
+      "time_seconds": 3186000.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "8468609c62c6cb8153e0b00eb871f06a87ccf2f138f50561719c34ea907e8825"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_4/frame_00296.jld2",
+      "time_seconds": 3196800.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "e800a9fbd2e0725d3b53ad8ca78c2a9ff5d008b4d962e3cbb28287db96aff87c"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_4/frame_00297.jld2",
+      "time_seconds": 3207600.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "e3d03ae87c58e41fd8c08c08fd84ed5f53305ad94e5cb799bb73b383e2b67a53"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_4/frame_00298.jld2",
+      "time_seconds": 3218400.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "77c72f74b765f11c550ed5f140fef690ba366200b0157775dfb7bc4eea475d8c"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_4/frame_00299.jld2",
+      "time_seconds": 3229200.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "860acd5d991f0afa831941f024aba438a137e1799c1cadbfa90ef383f4dd5cac"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_4/frame_00300.jld2",
+      "time_seconds": 3240000.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "f48dd16169d77fb843a952e0f9f03caf891edaec01a52e795c0696043e22324b"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_4/frame_00301.jld2",
+      "time_seconds": 3250800.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "b00fb6948bab04b96ed953b311a9f3602407926936ba3563eef674e8b3d5885b"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_4/frame_00302.jld2",
+      "time_seconds": 3261600.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "d24294838a89218b1a15738082a7d4d107d6940b69fc8464edd1e21d4ce13fea"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_4/frame_00303.jld2",
+      "time_seconds": 3272400.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "339258a87a4caefb4d161ee08a860597021e0505e987c1f585497da4ae6bc2b0"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_4/frame_00304.jld2",
+      "time_seconds": 3283200.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "43b408d24e840286cd052020e38a2f22588d6feea7ab4dd6231313615652ab31"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_4/frame_00305.jld2",
+      "time_seconds": 3294000.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "9958c43f5ef9f43ede77f7792c2b05bd9fb723973273c4907a3569ea1ab76351"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_4/frame_00306.jld2",
+      "time_seconds": 3304800.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "ba09249a77f413e7d27bf70547ad1709530075facda14f92de273bc19661ce32"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_4/frame_00307.jld2",
+      "time_seconds": 3315600.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "f1038aa415760bb244dd4a022ec3025068ddef9be16b78ef7ad927164d894aa1"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_4/frame_00308.jld2",
+      "time_seconds": 3326400.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "971d3957f548fe619c5afc5b89ac434da25bb98b27dae3de34082dc5cc03b922"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_4/frame_00309.jld2",
+      "time_seconds": 3337200.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "d47b8e4836313564af62ff9d345acc317cd2c425bd1be0861863bf92f7522154"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_4/frame_00310.jld2",
+      "time_seconds": 3348000.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "d363e468371a42bb308214d5bf1dba92ba52d3f33f3427a79adc98b8ef690bbb"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_4/frame_00311.jld2",
+      "time_seconds": 3358800.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "f24243cb48e0bb0da809811333544d31d0ab3af249beefef0d44739fb94100fc"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_4/frame_00312.jld2",
+      "time_seconds": 3369600.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "5d8857c2059e6f48cae4efc66cc77b15f0a0df11a392aefbab4c7b21a93a9e1c"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_4/frame_00313.jld2",
+      "time_seconds": 3380400.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "7c87c1088bec88c5202be441b1807a38778fc72e1b22e1840bdf31a984e6dd2c"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_4/frame_00314.jld2",
+      "time_seconds": 3391200.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "05cbe0ff6fa47643b5aaad9520b8206f2d40d08daf9f1a6af1c5d6d911bc338e"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_4/frame_00315.jld2",
+      "time_seconds": 3402000.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "e4e968875c4e2503d7c1c4928b4180174c73d3f72f2ceb3cb69e7d4a2e9483d7"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_4/frame_00316.jld2",
+      "time_seconds": 3412800.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "6fc31177827c4e45a0fc6c961516dff893e1734c350a8aeff6faf1dea7b5d26e"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_4/frame_00317.jld2",
+      "time_seconds": 3423600.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "1faf75cbcdc1cfd5ff282f71fa649df1955a8837be81d80842cd05a12187024f"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_4/frame_00318.jld2",
+      "time_seconds": 3434400.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "90e8f60de5fcf76777204b5adde5264b8b43d273d6e6f76fd047b3a9dff4140d"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_4/frame_00319.jld2",
+      "time_seconds": 3445200.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "b3bae723bb32b13411e2e04a8c7791296480fe9197322028e3fac5aa1fc8700c"
+    },
+    {
+      "file": "data/cascadebeta100-v1/cascadebeta100_heated/segment_4/frame_00320.jld2",
+      "time_seconds": 3456000.0,
+      "bytes": 7098471,
+      "vorticity_tracer_native_bytes_sha256": "371e1ea935e8e43d7506a21f667d293b7b6503f489421415d018c93f8138b7cc"
+    }
+  ],
+  "segments": [
+    {
+      "segment": "segment_1",
+      "original_status": "COMPLETE",
+      "metadata_sha256": "2e87c43b8dc83d80e06ec297ea47efb20173b2527d6401041e79a7f324d7a317",
+      "script_sha256": "0885ee121d8a0df628ec8583bd7dca765cb684c446e3e4f8eda7a648ca4a7ee8",
+      "configuration_sha256": "55762a6049f990c55f3fa44c955f558fe5ca2282984ce551a01f2fed7c06f403"
+    },
+    {
+      "segment": "segment_2",
+      "original_status": "COMPLETE",
+      "metadata_sha256": "403623b89042c5b22b9a1a9ca3f77b24dd4a97bccb52f3bffea6c35fac41ab1e",
+      "script_sha256": "0885ee121d8a0df628ec8583bd7dca765cb684c446e3e4f8eda7a648ca4a7ee8",
+      "configuration_sha256": "0a72a6ace247ce8f807a06c33b20535c976ba368210e733798e23b7b101ac190"
+    },
+    {
+      "segment": "segment_3",
+      "original_status": "COMPLETE",
+      "metadata_sha256": "5bc21619d8ec1c560988be1589055aedf0848b1e3b912b927e26ea6b2f679588",
+      "script_sha256": "0885ee121d8a0df628ec8583bd7dca765cb684c446e3e4f8eda7a648ca4a7ee8",
+      "configuration_sha256": "52b4c07c55e452c7c107fdb7583d1215a438e80a650b6d7b93730a60a420510c"
+    },
+    {
+      "segment": "segment_4",
+      "original_status": "COMPLETE",
+      "metadata_sha256": "e6550cfaca38031872ca296f0241f224c2a6190e21ec9338dfb32785e0c3f83b",
+      "script_sha256": "0885ee121d8a0df628ec8583bd7dca765cb684c446e3e4f8eda7a648ca4a7ee8",
+      "configuration_sha256": "36fd5d7f6f555f05671466a586c6ae5443cbd0826ea9664aac96df6079e47dbb"
+    }
+  ],
+  "compute_location": "Unity",
+  "original_fields_unchanged": true,
+  "partial_campaign": true
+}

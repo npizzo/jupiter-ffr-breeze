@@ -1,0 +1,58 @@
+{
+  "status": "COMPLETE",
+  "latitude": 35,
+  "end_day": 20.0,
+  "frames": 161,
+  "duration_seconds": 13.41,
+  "movie": "latitude35_preview.mp4",
+  "poster": "latitude35_preview.png",
+  "full_decode_passed": true,
+  "compute_location": "Unity",
+  "assets": {
+    "latitude35_preview.mp4": {
+      "bytes": 7638506,
+      "sha256": "3caeb72cf945edf242943c24fb71b596cc0ba9f2fc85ae93f4d8f781df626e7a",
+      "git_blob_sha1": "ef226a6e642cd778beafed622b4e58cb3ffb91c9"
+    },
+    "latitude35_preview.png": {
+      "bytes": 1075100,
+      "sha256": "c5161ab9592f0590d1ccf5209d47341f8275ed0ba369d69f6a1ead477b03453e",
+      "git_blob_sha1": "038429068ec130cc183e2166cfbce7f6c3d08720"
+    },
+    "latitude35_preview.json": {
+      "bytes": 4619,
+      "sha256": "bab69bf3b201f818cfe81f3e8a69066262b153d410a198b5ff197cda421a527a",
+      "git_blob_sha1": "95c2531e62a1e96c251c72377ef8490bd82a7a4c"
+    },
+    "source_manifest.json": {
+      "bytes": 43083,
+      "sha256": "29f4efbfbc4be48792c0ca1f07bfab6f48ef05c0240d79b4d3c985f40d7267fb",
+      "git_blob_sha1": "8219c24494125640b0fc44262fbec39d97814cc2"
+    },
+    "segment_1_metadata.toml": {
+      "bytes": 4171,
+      "sha256": "cd6f678aa40b5789665ca32f1d10aa4f72f07bb232f665e12ccd15f3b85df63f",
+      "git_blob_sha1": "5144198ef11e8026d4024a2aa28e646d1c2a933b"
+    },
+    "segment_2_metadata.toml": {
+      "bytes": 4312,
+      "sha256": "10ff6645061b35d45ed3ef56d441079512d6fda736e8478d776a8987c329532a",
+      "git_blob_sha1": "f00cbab17e57d85a77a0c6b60aec2b29871c2451"
+    },
+    "qa_start.jpg": {
+      "bytes": 198845,
+      "sha256": "ad016f2c58e7349c1c3fa7cce704c145b38a027c5251db50d80cdd88773d991f",
+      "git_blob_sha1": "6141c8a9a58efe524745cb7db9ef9eeeffa75568"
+    },
+    "qa_middle.jpg": {
+      "bytes": 370974,
+      "sha256": "da1ea245e16df4287b591b0dd2864745e0be5eeb17c22c85ffde59fc4f70544f",
+      "git_blob_sha1": "f8854b7b88ca18d0a805608d22c1c217f390a918"
+    },
+    "qa_end.jpg": {
+      "bytes": 362667,
+      "sha256": "e2def1d7a68ab0ac9ba607137e532c49b3b6ca88ab3fa4c5b910f49dc546d9ce",
+      "git_blob_sha1": "4ae5e2f3d935079730a939711e0e308c744351f2"
+    }
+  }
+}
