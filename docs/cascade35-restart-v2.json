@@ -1,5 +1,5 @@
 {
-  "status": "SUBMITTED_FULL_VALIDATION_REQUIRED",
+  "status": "VALIDATION_PASSED_PRODUCTION_RUNNING",
   "utc": "2026-11-11T23:32:06.924016+00:00",
   "latitude": 35,
   "regression_job": 1459435,
@@ -271,5 +271,9 @@
       ]
     }
   ],
-  "model_equations_and_configuration_changed": false
+  "model_equations_and_configuration_changed": false,
+  "validation_passed": true,
+  "production_job": 1459467,
+  "last_checked_utc": "2026-11-12T00:19:31.107129+00:00",
+  "validation_wall_limit_minutes": 30
 }

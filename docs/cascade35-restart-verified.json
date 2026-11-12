@@ -1,0 +1,54 @@
+{
+  "checked_utc": "2026-11-12T00:19:31.107129+00:00",
+  "status": "PASS",
+  "preflight_job": 1459466,
+  "restart_checks_passed": 21,
+  "initial_field_checks_passed": 11,
+  "source_environment_hashes_verified": true,
+  "one_day_output_complete": true,
+  "one_day_transfer_diagnostics_complete": true,
+  "estimated_10day_wall_hours": 1.5149518285478865,
+  "gpu": "NVIDIA L40S",
+  "pass_record": {
+    "configuration_sha256": "9bf1716b8ea2cc10943de5e6eb7bef4b58b78ab524e6b0aa9e2911340b80d391",
+    "status": "PASS",
+    "estimated_10day_wall_hours": 1.5149518285478865,
+    "initial_fields_match_reference_tolerance": "rtol=1e-12, atol=1e-13; pressure estimate uses local f",
+    "source_hashes": {
+      "preflight.jl": "97f721508bcca4ce44aa09cfd41ce03feaf798887fc5a9d43401290a5e9179fe",
+      "zonal_output.jl": "2c91bed904b2d206983aa5402f9790b65ee6a6f2c2065e171176b7725defa113",
+      "jet_plots.py": "05a9ace12088453d1991a59852d67ca48541fb2fd5cb434887f6619ac2e03c59",
+      "transfer.py": "7efe1c88a7d2473360aa5be3b966da966005c67f1e23f03f6b5df50b5e2f1352",
+      "initial_flow.jl": "1a40b5bf61f236f846e88292ee0be8617d446fb1fd63fb73dc89f96445436989",
+      "render_movies.py": "72a3051b73100c18ce59b8bffcd8fb77d911ef6e78ec2d55258ecba4104310de",
+      "prepare_gallery.py": "ad8ad591bb8f50d114fde966857a3d2e96c27f4e6e8ef9828fa32e695083602d",
+      "restart_comparison.jl": "d927605cbfefbe392c1dbb73916d3ca0bf0555dbfd5c407b842602b30466ca56",
+      "check_output.jl": "5ca05e66ac8889640565ae7e42a885982686b7c3f77d892316fd75617c937c12",
+      "thermal_budget_controller.jl": "35404ad7bb8a5071c9d51a3992c8c4ecbb452133c9ffdff1376928b1e6679c27",
+      "vorticity_depth_videos_ordered.py": "4d2a00a86f0547ce45e44de462af8f84d007ebb8f84470c6070ce92adbb0bb15",
+      "check_large.jl": "fd7b64342ac60612e70a71c82358ca53d9119cf1197959787f89704262044bb7",
+      "campaign.jl": "4fbe1f8738adae5d58fd015f4da95de28cbaef56224d152c2244b879abe3f106",
+      "submit.sh": "cd26567962d0be65846fdaa265e7452e90b19d80ed5a6f07edf4f93bc5197987",
+      "run.jl": "c88181647a803e1673bf6496fe651e08641f5c1abd2a58de4ff8a27e449528bb"
+    },
+    "environment_hashes": {
+      "Project.toml": "18f7065621f63aab7644dd1c78eca83d9cd392ed9bf439710bdb63cc20dbc9bd",
+      "Manifest.toml": "0ed2ee7d2e5e72a5558acdda0a87adc921adc7609f408ffafe81111eb9fb567d"
+    }
+  },
+  "restart_streamfunction": {
+    "native_flux_pass": true,
+    "native_flux_atol": 1e-10,
+    "rtol": 1e-09,
+    "native_flux_l2_difference": 1.6563240048496863e-12,
+    "passed": true,
+    "summation_roundoff_allowance": 1.3898821615336062e-12,
+    "propagated_bound": 1.9876027046412388e-07,
+    "streamfunction_relative_l2_difference": 2.1202003419277492e-08,
+    "propagated_error_pass": true,
+    "depth_normalized_pass": true,
+    "depth_m": 120000.0,
+    "streamfunction_l2_difference": 3.92081438811328e-08
+  },
+  "slurm": "1459466|COMPLETED|2026-11-12T00:05:23|2026-11-12T00:17:54|00:12:31|0:0\n1459467|RUNNING|2026-11-12T00:17:56|Unknown|00:01:35|0:0\n"
+}

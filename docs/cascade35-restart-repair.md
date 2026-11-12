@@ -18,7 +18,9 @@ Model equations, configuration, timestep algorithm, checkpoint mechanism and the
 
 ## Resubmitted chain
 
-Full GPU validation **1459466** must pass the restart checks, one-day production-resolution integration, actual initial-field matching, cap/tracer/heat-budget checks and throughput limit. Its result is pending at submission.
+Full GPU validation **1459466** must pass the restart checks, one-day production-resolution integration, actual initial-field matching, cap/tracer/heat-budget checks and throughput limit. **It completed successfully in 12 minutes 31 seconds.** All 21 restart checks, all 11 initial-field comparisons, the one-day production-resolution integration, stable cap, tracer, thermal-budget and throughput checks passed. The first 0–10-day production job **1459467 is RUNNING** on an NVIDIA L40S as checked November 11 at approximately 7:20 p.m. Eastern. The verification record and source/environment hashes are in [cascade35-restart-verified.json](cascade35-restart-verified.json).
+
+The validation job alone used a scheduler time-limit override of 30 minutes (reduced from two hours to allow earlier backfill); production allocations are unchanged. The measured estimate is 1.515 wall hours per ten simulated days; this is an estimate, not a guaranteed completion time.
 
 - Days 0–100: **1459467–1459476**.
 - Day-100 comparison rendering: **1459477**, also waiting for the unchanged 55°N day-100 job **1447348**.
