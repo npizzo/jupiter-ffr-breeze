@@ -1,0 +1,31 @@
+{
+  "status": "QUEUED_VALIDATION_PENDING",
+  "checked_at_utc": "2026-11-12T19:48:51.568453+00:00",
+  "case": "beta55_unforced100",
+  "compute_location": "Unity",
+  "requested_gpu": "NVIDIA L40S",
+  "end_day": 100,
+  "days_definition": "86400 seconds per day",
+  "validation_job": 1526400,
+  "production_jobs": [
+    1526401,
+    1526402,
+    1526403,
+    1526404,
+    1526405,
+    1526406,
+    1526407,
+    1526408,
+    1526409,
+    1526410
+  ],
+  "render_job": 1526411,
+  "production_root": "data/beta55-unforced100-v1",
+  "preflight_root": "data/beta55-unforced100-preflight-v1",
+  "rendered_root": "rendered/beta55-unforced100-v1",
+  "heated_reference": "data/cascadebeta100-v1/cascadebeta100_heated",
+  "initial_condition": "fresh day 0; same initialization code and parameters as heated 55N beta case; saved-field equality checked by preflight",
+  "forcing": "zero bottom heat flux; no cap relaxation, global thermal feedback, sponge, or momentum forcing",
+  "remaining_physics": "gravity, beta-plane Coriolis, buoyancy, viscosity and scalar diffusion; initial stable cap; free-slip impermeable walls",
+  "publication_status": "source and job record prepared; no new simulation results yet"
+}
