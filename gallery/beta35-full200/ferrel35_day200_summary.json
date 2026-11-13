@@ -1,0 +1,376 @@
+{
+  "status": "COMPLETE",
+  "compute_location": "Unity",
+  "sources": [
+    "data/cascade35-v1/cascade35_heated",
+    "data/cascade35-300-v1/cascade35_heated"
+  ],
+  "segment_metadata": [
+    {
+      "segment": 1,
+      "path": "data/cascade35-v1/cascade35_heated/segment_1",
+      "sha256": "cd6f678aa40b5789665ca32f1d10aa4f72f07bb232f665e12ccd15f3b85df63f",
+      "configuration_sha256": "12646058533c5a9e6825844ae369a324c6bc5c7f8c781dbfdebf5b7a14f5d8a8"
+    },
+    {
+      "segment": 2,
+      "path": "data/cascade35-v1/cascade35_heated/segment_2",
+      "sha256": "10ff6645061b35d45ed3ef56d441079512d6fda736e8478d776a8987c329532a",
+      "configuration_sha256": "1d9e3ca3e34e18964d52eb0305fb23ac6cac238c63e1e9d070efb29493ec4790"
+    },
+    {
+      "segment": 3,
+      "path": "data/cascade35-v1/cascade35_heated/segment_3",
+      "sha256": "594ebef4318057f4173c83439be6d69ee8d545be5f73fd8a0a04cff2f2009fff",
+      "configuration_sha256": "16127a2b2b74ee7a03ddca50b3c44f0667e38a25fa7aff181bca5a8f63cce6f3"
+    },
+    {
+      "segment": 4,
+      "path": "data/cascade35-v1/cascade35_heated/segment_4",
+      "sha256": "ea9a7e18c05fb8306e7b3a5ee77e1fa53fa487220f659ba7362456989c1bf4f5",
+      "configuration_sha256": "6412c4b0ffa582655de32c5dc23a1ec9adac73ce196fc05aa183ca8e20283fcf"
+    },
+    {
+      "segment": 5,
+      "path": "data/cascade35-v1/cascade35_heated/segment_5",
+      "sha256": "07d98ff1c10ad5223e1ce1da7bb7bb305b69f46e0780c8a4821de715bd5a9d70",
+      "configuration_sha256": "8b3b668182247afb6cb34c4976a890a2c1e4b2ce7c0f9eec5825710d4768230c"
+    },
+    {
+      "segment": 6,
+      "path": "data/cascade35-v1/cascade35_heated/segment_6",
+      "sha256": "87a260b742e2ea372132c369bf07ac47de6ef0dbf8e5aeb03165d05d597fbe13",
+      "configuration_sha256": "2c75b899647673d288eda72f2ddcf429d5ff0749db41cfd6988ce0480eaabd11"
+    },
+    {
+      "segment": 7,
+      "path": "data/cascade35-v1/cascade35_heated/segment_7",
+      "sha256": "a1425fbee0b6aa92a3b55d8fa9ecd787a51935bcc9b4397bc6f36f15d2c33964",
+      "configuration_sha256": "21b798411206bc230f1df831afb148fd31020ab06597553e07f530d61b6d6e18"
+    },
+    {
+      "segment": 8,
+      "path": "data/cascade35-v1/cascade35_heated/segment_8",
+      "sha256": "bc0b599dd4c71d17e1015b14b0ee35d19d4cbd052cfa2922f5ed31d7385189fb",
+      "configuration_sha256": "c0dea1b7d63f4b3e550f1e1bc0613340d093c6460f42060128848bbc60e3d853"
+    },
+    {
+      "segment": 9,
+      "path": "data/cascade35-v1/cascade35_heated/segment_9",
+      "sha256": "b158354713ad3a16575bcef67acb7db37923bc185c0b98e2f58550e4c2581bcd",
+      "configuration_sha256": "991bd3f7c5634101574e9028b02acf0e9e873955fef4af36ba4e51422aaa2b5b"
+    },
+    {
+      "segment": 10,
+      "path": "data/cascade35-v1/cascade35_heated/segment_10",
+      "sha256": "efcfe08131930c44df4343445466894ccb24791a0170d0947b0c7916f36e6f83",
+      "configuration_sha256": "f4030d88e159f0fe33152a0d1bc57b5f480181bbf5f4fa7617b902e423030721"
+    },
+    {
+      "segment": 11,
+      "path": "data/cascade35-300-v1/cascade35_heated/segment_11",
+      "sha256": "1676e48e799b2c56661c8376f0c13f1a579cccbe547befd718d5318c19c34511",
+      "configuration_sha256": "2fa06751deecb419fbab52fb5a0d64d4b71d9fb4e0e531ca3a36e9ddffe1d6f7"
+    },
+    {
+      "segment": 12,
+      "path": "data/cascade35-300-v1/cascade35_heated/segment_12",
+      "sha256": "3cf127c910e68109da90da766bed6c5c7c4a5fe6f91ec98ce8d3c1a25f371b72",
+      "configuration_sha256": "df7b7a67d345dbba518e01f3f1552291b2e7989dc694cfc29c9497be11ce06e8"
+    },
+    {
+      "segment": 13,
+      "path": "data/cascade35-300-v1/cascade35_heated/segment_13",
+      "sha256": "658dc601aee08ca3272d860a6fd9d30096973250f55fa18ccc9cc12ab7b8e319",
+      "configuration_sha256": "c7d0f0d51e8788d2f575cf8e88ee957d4551f6f007bc7da56f16a8fc5e45b60b"
+    },
+    {
+      "segment": 14,
+      "path": "data/cascade35-300-v1/cascade35_heated/segment_14",
+      "sha256": "f097b3aae6ccb9037365eaed5ffa96e68a500c46716fcd9b7984aa36ad092d84",
+      "configuration_sha256": "e54f36ad1198d4d1e00c2c805ce204741623a578ac82007d64ebf3ea02b6fe20"
+    },
+    {
+      "segment": 15,
+      "path": "data/cascade35-300-v1/cascade35_heated/segment_15",
+      "sha256": "beb7ad2877dab0013866f0f7d7979272bf5053d370b156c9ead6346ffd817497",
+      "configuration_sha256": "1ce98d4c125a776a95a40ba1bac8f6ce547502a7e21ec23743b9fecd18b499bb"
+    },
+    {
+      "segment": 16,
+      "path": "data/cascade35-300-v1/cascade35_heated/segment_16",
+      "sha256": "6eff3b7ec3e497fe2a97c5272f06646600f397c1ba82560c83ecd0a8e7a99f5c",
+      "configuration_sha256": "bdeb1328542583dc9c205acb25efa843eeddcec521f73f7ca3d7c53d910b93be"
+    },
+    {
+      "segment": 17,
+      "path": "data/cascade35-300-v1/cascade35_heated/segment_17",
+      "sha256": "1982959bf9309e0767091c84638b616d4973a60e19b0867ad627b1bf19d0f463",
+      "configuration_sha256": "7cae42f3f21bea9e14aa134bc39789391c42f591fd4d75b4ffcf680561a92ec4"
+    },
+    {
+      "segment": 18,
+      "path": "data/cascade35-300-v1/cascade35_heated/segment_18",
+      "sha256": "67cc39c8da527f48a58404ac3a55f500b4f7f352c3d431a112b950b94a4bd8b8",
+      "configuration_sha256": "ef7a2603aaa996e6201d464121280878c25e47fc0ac6ac4fca2cfc6bb10737bc"
+    },
+    {
+      "segment": 19,
+      "path": "data/cascade35-300-v1/cascade35_heated/segment_19",
+      "sha256": "3aa21c2fb1a6380d9cef4230a4795b501e8933b255e3f3e98a16b92974dacc78",
+      "configuration_sha256": "b538fa3eecb3fa5b96a916ecd2cd87c7f888216943bd6483db987dcd206a9453"
+    },
+    {
+      "segment": 20,
+      "path": "data/cascade35-300-v1/cascade35_heated/segment_20",
+      "sha256": "1e04518c8390bd993f64053a4b19501602a9b4a8bcdb540b0a1f38c457d196e7",
+      "configuration_sha256": "3a3028c45aed8111837d96fc9229c250c8330162ace21e21f808bfa15946a986"
+    }
+  ],
+  "end_day": 200,
+  "frames_analyzed": 1201,
+  "windows": [
+    {
+      "window_earth_days": "50\u201375",
+      "mean_v_rms_m_s": 0.010681829507251604,
+      "mean_w_rms_m_s": 0.16530058683972992,
+      "v_persistence_ratio": 0.21855097193896433,
+      "w_persistence_ratio": 0.5903165127540458,
+      "mean_u_rms_m_s": 2.0137975872792957,
+      "psi_max_abs_kg_m_s": 32372.276898059554,
+      "acceleration_rms_m_s2": {
+        "du_dt": 3.9655646891725547e-07,
+        "f_v": 2.193090219093484e-06,
+        "eddy_horizontal": 5.62815377695734e-07,
+        "eddy_vertical": 4.149777151180538e-06,
+        "mean_advection": 6.177440995716164e-07,
+        "unclosed_residual": 4.096347892700933e-06
+      },
+      "eddy_vs_minus_fv_cosine": 0.25963410161481254,
+      "horizontal_eddy_vs_minus_fv_cosine": 0.006982660090832355,
+      "vertical_eddy_vs_minus_fv_cosine": 0.2572075116123132,
+      "residual_over_fv_rms": 1.8678428534482099,
+      "smoothed_eddy_vs_minus_fv_cosine": 0.8243336035826769
+    },
+    {
+      "window_earth_days": "75\u2013100",
+      "mean_v_rms_m_s": 0.012193796620076051,
+      "mean_w_rms_m_s": 0.36790523143474235,
+      "v_persistence_ratio": 0.250918889151253,
+      "w_persistence_ratio": 0.8329285538856991,
+      "mean_u_rms_m_s": 1.727940268673312,
+      "psi_max_abs_kg_m_s": 33383.12688786432,
+      "acceleration_rms_m_s2": {
+        "du_dt": 3.5712175478310384e-07,
+        "f_v": 2.4485906148100585e-06,
+        "eddy_horizontal": 5.628333635046078e-07,
+        "eddy_vertical": 5.804619220562848e-06,
+        "mean_advection": 1.517709075909668e-06,
+        "unclosed_residual": 6.025885234867055e-06
+      },
+      "eddy_vs_minus_fv_cosine": 0.0333469290595772,
+      "horizontal_eddy_vs_minus_fv_cosine": 0.025031687462656115,
+      "vertical_eddy_vs_minus_fv_cosine": 0.030820963965304447,
+      "residual_over_fv_rms": 2.4609606842483522,
+      "smoothed_eddy_vs_minus_fv_cosine": 0.6082065883091535
+    },
+    {
+      "window_earth_days": "50\u2013100",
+      "mean_v_rms_m_s": 0.009456783687574436,
+      "mean_w_rms_m_s": 0.237093202171192,
+      "v_persistence_ratio": 0.1940397241386337,
+      "w_persistence_ratio": 0.6411309241474495,
+      "mean_u_rms_m_s": 1.8390409243604846,
+      "psi_max_abs_kg_m_s": 32834.05698995484,
+      "acceleration_rms_m_s2": {
+        "du_dt": 2.490078439479422e-07,
+        "f_v": 1.916306017853846e-06,
+        "eddy_horizontal": 4.0055910953549315e-07,
+        "eddy_vertical": 4.27423558470753e-06,
+        "mean_advection": 9.832103466137292e-07,
+        "unclosed_residual": 4.497908436768192e-06
+      },
+      "eddy_vs_minus_fv_cosine": 0.041880705745180505,
+      "horizontal_eddy_vs_minus_fv_cosine": -0.05542434274633181,
+      "vertical_eddy_vs_minus_fv_cosine": 0.046857672542236224,
+      "residual_over_fv_rms": 2.347176492095764,
+      "smoothed_eddy_vs_minus_fv_cosine": 0.709515300675144
+    },
+    {
+      "window_earth_days": "100\u2013125",
+      "mean_v_rms_m_s": 0.011199291612131216,
+      "mean_w_rms_m_s": 0.4685634141196538,
+      "v_persistence_ratio": 0.23664791960380033,
+      "w_persistence_ratio": 0.9144297228711944,
+      "mean_u_rms_m_s": 1.7560056950897307,
+      "psi_max_abs_kg_m_s": 33856.16365768348,
+      "acceleration_rms_m_s2": {
+        "du_dt": 1.7948976406816653e-07,
+        "f_v": 2.2686221785772385e-06,
+        "eddy_horizontal": 3.978101828322463e-07,
+        "eddy_vertical": 3.6254328584733064e-06,
+        "mean_advection": 1.6127097367926011e-06,
+        "unclosed_residual": 3.906780315028491e-06
+      },
+      "eddy_vs_minus_fv_cosine": 0.01998528537618432,
+      "horizontal_eddy_vs_minus_fv_cosine": 0.0011748737340123484,
+      "vertical_eddy_vs_minus_fv_cosine": 0.01970184651696696,
+      "residual_over_fv_rms": 1.7220938558745027,
+      "smoothed_eddy_vs_minus_fv_cosine": 0.5541100477836057
+    },
+    {
+      "window_earth_days": "125\u2013150",
+      "mean_v_rms_m_s": 0.012991124348053431,
+      "mean_w_rms_m_s": 0.3920635639229593,
+      "v_persistence_ratio": 0.2742145212503538,
+      "w_persistence_ratio": 0.8508028652638407,
+      "mean_u_rms_m_s": 1.7013859598907717,
+      "psi_max_abs_kg_m_s": 33825.473672302265,
+      "acceleration_rms_m_s2": {
+        "du_dt": 2.2220696830352482e-07,
+        "f_v": 2.6271796496264895e-06,
+        "eddy_horizontal": 4.096903606089267e-07,
+        "eddy_vertical": 4.179917844187661e-06,
+        "mean_advection": 1.5874166788608734e-06,
+        "unclosed_residual": 3.5415451953654736e-06
+      },
+      "eddy_vs_minus_fv_cosine": 0.4237710084194095,
+      "horizontal_eddy_vs_minus_fv_cosine": -0.00035617300905130587,
+      "vertical_eddy_vs_minus_fv_cosine": 0.42240895054486316,
+      "residual_over_fv_rms": 1.3480407386183053,
+      "smoothed_eddy_vs_minus_fv_cosine": 0.7345793802603661
+    },
+    {
+      "window_earth_days": "100\u2013150",
+      "mean_v_rms_m_s": 0.01118708300897059,
+      "mean_w_rms_m_s": 0.4234620729128545,
+      "v_persistence_ratio": 0.23626242541207687,
+      "w_persistence_ratio": 0.8690027526426718,
+      "mean_u_rms_m_s": 1.7253989373989773,
+      "psi_max_abs_kg_m_s": 33775.08886813223,
+      "acceleration_rms_m_s2": {
+        "du_dt": 1.686735673159069e-07,
+        "f_v": 2.2628479157744e-06,
+        "eddy_horizontal": 3.1158312922627274e-07,
+        "eddy_vertical": 2.761750041002028e-06,
+        "mean_advection": 1.5378509278700442e-06,
+        "unclosed_residual": 2.540241453400533e-06
+      },
+      "eddy_vs_minus_fv_cosine": 0.29536105839572163,
+      "horizontal_eddy_vs_minus_fv_cosine": -0.08555811391050923,
+      "vertical_eddy_vs_minus_fv_cosine": 0.30165051219133926,
+      "residual_over_fv_rms": 1.1225860278511923,
+      "smoothed_eddy_vs_minus_fv_cosine": 0.6482656972532287
+    },
+    {
+      "window_earth_days": "150\u2013175",
+      "mean_v_rms_m_s": 0.013217057297294643,
+      "mean_w_rms_m_s": 0.48591628377325624,
+      "v_persistence_ratio": 0.2806442735918969,
+      "w_persistence_ratio": 0.9120035968268609,
+      "mean_u_rms_m_s": 1.6803569596781058,
+      "psi_max_abs_kg_m_s": 31881.69419146899,
+      "acceleration_rms_m_s2": {
+        "du_dt": 1.5820102274089077e-07,
+        "f_v": 2.6758386773335966e-06,
+        "eddy_horizontal": 3.549492727382067e-07,
+        "eddy_vertical": 4.324663585202527e-06,
+        "mean_advection": 1.6244037980864343e-06,
+        "unclosed_residual": 3.9919047338926295e-06
+      },
+      "eddy_vs_minus_fv_cosine": 0.2484985683920522,
+      "horizontal_eddy_vs_minus_fv_cosine": 0.021204892383328976,
+      "vertical_eddy_vs_minus_fv_cosine": 0.24532937853479622,
+      "residual_over_fv_rms": 1.4918331092629464,
+      "smoothed_eddy_vs_minus_fv_cosine": 0.8078202983456679
+    },
+    {
+      "window_earth_days": "175\u2013200",
+      "mean_v_rms_m_s": 0.015443308409557552,
+      "mean_w_rms_m_s": 0.5865289642885142,
+      "v_persistence_ratio": 0.3172624604436148,
+      "w_persistence_ratio": 0.9390810889803256,
+      "mean_u_rms_m_s": 1.687525073662281,
+      "psi_max_abs_kg_m_s": 30868.64559845017,
+      "acceleration_rms_m_s2": {
+        "du_dt": 1.1505589681169083e-07,
+        "f_v": 3.1130991587855367e-06,
+        "eddy_horizontal": 3.479453906362103e-07,
+        "eddy_vertical": 3.5484307716505303e-06,
+        "mean_advection": 2.314373142495845e-06,
+        "unclosed_residual": 3.3782803237242485e-06
+      },
+      "eddy_vs_minus_fv_cosine": 0.2965786721316035,
+      "horizontal_eddy_vs_minus_fv_cosine": 0.07872221087697401,
+      "vertical_eddy_vs_minus_fv_cosine": 0.287526612073695,
+      "residual_over_fv_rms": 1.0851823701761438,
+      "smoothed_eddy_vs_minus_fv_cosine": 0.8251736028437332
+    },
+    {
+      "window_earth_days": "150\u2013200",
+      "mean_v_rms_m_s": 0.013046044665926184,
+      "mean_w_rms_m_s": 0.5259727144166786,
+      "v_persistence_ratio": 0.27240202795212,
+      "w_persistence_ratio": 0.9060594400755868,
+      "mean_u_rms_m_s": 1.6802063003567467,
+      "psi_max_abs_kg_m_s": 30555.579732208716,
+      "acceleration_rms_m_s2": {
+        "du_dt": 1.143420887100767e-07,
+        "f_v": 2.64206639391256e-06,
+        "eddy_horizontal": 2.6644658723640283e-07,
+        "eddy_vertical": 3.530285679505338e-06,
+        "mean_advection": 1.765826953974393e-06,
+        "unclosed_residual": 3.262034627395883e-06
+      },
+      "eddy_vs_minus_fv_cosine": 0.25144859718380635,
+      "horizontal_eddy_vs_minus_fv_cosine": -0.0205730626156335,
+      "vertical_eddy_vs_minus_fv_cosine": 0.25104925277764234,
+      "residual_over_fv_rms": 1.234652783484835,
+      "smoothed_eddy_vs_minus_fv_cosine": 0.832592226046683
+    }
+  ],
+  "half_window_streamfunction_cosine": 0.9244517804271932,
+  "half_window_smoothed_streamfunction_cosine": 0.8720075005627189,
+  "half_window_v_cosine": 0.6555388548287465,
+  "half_window_w_cosine": 0.9235982149021198,
+  "jet_ke_fraction_last50_mean": 0.9084541318910272,
+  "jet_ke_fraction_day200": 0.9276362757245113,
+  "quality_maxima": {
+    "mass_divergence_max": 8.987019570368127e-18,
+    "mass_flux_reconstruction_max": 1.8492152253912764e-14,
+    "top_streamfunction_max": 7.968030938830181e-09
+  },
+  "metric_region": "|y| <= 2400 km, 10 <= z <= 75 km; density weighting for centered field norms",
+  "streamfunction_definition": "rho*v=-dPsi/dz; rho*w=dPsi/dy; kg/(m s); Eulerian zonal mean",
+  "limitations": [
+    "Centered resolved covariance budget, not exact discrete momentum closure. Residual includes viscosity, numerical stresses and diagnostic errors.",
+    "No test of residual/Lagrangian circulation or thermodynamic indirectness.",
+    "Time-window persistence is a descriptive check, not a statistical significance test.",
+    "Stable cap, sponge, free-slip rigid walls and imposed thermal feedback can affect circulation."
+  ],
+  "script_sha256": "326996530321f7401f12292d6054a73933fe00cf56feb5afc5b76c35a1ef0ec8",
+  "half_window_period_days": [
+    150,
+    200
+  ],
+  "fifty_day_comparison": [
+    {
+      "days": "50\u2013100",
+      "streamfunction_cosine_vs_previous": null,
+      "zonal_u_cosine_vs_previous": null
+    },
+    {
+      "days": "100\u2013150",
+      "streamfunction_cosine_vs_previous": 0.8865006890925673,
+      "zonal_u_cosine_vs_previous": 0.8963580092848037
+    },
+    {
+      "days": "150\u2013200",
+      "streamfunction_cosine_vs_previous": 0.8919144745982716,
+      "zonal_u_cosine_vs_previous": 0.9494807338539938
+    }
+  ],
+  "reproduction_check": {
+    "earlier_50_100_day_audit": "PASS"
+  }
+}
