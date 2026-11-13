@@ -1,1 +1,52 @@
-{"status":"V2_QUEUED_VALIDATION_PENDING","checked_at_utc":"2026-11-13T11:25:28.342Z","case":"beta55_unforced100","compute_location":"Unity","requested_gpu":"NVIDIA L40S","end_day":100,"days_definition":"86400 seconds per day","validation_job":1598338,"production_jobs":[1598339,1598340,1598341,1598342,1598343,1598344,1598345,1598346,1598347,1598348],"render_job":1598349,"production_root":"data/beta55-unforced100-v2","preflight_root":"data/beta55-unforced100-preflight-v2","rendered_root":"rendered/beta55-unforced100-v2","heated_reference":"data/cascadebeta100-v1/cascadebeta100_heated","initial_condition":"fresh day 0; same initialization code and parameters as heated 55N beta case; saved-field equality checked by preflight","forcing":"zero bottom heat flux; no cap relaxation, global thermal feedback, sponge, or momentum forcing","remaining_physics":"gravity, beta-plane Coriolis, buoyancy, viscosity and scalar diffusion; initial stable cap; free-slip impermeable walls","publication_status":"V2_SOURCE_AND_JOB_RECORD_PUBLISHED","source_commit":"08ea4803d3a1ec2a5e3ff9b43aca5d3aab06af29","previous_attempt":{"validation_job":1526400,"status":"FAILED_BEFORE_MODEL_INITIALIZATION","reason":"Shared CUDA launcher did not include this campaign entry point","dependent_jobs":"cancelled automatically"},"source_directory":"scripts/beta55_unforced100_v2","repairs":["Dedicated launcher preserving verified CUDA runtime checks","Correct segment output path for transfer diagnostic","Include renderer collection helper","Allow the intended heating/cooling difference in matched-case rendering"],"initial_source_commit":"06eba7beae10817c2207300f9d1a2f4cd8b2856b"}
+{
+  "status": "V3_QUEUED_VALIDATION_PENDING",
+  "checked_at_utc": "2026-11-13T19:03:40.707714+00:00",
+  "case": "beta55_unforced100",
+  "compute_location": "Unity",
+  "requested_gpu": "NVIDIA L40S",
+  "end_day": 100,
+  "days_definition": "86400 seconds per day",
+  "validation_job": 1650242,
+  "production_jobs": [
+    1650243,
+    1650244,
+    1650245,
+    1650246,
+    1650247,
+    1650248,
+    1650249,
+    1650250,
+    1650251,
+    1650252
+  ],
+  "render_job": 1650253,
+  "production_root": "data/beta55-unforced100-v3",
+  "preflight_root": "data/beta55-unforced100-preflight-v3",
+  "rendered_root": "rendered/beta55-unforced100-v3",
+  "heated_reference": "data/cascadebeta100-v1/cascadebeta100_heated",
+  "initial_condition": "fresh day 0; same initialization code and parameters as heated 55N beta case; saved-field equality checked by preflight",
+  "forcing": "zero bottom heat flux; no cap relaxation, global thermal feedback, sponge, or momentum forcing",
+  "remaining_physics": "gravity, beta-plane Coriolis, buoyancy, viscosity and scalar diffusion; initial stable cap; free-slip impermeable walls",
+  "publication_status": "V3_SOURCE_AND_JOB_RECORD",
+  "previous_attempt": {
+    "validation_job": 1526400,
+    "status": "FAILED_BEFORE_MODEL_INITIALIZATION",
+    "reason": "Shared CUDA launcher did not include this campaign entry point",
+    "dependent_jobs": "cancelled automatically"
+  },
+  "source_directory": "scripts/beta55_unforced100_v3",
+  "repairs": [
+    "Dedicated launcher preserving verified CUDA runtime checks",
+    "Correct segment output path for transfer diagnostic",
+    "Include renderer collection helper",
+    "Allow the intended heating/cooling difference in matched-case rendering"
+  ],
+  "initial_source_commit": "06eba7beae10817c2207300f9d1a2f4cd8b2856b",
+  "v2_attempt": {
+    "validation_job": 1598338,
+    "status": "FAILED_INITIAL_DIAGNOSTIC",
+    "reason": "Zero sponge mask had Nz entries but vertical-face diagnostics require Nz+1",
+    "dependent_jobs": "cancelled automatically"
+  },
+  "last_repair": "Correct zero sponge diagnostic mask to Nz+1; no physics or initial-condition changes"
+}
