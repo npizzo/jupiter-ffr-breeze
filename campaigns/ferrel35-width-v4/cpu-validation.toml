@@ -1,0 +1,31 @@
+architecture = "CPU"
+status = "PASS"
+restart_comparison = "PASS"
+cumulative_native_closure = "PASS"
+
+[source_hashes]
+"preflight.jl" = "fa0aeb5a92fa06bf1c30c3b7d1b36f8be3b6cb3cba05e973d50b05b31907a290"
+"zonal_output.jl" = "2c91bed904b2d206983aa5402f9790b65ee6a6f2c2065e171176b7725defa113"
+"review_budget.py" = "52e853a53a2e9be31ce89710d67e1f250e1a874269913a69d093ab2988ebb5bb"
+"transfer.py" = "7efe1c88a7d2473360aa5be3b966da966005c67f1e23f03f6b5df50b5e2f1352"
+"initial_flow.jl" = "1a40b5bf61f236f846e88292ee0be8617d446fb1fd63fb73dc89f96445436989"
+"restart_comparison.jl" = "d927605cbfefbe392c1dbb73916d3ca0bf0555dbfd5c407b842602b30466ca56"
+"check_output.jl" = "5ca05e66ac8889640565ae7e42a885982686b7c3f77d892316fd75617c937c12"
+"native_budget.jl" = "a0e7fda776733395d0162bdabc810f72fef296c0d317c44b3714eb36b1e32f8f"
+"thermal_budget_controller.jl" = "35404ad7bb8a5071c9d51a3992c8c4ecbb452133c9ffdff1376928b1e6679c27"
+"centered_interpretation.jl" = "8b2ac3e8d2f26669b3f2ccc6f6c344b4cfff9a5e97c27d6f1a6578717dc799ef"
+"check_large.jl" = "fd7b64342ac60612e70a71c82358ca53d9119cf1197959787f89704262044bb7"
+"common.jl" = "bb19bf7cda73fc1f50a7d9dec79e665e9c601da5fa48ab9951717b2a17947780"
+"check_native.jl" = "05fd5e280dbcf8c938bed4d00922ad8596f2e7d9815cccb81fb2fd340df53ae5"
+"campaign.jl" = "582ff2f624299aad669fab7fae0a41b5b47d07b000de3fa2b6cbc3cf76258fdb"
+"README.md" = "b90270ace5e898c9b5346694ca935302f59487c396b0a1cf48a40dd475279167"
+"run.jl" = "c89c2ab802821b79a76ca34cf5e29e45015576df307a5d4d41e461c9b8dfef7d"
+"cuda_launch.jl" = "1243da4224f8c5901206d0b9366fd52f49a80117792d774903b8d4ec1e12d9fd"
+
+[configuration_hashes]
+"wide.toml" = "b14cb2308c639e22f05905405944f9df4591847966cf7716d9157e0e0c48baa9"
+"diagnostic.toml" = "d23d14fc06450d9abe37bbb3ff7010174acc78cacba11d607448c855bca27cd4"
+
+[environment_hashes]
+"Project.toml" = "18f7065621f63aab7644dd1c78eca83d9cd392ed9bf439710bdb63cc20dbc9bd"
+"Manifest.toml" = "0ed2ee7d2e5e72a5558acdda0a87adc921adc7609f408ffafe81111eb9fb567d"
