@@ -1,3 +1,5 @@
+> Superseded by [v3](../ferrel35_face_v3/README.md). This development version passed the short comparison but stopped at its first production snapshot because the diagnostic compared thermal tendencies from different feedback-update times. No completed science result is claimed for v2.
+
 # Day-300 native-face diagnostic restart
 
 This isolated observer experiment restarts the completed 35°N heated beta-plane simulation at Earth day 300 and advances to day 301. It retains the original 256×256×64 grid, 6000×6000×120 km domain, bottom forcing, cap, thermal feedback, diffusion, initial state and time-step controls. It does not modify the wider-channel campaign.
