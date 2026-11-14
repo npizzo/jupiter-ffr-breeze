@@ -1,0 +1,51 @@
+[late_heated]
+config = "configs/fplane-point4-v1/late_heated.toml"
+checkpoint = "data/cascade100-v1/cascade100_f_heated/segment_9/checkpoints/checkpoint_iteration260286.jld2"
+
+[late_control]
+config = "configs/fplane-point4-v1/late_control.toml"
+checkpoint = "data/cascade100-v1/cascade100_f_control/segment_9/checkpoints/checkpoint_iteration259453.jld2"
+
+[rest_q0]
+config = "configs/fplane-point4-v1/rest_q0.toml"
+checkpoint = ""
+
+[rest_q5p4]
+config = "configs/fplane-point4-v1/rest_q5p4.toml"
+checkpoint = ""
+
+[rest_q54]
+config = "configs/fplane-point4-v1/rest_q54.toml"
+checkpoint = ""
+
+[rest_q162]
+config = "configs/fplane-point4-v1/rest_q162.toml"
+checkpoint = ""
+
+[rest_q540]
+config = "configs/fplane-point4-v1/rest_q540.toml"
+checkpoint = ""
+
+[rest_q162_flipf]
+config = "configs/fplane-point4-v1/rest_q162_flipf.toml"
+checkpoint = ""
+
+[rest_q162_fine]
+config = "configs/fplane-point4-v1/rest_q162_fine.toml"
+checkpoint = ""
+
+[late_restart_control]
+config = "configs/fplane-point4-v1/late_restart_control.toml"
+checkpoint = "data/cascade100-v1/cascade100_f_heated/segment_10/checkpoints/checkpoint_iteration289093.jld2"
+
+[late_restart_reversed]
+config = "configs/fplane-point4-v1/late_restart_reversed.toml"
+checkpoint = "data/cascade100-v1/cascade100_f_heated/segment_10/checkpoints/checkpoint_iteration289093.jld2"
+
+[early_replay_heated]
+config = "configs/fplane-point4-v1/early_replay_heated.toml"
+checkpoint = ""
+
+[early_replay_control]
+config = "configs/fplane-point4-v1/early_replay_control.toml"
+checkpoint = ""

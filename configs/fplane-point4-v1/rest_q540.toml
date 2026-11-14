@@ -1,0 +1,81 @@
+# Idealized dry hydrogen-helium atmosphere; not a calibrated Jupiter realization.
+name = "rest_q540"
+nx = 256
+ny = 256
+nz = 64
+lx = 6000000.0
+ly = 6000000.0
+height = 120000.0
+cap_height = 80000.0
+cap_n2 = 0.000025
+convective_n2 = 0.0
+theta0 = 170.0
+base_pressure = 2000000.0
+gravity = 25.0
+molar_mass = 0.0023
+heat_capacity = 13000.0
+latitude = 55.0
+rotation_rate = 0.00017585
+heat_flux = 540.0
+cooling_time = 86400.0
+sponge_time = 3600.0
+viscosity = 1000.0
+thermal_diffusivity = 1000.0
+perturbation = 0.00001
+seed = 42
+stop_seconds = 432000.0
+output_seconds = 10800.0
+diagnostic_seconds = 600.0
+max_dt = 15.0
+initial_dt = 1.0
+jet_speed = 0.0
+
+# Controlled source and prescribed stable-layer thermal mixing.
+cooling_model = "stable_cap"
+upper_cooling_flux = 0.0
+mixing_model = "tapered"
+cap_diffusivity = 1.0
+diffusivity_taper_width = 20000.0
+
+# Exactly neutral horizontal-mean lower layer; tiny perturbations seed symmetry breaking.
+
+initial_velocity = "rest"
+turbulence_seed = 31415
+turbulence_rossby = 0.1
+turbulence_wavelength = 1200000.0
+turbulence_vertical_ratio = 0.0
+diagnostic_height = 20000.0
+
+# Enhanced-forcing sensitivity experiment: 30 times the physical-flux baseline.
+forcing_multiplier = 100.0
+
+
+meridional_boundary = "channel"
+rotation_model = "f-plane"
+beta = 0.0
+planet_radius = 71492000.0
+
+# Stable-cap, large-domain campaign. Time units are Earth seconds.
+cap_relaxation_transition = 10000.0
+cap_core_bottom = 90000.0
+cap_core_top = 115000.0
+cap_min_fraction = 0.2
+video_heights = [20000.0, 60000.0, 100000.0]
+checkpoint_seconds = 86400.0
+
+# Same beta, thermal forcing and random turbulence across the matched comparisons.
+shear_rossby = 0.0
+tracer_diffusivity = 100.0
+controller_seconds = 600.0
+balance_heat = true
+
+# Full-depth barotropic random eddies; no initial vertical velocity.
+# Pressure is an f0-geostrophic initial estimate; beta/nonlinear adjustment remains.
+initial_flow_family = "barotropic_random_streamfunction"
+
+# Coarse long-time screening: no imposed shear; f-plane only.
+# Horizontal spacing 23.4375 km; retain 64 vertical levels.
+
+full_field_seconds = 21600.0
+
+matched_thermal_noise = true
