@@ -1,0 +1,36 @@
+{
+  "status": "PASS",
+  "scope": "Numerical gate only; a closed total budget does not establish eddy-driven Ferrel cells",
+  "compute_location": "Unity",
+  "start_day": 200.0,
+  "end_day": 210.0,
+  "snapshot_mean_start_day": 200.125,
+  "snapshot_mean_end_day": 210.0,
+  "native_steps": 28800,
+  "native_time_integrated_acceleration_rms_m_s2": {
+    "advection": 3.3841175410734334e-06,
+    "coriolis": 3.507521219098709e-06,
+    "diffusion": 4.192045362697809e-07,
+    "external_forcing": 0.0,
+    "closed_budget_residual": 6.548920829138641e-19
+  },
+  "centered_3hour_sampled_acceleration_rms_m_s2": {
+    "centered_mean_advection_y": 5.56752189412749e-07,
+    "centered_mean_advection_z": 3.97406482957166e-05,
+    "centered_eddy_advection_y": 5.152394928205327e-07,
+    "centered_eddy_advection_z": 5.41228815578184e-06,
+    "centered_native_advection_remainder": 4.105891009027152e-05
+  },
+  "three_hour_sampling_difference_rms_m_s2": {
+    "advection": 3.002558533390761e-07,
+    "coriolis": 9.723463437428821e-08,
+    "diffusion": 5.495668577852654e-08,
+    "external_forcing": 0.0
+  },
+  "limitations": [
+    "Every-step native budget uses exact SSPRK3 weights; centered mean/eddy estimates use trapezoidal three-hour snapshots.",
+    "Native-minus-centered advection difference contains interpolation and numerical-transport effects; it is not automatically a physical eddy stress.",
+    "This gate validates diagnostic operation and conservation, not cell existence, resolution convergence or statistical equilibrium."
+  ],
+  "source_sha256": "52e853a53a2e9be31ce89710d67e1f250e1a874269913a69d093ab2988ebb5bb"
+}

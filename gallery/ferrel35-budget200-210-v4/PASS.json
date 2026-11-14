@@ -1,0 +1,29 @@
+{
+  "status": "COMPLETE",
+  "compute_location": "Unity",
+  "frames": 81,
+  "duration": 6.75,
+  "start_day": 200,
+  "end_day": 210,
+  "sources": [
+    {
+      "source": "data/ferrel35-width-v4/diagnostic/segment_1",
+      "metadata_sha256": "eaf509e4847271044bebe52fa246b6492c4b409483cfef1c3ffccabce0975827"
+    }
+  ],
+  "assets": {
+    "diagnostic_200_210days.mp4": {
+      "bytes": 1723502,
+      "sha256": "4a1ef48d5da53174b77a3fed6e99d9fa3a31b49b4b00ff85fe54c060af5f3cd3"
+    },
+    "diagnostic_200_210days.json": {
+      "bytes": 3226,
+      "sha256": "c396fac3036fb246f9bbeab00422c80a1135e148add218b21bd2a9032b169947"
+    },
+    "diagnostic_200_210days.png": {
+      "bytes": 871313,
+      "sha256": "946162f425d35862aef473466cef6e10412bf38a7f4310266a329cbf8d79adbf"
+    }
+  },
+  "full_decode_passed": true
+}

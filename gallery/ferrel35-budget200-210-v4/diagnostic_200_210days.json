@@ -1,0 +1,151 @@
+{
+  "scale_reference_cases": [
+    "ferrel35_diagnostic"
+  ],
+  "labels": [
+    "35\u00b0N diagnostic restart"
+  ],
+  "case_names": [
+    "ferrel35_diagnostic"
+  ],
+  "title": "35\u00b0N diagnostic restart | Earth days 200\u2013210",
+  "layout": "2 rows, three depth columns",
+  "row_order": [
+    "35\u00b0N diagnostic restart: vorticity",
+    "35\u00b0N diagnostic restart: tracer"
+  ],
+  "times_seconds": [
+    17280000.0,
+    17290800.0,
+    17301600.0,
+    17312400.0,
+    17323200.0,
+    17334000.0,
+    17344800.0,
+    17355600.0,
+    17366400.0,
+    17377200.0,
+    17388000.0,
+    17398800.0,
+    17409600.0,
+    17420400.0,
+    17431200.0,
+    17442000.0,
+    17452800.0,
+    17463600.0,
+    17474400.0,
+    17485200.0,
+    17496000.0,
+    17506800.0,
+    17517600.0,
+    17528400.0,
+    17539200.0,
+    17550000.0,
+    17560800.0,
+    17571600.0,
+    17582400.0,
+    17593200.0,
+    17604000.0,
+    17614800.0,
+    17625600.0,
+    17636400.0,
+    17647200.0,
+    17658000.0,
+    17668800.0,
+    17679600.0,
+    17690400.0,
+    17701200.0,
+    17712000.0,
+    17722800.0,
+    17733600.0,
+    17744400.0,
+    17755200.0,
+    17766000.0,
+    17776800.0,
+    17787600.0,
+    17798400.0,
+    17809200.0,
+    17820000.0,
+    17830800.0,
+    17841600.0,
+    17852400.0,
+    17863200.0,
+    17874000.0,
+    17884800.0,
+    17895600.0,
+    17906400.0,
+    17917200.0,
+    17928000.0,
+    17938800.0,
+    17949600.0,
+    17960400.0,
+    17971200.0,
+    17982000.0,
+    17992800.0,
+    18003600.0,
+    18014400.0,
+    18025200.0,
+    18036000.0,
+    18046800.0,
+    18057600.0,
+    18068400.0,
+    18079200.0,
+    18090000.0,
+    18100800.0,
+    18111600.0,
+    18122400.0,
+    18133200.0,
+    18144000.0
+  ],
+  "heights_m": [
+    19687.5,
+    59062.5,
+    100312.5
+  ],
+  "fps": 12,
+  "frames": 81,
+  "crf": 33,
+  "vorticity_normalization": {
+    "type": "asinh",
+    "linear_width": 0.1,
+    "limits_by_depth": [
+      [
+        -1.301421880722046,
+        1.301421880722046
+      ],
+      [
+        -1.5507605075836182,
+        1.5507605075836182
+      ],
+      [
+        -0.29483845829963684,
+        0.29483845829963684
+      ]
+    ],
+    "shared_between_cases": true,
+    "fixed_in_time": true,
+    "units": "zeta divided by each case central f0",
+    "f0_by_case_s_inv": [
+      0.0002017268326646629
+    ]
+  },
+  "tracer_normalization": {
+    "type": "two_sided_centered_asinh",
+    "center": 0.0793082,
+    "linear_width": 0.001,
+    "colormap": "BrBG",
+    "limits": [
+      0.0,
+      1.0
+    ],
+    "units": "physical concentration C",
+    "center_basis": "Rounded common background concentration from Unity tracer audit; fixed, never recalculated per frame.",
+    "shared_between_cases_and_depths": true,
+    "fixed_in_time": true
+  },
+  "renderer_sha256": "2063a26751320771714397430102bb879919e8f2577a7443b6ee20cc75113174",
+  "note": "Tracer values are unchanged absolute concentrations; only their color mapping differs from the original movies. Every saved time included. No field clipping or temporal interpolation. Values on colorbars are physical C or \u03b6/f\u2080. Rendering uses nearest-neighbor display sampling.",
+  "full_decode_passed": true,
+  "compute_location": "Unity",
+  "slurm_job": "1694156"
+}
