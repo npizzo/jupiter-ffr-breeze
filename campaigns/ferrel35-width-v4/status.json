@@ -1,7 +1,7 @@
 {
-  "status": "CPU_VALIDATED_GPU_VALIDATION_RUNNING",
+  "status": "CPU_VALIDATED_GPU_VALIDATION_QUEUED",
   "version": 4,
-  "updated_utc": "2026-11-14T03:56:49.591811+00:00",
+  "updated_utc": "2026-11-14T04:00:39.947365+00:00",
   "compute_location": "Unity",
   "cpu_validation": {
     "job_id": "1693660",
@@ -11,12 +11,12 @@
     "parameter_checks": 115
   },
   "gpu_validation": {
-    "job_id": "1693661",
-    "state": "RUNNING",
-    "reason": "uri-gpu003"
+    "job_id": "1694154",
+    "state": "PENDING",
+    "dependency": "afterok:1693660"
   },
   "diagnostic": {
-    "job_id": "1693662",
+    "job_id": "1694155",
     "start_earth_day": 200,
     "end_earth_day": 210,
     "state": "PENDING_DEPENDENCY"
@@ -40,223 +40,156 @@
     {
       "case": "gpu_validation",
       "segment": "0",
-      "job_id": "1693661",
-      "dependency": "1693660",
-      "state": "RUNNING",
-      "scheduler_dependency": "(null)",
-      "scheduler_reason": "uri-gpu003"
+      "job_id": "1694154",
+      "dependency": "1693660"
     },
     {
       "case": "diagnostic",
       "segment": "1",
-      "job_id": "1693662",
-      "dependency": "1693661",
-      "state": "PENDING",
-      "scheduler_dependency": "afterok:1693661(unfulfilled)",
-      "scheduler_reason": "(Dependency)"
+      "job_id": "1694155",
+      "dependency": "1694154"
     },
     {
       "case": "diagnostic_movie",
       "segment": "0",
-      "job_id": "1693663",
-      "dependency": "1693662",
-      "state": "PENDING",
-      "scheduler_dependency": "afterok:1693662(unfulfilled)",
-      "scheduler_reason": "(Dependency)"
+      "job_id": "1694156",
+      "dependency": "1694155"
     },
     {
       "case": "wide",
       "segment": "1",
-      "job_id": "1693664",
-      "dependency": "1693662",
-      "state": "PENDING",
-      "scheduler_dependency": "afterok:1693662(unfulfilled)",
-      "scheduler_reason": "(Dependency)"
+      "job_id": "1694157",
+      "dependency": "1694155"
     },
     {
       "case": "wide",
       "segment": "2",
-      "job_id": "1693665",
-      "dependency": "1693664",
-      "state": "PENDING",
-      "scheduler_dependency": "afterok:1693664(unfulfilled)",
-      "scheduler_reason": "(Dependency)"
+      "job_id": "1694158",
+      "dependency": "1694157"
     },
     {
       "case": "wide",
       "segment": "3",
-      "job_id": "1693666",
-      "dependency": "1693665",
-      "state": "PENDING",
-      "scheduler_dependency": "afterok:1693665(unfulfilled)",
-      "scheduler_reason": "(Dependency)"
+      "job_id": "1694159",
+      "dependency": "1694158"
     },
     {
       "case": "wide",
       "segment": "4",
-      "job_id": "1693667",
-      "dependency": "1693666",
-      "state": "PENDING",
-      "scheduler_dependency": "afterok:1693666(unfulfilled)",
-      "scheduler_reason": "(Dependency)"
+      "job_id": "1694160",
+      "dependency": "1694159"
     },
     {
       "case": "wide",
       "segment": "5",
-      "job_id": "1693668",
-      "dependency": "1693667",
-      "state": "PENDING",
-      "scheduler_dependency": "afterok:1693667(unfulfilled)",
-      "scheduler_reason": "(Dependency)"
+      "job_id": "1694161",
+      "dependency": "1694160"
     },
     {
       "case": "wide",
       "segment": "6",
-      "job_id": "1693669",
-      "dependency": "1693668",
-      "state": "PENDING",
-      "scheduler_dependency": "afterok:1693668(unfulfilled)",
-      "scheduler_reason": "(Dependency)"
+      "job_id": "1694162",
+      "dependency": "1694161"
     },
     {
       "case": "wide",
       "segment": "7",
-      "job_id": "1693670",
-      "dependency": "1693669",
-      "state": "PENDING",
-      "scheduler_dependency": "afterok:1693669(unfulfilled)",
-      "scheduler_reason": "(Dependency)"
+      "job_id": "1694163",
+      "dependency": "1694162"
     },
     {
       "case": "wide",
       "segment": "8",
-      "job_id": "1693671",
-      "dependency": "1693670",
-      "state": "PENDING",
-      "scheduler_dependency": "afterok:1693670(unfulfilled)",
-      "scheduler_reason": "(Dependency)"
+      "job_id": "1694164",
+      "dependency": "1694163"
     },
     {
       "case": "wide",
       "segment": "9",
-      "job_id": "1693672",
-      "dependency": "1693671",
-      "state": "PENDING",
-      "scheduler_dependency": "afterok:1693671(unfulfilled)",
-      "scheduler_reason": "(Dependency)"
+      "job_id": "1694165",
+      "dependency": "1694164"
     },
     {
       "case": "wide",
       "segment": "10",
-      "job_id": "1693673",
-      "dependency": "1693672",
-      "state": "PENDING",
-      "scheduler_dependency": "afterok:1693672(unfulfilled)",
-      "scheduler_reason": "(Dependency)"
+      "job_id": "1694166",
+      "dependency": "1694165"
     },
     {
       "case": "wide",
       "segment": "11",
-      "job_id": "1693674",
-      "dependency": "1693673",
-      "state": "PENDING",
-      "scheduler_dependency": "afterok:1693673(unfulfilled)",
-      "scheduler_reason": "(Dependency)"
+      "job_id": "1694167",
+      "dependency": "1694166"
     },
     {
       "case": "wide",
       "segment": "12",
-      "job_id": "1693675",
-      "dependency": "1693674",
-      "state": "PENDING",
-      "scheduler_dependency": "afterok:1693674(unfulfilled)",
-      "scheduler_reason": "(Dependency)"
+      "job_id": "1694168",
+      "dependency": "1694167"
     },
     {
       "case": "wide",
       "segment": "13",
-      "job_id": "1693676",
-      "dependency": "1693675",
-      "state": "PENDING",
-      "scheduler_dependency": "afterok:1693675(unfulfilled)",
-      "scheduler_reason": "(Dependency)"
+      "job_id": "1694169",
+      "dependency": "1694168"
     },
     {
       "case": "wide",
       "segment": "14",
-      "job_id": "1693677",
-      "dependency": "1693676",
-      "state": "PENDING",
-      "scheduler_dependency": "afterok:1693676(unfulfilled)",
-      "scheduler_reason": "(Dependency)"
+      "job_id": "1694170",
+      "dependency": "1694169"
     },
     {
       "case": "wide",
       "segment": "15",
-      "job_id": "1693678",
-      "dependency": "1693677",
-      "state": "PENDING",
-      "scheduler_dependency": "afterok:1693677(unfulfilled)",
-      "scheduler_reason": "(Dependency)"
+      "job_id": "1694171",
+      "dependency": "1694170"
     },
     {
       "case": "wide",
       "segment": "16",
-      "job_id": "1693679",
-      "dependency": "1693678",
-      "state": "PENDING",
-      "scheduler_dependency": "afterok:1693678(unfulfilled)",
-      "scheduler_reason": "(Dependency)"
+      "job_id": "1694172",
+      "dependency": "1694171"
     },
     {
       "case": "wide",
       "segment": "17",
-      "job_id": "1693680",
-      "dependency": "1693679",
-      "state": "PENDING",
-      "scheduler_dependency": "afterok:1693679(unfulfilled)",
-      "scheduler_reason": "(Dependency)"
+      "job_id": "1694173",
+      "dependency": "1694172"
     },
     {
       "case": "wide",
       "segment": "18",
-      "job_id": "1693681",
-      "dependency": "1693680",
-      "state": "PENDING",
-      "scheduler_dependency": "afterok:1693680(unfulfilled)",
-      "scheduler_reason": "(Dependency)"
+      "job_id": "1694174",
+      "dependency": "1694173"
     },
     {
       "case": "wide",
       "segment": "19",
-      "job_id": "1693682",
-      "dependency": "1693681",
-      "state": "PENDING",
-      "scheduler_dependency": "afterok:1693681(unfulfilled)",
-      "scheduler_reason": "(Dependency)"
+      "job_id": "1694175",
+      "dependency": "1694174"
     },
     {
       "case": "wide",
       "segment": "20",
-      "job_id": "1693683",
-      "dependency": "1693682",
-      "state": "PENDING",
-      "scheduler_dependency": "afterok:1693682(unfulfilled)",
-      "scheduler_reason": "(Dependency)"
+      "job_id": "1694176",
+      "dependency": "1694175"
     },
     {
       "case": "wide_movie",
       "segment": "0",
-      "job_id": "1693684",
-      "dependency": "1693683",
-      "state": "PENDING",
-      "scheduler_dependency": "afterok:1693683(unfulfilled)",
-      "scheduler_reason": "(Dependency)"
+      "job_id": "1694177",
+      "dependency": "1694176"
     }
   ],
   "supersedes": "v3 after the CPU restart accounting check failed; no new production ran",
   "existing_simulations_modified": false,
   "source": "scripts/ferrel35_width_v4",
   "configuration": "configs/ferrel35-width-v4",
-  "gallery_url": "https://npizzo.github.io/jupiter-ffr-breeze/#beta35-200"
+  "gallery_url": "https://npizzo.github.io/jupiter-ffr-breeze/#beta35-200",
+  "superseded_gpu_attempt": {
+    "job_id": "1693661",
+    "reason": "Stale preflight root in submission wrapper; CUDA 12.2 on A100 verified; no production ran"
+  },
+  "source_unchanged_after_cpu_pass": true
 }
