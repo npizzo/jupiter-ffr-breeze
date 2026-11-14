@@ -1,6 +1,7 @@
 from pathlib import Path
 import json,sys
 import numpy as np
+from scipy.special import expit
 import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
@@ -14,6 +15,12 @@ for col,kind in enumerate(['full','interior','nonzonal_interior']):
   fig.colorbar(im,ax=ax[0,col],label='Earth days')
   fit=r['pooled_fits'][kind]
   if fit['status']=='FIT':
+   px=np.linspace(np.min(d['Psi']),np.max(d['Psi']),300);pq=(px-fit['Psi_mean'])/fit['Psi_standard_deviation']
+   qz=fit['Z_mean']+fit['Z_standard_deviation']*np.polynomial.polynomial.polyval(pq,fit['quadratic_standardized_coefficients'])
+   lz=fit['logistic_sigma2']+(fit['logistic_sigma1']-fit['logistic_sigma2'])*expit(fit['logistic_standardized_intercept']+fit['logistic_standardized_slope']*pq)
+   ax[0,col].plot(px/1e8,qz/abs(rows[0]['f']),color='black',lw=1,label='quadratic')
+   ax[0,col].plot(px/1e8,lz/abs(rows[0]['f']),color='darkred',lw=1,label='logistic')
+   ax[0,col].legend(loc='lower right',fontsize=8)
    ax[0,col].text(.03,.97,f"Quadratic R²={fit['quadratic_R2']:.3f}\nLogistic R²={fit['logistic_R2']:.3f}",transform=ax[0,col].transAxes,va='top',bbox={'facecolor':'white','alpha':.85,'edgecolor':'none'})
 for scale in ['0','50','100','200']:
  ax[1,0].plot(t,[x['moments']['interior']['full_Z'][scale]['raw_skewness'] for x in rows],label=f'{scale} km FWHM')
@@ -25,3 +32,12 @@ for k in ['V','H','barotropic_advection','mean_divergence']:
  ax[1,2].plot(t,[x['source']['interior']['third_moment_source_s_inv4'][k] for x in rows],label=k)
 ax[1,2].set(xlabel='Earth days',ylabel='3〈Z² source〉 [s⁻⁴]',title='Centered source reconstruction; remainder retained');ax[1,2].legend(fontsize=8)
 fig.suptitle(r['metadata']['name']+' | hypotheses tested, not assumed');fig.savefig(out/'diagnostic_summary.png',dpi=150);plt.close(fig)
+
+fig,ax=plt.subplots(1,2,figsize=(12,4.5),constrained_layout=True)
+for scale in ['0','50','100','200']:
+ for col,kind in enumerate(['full_Z','nonzonal_Z']):
+  p=rows[-1]['moments']['interior'][kind][scale]['PDF_zeta_over_abs_f'];x=np.array(p['bin_edges']);pdf=np.array(p['density'])
+  ax[col].plot((x[1:]+x[:-1])/2,pdf,label=f'{scale} km FWHM')
+for a,title in zip(ax,['Full interior Z','Z with zonal mean removed']):
+ a.set(xlabel='Z / |f|',ylabel='Probability density',title=title);a.legend()
+fig.suptitle(r['metadata']['name']+f" | final PDF at day {t[-1]:g}");fig.savefig(out/'vorticity_PDF.png',dpi=150);plt.close(fig)

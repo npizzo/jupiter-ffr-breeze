@@ -11,6 +11,7 @@
 set -euo pipefail
 source ./local.env
 source scripts/cuda_repair/environment.sh
+export OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1
 if [ "$1" = array ]; then
  mapfile -t cases < scripts/fplane_point4_v1/case-order.txt
  "$JULIA_BIN" --project=. scripts/fplane_point4_v1/cuda_launch.jl campaign "$2" "${cases[$SLURM_ARRAY_TASK_ID]}"

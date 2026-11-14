@@ -4,6 +4,8 @@ using Oceananigans: interior
 include("initial_flow.jl")
 include("thermal_budget_controller.jl")
 include("point4_state.jl")
+import Breeze.AtmosphereModels as AM
+include("remap.jl")
 
 # The pinned Simulation checkpoint omits sim.Δt. Carry it in callback state.
 mutable struct SavedTimeStep
@@ -315,6 +317,14 @@ add_callback!(sim,save_frame,TimeInterval(diagnostic_seconds))
 if pickup !== false
     set!(sim; checkpoint=pickup)
     sim.Δt=min(saved_dt.value,cfg["max_dt"]);saved_dt.value=sim.Δt
+end
+if haskey(cfg,"restart_bundle")
+    pickup===false || error("Choose checkpoint or bundle")
+    restore_bundle!(model,sim,controller,saved_dt,cfg,out)
+end
+if haskey(cfg,"export_bundle")
+    export_bundle(model,sim,controller,cfg["export_bundle"],cfg,pickup)
+    return nothing
 end
 if get(cfg,"reverse_barotropic",false)
     pickup===false && error("Reversal requires a completed heated checkpoint")

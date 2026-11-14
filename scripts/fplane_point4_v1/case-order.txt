@@ -11,3 +11,5 @@ rest_q5p4
 rest_q0
 late_restart_control
 late_restart_reversed
+late_heated_dt15
+late_heated_fine

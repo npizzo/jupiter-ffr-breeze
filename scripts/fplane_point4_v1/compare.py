@@ -10,7 +10,7 @@ root=Path(sys.argv[1]);results=Path(sys.argv[2]);out=results/'comparisons';out.m
 names=(Path(__file__).with_name('case-order.txt')).read_text().splitlines()
 reports={name:json.loads((results/name/'diagnostics.json').read_text()) for name in names}
 for name in names:assert json.loads((results/name/'PASS.json').read_text())['full_decode_passed']
-pairs=[('early_replay_heated','early_replay_control','Original initial turbulence | heated over unheated | days 0–5'),('late_heated','late_control','Heated over unheated | days 90–100'),('rest_q162','rest_q162_fine','256² over 512² | from rest | 162 W/m²'),('rest_q162','rest_q162_flipf','Positive f over negative f | from rest | cyclones have ζ/f > 0'),('late_restart_control','late_restart_reversed','Unchanged over barotropic-reversed mature state | days 100–110')]
+pairs=[('late_heated_dt15','late_heated_fine','Mature heated f-plane | 256² over 512² | days 90–100'),('early_replay_heated','early_replay_control','Original initial turbulence | heated over unheated | days 0–5'),('late_heated','late_control','Heated over unheated | days 90–100'),('rest_q162','rest_q162_fine','256² over 512² | from rest | 162 W/m²'),('rest_q162','rest_q162_flipf','Positive f over negative f | from rest | cyclones have ζ/f > 0'),('late_restart_control','late_restart_reversed','Unchanged over barotropic-reversed mature state | days 100–110')]
 movies=[]
 for a,b,title in pairs:
  movie=out/(a+'_over_'+b+'.mp4')

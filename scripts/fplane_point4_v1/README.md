@@ -8,6 +8,7 @@ These are hypothesis tests requested after the 35°N horizontal-resolution audit
 |---|---:|---|
 | early_replay_heated, early_replay_control | 0–5 | Recreate the original random-turbulence initial conditions and original timestep ceiling to connect early skewness with the actual completed day-100 endpoints. |
 | late_heated, late_control | 90–100 | Restart the actual completed cascade100 checkpoints to save full 3D velocities at matched daily times, with the original 30 s maximum timestep. |
+| late_heated_dt15, late_heated_fine | 90–100 | Matched mature-state 256²/512² restarts with conservative divergence-preserving remapping and 15 s ceilings; the original 30 s replay separates timestep sensitivity. |
 | rest_q0, rest_q5p4, rest_q54, rest_q162, rest_q540 | 0–5 | Start at rest with identical weak physical-mode temperature noise; vary only bottom heat flux. |
 | rest_q162_flipf | 0–5 | Reverse f at fixed magnitude; same weak-noise physical initial condition. A cyclone then has negative vorticity. |
 | rest_q162_fine | 0–5 | 512²×64 companion to the 256²×64 162 W/m² case; same physical noise modes and 15 s timestep ceiling. |
@@ -23,7 +24,7 @@ Original native Float64 staggered velocity, centered potential temperature and d
 
 The reversal transforms horizontal momentum by subtracting twice its density-weighted depth-mean velocity times reference density. It preserves vertical momentum, thermodynamics, tracer and the baroclinic horizontal component. The preflight verifies native mass divergence and wall fluxes, and records the original pressure as an initial guess for subsequent projection. A matched unchanged restart separates normal evolution from the reversal response.
 
-Six GPU preflights cover both day-90 restarts, actual day-100 reversal, 540 W/m², negative f, and 512². Analytic CPU checks on Unity validate the channel Poisson solver, signs, moment normalization, quadratic coefficient conversion and zero baroclinic sources for a barotropic field. Production requires both gates. Sources are hashed at the gate; frozen code changes invalidate it.
+Eight GPU preflights cover both day-90 restarts, actual day-100 reversal, 540 W/m², negative f, and both from-rest and mature-state 512² cases. The mature remap checks restriction, scalar conservation, mass-divergence commutation and actual initial kinetic-energy change (reported, with a 10% maximum guard). This ten-day sensitivity run is not an independently equilibrated fine-grid condensate. Analytic CPU checks on Unity validate the channel Poisson solver, signs, moment normalization, quadratic coefficient conversion and zero baroclinic sources for a barotropic field. Production requires both gates. Sources are hashed at the gate; frozen code changes invalidate it.
 
 ## Diagnostics and interpretation
 

@@ -49,3 +49,11 @@ checkpoint = ""
 [early_replay_control]
 config = "configs/fplane-point4-v1/early_replay_control.toml"
 checkpoint = ""
+
+[late_heated_dt15]
+config = "configs/fplane-point4-v1/late_heated_dt15.toml"
+checkpoint = ""
+
+[late_heated_fine]
+config = "configs/fplane-point4-v1/late_heated_fine.toml"
+checkpoint = ""

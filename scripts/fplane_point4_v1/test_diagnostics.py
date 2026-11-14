@@ -30,8 +30,8 @@ assert np.max(abs(m['vertical_source']))<1e-25 and np.max(abs(m['horizontal_sour
 checks.append('Density-weighted barotropic flow has no baroclinic V or H source')
 path.unlink()
 # Real GPU snapshots validate orientation, density, native-face continuity, and finiteness.
-for case in ['late_heated','late_control','late_restart_reversed','rest_q540','rest_q162_flipf','rest_q162_fine']:
- files=sorted((root/case/'fields3d').glob('state_*.jld2'));assert len(files)==2
+for case in ['late_heated','late_control','late_restart_reversed','rest_q540','rest_q162_flipf','rest_q162_fine','late_heated_dt15','late_heated_fine']:
+ files=sorted((root/case/'fields3d').glob('state_*.jld2'));assert len(files)==(7 if case=='late_heated_fine' else 2)
  row,m=field_analysis(files[-1])
  assert row['native_depth_mean_divergence_max']<1e-10
  assert all(np.isfinite(m[k]).all() for k in ['Z','Psi','vertical_source','horizontal_source'])
