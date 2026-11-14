@@ -1,0 +1,27 @@
+{
+  "status": "UNITY_COMPLETE_MEDIA_VERIFIED",
+  "compute_location": "Unity",
+  "source_commit": "532536649641570fc4f3fbd9053a422a97a71622",
+  "simulation_job": 1716756,
+  "simulation_job_state": "COMPLETED",
+  "simulation_wall_time": "00:16:47 (includes original and instrumented three-hour validation plus one-day production)",
+  "review_and_movie_job": 1716762,
+  "review_job_state": "COMPLETED",
+  "review_wall_time": "00:00:15",
+  "gpu": "NVIDIA A100-SXM4-80GB",
+  "cuda": "12.2.0",
+  "preflight_testset_checks": 23,
+  "physical_field_comparisons": 19,
+  "validation_interval_earth_days": [
+    300,
+    300.125
+  ],
+  "production_interval_earth_days": [
+    300,
+    301
+  ],
+  "original_checkpoint_sha256": "7a906c574fee5d1327d58be50daeaaac61ac05f7d84b266ff47a813027e89d01",
+  "configuration": "configs/ferrel35-face-v3/diagnostic.toml",
+  "wider_campaign_unchanged": true,
+  "note": "Development v1/v2 failed diagnostic implementation checks; only completed v3 is presented as scientific output."
+}

@@ -1,0 +1,31 @@
+{
+  "status": "COMPLETE",
+  "start_day": 300,
+  "end_day": 301,
+  "frames": 9,
+  "duration_seconds": 9.0,
+  "full_decode_passed": true,
+  "compute_location": "Unity",
+  "assets": {
+    "diagnostic_300_301days.json": {
+      "bytes": 2107,
+      "sha256": "a2859cde0d97eda389ec83697488cb89d04168af8732e0dbea0ed0ea73b1a5f0"
+    },
+    "diagnostic_300_301days.mp4": {
+      "bytes": 978225,
+      "sha256": "0cf9449820a8df5f10351edeeeb1fe60ba3237d45dcf68a0610703b25ffecce0"
+    },
+    "diagnostic_300_301days.png": {
+      "bytes": 871256,
+      "sha256": "60601c21a69a5ed22f0a9556b0491c8c172bb20cada4d7e98e6987c7de1792e9"
+    },
+    "momentum_budget.png": {
+      "bytes": 294475,
+      "sha256": "e59942fc6f2bb66f42d11e12229288f58e5999422808e05a1de1e044bb64a8aa"
+    },
+    "review.json": {
+      "bytes": 2500,
+      "sha256": "9ce501dbe6b1c9c435fcd70b80702cf41b3cf062956eafddceba4b3f8e027e86"
+    }
+  }
+}

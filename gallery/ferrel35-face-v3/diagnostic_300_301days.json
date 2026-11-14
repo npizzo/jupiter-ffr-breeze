@@ -1,0 +1,79 @@
+{
+  "scale_reference_cases": [
+    "ferrel35_face_day300"
+  ],
+  "labels": [
+    "35\u00b0N native-face diagnostic"
+  ],
+  "case_names": [
+    "ferrel35_face_day300"
+  ],
+  "title": "35\u00b0N heated beta-plane | Earth days 300\u2013301 | diagnostic restart",
+  "layout": "2 rows, three depth columns",
+  "row_order": [
+    "35\u00b0N native-face diagnostic: vorticity",
+    "35\u00b0N native-face diagnostic: tracer"
+  ],
+  "times_seconds": [
+    25920000.0,
+    25930800.0,
+    25941600.0,
+    25952400.0,
+    25963200.0,
+    25974000.0,
+    25984800.0,
+    25995600.0,
+    26006400.0
+  ],
+  "heights_m": [
+    19687.5,
+    59062.5,
+    100312.5
+  ],
+  "fps": 1,
+  "frames": 9,
+  "crf": 28,
+  "vorticity_normalization": {
+    "type": "asinh",
+    "linear_width": 0.1,
+    "limits_by_depth": [
+      [
+        -1.0123469829559326,
+        1.0123469829559326
+      ],
+      [
+        -1.424673318862915,
+        1.424673318862915
+      ],
+      [
+        -0.20058248937129974,
+        0.20058248937129974
+      ]
+    ],
+    "shared_between_cases": true,
+    "fixed_in_time": true,
+    "units": "zeta divided by each case central f0",
+    "f0_by_case_s_inv": [
+      0.0002017268326646629
+    ]
+  },
+  "tracer_normalization": {
+    "type": "two_sided_centered_asinh",
+    "center": 0.0793082,
+    "linear_width": 0.001,
+    "colormap": "BrBG",
+    "limits": [
+      0.0,
+      1.0
+    ],
+    "units": "physical concentration C",
+    "center_basis": "Rounded common background concentration from Unity tracer audit; fixed, never recalculated per frame.",
+    "shared_between_cases_and_depths": true,
+    "fixed_in_time": true
+  },
+  "renderer_sha256": "2063a26751320771714397430102bb879919e8f2577a7443b6ee20cc75113174",
+  "note": "Tracer values are unchanged absolute concentrations; only their color mapping differs from the original movies. Every saved time included. No field clipping or temporal interpolation. Values on colorbars are physical C or \u03b6/f\u2080. Rendering uses nearest-neighbor display sampling.",
+  "full_decode_passed": true,
+  "compute_location": "Unity",
+  "slurm_job": "1716762"
+}

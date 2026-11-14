@@ -1,0 +1,62 @@
+{
+  "status": "PASS",
+  "compute_location": "Unity",
+  "start_day": 300,
+  "end_day": 301,
+  "native_steps": 2880,
+  "mask": {
+    "abs_y_max_km": 2400,
+    "z_km": [
+      10,
+      75
+    ]
+  },
+  "native_acceleration_rms_m_s2": {
+    "advection": 5.7541074137680905e-06,
+    "coriolis": 6.058972157472338e-06,
+    "diffusion": 7.239573413387664e-07,
+    "external_forcing": 0.0
+  },
+  "face_acceleration_rms_m_s2": {
+    "mean_y": 3.593719354157375e-05,
+    "mean_z": 3.5603110463720634e-05,
+    "eddy_y": 3.232633651438328e-06,
+    "eddy_z": 5.956598167054108e-06,
+    "reconstruction_y": 2.313811686957971e-06,
+    "reconstruction_z": 4.724613697706878e-08
+  },
+  "combined_acceleration_rms_m_s2": {
+    "mean": 2.457824140415561e-06,
+    "eddy": 5.117443378200725e-06,
+    "reconstruction": 2.3142463517886486e-06
+  },
+  "reconstruction_to_eddy_rms": 0.4522270557299902,
+  "eddy_cosine_against_negative_coriolis": 0.7707701968018902,
+  "native_checks": {
+    "face_max_momentum_flux_error": 4.858580985450667e-18,
+    "face_max_heat_partition_error": 5.833135404658592e-18,
+    "face_max_heat_increment_error": 8.379209903242122e-14
+  },
+  "closure_checks": {
+    "momentum_face_sum_vs_native_rms_m_s2": 7.720436338908923e-20,
+    "heat_face_sum_vs_native_max_rho_theta_s": 3.122269322697758e-16,
+    "heat_increment_residual_max_rho_theta_s": 1.0696116221383707e-16
+  },
+  "column_enthalpy_budget_W_m2": {
+    "advection": -20.45671366977981,
+    "diffusion": -1.2361157487815881,
+    "stable_cap": 21.835589723982103,
+    "thermal_feedback": -183.83555314521345,
+    "bottom_flux": 161.25312274391317,
+    "storage": -22.439669997553985,
+    "residual": 9.832565189771659e-08
+  },
+  "limitations": [
+    "One mature-state day tests diagnostic accounting; it is not a statistical Ferrel-cell identification.",
+    "Mean and eddy fluxes use linear interpolation onto the actual transport faces; reconstruction is native WENO minus that specified baseline, not necessarily dissipation.",
+    "All terms are integrated at every SSPRK3 stage. The independent momentum and potential-temperature state increments check closure.",
+    "Column enthalpy uses cp times prescribed reference Exner times rho-theta; advection and diffusion may change its volume integral. It is not a full kinetic plus internal plus gravitational energy budget.",
+    "Wall, cap and resolution sensitivity remain separate tests."
+  ],
+  "source_sha256": "b6604f09393ddd86824b83a1548a4bdb14f64f33ac8f37a7e891cb3f0e5d3419"
+}
