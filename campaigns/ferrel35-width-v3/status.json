@@ -1,20 +1,20 @@
 {
-  "status": "SUBMITTED_WITH_VALIDATION_GATES",
+  "status": "SUPERSEDED_AFTER_VALIDATION_FAILURE",
   "updated_utc": "2026-11-14T03:48:13.017417+00:00",
   "compute_location": "Unity",
   "cpu_validation": {
     "job_id": "1693066",
-    "state": "RUNNING",
+    "state": "FAILED",
     "note": "115 parameter checks passed; continuous/restarted numerical checks in progress"
   },
   "gpu_validation": {
     "job_id": "1693264",
-    "state": "PENDING",
+    "state": "CANCELLED_DEPENDENCY",
     "dependency": "afterok:1693066"
   },
   "diagnostic": {
     "job_id": "1693265",
-    "state": "PENDING",
+    "state": "CANCELLED_DEPENDENCY",
     "start_earth_day": 200,
     "end_earth_day": 210,
     "dependency": "afterok:1693264"
@@ -154,7 +154,7 @@
         "dependency": "1693285"
       }
     ],
-    "state": "PENDING",
+    "state": "CANCELLED_DEPENDENCY",
     "gate": "Successful 10-day diagnostic branch and its numerical budget review"
   },
   "render_jobs": [
@@ -178,5 +178,7 @@
   ],
   "source": "scripts/ferrel35_width_v3",
   "cpu_tested_source": "scripts/ferrel35_width_v2",
-  "gallery_url": "https://npizzo.github.io/jupiter-ffr-breeze/#beta35-200"
+  "gallery_url": "https://npizzo.github.io/jupiter-ffr-breeze/#beta35-200",
+  "superseded_by": "campaigns/ferrel35-width-v4/status.json",
+  "failure": "CPU diagnostic accumulator missed first timestep after restart; physical output checks passed; dependent production never ran"
 }

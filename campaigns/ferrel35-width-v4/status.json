@@ -1,0 +1,186 @@
+{
+  "status": "SUBMITTED_WITH_VALIDATION_GATES",
+  "version": 4,
+  "updated_utc": "2026-11-14T03:53:33.944638+00:00",
+  "compute_location": "Unity",
+  "cpu_validation": {
+    "job_id": "1693660",
+    "state": "SUBMITTED"
+  },
+  "gpu_validation": {
+    "job_id": "1693661",
+    "state": "PENDING_DEPENDENCY"
+  },
+  "diagnostic": {
+    "job_id": "1693662",
+    "start_earth_day": 200,
+    "end_earth_day": 210,
+    "state": "PENDING_DEPENDENCY"
+  },
+  "wide": {
+    "state": "PENDING_DEPENDENCY",
+    "grid": [
+      256,
+      512,
+      64
+    ],
+    "extent_m": [
+      6000000,
+      12000000,
+      120000
+    ],
+    "start_earth_day": 0,
+    "end_earth_day": 200
+  },
+  "jobs": [
+    {
+      "case": "gpu_validation",
+      "segment": "0",
+      "job_id": "1693661",
+      "dependency": "1693660"
+    },
+    {
+      "case": "diagnostic",
+      "segment": "1",
+      "job_id": "1693662",
+      "dependency": "1693661"
+    },
+    {
+      "case": "diagnostic_movie",
+      "segment": "0",
+      "job_id": "1693663",
+      "dependency": "1693662"
+    },
+    {
+      "case": "wide",
+      "segment": "1",
+      "job_id": "1693664",
+      "dependency": "1693662"
+    },
+    {
+      "case": "wide",
+      "segment": "2",
+      "job_id": "1693665",
+      "dependency": "1693664"
+    },
+    {
+      "case": "wide",
+      "segment": "3",
+      "job_id": "1693666",
+      "dependency": "1693665"
+    },
+    {
+      "case": "wide",
+      "segment": "4",
+      "job_id": "1693667",
+      "dependency": "1693666"
+    },
+    {
+      "case": "wide",
+      "segment": "5",
+      "job_id": "1693668",
+      "dependency": "1693667"
+    },
+    {
+      "case": "wide",
+      "segment": "6",
+      "job_id": "1693669",
+      "dependency": "1693668"
+    },
+    {
+      "case": "wide",
+      "segment": "7",
+      "job_id": "1693670",
+      "dependency": "1693669"
+    },
+    {
+      "case": "wide",
+      "segment": "8",
+      "job_id": "1693671",
+      "dependency": "1693670"
+    },
+    {
+      "case": "wide",
+      "segment": "9",
+      "job_id": "1693672",
+      "dependency": "1693671"
+    },
+    {
+      "case": "wide",
+      "segment": "10",
+      "job_id": "1693673",
+      "dependency": "1693672"
+    },
+    {
+      "case": "wide",
+      "segment": "11",
+      "job_id": "1693674",
+      "dependency": "1693673"
+    },
+    {
+      "case": "wide",
+      "segment": "12",
+      "job_id": "1693675",
+      "dependency": "1693674"
+    },
+    {
+      "case": "wide",
+      "segment": "13",
+      "job_id": "1693676",
+      "dependency": "1693675"
+    },
+    {
+      "case": "wide",
+      "segment": "14",
+      "job_id": "1693677",
+      "dependency": "1693676"
+    },
+    {
+      "case": "wide",
+      "segment": "15",
+      "job_id": "1693678",
+      "dependency": "1693677"
+    },
+    {
+      "case": "wide",
+      "segment": "16",
+      "job_id": "1693679",
+      "dependency": "1693678"
+    },
+    {
+      "case": "wide",
+      "segment": "17",
+      "job_id": "1693680",
+      "dependency": "1693679"
+    },
+    {
+      "case": "wide",
+      "segment": "18",
+      "job_id": "1693681",
+      "dependency": "1693680"
+    },
+    {
+      "case": "wide",
+      "segment": "19",
+      "job_id": "1693682",
+      "dependency": "1693681"
+    },
+    {
+      "case": "wide",
+      "segment": "20",
+      "job_id": "1693683",
+      "dependency": "1693682"
+    },
+    {
+      "case": "wide_movie",
+      "segment": "0",
+      "job_id": "1693684",
+      "dependency": "1693683"
+    }
+  ],
+  "supersedes": "v3 after the CPU restart accounting check failed; no new production ran",
+  "existing_simulations_modified": false,
+  "source": "scripts/ferrel35_width_v4",
+  "configuration": "configs/ferrel35-width-v4",
+  "gallery_url": "https://npizzo.github.io/jupiter-ffr-breeze/#beta35-200"
+}

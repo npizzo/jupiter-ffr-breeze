@@ -34,17 +34,17 @@ A closed total momentum budget is a numerical prerequisite, not evidence that ed
 3. A full 256×512×64 six-hour GPU probe checks output, cap, conservation and runtime. Estimated ten-day production time must be under eight hours for the twelve-hour allocation.
 4. The full day200–210 diagnostic branch must complete with every-step and cumulative closure checks and a numerical review before wider production starts.
 
-The final v3 driver reuses the CPU test from v2 only after verifying that all ten tested numerical/physical files and both configurations are byte-identical, and that the runtime environment is unchanged. The v3 changes concern campaign paths and correct treatment of the snapshot sampling interval in the later review. Unused earlier GPU validation submissions were retired before running; no existing physical simulation was canceled.
+The v4 observer explicitly initializes its first stage after a checkpoint restore. The first CPU test caught a missing initial restart timestep in the diagnostic accumulator (the flow, tracer and cap checks passed). That validation failure blocked the original dependent chain before any new production ran. The repair adds checks that the budget starts at the exact restart time, ends at the exact segment endpoint, and covers every intervening timestep without gaps. CPU and GPU restart tests are repeated for the repaired version. No existing physical simulation was canceled.
 
 A failed dependency cancels descendants rather than allowing unvalidated production. Each wide segment verifies source, configuration and runtime hashes and requires the previous segment to complete. GPU jobs request one GPU with at least 48 GB VRAM in the URI GPU partition; the actual device is recorded. The existing verified CUDA 12.2 environment is reused without modification.
 
 ## Queue and output
 
-[Job identifiers and dependencies](../campaigns/ferrel35-width-v3/jobs.tsv) and [publication-time status](../campaigns/ferrel35-width-v3/status.json) are snapshots, not a live scheduler.
+[Job identifiers and dependencies](../campaigns/ferrel35-width-v4/jobs.tsv) and [publication-time status](../campaigns/ferrel35-width-v4/status.json) are snapshots, not a live scheduler.
 
-- Source: `scripts/ferrel35_width_v3/`; configuration: `configs/ferrel35-width-v3/`.
-- Diagnostic branch: `data/ferrel35-width-v3/diagnostic/segment_1` on Unity.
-- Wide run: `data/ferrel35-width-v3/wide/segment_1` through `segment_20` on Unity.
+- Source: `scripts/ferrel35_width_v4/`; configuration: `configs/ferrel35-width-v4/`.
+- Diagnostic branch: `data/ferrel35-width-v4/diagnostic/segment_1` on Unity.
+- Wide run: `data/ferrel35-width-v4/wide/segment_1` through `segment_20` on Unity.
 - Movie jobs follow the diagnostic branch and wide day200, respectively. They combine vorticity above tracer, with three simultaneous depth columns, fixed physical scales and explicit timestamps. The wide movie preserves the channel's 2:1 north–south/east–west aspect ratio. The day200 diagnostic starting frame comes from the actual original day200 output.
 - The same improved BrBG tracer contrast and per-depth fixed asinh vorticity normalization are retained. Finished movies must pass full decoding and frame-count checks before gallery publication.
 
