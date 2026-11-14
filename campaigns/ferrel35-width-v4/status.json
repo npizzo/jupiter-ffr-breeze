@@ -1,7 +1,7 @@
 {
-  "status": "CPU_VALIDATED_GPU_VALIDATION_QUEUED",
+  "status": "VALIDATION_PASSED_PRODUCTION_RELEASED",
   "version": 4,
-  "updated_utc": "2026-11-14T04:00:39.947365+00:00",
+  "updated_utc": "2026-11-14T04:12:43.953609+00:00",
   "compute_location": "Unity",
   "cpu_validation": {
     "job_id": "1693660",
@@ -12,17 +12,20 @@
   },
   "gpu_validation": {
     "job_id": "1694154",
-    "state": "PENDING",
-    "dependency": "afterok:1693660"
+    "state": "COMPLETED",
+    "result": "PASS",
+    "mature_comparison_checks": 20,
+    "restart_comparison_checks": 21,
+    "full_grid_probe_hours": 6
   },
   "diagnostic": {
     "job_id": "1694155",
     "start_earth_day": 200,
     "end_earth_day": 210,
-    "state": "PENDING_DEPENDENCY"
+    "state": "RUNNING"
   },
   "wide": {
-    "state": "PENDING_DEPENDENCY",
+    "state": "PENDING",
     "grid": [
       256,
       512,
@@ -34,152 +37,226 @@
       120000
     ],
     "start_earth_day": 0,
-    "end_earth_day": 200
+    "end_earth_day": 200,
+    "first_job": "1694157",
+    "last_job": "1694176"
   },
   "jobs": [
     {
       "case": "gpu_validation",
       "segment": "0",
       "job_id": "1694154",
-      "dependency": "1693660"
+      "dependency": "1693660",
+      "state": "COMPLETED",
+      "elapsed": "00:11:01",
+      "node": "uri-gpu014"
     },
     {
       "case": "diagnostic",
       "segment": "1",
       "job_id": "1694155",
-      "dependency": "1694154"
+      "dependency": "1694154",
+      "state": "RUNNING",
+      "elapsed": "00:00:27",
+      "node": "uri-gpu014"
     },
     {
       "case": "diagnostic_movie",
       "segment": "0",
       "job_id": "1694156",
-      "dependency": "1694155"
+      "dependency": "1694155",
+      "state": "PENDING",
+      "elapsed": "00:00:00",
+      "node": "None assigned"
     },
     {
       "case": "wide",
       "segment": "1",
       "job_id": "1694157",
-      "dependency": "1694155"
+      "dependency": "1694155",
+      "state": "PENDING",
+      "elapsed": "00:00:00",
+      "node": "None assigned"
     },
     {
       "case": "wide",
       "segment": "2",
       "job_id": "1694158",
-      "dependency": "1694157"
+      "dependency": "1694157",
+      "state": "PENDING",
+      "elapsed": "00:00:00",
+      "node": "None assigned"
     },
     {
       "case": "wide",
       "segment": "3",
       "job_id": "1694159",
-      "dependency": "1694158"
+      "dependency": "1694158",
+      "state": "PENDING",
+      "elapsed": "00:00:00",
+      "node": "None assigned"
     },
     {
       "case": "wide",
       "segment": "4",
       "job_id": "1694160",
-      "dependency": "1694159"
+      "dependency": "1694159",
+      "state": "PENDING",
+      "elapsed": "00:00:00",
+      "node": "None assigned"
     },
     {
       "case": "wide",
       "segment": "5",
       "job_id": "1694161",
-      "dependency": "1694160"
+      "dependency": "1694160",
+      "state": "PENDING",
+      "elapsed": "00:00:00",
+      "node": "None assigned"
     },
     {
       "case": "wide",
       "segment": "6",
       "job_id": "1694162",
-      "dependency": "1694161"
+      "dependency": "1694161",
+      "state": "PENDING",
+      "elapsed": "00:00:00",
+      "node": "None assigned"
     },
     {
       "case": "wide",
       "segment": "7",
       "job_id": "1694163",
-      "dependency": "1694162"
+      "dependency": "1694162",
+      "state": "PENDING",
+      "elapsed": "00:00:00",
+      "node": "None assigned"
     },
     {
       "case": "wide",
       "segment": "8",
       "job_id": "1694164",
-      "dependency": "1694163"
+      "dependency": "1694163",
+      "state": "PENDING",
+      "elapsed": "00:00:00",
+      "node": "None assigned"
     },
     {
       "case": "wide",
       "segment": "9",
       "job_id": "1694165",
-      "dependency": "1694164"
+      "dependency": "1694164",
+      "state": "PENDING",
+      "elapsed": "00:00:00",
+      "node": "None assigned"
     },
     {
       "case": "wide",
       "segment": "10",
       "job_id": "1694166",
-      "dependency": "1694165"
+      "dependency": "1694165",
+      "state": "PENDING",
+      "elapsed": "00:00:00",
+      "node": "None assigned"
     },
     {
       "case": "wide",
       "segment": "11",
       "job_id": "1694167",
-      "dependency": "1694166"
+      "dependency": "1694166",
+      "state": "PENDING",
+      "elapsed": "00:00:00",
+      "node": "None assigned"
     },
     {
       "case": "wide",
       "segment": "12",
       "job_id": "1694168",
-      "dependency": "1694167"
+      "dependency": "1694167",
+      "state": "PENDING",
+      "elapsed": "00:00:00",
+      "node": "None assigned"
     },
     {
       "case": "wide",
       "segment": "13",
       "job_id": "1694169",
-      "dependency": "1694168"
+      "dependency": "1694168",
+      "state": "PENDING",
+      "elapsed": "00:00:00",
+      "node": "None assigned"
     },
     {
       "case": "wide",
       "segment": "14",
       "job_id": "1694170",
-      "dependency": "1694169"
+      "dependency": "1694169",
+      "state": "PENDING",
+      "elapsed": "00:00:00",
+      "node": "None assigned"
     },
     {
       "case": "wide",
       "segment": "15",
       "job_id": "1694171",
-      "dependency": "1694170"
+      "dependency": "1694170",
+      "state": "PENDING",
+      "elapsed": "00:00:00",
+      "node": "None assigned"
     },
     {
       "case": "wide",
       "segment": "16",
       "job_id": "1694172",
-      "dependency": "1694171"
+      "dependency": "1694171",
+      "state": "PENDING",
+      "elapsed": "00:00:00",
+      "node": "None assigned"
     },
     {
       "case": "wide",
       "segment": "17",
       "job_id": "1694173",
-      "dependency": "1694172"
+      "dependency": "1694172",
+      "state": "PENDING",
+      "elapsed": "00:00:00",
+      "node": "None assigned"
     },
     {
       "case": "wide",
       "segment": "18",
       "job_id": "1694174",
-      "dependency": "1694173"
+      "dependency": "1694173",
+      "state": "PENDING",
+      "elapsed": "00:00:00",
+      "node": "None assigned"
     },
     {
       "case": "wide",
       "segment": "19",
       "job_id": "1694175",
-      "dependency": "1694174"
+      "dependency": "1694174",
+      "state": "PENDING",
+      "elapsed": "00:00:00",
+      "node": "None assigned"
     },
     {
       "case": "wide",
       "segment": "20",
       "job_id": "1694176",
-      "dependency": "1694175"
+      "dependency": "1694175",
+      "state": "PENDING",
+      "elapsed": "00:00:00",
+      "node": "None assigned"
     },
     {
       "case": "wide_movie",
       "segment": "0",
       "job_id": "1694177",
-      "dependency": "1694176"
+      "dependency": "1694176",
+      "state": "PENDING",
+      "elapsed": "00:00:00",
+      "node": "None assigned"
     }
   ],
   "supersedes": "v3 after the CPU restart accounting check failed; no new production ran",
@@ -191,5 +268,13 @@
     "job_id": "1693661",
     "reason": "Stale preflight root in submission wrapper; CUDA 12.2 on A100 verified; no production ran"
   },
-  "source_unchanged_after_cpu_pass": true
+  "source_unchanged_after_cpu_pass": true,
+  "estimated_wide_10day_gpu_hours": 3.236148827870687,
+  "benchmark_gpu": "NVIDIA L40S",
+  "validation_scope": "Numerical execution, restart and conservation checks; not a demonstration of physical convergence or Ferrel cells",
+  "review_script_validation": {
+    "mature_nonzero_start_interval": "PASS",
+    "fresh_wide_grid_interval": "PASS",
+    "compute_location": "Unity"
+  }
 }

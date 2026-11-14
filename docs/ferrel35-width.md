@@ -19,6 +19,8 @@ This experiment tests whether the persistent overturning in the 6,000-km channel
 
 The cap, thermal feedback, vertical sponge, viscosity, diffusivities, dry anelastic equations and free-slip impermeable boundaries remain unchanged. The larger channel has twice as many meridional cells, not coarser cells. Its random seed number is retained, but the realized channel modes differ; it is a matched-statistics sensitivity, not an identical-field comparison. No checkpoint is stretched.
 
+The main comparison should use the same central physical region in both channels (|y| ≤ 2,400 km, heights 10–75 km), alongside separately labeled whole-channel and distance-from-wall diagnostics. Doubling width increases the total range of f(y), but f(y) at each shared central coordinate is unchanged. Using the same fractional width for the primary diagnostic would compare different physical regions and should be avoided.
+
 ## Momentum diagnostics
 
 The isolated driver is copied from the existing 35°N code, adding observers. Native advection, Coriolis, diffusion and external zonal forcing are evaluated at all three SSPRK3 stages, checked against the native RHS and integrated with the correct stage weights on every complete timestep. Independent momentum changes are compared with those integrated terms. Pressure-gradient cancellation in the periodic zonal direction is also checked. Detailed stage files are saved sparsely; cumulative arrays are saved with each three-hour frame. This improves on the earlier Ferrel pilot's sampled-step closure test.
@@ -49,3 +51,9 @@ A failed dependency cancels descendants rather than allowing unvalidated product
 - The same improved BrBG tracer contrast and per-depth fixed asinh vorticity normalization are retained. Finished movies must pass full decoding and frame-count checks before gallery publication.
 
 [Current gallery](https://npizzo.github.io/jupiter-ffr-breeze/#beta35-200). No new production results are claimed by this launch record.
+
+## Launch verification
+
+CPU job 1693660 and GPU preflight job 1694154 passed. The GPU test ran on an NVIDIA L40S with CUDA 12.2; all 21 restart field/integral comparisons and all 20 evolved-state comparisons passed, along with the six-hour full-size probe. The review script was also exercised successfully on both the evolved-state and wider-grid preflight outputs. Measured post-startup cost projects approximately 3.24 GPU-hours per ten simulated days in the wider channel; evolving velocities and queue delays can increase the total elapsed time.
+
+The diagnostic job is 1694155; wider segments are 1694157–1694176, followed by movie job 1694177. The diagnostic movie job is 1694156. The earlier GPU attempt pointed to a stale preflight directory and stopped before a model run; the replacement job uses the correct v4 gate. Current and superseded submission records are retained.
