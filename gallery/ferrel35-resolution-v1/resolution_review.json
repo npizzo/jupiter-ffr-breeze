@@ -1,0 +1,532 @@
+{
+  "status": "PASS",
+  "compute_location": "Unity",
+  "windows_earth_days": {
+    "full_24h": [
+      300,
+      301
+    ],
+    "adjustment_6h": [
+      300,
+      300.25
+    ],
+    "later_18h": [
+      300.25,
+      301
+    ]
+  },
+  "cases": {
+    "coarse_dt30": {
+      "grid": [
+        256,
+        256,
+        64
+      ],
+      "dx_km": 23.4375,
+      "max_dt": 30.0,
+      "native_steps": 2880,
+      "maximum_heat_closure_rho_theta_per_second": 1.0696116221383707e-16,
+      "maximum_momentum_partition_error_rho_u_per_second": 9.660000423029737e-18,
+      "source": "data/ferrel35-face-v3/production",
+      "metadata_sha256": "9146e46d1fe52fcb499fbd40ed00a964801854d407d595922b6f6f041304f907",
+      "windows": {
+        "full_24h": {
+          "native_grid": {
+            "mean_rms": 2.457824140415561e-06,
+            "eddy_rms": 5.117443378200725e-06,
+            "reconstruction_rms": 2.3142463517886486e-06,
+            "reconstruction_to_eddy": 0.4522270557299902,
+            "eddy_y_rms": 3.232633651438328e-06,
+            "eddy_z_rms": 5.956598167054108e-06,
+            "reconstruction_y_rms": 2.313811686957971e-06,
+            "reconstruction_z_rms": 4.724613697706878e-08,
+            "coriolis_rms": 6.058972157472338e-06,
+            "diffusion_rms": 7.239573413387664e-07,
+            "native_advection_rms": 5.7541074137680905e-06,
+            "face_sum_vs_native_rms": 7.720436338908923e-20
+          },
+          "common_coarse_grid": {
+            "mean_rms": 2.457824140415561e-06,
+            "eddy_rms": 5.117443378200725e-06,
+            "reconstruction_rms": 2.3142463517886486e-06,
+            "reconstruction_to_eddy": 0.4522270557299902,
+            "eddy_y_rms": 3.232633651438328e-06,
+            "eddy_z_rms": 5.956598167054108e-06,
+            "reconstruction_y_rms": 2.313811686957971e-06,
+            "reconstruction_z_rms": 4.724613697706878e-08,
+            "coriolis_rms": 6.058972157472338e-06,
+            "diffusion_rms": 7.239573413387664e-07,
+            "native_advection_rms": 5.7541074137680905e-06,
+            "face_sum_vs_native_rms": 7.720436338908923e-20
+          },
+          "column_enthalpy_W_m2": {
+            "advection": -20.45671366977981,
+            "diffusion": -1.2361157487815881,
+            "stable_cap": 21.835589723982103,
+            "thermal_feedback": -183.83555314521345,
+            "bottom_flux": 161.25312274391317,
+            "storage": -22.439669997553985,
+            "residual": 9.832564858028976e-08
+          }
+        },
+        "adjustment_6h": {
+          "native_grid": {
+            "mean_rms": 2.831484882420492e-06,
+            "eddy_rms": 6.8779481977398105e-06,
+            "reconstruction_rms": 2.7286869475362536e-06,
+            "reconstruction_to_eddy": 0.3967297904966685,
+            "eddy_y_rms": 4.171135545208063e-06,
+            "eddy_z_rms": 7.54206580879781e-06,
+            "reconstruction_y_rms": 2.7276774111601545e-06,
+            "reconstruction_z_rms": 7.381539817653238e-08,
+            "coriolis_rms": 8.18092323703879e-06,
+            "diffusion_rms": 9.804957108453665e-07,
+            "native_advection_rms": 7.431063975570542e-06,
+            "face_sum_vs_native_rms": 3.88886097225221e-20
+          },
+          "common_coarse_grid": {
+            "mean_rms": 2.831484882420492e-06,
+            "eddy_rms": 6.8779481977398105e-06,
+            "reconstruction_rms": 2.7286869475362536e-06,
+            "reconstruction_to_eddy": 0.3967297904966685,
+            "eddy_y_rms": 4.171135545208063e-06,
+            "eddy_z_rms": 7.54206580879781e-06,
+            "reconstruction_y_rms": 2.7276774111601545e-06,
+            "reconstruction_z_rms": 7.381539817653238e-08,
+            "coriolis_rms": 8.18092323703879e-06,
+            "diffusion_rms": 9.804957108453665e-07,
+            "native_advection_rms": 7.431063975570542e-06,
+            "face_sum_vs_native_rms": 3.88886097225221e-20
+          },
+          "column_enthalpy_W_m2": {
+            "advection": -20.50418211311191,
+            "diffusion": -1.23304713309389,
+            "stable_cap": 21.83271822870678,
+            "thermal_feedback": -183.83266218676326,
+            "bottom_flux": 161.25312274392363,
+            "storage": -22.484050362005757,
+            "residual": 9.83329041666735e-08
+          }
+        },
+        "later_18h": {
+          "native_grid": {
+            "mean_rms": 2.5019791284849035e-06,
+            "eddy_rms": 5.3533456733753585e-06,
+            "reconstruction_rms": 2.46003960832914e-06,
+            "reconstruction_to_eddy": 0.45953311413534237,
+            "eddy_y_rms": 3.353512234889516e-06,
+            "eddy_z_rms": 6.2356607570396565e-06,
+            "reconstruction_y_rms": 2.460072052175636e-06,
+            "reconstruction_z_rms": 5.11946791642962e-08,
+            "coriolis_rms": 6.346788956715915e-06,
+            "diffusion_rms": 7.801822379960703e-07,
+            "native_advection_rms": 5.997133351676335e-06,
+            "face_sum_vs_native_rms": 1.0266867857579784e-19
+          },
+          "common_coarse_grid": {
+            "mean_rms": 2.5019791284849035e-06,
+            "eddy_rms": 5.3533456733753585e-06,
+            "reconstruction_rms": 2.46003960832914e-06,
+            "reconstruction_to_eddy": 0.45953311413534237,
+            "eddy_y_rms": 3.353512234889516e-06,
+            "eddy_z_rms": 6.2356607570396565e-06,
+            "reconstruction_y_rms": 2.460072052175636e-06,
+            "reconstruction_z_rms": 5.11946791642962e-08,
+            "coriolis_rms": 6.346788956715915e-06,
+            "diffusion_rms": 7.801822379960703e-07,
+            "native_advection_rms": 5.997133351676335e-06,
+            "face_sum_vs_native_rms": 1.0266867857579784e-19
+          },
+          "column_enthalpy_W_m2": {
+            "advection": -20.44089085533578,
+            "diffusion": -1.2371386206774886,
+            "stable_cap": 21.83654688907388,
+            "thermal_feedback": -183.8365167980302,
+            "bottom_flux": 161.25312274390956,
+            "storage": -22.42487654273673,
+            "residual": 9.832323075138196e-08
+          }
+        }
+      }
+    },
+    "coarse_dt15": {
+      "grid": [
+        256,
+        256,
+        64
+      ],
+      "dx_km": 23.4375,
+      "max_dt": 15.0,
+      "native_steps": 5760,
+      "maximum_heat_closure_rho_theta_per_second": 2.1302100106052355e-16,
+      "maximum_momentum_partition_error_rho_u_per_second": 1.5440323916546158e-17,
+      "source": "data/ferrel35-resolution-v1/coarse",
+      "metadata_sha256": "8585c563be54dbd979bc81916d225440dfa90b4b861d49232f13de7a07ea2eec",
+      "windows": {
+        "full_24h": {
+          "native_grid": {
+            "mean_rms": 2.457824116192329e-06,
+            "eddy_rms": 5.117443741689492e-06,
+            "reconstruction_rms": 2.3142464973364138e-06,
+            "reconstruction_to_eddy": 0.4522270520500885,
+            "eddy_y_rms": 3.232633833013112e-06,
+            "eddy_z_rms": 5.956598435401779e-06,
+            "reconstruction_y_rms": 2.31381182457092e-06,
+            "reconstruction_z_rms": 4.7246172020691764e-08,
+            "coriolis_rms": 6.058972367074662e-06,
+            "diffusion_rms": 7.239573364894561e-07,
+            "native_advection_rms": 5.754107686963172e-06,
+            "face_sum_vs_native_rms": 1.014442903016164e-19
+          },
+          "common_coarse_grid": {
+            "mean_rms": 2.457824116192329e-06,
+            "eddy_rms": 5.117443741689492e-06,
+            "reconstruction_rms": 2.3142464973364138e-06,
+            "reconstruction_to_eddy": 0.4522270520500885,
+            "eddy_y_rms": 3.232633833013112e-06,
+            "eddy_z_rms": 5.956598435401779e-06,
+            "reconstruction_y_rms": 2.31381182457092e-06,
+            "reconstruction_z_rms": 4.7246172020691764e-08,
+            "coriolis_rms": 6.058972367074662e-06,
+            "diffusion_rms": 7.239573364894561e-07,
+            "native_advection_rms": 5.754107686963172e-06,
+            "face_sum_vs_native_rms": 1.014442903016164e-19
+          },
+          "column_enthalpy_W_m2": {
+            "advection": -20.456713205302822,
+            "diffusion": -1.2361157380305994,
+            "stable_cap": 21.83559071825499,
+            "thermal_feedback": -183.83555443014401,
+            "bottom_flux": 161.253122743907,
+            "storage": -22.439669714704383,
+            "residual": 1.9661102317408932e-07
+          }
+        },
+        "adjustment_6h": {
+          "native_grid": {
+            "mean_rms": 2.8314849105259516e-06,
+            "eddy_rms": 6.8779484480113395e-06,
+            "reconstruction_rms": 2.7286869718962317e-06,
+            "reconstruction_to_eddy": 0.39672977960240347,
+            "eddy_y_rms": 4.1711355850198074e-06,
+            "eddy_z_rms": 7.542066059418743e-06,
+            "reconstruction_y_rms": 2.727677432629713e-06,
+            "reconstruction_z_rms": 7.381540777027847e-08,
+            "coriolis_rms": 8.180923453506623e-06,
+            "diffusion_rms": 9.804957037293804e-07,
+            "native_advection_rms": 7.431064215094063e-06,
+            "face_sum_vs_native_rms": 5.322406001755755e-20
+          },
+          "common_coarse_grid": {
+            "mean_rms": 2.8314849105259516e-06,
+            "eddy_rms": 6.8779484480113395e-06,
+            "reconstruction_rms": 2.7286869718962317e-06,
+            "reconstruction_to_eddy": 0.39672977960240347,
+            "eddy_y_rms": 4.1711355850198074e-06,
+            "eddy_z_rms": 7.542066059418743e-06,
+            "reconstruction_y_rms": 2.727677432629713e-06,
+            "reconstruction_z_rms": 7.381540777027847e-08,
+            "coriolis_rms": 8.180923453506623e-06,
+            "diffusion_rms": 9.804957037293804e-07,
+            "native_advection_rms": 7.431064215094063e-06,
+            "face_sum_vs_native_rms": 5.322406001755755e-20
+          },
+          "column_enthalpy_W_m2": {
+            "advection": -20.504181893883793,
+            "diffusion": -1.2330471295986805,
+            "stable_cap": 21.832718365865812,
+            "thermal_feedback": -183.8326627678435,
+            "bottom_flux": 161.25312274392522,
+            "storage": -22.484050484957535,
+            "residual": 1.9657742431125632e-07
+          }
+        },
+        "later_18h": {
+          "native_grid": {
+            "mean_rms": 2.501979045111705e-06,
+            "eddy_rms": 5.35334631939417e-06,
+            "reconstruction_rms": 2.4600397943000016e-06,
+            "reconstruction_to_eddy": 0.45953309342004245,
+            "eddy_y_rms": 3.353512438040265e-06,
+            "eddy_z_rms": 6.23566123672249e-06,
+            "reconstruction_y_rms": 2.4600722301367605e-06,
+            "reconstruction_z_rms": 5.11947517705137e-08,
+            "coriolis_rms": 6.3467892674804744e-06,
+            "diffusion_rms": 7.801822397030974e-07,
+            "native_advection_rms": 5.9971339049490605e-06,
+            "face_sum_vs_native_rms": 1.3469030809653445e-19
+          },
+          "common_coarse_grid": {
+            "mean_rms": 2.501979045111705e-06,
+            "eddy_rms": 5.35334631939417e-06,
+            "reconstruction_rms": 2.4600397943000016e-06,
+            "reconstruction_to_eddy": 0.45953309342004245,
+            "eddy_y_rms": 3.353512438040265e-06,
+            "eddy_z_rms": 6.23566123672249e-06,
+            "reconstruction_y_rms": 2.4600722301367605e-06,
+            "reconstruction_z_rms": 5.11947517705137e-08,
+            "coriolis_rms": 6.3467892674804744e-06,
+            "diffusion_rms": 7.801822397030974e-07,
+            "native_advection_rms": 5.9971339049490605e-06,
+            "face_sum_vs_native_rms": 1.3469030809653445e-19
+          },
+          "column_enthalpy_W_m2": {
+            "advection": -20.44089030910916,
+            "diffusion": -1.237138607507906,
+            "stable_cap": 21.836548169051387,
+            "thermal_feedback": -183.83651831757751,
+            "bottom_flux": 161.25312274390097,
+            "storage": -22.42487612462,
+            "residual": 1.9662222128621358e-07
+          }
+        }
+      },
+      "remap_validation": {
+        "pressure_projection_applied": false,
+        "target_max_mass_divergence": 4.9873299934333204e-17,
+        "source_grid": [
+          256,
+          256,
+          64
+        ],
+        "\u03c1\u03b8_relative_l2_change_on_restriction": 0.0,
+        "\u03c1q\u1d5b_restriction_error": 0.0,
+        "compute_location": "Unity",
+        "target_grid": [
+          256,
+          256,
+          64
+        ],
+        "\u03c1q\u1d5b_relative_l2_change_on_restriction": 0.0,
+        "\u03c1w_restriction_error": 0.0,
+        "status": "PASS",
+        "timestep_seconds": 15.0,
+        "\u03c1u_relative_l2_change_on_restriction": 0.0,
+        "\u03c1v_relative_l2_change_on_restriction": 0.0,
+        "dye_restriction_error": 0.0,
+        "\u03c1u_restriction_error": 0.0,
+        "mass_divergence_commutation_error": 0.0,
+        "\u03c1w_relative_l2_change_on_restriction": 0.0,
+        "dye_relative_l2_change_on_restriction": 0.0,
+        "source_max_mass_divergence": 4.9873299934333204e-17,
+        "source_checkpoint_sha256": "7a906c574fee5d1327d58be50daeaaac61ac05f7d84b266ff47a813027e89d01",
+        "momentum_method": "Linear conservative center prolongation paired with commuting normal-face prolongation",
+        "\u03c1v_restriction_error": 0.0,
+        "\u03c1\u03b8_restriction_error": 0.0,
+        "scalar_method": "Conservative minmod-limited horizontal slopes"
+      }
+    },
+    "fine_dt15": {
+      "grid": [
+        512,
+        512,
+        64
+      ],
+      "dx_km": 11.71875,
+      "max_dt": 15.0,
+      "native_steps": 5760,
+      "maximum_heat_closure_rho_theta_per_second": 2.1223940172216055e-16,
+      "maximum_momentum_partition_error_rho_u_per_second": 7.658482901349459e-18,
+      "source": "data/ferrel35-resolution-v1/fine",
+      "metadata_sha256": "d8b7577d20d176baa009d40f07686f5ef70ab4c6d7a34869161d521913c55dff",
+      "windows": {
+        "full_24h": {
+          "native_grid": {
+            "mean_rms": 1.0276393138088164e-06,
+            "eddy_rms": 4.597508389646231e-06,
+            "reconstruction_rms": 1.6452013925677563e-06,
+            "reconstruction_to_eddy": 0.35784630568001013,
+            "eddy_y_rms": 3.3263418801982257e-06,
+            "eddy_z_rms": 4.2588159952431115e-06,
+            "reconstruction_y_rms": 1.6430346727772147e-06,
+            "reconstruction_z_rms": 4.249957504156504e-08,
+            "coriolis_rms": 5.2606727536834345e-06,
+            "diffusion_rms": 9.056492313848976e-07,
+            "native_advection_rms": 4.884645962196185e-06,
+            "face_sum_vs_native_rms": 3.979573988376719e-20
+          },
+          "common_coarse_grid": {
+            "mean_rms": 6.186806111805705e-07,
+            "eddy_rms": 3.6354717311255407e-06,
+            "reconstruction_rms": 7.448970395219484e-07,
+            "reconstruction_to_eddy": 0.20489694174883008,
+            "eddy_y_rms": 2.217844849660464e-06,
+            "eddy_z_rms": 3.505947506931405e-06,
+            "reconstruction_y_rms": 7.473417260151829e-07,
+            "reconstruction_z_rms": 3.40490932564247e-08,
+            "coriolis_rms": 4.237226794844228e-06,
+            "diffusion_rms": 6.085708675707925e-07,
+            "native_advection_rms": 3.901886054817356e-06,
+            "face_sum_vs_native_rms": 2.765965367241323e-20
+          },
+          "column_enthalpy_W_m2": {
+            "advection": -20.25829195059551,
+            "diffusion": -1.2385108475580493,
+            "stable_cap": 21.911987134614215,
+            "thermal_feedback": -183.91169895646294,
+            "bottom_flux": 161.253122743907,
+            "storage": -22.24339167946775,
+            "residual": 1.9662749089423058e-07
+          }
+        },
+        "adjustment_6h": {
+          "native_grid": {
+            "mean_rms": 3.6447576462427322e-06,
+            "eddy_rms": 1.1630786895004206e-05,
+            "reconstruction_rms": 4.814491741655284e-06,
+            "reconstruction_to_eddy": 0.41394376709999403,
+            "eddy_y_rms": 8.554398219077974e-06,
+            "eddy_z_rms": 9.839001627651273e-06,
+            "reconstruction_y_rms": 4.794359987709153e-06,
+            "reconstruction_z_rms": 9.175007100103135e-08,
+            "coriolis_rms": 1.3515664694990457e-05,
+            "diffusion_rms": 2.1618847325684486e-06,
+            "native_advection_rms": 1.1780468867800966e-05,
+            "face_sum_vs_native_rms": 4.790348295388388e-20
+          },
+          "common_coarse_grid": {
+            "mean_rms": 1.9551933076669147e-06,
+            "eddy_rms": 7.466111733334469e-06,
+            "reconstruction_rms": 1.6845970350838172e-06,
+            "reconstruction_to_eddy": 0.22563244366709373,
+            "eddy_y_rms": 5.175710381636448e-06,
+            "eddy_z_rms": 7.400916692783853e-06,
+            "reconstruction_y_rms": 1.689355366229496e-06,
+            "reconstruction_z_rms": 6.819974271303108e-08,
+            "coriolis_rms": 9.292092425043523e-06,
+            "diffusion_rms": 1.0962921236836995e-06,
+            "native_advection_rms": 7.952807164445877e-06,
+            "face_sum_vs_native_rms": 3.295048867968062e-20
+          },
+          "column_enthalpy_W_m2": {
+            "advection": -22.70954162751309,
+            "diffusion": -1.0857478427394969,
+            "stable_cap": 21.884403809691253,
+            "thermal_feedback": -183.88253735850094,
+            "bottom_flux": 161.25312274392522,
+            "storage": -24.540300078520698,
+            "residual": 1.9661637318363266e-07
+          }
+        },
+        "later_18h": {
+          "native_grid": {
+            "mean_rms": 5.005937460654694e-07,
+            "eddy_rms": 4.137072146614327e-06,
+            "reconstruction_rms": 1.2525171408303686e-06,
+            "reconstruction_to_eddy": 0.30275448347097267,
+            "eddy_y_rms": 3.1182250573968767e-06,
+            "eddy_z_rms": 4.062420090881119e-06,
+            "reconstruction_y_rms": 1.2559706681177145e-06,
+            "reconstruction_z_rms": 4.5259035041505326e-08,
+            "coriolis_rms": 4.685386989918111e-06,
+            "diffusion_rms": 8.381536751282407e-07,
+            "native_advection_rms": 4.404832951138776e-06,
+            "face_sum_vs_native_rms": 5.118277294346734e-20
+          },
+          "common_coarse_grid": {
+            "mean_rms": 3.517518881434197e-07,
+            "eddy_rms": 3.6096471863797973e-06,
+            "reconstruction_rms": 7.548284835562648e-07,
+            "reconstruction_to_eddy": 0.20911419997069036,
+            "eddy_y_rms": 2.331877931388654e-06,
+            "eddy_z_rms": 3.3332327896939414e-06,
+            "reconstruction_y_rms": 7.565820063290684e-07,
+            "reconstruction_z_rms": 3.590103663399238e-08,
+            "coriolis_rms": 4.250075888466391e-06,
+            "diffusion_rms": 6.469692374450278e-07,
+            "native_advection_rms": 3.886956769848613e-06,
+            "face_sum_vs_native_rms": 3.5385677652499893e-20
+          },
+          "column_enthalpy_W_m2": {
+            "advection": -19.441208724956315,
+            "diffusion": -1.2894318491642334,
+            "stable_cap": 21.921181576255204,
+            "thermal_feedback": -183.92141948911694,
+            "bottom_flux": 161.25312274390097,
+            "storage": -21.477755546450098,
+            "residual": 1.9663119729754071e-07
+          }
+        }
+      },
+      "remap_validation": {
+        "pressure_projection_applied": false,
+        "target_max_mass_divergence": 5.216367702370883e-17,
+        "source_grid": [
+          256,
+          256,
+          64
+        ],
+        "\u03c1\u03b8_relative_l2_change_on_restriction": 0.0,
+        "\u03c1q\u1d5b_restriction_error": 0.0,
+        "compute_location": "Unity",
+        "target_grid": [
+          512,
+          512,
+          64
+        ],
+        "\u03c1q\u1d5b_relative_l2_change_on_restriction": 0.0,
+        "\u03c1w_restriction_error": 8.881784197001252e-16,
+        "status": "PASS",
+        "timestep_seconds": 15.0,
+        "\u03c1u_relative_l2_change_on_restriction": 1.2010685149051382e-17,
+        "\u03c1v_relative_l2_change_on_restriction": 1.8987474963549156e-17,
+        "dye_restriction_error": 1.3877787807814457e-17,
+        "\u03c1u_restriction_error": 1.7763568394002505e-15,
+        "mass_divergence_commutation_error": 1.0433328327804844e-18,
+        "\u03c1w_relative_l2_change_on_restriction": 3.530993090296356e-17,
+        "dye_relative_l2_change_on_restriction": 8.887784261651805e-19,
+        "source_max_mass_divergence": 4.9873299934333204e-17,
+        "source_checkpoint_sha256": "7a906c574fee5d1327d58be50daeaaac61ac05f7d84b266ff47a813027e89d01",
+        "momentum_method": "Linear conservative center prolongation paired with commuting normal-face prolongation",
+        "\u03c1v_restriction_error": 8.881784197001252e-16,
+        "\u03c1\u03b8_restriction_error": 0.0,
+        "scalar_method": "Conservative minmod-limited horizontal slopes"
+      }
+    }
+  },
+  "interpretation": [
+    "Horizontal refinement only; vertical grid, physical coefficients and boundaries remain fixed.",
+    "The 15-second coarse run separates timestep-limit sensitivity from horizontal resolution sensitivity.",
+    "The initial fine state is a conservative divergence-preserving prolongation of the coarse day-300 state; it is not an independently equilibrated fine simulation.",
+    "Native-grid and common-grid norms are both reported; common-grid fine tendencies are averaged over pairs of meridional cells before measuring.",
+    "A smaller reconstruction/eddy ratio alone does not establish convergence; compare absolute contributions and early versus later windows.",
+    "WENO-minus-linear-product is a specified reconstruction correction, not automatically dissipative stress.",
+    "The column enthalpy diagnostic uses reference Exner cell-center weights, not a closed total-energy budget."
+  ],
+  "preflight": {
+    "gpu": "NVIDIA A100-SXM4-80GB",
+    "fine_grid": [
+      512,
+      512,
+      64
+    ],
+    "compute_location": "Unity",
+    "status": "PASS",
+    "initial_fine_vs_coarse_kinetic_energy_fraction": -0.01707475021932814,
+    "max_dt": 15.0,
+    "bundle_sha256": "278cce7db1da1d4541380ebe3a89868e347a37477f862b59b98dbfef19674c98",
+    "coarse_grid": [
+      256,
+      256,
+      64
+    ],
+    "checkpoint_sha256": "7a906c574fee5d1327d58be50daeaaac61ac05f7d84b266ff47a813027e89d01",
+    "estimated_fine_day_gpu_hours": 0.820391056060791,
+    "source_hashes": {
+      "preflight.jl": "6e8f4535f05b5bc2545814a3098095ccbeecbda8ed41ccb00b144e19e8c79584",
+      "zonal_output.jl": "2c91bed904b2d206983aa5402f9790b65ee6a6f2c2065e171176b7725defa113",
+      "review.py": "b6604f09393ddd86824b83a1548a4bdb14f64f33ac8f37a7e891cb3f0e5d3419",
+      "remap.jl": "62627d66f1b8cea58603dd88538728387df95ccc190b96aa5855be86058397d8",
+      "initial_flow.jl": "1a40b5bf61f236f846e88292ee0be8617d446fb1fd63fb73dc89f96445436989",
+      "native_budget.jl": "4c519425f09a9f1a997582ae41aed8addc16082c88b55ae1611eeb9d6092c245",
+      "thermal_budget_controller.jl": "35404ad7bb8a5071c9d51a3992c8c4ecbb452133c9ffdff1376928b1e6679c27",
+      "centered_interpretation.jl": "8b2ac3e8d2f26669b3f2ccc6f6c344b4cfff9a5e97c27d6f1a6578717dc799ef",
+      "face_budget.jl": "40e9e455f6b8f72ed578eee7b351c9e6ba503e1a371e92833e789809ca5e0c8e",
+      "campaign.jl": "275c314234d37b886d54d44e56c4e76c588b57588bce2e1fd00a910d8ec02d49",
+      "README.md": "e5823498ccf582cf9dbf8a546b0b614b8cadab3ae7d731d885b01f513e954132",
+      "run.jl": "e6d69680d406756aca7749add8bcf29ef53ec0aa3d06eaa8bafd3c4254983501",
+      "cuda_launch.jl": "b423936f0ff956124a9ef09ffac878fcd4c91dbfce6a6214c6acead91d851321"
+    }
+  },
+  "analysis_source_sha256": "efd9e6ed8ade8b91359533c21a8a850140b7274d288103f8d02b809e664e7e69"
+}

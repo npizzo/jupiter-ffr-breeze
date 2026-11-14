@@ -1,0 +1,35 @@
+{
+  "status": "COMPLETE",
+  "compute_location": "Unity",
+  "start_day": 300,
+  "end_day": 301,
+  "frames": 9,
+  "duration_seconds": 9.0,
+  "full_decode_passed": true,
+  "assets": {
+    "coarse_over_fine_300_301days.json": {
+      "bytes": 2536,
+      "sha256": "25c1b04d64ac9e706301249897dfe7edba2bf59e476471d5c7e0988fbdd83e61"
+    },
+    "coarse_over_fine_300_301days.mp4": {
+      "bytes": 4787850,
+      "sha256": "3c71e16f61b2697e4dff025f3b0dc840952d88486a41a0dc4e062257291230b8"
+    },
+    "coarse_over_fine_300_301days.png": {
+      "bytes": 3301308,
+      "sha256": "83916d99b9cc1cedced5b8c56794e8719507607e7ce34881a998cc04e6884688"
+    },
+    "resolution_budgets.png": {
+      "bytes": 278329,
+      "sha256": "c18ccb04489d163ee8331fefbbd3739f4c56526c4620546704fab06bf4d077e8"
+    },
+    "resolution_review.json": {
+      "bytes": 23708,
+      "sha256": "610b7e384edf2e238e8fa599fa6ecf0255a2ec856357b0a0dc875d65ae1d12e7"
+    },
+    "resolution_summary.png": {
+      "bytes": 72905,
+      "sha256": "07e56f3686e7bd8fc4f20db674a155db48b6140a5697382b2fd4789a77c52f40"
+    }
+  }
+}
