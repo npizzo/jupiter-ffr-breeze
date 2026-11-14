@@ -1,0 +1,23 @@
+{
+  "status": "COMPLETE",
+  "start_day": 0,
+  "end_day": 300,
+  "frames": 2401,
+  "duration_seconds": 200.07999999999998,
+  "compute_location": "Unity",
+  "full_decode_passed": true,
+  "assets": {
+    "heated35_0_300days_contrast.mp4": {
+      "bytes": 15837830,
+      "sha256": "642ce51d1d4478a89b6e4f63d65ccef50af543ecc1b49c337a06b3860eb01dea"
+    },
+    "heated35_0_300days_contrast.png": {
+      "bytes": 830771,
+      "sha256": "5daa6e2920421841676c8f62d4695f97139d84dec470e88e4d0f31a0c1888608"
+    },
+    "heated35_0_300days_contrast.json": {
+      "bytes": 39346,
+      "sha256": "a02c44b323a3a7f7636074ebc448373f04250366ccc0225c7a870b3c5a047e92"
+    }
+  }
+}
