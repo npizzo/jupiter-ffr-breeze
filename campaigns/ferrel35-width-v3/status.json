@@ -1,0 +1,182 @@
+{
+  "status": "SUBMITTED_WITH_VALIDATION_GATES",
+  "updated_utc": "2026-11-14T03:48:13.017417+00:00",
+  "compute_location": "Unity",
+  "cpu_validation": {
+    "job_id": "1693066",
+    "state": "RUNNING",
+    "note": "115 parameter checks passed; continuous/restarted numerical checks in progress"
+  },
+  "gpu_validation": {
+    "job_id": "1693264",
+    "state": "PENDING",
+    "dependency": "afterok:1693066"
+  },
+  "diagnostic": {
+    "job_id": "1693265",
+    "state": "PENDING",
+    "start_earth_day": 200,
+    "end_earth_day": 210,
+    "dependency": "afterok:1693264"
+  },
+  "wide": {
+    "start_earth_day": 0,
+    "end_earth_day": 200,
+    "grid": [
+      256,
+      512,
+      64
+    ],
+    "extent_m": [
+      6000000,
+      12000000,
+      120000
+    ],
+    "segments": [
+      {
+        "case": "wide",
+        "segment": "1",
+        "job_id": "1693267",
+        "dependency": "1693265"
+      },
+      {
+        "case": "wide",
+        "segment": "2",
+        "job_id": "1693268",
+        "dependency": "1693267"
+      },
+      {
+        "case": "wide",
+        "segment": "3",
+        "job_id": "1693269",
+        "dependency": "1693268"
+      },
+      {
+        "case": "wide",
+        "segment": "4",
+        "job_id": "1693270",
+        "dependency": "1693269"
+      },
+      {
+        "case": "wide",
+        "segment": "5",
+        "job_id": "1693271",
+        "dependency": "1693270"
+      },
+      {
+        "case": "wide",
+        "segment": "6",
+        "job_id": "1693272",
+        "dependency": "1693271"
+      },
+      {
+        "case": "wide",
+        "segment": "7",
+        "job_id": "1693273",
+        "dependency": "1693272"
+      },
+      {
+        "case": "wide",
+        "segment": "8",
+        "job_id": "1693274",
+        "dependency": "1693273"
+      },
+      {
+        "case": "wide",
+        "segment": "9",
+        "job_id": "1693275",
+        "dependency": "1693274"
+      },
+      {
+        "case": "wide",
+        "segment": "10",
+        "job_id": "1693276",
+        "dependency": "1693275"
+      },
+      {
+        "case": "wide",
+        "segment": "11",
+        "job_id": "1693277",
+        "dependency": "1693276"
+      },
+      {
+        "case": "wide",
+        "segment": "12",
+        "job_id": "1693278",
+        "dependency": "1693277"
+      },
+      {
+        "case": "wide",
+        "segment": "13",
+        "job_id": "1693279",
+        "dependency": "1693278"
+      },
+      {
+        "case": "wide",
+        "segment": "14",
+        "job_id": "1693280",
+        "dependency": "1693279"
+      },
+      {
+        "case": "wide",
+        "segment": "15",
+        "job_id": "1693281",
+        "dependency": "1693280"
+      },
+      {
+        "case": "wide",
+        "segment": "16",
+        "job_id": "1693282",
+        "dependency": "1693281"
+      },
+      {
+        "case": "wide",
+        "segment": "17",
+        "job_id": "1693283",
+        "dependency": "1693282"
+      },
+      {
+        "case": "wide",
+        "segment": "18",
+        "job_id": "1693284",
+        "dependency": "1693283"
+      },
+      {
+        "case": "wide",
+        "segment": "19",
+        "job_id": "1693285",
+        "dependency": "1693284"
+      },
+      {
+        "case": "wide",
+        "segment": "20",
+        "job_id": "1693286",
+        "dependency": "1693285"
+      }
+    ],
+    "state": "PENDING",
+    "gate": "Successful 10-day diagnostic branch and its numerical budget review"
+  },
+  "render_jobs": [
+    {
+      "case": "diagnostic_movie",
+      "segment": "0",
+      "job_id": "1693266",
+      "dependency": "1693265"
+    },
+    {
+      "case": "wide_movie",
+      "segment": "0",
+      "job_id": "1693287",
+      "dependency": "1693286"
+    }
+  ],
+  "existing_simulations_modified": false,
+  "superseded_pending_validation_jobs": [
+    "1692926",
+    "1693067"
+  ],
+  "source": "scripts/ferrel35_width_v3",
+  "cpu_tested_source": "scripts/ferrel35_width_v2",
+  "gallery_url": "https://npizzo.github.io/jupiter-ffr-breeze/#beta35-200"
+}
