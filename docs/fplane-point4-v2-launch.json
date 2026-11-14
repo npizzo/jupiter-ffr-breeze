@@ -1,0 +1,53 @@
+{
+  "status": "GATED_SUBMITTED",
+  "compute_location": "Unity",
+  "root": "data/fplane-point4-v2",
+  "results": "rendered/fplane-point4-v2",
+  "resolution_gallery_commit": "ec44d7e68e2106c87e69952a4dcae8853e5b9135",
+  "case_order": [
+    "early_replay_heated",
+    "early_replay_control",
+    "late_heated",
+    "late_control",
+    "rest_q162",
+    "rest_q162_fine",
+    "rest_q162_flipf",
+    "rest_q540",
+    "rest_q54",
+    "rest_q5p4",
+    "rest_q0",
+    "late_restart_control",
+    "late_restart_reversed",
+    "late_heated_dt15",
+    "late_heated_fine"
+  ],
+  "max_concurrent_gpus": 2,
+  "allocation_hours": 16,
+  "estimated_runtime_gate_hours": 12,
+  "supersedes": {
+    "preflight_job": 1721081,
+    "production_array": 1721082,
+    "reason": "L40S ten-day estimate 10.33 hours exceeded the original seven-hour runtime gate; no production ran"
+  },
+  "simulation_jobs": {
+    "early_replay_heated": "1725454_0",
+    "early_replay_control": "1725454_1",
+    "late_heated": "1725454_2",
+    "late_control": "1725454_3",
+    "rest_q162": "1725454_4",
+    "rest_q162_fine": "1725454_5",
+    "rest_q162_flipf": "1725454_6",
+    "rest_q540": "1725454_7",
+    "rest_q54": "1725454_8",
+    "rest_q5p4": "1725454_9",
+    "rest_q0": "1725454_10",
+    "late_restart_control": "1725454_11",
+    "late_restart_reversed": "1725454_12",
+    "late_heated_dt15": "1725454_13",
+    "late_heated_fine": "1725454_14"
+  },
+  "preflight_job": 1725453,
+  "production_array_job": 1725454,
+  "review_array_job": 1725455,
+  "comparison_job": 1725456
+}
