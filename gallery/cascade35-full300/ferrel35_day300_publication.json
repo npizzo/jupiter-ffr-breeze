@@ -1,0 +1,51 @@
+{
+  "status": "COMPLETE_ASSETS_VERIFIED",
+  "compute_location": "Unity",
+  "analysis_job": 1709118,
+  "analysis_elapsed": "00:03:13",
+  "plot_layout_job": 1709160,
+  "plot_elapsed": "00:01:11",
+  "days": [
+    0,
+    300
+  ],
+  "frames": 2401,
+  "windows": 19,
+  "reproduction_checks": 153,
+  "reproduction_passed": true,
+  "raw_fields_downloaded": false,
+  "asset_commit": "3d202a09b27fcaf947f616c2c8e2441da09b213e",
+  "gallery_url": "https://npizzo.github.io/jupiter-ffr-breeze/#ferrel35-300-evidence",
+  "assets": [
+    {
+      "path": "gallery/cascade35-full300/ferrel35_day300_summary.json",
+      "bytes": 31364,
+      "sha256": "6dfe35eeec9097cbe9841ffae8ac6ef50a9e625d2133bd94515ff323aeaf2728",
+      "git_blob_sha1": "a66b4ece438b6712560c81d7231fccb5e6cbc1e4"
+    },
+    {
+      "path": "gallery/cascade35-full300/ferrel35_day300_late.png",
+      "bytes": 364595,
+      "sha256": "9ed54ae327f4b1a097f175c145f666d9add07d624dd232d4752a3de4cd1666f9",
+      "git_blob_sha1": "13e5b825195fef76fefedc4479cf5a71eaca28da"
+    },
+    {
+      "path": "gallery/cascade35-full300/ferrel35_day300_evolution.png",
+      "bytes": 633327,
+      "sha256": "979b6a2abbe406e6b68f2d8b7915799b706bb3e672d62aecdc28c6349d17ce8a",
+      "git_blob_sha1": "b006a9b220121949658e92cc0b22056204990bb3"
+    },
+    {
+      "path": "gallery/cascade35-full300/ferrel35_day300_whole_run.png",
+      "bytes": 141817,
+      "sha256": "1be2517d467dc7a175a3d6b1fe8b52acf46f6184bff50fd96a930704fbdc99e6",
+      "git_blob_sha1": "0d8d88e0a6809e4c730f638825af7c026259882d"
+    },
+    {
+      "path": "gallery/cascade35-full300/ferrel35_day300_plot_provenance.json",
+      "bytes": 192,
+      "sha256": "cc3ba872120508276900cd01c5aa4e8f6284e3bdbab8ea4d01eec0e362bb2f88",
+      "git_blob_sha1": "2b635740218a40197e8531ab1bbf76eda38b2da5"
+    }
+  ]
+}
