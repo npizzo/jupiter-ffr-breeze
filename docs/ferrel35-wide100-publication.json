@@ -1,0 +1,20 @@
+{
+  "status": "ASSETS_VERIFIED_GALLERY_LINKED",
+  "render_job": "1766727",
+  "simulation_day100_job": "1694166",
+  "simulation_day100_status": "COMPLETED",
+  "continuation_job": "1694167",
+  "days": [
+    0,
+    100
+  ],
+  "frames": 801,
+  "movie_seconds": 66.75,
+  "full_decode_passed": true,
+  "asset_hashes_verified": true,
+  "url": "https://npizzo.github.io/jupiter-ffr-breeze/#ferrel35-wide100",
+  "movie": "https://npizzo.github.io/jupiter-ffr-breeze/gallery/ferrel35-wide100/wide_0_100days.mp4",
+  "compute_location": "Unity",
+  "source": "scripts/ferrel35_width100_gallery",
+  "output": "rendered/ferrel35-wide100-v1"
+}
