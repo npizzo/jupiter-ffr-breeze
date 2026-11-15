@@ -1,0 +1,39 @@
+{
+  "status": "PAIR_QUEUED_BEHIND_VALIDATION",
+  "cpu_job": "1781531",
+  "held_refinement_jobs": [
+    1767196,
+    1767197,
+    1767284
+  ],
+  "preflight_job": "1781947",
+  "root": "data/fplane-sign-v1",
+  "source": "scripts/fplane_sign_v1",
+  "grid": [
+    256,
+    256,
+    64
+  ],
+  "days": [
+    90,
+    90.25
+  ],
+  "production_cases": [
+    "plus",
+    "minus"
+  ],
+  "gpu_hard_ceiling_hours": 3.75,
+  "production_submitted": true,
+  "physics": "Existing heated capped anelastic f-plane; only f sign changes; no beta; no remap",
+  "storage_free_GiB_at_setup": 187,
+  "production_array_job": "1782488",
+  "review_job": "1782514",
+  "updated_at_utc": "2026-11-15T17:03:45.328613+00:00",
+  "cpu_validation": {
+    "status": "PASS",
+    "job": "1781531",
+    "bitwise_physical_state_unchanged": true,
+    "full_domain_relative_closure": 5.49760027378796e-11
+  },
+  "gating": "Slurm afterok plus frozen-source/config/bundle hashes and independent full-domain diagnostic gate. Failure blocks the pair; no automatic extension."
+}
