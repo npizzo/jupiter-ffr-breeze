@@ -1,0 +1,65 @@
+{
+  "status": "COMPLETE",
+  "compute_location": "Unity",
+  "frames": 801,
+  "duration": 66.75,
+  "start_day": 0,
+  "end_day": 100,
+  "sources": [
+    {
+      "source": "data/ferrel35-width-v4/wide/segment_1",
+      "metadata_sha256": "06ebed40a4b0e638f2c7531f1bd445b40e0c1901c38343aed010ea6959f2d88b"
+    },
+    {
+      "source": "data/ferrel35-width-v4/wide/segment_2",
+      "metadata_sha256": "09c93cde36df73e751db5dd31cf864239a12a510adb5a94010eb13155f5138cc"
+    },
+    {
+      "source": "data/ferrel35-width-v4/wide/segment_3",
+      "metadata_sha256": "7d38e341258a4c72b2c2cdb6ba5d224ff5f490f0380b2b4821e02e969679964f"
+    },
+    {
+      "source": "data/ferrel35-width-v4/wide/segment_4",
+      "metadata_sha256": "6bab5b70ec46d7409265be8fcd82594df8c61d78b39a810b999a5b04be5d3c74"
+    },
+    {
+      "source": "data/ferrel35-width-v4/wide/segment_5",
+      "metadata_sha256": "90ae553641457686adbd44335a7c3d22d730b2d739bb8e7222b7b67660b5fbd4"
+    },
+    {
+      "source": "data/ferrel35-width-v4/wide/segment_6",
+      "metadata_sha256": "4aee21297660005ef01040104dd0888f0dd95338d396e09ae81ced55ae2e8b98"
+    },
+    {
+      "source": "data/ferrel35-width-v4/wide/segment_7",
+      "metadata_sha256": "b5cfde09a95741ada3b9ec445cef28a280c2fc1bd55d2727882ca2b75c4e3e2c"
+    },
+    {
+      "source": "data/ferrel35-width-v4/wide/segment_8",
+      "metadata_sha256": "9d80d2482e39edde98a684427b916d3191d4d43e133b04134ac14020b5429a1c"
+    },
+    {
+      "source": "data/ferrel35-width-v4/wide/segment_9",
+      "metadata_sha256": "89afd908b83fb6fe5f1be530b27326df501350ca0102ff2c7858393d81469489"
+    },
+    {
+      "source": "data/ferrel35-width-v4/wide/segment_10",
+      "metadata_sha256": "054deddebe78a2c2face1ac8a0441b4090dcb670e3770ce7a97dad607e949b33"
+    }
+  ],
+  "assets": {
+    "wide_0_100days.mp4": {
+      "bytes": 20208707,
+      "sha256": "25be489ec0fa05bca9b186715c0856eb05f201558a5314f937508c9e476411e4"
+    },
+    "wide_0_100days.json": {
+      "bytes": 13829,
+      "sha256": "f16faa451715cc7efc819a9ea7d3acc51ec06d930ab2ab7efa6b00488d137c91"
+    },
+    "wide_0_100days.png": {
+      "bytes": 1439055,
+      "sha256": "ff3f93e4f664ead514ae77295640e934619a535e1d7eb749ed62251f10b3d908"
+    }
+  },
+  "full_decode_passed": true
+}
