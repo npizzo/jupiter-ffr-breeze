@@ -1,0 +1,13 @@
+{
+  "status": "QUEUED",
+  "job": "1766727",
+  "dependency": "afterok:1694166",
+  "days": [
+    0,
+    100
+  ],
+  "compute_location": "Unity",
+  "source": "scripts/ferrel35_width100_gallery",
+  "output": "rendered/ferrel35-wide100-v1",
+  "requested": "Three-depth vorticity and tracer movie of wider channel at day100"
+}

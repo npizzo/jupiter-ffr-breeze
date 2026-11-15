@@ -1,0 +1,35 @@
+{
+  "status": "GPU_PREFLIGHT_PENDING_PRIORITY",
+  "root": "data/fplane-budget-v1",
+  "source": "scripts/fplane_budget_v1",
+  "cpu_observer_validation_job": 1767120,
+  "cpu_physical_state_bitwise_unchanged": true,
+  "preflight_job": "1767196",
+  "production_array_job": "1767197",
+  "cases": [
+    "mature512",
+    "mature1024"
+  ],
+  "grid": [
+    512,
+    1024
+  ],
+  "vertical_cells": 64,
+  "earth_days": [
+    90,
+    90.75
+  ],
+  "analysis_window_days": [
+    90.5,
+    90.75
+  ],
+  "native_budget": "every SSPRK3 stage; independent state-increment and exact finite-increment third-moment checks",
+  "centered_source_cadence_seconds": 600,
+  "raw_export_storage": "one temporary 3D export, reduced on Unity, then retired only on successful validation",
+  "future_permission": "User authorized monitoring, repairing issues and longer runs if checks justify them.",
+  "review_job": "1767284",
+  "status_checked_at_utc": "2026-11-15T13:50:15.844753+00:00",
+  "independent_reader_validation_job": 1767470,
+  "independent_native_Z_error": 1.2197274440461925e-19,
+  "cpu_native_residual_relative": 3.3101259541007845e-12
+}
