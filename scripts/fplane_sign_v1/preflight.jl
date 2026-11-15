@@ -4,7 +4,7 @@ root=only(ARGS);out=joinpath(root,"preflight");mkpath(out)
 TOML.parsefile("data/fplane-sign-cpu-v1/PASS.toml")["status"]=="PASS"||error("CPU gate")
 for name in ["baseline","plus","mirror"]
     cfg=TOML.parsefile("configs/fplane-sign-v1/plus.toml")
-    cfg["name"]=name;cfg["stop_seconds"]=90*86400.+600.;cfg["diagnostic_seconds"]=60.;cfg["output_seconds"]=60.;cfg["full_field_seconds"]=600.
+    cfg["name"]=name;cfg["stop_seconds"]=90 * 86400.0 + 600.0;cfg["diagnostic_seconds"]=60.;cfg["output_seconds"]=60.;cfg["full_field_seconds"]=600.
     cfg["native_budget"]=name!="baseline";cfg["reduce_exports"]=false
     cfg["reflect_x"]=name=="mirror";cfg["f_sign"]=name=="mirror" ? -1 : 1
     path=joinpath(out,name*".toml");open(path,"w") do io;TOML.print(io,cfg);end
