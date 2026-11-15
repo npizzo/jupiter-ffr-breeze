@@ -1,0 +1,148 @@
+{
+  "scale_reference_cases": [
+    "late_restart_control"
+  ],
+  "labels": [
+    "late_restart_control"
+  ],
+  "case_names": [
+    "late_restart_control"
+  ],
+  "title": "Jupiter f-plane sign-selection tests | late_restart_control",
+  "layout": "2 rows, three depth columns",
+  "row_order": [
+    "late_restart_control: vorticity",
+    "late_restart_control: tracer"
+  ],
+  "times_seconds": [
+    8640000.0,
+    8650800.0,
+    8661600.0,
+    8672400.0,
+    8683200.0,
+    8694000.0,
+    8704800.0,
+    8715600.0,
+    8726400.0,
+    8737200.0,
+    8748000.0,
+    8758800.0,
+    8769600.0,
+    8780400.0,
+    8791200.0,
+    8802000.0,
+    8812800.0,
+    8823600.0,
+    8834400.0,
+    8845200.0,
+    8856000.0,
+    8866800.0,
+    8877600.0,
+    8888400.0,
+    8899200.0,
+    8910000.0,
+    8920800.0,
+    8931600.0,
+    8942400.0,
+    8953200.0,
+    8964000.0,
+    8974800.0,
+    8985600.0,
+    8996400.0,
+    9007200.0,
+    9018000.0,
+    9028800.0,
+    9039600.0,
+    9050400.0,
+    9061200.0,
+    9072000.0,
+    9082800.0,
+    9093600.0,
+    9104400.0,
+    9115200.0,
+    9126000.0,
+    9136800.0,
+    9147600.0,
+    9158400.0,
+    9169200.0,
+    9180000.0,
+    9190800.0,
+    9201600.0,
+    9212400.0,
+    9223200.0,
+    9234000.0,
+    9244800.0,
+    9255600.0,
+    9266400.0,
+    9277200.0,
+    9288000.0,
+    9298800.0,
+    9309600.0,
+    9320400.0,
+    9331200.0,
+    9342000.0,
+    9352800.0,
+    9363600.0,
+    9374400.0,
+    9385200.0,
+    9396000.0,
+    9406800.0,
+    9417600.0,
+    9428400.0,
+    9439200.0,
+    9450000.0,
+    9460800.0,
+    9471600.0,
+    9482400.0,
+    9493200.0,
+    9504000.0
+  ],
+  "heights_m": [
+    19687.5,
+    59062.5,
+    100312.5
+  ],
+  "fps": 4,
+  "frames": 81,
+  "crf": 28,
+  "vorticity_normalization": {
+    "type": "asinh",
+    "linear_width": 0.1,
+    "limits_by_depth": [
+      [
+        -0.9597680568695068,
+        0.9597680568695068
+      ],
+      [
+        -1.2772552967071533,
+        1.2772552967071533
+      ],
+      [
+        -0.25084346532821655,
+        0.25084346532821655
+      ]
+    ],
+    "shared_between_cases": true,
+    "fixed_in_time": true,
+    "units": "zeta divided by each case central f0",
+    "f0_by_case_s_inv": [
+      0.0002880957739764384
+    ]
+  },
+  "tracer_normalization": {
+    "type": "two_sided_centered_asinh",
+    "center": 0.0793082,
+    "linear_width": 0.001,
+    "colormap": "BrBG",
+    "limits": [
+      0.0,
+      1.0
+    ],
+    "units": "physical concentration C",
+    "center_basis": "Rounded common background concentration from Unity tracer audit; fixed, never recalculated per frame.",
+    "shared_between_cases_and_depths": true,
+    "fixed_in_time": true
+  },
+  "renderer_sha256": "9bc8a2d67c96145d8e04b41ef8b874325312d08392006c7a4bdbe19fe8a6505c",
+  "note": "Tracer values are unchanged absolute concentrations; only their color mapping differs from the original movies. Every saved time included. No field clipping or temporal interpolation. Values on colorbars are physical C or \u03b6/f\u2080. Rendering uses nearest-neighbor display sampling."
+}

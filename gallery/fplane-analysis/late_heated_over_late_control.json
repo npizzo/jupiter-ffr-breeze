@@ -1,0 +1,154 @@
+{
+  "scale_reference_cases": [
+    "late_heated",
+    "late_control"
+  ],
+  "labels": [
+    "late_heated",
+    "late_control"
+  ],
+  "case_names": [
+    "late_heated",
+    "late_control"
+  ],
+  "title": "Mature turbulence | heated over zero bottom heat | days 90\u2013100",
+  "layout": "4 rows, three depth columns",
+  "row_order": [
+    "late_heated: vorticity",
+    "late_heated: tracer",
+    "late_control: vorticity",
+    "late_control: tracer"
+  ],
+  "times_seconds": [
+    7776000.0,
+    7786800.0,
+    7797600.0,
+    7808400.0,
+    7819200.0,
+    7830000.0,
+    7840800.0,
+    7851600.0,
+    7862400.0,
+    7873200.0,
+    7884000.0,
+    7894800.0,
+    7905600.0,
+    7916400.0,
+    7927200.0,
+    7938000.0,
+    7948800.0,
+    7959600.0,
+    7970400.0,
+    7981200.0,
+    7992000.0,
+    8002800.0,
+    8013600.0,
+    8024400.0,
+    8035200.0,
+    8046000.0,
+    8056800.0,
+    8067600.0,
+    8078400.0,
+    8089200.0,
+    8100000.0,
+    8110800.0,
+    8121600.0,
+    8132400.0,
+    8143200.0,
+    8154000.0,
+    8164800.0,
+    8175600.0,
+    8186400.0,
+    8197200.0,
+    8208000.0,
+    8218800.0,
+    8229600.0,
+    8240400.0,
+    8251200.0,
+    8262000.0,
+    8272800.0,
+    8283600.0,
+    8294400.0,
+    8305200.0,
+    8316000.0,
+    8326800.0,
+    8337600.0,
+    8348400.0,
+    8359200.0,
+    8370000.0,
+    8380800.0,
+    8391600.0,
+    8402400.0,
+    8413200.0,
+    8424000.0,
+    8434800.0,
+    8445600.0,
+    8456400.0,
+    8467200.0,
+    8478000.0,
+    8488800.0,
+    8499600.0,
+    8510400.0,
+    8521200.0,
+    8532000.0,
+    8542800.0,
+    8553600.0,
+    8564400.0,
+    8575200.0,
+    8586000.0,
+    8596800.0,
+    8607600.0,
+    8618400.0,
+    8629200.0,
+    8640000.0
+  ],
+  "heights_m": [
+    19687.5,
+    59062.5,
+    100312.5
+  ],
+  "fps": 4,
+  "frames": 81,
+  "crf": 28,
+  "vorticity_normalization": {
+    "type": "asinh",
+    "linear_width": 0.1,
+    "limits_by_depth": [
+      [
+        -0.9126473069190979,
+        0.9126473069190979
+      ],
+      [
+        -1.2892943620681763,
+        1.2892943620681763
+      ],
+      [
+        -0.26133835315704346,
+        0.26133835315704346
+      ]
+    ],
+    "shared_between_cases": true,
+    "fixed_in_time": true,
+    "units": "zeta divided by each case central f0",
+    "f0_by_case_s_inv": [
+      0.0002880957739764384,
+      0.0002880957739764384
+    ]
+  },
+  "tracer_normalization": {
+    "type": "two_sided_centered_asinh",
+    "center": 0.0793082,
+    "linear_width": 0.001,
+    "colormap": "BrBG",
+    "limits": [
+      0.0,
+      1.0
+    ],
+    "units": "physical concentration C",
+    "center_basis": "Rounded common background concentration from Unity tracer audit; fixed, never recalculated per frame.",
+    "shared_between_cases_and_depths": true,
+    "fixed_in_time": true
+  },
+  "renderer_sha256": "9bc8a2d67c96145d8e04b41ef8b874325312d08392006c7a4bdbe19fe8a6505c",
+  "note": "Tracer values are unchanged absolute concentrations; only their color mapping differs from the original movies. Every saved time included. No field clipping or temporal interpolation. Values on colorbars are physical C or \u03b6/f\u2080. Rendering uses nearest-neighbor display sampling."
+}

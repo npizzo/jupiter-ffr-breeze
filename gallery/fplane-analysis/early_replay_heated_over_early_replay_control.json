@@ -1,0 +1,114 @@
+{
+  "scale_reference_cases": [
+    "early_replay_heated",
+    "early_replay_control"
+  ],
+  "labels": [
+    "early_replay_heated",
+    "early_replay_control"
+  ],
+  "case_names": [
+    "early_replay_heated",
+    "early_replay_control"
+  ],
+  "title": "Early turbulence | heated over zero bottom heat | days 0\u20135",
+  "layout": "4 rows, three depth columns",
+  "row_order": [
+    "early_replay_heated: vorticity",
+    "early_replay_heated: tracer",
+    "early_replay_control: vorticity",
+    "early_replay_control: tracer"
+  ],
+  "times_seconds": [
+    0.0,
+    10800.0,
+    21600.0,
+    32400.0,
+    43200.0,
+    54000.0,
+    64800.0,
+    75600.0,
+    86400.0,
+    97200.0,
+    108000.0,
+    118800.0,
+    129600.0,
+    140400.0,
+    151200.0,
+    162000.0,
+    172800.0,
+    183600.0,
+    194400.0,
+    205200.0,
+    216000.0,
+    226800.0,
+    237600.0,
+    248400.0,
+    259200.0,
+    270000.0,
+    280800.0,
+    291600.0,
+    302400.0,
+    313200.0,
+    324000.0,
+    334800.0,
+    345600.0,
+    356400.0,
+    367200.0,
+    378000.0,
+    388800.0,
+    399600.0,
+    410400.0,
+    421200.0,
+    432000.0
+  ],
+  "heights_m": [
+    19687.5,
+    59062.5,
+    100312.5
+  ],
+  "fps": 4,
+  "frames": 41,
+  "crf": 28,
+  "vorticity_normalization": {
+    "type": "asinh",
+    "linear_width": 0.1,
+    "limits_by_depth": [
+      [
+        -1.4720213413238525,
+        1.4720213413238525
+      ],
+      [
+        -1.9312442541122437,
+        1.9312442541122437
+      ],
+      [
+        -0.3233642280101776,
+        0.3233642280101776
+      ]
+    ],
+    "shared_between_cases": true,
+    "fixed_in_time": true,
+    "units": "zeta divided by each case central f0",
+    "f0_by_case_s_inv": [
+      0.0002880957739764384,
+      0.0002880957739764384
+    ]
+  },
+  "tracer_normalization": {
+    "type": "two_sided_centered_asinh",
+    "center": 0.0793082,
+    "linear_width": 0.001,
+    "colormap": "BrBG",
+    "limits": [
+      0.0,
+      1.0
+    ],
+    "units": "physical concentration C",
+    "center_basis": "Rounded common background concentration from Unity tracer audit; fixed, never recalculated per frame.",
+    "shared_between_cases_and_depths": true,
+    "fixed_in_time": true
+  },
+  "renderer_sha256": "9bc8a2d67c96145d8e04b41ef8b874325312d08392006c7a4bdbe19fe8a6505c",
+  "note": "Tracer values are unchanged absolute concentrations; only their color mapping differs from the original movies. Every saved time included. No field clipping or temporal interpolation. Values on colorbars are physical C or \u03b6/f\u2080. Rendering uses nearest-neighbor display sampling."
+}
