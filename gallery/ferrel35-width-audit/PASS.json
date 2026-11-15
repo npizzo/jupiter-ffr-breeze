@@ -1,0 +1,34 @@
+{
+  "status": "PASS",
+  "compute_location": "Unity",
+  "frames_read_per_case": 401,
+  "checks": [
+    "Published narrow day50\u2013100 u/v/w RMS reproduced to rtol 1e-11",
+    "Wide saved centered terms independently reconstructed at every snapshot",
+    "Wide cumulative native integrals cover all window seconds without overlap or gaps",
+    "Native momentum increments agree with independent endpoint zonal velocities",
+    "Identical central y coordinates, density, grid spacing and listed physical parameters"
+  ],
+  "assets": {
+    "circulation.png": {
+      "bytes": 279292,
+      "sha256": "cf2cb427fa27dcc70a12a9951b4e4e50ae7a707a189004db49b1bcfd2796a920"
+    },
+    "interior_persistence.png": {
+      "bytes": 230456,
+      "sha256": "c4c51c3bb8f82b772b2e952ad7ab49a8ce5af0f60a11680a82245484084d21c9"
+    },
+    "momentum_balance.png": {
+      "bytes": 261685,
+      "sha256": "43d5a70f460f71e859214bb341572b0dcdbd9e308d3654971c022eff13be4705"
+    },
+    "summary.json": {
+      "bytes": 52470,
+      "sha256": "85bb322e997d87526f88613e5ea54688cea3dc93caaacb0ae3fd80205e2a727f"
+    },
+    "wall_distance.png": {
+      "bytes": 301774,
+      "sha256": "d917ab879d26212f383904ebf345ff21739fac3c1d1d47c60bfeeb1cc42ddda6"
+    }
+  }
+}
