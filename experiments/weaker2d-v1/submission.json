@@ -1,0 +1,29 @@
+{
+  "status": "SUBMITTED_AFTER_VALIDATION",
+  "validation_job": "1845482",
+  "production_array_job": "1845517",
+  "render_job": "1845518",
+  "cases": [
+    "forced",
+    "random_sign",
+    "cyclonic_sign"
+  ],
+  "reused_control": "data/instability2d-long-v1-1817684/unforced",
+  "output": "data/weaker2d-v1-1845482",
+  "render_output": "rendered/weaker2d-v1-1845482",
+  "forcing_scale": 0.2,
+  "source_checkpoint": "data/instability2d-light-v1-1810727/checkpoint.jld2",
+  "reference_growth_times": [
+    120,
+    1200
+  ],
+  "dt": 0.005,
+  "prior_check": {
+    "job": "1845462",
+    "status": "FAILED_BEFORE_SIMULATION",
+    "reason": "Julia broadcast numeric-literal syntax in new check; corrected spacing",
+    "elapsed_seconds": 22
+  },
+  "compute_location": "Unity",
+  "resource_limit": "3 one-CPU runs, maximum two concurrent, four-hour job ceilings, no automatic extension"
+}
