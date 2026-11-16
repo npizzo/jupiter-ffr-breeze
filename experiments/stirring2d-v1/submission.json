@@ -1,0 +1,52 @@
+{
+  "status": "PRODUCTION_SUBMITTED",
+  "validation_job": "1819670",
+  "cases": [
+    "random_sign",
+    "cyclonic_sign"
+  ],
+  "source_checkpoint": "data/instability2d-light-v1-1810727/checkpoint.jld2",
+  "growth_times": [
+    120,
+    1200
+  ],
+  "forcing_band": [
+    6,
+    8
+  ],
+  "grid": [
+    128,
+    128
+  ],
+  "pulse_interval": 0.2,
+  "dt": 0.005,
+  "resource_ceiling": "Two one-CPU runs, max four hours each; internal 3.5h stop",
+  "source_scope": "New files only; existing forced/unforced jobs untouched",
+  "prior_validation": {
+    "job": "1819480",
+    "status": "FAILED_BEFORE_PRODUCTION",
+    "elapsed_seconds": 68,
+    "reason": "Post-pulse state changed after next-step stage-1 tendencies had already been cached",
+    "fix": "Refresh native tendencies and reset stage-1 audit after each pulse; retain original closure tolerances"
+  },
+  "second_validation": {
+    "job": "1819566",
+    "status": "FAILED_BEFORE_PRODUCTION",
+    "elapsed_seconds": 72,
+    "reason": "Impulsive velocity jump exceeded the original dt=0.01 CFL guard",
+    "fix": "Halve dt for both new stochastic cases, retaining pulse amplitudes, physical event times, and damping"
+  },
+  "validation_status": "PASS",
+  "validation_checks": 545,
+  "expected_energy_injection_rate": 0.03187278117410113,
+  "production_array_job": "1819738",
+  "output": "data/stirring2d-v1-1819670",
+  "render_output": "rendered/stirring2d-v1-1819670",
+  "render_job": "1819743",
+  "render_cases": [
+    "forced",
+    "unforced",
+    "random_sign",
+    "cyclonic_sign"
+  ]
+}

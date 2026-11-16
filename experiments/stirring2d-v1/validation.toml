@@ -1,0 +1,27 @@
+compute_location = "Unity"
+expected_energy_injection_rate = 0.03187278117410113
+one_time_unit_dt_refinement_error = 8.411304250288506e-8
+pulse_template_skewness = 0.9373212457084537
+source_checkpoint_sha256 = "57777461206872b3ba9763c4b7fc7a1289d05731da84e3e47d619df69b869c34"
+status = "PASS"
+translation_mean_cross_work = -3.1763735522036263e-21
+
+[cyclonic_sign]
+cross_energy = -0.011720592613148008
+events = 100
+max_cfl = 0.23637904366857812
+max_total_energy_error = 2.624074739975571e-14
+max_total_third_moment_error = 2.449616538300064e-15
+native_rk_energy_error = 4.789038466359947e-16
+positive_events = 100
+quadratic_energy = 0.6374556234820228
+
+[random_sign]
+cross_energy = 0.037939069022084604
+events = 100
+max_cfl = 0.25684609298637817
+max_total_energy_error = 1.898720746811592e-14
+max_total_third_moment_error = 6.687395743721612e-16
+native_rk_energy_error = 5.79174796453628e-16
+positive_events = 48
+quadratic_energy = 0.6374556234820228
