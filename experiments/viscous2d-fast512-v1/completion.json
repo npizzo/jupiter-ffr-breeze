@@ -1,0 +1,48 @@
+{
+  "status": "BOTH_SIMULATIONS_AND_MOVIES_COMPLETE",
+  "grid": [
+    512,
+    512
+  ],
+  "start_time": 200,
+  "target_time": 400,
+  "jobs": {
+    "forced": {
+      "job": "1873851",
+      "source": "data/viscous2d-long512-v1-1848831/forced/to_200/checkpoint.jld2",
+      "output": "data/viscous2d-fast512-v1-1872263/forced"
+    },
+    "unforced": {
+      "job": "1873856",
+      "source": "data/viscous2d-long512-v1-1848831/unforced/to_200/checkpoint.jld2",
+      "output": "data/viscous2d-fast512-v1-1872263/unforced"
+    }
+  },
+  "movie_job": "1873857",
+  "source_commit": "2c1a3ee30482eb37309c053a699756f9e920439a",
+  "elapsed_seconds": {
+    "forced": 3990,
+    "unforced": 2896,
+    "movies": 737
+  },
+  "compute_location": "Unity",
+  "media_status": "MEDIA_VERIFIED",
+  "movies": {
+    "forced_unforced_512_0_400": {
+      "frames": 801,
+      "duration_seconds": 66.75,
+      "full_decode_passed": true
+    },
+    "forced_512_0_400": {
+      "frames": 801,
+      "duration_seconds": 66.75,
+      "full_decode_passed": true
+    },
+    "unforced_512_0_400": {
+      "frames": 801,
+      "duration_seconds": 66.75,
+      "full_decode_passed": true
+    }
+  },
+  "all_restarts_and_initial_fields_verified": true
+}
