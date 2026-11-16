@@ -1,0 +1,14 @@
+source_initial_sha256 = "35cb85c5c7f179ac97dce1658f6779cd88e1d39c40b6193292412d250a7a8c6d"
+status = "PASS"
+
+[forced]
+estimated_40_time_unit_seconds = 3148.699836730957
+relative_reference_error = 2.8472654979837354e-16
+relative_restart_error = 0.0
+seconds_per_step = 0.19679373979568482
+
+[unforced]
+estimated_40_time_unit_seconds = 3406.4136123657227
+relative_reference_error = 0.0
+relative_restart_error = 0.0
+seconds_per_step = 0.21290085077285767
