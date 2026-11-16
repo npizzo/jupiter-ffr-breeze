@@ -1,0 +1,539 @@
+{
+  "status": "MEDIA_VERIFIED",
+  "compute_location": "Unity",
+  "time_range": [
+    0,
+    200
+  ],
+  "time_units": "dimensionless model time, not Earth or Jupiter days",
+  "frame_interval": 0.5,
+  "unique_frames_per_case": 401,
+  "duplicate_restart_frames_equal": true,
+  "identical_initial_vorticity": true,
+  "segments": {
+    "forced": [
+      {
+        "directory": "data/viscous2d-long512-v1-1848831/forced/to_040",
+        "config": {
+          "allow_zonal_forcing": false,
+          "beta": 0.0,
+          "case": "forced",
+          "checkpoint_interval": 10.0,
+          "compute_location": "Unity",
+          "domain": [
+            6.283185307179586,
+            6.283185307179586
+          ],
+          "drag": 0.0,
+          "dt": 0.0025,
+          "f": 1.0,
+          "final_campaign_time": 200.0,
+          "forcing_band": [
+            12.0,
+            16.0
+          ],
+          "frame_interval": 0.5,
+          "grid": [
+            512,
+            512
+          ],
+          "initial_sha256": "35cb85c5c7f179ac97dce1658f6779cd88e1d39c40b6193292412d250a7a8c6d",
+          "instability_coefficient": 0.0002,
+          "internal_wall_seconds": 19800.0,
+          "outputs": "Checkpoints and raw vorticity only; no spectra, budget reports, analysis jobs or movies",
+          "source_sha256": "35cb85c5c7f179ac97dce1658f6779cd88e1d39c40b6193292412d250a7a8c6d",
+          "start_time": 0.0,
+          "target_time": 40.0,
+          "viscosity": 0.0001,
+          "code_sha256": {
+            "core.jl": "7b03014ba4500f05c7f978e9a80bfc3d525b8300dd245acdc5500fe3bf78430c",
+            "model.jl": "ad2251f843b3bc7332ad925b60c86987640bfa2cf3bcd83912a42f6cb5758d9c",
+            "run.jl": "438aa60df60bc7c7a2f1268dc2da6cf38f8e20496bd6f245d906ebb6b392675d"
+          }
+        },
+        "status": {
+          "elapsed_seconds": 3440.401291847229,
+          "status": "COMPLETED",
+          "t": 39.999999999999865,
+          "target": 40.0
+        }
+      },
+      {
+        "directory": "data/viscous2d-long512-v1-1848831/forced/to_080",
+        "config": {
+          "allow_zonal_forcing": false,
+          "beta": 0.0,
+          "case": "forced",
+          "checkpoint_interval": 10.0,
+          "compute_location": "Unity",
+          "domain": [
+            6.283185307179586,
+            6.283185307179586
+          ],
+          "drag": 0.0,
+          "dt": 0.0025,
+          "f": 1.0,
+          "final_campaign_time": 200.0,
+          "forcing_band": [
+            12.0,
+            16.0
+          ],
+          "frame_interval": 0.5,
+          "grid": [
+            512,
+            512
+          ],
+          "initial_sha256": "35cb85c5c7f179ac97dce1658f6779cd88e1d39c40b6193292412d250a7a8c6d",
+          "instability_coefficient": 0.0002,
+          "internal_wall_seconds": 19800.0,
+          "outputs": "Checkpoints and raw vorticity only; no spectra, budget reports, analysis jobs or movies",
+          "source_sha256": "aa91941493bf8dff941488207f12549c4a5917e09f514ef5a56566789a19deb1",
+          "start_time": 39.999999999999865,
+          "target_time": 80.0,
+          "viscosity": 0.0001,
+          "code_sha256": {
+            "core.jl": "7b03014ba4500f05c7f978e9a80bfc3d525b8300dd245acdc5500fe3bf78430c",
+            "model.jl": "ad2251f843b3bc7332ad925b60c86987640bfa2cf3bcd83912a42f6cb5758d9c",
+            "run.jl": "438aa60df60bc7c7a2f1268dc2da6cf38f8e20496bd6f245d906ebb6b392675d"
+          }
+        },
+        "status": {
+          "elapsed_seconds": 2732.1428480148315,
+          "status": "COMPLETED",
+          "t": 79.99999999996349,
+          "target": 80.0
+        }
+      },
+      {
+        "directory": "data/viscous2d-long512-v1-1848831/forced/to_120",
+        "config": {
+          "allow_zonal_forcing": false,
+          "beta": 0.0,
+          "case": "forced",
+          "checkpoint_interval": 10.0,
+          "compute_location": "Unity",
+          "domain": [
+            6.283185307179586,
+            6.283185307179586
+          ],
+          "drag": 0.0,
+          "dt": 0.0025,
+          "f": 1.0,
+          "final_campaign_time": 200.0,
+          "forcing_band": [
+            12.0,
+            16.0
+          ],
+          "frame_interval": 0.5,
+          "grid": [
+            512,
+            512
+          ],
+          "initial_sha256": "35cb85c5c7f179ac97dce1658f6779cd88e1d39c40b6193292412d250a7a8c6d",
+          "instability_coefficient": 0.0002,
+          "internal_wall_seconds": 19800.0,
+          "outputs": "Checkpoints and raw vorticity only; no spectra, budget reports, analysis jobs or movies",
+          "source_sha256": "eee773b6148e8561fe1718d8b5d0bfb66b0165787ea4b365711cbe571b62e2b6",
+          "start_time": 79.99999999996349,
+          "target_time": 120.0,
+          "viscosity": 0.0001,
+          "code_sha256": {
+            "core.jl": "7b03014ba4500f05c7f978e9a80bfc3d525b8300dd245acdc5500fe3bf78430c",
+            "model.jl": "ad2251f843b3bc7332ad925b60c86987640bfa2cf3bcd83912a42f6cb5758d9c",
+            "run.jl": "438aa60df60bc7c7a2f1268dc2da6cf38f8e20496bd6f245d906ebb6b392675d"
+          }
+        },
+        "status": {
+          "elapsed_seconds": 3066.5764899253845,
+          "status": "COMPLETED",
+          "t": 119.99999999992711,
+          "target": 120.0
+        }
+      },
+      {
+        "directory": "data/viscous2d-long512-v1-1848831/forced/to_160",
+        "config": {
+          "allow_zonal_forcing": false,
+          "beta": 0.0,
+          "case": "forced",
+          "checkpoint_interval": 10.0,
+          "compute_location": "Unity",
+          "domain": [
+            6.283185307179586,
+            6.283185307179586
+          ],
+          "drag": 0.0,
+          "dt": 0.0025,
+          "f": 1.0,
+          "final_campaign_time": 200.0,
+          "forcing_band": [
+            12.0,
+            16.0
+          ],
+          "frame_interval": 0.5,
+          "grid": [
+            512,
+            512
+          ],
+          "initial_sha256": "35cb85c5c7f179ac97dce1658f6779cd88e1d39c40b6193292412d250a7a8c6d",
+          "instability_coefficient": 0.0002,
+          "internal_wall_seconds": 19800.0,
+          "outputs": "Checkpoints and raw vorticity only; no spectra, budget reports, analysis jobs or movies",
+          "source_sha256": "8e57460e22d65a9913a4efd4df6383546a5a7d64f7b497b4cc91f7e5a25377da",
+          "start_time": 119.99999999992711,
+          "target_time": 160.0,
+          "viscosity": 0.0001,
+          "code_sha256": {
+            "core.jl": "7b03014ba4500f05c7f978e9a80bfc3d525b8300dd245acdc5500fe3bf78430c",
+            "model.jl": "ad2251f843b3bc7332ad925b60c86987640bfa2cf3bcd83912a42f6cb5758d9c",
+            "run.jl": "438aa60df60bc7c7a2f1268dc2da6cf38f8e20496bd6f245d906ebb6b392675d"
+          }
+        },
+        "status": {
+          "elapsed_seconds": 3104.481055021286,
+          "status": "COMPLETED",
+          "t": 159.99999999989075,
+          "target": 160.0
+        }
+      },
+      {
+        "directory": "data/viscous2d-long512-v1-1848831/forced/to_200",
+        "config": {
+          "allow_zonal_forcing": false,
+          "beta": 0.0,
+          "case": "forced",
+          "checkpoint_interval": 10.0,
+          "compute_location": "Unity",
+          "domain": [
+            6.283185307179586,
+            6.283185307179586
+          ],
+          "drag": 0.0,
+          "dt": 0.0025,
+          "f": 1.0,
+          "final_campaign_time": 200.0,
+          "forcing_band": [
+            12.0,
+            16.0
+          ],
+          "frame_interval": 0.5,
+          "grid": [
+            512,
+            512
+          ],
+          "initial_sha256": "35cb85c5c7f179ac97dce1658f6779cd88e1d39c40b6193292412d250a7a8c6d",
+          "instability_coefficient": 0.0002,
+          "internal_wall_seconds": 19800.0,
+          "outputs": "Checkpoints and raw vorticity only; no spectra, budget reports, analysis jobs or movies",
+          "source_sha256": "fc601b7b07488ce55f12506eff2c19423c2aee06573133ff27ad7762317bee3d",
+          "start_time": 159.99999999989075,
+          "target_time": 200.0,
+          "viscosity": 0.0001,
+          "code_sha256": {
+            "core.jl": "7b03014ba4500f05c7f978e9a80bfc3d525b8300dd245acdc5500fe3bf78430c",
+            "model.jl": "ad2251f843b3bc7332ad925b60c86987640bfa2cf3bcd83912a42f6cb5758d9c",
+            "run.jl": "438aa60df60bc7c7a2f1268dc2da6cf38f8e20496bd6f245d906ebb6b392675d"
+          }
+        },
+        "status": {
+          "elapsed_seconds": 3119.9570050239563,
+          "status": "COMPLETED",
+          "t": 199.99999999985437,
+          "target": 200.0
+        }
+      }
+    ],
+    "unforced": [
+      {
+        "directory": "data/viscous2d-long512-v1-1848831/unforced/to_040",
+        "config": {
+          "allow_zonal_forcing": false,
+          "beta": 0.0,
+          "case": "unforced",
+          "checkpoint_interval": 10.0,
+          "compute_location": "Unity",
+          "domain": [
+            6.283185307179586,
+            6.283185307179586
+          ],
+          "drag": 0.0,
+          "dt": 0.0025,
+          "f": 1.0,
+          "final_campaign_time": 200.0,
+          "forcing_band": [
+            12.0,
+            16.0
+          ],
+          "frame_interval": 0.5,
+          "grid": [
+            512,
+            512
+          ],
+          "initial_sha256": "35cb85c5c7f179ac97dce1658f6779cd88e1d39c40b6193292412d250a7a8c6d",
+          "instability_coefficient": 0.0,
+          "internal_wall_seconds": 19800.0,
+          "outputs": "Checkpoints and raw vorticity only; no spectra, budget reports, analysis jobs or movies",
+          "source_sha256": "35cb85c5c7f179ac97dce1658f6779cd88e1d39c40b6193292412d250a7a8c6d",
+          "start_time": 0.0,
+          "target_time": 40.0,
+          "viscosity": 0.0001,
+          "code_sha256": {
+            "core.jl": "7b03014ba4500f05c7f978e9a80bfc3d525b8300dd245acdc5500fe3bf78430c",
+            "model.jl": "ad2251f843b3bc7332ad925b60c86987640bfa2cf3bcd83912a42f6cb5758d9c",
+            "run.jl": "438aa60df60bc7c7a2f1268dc2da6cf38f8e20496bd6f245d906ebb6b392675d"
+          }
+        },
+        "status": {
+          "elapsed_seconds": 2884.4674170017242,
+          "status": "COMPLETED",
+          "t": 39.999999999999865,
+          "target": 40.0
+        }
+      },
+      {
+        "directory": "data/viscous2d-long512-v1-1848831/unforced/to_080",
+        "config": {
+          "allow_zonal_forcing": false,
+          "beta": 0.0,
+          "case": "unforced",
+          "checkpoint_interval": 10.0,
+          "compute_location": "Unity",
+          "domain": [
+            6.283185307179586,
+            6.283185307179586
+          ],
+          "drag": 0.0,
+          "dt": 0.0025,
+          "f": 1.0,
+          "final_campaign_time": 200.0,
+          "forcing_band": [
+            12.0,
+            16.0
+          ],
+          "frame_interval": 0.5,
+          "grid": [
+            512,
+            512
+          ],
+          "initial_sha256": "35cb85c5c7f179ac97dce1658f6779cd88e1d39c40b6193292412d250a7a8c6d",
+          "instability_coefficient": 0.0,
+          "internal_wall_seconds": 19800.0,
+          "outputs": "Checkpoints and raw vorticity only; no spectra, budget reports, analysis jobs or movies",
+          "source_sha256": "e5cc3829164576476c38b9f080a7dd3050aa9e72d57c0669e2ff5b9de246243b",
+          "start_time": 39.999999999999865,
+          "target_time": 80.0,
+          "viscosity": 0.0001,
+          "code_sha256": {
+            "core.jl": "7b03014ba4500f05c7f978e9a80bfc3d525b8300dd245acdc5500fe3bf78430c",
+            "model.jl": "ad2251f843b3bc7332ad925b60c86987640bfa2cf3bcd83912a42f6cb5758d9c",
+            "run.jl": "438aa60df60bc7c7a2f1268dc2da6cf38f8e20496bd6f245d906ebb6b392675d"
+          }
+        },
+        "status": {
+          "elapsed_seconds": 4989.666848897934,
+          "status": "COMPLETED",
+          "t": 79.99999999996349,
+          "target": 80.0
+        }
+      },
+      {
+        "directory": "data/viscous2d-long512-v1-1848831/unforced/to_120",
+        "config": {
+          "allow_zonal_forcing": false,
+          "beta": 0.0,
+          "case": "unforced",
+          "checkpoint_interval": 10.0,
+          "compute_location": "Unity",
+          "domain": [
+            6.283185307179586,
+            6.283185307179586
+          ],
+          "drag": 0.0,
+          "dt": 0.0025,
+          "f": 1.0,
+          "final_campaign_time": 200.0,
+          "forcing_band": [
+            12.0,
+            16.0
+          ],
+          "frame_interval": 0.5,
+          "grid": [
+            512,
+            512
+          ],
+          "initial_sha256": "35cb85c5c7f179ac97dce1658f6779cd88e1d39c40b6193292412d250a7a8c6d",
+          "instability_coefficient": 0.0,
+          "internal_wall_seconds": 19800.0,
+          "outputs": "Checkpoints and raw vorticity only; no spectra, budget reports, analysis jobs or movies",
+          "source_sha256": "a12ee3910c3a02f4d8d451358476d8add0a70f47da76d49becb31d8c0d48bfea",
+          "start_time": 79.99999999996349,
+          "target_time": 120.0,
+          "viscosity": 0.0001,
+          "code_sha256": {
+            "core.jl": "7b03014ba4500f05c7f978e9a80bfc3d525b8300dd245acdc5500fe3bf78430c",
+            "model.jl": "ad2251f843b3bc7332ad925b60c86987640bfa2cf3bcd83912a42f6cb5758d9c",
+            "run.jl": "438aa60df60bc7c7a2f1268dc2da6cf38f8e20496bd6f245d906ebb6b392675d"
+          }
+        },
+        "status": {
+          "elapsed_seconds": 4287.6974840164185,
+          "status": "COMPLETED",
+          "t": 119.99999999992711,
+          "target": 120.0
+        }
+      },
+      {
+        "directory": "data/viscous2d-long512-v1-1848831/unforced/to_160",
+        "config": {
+          "allow_zonal_forcing": false,
+          "beta": 0.0,
+          "case": "unforced",
+          "checkpoint_interval": 10.0,
+          "compute_location": "Unity",
+          "domain": [
+            6.283185307179586,
+            6.283185307179586
+          ],
+          "drag": 0.0,
+          "dt": 0.0025,
+          "f": 1.0,
+          "final_campaign_time": 200.0,
+          "forcing_band": [
+            12.0,
+            16.0
+          ],
+          "frame_interval": 0.5,
+          "grid": [
+            512,
+            512
+          ],
+          "initial_sha256": "35cb85c5c7f179ac97dce1658f6779cd88e1d39c40b6193292412d250a7a8c6d",
+          "instability_coefficient": 0.0,
+          "internal_wall_seconds": 19800.0,
+          "outputs": "Checkpoints and raw vorticity only; no spectra, budget reports, analysis jobs or movies",
+          "source_sha256": "965d096f17017bc430e755ba8ff8fb27c207338fbd5928153919b268d8c9181c",
+          "start_time": 119.99999999992711,
+          "target_time": 160.0,
+          "viscosity": 0.0001,
+          "code_sha256": {
+            "core.jl": "7b03014ba4500f05c7f978e9a80bfc3d525b8300dd245acdc5500fe3bf78430c",
+            "model.jl": "ad2251f843b3bc7332ad925b60c86987640bfa2cf3bcd83912a42f6cb5758d9c",
+            "run.jl": "438aa60df60bc7c7a2f1268dc2da6cf38f8e20496bd6f245d906ebb6b392675d"
+          }
+        },
+        "status": {
+          "elapsed_seconds": 2986.581274986267,
+          "status": "COMPLETED",
+          "t": 159.99999999989075,
+          "target": 160.0
+        }
+      },
+      {
+        "directory": "data/viscous2d-long512-v1-1848831/unforced/to_200",
+        "config": {
+          "allow_zonal_forcing": false,
+          "beta": 0.0,
+          "case": "unforced",
+          "checkpoint_interval": 10.0,
+          "compute_location": "Unity",
+          "domain": [
+            6.283185307179586,
+            6.283185307179586
+          ],
+          "drag": 0.0,
+          "dt": 0.0025,
+          "f": 1.0,
+          "final_campaign_time": 200.0,
+          "forcing_band": [
+            12.0,
+            16.0
+          ],
+          "frame_interval": 0.5,
+          "grid": [
+            512,
+            512
+          ],
+          "initial_sha256": "35cb85c5c7f179ac97dce1658f6779cd88e1d39c40b6193292412d250a7a8c6d",
+          "instability_coefficient": 0.0,
+          "internal_wall_seconds": 19800.0,
+          "outputs": "Checkpoints and raw vorticity only; no spectra, budget reports, analysis jobs or movies",
+          "source_sha256": "15cb7b9e30ba830bc810dc38b852690ac57cf2ac5abc56cdfd23e45319087b3a",
+          "start_time": 159.99999999989075,
+          "target_time": 200.0,
+          "viscosity": 0.0001,
+          "code_sha256": {
+            "core.jl": "7b03014ba4500f05c7f978e9a80bfc3d525b8300dd245acdc5500fe3bf78430c",
+            "model.jl": "ad2251f843b3bc7332ad925b60c86987640bfa2cf3bcd83912a42f6cb5758d9c",
+            "run.jl": "438aa60df60bc7c7a2f1268dc2da6cf38f8e20496bd6f245d906ebb6b392675d"
+          }
+        },
+        "status": {
+          "elapsed_seconds": 3016.489907979965,
+          "status": "COMPLETED",
+          "t": 199.99999999985437,
+          "target": 200.0
+        }
+      }
+    ]
+  },
+  "movies": {
+    "forced_unforced_512": {
+      "frames": 401,
+      "duration_seconds": 33.41,
+      "full_decode_passed": true
+    },
+    "forced_512": {
+      "frames": 401,
+      "duration_seconds": 33.41,
+      "full_decode_passed": true
+    },
+    "unforced_512": {
+      "frames": 401,
+      "duration_seconds": 33.41,
+      "full_decode_passed": true
+    }
+  },
+  "color_scale": {
+    "type": "symmetric asinh",
+    "linear_width": 0.1,
+    "limits": [
+      -11.903578758239746,
+      11.903578758239746
+    ],
+    "fixed_across_cases_and_time": true,
+    "clipping": false
+  },
+  "notes": [
+    "Only 512-square output; no comparison to 256-square runs.",
+    "No tracer or vertical layers exist in this horizontal 2D model.",
+    "Constant f cannot itself select vorticity sign in horizontal incompressible 2D dynamics.",
+    "This is a media publication, not an inverse-cascade or convergence diagnosis.",
+    "Frozen simulation config outputs text predates the user clarification requesting movies."
+  ],
+  "assets": {
+    "forced_512.mp4": {
+      "bytes": 8161516,
+      "sha256": "ca2ee740d1976a9027aac5c35a0bd0d7566f0631903444aad043ba4da646ec33"
+    },
+    "forced_512.png": {
+      "bytes": 242771,
+      "sha256": "ed776665faa7014b5343e007db2ea061ed684819a2f15dfa60c54643374fa24c"
+    },
+    "forced_unforced_512.mp4": {
+      "bytes": 7943491,
+      "sha256": "a1f276d396a3d04f1066ed92664deef555aef0317e9cacd80ec233d45581d85b"
+    },
+    "forced_unforced_512.png": {
+      "bytes": 396798,
+      "sha256": "b5b6205d68dabbbad2e3cb594dd92aa32872bb4c52cc6bc5263cdc2c1ad8ee8f"
+    },
+    "unforced_512.mp4": {
+      "bytes": 8217309,
+      "sha256": "b3cf26f5a4b1aff444036a262698231dbe57646c96e3b1d8f69ed5bc0cb509ca"
+    },
+    "unforced_512.png": {
+      "bytes": 192873,
+      "sha256": "d833b78bcee9f955a0b02c640c4f7d06c7768a1bf2a3ecb9d5b2948ae4de8389"
+    }
+  }
+}

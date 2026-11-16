@@ -1,0 +1,124 @@
+{
+  "status": "SIMULATIONS_AND_MEDIA_COMPLETED_ON_UNITY",
+  "final_model_time": 200,
+  "grid": [
+    512,
+    512
+  ],
+  "cases": [
+    "forced",
+    "unforced"
+  ],
+  "simulation_jobs": {
+    "forced": [
+      {
+        "job": "1848850",
+        "target_time": 40,
+        "depends_on": "1848831",
+        "output": "data/viscous2d-long512-v1-1848831/forced/to_040",
+        "source": "data/viscous2d-refine-v1-1848240/initial.jld2"
+      },
+      {
+        "job": "1848851",
+        "target_time": 80,
+        "depends_on": "1848850",
+        "output": "data/viscous2d-long512-v1-1848831/forced/to_080",
+        "source": "data/viscous2d-long512-v1-1848831/forced/to_040/checkpoint.jld2"
+      },
+      {
+        "job": "1848853",
+        "target_time": 120,
+        "depends_on": "1848851",
+        "output": "data/viscous2d-long512-v1-1848831/forced/to_120",
+        "source": "data/viscous2d-long512-v1-1848831/forced/to_080/checkpoint.jld2"
+      },
+      {
+        "job": "1848855",
+        "target_time": 160,
+        "depends_on": "1848853",
+        "output": "data/viscous2d-long512-v1-1848831/forced/to_160",
+        "source": "data/viscous2d-long512-v1-1848831/forced/to_120/checkpoint.jld2"
+      },
+      {
+        "job": "1848856",
+        "target_time": 200,
+        "depends_on": "1848855",
+        "output": "data/viscous2d-long512-v1-1848831/forced/to_200",
+        "source": "data/viscous2d-long512-v1-1848831/forced/to_160/checkpoint.jld2"
+      }
+    ],
+    "unforced": [
+      {
+        "job": "1848857",
+        "target_time": 40,
+        "depends_on": "1848831",
+        "output": "data/viscous2d-long512-v1-1848831/unforced/to_040",
+        "source": "data/viscous2d-refine-v1-1848240/initial.jld2"
+      },
+      {
+        "job": "1848860",
+        "target_time": 80,
+        "depends_on": "1848857",
+        "output": "data/viscous2d-long512-v1-1848831/unforced/to_080",
+        "source": "data/viscous2d-long512-v1-1848831/unforced/to_040/checkpoint.jld2"
+      },
+      {
+        "job": "1848861",
+        "target_time": 120,
+        "depends_on": "1848860",
+        "output": "data/viscous2d-long512-v1-1848831/unforced/to_120",
+        "source": "data/viscous2d-long512-v1-1848831/unforced/to_080/checkpoint.jld2"
+      },
+      {
+        "job": "1848862",
+        "target_time": 160,
+        "depends_on": "1848861",
+        "output": "data/viscous2d-long512-v1-1848831/unforced/to_160",
+        "source": "data/viscous2d-long512-v1-1848831/unforced/to_120/checkpoint.jld2"
+      },
+      {
+        "job": "1848863",
+        "target_time": 200,
+        "depends_on": "1848862",
+        "output": "data/viscous2d-long512-v1-1848831/unforced/to_200",
+        "source": "data/viscous2d-long512-v1-1848831/unforced/to_160/checkpoint.jld2"
+      }
+    ]
+  },
+  "movie_job": "1849377",
+  "movie_elapsed_seconds": 403,
+  "media_status": "MEDIA_VERIFIED",
+  "movies": {
+    "forced_unforced_512": {
+      "frames": 401,
+      "duration_seconds": 33.41,
+      "full_decode_passed": true
+    },
+    "forced_512": {
+      "frames": 401,
+      "duration_seconds": 33.41,
+      "full_decode_passed": true
+    },
+    "unforced_512": {
+      "frames": 401,
+      "duration_seconds": 33.41,
+      "full_decode_passed": true
+    }
+  },
+  "initial_sha256": "35cb85c5c7f179ac97dce1658f6779cd88e1d39c40b6193292412d250a7a8c6d",
+  "source_commit": "d990b8bc750f896711357e59477e1d7b6fdacbca",
+  "renderer_commit": "f674a211ed8256a3896efbf5bde9e39dfc0ecfdf",
+  "simulation_allocated_core_seconds": {
+    "forced": 15880,
+    "unforced": 18609
+  },
+  "simulation_cpu_seconds": {
+    "forced": 15831.656,
+    "unforced": 18546.804
+  },
+  "notes": [
+    "No 256-square comparison or additional scientific diagnostics.",
+    "All simulations, rendering and full media decoding performed on Unity.",
+    "Only finished publication products copied for GitHub browser upload."
+  ]
+}

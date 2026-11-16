@@ -1,6 +1,6 @@
-# Long 512² forced/unforced runs, without analysis products
+# Long 512² forced/unforced runs
 
-Authorized November 16, 2026. The user requested the higher-resolution forced/unforced long runs and explicitly said no comparison movies or diagnostics are needed. This campaign has two cases only; it does not restart the stochastic-stirring cases.
+Authorized November 16, 2026. The user clarified that movies of the 512² forced/unforced runs ARE wanted; only the comparison to 256² was unwanted. This campaign has two cases only; it does not restart the stochastic-stirring cases. Scientific diagnostic-analysis products are not requested.
 
 Assumptions stated before launch:
 
@@ -9,7 +9,7 @@ Assumptions stated before launch:
 - Identical refined initial vorticity realization in both cases. The actual initial velocity RMS is 0.1994510449469 after preserving the coarse vorticity Fourier coefficients; no renormalization is introduced.
 - Forced case: a=2×10⁻⁴ times k²ζ in the 12–16 band, excluding k_x=0. Control: a=0. No stochastic pulses.
 - Target model time t=200, divided into five checkpointed segments ending at 40,80,120,160,200. All segments retain the same parameters. This is dimensionless model time, not planetary days.
-- Output only checkpoints, raw vorticity every 0.5 time unit, configuration, basic progress and completion status. No spectra, vorticity-budget reports, comparison movies or diagnostic-analysis jobs are created by this campaign.
+- Simulation output: checkpoints, raw vorticity every 0.5 time unit, configuration, basic progress and completion status. No spectra or vorticity-budget reports. After both cases complete, `render.py` makes individual movies and a synchronized 512² forced/unforced movie on Unity. The frozen simulation configuration's original output-description string predates the movie clarification.
 
 ## Driver and restart verification
 
