@@ -8,7 +8,7 @@ d=load(source);u0,v0=d["u"],d["v"];metrics=Dict{String,Any}()
 function evolve(u,v,case;legacy=false,steps=12,t=0.,iteration=0)
  m,b=setup(u,v;case,t,iteration)
  if legacy;b=Audit(b.op;a=case=="forced" ? .0002 : 0.,nu=.0001,alpha=0.,dt=.0025);end
- sim=Simulation(m;Δt=.0025,stop_iteration=iteration+steps,verbose=false)
+ sim=Simulation(m;Δt=.0025,stop_iteration=m.clock.iteration+steps,verbose=false)
  add_callback!(sim,b,IterationInterval(1);name=:terms,callsite=TendencyCallsite())
  legacy && add_callback!(sim,s->finish!(b,s.model),IterationInterval(1);name=:finish)
  started=time();run!(sim);elapsed=time()-started

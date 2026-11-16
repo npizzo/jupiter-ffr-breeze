@@ -18,3 +18,7 @@ Assumptions stated before launch:
 The existing short 512² resolution check was still running when this longer campaign was authorized. These runs do not imply a resolution-convergence claim and are not gated on that check's movie or analysis. Only the new driver-equivalence/restart check gates production. Later segments require the preceding segment to complete successfully; a partial segment preserves its checkpoint and stops its dependents. No automatic timestep, forcing, dissipation or grid change is allowed.
 
 One CPU and 16 GB per job, at most one active segment per case. Each job has a six-hour scheduler ceiling and 5.5-hour internal limit. The two case chains can run concurrently. All computation and raw output stay on Unity. A segment's initial saved frame duplicates the preceding segment's endpoint and is labeled with the same global iteration/time.
+
+## Restart implementation correction
+
+The first short driver check matched the audited equations but caught a relative restart mismatch of about 1.2×10⁻⁵. No production segment started. Oceananigans skips first-step Runge–Kutta tendency initialization when a new model is assigned a nonzero iteration, assuming a full internal-state restore. These checkpoints store velocity fields instead. The corrected driver starts the new model at local iteration zero, preserves physical time, and tracks global output iteration with a separate offset. The original <10⁻¹⁰ restart tolerance is retained.

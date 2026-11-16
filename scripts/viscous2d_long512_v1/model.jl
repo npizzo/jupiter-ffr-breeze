@@ -22,7 +22,7 @@ end
 function setup(u,v;case,t=0.,iteration=0)
     case in ("forced","unforced") || error("Only forced/unforced authorized")
     o=BandOperator(512,512;kmin=12.,kmax=16.,allow_zonal=false)
-    m=build_model(o;f=1.);seed!(m,u,v);m.clock.time=t;m.clock.iteration=iteration
+    m=build_model(o;f=1.);seed!(m,u,v);m.clock.time=t;m.clock.iteration=0 # New model must initialize RK tendency caches; output keeps a separate global offset.
     b=LinearTerms(o;a=case=="forced" ? .0002 : 0.)
     m,b
 end

@@ -24,11 +24,11 @@ open(joinpath(out,"config.toml"),"w") do io;TOML.print(io,config;sorted=true);en
 open(joinpath(out,"frames.csv"),"w") do io;println(io,"iteration,t,file");end
 started=time();lastframe=Ref(-1);lastcheckpoint=Ref(-1)
 function checkpoint!()
-    u,v=state(m);jldsave(joinpath(out,"checkpoint.tmp.jld2");u,v,t=Float64(m.clock.time),iteration=m.clock.iteration,config,initial_sha256=initial_hash)
+    u,v=state(m);jldsave(joinpath(out,"checkpoint.tmp.jld2");u,v,t=Float64(m.clock.time),iteration=it0+m.clock.iteration,config,initial_sha256=initial_hash)
     mv(joinpath(out,"checkpoint.tmp.jld2"),joinpath(out,"checkpoint.jld2");force=true)
 end
 function output!(sim;force=false)
-    it=m.clock.iteration
+    it=it0+m.clock.iteration
     if (it%200==0 || force) && lastframe[]!=it
         u,v=state(m);q=vorticity(b.op,u,v);all(isfinite,q)||error("Nonfinite saved field")
         name=@sprintf("zeta_%08d.f32",it)
@@ -43,11 +43,11 @@ function output!(sim;force=false)
         println(@sprintf("PROGRESS case=%s t=%.3f segment_target=%.1f elapsed=%.1fs",case,m.clock.time,target,time()-started));flush(stdout)
     end
 end
-sim=Simulation(m;Δt=dt,stop_iteration=itend,wall_time_limit=19800.,verbose=false)
+sim=Simulation(m;Δt=dt,stop_iteration=itend-it0,wall_time_limit=19800.,verbose=false)
 add_callback!(sim,b,IterationInterval(1);name=:linear_terms,callsite=TendencyCallsite())
 add_callback!(sim,output!,IterationInterval(1);name=:saved_fields)
 output!(sim;force=true);run!(sim);output!(sim;force=true)
-complete=m.clock.iteration>=itend && abs(m.clock.time-target)<1e-7
+complete=m.clock.iteration>=itend-it0 && abs(m.clock.time-target)<1e-7
 open(joinpath(out,"status.toml"),"w") do io
  TOML.print(io,Dict("status"=>(complete ? "COMPLETED" : "PARTIAL_WALL_TIME_LIMIT"),"t"=>m.clock.time,"target"=>target,"elapsed_seconds"=>time()-started);sorted=true)
 end
