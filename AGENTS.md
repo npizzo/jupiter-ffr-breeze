@@ -21,3 +21,10 @@ On November 11, 2026, the user explicitly requested clearly labeled single-heigh
 ## Full 100-day tracer contrast variant
 
 On November 11, 2026 the user requested clearer late-time tracer gradients in the completed 100-day movies. The labeled contrast variant uses unchanged absolute concentration, BrBG colors, fixed center C=0.0793082, and two-sided asinh width 0.001 with the full concentration range. The same mapping applies to both cases, all depths and all times; no framewise normalization, mean subtraction or clipping. Preserve original movies and original vorticity normalization. Do not modify frozen model or renderer source used by queued campaigns; add separate rendering variants when needed.
+
+
+## Explicit assumptions and viscosity-only 2D tests
+
+Before launching simulations, explicitly state the assumptions to the user in short bullets: equations and dimensionality, geometry, initial conditions, forcing, dissipation, resolution, duration, controls and any release gates. Do not infer authorization for one physical term from authorization for another. This disclosure does not itself require a new permission question when the user has already authorized the experiment.
+
+For the current minimal 2D cascade/LSV experiments, use ordinary Laplacian viscosity only. The user explicitly rejected cubic drag and did not authorize importing van Kan-style dissipation along with the instability forcing. Do not add linear drag, nonlinear drag or hyperviscosity without an explicit change in the user's instructions. Compare unforced decay, weak instability forcing, weak random-sign stirring and weak f-aligned-core stirring from identical initial conditions. Verify transient unforced inverse energy transfer using native flux and absolute low-wavenumber energy, not morphology or energy fractions alone. Keep this separate from beta-plane Ferrel-cell work.

@@ -1,0 +1,18 @@
+{
+  "status": "CANCELLED_SUPERSEDED",
+  "reason": "User requires usual Laplacian viscosity only, no cubic or linear drag",
+  "cancelled_jobs": [
+    "1845517_0",
+    "1845517_1",
+    "1845517_2",
+    "1845518"
+  ],
+  "already_running_at_cancellation": [
+    "1845517_0",
+    "1845517_1"
+  ],
+  "partial_data_retained": true,
+  "validation_job": "1845482",
+  "validation_status": "COMPLETED",
+  "replacement_array": "1847246"
+}

@@ -1,0 +1,52 @@
+{
+  "status": "PRODUCTION_SUBMITTED_AFTER_BASELINE_GATE",
+  "validation_job": "1846256",
+  "compute_location": "Unity",
+  "cases": [
+    "unforced",
+    "forced",
+    "random_sign",
+    "cyclonic_sign"
+  ],
+  "grid": [
+    256,
+    256
+  ],
+  "domain": [
+    6.283185307179586,
+    6.283185307179586
+  ],
+  "initial_band": [
+    12,
+    16
+  ],
+  "initial_urms": 0.2,
+  "seed": 62041,
+  "viscosity": 0.0001,
+  "cubic_drag": 0,
+  "linear_drag": 0,
+  "instability_coefficient": 0.0002,
+  "pulse_interval": 0.2,
+  "dt": 0.0025,
+  "duration_model_time": 200,
+  "beta": 0,
+  "f": 1,
+  "production_requires": "PASS.json: unforced negative flux, absolute large-scale-energy growth, spectral-tail and native-budget checks",
+  "supersedes_drag_campaign": {
+    "array": "1845517",
+    "cancelled_after_start": [
+      "1845517_0",
+      "1845517_1"
+    ],
+    "cancelled_before_start": [
+      "1845517_2"
+    ],
+    "render_cancelled": "1845518"
+  },
+  "production_array_job": "1847246",
+  "render_job": "1847247",
+  "output": "data/viscous2d-v1-1846256",
+  "render_output": "rendered/viscous2d-v1-1846256",
+  "stochastic_expected_energy_input": 0.0014841159507395108,
+  "resource_limit": "Four one-CPU runs, maximum two concurrent, six-hour ceilings, no automatic extension"
+}
