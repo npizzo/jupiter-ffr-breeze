@@ -1,0 +1,27 @@
+{
+  "analysis_job": "1815620",
+  "analysis_elapsed_seconds": 32,
+  "figure_caption_job": "1816057",
+  "compute_location": "Unity",
+  "new_simulations": false,
+  "source_run": "data/fplane-point4-v2/late_heated",
+  "movie": "../fplane-analysis/late_heated.mp4",
+  "figure_change": "Caption clarified as cell-centered curl; scientific diagnostics unchanged.",
+  "source_sha256": {
+    "scripts/fplane_centrifugal_v1/plot.py": "72f776047e6036af1d92c0ddfac7d2cd1b5e29ec74a36ea858b357001bb814ed",
+    "scripts/fplane_centrifugal_v1/check.py": "f762815b0aaa904194ceabca0048d5c475ebe0b85f059576cba4a91fbf1a9041",
+    "scripts/fplane_centrifugal_v1/operators.py": "2c524e4b8004569d18c2e374d4989c4fe1148d32f75d483b2ab45440e21eb1c7",
+    "scripts/fplane_centrifugal_v1/analyze.py": "1efacacc29cdddc4d67a030ec2b319024847eed1bc178cb7938ed4dc5c90e4f2",
+    "scripts/fplane_centrifugal_v1/README.md": "f5c33acbe3558e450f5fe54a0cfac4abd34abba6af7805255e547d97fd39d129",
+    "slurm/fplane-centrifugal-v1.sbatch": "1734d8d592d20b7ef139dd00afe098060a759fa6e2bf42ee6c95c59873a20cf7"
+  },
+  "additional_verified_summary": {
+    "negative_discriminant_both_count": 0,
+    "minimum_sampled_Phi_over_f2_resolved": 0.7373969545028858,
+    "minimum_circulation_Phi_over_f2_resolved": 0.7573040207161708,
+    "regional_shear_production_range_m2_s3": [
+      -1.5462766263083446e-06,
+      -1.4100570168171968e-06
+    ]
+  }
+}

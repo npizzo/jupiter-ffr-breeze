@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "compute_location": "Unity",
+  "figures": {
+    "height_distributions.png": {
+      "bytes": 301918,
+      "sha256": "719967dc0e8789f53aa272ca2109abeb6119a1462f6d14f98d20b857ad6591f1"
+    },
+    "lsv_context.png": {
+      "bytes": 683026,
+      "sha256": "9af4c7ddde4a2768fec4870b74a9b31b1e5b6673b6f6c8321f5f90d53daebc03"
+    },
+    "temporal_evidence.png": {
+      "bytes": 218115,
+      "sha256": "16f8c9eaa2ea7a67ccc23f4a5160fb11ceb65a6512b306eca3aaf7546569e633"
+    },
+    "vortex_profiles.png": {
+      "bytes": 300972,
+      "sha256": "d54b0d2e0f399e2414db85bfecbdeec511b8d7962678468ed6d767cc5c4af8ba"
+    }
+  }
+}

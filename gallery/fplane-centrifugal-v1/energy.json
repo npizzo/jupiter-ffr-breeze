@@ -1,0 +1,354 @@
+[
+  {
+    "day": 90.0,
+    "deviation_ke_m2_s2": 1.762850055653558,
+    "barotropic_to_deviations_m2_s3": -1.4391390644023063e-06,
+    "buoyancy_production_proxy_m2_s3": 0.00027653966298481556,
+    "conditional": {
+      "zeta_lt_minus_f": {
+        "mass_fraction": 3.4066205998179073e-06,
+        "shear_production": -2.216098155323074e-05,
+        "buoyancy_proxy": 0.0007730762826523621,
+        "deviation_ke": 3.191646309256098
+      },
+      "zeta_gt_f": {
+        "mass_fraction": 1.1169507964854501e-05,
+        "shear_production": 5.437975123021631e-06,
+        "buoyancy_proxy": 0.0005516953155196858,
+        "deviation_ke": 1.8492970402930775
+      },
+      "anticyclonic": {
+        "mass_fraction": 0.5271655586856308,
+        "shear_production": -1.370885277624843e-06,
+        "buoyancy_proxy": 0.00030107243873589467,
+        "deviation_ke": 1.848291062668703
+      },
+      "cyclonic": {
+        "mass_fraction": 0.47283444131436936,
+        "shear_production": -1.5152355635044702e-06,
+        "buoyancy_proxy": 0.000249187944698439,
+        "deviation_ke": 1.6675914360136745
+      }
+    }
+  },
+  {
+    "day": 91.0,
+    "deviation_ke_m2_s2": 1.7708280708976345,
+    "barotropic_to_deviations_m2_s3": -1.4616331383847379e-06,
+    "buoyancy_production_proxy_m2_s3": 0.00028100099332891885,
+    "conditional": {
+      "zeta_lt_minus_f": {
+        "mass_fraction": 5.061028157955738e-06,
+        "shear_production": -4.131072945525549e-05,
+        "buoyancy_proxy": 0.0010309970957210189,
+        "deviation_ke": 4.693086249645054
+      },
+      "zeta_gt_f": {
+        "mass_fraction": 1.7219979018451678e-05,
+        "shear_production": -1.963102876421833e-06,
+        "buoyancy_proxy": 0.0005671918411049786,
+        "deviation_ke": 2.7841656614911243
+      },
+      "anticyclonic": {
+        "mass_fraction": 0.5279288351081313,
+        "shear_production": -1.4082487219236906e-06,
+        "buoyancy_proxy": 0.00030610838529253196,
+        "deviation_ke": 1.860793397834208
+      },
+      "cyclonic": {
+        "mass_fraction": 0.4720711648918689,
+        "shear_production": -1.521334248918916e-06,
+        "buoyancy_proxy": 0.0002529227772087082,
+        "deviation_ke": 1.6702176253080867
+      }
+    }
+  },
+  {
+    "day": 92.0,
+    "deviation_ke_m2_s2": 1.777173808430905,
+    "barotropic_to_deviations_m2_s3": -1.4100570168171968e-06,
+    "buoyancy_production_proxy_m2_s3": 0.00028111978995076336,
+    "conditional": {
+      "zeta_lt_minus_f": {
+        "mass_fraction": 4.209485558013103e-06,
+        "shear_production": -1.022204938429023e-05,
+        "buoyancy_proxy": 0.0014289748980834357,
+        "deviation_ke": 4.062383629454243
+      },
+      "zeta_gt_f": {
+        "mass_fraction": 1.5319193795596504e-05,
+        "shear_production": 7.81389284927145e-06,
+        "buoyancy_proxy": 0.00048489442099220327,
+        "deviation_ke": 2.0546030299408513
+      },
+      "anticyclonic": {
+        "mass_fraction": 0.5271004048684844,
+        "shear_production": -1.421679838087156e-06,
+        "buoyancy_proxy": 0.0003071614859769174,
+        "deviation_ke": 1.8740630291885165
+      },
+      "cyclonic": {
+        "mass_fraction": 0.4728995951315157,
+        "shear_production": -1.3971020600775825e-06,
+        "buoyancy_proxy": 0.00025209335672865324,
+        "deviation_ke": 1.6691797479273718
+      }
+    }
+  },
+  {
+    "day": 93.0,
+    "deviation_ke_m2_s2": 1.8042603592536968,
+    "barotropic_to_deviations_m2_s3": -1.5203014530424693e-06,
+    "buoyancy_production_proxy_m2_s3": 0.0002817031927177333,
+    "conditional": {
+      "zeta_lt_minus_f": {
+        "mass_fraction": 5.135468888016991e-06,
+        "shear_production": -5.625431387305247e-05,
+        "buoyancy_proxy": 0.0009530078870338594,
+        "deviation_ke": 7.657663747157908
+      },
+      "zeta_gt_f": {
+        "mass_fraction": 1.730411370635485e-05,
+        "shear_production": -3.642095325285415e-05,
+        "buoyancy_proxy": 0.0009069923005360687,
+        "deviation_ke": 2.327151146216227
+      },
+      "anticyclonic": {
+        "mass_fraction": 0.5285757478570335,
+        "shear_production": -1.4788384647878858e-06,
+        "buoyancy_proxy": 0.0003056990277463329,
+        "deviation_ke": 1.9014411200041401
+      },
+      "cyclonic": {
+        "mass_fraction": 0.47142425214296646,
+        "shear_production": -1.5667910638875373e-06,
+        "buoyancy_proxy": 0.0002547983052664837,
+        "deviation_ke": 1.6952982236455287
+      }
+    }
+  },
+  {
+    "day": 94.0,
+    "deviation_ke_m2_s2": 1.8208524499348742,
+    "barotropic_to_deviations_m2_s3": -1.491327202509201e-06,
+    "buoyancy_production_proxy_m2_s3": 0.0002829198088232662,
+    "conditional": {
+      "zeta_lt_minus_f": {
+        "mass_fraction": 3.199275068781021e-06,
+        "shear_production": -1.0536569782450934e-05,
+        "buoyancy_proxy": 0.0011007682867949149,
+        "deviation_ke": 5.732128713581482
+      },
+      "zeta_gt_f": {
+        "mass_fraction": 8.556673615445808e-06,
+        "shear_production": -1.6722471702458005e-05,
+        "buoyancy_proxy": 0.0004458039907831159,
+        "deviation_ke": 1.5478382489998321
+      },
+      "anticyclonic": {
+        "mass_fraction": 0.529046630038969,
+        "shear_production": -1.491744487778968e-06,
+        "buoyancy_proxy": 0.00030822405909437334,
+        "deviation_ke": 1.917794138687618
+      },
+      "cyclonic": {
+        "mass_fraction": 0.47095336996103104,
+        "shear_production": -1.49085844407192e-06,
+        "buoyancy_proxy": 0.00025449421685287726,
+        "deviation_ke": 1.7119527647087778
+      }
+    }
+  },
+  {
+    "day": 95.0,
+    "deviation_ke_m2_s2": 1.8217651518403182,
+    "barotropic_to_deviations_m2_s3": -1.5462766263083446e-06,
+    "buoyancy_production_proxy_m2_s3": 0.0002802919263318404,
+    "conditional": {
+      "zeta_lt_minus_f": {
+        "mass_fraction": 3.5577771976147823e-06,
+        "shear_production": -1.2641830768105616e-05,
+        "buoyancy_proxy": 0.0016736554027889099,
+        "deviation_ke": 4.659756827261437
+      },
+      "zeta_gt_f": {
+        "mass_fraction": 2.4725787733751426e-05,
+        "shear_production": -4.215106000921957e-06,
+        "buoyancy_proxy": 0.0006313154823132235,
+        "deviation_ke": 2.6703777154810986
+      },
+      "anticyclonic": {
+        "mass_fraction": 0.5285407675944646,
+        "shear_production": -1.487142033693032e-06,
+        "buoyancy_proxy": 0.00030478738811858425,
+        "deviation_ke": 1.9171889167651328
+      },
+      "cyclonic": {
+        "mass_fraction": 0.4714592324055355,
+        "shear_production": -1.6125708906348909e-06,
+        "buoyancy_proxy": 0.0002528306968437943,
+        "deviation_ke": 1.7147880337917905
+      }
+    }
+  },
+  {
+    "day": 96.0,
+    "deviation_ke_m2_s2": 1.8394812529880709,
+    "barotropic_to_deviations_m2_s3": -1.5391450885413748e-06,
+    "buoyancy_production_proxy_m2_s3": 0.00028184946354091017,
+    "conditional": {
+      "zeta_lt_minus_f": {
+        "mass_fraction": 8.195797674773855e-06,
+        "shear_production": -7.046390763679957e-06,
+        "buoyancy_proxy": 0.0037972730658259275,
+        "deviation_ke": 11.151954536053628
+      },
+      "zeta_gt_f": {
+        "mass_fraction": 2.4622886358207942e-05,
+        "shear_production": -1.8643987907570545e-05,
+        "buoyancy_proxy": 0.0003962428450612364,
+        "deviation_ke": 3.33468530436566
+      },
+      "anticyclonic": {
+        "mass_fraction": 0.52938447644927,
+        "shear_production": -1.4628855370189523e-06,
+        "buoyancy_proxy": 0.000308080972650965,
+        "deviation_ke": 1.940402338995762
+      },
+      "cyclonic": {
+        "mass_fraction": 0.4706155235507301,
+        "shear_production": -1.6249276875775541e-06,
+        "buoyancy_proxy": 0.00025234224794392246,
+        "deviation_ke": 1.725957466361184
+      }
+    }
+  },
+  {
+    "day": 97.0,
+    "deviation_ke_m2_s2": 1.8532461970052592,
+    "barotropic_to_deviations_m2_s3": -1.4727637114205666e-06,
+    "buoyancy_production_proxy_m2_s3": 0.00028316608862677373,
+    "conditional": {
+      "zeta_lt_minus_f": {
+        "mass_fraction": 1.4117355247465509e-05,
+        "shear_production": -8.144935606026984e-05,
+        "buoyancy_proxy": 0.0009218593040962502,
+        "deviation_ke": 9.899261251808873
+      },
+      "zeta_gt_f": {
+        "mass_fraction": 2.4004610752002767e-05,
+        "shear_production": -2.3435397951803445e-06,
+        "buoyancy_proxy": -2.5897780651027175e-05,
+        "deviation_ke": 2.0322557961899625
+      },
+      "anticyclonic": {
+        "mass_fraction": 0.5285887711397479,
+        "shear_production": -1.418963515297178e-06,
+        "buoyancy_proxy": 0.00030903126687731997,
+        "deviation_ke": 1.9494677552619983
+      },
+      "cyclonic": {
+        "mass_fraction": 0.4714112288602521,
+        "shear_production": -1.5330893418148514e-06,
+        "buoyancy_proxy": 0.00025416371882785706,
+        "deviation_ke": 1.7453539107755665
+      }
+    }
+  },
+  {
+    "day": 98.0,
+    "deviation_ke_m2_s2": 1.8245421812431522,
+    "barotropic_to_deviations_m2_s3": -1.454138523304115e-06,
+    "buoyancy_production_proxy_m2_s3": 0.0002802716242381103,
+    "conditional": {
+      "zeta_lt_minus_f": {
+        "mass_fraction": 4.949887803994182e-06,
+        "shear_production": -5.6606737155142415e-05,
+        "buoyancy_proxy": 0.0009050838036752047,
+        "deviation_ke": 5.877797468494339
+      },
+      "zeta_gt_f": {
+        "mass_fraction": 3.188755558967679e-05,
+        "shear_production": -8.179554414915694e-06,
+        "buoyancy_proxy": 0.0006754431679976796,
+        "deviation_ke": 2.2346187377290656
+      },
+      "anticyclonic": {
+        "mass_fraction": 0.5282345652005284,
+        "shear_production": -1.3818881465657795e-06,
+        "buoyancy_proxy": 0.000307298623080821,
+        "deviation_ke": 1.9265017890206682
+      },
+      "cyclonic": {
+        "mass_fraction": 0.4717654347994718,
+        "shear_production": -1.53503708756237e-06,
+        "buoyancy_proxy": 0.0002500095619307628,
+        "deviation_ke": 1.7103782660651234
+      }
+    }
+  },
+  {
+    "day": 99.0,
+    "deviation_ke_m2_s2": 1.8078916503188136,
+    "barotropic_to_deviations_m2_s3": -1.4711247189956274e-06,
+    "buoyancy_production_proxy_m2_s3": 0.00027932740529810015,
+    "conditional": {
+      "zeta_lt_minus_f": {
+        "mass_fraction": 4.246058020577344e-06,
+        "shear_production": -4.546814146570622e-05,
+        "buoyancy_proxy": 0.0008091902977091446,
+        "deviation_ke": 6.963402160421779
+      },
+      "zeta_gt_f": {
+        "mass_fraction": 4.060720573776156e-05,
+        "shear_production": -4.436781183322199e-06,
+        "buoyancy_proxy": 0.0005293045542272241,
+        "deviation_ke": 2.939541224341174
+      },
+      "anticyclonic": {
+        "mass_fraction": 0.5282837979860208,
+        "shear_production": -1.4296880515631873e-06,
+        "buoyancy_proxy": 0.0003050369819634478,
+        "deviation_ke": 1.9048317226423843
+      },
+      "cyclonic": {
+        "mass_fraction": 0.47171620201397935,
+        "shear_production": -1.5175304179172098e-06,
+        "buoyancy_proxy": 0.0002505347694984501,
+        "deviation_ke": 1.6993266500803483
+      }
+    }
+  },
+  {
+    "day": 100.0,
+    "deviation_ke_m2_s2": 1.7989546275147803,
+    "barotropic_to_deviations_m2_s3": -1.437387732132457e-06,
+    "buoyancy_production_proxy_m2_s3": 0.0002792577056574333,
+    "conditional": {
+      "zeta_lt_minus_f": {
+        "mass_fraction": 4.567895467739516e-06,
+        "shear_production": 1.1210794727230442e-05,
+        "buoyancy_proxy": 0.0006705721707055589,
+        "deviation_ke": 2.5067015025921804
+      },
+      "zeta_gt_f": {
+        "mass_fraction": 2.2642940439000723e-05,
+        "shear_production": 3.944818693307388e-05,
+        "buoyancy_proxy": 0.00011879135936702997,
+        "deviation_ke": 4.5788396596509395
+      },
+      "anticyclonic": {
+        "mass_fraction": 0.5280749879828596,
+        "shear_production": -1.3787276002059344e-06,
+        "buoyancy_proxy": 0.0003035092241406215,
+        "deviation_ke": 1.8891556915248608
+      },
+      "cyclonic": {
+        "mass_fraction": 0.47192501201714054,
+        "shear_production": -1.503027288573356e-06,
+        "buoyancy_proxy": 0.0002521207241339564,
+        "deviation_ke": 1.6980213762985152
+      }
+    }
+  }
+]

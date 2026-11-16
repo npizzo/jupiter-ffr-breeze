@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "tests": [
+    "periodic derivative",
+    "uniform-flow curl",
+    "interpolation identity",
+    "three analytic solid-body vortices",
+    "localized Gaussian instability annulus",
+    "rotation/sign covariance",
+    "independent face-curl and centered-curl equivalence"
+  ],
+  "gaussian_max_discriminant_error_resolved_radii": 0.00952769615371872,
+  "gaussian_max_discriminant_error_all_radii": 0.060054681754301065,
+  "validation_radius_note": "The 0.04 discriminant-error tolerance applies at r=4\u201310 cells, matching the diagnostic acceptance region; smaller radii remain excluded."
+}
