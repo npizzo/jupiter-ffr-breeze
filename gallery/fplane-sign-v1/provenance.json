@@ -1,0 +1,44 @@
+{
+  "published_date": "2026-11-15",
+  "scope": "Six-hour identical-field opposite-f continuations in existing capped heated f-plane setup",
+  "compute_location": "Unity",
+  "jobs": {
+    "gpu_validation": {
+      "id": 1793771,
+      "status": "COMPLETED"
+    },
+    "plus": {
+      "id": "1793773_0",
+      "status": "COMPLETED",
+      "elapsed": "00:13:30"
+    },
+    "minus": {
+      "id": "1793773_1",
+      "status": "COMPLETED",
+      "elapsed": "00:13:07"
+    },
+    "analysis_and_render": {
+      "id": 1793774,
+      "status": "COMPLETED"
+    }
+  },
+  "source_commit": "86d145a495ca7d359add22438184e591b498ec40",
+  "assets_commit": "e232d861f2714418b2ef319f87615aa8511a3320",
+  "grid": [
+    256,
+    256,
+    64
+  ],
+  "earth_days": [
+    90,
+    90.25
+  ],
+  "bottom_heat_flux_W_m2": 162,
+  "gpu": "NVIDIA L40S",
+  "native_budget_gate": "PASS both cases",
+  "physical_attribution_screen": "NOT PASSED both cases",
+  "reflected_state_test": "PASS; separate from identical-field production pair",
+  "movie_full_decode": "PASS on Unity",
+  "figure_label_correction": "Rendered on Unity with publication_plot.py; numerical data and movie unchanged",
+  "gallery_url": "https://npizzo.github.io/jupiter-ffr-breeze/gallery/fplane-analysis/#fplane-sign-v1"
+}
