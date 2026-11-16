@@ -1,0 +1,31 @@
+{
+  "status": "COMPLETED_REVIEWED",
+  "verified_date": "2026-11-16",
+  "production_jobs": [
+    "1818426_0",
+    "1818426_1",
+    "1819738_0",
+    "1819738_1"
+  ],
+  "all_exit_codes": "0:0",
+  "render_jobs": [
+    "1818429",
+    "1819743"
+  ],
+  "publication_job": "1845114",
+  "reference_growth_time_interval": [
+    120,
+    1200
+  ],
+  "movie_frames": 901,
+  "movie_full_decode_passed": true,
+  "asset_git_blob_hashes_verified": true,
+  "compute_location": "Unity",
+  "report": "gallery/stirring2d-four-v1/report.json",
+  "gallery": "https://npizzo.github.io/jupiter-ffr-breeze/#stirring2d-four-v1",
+  "limitations": [
+    "Stochastic saved flux, spectra and skewness are post-pulse phase-conditioned.",
+    "Energy work rates use all-step integrated budgets.",
+    "Single realizations; no established condensate or spontaneous sign selection."
+  ]
+}
