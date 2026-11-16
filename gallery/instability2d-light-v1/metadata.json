@@ -1,0 +1,111 @@
+{
+  "status": "COMPLETE",
+  "compute_location": "Unity",
+  "simulation_job": "1810727",
+  "config": {
+    "allow_zonal_forcing": false,
+    "amplitude": 0.009375,
+    "compute_location": "Unity",
+    "cubic_velocity_drag": 1.0,
+    "domain": [
+      6.283185307179586,
+      6.283185307179586
+    ],
+    "dt": 0.01,
+    "f": 1.0,
+    "forcing_band": [
+      6.0,
+      8.0
+    ],
+    "geometry": "periodic horizontal 2D",
+    "grid": [
+      128,
+      128
+    ],
+    "initial_rms_velocity": 0.02,
+    "oceananigans_version": "0.117.2",
+    "physical_time_mapping": "none; dimensionless time, not Jupiter days",
+    "planetary_beta": 0.0,
+    "remove_mean_drag": true,
+    "scientific_scope": "Exploratory instability-forced 2D pilot; not an exact van Kan reproduction",
+    "seed": 1701,
+    "sigma_max_injection": 0.6,
+    "target_growth_times": 120.0,
+    "target_iterations": 20000,
+    "viscosity": 0.001,
+    "wall_time_limit_seconds": 2400,
+    "source_sha256": {
+      "audit.jl": "07694fc8569933f6551cb736dc9210454c5898512c06c0b8fa08427f9e19c4ac",
+      "core.jl": "7b03014ba4500f05c7f978e9a80bfc3d525b8300dd245acdc5500fe3bf78430c",
+      "run.jl": "da4f34ae2ab060faa0ade8fd02baa43f734a7cc5ca0795cdf1d4522e9c83a1ba"
+    }
+  },
+  "review": {
+    "absolute_step_third_moment_increments": [
+      44.80392550484424,
+      202.94154202954832,
+      66.24795762808877,
+      156.38268410902228
+    ],
+    "elapsed_seconds": 525.3835937976837,
+    "growth_times_completed": 119.99999999997785,
+    "max_cfl": 0.3795809026916578,
+    "max_divergence": 6.786238238021269e-15,
+    "max_drag_work": -3.315202487693045e-07,
+    "max_relative_third_moment_error": 1.04773218310401e-16,
+    "max_relative_vorticity_increment_error": 7.841341053464448e-16,
+    "max_viscous_work": -1.7639810519408322e-05,
+    "min_injection_work": 5.101932002913004e-05,
+    "numerical_advection_fraction": 0.10527926216486501,
+    "physical_attribution_gate": "FAIL_NO_MECHANISM_CLAIM",
+    "scope": "Exploratory pilot; no sign preference or inverse-cascade claim from a single realization",
+    "status": "COMPLETED",
+    "third_moment_increments": [
+      -1.4240337106265626,
+      -43.47594331969388,
+      4.8467856292626035,
+      40.53279115290735
+    ],
+    "third_moment_terms": [
+      "advection_coriolis",
+      "instability",
+      "viscosity",
+      "cubic_drag"
+    ]
+  },
+  "movie": {
+    "file": "vorticity_0_120_growth_times.mp4",
+    "frames": 101,
+    "duration_seconds": 12.62,
+    "fps": 8,
+    "growth_times": [
+      0.0,
+      119.99999999997785
+    ],
+    "full_decode_passed": true
+  },
+  "color_scale": {
+    "type": "symmetric asinh",
+    "linear_width": 0.1,
+    "limits": [
+      -14.358678817749023,
+      14.358678817749023
+    ],
+    "fixed_across_all_frames": true,
+    "clipping": false,
+    "colormap": "RdBu_r"
+  },
+  "scope": "Single-plane 2D pilot; no depth or tracer dimension exists. Not a three-depth convection run.",
+  "limitation": "Native budgets close, but numerical-advection metric 10.53% exceeds 10% attribution cutoff; no physical sign-selection mechanism established.",
+  "renderer_sha256": "574dfaef36ecf0006b7b200ece2f22951fe7334912b108c83a76687e6a15e545",
+  "assets": {
+    "poster.png": {
+      "bytes": 130490,
+      "sha256": "0755db368253aee9ddfecbb58f17166b12b3196e25e6a5ead195ac857834462a"
+    },
+    "vorticity_0_120_growth_times.mp4": {
+      "bytes": 3889440,
+      "sha256": "12280b8265eb445cebaad3c59f972489f7411bca9f56b50b16b3dd1160b75996"
+    }
+  }
+}
