@@ -1,0 +1,28 @@
+{
+  "status": "COMPLETE",
+  "full_decode_passed": true,
+  "assets": {
+    "analysis.json": {
+      "bytes": 22589,
+      "sha256": "c9121ebba1a579c54b81339fcf4e63448094f45f9782c4f2d66815dd8c28cbd1"
+    },
+    "plus_over_minus.json": {
+      "bytes": 2652,
+      "sha256": "2b5830e7f4edfa066156512dd4877798d829be4cc3c6ea05f01d4321591a6788"
+    },
+    "plus_over_minus.mp4": {
+      "bytes": 4608588,
+      "sha256": "40196b5de71c2b973f8c5fd10731d4632789811556688ee300ec4699075e9a0c"
+    },
+    "plus_over_minus.png": {
+      "bytes": 2540018,
+      "sha256": "8acb8b54b41f66fba88f103acd7a051f6c727fba1fb5d9a31d9da98cb655fcf6"
+    },
+    "sign_budget.png": {
+      "bytes": 309093,
+      "sha256": "7c56b157eaf39503a103566c1e598890cae2e34f0c5f495097de983df0dbf527"
+    }
+  },
+  "compute_location": "Unity",
+  "publication_note": "Budget figure axis labels redrawn with supported characters; all numerical values and movie unchanged."
+}

@@ -1,0 +1,110 @@
+{
+  "scale_reference_cases": [
+    "plus",
+    "minus"
+  ],
+  "labels": [
+    "+f: unchanged day-90 heated state",
+    "\u2212f: identical day-90 initial fields"
+  ],
+  "case_names": [
+    "plus",
+    "minus"
+  ],
+  "title": "F-plane sign response | six hours | positive \u03b6 is counterclockwise",
+  "layout": "4 rows, three depth columns",
+  "row_order": [
+    "+f: unchanged day-90 heated state: vorticity",
+    "+f: unchanged day-90 heated state: tracer",
+    "\u2212f: identical day-90 initial fields: vorticity",
+    "\u2212f: identical day-90 initial fields: tracer"
+  ],
+  "times_seconds": [
+    7776000.0,
+    7776600.0,
+    7777200.0,
+    7777800.0,
+    7778400.0,
+    7779000.0,
+    7779600.0,
+    7780200.0,
+    7780800.0,
+    7781400.0,
+    7782000.0,
+    7782600.0,
+    7783200.0,
+    7783800.0,
+    7784400.0,
+    7785000.0,
+    7785600.0,
+    7786200.0,
+    7786800.0,
+    7787400.0,
+    7788000.0,
+    7788600.0,
+    7789200.0,
+    7789800.0,
+    7790400.0,
+    7791000.0,
+    7791600.0,
+    7792200.0,
+    7792800.0,
+    7793400.0,
+    7794000.0,
+    7794600.0,
+    7795200.0,
+    7795800.0,
+    7796400.0,
+    7797000.0,
+    7797600.0
+  ],
+  "heights_m": [
+    19687.5,
+    59062.5,
+    100312.5
+  ],
+  "fps": 4,
+  "frames": 37,
+  "crf": 28,
+  "vorticity_normalization": {
+    "type": "asinh",
+    "linear_width": 0.1,
+    "limits_by_depth": [
+      [
+        -0.9979749321937561,
+        0.9979749321937561
+      ],
+      [
+        -1.2560592889785767,
+        1.2560592889785767
+      ],
+      [
+        -0.24744360148906708,
+        0.24744360148906708
+      ]
+    ],
+    "shared_between_cases": true,
+    "fixed_in_time": true,
+    "units": "zeta divided by absolute central f0; positive is counterclockwise",
+    "f0_by_case_s_inv": [
+      0.0002880957739764384,
+      -0.0002880957739764384
+    ]
+  },
+  "tracer_normalization": {
+    "type": "two_sided_centered_asinh",
+    "center": 0.0793082,
+    "linear_width": 0.001,
+    "colormap": "BrBG",
+    "limits": [
+      0.0,
+      1.0
+    ],
+    "units": "physical concentration C",
+    "center_basis": "Rounded common background concentration from Unity tracer audit; fixed, never recalculated per frame.",
+    "shared_between_cases_and_depths": true,
+    "fixed_in_time": true
+  },
+  "renderer_sha256": "606e61c06b27646f613452069aad98e62cf34b9472e43fdf95e3f2a7f5d17125",
+  "note": "Tracer values are unchanged absolute concentrations; only their color mapping differs from the original movies. Every saved time included. No field clipping or temporal interpolation. Values on colorbars are physical C or \u03b6/|f\u2080|. Rendering uses nearest-neighbor display sampling."
+}
