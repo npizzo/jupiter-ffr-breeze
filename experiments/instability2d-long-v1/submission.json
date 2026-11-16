@@ -1,0 +1,37 @@
+{
+  "status": "PRODUCTION_SUBMITTED",
+  "validation_job": "1817684",
+  "source_checkpoint": "data/instability2d-light-v1-1810727/checkpoint.jld2",
+  "branch_growth_time": 120,
+  "target_growth_time": 1200,
+  "cases": [
+    "forced",
+    "unforced"
+  ],
+  "grid": [
+    128,
+    128
+  ],
+  "forcing_band": [
+    6,
+    8
+  ],
+  "dt": 0.01,
+  "forcing_on_amplitude": 0.009375,
+  "forcing_off_amplitude": 0,
+  "viscosity": 0.001,
+  "cubic_drag": 1,
+  "new_beta": false,
+  "compute_location": "Unity",
+  "production_resource_ceiling": "2 tasks, 1 CPU each, 4 h each; internal stop 3.5 h; no automatic extension",
+  "prior_check": {
+    "job": "1816774",
+    "failure": "Julia broadcast parse error before any integration",
+    "elapsed_seconds": 11
+  },
+  "validation_status": "PASS",
+  "production_array_job": "1818426",
+  "output": "data/instability2d-long-v1-1817684",
+  "render_output": "rendered/instability2d-long-v1-1817684",
+  "render_job": "1818429"
+}

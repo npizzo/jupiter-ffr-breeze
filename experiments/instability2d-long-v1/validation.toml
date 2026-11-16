@@ -1,0 +1,39 @@
+compute_location = "Unity"
+drag_decay_error = 1.3219980665724052e-13
+f_flip_error = 4.930088955349497e-16
+initial_energy = 0.065050277507609
+manufactured_inverse_flux = -0.1251004472099216
+reflection_error = 3.405407023164276e-16
+source_checkpoint_sha256 = "57777461206872b3ba9763c4b7fc7a1289d05731da84e3e47d619df69b869c34"
+status = "PASS"
+viscous_decay_error = 1.3469887315328929e-14
+
+[forced_check]
+energy_closure = 4.910253955130248e-16
+net_advection_ratio = 1.1762212937850578e-16
+parseval_error = 2.2004524678604256e-16
+work_error = 2.4141786620761113e-16
+
+[native_audit]
+absolute_step_energy_increments = [1.5254876174730915e-15, 1.2064135742964332e-5, 3.838898322830759e-6, 6.513517779765062e-8]
+absolute_step_third_moment_increments = [1.0104458058465977e-6, 7.158533446184556e-5, 2.535220354494794e-5, 7.080312061029693e-7]
+energy_increments = [-1.233385823324207e-15, 1.2064135742964332e-5, -3.838898322830759e-6, -6.513517779765062e-8]
+energy_terms = ["advection_coriolis", "instability", "viscosity", "cubic_drag"]
+max_cfl = 0.010233497358238686
+max_divergence = 1.8041124150158794e-16
+max_drag_work = -3.122351719842067e-7
+max_relative_energy_increment_error = 3.2241738202289495e-16
+max_relative_third_moment_error = 9.319971001452641e-17
+max_relative_vorticity_increment_error = 3.338022273318841e-16
+max_viscous_work = -1.886048627426695e-5
+min_injection_work = 5.552176805050604e-5
+numerical_advection_fraction = 0.010348096836258123
+physical_attribution_gate = "PASS"
+third_moment_increments = [-1.0104458058465977e-6, 7.158533446184556e-5, -2.535220354494794e-5, -7.080312061029693e-7]
+third_moment_terms = ["advection_coriolis", "instability", "viscosity", "cubic_drag"]
+
+[unforced_check]
+energy_closure = 2.537869091337819e-16
+net_advection_ratio = 3.982715168719129e-17
+parseval_error = 1.6215031251394704e-16
+work_error = 1.233935192645181e-16
