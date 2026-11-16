@@ -1,0 +1,112 @@
+{
+  "status": "TWO_CHAINS_SUBMITTED_AFTER_DRIVER_CHECK",
+  "check_job": "1848593",
+  "cases": [
+    "forced",
+    "unforced"
+  ],
+  "grid": [
+    512,
+    512
+  ],
+  "f": 1.0,
+  "beta": 0.0,
+  "viscosity": 0.0001,
+  "drag": 0.0,
+  "forcing_amplitude": {
+    "forced": 0.0002,
+    "unforced": 0.0
+  },
+  "dt": 0.0025,
+  "final_time": 200.0,
+  "source": "data/viscous2d-refine-v1-1848240/initial.jld2",
+  "source_sha256": "35cb85c5c7f179ac97dce1658f6779cd88e1d39c40b6193292412d250a7a8c6d",
+  "movies": false,
+  "analysis_jobs": false,
+  "output": "checkpoints, raw vorticity, basic progress and completion status",
+  "segment_end_times": [
+    40,
+    80,
+    120,
+    160,
+    200
+  ],
+  "scope": "Launch independently of still-running short resolution analysis, as authorized; only driver equivalence and restart checks gate new submission.",
+  "jobs": {
+    "forced": [
+      {
+        "job": "1848662",
+        "target_time": 40,
+        "depends_on": "1848593",
+        "output": "data/viscous2d-long512-v1-1848593/forced/to_040",
+        "source": "data/viscous2d-refine-v1-1848240/initial.jld2"
+      },
+      {
+        "job": "1848663",
+        "target_time": 80,
+        "depends_on": "1848662",
+        "output": "data/viscous2d-long512-v1-1848593/forced/to_080",
+        "source": "data/viscous2d-long512-v1-1848593/forced/to_040/checkpoint.jld2"
+      },
+      {
+        "job": "1848666",
+        "target_time": 120,
+        "depends_on": "1848663",
+        "output": "data/viscous2d-long512-v1-1848593/forced/to_120",
+        "source": "data/viscous2d-long512-v1-1848593/forced/to_080/checkpoint.jld2"
+      },
+      {
+        "job": "1848667",
+        "target_time": 160,
+        "depends_on": "1848666",
+        "output": "data/viscous2d-long512-v1-1848593/forced/to_160",
+        "source": "data/viscous2d-long512-v1-1848593/forced/to_120/checkpoint.jld2"
+      },
+      {
+        "job": "1848668",
+        "target_time": 200,
+        "depends_on": "1848667",
+        "output": "data/viscous2d-long512-v1-1848593/forced/to_200",
+        "source": "data/viscous2d-long512-v1-1848593/forced/to_160/checkpoint.jld2"
+      }
+    ],
+    "unforced": [
+      {
+        "job": "1848671",
+        "target_time": 40,
+        "depends_on": "1848593",
+        "output": "data/viscous2d-long512-v1-1848593/unforced/to_040",
+        "source": "data/viscous2d-refine-v1-1848240/initial.jld2"
+      },
+      {
+        "job": "1848676",
+        "target_time": 80,
+        "depends_on": "1848671",
+        "output": "data/viscous2d-long512-v1-1848593/unforced/to_080",
+        "source": "data/viscous2d-long512-v1-1848593/unforced/to_040/checkpoint.jld2"
+      },
+      {
+        "job": "1848679",
+        "target_time": 120,
+        "depends_on": "1848676",
+        "output": "data/viscous2d-long512-v1-1848593/unforced/to_120",
+        "source": "data/viscous2d-long512-v1-1848593/unforced/to_080/checkpoint.jld2"
+      },
+      {
+        "job": "1848680",
+        "target_time": 160,
+        "depends_on": "1848679",
+        "output": "data/viscous2d-long512-v1-1848593/unforced/to_160",
+        "source": "data/viscous2d-long512-v1-1848593/unforced/to_120/checkpoint.jld2"
+      },
+      {
+        "job": "1848681",
+        "target_time": 200,
+        "depends_on": "1848680",
+        "output": "data/viscous2d-long512-v1-1848593/unforced/to_200",
+        "source": "data/viscous2d-long512-v1-1848593/unforced/to_160/checkpoint.jld2"
+      }
+    ]
+  },
+  "output_root": "data/viscous2d-long512-v1-1848593"
+}

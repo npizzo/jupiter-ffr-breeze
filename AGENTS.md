@@ -28,3 +28,8 @@ On November 11, 2026 the user requested clearer late-time tracer gradients in th
 Before launching simulations, explicitly state the assumptions to the user in short bullets: equations and dimensionality, geometry, initial conditions, forcing, dissipation, resolution, duration, controls and any release gates. Do not infer authorization for one physical term from authorization for another. This disclosure does not itself require a new permission question when the user has already authorized the experiment.
 
 For the current minimal 2D cascade/LSV experiments, use ordinary Laplacian viscosity only. The user explicitly rejected cubic drag and did not authorize importing van Kan-style dissipation along with the instability forcing. Do not add linear drag, nonlinear drag or hyperviscosity without an explicit change in the user's instructions. Compare unforced decay, weak instability forcing, weak random-sign stirring and weak f-aligned-core stirring from identical initial conditions. Verify transient unforced inverse energy transfer using native flux and absolute low-wavenumber energy, not morphology or energy fractions alone. Keep this separate from beta-plane Ferrel-cell work.
+
+
+## Long 512² two-case campaign
+
+On November 16 the user authorized the higher-resolution forced/unforced long runs and said no comparison movies or diagnostics are needed. For `viscous2d_long512_v1`, run only the instability-forced and unforced cases through t=200, with ordinary viscosity and no drag. Do not submit movie or diagnostic-analysis jobs for this campaign. Retain checkpoints and raw vorticity; basic finite-state/CFL and implementation/restart checks are retained. This explicit two-case request supersedes the earlier four-case plan for this campaign.
