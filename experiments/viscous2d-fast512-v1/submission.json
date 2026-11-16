@@ -1,0 +1,77 @@
+{
+  "status": "SUBMITTED_AFTER_12_PASSED_CHECKS",
+  "grid": [
+    512,
+    512
+  ],
+  "start_time": 200,
+  "target_time": 400,
+  "dt": 0.0025,
+  "f": 1,
+  "beta": 0,
+  "viscosity": 0.0001,
+  "drag": 0,
+  "forcing_coefficient": {
+    "forced": 0.0002,
+    "unforced": 0
+  },
+  "check_job": "1872263",
+  "failed_check_job": "1871912",
+  "output_root": "data/viscous2d-fast512-v1-1872263",
+  "jobs": {
+    "forced": {
+      "job": "1873851",
+      "source": "data/viscous2d-long512-v1-1848831/forced/to_200/checkpoint.jld2",
+      "output": "data/viscous2d-fast512-v1-1872263/forced"
+    },
+    "unforced": {
+      "job": "1873856",
+      "source": "data/viscous2d-long512-v1-1848831/unforced/to_200/checkpoint.jld2",
+      "output": "data/viscous2d-fast512-v1-1872263/unforced"
+    }
+  },
+  "validation": {
+    "dt": 0.0025,
+    "forcing_coefficient": 0.0002,
+    "node": "uri-cpu028",
+    "status": "PASS",
+    "viscosity": 0.0001,
+    "code_sha256": {
+      "core.jl": "7b03014ba4500f05c7f978e9a80bfc3d525b8300dd245acdc5500fe3bf78430c",
+      "model.jl": "7a2eabe0cc129a6810f0a14e85e51a22a019c38a66acf51c9216858276e36e4a"
+    },
+    "forced": {
+      "estimated_t200_to400_compute_seconds": 3896.5593368,
+      "fast_bytes_per_step": 6246.4,
+      "fast_callback_bytes": 1040,
+      "fast_seconds_per_step": 0.04870699171,
+      "old_bytes_per_step": 226512198.08,
+      "old_seconds_per_step": 0.17118820478,
+      "relative_restart_error": 0.0,
+      "relative_velocity_error_30_steps": 5.629326489614658e-16,
+      "restart_source_sha256": "25b2baa5846eb849d7cd324742d423a281f441960d94e76624a1d7aade8079c8",
+      "speedup": 3.5146536209677977
+    },
+    "unforced": {
+      "estimated_t200_to400_compute_seconds": 2466.4643256000004,
+      "fast_bytes_per_step": 4614.4,
+      "fast_callback_bytes": 496,
+      "fast_seconds_per_step": 0.030830804070000002,
+      "old_bytes_per_step": 226512208.8,
+      "old_seconds_per_step": 0.17473199532,
+      "relative_restart_error": 0.0,
+      "relative_velocity_error_30_steps": 5.421616607179196e-16,
+      "restart_source_sha256": "3fc10d74a635366dd7d31f1a9d18abddc76d0f4a0370b6aed8cdd2bd88bb4a76",
+      "speedup": 5.667448533722267
+    }
+  },
+  "compute_location": "Unity",
+  "cpu_per_job": 1,
+  "memory_gb_per_job": 4,
+  "movie_job": "1873857",
+  "rendered_root": "rendered/viscous2d-fast512-v1-1872263",
+  "movie_time_range": [
+    0,
+    400
+  ]
+}

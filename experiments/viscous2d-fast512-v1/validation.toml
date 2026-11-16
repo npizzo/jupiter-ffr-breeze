@@ -1,0 +1,33 @@
+dt = 0.0025
+forcing_coefficient = 0.0002
+node = "uri-cpu028"
+status = "PASS"
+viscosity = 0.0001
+
+[code_sha256]
+"core.jl" = "7b03014ba4500f05c7f978e9a80bfc3d525b8300dd245acdc5500fe3bf78430c"
+"model.jl" = "7a2eabe0cc129a6810f0a14e85e51a22a019c38a66acf51c9216858276e36e4a"
+
+[forced]
+estimated_t200_to400_compute_seconds = 3896.5593368
+fast_bytes_per_step = 6246.4
+fast_callback_bytes = 1040
+fast_seconds_per_step = 0.04870699171
+old_bytes_per_step = 2.2651219808e8
+old_seconds_per_step = 0.17118820478
+relative_restart_error = 0.0
+relative_velocity_error_30_steps = 5.629326489614658e-16
+restart_source_sha256 = "25b2baa5846eb849d7cd324742d423a281f441960d94e76624a1d7aade8079c8"
+speedup = 3.5146536209677977
+
+[unforced]
+estimated_t200_to400_compute_seconds = 2466.4643256000004
+fast_bytes_per_step = 4614.4
+fast_callback_bytes = 496
+fast_seconds_per_step = 0.030830804070000002
+old_bytes_per_step = 2.265122088e8
+old_seconds_per_step = 0.17473199532
+relative_restart_error = 0.0
+relative_velocity_error_30_steps = 5.421616607179196e-16
+restart_source_sha256 = "3fc10d74a635366dd7d31f1a9d18abddc76d0f4a0370b6aed8cdd2bd88bb4a76"
+speedup = 5.667448533722267
