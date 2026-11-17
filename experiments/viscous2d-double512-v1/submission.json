@@ -1,0 +1,55 @@
+{
+  "status": "SUBMITTED_AFTER_VALIDATION",
+  "check_job": "1885121",
+  "grid": [
+    512,
+    512
+  ],
+  "dt": 0.0025,
+  "f": 1,
+  "beta": 0,
+  "viscosity": 0.0001,
+  "drag": 0,
+  "instability_coefficient": 0.0004,
+  "forcing_band": [
+    12,
+    16
+  ],
+  "allow_zonal_forcing": false,
+  "start_time": 0,
+  "target_time": 400,
+  "initial_source": "data/viscous2d-refine-v1-1848240/initial.jld2",
+  "initial_sha256": "35cb85c5c7f179ac97dce1658f6779cd88e1d39c40b6193292412d250a7a8c6d",
+  "output_root": "data/viscous2d-double512-v1-1885121",
+  "check_output": "data/viscous2d-double512-check-1885121",
+  "compute_location": "Unity",
+  "cpus_per_job": 1,
+  "jobs": [
+    {
+      "job": "1885133",
+      "target_time": 200,
+      "dependency": "1885121",
+      "source": "data/viscous2d-refine-v1-1848240/initial.jld2",
+      "output": "data/viscous2d-double512-v1-1885121/to_200"
+    },
+    {
+      "job": "1885135",
+      "target_time": 400,
+      "dependency": "1885133",
+      "source": "data/viscous2d-double512-v1-1885121/to_200/checkpoint.jld2",
+      "output": "data/viscous2d-double512-v1-1885121/to_400"
+    }
+  ],
+  "movie_job": "1885136",
+  "source_sha256": {
+    "scripts/viscous2d_double512_v1/render.py": "4741e7525b9e969cb8c13aeffde3bbccf736d837839cd1b84b18b6d0e8dfede5",
+    "scripts/viscous2d_double512_v1/model.jl": "7867ae045d025b383b411782116e07d59286876ba5c05fdffc2e0f349db53620",
+    "scripts/viscous2d_double512_v1/README.md": "a915535b5d5d53d6f9f57f434e0ba9310b45cb9e3be2c10b0b30d85bf6f5f72c",
+    "scripts/viscous2d_double512_v1/run.jl": "59104a149adf855d262aeb5fe4e95a0265077959f410cbe4bb1d52732e1f7c17",
+    "scripts/viscous2d_double512_v1/check.jl": "6d65c6d54c842a0124a5e17fa5019400740b5294409cc1cd4d243c58eb44588f",
+    "slurm/viscous2d-double512-v1-movies.sbatch": "45a00f8e2e37bd5cd7def50609f5caead6c4292df57971731e985df2eaa288f3",
+    "slurm/viscous2d-double512-v1-run.sbatch": "2e2fa0efcbc206c88ccf81bf459c8451c66cea451d92feeb2a3a6ad0127804eb",
+    "slurm/viscous2d-double512-v1-check.sbatch": "4df3aa75b228d40904351fb8e6559c7144fbebbe4a42de06226b4c08dee20ab6"
+  },
+  "rendered_root": "rendered/viscous2d-double512-v1-1885121"
+}

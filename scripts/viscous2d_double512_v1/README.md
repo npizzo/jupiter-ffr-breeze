@@ -1,0 +1,7 @@
+# Doubled instability forcing at 512²
+
+One new horizontal incompressible Oceananigans run from the original saved t=0 velocity fields through dimensionless t=400. The forcing coefficient is 0.0004, twice the existing 0.0002 case. The annulus 12≤|k|≤16 and exclusion of kx=0 are unchanged. Periodic 2π×2π box, f=1, beta=0, ordinary viscosity 0.0001, no drag or hyperviscosity, centered second-order advection, RK3, fixed dt=0.0025. No tracer or physical depth panels exist.
+
+Use the frozen efficient native-viscosity and planned-FFT implementation. The bounded Unity check verifies exact initial saved vorticity, exactly doubled forcing multiplier, agreement with the independent existing operator, serialized restart, efficient allocations and cost, and finite/CFL-safe evolution through t=2. Production retains the CFL <0.5 guard at each tendency call and stops on failure; it does not silently change timestep or forcing. Two dependent segments end at t=200 and t=400, save frames every 0.5 and checkpoints every 10. Failed checks block production and rendering.
+
+Reuse the completed unforced and original-forcing controls. Render a three-case synchronized vorticity movie and the new case separately on Unity, using one shared fixed symmetric asinh scale (width0.1, full extrema) over all three cases/times. Preserve earlier gallery assets. No extra scientific diagnostic jobs or 256² comparisons. The movies alone do not establish inverse transfer or sign selection. Constant f alone does not break vorticity-sign symmetry in this horizontal 2D model.
