@@ -1,0 +1,20 @@
+bytes_per_step = 6257.12
+dt = 0.0025
+forcing_coefficient = 0.0004
+forcing_multiplier_exactly_doubled = true
+identical_initial_saved_vorticity = true
+initial_sha256 = "35cb85c5c7f179ac97dce1658f6779cd88e1d39c40b6193292412d250a7a8c6d"
+node = "uri-cpu028"
+pilot_end_cfl = 0.2515538694828245
+pilot_end_time = 1.9999999999999685
+relative_restart_error = 0.0
+relative_velocity_error_30_steps = 4.463646962109863e-16
+seconds_per_step = 0.04808311618
+status = "PASS"
+viscosity = 0.0001
+
+[code_sha256]
+"../instability2d_v1/core.jl" = "7b03014ba4500f05c7f978e9a80bfc3d525b8300dd245acdc5500fe3bf78430c"
+"../viscous2d_fast512_v1/model.jl" = "7a2eabe0cc129a6810f0a14e85e51a22a019c38a66acf51c9216858276e36e4a"
+"model.jl" = "7867ae045d025b383b411782116e07d59286876ba5c05fdffc2e0f349db53620"
+"run.jl" = "59104a149adf855d262aeb5fe4e95a0265077959f410cbe4bb1d52732e1f7c17"
