@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "dt": 0.00125,
+  "forcing_coefficient": 0.000175,
+  "viscosity": 0.0001,
+  "identical_initial_saved_vorticity": true,
+  "new_forcing_band_verified": true,
+  "max_relative_discrete_net_growth_difference": 0.01596027675349505,
+  "reference_discrete_growth_range": [
+    0.04322600456671147,
+    0.076882141080449
+  ],
+  "halfscale_discrete_growth_range": [
+    0.04361517185952284,
+    0.07810920132949421
+  ],
+  "relative_restart_error": 0.0,
+  "relative_velocity_error_30_steps": 4.375497687339628e-16,
+  "seconds_per_step": 0.057184731319999994,
+  "bytes_per_step": 6257.12,
+  "pilot_end_time": 1.999999999999963,
+  "pilot_end_cfl": 0.11163771934750973
+}
