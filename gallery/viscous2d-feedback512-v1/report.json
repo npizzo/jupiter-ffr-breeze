@@ -1,0 +1,56 @@
+{
+  "status": "MEDIA_VERIFIED",
+  "time_range": [
+    0,
+    400
+  ],
+  "time_units": "dimensionless model time",
+  "compute_location": "Unity",
+  "frame_interval": 0.5,
+  "movies": {
+    "feedback_controls_512_0_400": {
+      "frames": 801,
+      "duration_seconds": 66.75,
+      "full_decode_passed": true
+    },
+    "feedback_plus_512_0_400": {
+      "frames": 801,
+      "duration_seconds": 66.75,
+      "full_decode_passed": true
+    }
+  },
+  "initial_fields_matched_or_reflected": true,
+  "color_scale": {
+    "type": "symmetric asinh",
+    "width": 0.1,
+    "limits": [
+      -13.496561050415039,
+      13.496561050415039
+    ],
+    "fixed_across_cases_and_time": true,
+    "clipping": false
+  },
+  "parameters": {
+    "grid": [
+      512,
+      512
+    ],
+    "a": 0.0002,
+    "b": 0.002,
+    "c": 0.0002,
+    "viscosity": 0.0001,
+    "forcing_band": [
+      12,
+      16
+    ],
+    "beta": 0,
+    "dt_ceiling": 0.0025
+  },
+  "notes": [
+    "Cubic control has b=0. Existing linear-only control has b=c=0.",
+    "Minus-f case starts from x-reflected initial velocity; it is a symmetry test, not an independent realization.",
+    "Source is mean-removed b*f*zeta^2-c*zeta^3. It is imposed phenomenology, not a derived convection or resonance model.",
+    "Scalar records distinguish large-scale energy and direct polynomial energy input; morphology alone does not establish inverse cascade.",
+    "No tracer or vertical layers exist in these horizontal 2D cases."
+  ]
+}
