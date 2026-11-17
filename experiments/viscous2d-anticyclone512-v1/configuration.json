@@ -1,0 +1,21 @@
+{
+  "grid": [
+    512,
+    512
+  ],
+  "domain": "[0, 2pi]^2, doubly periodic",
+  "f": 1,
+  "beta": 0,
+  "viscosity": 0.0001,
+  "selective_viscosity": 0.0004,
+  "dt": 0.0025,
+  "forcing": 0,
+  "drag": 0,
+  "target_time": 400,
+  "initial_condition": "Same original saved initial velocity as the completed 512-square unforced control; initial band12-16.",
+  "control": "Reuse existing unforced 512-square t=0-400; no control rerun.",
+  "operator": "nu_A Laplacian(sign(f) min(sign(f) zeta, 0))",
+  "interpretation": "Imposed phenomenological sign asymmetry; not a convection or inertial-instability model.",
+  "compute_location": "Unity; one CPU per job",
+  "release": "Conservation, energy/enstrophy dissipation, mirrored f, independent stencil, restart, dt refinement and measured performance must pass."
+}
