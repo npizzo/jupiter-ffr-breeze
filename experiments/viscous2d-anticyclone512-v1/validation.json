@@ -1,0 +1,21 @@
+{
+  "bytes_per_step": 6016.96,
+  "curl_relative_error": 5.346492744395799e-15,
+  "dt": 0.0025,
+  "half_dt_relative_difference": 9.799225750513845e-09,
+  "identical_initial_saved_vorticity": true,
+  "initial_selective_energy_rate": -0.001544041590245779,
+  "initial_selective_enstrophy_rate": -0.30395684201437734,
+  "mean_vorticity_tendency": 1.6263032587282567e-19,
+  "pilot_end_cfl": 0.2003356517805776,
+  "pilot_end_time": 1.9999999999999685,
+  "relative_mirror_error": 3.958044978077137e-16,
+  "relative_restart_error": 0.0,
+  "relative_velocity_error_30_steps": 3.956935205682313e-16,
+  "seconds_per_step": 0.04608268416,
+  "selective_viscosity": 0.0004,
+  "status": "PASS",
+  "viscosity": 0.0001,
+  "production_status": "Submitted after validation passed",
+  "compute_location": "Unity, one CPU per job"
+}
