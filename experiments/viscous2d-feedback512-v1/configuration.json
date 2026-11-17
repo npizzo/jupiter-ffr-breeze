@@ -1,0 +1,42 @@
+{
+  "grid": [
+    512,
+    512
+  ],
+  "domain": "periodic 2pi square",
+  "forcing_band": [
+    12,
+    16
+  ],
+  "a": 0.0002,
+  "b": 0.002,
+  "c": 0.0002,
+  "viscosity": 0.0001,
+  "dt_ceiling": 0.0025,
+  "target_time": 400,
+  "cases": {
+    "cubic_control": {
+      "b": 0,
+      "c": 0.0002,
+      "f": 1
+    },
+    "biased_plus": {
+      "b": 0.002,
+      "c": 0.0002,
+      "f": 1
+    },
+    "biased_minus": {
+      "b": 0.002,
+      "c": 0.0002,
+      "f": -1,
+      "initial_condition": "x-reflection of the same original velocity field"
+    }
+  },
+  "initial_condition": "Original saved 512-square turbulence, initial band12-16",
+  "existing_control": "Reuse completed linear-only 512-square forced run",
+  "selective_viscosity": 0,
+  "velocity_drag": 0,
+  "source": "P0(b*f*zeta^2-c*zeta^3)",
+  "compute_location": "Unity, one CPU per job",
+  "interpretation": "Controlled phenomenological hypothesis; not a derived convection closure or resonance model"
+}
