@@ -1,0 +1,28 @@
+{
+  "status": "SUBMITTED_BEHIND_VALIDATION",
+  "grid": [
+    512,
+    512
+  ],
+  "dt": 0.00125,
+  "f": 1,
+  "beta": 0,
+  "viscosity": 0.0001,
+  "drag": 0,
+  "forcing_band": [
+    24,
+    32
+  ],
+  "forcing_coefficient": 0.000175,
+  "allow_zonal_forcing": false,
+  "start_time": 0,
+  "target_time": 400,
+  "reference_band": [
+    12,
+    16
+  ],
+  "reference_coefficient": 0.0004,
+  "matching": "Net continuum linear growth (a-nu)k^2; native discrete mismatch measured in release check",
+  "initial_conditions": "Same original saved velocity fields; initial turbulence remains in band12\u201316.",
+  "control_runs": "Existing runs reused; no new control simulations."
+}
