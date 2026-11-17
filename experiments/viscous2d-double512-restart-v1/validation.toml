@@ -1,0 +1,11 @@
+status = "PASS"
+checkpoint_frame_matches = true
+dt = 0.00125
+previous_dt = 0.0025
+forcing_coefficient = 0.0004
+pilot_end_time = 161.99999999988893
+pilot_end_cfl = 0.26694839822343297
+relative_restart_error = 0.0
+relative_short_timestep_error = 1.8013308404972222e-09
+seconds_per_step = 0.055070634040000004
+bytes_per_step = 6257.12

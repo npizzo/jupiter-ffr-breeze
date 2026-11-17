@@ -86,3 +86,4 @@ report = {
 }
 (out / 'report.json').write_text(json.dumps(report, indent=2, allow_nan=False) + '\n')
 print('MEDIA_COMPLETE', flush=True)
+

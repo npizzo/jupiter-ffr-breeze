@@ -1,0 +1,114 @@
+{
+  "status": "MEDIA_VERIFIED",
+  "campaign_status": "PARTIAL_THROUGH_T160",
+  "time_range": [
+    0,
+    160
+  ],
+  "time_units": "dimensionless model time, not Earth or Jupiter days",
+  "frame_interval": 0.5,
+  "unique_frames_per_case": 321,
+  "duplicate_restart_frames_equal": true,
+  "identical_initial_vorticity": true,
+  "movies": {
+    "forcing_strength_512_0_160": {
+      "frames": 321,
+      "duration_seconds": 26.75,
+      "full_decode_passed": true
+    },
+    "double_forced_512_0_160": {
+      "frames": 321,
+      "duration_seconds": 26.75,
+      "full_decode_passed": true
+    }
+  },
+  "color_scale": {
+    "type": "symmetric asinh",
+    "linear_width": 0.1,
+    "limits": [
+      -19.845075607299805,
+      19.845075607299805
+    ],
+    "fixed_across_cases_and_time": true,
+    "clipping": false
+  },
+  "notes": [
+    "Only 512-square output; no comparison to 256-square runs.",
+    "No tracer or vertical layers exist in this horizontal 2D model.",
+    "Constant f cannot itself select vorticity sign in horizontal incompressible 2D dynamics.",
+    "This is a media publication, not an inverse-cascade or convergence diagnosis.",
+    "The doubled-forcing case stopped near t=161 at the CFL guard. This publication shows only t=0\u2013160. A separate restart halves dt from t=160; no restart frames are included here. Existing controls are reused; all cases share their initial field and physical parameters except forcing strength."
+  ],
+  "cases": {
+    "unforced": {
+      "case": "unforced",
+      "grid": [
+        512,
+        512
+      ],
+      "domain": [
+        6.283185307179586,
+        6.283185307179586
+      ],
+      "f": 1.0,
+      "beta": 0.0,
+      "dt": 0.0025,
+      "viscosity": 0.0001,
+      "drag": 0.0,
+      "instability_coefficient": 0.0,
+      "forcing_band": [
+        12.0,
+        16.0
+      ],
+      "allow_zonal_forcing": false,
+      "frame_interval": 0.5
+    },
+    "forced": {
+      "case": "forced",
+      "grid": [
+        512,
+        512
+      ],
+      "domain": [
+        6.283185307179586,
+        6.283185307179586
+      ],
+      "f": 1.0,
+      "beta": 0.0,
+      "dt": 0.0025,
+      "viscosity": 0.0001,
+      "drag": 0.0,
+      "instability_coefficient": 0.0002,
+      "forcing_band": [
+        12.0,
+        16.0
+      ],
+      "allow_zonal_forcing": false,
+      "frame_interval": 0.5
+    },
+    "double_forced": {
+      "case": "double_forced",
+      "grid": [
+        512,
+        512
+      ],
+      "domain": [
+        6.283185307179586,
+        6.283185307179586
+      ],
+      "f": 1.0,
+      "beta": 0.0,
+      "dt": 0.0025,
+      "viscosity": 0.0001,
+      "drag": 0.0,
+      "instability_coefficient": 0.0004,
+      "forcing_band": [
+        12.0,
+        16.0
+      ],
+      "allow_zonal_forcing": false,
+      "frame_interval": 0.5
+    }
+  },
+  "display": "Three cases, one horizontal plane each; shared fixed colors. No physical depths or tracer."
+}

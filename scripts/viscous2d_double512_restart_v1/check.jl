@@ -41,3 +41,4 @@ merge!(metrics,Dict("status"=>"PASS","forcing_coefficient"=>.0004,"dt"=>.00125,"
     "code_sha256"=>source_hashes(),"node"=>get(ENV,"SLURMD_NODENAME","")))
 open(joinpath(out,"PASS.toml"),"w") do io;TOML.print(io,metrics;sorted=true);end
 TOML.print(stdout,metrics;sorted=true);flush(stdout)
+
