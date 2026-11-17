@@ -13,8 +13,8 @@ lap(q,dx,dy)=(circshift(q,(1,0)).+circshift(q,(-1,0)).-2q)./dx^2+
 function reference_terms!(m;f=1.)
     u,v=state(m);o=BandOperator(size(u,1),size(u,2);kmin=12.,kmax=16.)
     q=vorticity(o,u,v);qa=sign(f).*min.(sign(f).*q,0.);dx=o.lx/o.nx;dy=o.ly/o.ny
-    interior(m.timestepper.Gⁿ.u)[:,:,1].-=.0004.*(circshift(qa,(0,-1)).-qa)./dy
-    interior(m.timestepper.Gⁿ.v)[:,:,1].+=.0004.*(circshift(qa,(-1,0)).-qa)./dx
+    interior(m.timestepper.Gⁿ.u)[:,:,1] .-= 0.0004 .*(circshift(qa,(0,-1)).-qa)./dy
+    interior(m.timestepper.Gⁿ.v)[:,:,1] .+= 0.0004 .*(circshift(qa,(-1,0)).-qa)./dx
 end
 function evolve(u,v;steps=30,t=0.,f=1.,reference=false,dt=.0025)
     m,b=setup_anticyclone(u,v;t,f,dt)
@@ -31,7 +31,7 @@ metrics=Dict{String,Any}()
     fill!(interior(m.timestepper.Gⁿ.u),0.);fill!(interior(m.timestepper.Gⁿ.v),0.);b(m)
     fu=copy(dropdims(Array(interior(m.timestepper.Gⁿ.u));dims=3))
     fv=copy(dropdims(Array(interior(m.timestepper.Gⁿ.v));dims=3))
-    D=vorticity(o,fu,fv);expected=.0004.*lap(qa,dx,dy)
+    D=vorticity(o,fu,fv);expected=0.0004 .*lap(qa,dx,dy)
     curlerr=rel(D,expected);@test curlerr<1e-12
     @test abs(mean(D))<1e-12*maximum(abs,D)
     @test abs(mean(fu))<1e-14 && abs(mean(fv))<1e-14
