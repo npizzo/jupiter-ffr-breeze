@@ -1,0 +1,61 @@
+{
+  "status": "MEDIA_VERIFIED",
+  "compute_location": "Unity",
+  "time_range": [
+    0,
+    400
+  ],
+  "time_units": "dimensionless model time, not Earth or Jupiter days",
+  "frame_interval": 0.5,
+  "unique_frames_per_case": 801,
+  "duplicate_restart_frames_equal": true,
+  "identical_initial_vorticity": true,
+  "movies": {
+    "selective_control_512_0_400": {
+      "frames": 801,
+      "duration_seconds": 66.75,
+      "full_decode_passed": true
+    },
+    "selective_512_0_400": {
+      "frames": 801,
+      "duration_seconds": 66.75,
+      "full_decode_passed": true
+    }
+  },
+  "color_scale": {
+    "type": "symmetric asinh",
+    "linear_width": 0.1,
+    "limits": [
+      -10.483070373535156,
+      10.483070373535156
+    ],
+    "fixed_across_cases_and_time": true,
+    "clipping": false
+  },
+  "notes": [
+    "Only 512-square output; no comparison to 256-square runs.",
+    "No tracer or vertical layers exist in this horizontal 2D model.",
+    "The selective operator explicitly imposes sign asymmetry. It is not a model of convection or a centrifugal-instability threshold.",
+    "This is a media publication, not an inverse-cascade or convergence diagnosis.",
+    "Extra viscosity 0.0004 acts through Laplacian(min(zeta,0)), preserving mean circulation. Interface fluxes also affect adjacent positive vorticity. Existing unforced output is reused."
+  ],
+  "parameters": {
+    "grid": [
+      512,
+      512
+    ],
+    "domain": [
+      6.283185307179586,
+      6.283185307179586
+    ],
+    "f": 1,
+    "beta": 0,
+    "viscosity": 0.0001,
+    "drag": 0,
+    "dt": 0.0025,
+    "instability_coefficient": 0,
+    "selective_viscosity": 0.0004,
+    "control_selective_viscosity": 0,
+    "operator": "nu_A Laplacian(min(zeta,0)); f=+1"
+  }
+}

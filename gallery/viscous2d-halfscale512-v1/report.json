@@ -1,0 +1,58 @@
+{
+  "status": "MEDIA_VERIFIED",
+  "compute_location": "Unity",
+  "time_range": [
+    0,
+    400
+  ],
+  "time_units": "dimensionless model time, not Earth or Jupiter days",
+  "frame_interval": 0.5,
+  "unique_frames_per_case": 801,
+  "duplicate_restart_frames_equal": true,
+  "same_original_initial_velocity_file": true,
+  "movies": {
+    "halfscale_512_0_400": {
+      "frames": 801,
+      "duration_seconds": 66.75,
+      "full_decode_passed": true
+    }
+  },
+  "color_scale": {
+    "type": "symmetric asinh",
+    "linear_width": 0.1,
+    "limits": [
+      -11.05318546295166,
+      11.05318546295166
+    ],
+    "fixed_across_cases_and_time": true,
+    "clipping": false
+  },
+  "notes": [
+    "Only 512-square output; no comparison to 256-square runs.",
+    "No tracer or vertical layers exist in this horizontal 2D model.",
+    "Constant f cannot itself select vorticity sign in horizontal incompressible 2D dynamics.",
+    "This is a media publication, not an inverse-cascade or convergence diagnosis.",
+    "Forcing band24\u201332 and coefficient0.000175 match continuum net growth to band12\u201316 with coefficient0.0004 at viscosity0.0001. Native discrete growth differences are documented in validation. Initial turbulence remains in band12\u201316; it is not rescaled. This movie has no control panels."
+  ],
+  "parameters": {
+    "grid": [
+      512,
+      512
+    ],
+    "domain": [
+      6.283185307179586,
+      6.283185307179586
+    ],
+    "f": 1,
+    "beta": 0,
+    "viscosity": 0.0001,
+    "drag": 0,
+    "dt": 0.00125,
+    "forcing_band": [
+      24,
+      32
+    ],
+    "instability_coefficient": 0.000175,
+    "max_discrete_growth_mismatch_fraction": 0.01596027675349505
+  }
+}
