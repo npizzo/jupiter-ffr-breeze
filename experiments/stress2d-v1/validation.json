@@ -1,0 +1,41 @@
+{
+  "bytes_per_step": 4015.68,
+  "compute_location": "Unity",
+  "constant_f_velocity_error": 8.88597204927728e-16,
+  "grid": [
+    256,
+    256
+  ],
+  "half_dt_relative_error": 4.244553589104843e-09,
+  "initial_zeta_rms": 2.7575039486361614,
+  "max_force_relative_error": 1.3814519950358275e-15,
+  "max_work_absolute_error": 2.168404344971009e-19,
+  "reflected_f_relative_error": 6.134152040766834e-16,
+  "restart_relative_error": 0.0,
+  "seconds_per_step": 0.01945075385,
+  "status": "PASS",
+  "trajectory_relative_error": 5.993019329020066e-16,
+  "pilots": {
+    "biased_minus": {
+      "dt": 0.005,
+      "max_filtered_Ro": 0.11017057953720133,
+      "t": 1.0
+    },
+    "biased_plus": {
+      "dt": 0.005,
+      "max_filtered_Ro": 0.11017057953720126,
+      "t": 1.0
+    },
+    "decay": {
+      "dt": 0.005,
+      "max_filtered_Ro": 0.10652265118990552,
+      "t": 1.0
+    },
+    "symmetric": {
+      "dt": 0.005,
+      "max_filtered_Ro": 0.11030642265349169,
+      "t": 1.0
+    }
+  },
+  "checks_passed": 49
+}
