@@ -1,0 +1,63 @@
+{
+  "status": "MEDIA_VERIFIED",
+  "published_time_range": [
+    0,
+    160
+  ],
+  "time_units": "dimensionless model time",
+  "frames": 321,
+  "fps": 12,
+  "duration_seconds": 26.75,
+  "full_decode_passed": true,
+  "duplicate_restart_times_verified_equal": [
+    80.0
+  ],
+  "join_by": "physical time; duplicate t=80 restart frame shown once",
+  "color_scale": {
+    "type": "symmetric asinh",
+    "linear_width": 0.1,
+    "limits": [
+      -11.05318546295166,
+      11.05318546295166
+    ],
+    "fixed_across_time": true,
+    "clipping": false
+  },
+  "parameters": {
+    "grid": [
+      512,
+      512
+    ],
+    "domain": [
+      6.283185307179586,
+      6.283185307179586
+    ],
+    "f": 1.0,
+    "beta": 0.0,
+    "viscosity": 0.0001,
+    "drag": 0.0,
+    "instability_coefficient": 0.000175,
+    "forcing_band": [
+      24.0,
+      32.0
+    ],
+    "allow_zonal_forcing": false,
+    "frame_interval": 0.5
+  },
+  "timestep_segments": [
+    {
+      "time_range": [
+        0,
+        160
+      ],
+      "dt": 0.00125
+    }
+  ],
+  "notes": [
+    "Single horizontal 2D plane; no depth layers or passive tracer.",
+    "All 321 saved times, without interpolation; restart joins shown once.",
+    "Forcing wavelength is halved; coefficient adjusted to match continuum net growth after viscosity to the doubled-forcing reference. Initial velocities are unchanged.",
+    "This is a frozen publication through t=160, not a claim of completion through t=400.",
+    "No inverse-energy-transfer or vortex-sign mechanism inferred from morphology alone."
+  ]
+}
