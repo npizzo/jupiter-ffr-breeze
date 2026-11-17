@@ -1,0 +1,913 @@
+{
+  "status": "COMPLETE",
+  "compute_location": "Unity",
+  "new_simulations": false,
+  "equation": "dZ/dt + U.grad Z = C + mean-centering correction + native-minus-centered advection + Coriolis + diffusion + horizontal forcing",
+  "target": "C=-curl(div R), R_ij=<u_i prime u_j prime>_rho; centered diagnostic kept distinct from native WENO",
+  "physical_setup": {
+    "nx": 256,
+    "ny": 256,
+    "nz": 64,
+    "lx": 6000000.0,
+    "ly": 6000000.0,
+    "height": 120000.0,
+    "f": 0.0002880957739764384,
+    "beta": 0.0,
+    "heat_flux": 162.0,
+    "viscosity": 1000.0,
+    "cap_height": 80000.0
+  },
+  "normalization": "z=Z/abs(f), q=C/abs(f)^2; tprime=abs(f)*t. Feature derivatives use h=grid spacing. Convective intensity=(Rxx+Ryy)/(abs(f)*1200km)^2.",
+  "features": [
+    "P0(z)",
+    "P0(h2_laplacian_z)",
+    "sign_f_P0(z2)",
+    "-P0(z3)",
+    "sign_f_P0(strain2)",
+    "P0(z_strain2)",
+    "sign_f_P0(h2_grad_z_squared)",
+    "P0(z_convective_intensity)",
+    "sign_f_P0(h2_laplacian_z2)"
+  ],
+  "training_days": [
+    90,
+    95
+  ],
+  "training_interval": "90 <= day < 95",
+  "test_days": [
+    95,
+    100
+  ],
+  "test_interval": "95 <= day <= 100",
+  "fit_region": "central 80% of north-south channel",
+  "filters": {
+    "sigma0": {
+      "sigma_cells": 0,
+      "sigma_km": 0.0,
+      "training_frames": 40,
+      "test_frames": 41,
+      "models": {
+        "linear": {
+          "coefficients": {
+            "P0(z)": -0.009357470069044152,
+            "P0(h2_laplacian_z)": -0.05579895231570941,
+            "sign_f_P0(z2)": 0.0,
+            "-P0(z3)": 0.0,
+            "sign_f_P0(strain2)": 0.0,
+            "P0(z_strain2)": 0.0,
+            "sign_f_P0(h2_grad_z_squared)": 0.0,
+            "P0(z_convective_intensity)": 0.0,
+            "sign_f_P0(h2_laplacian_z2)": 0.0
+          },
+          "fit": {
+            "rank": 2,
+            "columns": 2,
+            "scaled_condition": 9.955021920539531
+          },
+          "heldout_interior": {
+            "nrmse": 0.9421242795642817,
+            "r2": 0.11240183484381372,
+            "correlation": 0.3357262525985782,
+            "observed_mean": 6.672457451277878e-07,
+            "predicted_mean": 1.205985146324942e-05,
+            "source_rms": 0.0075072917714330235
+          },
+          "heldout_full": {
+            "nrmse": 0.9552102941510627,
+            "r2": 0.08757113549330675,
+            "correlation": 0.299496211182856,
+            "observed_mean": -1.294505041050758e-05,
+            "predicted_mean": 4.131868035386831e-21,
+            "source_rms": 0.008416505302263035
+          },
+          "heldout_walls": {
+            "nrmse": 0.9774644671724442,
+            "r2": 0.044530263035147954,
+            "correlation": 0.23301489001132736,
+            "observed_mean": -6.634713532876941e-05,
+            "predicted_mean": -4.7311724971209247e-05,
+            "source_rms": 0.011297627454744885
+          },
+          "heldout_source_contributions": {
+            "central_m3_source_dimless": {
+              "nrmse": 1.498433743858463,
+              "r2": -6.122833425616326,
+              "correlation": 0.22992168270152394,
+              "observed_mean": 1.4445284196166291e-06,
+              "predicted_mean": -9.861582453084178e-07,
+              "source_rms": 1.7456313043236252e-06,
+              "observed_time_mean": 1.4445284196166291e-06,
+              "predicted_time_mean": -9.861582453084178e-07,
+              "same_sign_fraction": 0.04878048780487805
+            },
+            "raw_m3_source_dimless": {
+              "nrmse": 1.6394077640440865,
+              "r2": -6.931407600661697,
+              "correlation": 0.2613324791164084,
+              "observed_mean": -1.312055614922726e-06,
+              "predicted_mean": -3.792859893784815e-06,
+              "source_rms": 1.613639062416284e-06,
+              "observed_time_mean": -1.312055614922726e-06,
+              "predicted_time_mean": -3.792859893784815e-06,
+              "same_sign_fraction": 0.9024390243902439
+            },
+            "low_mode_energy_work_m2_s3": {
+              "nrmse": 248.99351991567622,
+              "r2": -3668759.992946906,
+              "correlation": -0.06855384691010652,
+              "observed_mean": -6.869974954328393e-08,
+              "predicted_mean": -1.7315678076026263e-05,
+              "source_rms": 6.928768442333057e-08,
+              "observed_time_mean": -6.869974954328393e-08,
+              "predicted_time_mean": -1.7315678076026263e-05,
+              "same_sign_fraction": 1.0
+            }
+          }
+        },
+        "polynomial_free": {
+          "coefficients": {
+            "P0(z)": -0.015123585480507882,
+            "P0(h2_laplacian_z)": -0.057863550542948464,
+            "sign_f_P0(z2)": 0.02086646554904826,
+            "-P0(z3)": -0.31736421445925034,
+            "sign_f_P0(strain2)": 0.0,
+            "P0(z_strain2)": 0.0,
+            "sign_f_P0(h2_grad_z_squared)": 0.0,
+            "P0(z_convective_intensity)": 0.0,
+            "sign_f_P0(h2_laplacian_z2)": 0.0
+          },
+          "fit": {
+            "rank": 4,
+            "columns": 4,
+            "scaled_condition": 16.7200998701383
+          },
+          "heldout_interior": {
+            "nrmse": 0.9412845198378373,
+            "r2": 0.11398344571447672,
+            "correlation": 0.3381122712790778,
+            "observed_mean": 6.672457451277878e-07,
+            "predicted_mean": 3.0243610888420512e-05,
+            "source_rms": 0.0075072917714330235
+          },
+          "heldout_full": {
+            "nrmse": 0.957786159899729,
+            "r2": 0.08264350179311775,
+            "correlation": 0.29748258995090565,
+            "observed_mean": -1.294505041050758e-05,
+            "predicted_mean": 5.454065806710617e-21,
+            "source_rms": 0.008416505302263035
+          },
+          "heldout_walls": {
+            "nrmse": 0.985718135159219,
+            "r2": 0.02832624679160589,
+            "correlation": 0.2366691523204931,
+            "observed_mean": -6.634713532876941e-05,
+            "predicted_mean": -0.00011864801194688045,
+            "source_rms": 0.011297627454744885
+          },
+          "heldout_source_contributions": {
+            "central_m3_source_dimless": {
+              "nrmse": 0.5269080997238182,
+              "r2": 0.11926055266943347,
+              "correlation": 0.39308828906931403,
+              "observed_mean": 1.4445284196166291e-06,
+              "predicted_mean": 1.5553410809934901e-06,
+              "source_rms": 1.7456313043236252e-06,
+              "observed_time_mean": 1.4445284196166291e-06,
+              "predicted_time_mean": 1.5553410809934901e-06,
+              "same_sign_fraction": 0.9512195121951219
+            },
+            "raw_m3_source_dimless": {
+              "nrmse": 0.564110616943981,
+              "r2": 0.06091513509319402,
+              "correlation": 0.39130048854696314,
+              "observed_mean": -1.312055614922726e-06,
+              "predicted_mean": -1.0921338045001436e-06,
+              "source_rms": 1.613639062416284e-06,
+              "observed_time_mean": -1.312055614922726e-06,
+              "predicted_time_mean": -1.0921338045001436e-06,
+              "same_sign_fraction": 0.8780487804878049
+            },
+            "low_mode_energy_work_m2_s3": {
+              "nrmse": 311.57498963156036,
+              "r2": -5744714.279976927,
+              "correlation": 0.3807268316545735,
+              "observed_mean": -6.869974954328393e-08,
+              "predicted_mean": -2.164709219301764e-05,
+              "source_rms": 6.928768442333057e-08,
+              "observed_time_mean": -6.869974954328393e-08,
+              "predicted_time_mean": -2.164709219301764e-05,
+              "same_sign_fraction": 1.0
+            }
+          }
+        },
+        "polynomial_sign_saturating": {
+          "coefficients": {
+            "P0(z)": -0.01047675775113367,
+            "P0(h2_laplacian_z)": -0.056957862832188205,
+            "sign_f_P0(z2)": 0.029852468288502153,
+            "-P0(z3)": 6.8734350138692184e-15,
+            "sign_f_P0(strain2)": 0.0,
+            "P0(z_strain2)": 0.0,
+            "sign_f_P0(h2_grad_z_squared)": 0.0,
+            "P0(z_convective_intensity)": 0.0,
+            "sign_f_P0(h2_laplacian_z2)": 0.0
+          },
+          "fit": {
+            "rank": 4,
+            "columns": 4,
+            "scaled_condition": 16.7200998701383
+          },
+          "heldout_interior": {
+            "nrmse": 0.9419032941949861,
+            "r2": 0.11281817737625288,
+            "correlation": 0.3363555395993333,
+            "observed_mean": 6.672457451277878e-07,
+            "predicted_mean": -8.590351842244224e-06,
+            "source_rms": 0.0075072917714330235
+          },
+          "heldout_full": {
+            "nrmse": 0.9548963405068854,
+            "r2": 0.08817082185065128,
+            "correlation": 0.29972517875884136,
+            "observed_mean": -1.294505041050758e-05,
+            "predicted_mean": 9.833845924220657e-21,
+            "source_rms": 0.008416505302263035
+          },
+          "heldout_walls": {
+            "nrmse": 0.976995137477386,
+            "r2": 0.04544758060198428,
+            "correlation": 0.22989775677010513,
+            "observed_mean": -6.634713532876941e-05,
+            "predicted_mean": 3.3700611073419695e-05,
+            "source_rms": 0.011297627454744885
+          },
+          "heldout_source_contributions": {
+            "central_m3_source_dimless": {
+              "nrmse": 0.5512282690868344,
+              "r2": 0.0360807299657524,
+              "correlation": 0.24676142016925956,
+              "observed_mean": 1.4445284196166291e-06,
+              "predicted_mean": 1.4772847531600012e-06,
+              "source_rms": 1.7456313043236252e-06,
+              "observed_time_mean": 1.4445284196166291e-06,
+              "predicted_time_mean": 1.4772847531600012e-06,
+              "same_sign_fraction": 0.9512195121951219
+            },
+            "raw_m3_source_dimless": {
+              "nrmse": 0.5837528243442316,
+              "r2": -0.005620883619433359,
+              "correlation": 0.2663938208696453,
+              "observed_mean": -1.312055614922726e-06,
+              "predicted_mean": -1.5233979287020863e-06,
+              "source_rms": 1.613639062416284e-06,
+              "observed_time_mean": -1.312055614922726e-06,
+              "predicted_time_mean": -1.5233979287020863e-06,
+              "same_sign_fraction": 0.9024390243902439
+            },
+            "low_mode_energy_work_m2_s3": {
+              "nrmse": 168.49872185692527,
+              "r2": -1680104.4953104001,
+              "correlation": -0.23959637714279514,
+              "observed_mean": -6.869974954328393e-08,
+              "predicted_mean": -1.1731813710620077e-05,
+              "source_rms": 6.928768442333057e-08,
+              "observed_time_mean": -6.869974954328393e-08,
+              "predicted_time_mean": -1.1731813710620077e-05,
+              "same_sign_fraction": 1.0
+            }
+          }
+        },
+        "augmented": {
+          "coefficients": {
+            "P0(z)": -0.022160293365347448,
+            "P0(h2_laplacian_z)": -0.05654509026578041,
+            "sign_f_P0(z2)": 0.0018184325308810791,
+            "-P0(z3)": -0.2501381984568829,
+            "sign_f_P0(strain2)": 0.058295744570067434,
+            "P0(z_strain2)": -0.46034222943898734,
+            "sign_f_P0(h2_grad_z_squared)": 0.010439341514739619,
+            "P0(z_convective_intensity)": 1218.0723498379275,
+            "sign_f_P0(h2_laplacian_z2)": 0.005323151080550011
+          },
+          "fit": {
+            "rank": 9,
+            "columns": 9,
+            "scaled_condition": 28.36588666902618
+          },
+          "heldout_interior": {
+            "nrmse": 0.9358123991980354,
+            "r2": 0.1242551465891839,
+            "correlation": 0.35275233566609576,
+            "observed_mean": 6.672457451277878e-07,
+            "predicted_mean": 4.9952921145373336e-05,
+            "source_rms": 0.0075072917714330235
+          },
+          "heldout_full": {
+            "nrmse": 0.976082673673674,
+            "r2": 0.04726036033978287,
+            "correlation": 0.2773049424885265,
+            "observed_mean": -1.294505041050758e-05,
+            "predicted_mean": 1.6527472141547324e-22,
+            "source_rms": 0.008416505302263035
+          },
+          "heldout_walls": {
+            "nrmse": 1.0421661455071496,
+            "r2": -0.08614773406326282,
+            "correlation": 0.20767457980962337,
+            "observed_mean": -6.634713532876941e-05,
+            "predicted_mean": -0.00019596915218569538,
+            "source_rms": 0.011297627454744885
+          },
+          "heldout_source_contributions": {
+            "central_m3_source_dimless": {
+              "nrmse": 0.49929550514046117,
+              "r2": 0.20915201622898905,
+              "correlation": 0.48855201293813133,
+              "observed_mean": 1.4445284196166291e-06,
+              "predicted_mean": 1.5111223962234407e-06,
+              "source_rms": 1.7456313043236252e-06,
+              "observed_time_mean": 1.4445284196166291e-06,
+              "predicted_time_mean": 1.5111223962234407e-06,
+              "same_sign_fraction": 0.9512195121951219
+            },
+            "raw_m3_source_dimless": {
+              "nrmse": 0.5886984946777588,
+              "r2": -0.02273270655111892,
+              "correlation": 0.45559153558309645,
+              "observed_mean": -1.312055614922726e-06,
+              "predicted_mean": -9.191257674126585e-07,
+              "source_rms": 1.613639062416284e-06,
+              "observed_time_mean": -1.312055614922726e-06,
+              "predicted_time_mean": -9.191257674126585e-07,
+              "same_sign_fraction": 0.9024390243902439
+            },
+            "low_mode_energy_work_m2_s3": {
+              "nrmse": 353.4512207793534,
+              "r2": -7392685.721014949,
+              "correlation": -0.02026955813181293,
+              "observed_mean": -6.869974954328393e-08,
+              "predicted_mean": -2.4497872991362345e-05,
+              "source_rms": 6.928768442333057e-08,
+              "observed_time_mean": -6.869974954328393e-08,
+              "predicted_time_mean": -2.4497872991362345e-05,
+              "same_sign_fraction": 1.0
+            }
+          }
+        }
+      },
+      "input_ranges": {
+        "train_z": [
+          -0.34566423317913025,
+          0.3761903239564908
+        ],
+        "test_z": [
+          -0.37509747266174126,
+          0.3999692636483219
+        ]
+      }
+    },
+    "sigma4": {
+      "sigma_cells": 4,
+      "sigma_km": 93.75,
+      "training_frames": 40,
+      "test_frames": 41,
+      "models": {
+        "linear": {
+          "coefficients": {
+            "P0(z)": -2.1977029210089933e-05,
+            "P0(h2_laplacian_z)": -0.02687930119580184,
+            "sign_f_P0(z2)": 0.0,
+            "-P0(z3)": 0.0,
+            "sign_f_P0(strain2)": 0.0,
+            "P0(z_strain2)": 0.0,
+            "sign_f_P0(h2_grad_z_squared)": 0.0,
+            "P0(z_convective_intensity)": 0.0,
+            "sign_f_P0(h2_laplacian_z2)": 0.0
+          },
+          "fit": {
+            "rank": 2,
+            "columns": 2,
+            "scaled_condition": 2.350453615309325
+          },
+          "heldout_interior": {
+            "nrmse": 0.9840264882000468,
+            "r2": 0.03168562876779302,
+            "correlation": 0.17844049674665194,
+            "observed_mean": 2.5844529738926164e-07,
+            "predicted_mean": 1.4204085541950928e-06,
+            "source_rms": 0.00010179431810322938
+          },
+          "heldout_full": {
+            "nrmse": 0.9779383310536195,
+            "r2": 0.04320003480820034,
+            "correlation": 0.2111419425664599,
+            "observed_mean": -2.2927540688806607e-06,
+            "predicted_mean": 1.8076922654817387e-23,
+            "source_rms": 0.00010733298842568697
+          },
+          "heldout_walls": {
+            "nrmse": 0.9623601275232706,
+            "r2": 0.06505608819040698,
+            "correlation": 0.2725853295940084,
+            "observed_mean": -1.2301305428862665e-05,
+            "predicted_mean": -5.5723720203038256e-06,
+            "source_rms": 0.00012674549385942367
+          },
+          "heldout_source_contributions": {
+            "central_m3_source_dimless": {
+              "nrmse": 0.45970351284466576,
+              "r2": -0.7887738766589651,
+              "correlation": 0.09994043780731406,
+              "observed_mean": 3.748267117027134e-08,
+              "predicted_mean": 2.5244690885692807e-08,
+              "source_rms": 3.9914521529911045e-08,
+              "observed_time_mean": 3.748267117027134e-08,
+              "predicted_time_mean": 2.5244690885692807e-08,
+              "same_sign_fraction": 1.0
+            },
+            "raw_m3_source_dimless": {
+              "nrmse": 0.46340793473803266,
+              "r2": -0.6633027949391455,
+              "correlation": 0.12037581680412703,
+              "observed_mean": 3.432905284164508e-08,
+              "predicted_mean": 2.3496814722284147e-08,
+              "source_rms": 3.6785770156556705e-08,
+              "observed_time_mean": 3.432905284164508e-08,
+              "predicted_time_mean": 2.3496814722284147e-08,
+              "same_sign_fraction": 1.0
+            },
+            "low_mode_energy_work_m2_s3": {
+              "nrmse": 4.33537565056459,
+              "r2": -1132.141265930996,
+              "correlation": -0.24182704014447776,
+              "observed_mean": -6.774939261673268e-08,
+              "predicted_mean": -3.6377499135284474e-07,
+              "source_rms": 6.831836224866465e-08,
+              "observed_time_mean": -6.774939261673268e-08,
+              "predicted_time_mean": -3.6377499135284474e-07,
+              "same_sign_fraction": 1.0
+            }
+          }
+        },
+        "polynomial_free": {
+          "coefficients": {
+            "P0(z)": -0.00024055323274570247,
+            "P0(h2_laplacian_z)": -0.027757248294663694,
+            "sign_f_P0(z2)": 0.00106113021118638,
+            "-P0(z3)": -0.01028201543069189,
+            "sign_f_P0(strain2)": 0.0,
+            "P0(z_strain2)": 0.0,
+            "sign_f_P0(h2_grad_z_squared)": 0.0,
+            "P0(z_convective_intensity)": 0.0,
+            "sign_f_P0(h2_laplacian_z2)": 0.0
+          },
+          "fit": {
+            "rank": 4,
+            "columns": 4,
+            "scaled_condition": 134.00013246469078
+          },
+          "heldout_interior": {
+            "nrmse": 0.9831873121353996,
+            "r2": 0.03333647814445073,
+            "correlation": 0.18289525728781542,
+            "observed_mean": 2.5844529738926164e-07,
+            "predicted_mean": 1.2035615795300648e-06,
+            "source_rms": 0.00010179431810322938
+          },
+          "heldout_full": {
+            "nrmse": 0.977310332912034,
+            "r2": 0.04442848787610565,
+            "correlation": 0.214446327074694,
+            "observed_mean": -2.2927540688806607e-06,
+            "predicted_mean": 5.423076796445216e-23,
+            "source_rms": 0.00010733298842568697
+          },
+          "heldout_walls": {
+            "nrmse": 0.9622782311070408,
+            "r2": 0.0652152080366859,
+            "correlation": 0.2778897593358287,
+            "observed_mean": -1.2301305428862665e-05,
+            "predicted_mean": -4.721664658156407e-06,
+            "source_rms": 0.00012674549385942367
+          },
+          "heldout_source_contributions": {
+            "central_m3_source_dimless": {
+              "nrmse": 0.3467014080251952,
+              "r2": -0.01744515897849075,
+              "correlation": 0.1820354228367642,
+              "observed_mean": 3.748267117027134e-08,
+              "predicted_mean": 3.999866617728697e-08,
+              "source_rms": 3.9914521529911045e-08,
+              "observed_time_mean": 3.748267117027134e-08,
+              "predicted_time_mean": 3.999866617728697e-08,
+              "same_sign_fraction": 1.0
+            },
+            "raw_m3_source_dimless": {
+              "nrmse": 0.3690862690948478,
+              "r2": -0.05511588904160103,
+              "correlation": 0.2062878999854879,
+              "observed_mean": 3.432905284164508e-08,
+              "predicted_mean": 3.790224142123561e-08,
+              "source_rms": 3.6785770156556705e-08,
+              "observed_time_mean": 3.432905284164508e-08,
+              "predicted_time_mean": 3.790224142123561e-08,
+              "same_sign_fraction": 1.0
+            },
+            "low_mode_energy_work_m2_s3": {
+              "nrmse": 5.190151149846952,
+              "r2": -1623.0171043988162,
+              "correlation": -0.18213631222907686,
+              "observed_mean": -6.774939261673268e-08,
+              "predicted_mean": -4.222092781878347e-07,
+              "source_rms": 6.831836224866465e-08,
+              "observed_time_mean": -6.774939261673268e-08,
+              "predicted_time_mean": -4.222092781878347e-07,
+              "same_sign_fraction": 1.0
+            }
+          }
+        },
+        "polynomial_sign_saturating": {
+          "coefficients": {
+            "P0(z)": -0.0002512174265166727,
+            "P0(h2_laplacian_z)": -0.028148755411581444,
+            "sign_f_P0(z2)": 0.002614039727440156,
+            "-P0(z3)": 2.2608391208581835e-10,
+            "sign_f_P0(strain2)": 0.0,
+            "P0(z_strain2)": 0.0,
+            "sign_f_P0(h2_grad_z_squared)": 0.0,
+            "P0(z_convective_intensity)": 0.0,
+            "sign_f_P0(h2_laplacian_z2)": 0.0
+          },
+          "fit": {
+            "rank": 4,
+            "columns": 4,
+            "scaled_condition": 134.00013246469078
+          },
+          "heldout_interior": {
+            "nrmse": 0.983326546831452,
+            "r2": 0.03306266942004388,
+            "correlation": 0.18211521690184118,
+            "observed_mean": 2.5844529738926164e-07,
+            "predicted_mean": 1.1807580859143048e-06,
+            "source_rms": 0.00010179431810322938
+          },
+          "heldout_full": {
+            "nrmse": 0.9773504774187937,
+            "r2": 0.04434998316045291,
+            "correlation": 0.21427265532149065,
+            "observed_mean": -2.2927540688806607e-06,
+            "predicted_mean": 5.229395482286458e-23,
+            "source_rms": 0.00010733298842568697
+          },
+          "heldout_walls": {
+            "nrmse": 0.9620621378765,
+            "r2": 0.06563499927370797,
+            "correlation": 0.2794530670307144,
+            "observed_mean": -1.2301305428862665e-05,
+            "predicted_mean": -4.632204798586888e-06,
+            "source_rms": 0.00012674549385942367
+          },
+          "heldout_source_contributions": {
+            "central_m3_source_dimless": {
+              "nrmse": 0.3471213790335117,
+              "r2": -0.019911582588446164,
+              "correlation": 0.15043177036732658,
+              "observed_mean": 3.748267117027134e-08,
+              "predicted_mean": 3.9919021482471117e-08,
+              "source_rms": 3.9914521529911045e-08,
+              "observed_time_mean": 3.748267117027134e-08,
+              "predicted_time_mean": 3.9919021482471117e-08,
+              "same_sign_fraction": 1.0
+            },
+            "raw_m3_source_dimless": {
+              "nrmse": 0.3691408957551254,
+              "r2": -0.05542823727761159,
+              "correlation": 0.1732633744692948,
+              "observed_mean": 3.432905284164508e-08,
+              "predicted_mean": 3.77905733992347e-08,
+              "source_rms": 3.6785770156556705e-08,
+              "observed_time_mean": 3.432905284164508e-08,
+              "predicted_time_mean": 3.77905733992347e-08,
+              "same_sign_fraction": 1.0
+            },
+            "low_mode_energy_work_m2_s3": {
+              "nrmse": 5.114666147452844,
+              "r2": -1576.1215626968444,
+              "correlation": 0.2630273337652912,
+              "observed_mean": -6.774939261673268e-08,
+              "predicted_mean": -4.1707059620903974e-07,
+              "source_rms": 6.831836224866465e-08,
+              "observed_time_mean": -6.774939261673268e-08,
+              "predicted_time_mean": -4.1707059620903974e-07,
+              "same_sign_fraction": 1.0
+            }
+          }
+        },
+        "augmented": {
+          "coefficients": {
+            "P0(z)": -0.0014330388192816002,
+            "P0(h2_laplacian_z)": -0.028995092601611847,
+            "sign_f_P0(z2)": -0.00526500839369981,
+            "-P0(z3)": -0.038718839250379555,
+            "sign_f_P0(strain2)": -0.0010359429366079735,
+            "P0(z_strain2)": 0.13984328163305568,
+            "sign_f_P0(h2_grad_z_squared)": -0.22133244622158785,
+            "P0(z_convective_intensity)": 129.67862494442193,
+            "sign_f_P0(h2_laplacian_z2)": -0.022314818114394765
+          },
+          "fit": {
+            "rank": 9,
+            "columns": 9,
+            "scaled_condition": 463.3966074848765
+          },
+          "heldout_interior": {
+            "nrmse": 0.9783066409490905,
+            "r2": 0.042909946873953775,
+            "correlation": 0.20858262108104458,
+            "observed_mean": 2.5844529738926164e-07,
+            "predicted_mean": 2.745142949805757e-06,
+            "source_rms": 0.00010179431810322938
+          },
+          "heldout_full": {
+            "nrmse": 0.9707813528090943,
+            "r2": 0.05715334605738642,
+            "correlation": 0.2400293959416222,
+            "observed_mean": -2.2927540688806607e-06,
+            "predicted_mean": -3.098901026540123e-23,
+            "source_rms": 0.00010733298842568697
+          },
+          "heldout_walls": {
+            "nrmse": 0.9514726701838606,
+            "r2": 0.08609100385117952,
+            "correlation": 0.29378462653409837,
+            "observed_mean": -1.2301305428862665e-05,
+            "predicted_mean": -1.0769406956930277e-05,
+            "source_rms": 0.00012674549385942367
+          },
+          "heldout_source_contributions": {
+            "central_m3_source_dimless": {
+              "nrmse": 0.49950342243322354,
+              "r2": -1.111916461467029,
+              "correlation": 0.24414924370017105,
+              "observed_mean": 3.748267117027134e-08,
+              "predicted_mean": 3.901308285223699e-08,
+              "source_rms": 3.9914521529911045e-08,
+              "observed_time_mean": 3.748267117027134e-08,
+              "predicted_time_mean": 3.901308285223699e-08,
+              "same_sign_fraction": 0.9512195121951219
+            },
+            "raw_m3_source_dimless": {
+              "nrmse": 0.5233058457870958,
+              "r2": -1.1210727192792498,
+              "correlation": 0.25047575020058915,
+              "observed_mean": 3.432905284164508e-08,
+              "predicted_mean": 3.8987237739107433e-08,
+              "source_rms": 3.6785770156556705e-08,
+              "observed_time_mean": 3.432905284164508e-08,
+              "predicted_time_mean": 3.8987237739107433e-08,
+              "same_sign_fraction": 0.975609756097561
+            },
+            "low_mode_energy_work_m2_s3": {
+              "nrmse": 10.676268423628342,
+              "r2": -6870.784889657432,
+              "correlation": -0.32850825165827846,
+              "observed_mean": -6.774939261673268e-08,
+              "predicted_mean": -7.84518882214682e-07,
+              "source_rms": 6.831836224866465e-08,
+              "observed_time_mean": -6.774939261673268e-08,
+              "predicted_time_mean": -7.84518882214682e-07,
+              "same_sign_fraction": 1.0
+            }
+          }
+        }
+      },
+      "input_ranges": {
+        "train_z": [
+          -0.04848070237102381,
+          0.18764124057813591
+        ],
+        "test_z": [
+          -0.0483744589062216,
+          0.18868941097819722
+        ]
+      }
+    }
+  },
+  "limits": [
+    "No new simulation or changed cap/forcing.",
+    "Fit coefficients are inferred, not copied from dimensionless 2D tests.",
+    "Spatial samples are correlated; no independent-sample significance claim.",
+    "Time-block separation does not supply an independent realization.",
+    "All feature means are removed over the full channel. Actual target means are retained and reported; channel circulation is not assumed zero.",
+    "Extra linear z and Laplacian terms allow a more flexible linear response than the arbitrary 2D forcing band; this does not derive that band.",
+    "Gaussian filtering is a diagnostic sensitivity, not grid refinement; it filters the same convective stress and does not add barotropic subfilter stresses.",
+    "Snapshot source work is not a closed ten-day energy or third-moment budget. Native six-hour accounting is reported separately.",
+    "The f-minus audit inherits the +f mature state and contains adjustment; it is not a mirrored independent realization."
+  ],
+  "native_six_hour_audit": {
+    "plus": {
+      "native_gate": {
+        "day": 90.25,
+        "steps": 719,
+        "max_step_relative_residual_full": 1.5102035762481457e-13,
+        "cumulative_residual_max_full": 1.0842021724855044e-18,
+        "pressure_curl_max": 3.226004388956808e-23,
+        "depth_mean_divergence_max": 8.480917384383682e-19,
+        "independent_Z_max_error": 1.0842021724855044e-19
+      },
+      "interval_increment_closure_max": 9.097296637370522e-07,
+      "trapezoidal_snapshot_C_vs_stage_integral": {
+        "nrmse": 0.008749237499070497,
+        "r2": 0.9999234508431678,
+        "correlation": 0.9999617249175445,
+        "observed_mean": 1.1078330750150179e-07,
+        "predicted_mean": 1.1108755386805771e-07,
+        "source_rms": 0.007429257028728489
+      },
+      "native_advection_reconstruction_rms_over_C": 1.2107694115408005,
+      "combined_effective_source_note": "C plus native-minus-centered advection is a numerical effective source, not pure physical convection.",
+      "interior_exact_central_third_term_changes": {
+        "mean_transport": -9.062815338266234e-17,
+        "mean_flux_minus_transport": -5.760582490201253e-17,
+        "convective_stress": 1.3103082424982082e-16,
+        "native_advection_minus_centered_flux": -4.556522613557147e-17,
+        "native_coriolis": -1.0164183138440926e-28,
+        "native_diffusion": -4.987340226752564e-18,
+        "native_horizontal_forcing": 0.0
+      },
+      "interior_unassigned_over_convective_moment": 0.7873800048825159,
+      "model_transfer_against_stage_integrated_C": {
+        "linear": {
+          "nrmse": 0.9390846936031836,
+          "r2": 0.11811993804411935,
+          "correlation": 0.34369587336031093,
+          "observed_mean": 1.1078330750150179e-07,
+          "predicted_mean": 1.7200290745722987e-05,
+          "source_rms": 0.007429257028728489
+        },
+        "polynomial_free": {
+          "nrmse": 0.9384293438038276,
+          "r2": 0.11935036649209574,
+          "correlation": 0.3455265197395746,
+          "observed_mean": 1.1078330750150179e-07,
+          "predicted_mean": 4.339903906596977e-05,
+          "source_rms": 0.007429257028728489
+        },
+        "polynomial_sign_saturating": {
+          "nrmse": 0.9388145645598281,
+          "r2": 0.11862721317435776,
+          "correlation": 0.344427781778928,
+          "observed_mean": 1.1078330750150179e-07,
+          "predicted_mean": -7.069524728728138e-06,
+          "source_rms": 0.007429257028728489
+        },
+        "augmented": {
+          "nrmse": 0.9347003510284931,
+          "r2": 0.12633525359294318,
+          "correlation": 0.3555485168403364,
+          "observed_mean": 1.1078330750150179e-07,
+          "predicted_mean": 6.090505322440162e-05,
+          "source_rms": 0.007429257028728489
+        }
+      },
+      "model_transfer_against_C_plus_numerical_remainder": {
+        "linear": {
+          "nrmse": 1.0179517454199312,
+          "r2": -0.03622587595974314,
+          "correlation": 0.06670142551996243,
+          "observed_mean": -3.2251977559682663e-06,
+          "predicted_mean": 1.7200290745722987e-05,
+          "source_rms": 0.009479209234443427
+        },
+        "polynomial_free": {
+          "nrmse": 1.0181139902810048,
+          "r2": -0.03655621720040969,
+          "correlation": 0.06673682622660836,
+          "observed_mean": -3.2251977559682663e-06,
+          "predicted_mean": 4.339903906596977e-05,
+          "source_rms": 0.009479209234443427
+        },
+        "polynomial_sign_saturating": {
+          "nrmse": 1.0179841526899474,
+          "r2": -0.0362918550917668,
+          "correlation": 0.0668490262760834,
+          "observed_mean": -3.2251977559682663e-06,
+          "predicted_mean": -7.069524728728138e-06,
+          "source_rms": 0.009479209234443427
+        },
+        "augmented": {
+          "nrmse": 1.0195776938115526,
+          "r2": -0.039538794057854876,
+          "correlation": 0.06636658921959511,
+          "observed_mean": -3.2251977559682663e-06,
+          "predicted_mean": 6.090505322440162e-05,
+          "source_rms": 0.009479209234443427
+        }
+      },
+      "interpretation": "Positive f overlaps the training trajectory near day90; negative f is inherited-state adjustment, not a mirror test."
+    },
+    "minus": {
+      "native_gate": {
+        "day": 90.25,
+        "steps": 719,
+        "max_step_relative_residual_full": 1.6466576111885993e-13,
+        "cumulative_residual_max_full": 1.043544591017298e-18,
+        "pressure_curl_max": 2.776224930881099e-23,
+        "depth_mean_divergence_max": 7.957874539454152e-19,
+        "independent_Z_max_error": 1.0842021724855044e-19
+      },
+      "interval_increment_closure_max": 9.097263914460277e-07,
+      "trapezoidal_snapshot_C_vs_stage_integral": {
+        "nrmse": 0.007870587315064967,
+        "r2": 0.9999380538548199,
+        "correlation": 0.9999719438590957,
+        "observed_mean": -9.161972409105214e-07,
+        "predicted_mean": -9.164397701922008e-07,
+        "source_rms": 0.010238621222898071
+      },
+      "native_advection_reconstruction_rms_over_C": 1.0488841994976206,
+      "combined_effective_source_note": "C plus native-minus-centered advection is a numerical effective source, not pure physical convection.",
+      "interior_exact_central_third_term_changes": {
+        "mean_transport": -7.103529023805342e-18,
+        "mean_flux_minus_transport": 1.6136490430281823e-17,
+        "convective_stress": 4.540341354595602e-16,
+        "native_advection_minus_centered_flux": -9.407458307438962e-17,
+        "native_coriolis": -1.1600749640881383e-28,
+        "native_diffusion": -1.1248577041256497e-17,
+        "native_horizontal_forcing": 0.0
+      },
+      "interior_unassigned_over_convective_moment": 0.24273741751403555,
+      "model_transfer_against_stage_integrated_C": {
+        "linear": {
+          "nrmse": 0.9620675369418235,
+          "r2": 0.07442604695119293,
+          "correlation": 0.27613102015155405,
+          "observed_mean": -9.161972409105214e-07,
+          "predicted_mean": 1.3134114959651473e-05,
+          "source_rms": 0.010238621222898071
+        },
+        "polynomial_free": {
+          "nrmse": 0.961180168211839,
+          "r2": 0.07613267683842617,
+          "correlation": 0.2793995898329351,
+          "observed_mean": -9.161972409105214e-07,
+          "predicted_mean": 5.1596382805617654e-05,
+          "source_rms": 0.010238621222898071
+        },
+        "polynomial_sign_saturating": {
+          "nrmse": 0.9625023553587919,
+          "r2": 0.07358920851057638,
+          "correlation": 0.27378702887072226,
+          "observed_mean": -9.161972409105214e-07,
+          "predicted_mean": 2.6314290961826473e-05,
+          "source_rms": 0.010238621222898071
+        },
+        "augmented": {
+          "nrmse": 0.9525740910998267,
+          "r2": 0.09260259369938684,
+          "correlation": 0.30802705584869056,
+          "observed_mean": -9.161972409105214e-07,
+          "predicted_mean": 0.00012040861395443456,
+          "source_rms": 0.010238621222898071
+        }
+      },
+      "model_transfer_against_C_plus_numerical_remainder": {
+        "linear": {
+          "nrmse": 1.006199018938208,
+          "r2": -0.01243646825871858,
+          "correlation": 0.04983644434904957,
+          "observed_mean": 6.970602995015902e-07,
+          "predicted_mean": 1.3134114959651473e-05,
+          "source_rms": 0.01389894556819859
+        },
+        "polynomial_free": {
+          "nrmse": 1.0060891792127624,
+          "r2": -0.012215439074960255,
+          "correlation": 0.051702107249741995,
+          "observed_mean": 6.970602995015902e-07,
+          "predicted_mean": 5.1596382805617654e-05,
+          "source_rms": 0.01389894556819859
+        },
+        "polynomial_sign_saturating": {
+          "nrmse": 1.006670129664226,
+          "r2": -0.013384752507080933,
+          "correlation": 0.048899209015959386,
+          "observed_mean": 6.970602995015902e-07,
+          "predicted_mean": 2.6314290961826473e-05,
+          "source_rms": 0.01389894556819859
+        },
+        "augmented": {
+          "nrmse": 1.0043235754195508,
+          "r2": -0.008665846680532274,
+          "correlation": 0.07414860736683321,
+          "observed_mean": 6.970602995015902e-07,
+          "predicted_mean": 0.00012040861395443456,
+          "source_rms": 0.01389894556819859
+        }
+      },
+      "interpretation": "Positive f overlaps the training trajectory near day90; negative f is inherited-state adjustment, not a mirror test."
+    }
+  },
+  "elapsed_seconds": 61.35071897506714
+}

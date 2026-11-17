@@ -1,0 +1,31 @@
+{
+  "status": "PASS",
+  "analytic_centered_curl_error": 4.263256414560601e-14,
+  "reflection_all_features_both_filters": true,
+  "synthetic_coefficient_recovery": true,
+  "quadratic_third_moment_identity": true,
+  "low_mode_orthogonality_and_work_identity": true,
+  "no_model_evolution": true,
+  "independent_3d_density_weighted_checks": [
+    {
+      "day": 90.0,
+      "max_errors": {
+        "ubar": 0.0,
+        "vbar": 0.0,
+        "Rxx": 2.0961010704922955e-13,
+        "Rxy": 5.465072838717333e-14,
+        "Ryy": 1.1679546219056647e-13
+      }
+    },
+    {
+      "day": 100.0,
+      "max_errors": {
+        "ubar": 0.0,
+        "vbar": 0.0,
+        "Rxx": 1.3855583347321954e-13,
+        "Rxy": 3.744921039938731e-14,
+        "Ryy": 1.1102230246251565e-13
+      }
+    }
+  ]
+}
