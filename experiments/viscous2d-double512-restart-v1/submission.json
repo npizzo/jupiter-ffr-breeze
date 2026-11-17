@@ -1,0 +1,53 @@
+{
+  "status": "RESTART_CHAIN_AND_PREFIX_MOVIES_SUBMITTED",
+  "check_job": "1895278",
+  "check_output": "data/viscous2d-double512-restart-check-1895278",
+  "initial_source": "data/viscous2d-double512-v1-1885121/to_200/checkpoint.jld2",
+  "output_root": "data/viscous2d-double512-restart-v1-1895278",
+  "jobs": [
+    {
+      "job": "1895281",
+      "target_time": 240,
+      "dependency": "1895278",
+      "source": "data/viscous2d-double512-v1-1885121/to_200/checkpoint.jld2",
+      "output": "data/viscous2d-double512-restart-v1-1895278/to_240"
+    },
+    {
+      "job": "1895282",
+      "target_time": 320,
+      "dependency": "1895281",
+      "source": "data/viscous2d-double512-restart-v1-1895278/to_240/checkpoint.jld2",
+      "output": "data/viscous2d-double512-restart-v1-1895278/to_320"
+    },
+    {
+      "job": "1895283",
+      "target_time": 400,
+      "dependency": "1895282",
+      "source": "data/viscous2d-double512-restart-v1-1895278/to_320/checkpoint.jld2",
+      "output": "data/viscous2d-double512-restart-v1-1895278/to_400"
+    }
+  ],
+  "movie160_job": "1895280",
+  "start_time": 160,
+  "target_time": 400,
+  "dt": 0.00125,
+  "previous_dt": 0.0025,
+  "forcing_coefficient": 0.0004,
+  "grid": [
+    512,
+    512
+  ],
+  "compute_location": "Unity",
+  "cpus_per_job": 1,
+  "source_sha256": {
+    "scripts/viscous2d_double512_restart_v1/render160.py": "2e9e3f862790450a8e507c12672d4ea77bd3e5358eaf20eae3144ed1a7029eba",
+    "scripts/viscous2d_double512_restart_v1/model.jl": "a6979a962c48d2986ef2048c108b177d4e9b7dbd83873c660ae126ced4bfa100",
+    "scripts/viscous2d_double512_restart_v1/README.md": "7cbae2b3b14e363c81d2fba3cd691170dc9460336c95af1370aac06d164405a2",
+    "scripts/viscous2d_double512_restart_v1/run.jl": "1f680ffeeb213e53b20d8c31ae070fa558474babb6fcb963460da04c86049dc2",
+    "scripts/viscous2d_double512_restart_v1/check.jl": "5e2f66526b2638574d6ac15e1875d296f5d22cba50ee134527598510e2c1d2d0",
+    "slurm/viscous2d-double512-restart-v1-movies.sbatch": "0a2a83dfcf7752522563c3cc4409d6d9556b5a39b5cb3ea2f62ae9725509831a",
+    "slurm/viscous2d-double512-restart-v1-check.sbatch": "303979be715a31e5e7187b6f443cd2f82467d92690fd0a806f584f80cd97445f",
+    "slurm/viscous2d-double512-restart-v1-run.sbatch": "dd08c1056859777314736f4b285af4ee113fe169cc94afa54352fcc204893c5d"
+  },
+  "rendered160_root": "rendered/viscous2d-double512-t160-1895278"
+}
