@@ -1,0 +1,71 @@
+{
+  "status": "MEDIA_VERIFIED",
+  "published_time_range": [
+    0,
+    310
+  ],
+  "time_units": "dimensionless model time",
+  "frames": 621,
+  "fps": 12,
+  "duration_seconds": 51.75,
+  "full_decode_passed": true,
+  "duplicate_restart_times_verified_equal": [
+    160.0,
+    240.0
+  ],
+  "join_by": "physical time, not iteration (dt changes at160)",
+  "color_scale": {
+    "type": "symmetric asinh",
+    "linear_width": 0.1,
+    "limits": [
+      -36.17832565307617,
+      36.17832565307617
+    ],
+    "fixed_across_time": true,
+    "clipping": false
+  },
+  "parameters": {
+    "grid": [
+      512,
+      512
+    ],
+    "domain": [
+      6.283185307179586,
+      6.283185307179586
+    ],
+    "f": 1.0,
+    "beta": 0.0,
+    "viscosity": 0.0001,
+    "drag": 0.0,
+    "instability_coefficient": 0.0004,
+    "forcing_band": [
+      12.0,
+      16.0
+    ],
+    "allow_zonal_forcing": false,
+    "frame_interval": 0.5
+  },
+  "timestep_segments": [
+    {
+      "time_range": [
+        0,
+        160
+      ],
+      "dt": 0.0025
+    },
+    {
+      "time_range": [
+        160,
+        310
+      ],
+      "dt": 0.00125
+    }
+  ],
+  "notes": [
+    "Single horizontal2D plane; no depth layers or passive tracer.",
+    "All621 saved times, without interpolation; restart joins shown once.",
+    "Original trajectory after160 is excluded; subsequent frames come from the validated smaller-timestep continuation.",
+    "This is a frozen publication through310, not a claim of completion through400.",
+    "No inverse-energy-transfer or vortex-sign mechanism inferred from morphology alone."
+  ]
+}
