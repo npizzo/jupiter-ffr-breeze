@@ -1,0 +1,32 @@
+{
+  "status": "SUBMITTED",
+  "no_shear_job": "1983355",
+  "no_shear_root": "data/strong-seed-v1-1983355",
+  "jobs": {
+    "stable_cyclonic": "1984576",
+    "stable_anticyclonic": "1984577"
+  },
+  "roots": {
+    "stable_cyclonic": "data/strong-shear-v1-1984576",
+    "stable_anticyclonic": "data/strong-shear-v1-1984577"
+  },
+  "source_files": [
+    "configs/strong-shear-v1/stable_anticyclonic.toml",
+    "configs/strong-shear-v1/stable_cyclonic.toml",
+    "scripts/strong_shear_v1/frozen-source.toml",
+    "scripts/strong_shear_v1/launch.jl",
+    "scripts/strong_shear_v1/README.md",
+    "scripts/strong_shear_gallery_v1/render.py",
+    "scripts/strong_shear_gallery_v1/render_movies.py",
+    "scripts/strong_shear_gallery_v1/assemble.py",
+    "scripts/strong_shear_gallery_v1/vorticity_depth_videos_ordered.py",
+    "slurm/strong-shear-v1.sbatch",
+    "slurm/strong-shear-gallery-v1.sbatch"
+  ],
+  "total_simulation_gpu_hours_limit": 9,
+  "render_cpu_hours_limit": 0.5,
+  "target_days": 50,
+  "submitted_utc": "2026-11-18T23:50:40.781662+00:00",
+  "render_job": "1984578",
+  "render_root": "rendered/strong-shear-gallery-1984578"
+}
