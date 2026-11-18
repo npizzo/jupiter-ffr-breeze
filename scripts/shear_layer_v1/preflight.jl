@@ -60,7 +60,7 @@ end
  o2=experiment("restart_second",cfg;pickup=last(checkpoints));a,b,m=check_output(o2)
  expected=load(joinpath(root,"stable_anticyclonic","frame_00002.jld2"))
  for k in ("u","v","w","theta_profile","vorticity_slices","tracer_slices","ubar","vbar")
-  @test isapprox(b[k],expected[k];atol=1e-10,rtol=1e-9)
+  @test maximum(abs,b[k].-expected[k]) <= 1e-10 + 1e-9*maximum(abs,expected[k])
  end
 end
 # Throughput includes output, controller and all new diagnostic costs on the actual grid.
