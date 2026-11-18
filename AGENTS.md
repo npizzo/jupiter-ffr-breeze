@@ -38,3 +38,8 @@ On November 16 the user authorized the higher-resolution forced/unforced long ru
 
 The user subsequently authorized both cases to continue from their own t=200 checkpoints to t=400 with a substantially more efficient implementation. `viscous2d_fast512_v1` preserves all physical parameters and dt=0.0025, uses native viscosity, cached in-place forcing FFTs and specialized array loops. The Unity release check must pass equation equivalence, serialized restart and measured speed/allocation criteria before production. Do not resume the allocation-heavy prototype for further long runs. Preserve the original t≤200 output and source. Continue the same 2D vorticity movie convention, without 256² comparisons or additional scientific-analysis jobs.
 
+
+
+## Explicit changes before full campaigns
+
+Before submitting or releasing a production campaign, give the user concise bullets stating every change from the named reference case: domain, grid/spacing, initial velocity RMS and eddy wavelength, Rossby definition/value, seed/mode selection, forcing, boundary/cap treatment, duration and total compute limit. Distinguish unchanged controls from changed parameters and numerical stability checks from evidence of physical fidelity. Do not silently resize the domain or seed scale to save cost, and do not expand a single-case authorization into a parameter sweep. On November 18 the user authorized one no-shear 50-day test restoring the 6000-km box and 1200-km eddies at Ro=0.1 with approximately 5.50 m/s initial RMS, allowing 128 x 128 x 64 resolution for speed; other current physical settings and odd-mode seed selection remain unchanged. The superseded Ro=0.3 setup was held before allocation and must not also be run.

@@ -1,0 +1,38 @@
+{
+  "status": "RELEASED_FIXED_RO",
+  "job": "1983355",
+  "root": "data/strong-seed-v1-1983355",
+  "days": 50,
+  "gpu_hours_limit": 3,
+  "case_count": 1,
+  "initial_rossby": 0.1,
+  "initial_rms_m_s_approx": 5.5,
+  "physical_changes": [
+    "domain_1500_to_6000_km",
+    "eddy_wavelength_400_to_1200_km_at_fixed_Ro"
+  ],
+  "source_files": [
+    "configs/strong-seed-v1/stable_none.toml",
+    "scripts/strong_seed_v1/launch.jl",
+    "scripts/strong_seed_v1/frozen-source.toml",
+    "scripts/strong_seed_v1/README.md",
+    "slurm/strong-seed-v1.sbatch"
+  ],
+  "submitted_utc": "2026-11-18T23:25:46.153300+00:00",
+  "box_km": [
+    6000,
+    6000
+  ],
+  "eddy_wavelength_km": 1200,
+  "grid": [
+    128,
+    128,
+    64
+  ],
+  "superseded_before_execution": {
+    "initial_rossby": 0.3,
+    "gpu_seconds_consumed": 0
+  },
+  "note": "Current odd-mode seed retained; original horizontal grid coarsened by two",
+  "revised_utc": "2026-11-18T23:28:06.688085+00:00"
+}
