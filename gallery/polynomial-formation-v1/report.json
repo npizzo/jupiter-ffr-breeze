@@ -1,0 +1,706 @@
+{
+  "status": "COMPLETE",
+  "compute_location": "Unity",
+  "native_operator_validation": {
+    "bytes_per_step": 4847.36,
+    "half_dt_relative_error": 6.6989475232182665e-16,
+    "initial_sha256": "35cb85c5c7f179ac97dce1658f6779cd88e1d39c40b6193292412d250a7a8c6d",
+    "native_diffusion_only_error": 4.3038122090389787e-14,
+    "native_reconstruction_max_error": 6.008220681401412e-13,
+    "restart_relative_error": 0.0,
+    "seconds_per_step": 0.0359446784,
+    "status": "PASS",
+    "target_limit": 400.0,
+    "code_sha256": {
+      "../feedback_maintenance_v1/model.jl": "c8ec93d6013c497609b0a8c6fc3c106284c88fd0139c8d11cfc99682bd878f64",
+      "../instability2d_v1/core.jl": "7b03014ba4500f05c7f978e9a80bfc3d525b8300dd245acdc5500fe3bf78430c",
+      "../viscous2d_fast512_v1/model.jl": "7a2eabe0cc129a6810f0a14e85e51a22a019c38a66acf51c9216858276e36e4a",
+      "../viscous2d_feedback512_v1/model.jl": "ca5af8ebbad116beb25b4b7598389c3c931578aae4e0c2caafd6bfb7c454c9ee",
+      "check.jl": "4ed7cc9968a5c4418f8af9ac7c116e18d9bef3a73e080066a0cefb763e133e02",
+      "model.jl": "69328af745f30f9454ae3704a893925190298ac751d604435b6545176160fdb0",
+      "run.jl": "cc2b8b18deb52d2b0e218a88f26090b3b70789b0a26170b833b9e2ff90297086"
+    }
+  },
+  "cases": {
+    "cubic_control": {
+      "windows": {
+        "0_80": {
+          "energy_change": 0.006913601831366953,
+          "integrated_work": {
+            "advection": 0.007192763732211057,
+            "linear": 0.0,
+            "quadratic": 0.0,
+            "cubic": -0.00018820349760032988,
+            "viscous": -9.292899740808829e-05
+          },
+          "sampling_residual": 1.97059416431368e-06,
+          "residual_over_sum_abs_work": 0.0002636635704329016,
+          "quadrature_change_1_vs_half": {
+            "advection": -5.838507209977341e-06,
+            "linear": 0.0,
+            "quadratic": 0.0,
+            "cubic": -1.5100741233029045e-08,
+            "viscous": -3.142564888666149e-09
+          }
+        },
+        "80_160": {
+          "energy_change": 0.0008747598461060569,
+          "integrated_work": {
+            "advection": 0.0013735644918836738,
+            "linear": 0.0,
+            "quadratic": 0.0,
+            "cubic": -0.0002963814155849091,
+            "viscous": -0.00020169344905947138
+          },
+          "sampling_residual": -7.2978113323653e-07,
+          "residual_over_sum_abs_work": 0.00038991546672233657,
+          "quadrature_change_1_vs_half": {
+            "advection": 2.1762449260971997e-06,
+            "linear": 0.0,
+            "quadratic": 0.0,
+            "cubic": 1.5821084941810594e-09,
+            "viscous": 1.6690975624192306e-09
+          }
+        },
+        "160_240": {
+          "energy_change": 0.0006860597196277759,
+          "integrated_work": {
+            "advection": 0.0011051057812825065,
+            "linear": 0.0,
+            "quadratic": 0.0,
+            "cubic": -0.00022369675455215303,
+            "viscous": -0.00019494719183350769
+          },
+          "sampling_residual": -4.0211526906982955e-07,
+          "residual_over_sum_abs_work": 0.00026389850102562234,
+          "quadrature_change_1_vs_half": {
+            "advection": 1.2069750150280403e-06,
+            "linear": 0.0,
+            "quadratic": 0.0,
+            "cubic": 1.0277003072872194e-09,
+            "viscous": 8.896564370614035e-10
+          }
+        },
+        "240_320": {
+          "energy_change": -0.00046047549617144086,
+          "integrated_work": {
+            "advection": -0.00011912110881625952,
+            "linear": 0.0,
+            "quadratic": 0.0,
+            "cubic": -0.00014789383152641127,
+            "viscous": -0.00019328010134519194
+          },
+          "sampling_residual": -1.8045448357811985e-07,
+          "residual_over_sum_abs_work": 0.0003920409025402677,
+          "quadrature_change_1_vs_half": {
+            "advection": 5.425310476674653e-07,
+            "linear": 0.0,
+            "quadratic": 0.0,
+            "cubic": 3.83545836394163e-10,
+            "viscous": -5.589907578159616e-10
+          }
+        },
+        "320_400": {
+          "energy_change": -0.00033993802219063184,
+          "integrated_work": {
+            "advection": -6.313401791921972e-05,
+            "linear": 0.0,
+            "quadratic": 0.0,
+            "cubic": -0.00010769123701054889,
+            "viscous": -0.00016905387691922388
+          },
+          "sampling_residual": -5.889034163932775e-08,
+          "residual_over_sum_abs_work": 0.00017326848317799219,
+          "quadrature_change_1_vs_half": {
+            "advection": 1.7584317051878796e-07,
+            "linear": 0.0,
+            "quadratic": 0.0,
+            "cubic": -3.3260746750123776e-11,
+            "viscous": 1.087355090624749e-09
+          }
+        },
+        "0_200": {
+          "energy_change": 0.00797972759331761,
+          "integrated_work": {
+            "advection": 0.008983380580055118,
+            "linear": 0.0,
+            "quadratic": 0.0,
+            "cubic": -0.0006119965899435782,
+            "viscous": -0.0003922220357221089
+          },
+          "sampling_residual": 5.656389281787078e-07,
+          "residual_over_sum_abs_work": 5.6634123629501974e-05,
+          "quadrature_change_1_vs_half": {
+            "advection": -1.6360705053473923e-06,
+            "linear": 0.0,
+            "quadratic": 0.0,
+            "cubic": -1.1410103350649112e-08,
+            "viscous": -2.0787015495406583e-10
+          }
+        },
+        "200_400": {
+          "energy_change": -0.00030571971457889636,
+          "integrated_work": {
+            "advection": 0.0005057982985866407,
+            "linear": 0.0,
+            "quadratic": 0.0,
+            "cubic": -0.000351870146330774,
+            "viscous": -0.00045968158084337424
+          },
+          "sampling_residual": 3.371400861121917e-08,
+          "residual_over_sum_abs_work": 2.559229358328576e-05,
+          "quadrature_change_1_vs_half": {
+            "advection": -1.0084254531926833e-07,
+            "linear": 0.0,
+            "quadratic": 0.0,
+            "cubic": -7.305439912947201e-10,
+            "viscous": 1.5242359848247067e-10
+          }
+        },
+        "0_400": {
+          "energy_change": 0.007674007878738713,
+          "integrated_work": {
+            "advection": 0.009489178878641757,
+            "linear": 0.0,
+            "quadratic": 0.0,
+            "cubic": -0.0009638667362743522,
+            "viscous": -0.0008519036165654831
+          },
+          "sampling_residual": 5.99352936790469e-07,
+          "residual_over_sum_abs_work": 5.3016862306768594e-05,
+          "quadrature_change_1_vs_half": {
+            "advection": -1.7369130506650343e-06,
+            "linear": 0.0,
+            "quadratic": 0.0,
+            "cubic": -1.2140647341943832e-08,
+            "viscous": -5.544655641738505e-11
+          }
+        }
+      },
+      "max_absolute_scalar_reconstruction_error": 1.3686947408775296e-11,
+      "provenance": [
+        {
+          "segment_end": 80,
+          "config_sha256": "c22166855e59fa1beceede8c3f39ca5a8680d7524526679e0286307264e4dbff",
+          "scalar_sha256": "9f47da85d91b618d8c99b3588dfa1ae4de44cb889d53e41d4d60e212f58a5eab"
+        },
+        {
+          "segment_end": 160,
+          "config_sha256": "e9c9cd4df5551424165f5f3f0f3e9e54579de297bad65c0806c4a4dec27f2249",
+          "scalar_sha256": "7044d2b0a30904c4bd04f148bc2452fe003c65a86e87a4683adc3c74e4584aa6"
+        },
+        {
+          "segment_end": 240,
+          "config_sha256": "050d6046a4c117ea103b871dc834ea62057ef5dd6ea51322645bf5eca4766cc2",
+          "scalar_sha256": "34a7d712388bb05bc3fae763fbb357406f3e5598deb09803497a1e382de5bb89"
+        },
+        {
+          "segment_end": 320,
+          "config_sha256": "c93fb21192d623e59dacbb29cc476badb7e24535e1d897addaf3c3910853de16",
+          "scalar_sha256": "3d13a1cbe8d3d6b0e00a708daba2ceb533aacac9d74c5e88eea76fc29ac0db37"
+        },
+        {
+          "segment_end": 400,
+          "config_sha256": "322b2acc0d0d9b97c2ed17b44800fe00531824616bc44b58bd6ce14f25079ae2",
+          "scalar_sha256": "c8c397068cbdec4f7911b784508e3063db67d182495792ab903731c033e92714"
+        }
+      ],
+      "final": {
+        "t": 400.0,
+        "energy": 0.008490220532947682,
+        "energy_k_le_2": 0.007674007878738713,
+        "skewness": -0.8480048753315548,
+        "mean_zeta": 2.7212503084239614e-12,
+        "energy_weighted_wavelength": 5.306404606427147,
+        "advection_lowk_power": -3.41178655806607e-07,
+        "advection_total_power": 6.268043809681823e-20,
+        "linear_lowk_power": 0.0,
+        "linear_total_power": 9.42037001458306e-08,
+        "quadratic_lowk_power": 0.0,
+        "quadratic_total_power": 0.0,
+        "cubic_lowk_power": -1.2177760096967199e-06,
+        "cubic_total_power": -1.4530873895811989e-06,
+        "viscous_lowk_power": -2.136058870401299e-06,
+        "viscous_total_power": -3.599635495439569e-06,
+        "advective_power_k_le_2": -3.41178655806607e-07,
+        "advective_power_k_le_4": 3.041805187469969e-07,
+        "advective_power_k_le_8": -4.538457063345291e-08,
+        "advective_power_k_le_12": -1.9272731109876525e-09,
+        "advective_power_k_le_16": -1.325854122682505e-08,
+        "advective_power_k_le_32": -6.505574741935596e-10,
+        "integral_advection": 0.009489178878641773,
+        "integral_linear": 0.0,
+        "integral_quadratic": 0.0,
+        "integral_cubic": -0.0009638667362743512,
+        "integral_viscous": -0.0008519036165654833,
+        "lowk_change": 0.007674007878738713,
+        "sampling_residual": 5.993529367748565e-07,
+        "major_core_count": 0,
+        "largest_core_area_fraction": 0.0
+      }
+    },
+    "biased_plus": {
+      "windows": {
+        "0_80": {
+          "energy_change": 0.005994438819214217,
+          "integrated_work": {
+            "advection": 0.0057429126278918,
+            "linear": 0.0,
+            "quadratic": 0.000971159017631904,
+            "cubic": -0.0006135471616119404,
+            "viscous": -0.00010659881016179435
+          },
+          "sampling_residual": 5.131454642471472e-07,
+          "residual_over_sum_abs_work": 6.90248107686806e-05,
+          "quadrature_change_1_vs_half": {
+            "advection": -9.430658194087282e-07,
+            "linear": 0.0,
+            "quadratic": -5.598121083317739e-07,
+            "cubic": -2.4853217173072956e-10,
+            "viscous": 3.492524454156657e-09
+          }
+        },
+        "80_160": {
+          "energy_change": 0.003557340023578272,
+          "integrated_work": {
+            "advection": 0.0013003357946916824,
+            "linear": 0.0,
+            "quadratic": 0.005250031872985197,
+            "cubic": -0.00273492309354101,
+            "viscous": -0.0002606392593953972
+          },
+          "sampling_residual": 2.5347088377998712e-06,
+          "residual_over_sum_abs_work": 0.0002655276994830753,
+          "quadrature_change_1_vs_half": {
+            "advection": -8.025504277286207e-06,
+            "linear": 0.0,
+            "quadratic": -1.0806615079444332e-07,
+            "cubic": 3.1640631821625714e-08,
+            "viscous": 2.5060186319755123e-09
+          }
+        },
+        "160_240": {
+          "energy_change": 0.010156530669090984,
+          "integrated_work": {
+            "advection": 0.005307931495403819,
+            "linear": 0.0,
+            "quadratic": 0.011244196832304224,
+            "cubic": -0.005989702654093836,
+            "viscous": -0.0004035642907231823
+          },
+          "sampling_residual": -2.330713800039949e-06,
+          "residual_over_sum_abs_work": 0.00010157653735565664,
+          "quadrature_change_1_vs_half": {
+            "advection": 7.795885078388728e-06,
+            "linear": 0.0,
+            "quadratic": -5.084169853036835e-07,
+            "cubic": 3.2807078769597764e-07,
+            "viscous": 1.2477083444662092e-09
+          }
+        },
+        "240_320": {
+          "energy_change": 0.008719053400391495,
+          "integrated_work": {
+            "advection": -0.0010661218840179174,
+            "linear": 0.0,
+            "quadratic": 0.022196289752226893,
+            "cubic": -0.011652078395660006,
+            "viscous": -0.000755691667282275
+          },
+          "sampling_residual": -3.3444048751982147e-06,
+          "residual_over_sum_abs_work": 9.375912080858373e-05,
+          "quadrature_change_1_vs_half": {
+            "advection": 1.0514375137407562e-05,
+            "linear": 0.0,
+            "quadratic": 6.227192172990337e-07,
+            "cubic": -5.071670754700636e-07,
+            "viscous": -4.5400229707398196e-09
+          }
+        },
+        "320_400": {
+          "energy_change": 0.016321298252690707,
+          "integrated_work": {
+            "advection": 0.0006396953086954047,
+            "linear": 0.0,
+            "quadratic": 0.03859373244787813,
+            "cubic": -0.021793910335386406,
+            "viscous": -0.0011284394733550962
+          },
+          "sampling_residual": 1.0220304858674784e-05,
+          "residual_over_sum_abs_work": 0.0001644304883473624,
+          "quadrature_change_1_vs_half": {
+            "advection": -3.452384050556235e-05,
+            "linear": 0.0,
+            "quadratic": 3.8853574570868465e-07,
+            "cubic": -3.379821961885243e-07,
+            "viscous": -1.8508737693314833e-08
+          }
+        },
+        "0_200": {
+          "energy_change": 0.013170962304103037,
+          "integrated_work": {
+            "advection": 0.008751015506511783,
+            "linear": 0.0,
+            "quadratic": 0.010522883205949869,
+            "cubic": -0.005573984934958353,
+            "viscous": -0.0005377463367397051
+          },
+          "sampling_residual": 8.794863339442807e-06,
+          "residual_over_sum_abs_work": 0.0003464504660680347,
+          "quadrature_change_1_vs_half": {
+            "advection": -2.6350950349406446e-05,
+            "linear": 0.0,
+            "quadratic": -6.639470197626618e-07,
+            "cubic": -3.444680927652821e-09,
+            "viscous": 5.904221142593105e-09
+          }
+        },
+        "200_400": {
+          "energy_change": 0.03157769886086264,
+          "integrated_work": {
+            "advection": 0.0031737378361530034,
+            "linear": 0.0,
+            "quadratic": 0.06773252671707648,
+            "cubic": -0.037210176705334844,
+            "viscous": -0.00211718716417804
+          },
+          "sampling_residual": -1.2018228539648068e-06,
+          "residual_over_sum_abs_work": 1.0902506532361026e-05,
+          "quadrature_change_1_vs_half": {
+            "advection": 1.1687999629476226e-06,
+            "linear": 0.0,
+            "quadratic": 4.989067383248669e-07,
+            "cubic": -4.822417033895077e-07,
+            "viscous": -2.170673037626622e-08
+          }
+        },
+        "0_400": {
+          "energy_change": 0.044748661164965675,
+          "integrated_work": {
+            "advection": 0.011924753342664787,
+            "linear": 0.0,
+            "quadratic": 0.07825540992302635,
+            "cubic": -0.042784161640293195,
+            "viscous": -0.002654933500917745
+          },
+          "sampling_residual": 7.5930404854832045e-06,
+          "residual_over_sum_abs_work": 5.598792217770136e-05,
+          "quadrature_change_1_vs_half": {
+            "advection": -2.5182150386458824e-05,
+            "linear": 0.0,
+            "quadratic": -1.6504028144126437e-07,
+            "cubic": -4.856863843188952e-07,
+            "viscous": -1.5802509233889955e-08
+          }
+        }
+      },
+      "max_absolute_scalar_reconstruction_error": 7.781000843642971e-11,
+      "provenance": [
+        {
+          "segment_end": 80,
+          "config_sha256": "2c3d96c7f63c0348d58c44ff256beb5bef8f978fcfc9408e227c6d2bcdf1ee37",
+          "scalar_sha256": "75edc5b7983396d32cf13b4dd5014b2d605bd926d659a8ff633c4d5d42cd3efc"
+        },
+        {
+          "segment_end": 160,
+          "config_sha256": "01a1ce00836698ef4fefedfacfe825609a9f21a16c89998360932e2bf655b147",
+          "scalar_sha256": "a48ba9fa4faedcf82a7bc80abd4e39284f1fef0fdb94123b33b18cb7818216c3"
+        },
+        {
+          "segment_end": 240,
+          "config_sha256": "0877f39759400bdb9f7dd1143195d5ab40d81f28ed05e4e7368d4642ec5cfa1d",
+          "scalar_sha256": "91ccc1f629389e4dc6bdf8938c3e710f96820f8fde82e23af52be7b203f299f0"
+        },
+        {
+          "segment_end": 320,
+          "config_sha256": "2b7d79c65c5766dee81420b1bef82eb42a0fb71fcfb20d4b6fd8a45d23ddac53",
+          "scalar_sha256": "ed104e1b8e804e9dc3c3e352cce783f6bf4e5ae7054f9dabfb3b0a5874b018be"
+        },
+        {
+          "segment_end": 400,
+          "config_sha256": "a9bfddeff532edc43cbed15edd09ce1bb5191490e3a331eb21b4395f9b917529",
+          "scalar_sha256": "cffa462e450f40a1ff15666b179f4ea8811b10dc02c30721dfa1680ecf75d592"
+        }
+      ],
+      "final": {
+        "t": 400.0,
+        "energy": 0.06220476512914434,
+        "energy_k_le_2": 0.044748661164965675,
+        "skewness": 6.921017271841141,
+        "mean_zeta": 1.0087430890592941e-11,
+        "energy_weighted_wavelength": 4.114436799612475,
+        "advection_lowk_power": 0.00020045331746639618,
+        "advection_total_power": 8.131516293641283e-19,
+        "linear_lowk_power": 0.0,
+        "linear_total_power": 8.829700930252103e-06,
+        "quadratic_lowk_power": 0.0006410624522341527,
+        "quadratic_total_power": 0.0010001378054931116,
+        "cubic_lowk_power": -0.00037656894116229917,
+        "cubic_total_power": -0.0006071332096927507,
+        "viscous_lowk_power": -1.7597055408050087e-05,
+        "viscous_total_power": -6.336666677225408e-05,
+        "advective_power_k_le_2": 0.00020045331746639618,
+        "advective_power_k_le_4": 0.0001024293577989128,
+        "advective_power_k_le_8": 9.44150797295765e-06,
+        "advective_power_k_le_12": 8.550598606992064e-08,
+        "advective_power_k_le_16": -6.355066840281156e-06,
+        "advective_power_k_le_32": 2.31040023377033e-08,
+        "integral_advection": 0.011924753342664796,
+        "integral_linear": 0.0,
+        "integral_quadratic": 0.07825540992302639,
+        "integral_cubic": -0.04278416164029322,
+        "integral_viscous": -0.002654933500917744,
+        "lowk_change": 0.044748661164965675,
+        "sampling_residual": 7.593040485455449e-06,
+        "major_core_count": 2,
+        "largest_core_area_fraction": 0.004985809326171875
+      }
+    },
+    "biased_minus": {
+      "windows": {
+        "0_80": {
+          "energy_change": 0.005994438819429422,
+          "integrated_work": {
+            "advection": 0.005742912627897528,
+            "linear": 0.0,
+            "quadratic": 0.0009711590176309458,
+            "cubic": -0.0006135471616136004,
+            "viscous": -0.00010659881016180163
+          },
+          "sampling_residual": 5.131456763500519e-07,
+          "residual_over_sum_abs_work": 6.902483929924982e-05,
+          "quadrature_change_1_vs_half": {
+            "advection": -9.430658565578315e-07,
+            "linear": 0.0,
+            "quadratic": -5.598120969393027e-07,
+            "cubic": -2.485390114201347e-10,
+            "viscous": 3.4925239736518067e-09
+          }
+        },
+        "80_160": {
+          "energy_change": 0.0035573400180030764,
+          "integrated_work": {
+            "advection": 0.001300335792405531,
+            "linear": 0.0,
+            "quadratic": 0.0052500318698436264,
+            "cubic": -0.0027349230916466055,
+            "viscous": -0.00026063925936051913
+          },
+          "sampling_residual": 2.5347067610435696e-06,
+          "residual_over_sum_abs_work": 0.0002655274821336069,
+          "quadrature_change_1_vs_half": {
+            "advection": -8.025504045891876e-06,
+            "linear": 0.0,
+            "quadratic": -1.0806657320134444e-07,
+            "cubic": 3.164091398003693e-08,
+            "viscous": 2.506024994778592e-09
+          }
+        },
+        "160_240": {
+          "energy_change": 0.010156530892082481,
+          "integrated_work": {
+            "advection": 0.005307931710316694,
+            "linear": 0.0,
+            "quadratic": 0.011244196864183082,
+            "cubic": -0.005989702681248986,
+            "viscous": -0.0004035642916175356
+          },
+          "sampling_residual": -2.3307095507740794e-06,
+          "residual_over_sum_abs_work": 0.00010157635094861554,
+          "quadrature_change_1_vs_half": {
+            "advection": 7.79586975214585e-06,
+            "linear": 0.0,
+            "quadratic": -5.084182039313129e-07,
+            "cubic": 3.280720379944535e-07,
+            "viscous": 1.2477241643311585e-09
+          }
+        },
+        "240_320": {
+          "energy_change": 0.008719051664737403,
+          "integrated_work": {
+            "advection": -0.001066123449529086,
+            "linear": 0.0,
+            "quadratic": 0.022196289677063698,
+            "cubic": -0.011652078436807864,
+            "viscous": -0.0007556916664812676
+          },
+          "sampling_residual": -3.344459508078032e-06,
+          "residual_over_sum_abs_work": 9.376064839712638e-05,
+          "quadrature_change_1_vs_half": {
+            "advection": 1.0514424855600233e-05,
+            "linear": 0.0,
+            "quadratic": 6.227165453565053e-07,
+            "cubic": -5.071645402480313e-07,
+            "viscous": -4.539957885649724e-09
+          }
+        },
+        "320_400": {
+          "energy_change": 0.016321298819158097,
+          "integrated_work": {
+            "advection": 0.0006396967289810371,
+            "linear": 0.0,
+            "quadratic": 0.03859373041627959,
+            "cubic": -0.02179390939213195,
+            "viscous": -0.0011284394017033197
+          },
+          "sampling_residual": 1.0220467732739713e-05,
+          "residual_over_sum_abs_work": 0.000164433113066666,
+          "quadrature_change_1_vs_half": {
+            "advection": -3.452422374431699e-05,
+            "linear": 0.0,
+            "quadratic": 3.885339812589872e-07,
+            "cubic": -3.3798065517468e-07,
+            "viscous": -1.8508648707421527e-08
+          }
+        },
+        "0_200": {
+          "energy_change": 0.01317096225361978,
+          "integrated_work": {
+            "advection": 0.008751015467707946,
+            "linear": 0.0,
+            "quadratic": 0.010522883187597644,
+            "cubic": -0.005573984922913474,
+            "viscous": -0.0005377463363890618
+          },
+          "sampling_residual": 8.794857616723634e-06,
+          "residual_over_sum_abs_work": 0.00034645024158579753,
+          "quadrature_change_1_vs_half": {
+            "advection": -2.635094549314869e-05,
+            "linear": 0.0,
+            "quadratic": -6.639480454526114e-07,
+            "cubic": -3.4436360967643465e-09,
+            "viscous": 5.904230098861991e-09
+          }
+        },
+        "200_400": {
+          "energy_change": 0.0315776979597907,
+          "integrated_work": {
+            "advection": 0.0031737379423637585,
+            "linear": 0.0,
+            "quadratic": 0.06773252465740329,
+            "cubic": -0.03721017584053553,
+            "viscous": -0.0021171870929353816
+          },
+          "sampling_residual": -1.2017065054367726e-06,
+          "residual_over_sum_abs_work": 1.090145134593646e-05,
+          "quadrature_change_1_vs_half": {
+            "advection": 1.168446454128183e-06,
+            "linear": 0.0,
+            "quadratic": 4.989016980094796e-07,
+            "cubic": -4.822371463680808e-07,
+            "viscous": -2.1706563559185238e-08
+          }
+        },
+        "0_400": {
+          "energy_change": 0.04474866021341048,
+          "integrated_work": {
+            "advection": 0.011924753410071706,
+            "linear": 0.0,
+            "quadratic": 0.07825540784500093,
+            "cubic": -0.042784160763449,
+            "viscous": -0.002654933429324443
+          },
+          "sampling_residual": 7.5931511112903305e-06,
+          "residual_over_sum_abs_work": 5.5988739107997556e-05,
+          "quadrature_change_1_vs_half": {
+            "advection": -2.5182499039020506e-05,
+            "linear": 0.0,
+            "quadratic": -1.6504634743619295e-07,
+            "cubic": -4.856807824665799e-07,
+            "viscous": -1.5802333460431667e-08
+          }
+        }
+      },
+      "max_absolute_scalar_reconstruction_error": 8.592293543330243e-11,
+      "provenance": [
+        {
+          "segment_end": 80,
+          "config_sha256": "e0ef692b4a51ba5b233404bf50c8a9256e84f22cadf0bbf2626546fb82eb1b0f",
+          "scalar_sha256": "618a80ca4aa0823c9d86cdf1312a6ad2d81d4c6dfa03cb6d308c3bafc6e83cd0"
+        },
+        {
+          "segment_end": 160,
+          "config_sha256": "29b2143197d45708cf032645870065899f700f0f192290d39a4397506e91fad8",
+          "scalar_sha256": "13db921670077271b0ad2dea49bb7987222a1d46a485431a74347452d9578962"
+        },
+        {
+          "segment_end": 240,
+          "config_sha256": "b68916e43ec1424303126af643d11ba06665f3243ce8d3a1e452e2a36cd7d23b",
+          "scalar_sha256": "9bea1a8bddd742792f20d28cbc4f2d70ef9ac771af93c615c8670adb2b733209"
+        },
+        {
+          "segment_end": 320,
+          "config_sha256": "8631e175a3a7c9b2c7db35e9293399e3c289da10b209ebb9c85b4a25f3b7abe5",
+          "scalar_sha256": "f3b6e7de77789819c0f75ed04861fc6b5dba04cc1c999f2fbc112a4606e65d84"
+        },
+        {
+          "segment_end": 400,
+          "config_sha256": "981cff22c8a12105b3acef201521752a5a02ae3934779a159bd2672b29388807",
+          "scalar_sha256": "a9ea08cb18559d0242628a97b4c47d1f5292d78735560300c13018fddb6901b4"
+        }
+      ],
+      "final": {
+        "t": 400.0,
+        "energy": 0.06220476338395639,
+        "energy_k_le_2": 0.04474866021341048,
+        "skewness": -6.921017382926738,
+        "mean_zeta": -1.6940011893229467e-11,
+        "energy_weighted_wavelength": 4.114436827270565,
+        "advection_lowk_power": 0.00020045308226334396,
+        "advection_total_power": 2.3852447794681098e-18,
+        "linear_lowk_power": 0.0,
+        "linear_total_power": 8.829704222576476e-06,
+        "quadratic_lowk_power": 0.00064106240857906,
+        "quadratic_total_power": 0.0010001377511750715,
+        "cubic_lowk_power": -0.0003765689156712582,
+        "cubic_total_power": -0.000607133184879341,
+        "viscous_lowk_power": -1.7597055225728793e-05,
+        "viscous_total_power": -6.336666444851393e-05,
+        "advective_power_k_le_2": 0.00020045308226334396,
+        "advective_power_k_le_4": 0.00010242843861849689,
+        "advective_power_k_le_8": 9.441302381678785e-06,
+        "advective_power_k_le_12": 8.556592718891062e-08,
+        "advective_power_k_le_16": -6.3550425718773005e-06,
+        "advective_power_k_le_32": 2.3105238150560514e-08,
+        "integral_advection": 0.011924753410071712,
+        "integral_linear": 0.0,
+        "integral_quadratic": 0.07825540784500103,
+        "integral_cubic": -0.042784160763449,
+        "integral_viscous": -0.002654933429324443,
+        "lowk_change": 0.04474866021341048,
+        "sampling_residual": 7.593151111186247e-06,
+        "major_core_count": 2,
+        "largest_core_area_fraction": 0.004985809326171875
+      }
+    }
+  },
+  "convection_bridge": {
+    "status": "NOT_IDENTIFIABLE_FROM_EXISTING_ATTRIBUTION",
+    "native_budget_closed": true,
+    "source_report_sha256": "c9121ebba1a579c54b81339fcf4e63448094f45f9782c4f2d66815dd8c28cbd1",
+    "cases": {
+      "plus": {
+        "f": 0.0002880957739764384,
+        "unassigned_over_convective_central_moment": 0.7217252030435648,
+        "convective_sign_persists_across_blocks": true,
+        "physical_attribution_screen_pass": false
+      },
+      "minus": {
+        "f": -0.0002880957739764384,
+        "unassigned_over_convective_central_moment": 5.914570137926601,
+        "convective_sign_persists_across_blocks": false,
+        "physical_attribution_screen_pass": false
+      }
+    },
+    "conclusion": "Numerical closure alone does not identify convective signed feedback. No polynomial coefficient fitted to these contaminated source partitions.",
+    "next_physical_test_requirement": "Resolve the source-partition error relative to the proposed feedback, then predict signed scale-dependent work in a held-out interval or rotation case. The inherited-state f flip is not an independent formation test.",
+    "new_3d_runs_launched": false
+  },
+  "elapsed_seconds": 203.23154970793985,
+  "limitations": [
+    "Float32 saved fields, native-validated staggered reconstruction.",
+    "Half-unit sampled work, not every-stage accounting; temporal quadrature sensitivity and residual explicitly reported.",
+    "Late-time mode holdout tests a selected reduction; it is not an independent seed or a convection validation.",
+    "No inverse-cascade conclusion from morphology alone."
+  ]
+}

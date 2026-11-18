@@ -1,0 +1,312 @@
+{
+  "status": "PHYSICAL_CLOSURE_NOT_VALIDATED",
+  "compute_location": "Unity",
+  "new_simulations": false,
+  "new_fit": false,
+  "source_reports": {
+    "rendered/fplane-sign-v1/analysis.json": "c9121ebba1a579c54b81339fcf4e63448094f45f9782c4f2d66815dd8c28cbd1",
+    "rendered/fplane-closure-v1-1939734/report.json": "25b1a5d250a5a3766394184f063925fae63033b3f9d4e6e54ab2a99d2075bb81"
+  },
+  "training_days": [
+    90,
+    95
+  ],
+  "heldout_days": [
+    95,
+    100
+  ],
+  "fit_region": "central 80% of north-south channel",
+  "full_channel_attribution": {
+    "plus": {
+      "unassigned_over_convective_central_moment": 0.7217252030435648,
+      "physical_attribution_screen_pass": false
+    },
+    "minus": {
+      "unassigned_over_convective_central_moment": 5.914570137926601,
+      "physical_attribution_screen_pass": false
+    }
+  },
+  "interior_native_audit": {
+    "plus": {
+      "native_advection_reconstruction_rms_over_C": 1.2107694115408005,
+      "interior_unassigned_over_convective_moment": 0.7873800048825159
+    },
+    "minus": {
+      "native_advection_reconstruction_rms_over_C": 1.0488841994976206,
+      "interior_unassigned_over_convective_moment": 0.24273741751403555
+    }
+  },
+  "heldout_models": {
+    "sigma0": {
+      "linear": {
+        "coefficients": {
+          "P0(z)": -0.009357470069044152,
+          "P0(h2_laplacian_z)": -0.05579895231570941,
+          "sign_f_P0(z2)": 0.0,
+          "-P0(z3)": 0.0,
+          "sign_f_P0(strain2)": 0.0,
+          "P0(z_strain2)": 0.0,
+          "sign_f_P0(h2_grad_z_squared)": 0.0,
+          "P0(z_convective_intensity)": 0.0,
+          "sign_f_P0(h2_laplacian_z2)": 0.0
+        },
+        "heldout_interior": {
+          "nrmse": 0.9421242795642817,
+          "r2": 0.11240183484381372,
+          "correlation": 0.3357262525985782,
+          "observed_mean": 6.672457451277878e-07,
+          "predicted_mean": 1.205985146324942e-05,
+          "source_rms": 0.0075072917714330235
+        },
+        "heldout_central_third_moment_source": {
+          "nrmse": 1.498433743858463,
+          "r2": -6.122833425616326,
+          "correlation": 0.22992168270152394,
+          "observed_mean": 1.4445284196166291e-06,
+          "predicted_mean": -9.861582453084178e-07,
+          "source_rms": 1.7456313043236252e-06,
+          "observed_time_mean": 1.4445284196166291e-06,
+          "predicted_time_mean": -9.861582453084178e-07,
+          "same_sign_fraction": 0.04878048780487805
+        },
+        "heldout_low_mode_energy_work": {
+          "nrmse": 248.99351991567622,
+          "r2": -3668759.992946906,
+          "correlation": -0.06855384691010652,
+          "observed_mean": -6.869974954328393e-08,
+          "predicted_mean": -1.7315678076026263e-05,
+          "source_rms": 6.928768442333057e-08,
+          "observed_time_mean": -6.869974954328393e-08,
+          "predicted_time_mean": -1.7315678076026263e-05,
+          "same_sign_fraction": 1.0
+        }
+      },
+      "polynomial_free": {
+        "coefficients": {
+          "P0(z)": -0.015123585480507882,
+          "P0(h2_laplacian_z)": -0.057863550542948464,
+          "sign_f_P0(z2)": 0.02086646554904826,
+          "-P0(z3)": -0.31736421445925034,
+          "sign_f_P0(strain2)": 0.0,
+          "P0(z_strain2)": 0.0,
+          "sign_f_P0(h2_grad_z_squared)": 0.0,
+          "P0(z_convective_intensity)": 0.0,
+          "sign_f_P0(h2_laplacian_z2)": 0.0
+        },
+        "heldout_interior": {
+          "nrmse": 0.9412845198378373,
+          "r2": 0.11398344571447672,
+          "correlation": 0.3381122712790778,
+          "observed_mean": 6.672457451277878e-07,
+          "predicted_mean": 3.0243610888420512e-05,
+          "source_rms": 0.0075072917714330235
+        },
+        "heldout_central_third_moment_source": {
+          "nrmse": 0.5269080997238182,
+          "r2": 0.11926055266943347,
+          "correlation": 0.39308828906931403,
+          "observed_mean": 1.4445284196166291e-06,
+          "predicted_mean": 1.5553410809934901e-06,
+          "source_rms": 1.7456313043236252e-06,
+          "observed_time_mean": 1.4445284196166291e-06,
+          "predicted_time_mean": 1.5553410809934901e-06,
+          "same_sign_fraction": 0.9512195121951219
+        },
+        "heldout_low_mode_energy_work": {
+          "nrmse": 311.57498963156036,
+          "r2": -5744714.279976927,
+          "correlation": 0.3807268316545735,
+          "observed_mean": -6.869974954328393e-08,
+          "predicted_mean": -2.164709219301764e-05,
+          "source_rms": 6.928768442333057e-08,
+          "observed_time_mean": -6.869974954328393e-08,
+          "predicted_time_mean": -2.164709219301764e-05,
+          "same_sign_fraction": 1.0
+        }
+      },
+      "polynomial_sign_saturating": {
+        "coefficients": {
+          "P0(z)": -0.01047675775113367,
+          "P0(h2_laplacian_z)": -0.056957862832188205,
+          "sign_f_P0(z2)": 0.029852468288502153,
+          "-P0(z3)": 6.8734350138692184e-15,
+          "sign_f_P0(strain2)": 0.0,
+          "P0(z_strain2)": 0.0,
+          "sign_f_P0(h2_grad_z_squared)": 0.0,
+          "P0(z_convective_intensity)": 0.0,
+          "sign_f_P0(h2_laplacian_z2)": 0.0
+        },
+        "heldout_interior": {
+          "nrmse": 0.9419032941949861,
+          "r2": 0.11281817737625288,
+          "correlation": 0.3363555395993333,
+          "observed_mean": 6.672457451277878e-07,
+          "predicted_mean": -8.590351842244224e-06,
+          "source_rms": 0.0075072917714330235
+        },
+        "heldout_central_third_moment_source": {
+          "nrmse": 0.5512282690868344,
+          "r2": 0.0360807299657524,
+          "correlation": 0.24676142016925956,
+          "observed_mean": 1.4445284196166291e-06,
+          "predicted_mean": 1.4772847531600012e-06,
+          "source_rms": 1.7456313043236252e-06,
+          "observed_time_mean": 1.4445284196166291e-06,
+          "predicted_time_mean": 1.4772847531600012e-06,
+          "same_sign_fraction": 0.9512195121951219
+        },
+        "heldout_low_mode_energy_work": {
+          "nrmse": 168.49872185692527,
+          "r2": -1680104.4953104001,
+          "correlation": -0.23959637714279514,
+          "observed_mean": -6.869974954328393e-08,
+          "predicted_mean": -1.1731813710620077e-05,
+          "source_rms": 6.928768442333057e-08,
+          "observed_time_mean": -6.869974954328393e-08,
+          "predicted_time_mean": -1.1731813710620077e-05,
+          "same_sign_fraction": 1.0
+        }
+      }
+    },
+    "sigma4": {
+      "linear": {
+        "coefficients": {
+          "P0(z)": -2.1977029210089933e-05,
+          "P0(h2_laplacian_z)": -0.02687930119580184,
+          "sign_f_P0(z2)": 0.0,
+          "-P0(z3)": 0.0,
+          "sign_f_P0(strain2)": 0.0,
+          "P0(z_strain2)": 0.0,
+          "sign_f_P0(h2_grad_z_squared)": 0.0,
+          "P0(z_convective_intensity)": 0.0,
+          "sign_f_P0(h2_laplacian_z2)": 0.0
+        },
+        "heldout_interior": {
+          "nrmse": 0.9840264882000468,
+          "r2": 0.03168562876779302,
+          "correlation": 0.17844049674665194,
+          "observed_mean": 2.5844529738926164e-07,
+          "predicted_mean": 1.4204085541950928e-06,
+          "source_rms": 0.00010179431810322938
+        },
+        "heldout_central_third_moment_source": {
+          "nrmse": 0.45970351284466576,
+          "r2": -0.7887738766589651,
+          "correlation": 0.09994043780731406,
+          "observed_mean": 3.748267117027134e-08,
+          "predicted_mean": 2.5244690885692807e-08,
+          "source_rms": 3.9914521529911045e-08,
+          "observed_time_mean": 3.748267117027134e-08,
+          "predicted_time_mean": 2.5244690885692807e-08,
+          "same_sign_fraction": 1.0
+        },
+        "heldout_low_mode_energy_work": {
+          "nrmse": 4.33537565056459,
+          "r2": -1132.141265930996,
+          "correlation": -0.24182704014447776,
+          "observed_mean": -6.774939261673268e-08,
+          "predicted_mean": -3.6377499135284474e-07,
+          "source_rms": 6.831836224866465e-08,
+          "observed_time_mean": -6.774939261673268e-08,
+          "predicted_time_mean": -3.6377499135284474e-07,
+          "same_sign_fraction": 1.0
+        }
+      },
+      "polynomial_free": {
+        "coefficients": {
+          "P0(z)": -0.00024055323274570247,
+          "P0(h2_laplacian_z)": -0.027757248294663694,
+          "sign_f_P0(z2)": 0.00106113021118638,
+          "-P0(z3)": -0.01028201543069189,
+          "sign_f_P0(strain2)": 0.0,
+          "P0(z_strain2)": 0.0,
+          "sign_f_P0(h2_grad_z_squared)": 0.0,
+          "P0(z_convective_intensity)": 0.0,
+          "sign_f_P0(h2_laplacian_z2)": 0.0
+        },
+        "heldout_interior": {
+          "nrmse": 0.9831873121353996,
+          "r2": 0.03333647814445073,
+          "correlation": 0.18289525728781542,
+          "observed_mean": 2.5844529738926164e-07,
+          "predicted_mean": 1.2035615795300648e-06,
+          "source_rms": 0.00010179431810322938
+        },
+        "heldout_central_third_moment_source": {
+          "nrmse": 0.3467014080251952,
+          "r2": -0.01744515897849075,
+          "correlation": 0.1820354228367642,
+          "observed_mean": 3.748267117027134e-08,
+          "predicted_mean": 3.999866617728697e-08,
+          "source_rms": 3.9914521529911045e-08,
+          "observed_time_mean": 3.748267117027134e-08,
+          "predicted_time_mean": 3.999866617728697e-08,
+          "same_sign_fraction": 1.0
+        },
+        "heldout_low_mode_energy_work": {
+          "nrmse": 5.190151149846952,
+          "r2": -1623.0171043988162,
+          "correlation": -0.18213631222907686,
+          "observed_mean": -6.774939261673268e-08,
+          "predicted_mean": -4.222092781878347e-07,
+          "source_rms": 6.831836224866465e-08,
+          "observed_time_mean": -6.774939261673268e-08,
+          "predicted_time_mean": -4.222092781878347e-07,
+          "same_sign_fraction": 1.0
+        }
+      },
+      "polynomial_sign_saturating": {
+        "coefficients": {
+          "P0(z)": -0.0002512174265166727,
+          "P0(h2_laplacian_z)": -0.028148755411581444,
+          "sign_f_P0(z2)": 0.002614039727440156,
+          "-P0(z3)": 2.2608391208581835e-10,
+          "sign_f_P0(strain2)": 0.0,
+          "P0(z_strain2)": 0.0,
+          "sign_f_P0(h2_grad_z_squared)": 0.0,
+          "P0(z_convective_intensity)": 0.0,
+          "sign_f_P0(h2_laplacian_z2)": 0.0
+        },
+        "heldout_interior": {
+          "nrmse": 0.983326546831452,
+          "r2": 0.03306266942004388,
+          "correlation": 0.18211521690184118,
+          "observed_mean": 2.5844529738926164e-07,
+          "predicted_mean": 1.1807580859143048e-06,
+          "source_rms": 0.00010179431810322938
+        },
+        "heldout_central_third_moment_source": {
+          "nrmse": 0.3471213790335117,
+          "r2": -0.019911582588446164,
+          "correlation": 0.15043177036732658,
+          "observed_mean": 3.748267117027134e-08,
+          "predicted_mean": 3.9919021482471117e-08,
+          "source_rms": 3.9914521529911045e-08,
+          "observed_time_mean": 3.748267117027134e-08,
+          "predicted_time_mean": 3.9919021482471117e-08,
+          "same_sign_fraction": 1.0
+        },
+        "heldout_low_mode_energy_work": {
+          "nrmse": 5.114666147452844,
+          "r2": -1576.1215626968444,
+          "correlation": 0.2630273337652912,
+          "observed_mean": -6.774939261673268e-08,
+          "predicted_mean": -4.1707059620903974e-07,
+          "source_rms": 6.831836224866465e-08,
+          "observed_time_mean": -6.774939261673268e-08,
+          "predicted_time_mean": -4.1707059620903974e-07,
+          "same_sign_fraction": 1.0
+        }
+      }
+    }
+  },
+  "conclusions": [
+    "The existing held-out test is reused rather than repeating a fit.",
+    "A quadratic term captures part of the central-third-moment production, but its spatial source prediction barely improves on the linear baseline.",
+    "The unconstrained cubic coefficient has the opposite sign to damping; imposing cubic damping drives its fitted coefficient to approximately zero.",
+    "The fitted models do not predict the measured low-mode source work accurately, including after the declared filter.",
+    "Native budget closure and physical stress attribution are different tests; the latter still fails.",
+    "No fitted coefficients are transplanted into the 2D control and no new 3D job is launched."
+  ],
+  "physical_next_gate": "An independently trustworthy signed and scale-dependent convective stress-work prediction, including its numerical-reconstruction uncertainty; reproduction of skewness alone is insufficient."
+}

@@ -1,0 +1,18 @@
+bytes_per_step = 4847.36
+half_dt_relative_error = 6.6989475232182665e-16
+initial_sha256 = "35cb85c5c7f179ac97dce1658f6779cd88e1d39c40b6193292412d250a7a8c6d"
+native_diffusion_only_error = 4.3038122090389787e-14
+native_reconstruction_max_error = 6.008220681401412e-13
+restart_relative_error = 0.0
+seconds_per_step = 0.0359446784
+status = "PASS"
+target_limit = 400.0
+
+[code_sha256]
+"../feedback_maintenance_v1/model.jl" = "c8ec93d6013c497609b0a8c6fc3c106284c88fd0139c8d11cfc99682bd878f64"
+"../instability2d_v1/core.jl" = "7b03014ba4500f05c7f978e9a80bfc3d525b8300dd245acdc5500fe3bf78430c"
+"../viscous2d_fast512_v1/model.jl" = "7a2eabe0cc129a6810f0a14e85e51a22a019c38a66acf51c9216858276e36e4a"
+"../viscous2d_feedback512_v1/model.jl" = "ca5af8ebbad116beb25b4b7598389c3c931578aae4e0c2caafd6bfb7c454c9ee"
+"check.jl" = "4ed7cc9968a5c4418f8af9ac7c116e18d9bef3a73e080066a0cefb763e133e02"
+"model.jl" = "69328af745f30f9454ae3704a893925190298ac751d604435b6545176160fdb0"
+"run.jl" = "cc2b8b18deb52d2b0e218a88f26090b3b70789b0a26170b833b9e2ff90297086"
