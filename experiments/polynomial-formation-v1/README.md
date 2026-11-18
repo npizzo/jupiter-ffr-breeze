@@ -41,3 +41,7 @@ The original capped f-plane sign audit closes its chosen native numerical budget
 ## Output
 
 The existing-output analysis, ROM prediction tests, provenance, and matched advection-on/off vorticity movie belong on the GitHub Pages gallery. This is a genuinely horizontal 2D model: one plane and no tracer or fabricated depth panels. Movies use a single symmetric asinh range fixed across time and cases. Pending and failed physical-prediction gates must remain visible.
+
+## Runtime correction
+
+Use the `check-runtime-v2` and `run-runtime-v2` Slurm wrappers. They set the one-thread Julia configuration after sourcing the shared environment, which otherwise resets it to four threads. The initial validation job timed out after ten CPU-minutes; no production was released by it. Scientific source and all physical parameters are unchanged. The repaired validation must pass before release.
