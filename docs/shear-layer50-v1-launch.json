@@ -1,0 +1,24 @@
+{
+  "production_job": "1962565",
+  "continuation_job": "1962804",
+  "root": "data/shear-layer-v1-1962402",
+  "continuation_root": "data/shear-layer50-v1-1962402",
+  "fifty_day_review_job": "1962808",
+  "fifty_day_review_output": "rendered/shear-layer50-v1-1962402",
+  "target_days": 50,
+  "continuation_gpu_hours_limit": 15,
+  "full_campaign_gpu_hours_limit": 21.75,
+  "superseded_ten_day_review_job": "1962571",
+  "ten_day_review_status": "CANCELLED_BY_AUTHORIZED_50_DAY_EXTENSION",
+  "extended_utc": "2026-11-18T14:47:03.533282+00:00",
+  "physics_changes": [],
+  "configuration_changes": {
+    "stop_seconds": 4320000.0,
+    "wall_time_limit": 8400.0
+  },
+  "interpretation_window_days": [
+    40,
+    50
+  ],
+  "note": "Initial cases unchanged; continuation and render pending dependencies; no mature results yet."
+}
