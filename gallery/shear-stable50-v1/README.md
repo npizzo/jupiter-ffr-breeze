@@ -1,3 +1,7 @@
 # Stable-layer shear cases, days 0–50
 
-The three completed stable-layer cases are being rendered on Unity for this gallery entry. Publication and playback verification are in progress.
+[Watch the three movies](https://npizzo.github.io/jupiter-ffr-breeze/gallery/shear-stable50-v1/).
+
+Cyclonic, zero, and anticyclonic initial shear; common stable cap, dry anelastic f55N, bottom heating, random initial conditions, and numerical resolution. Each movie has three depth columns, vorticity over tracer, all 401 saved states, and fixed scales shared across cases. Dynamics, rendering, timeline checks, and full video decode validation ran on Unity. Raw fields stay there. See publication.json and individual movie JSON files for provenance.
+
+The total vorticity includes the evolving zonal flow. These movies alone do not establish an LSV, spontaneous sign selection, or an inverse cascade. The physical comparison uses the mature days 40–50 window and the matched neutral-upper-layer cases.
