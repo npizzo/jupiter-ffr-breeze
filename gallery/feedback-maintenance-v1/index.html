@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Vortex maintenance test · Jupiter Flow Gallery</title>
+<style>
+:root{color-scheme:light}body{margin:0;background:#f5f3ed;color:#192c36;font:17px/1.6 system-ui,sans-serif}main{max-width:1100px;margin:auto;padding:32px 24px}a{color:#166c70}h1{line-height:1.15;font-size:40px}h2{margin-top:40px}video,img{width:100%;height:auto;background:white;border-radius:6px}.note{padding:16px;border-left:3px solid #b17a36;background:#eee9dd}.table-wrap{overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:15px}th,td{text-align:left;padding:10px;border-bottom:1px solid #c8ceca}.caption{font-size:14px;color:#52666d}.eyebrow{font-size:13px;letter-spacing:.06em;text-transform:uppercase}button{padding:8px 14px;margin:10px 6px 10px 0;font:inherit;border:1px solid #aabbb9;border-radius:5px;background:white;cursor:pointer}footer{margin-top:40px;border-top:1px solid #c8ceca;padding-top:20px}@media(max-width:600px){h1{font-size:31px}main{padding:24px 16px}th,td{padding:8px}}
+</style>
+</head>
+<body><main>
+<a href="../../#feedback-maintenance-v1">← Gallery landing page</a>
+<p class="eyebrow">Completed on Unity · 512² · dimensionless t = 400–450</p>
+<h1>What maintains the large vortices?</h1>
+<p>Two continuations start from exactly the same mature polynomial-feedback flow at t = 400. The full control retains the original source. The second case removes only the quadratic source contribution to 0 &lt; |k| ≤ 2, leaving cubic saturation and every other term unchanged.</p>
+
+<video id="maintenance" controls playsinline preload="metadata" poster="maintenance_controls_512_400_450.png" aria-label="Synchronized vorticity evolution of the full polynomial control and quadratic low-mode removal">
+<source src="maintenance_controls_512_400_450.mp4" type="video/mp4">
+Your browser does not support embedded video. <a href="maintenance_controls_512_400_450.mp4">Open the movie.</a>
+</video>
+<button type="button" onclick="const v=document.getElementById('maintenance');v.paused?v.play():v.pause()">Play / pause comparison</button>
+<p class="caption">Left: full quadratic and cubic feedback. Right: quadratic output removed only at 0 &lt; |k| ≤ 2. All 101 saved states, every 0.5 model time units, at 6 frames/s (16.83 seconds). Time is dimensionless, not Earth days. This horizontal 2D model has one vorticity plane and no tracer or vertical layers.</p>
+<p class="caption">One fixed shared symmetric asinh scale, linear width 0.1 and limits ±10.55056, spans all extrema across both cases and the entire movie. No clipping or per-frame rescaling. The poster shows t = 450.</p>
+
+<h2>The controlled result</h2>
+<p>Energy in the largest retained modes grows in the full model and declines when their direct quadratic input is removed. Strong positive vorticity skewness remains in both cases. The intervention therefore separates large-scale energetic reinforcement from persistence of the imposed sign preference.</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Quantity</th><th>Shared t = 400 state</th><th>Full control, t = 450</th><th>Quadratic low-mode removal, t = 450</th></tr></thead>
+<tbody>
+<tr><td>Energy in 0 &lt; |k| ≤ 2</td><td>0.04474866</td><td>0.05857908</td><td>0.02765022</td></tr>
+<tr><td>Largest-mode energy / initial value</td><td>1</td><td>1.309069</td><td>0.617901</td></tr>
+<tr><td>Change in largest-mode energy</td><td>0</td><td>+0.01383041</td><td>−0.01709844</td></tr>
+<tr><td>Total kinetic energy</td><td>0.06220477</td><td>0.08179397</td><td>0.04938489</td></tr>
+<tr><td>Vorticity skewness</td><td>+6.9210</td><td>+6.4118</td><td>+6.9496</td></tr>
+</tbody></table></div>
+<p class="caption">Values are taken from the completed Unity report. For positive f, positive vertical vorticity is cyclonic in the right-handed east–north–up coordinate convention.</p>
+<p class="note">This is a maintenance intervention on an existing state. It establishes that the prescribed quadratic input supports growth of the largest modes over this interval. It does not establish spontaneous formation, an inverse cascade, a single surviving vortex, or a derivation of the source from convection. Direct transfer from convective fluctuations into large scales can be physically legitimate; removing it is a diagnostic intervention rather than a requirement that every physical model must survive.</p>
+
+<h2>Where the largest-mode energy goes</h2>
+<p>The table separates the accumulated contributions over t = 400–450. The quadratic term directly reinforces the largest modes in the full case. In the modified case, the positive accumulated advective contribution is too small to offset cubic and viscous losses.</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Contribution to largest-mode energy</th><th>Full control</th><th>Quadratic low-mode removal</th></tr></thead>
+<tbody>
+<tr><td>Quadratic source work</td><td>+0.03856320</td><td>+2.65 × 10⁻¹⁹</td></tr>
+<tr><td>Cubic source work</td><td>−0.02325157</td><td>−0.01703781</td></tr>
+<tr><td>Advective transfer</td><td>−0.00049778</td><td>+0.00063622</td></tr>
+<tr><td>Viscous loss</td><td>−0.00098366</td><td>−0.00069771</td></tr>
+<tr><td>Linear instability source work</td><td>−6.17 × 10⁻²¹</td><td>−8.08 × 10⁻²²</td></tr>
+<tr><td>Measured energy change</td><td>+0.01383041</td><td>−0.01709844</td></tr>
+<tr><td>Final unassigned residual</td><td>+2.2763 × 10⁻⁷</td><td>+8.6380 × 10⁻⁷</td></tr>
+<tr><td>Maximum absolute residual during interval</td><td>4.9342 × 10⁻⁶</td><td>4.7794 × 10⁻⁶</td></tr>
+</tbody></table></div>
+<p class="caption">Native instantaneous tendency work is sampled every 0.25 model time units and integrated by the trapezoidal rule. The residual is the measured endpoint energy change minus those accumulated contributions. These small residuals document sampled accounting; they are not a claim of exact integration at every numerical stage. The linear instability source acts in 12 ≤ |k| ≤ 16, so its largest-mode work is zero to numerical precision.</p>
+<img src="maintenance_lowmode_work.png" alt="Largest-mode energy, skewness, native source powers and accumulated work with the unassigned residual retained for both maintenance cases">
+
+<h2>Precisely what changed</h2>
+<p>Let P₀ remove the spatial mean and P<sub>L</sub> retain 0 &lt; |k| ≤ 2. Write Q₂ = P₀(bfζ²) and Q₃ = −P₀(cζ³). The full model uses Q₂ + Q₃. The intervention uses (I − P<sub>L</sub>)Q₂ + Q₃. Cubic saturation remains active at every scale, and the quadratic source remains active outside the removed band.</p>
+<p>Both cases use a 512 × 512 periodic 2π × 2π domain, ordinary viscosity ν = 10⁻⁴, f = +1, b = 0.002 and c = 0.0002. The original instability forcing has multiplier a|k|² in 12 ≤ |k| ≤ 16 with a = 0.0002 and excludes k<sub>x</sub> = 0. The parameter f labels the sign in the polynomial source; these are dimensionless horizontal 2D experiments. There is no beta, additional velocity drag, hyperviscosity or resolved moist convection.</p>
+<p>The common checkpoint is the completed positive-f polynomial case at t = 400. Pre-run checks verified equivalence of the full control to the original model, the intended spectral removal, conservative curl reconstruction, native tendency work, restart behavior and output timing. Independent checks at t = 400, 425 and 450 recover source work from saved fields with maximum absolute differences below 10⁻¹². The synchronized movie passed full decoding and frame-count checks on Unity.</p>
+
+<h2>Files and related experiments</h2>
+<p><a href="report.json">Completed numerical report</a> · <a href="full_scalars.csv">Full-control scalar history</a> · <a href="no_low_quadratic_scalars.csv">Modified-case scalar history</a></p>
+<p><a href="https://github.com/npizzo/jupiter-ffr-breeze/tree/main/experiments/feedback-maintenance-v1">Protocol and validation</a> · <a href="https://github.com/npizzo/jupiter-ffr-breeze/tree/main/scripts/feedback_maintenance_v1">Source code</a> · <a href="https://github.com/npizzo/jupiter-ffr-breeze/blob/main/experiments/feedback-maintenance-v1/literature-review.md">Adversarial literature review</a></p>
+<p><a href="../viscous2d-feedback512-v1/">Earlier polynomial evolution, t = 0–400</a> · <a href="../stress2d-v1/">Separate nonlinear-stress experiment</a></p>
+<footer>Simulation, analysis, rendering and media validation performed on Unity. Published November 18, 2026. This maintenance test is separate from the new vertically varying convective-response experiments.</footer>
+</main></body></html>

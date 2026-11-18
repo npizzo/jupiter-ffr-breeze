@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Matched cyclone and anticyclone response experiments: perturbation vorticity, buoyancy and convective stress work, computed on Unity.">
+  <title>Convective vortex response · Jupiter Flow Gallery</title>
+  <style>
+    :root{color-scheme:light}*{box-sizing:border-box}body{margin:0;background:#f5f3ed;color:#192c36;font:17px/1.6 system-ui,sans-serif}main{max-width:1100px;margin:auto;padding:32px 24px}a{color:#166c70}a:focus-visible,button:focus-visible{outline:3px solid #166c70;outline-offset:4px}h1{line-height:1.15;font-size:clamp(30px,5vw,40px)}h2{margin-top:42px;line-height:1.25}video,img{display:block;width:100%;height:auto;background:white;border-radius:6px}.note{padding:16px;border-left:3px solid #b17a36;background:#eee9dd}.caption{font-size:14px;color:#52666d}.eyebrow{font-size:14px;letter-spacing:.04em}.table-wrap{overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:14px}th,td{text-align:left;padding:10px;border-bottom:1px solid #c8ceca}th{vertical-align:bottom}td.number{font-variant-numeric:tabular-nums;white-space:nowrap}button{padding:9px 15px;margin:8px 6px 8px 0;font:inherit;border:1px solid #aabbb9;border-radius:5px;background:white;cursor:pointer}footer{margin-top:40px;border-top:1px solid #c8ceca;padding-top:20px}.links{display:flex;flex-wrap:wrap;gap:8px 20px}.flags li{margin-bottom:8px}@media(max-width:600px){main{padding:24px 16px}.note{padding:12px}}
+  </style>
+</head>
+<body>
+<main>
+  <a href="../../#convective-response-v1">← Gallery landing page</a>
+  <p class="eyebrow">UNITY · 128² HORIZONTAL GRID · 0 ≤ |f|t ≤ 10</p>
+  <h1>How convection acts on matched vortices</h1>
+  <p>Small disturbances evolve around a prescribed cyclone or anticyclone. These short experiments measure whether their stresses would reinforce the large flow, and whether that response changes with the thermal gradient or the retained vertical modes.</p>
+  <p class="note"><strong>The background vortices remain fixed.</strong> The movies show the evolving disturbances, not a growing large-scale vortex. This is a linear, frozen-profile mechanism test; it does not simulate saturated convection, spontaneous LSV formation or a sustained inverse cascade.</p>
+
+  <h2>Perturbation vorticity at three heights</h2>
+  <video id="vorticity" controls playsinline preload="metadata" poster="convective_response_vorticity.png" aria-label="Perturbation vorticity around the cyclone and anticyclone at heights 20, 60 and 100 kilometers">
+    <source src="convective_response_vorticity.mp4" type="video/mp4">
+    <a href="convective_response_vorticity.mp4">Open the vorticity movie</a>.
+  </video>
+  <p class="caption">Upper row: cyclone. Lower row: anticyclone. Columns: 20, 60 and 100 km above the bottom. The two-mode, convective-gradient case with seed 20261118 is shown. Colors represent ζ′/|f|; the prescribed background vorticity is omitted so that the small disturbances remain visible. These are actual truncated-model fields reconstructed from their vertical basis at the stated heights, not independent grid levels from Breeze.</p>
+  <p id="vorticity-scale" class="caption">One symmetric asinh color scale spans both vortices, all heights and the entire movie. No framewise rescaling or clipping.</p>
+
+  <h2>Buoyancy perturbation at the same heights</h2>
+  <video id="buoyancy" controls playsinline preload="metadata" poster="convective_response_buoyancy.png" aria-label="Buoyancy perturbations around the cyclone and anticyclone at heights 20, 60 and 100 kilometers">
+    <source src="convective_response_buoyancy.mp4" type="video/mp4">
+    <a href="convective_response_buoyancy.mp4">Open the buoyancy movie</a>.
+  </video>
+  <p class="caption">Same cases, times and layout. Colors show actual buoyancy perturbation b′ in m s⁻². <strong>This is not passive-tracer concentration.</strong> No passive tracer is evolved in these tests. Modes can concentrate below the displayed heights; weak signals aloft retain the same fixed scale.</p>
+  <p id="buoyancy-scale" class="caption">One symmetric asinh scale spans the full buoyancy range across both cases, all heights and all times.</p>
+  <button type="button" id="play-both">Play both movies from the start</button>
+  <button type="button" id="pause-both">Pause both</button>
+  <p id="playback-status" class="caption" aria-live="polite"></p>
+
+  <h2>Measured response</h2>
+  <p>Positive stress work means the disturbances would supply energy to the prescribed vortex; negative work means they extract energy from it. Disturbance growth and vortex reinforcement are separate measurements. The figures show actual power, power per current disturbance energy and power per initial disturbance energy.</p>
+  <p id="report-status" role="status">The verified numerical summary will appear here when the completed report is published.</p>
+  <ul id="interpretation-flags" class="flags"></ul>
+  <div id="comparison-block" hidden>
+    <p>Late-window comparison, 5 ≤ |f|t ≤ 10. Each entry is mean prospective power divided by initial disturbance energy K₀, in units of |f|. A positive cyclone-minus-anticyclone difference can still occur when both vortices lose energy; inspect the individual power curves below.</p>
+    <div class="table-wrap">
+      <table>
+        <caption class="caption">Paired sign differences, kept separate for each vertical truncation and random seed.</caption>
+        <thead><tr><th scope="col">Modes</th><th scope="col">Seed</th><th scope="col">Convective gradient<br>cyclone − anticyclone</th><th scope="col">Gradient removed<br>cyclone − anticyclone</th><th scope="col">Difference between<br>thermal backgrounds</th></tr></thead>
+        <tbody id="comparison-rows"></tbody>
+      </table>
+    </div>
+    <p class="caption">Numerical accounting tolerance is not sampling uncertainty. Two seeds and one horizontal resolution do not establish statistical or spatial convergence.</p>
+  </div>
+  <img loading="lazy" src="response_work_modes1.png" alt="One retained convective mode: cyclone and anticyclone stress work for both seeds, with and without unstable thermal gradients">
+  <img loading="lazy" src="response_work_modes2.png" alt="Two retained convective modes: the same actual and energy-normalized stress-work comparisons">
+  <img loading="lazy" src="response_amplification_and_residual.png" alt="Disturbance energy amplification and the retained integrated kinetic-energy accounting residual for one and two modes">
+  <p class="caption">Power integrals use actual Runge–Kutta stage values. Their finite-step quadratic-energy residual is retained and displayed; it is not assumed to vanish. Buoyancy variance is tracked separately from kinetic energy.</p>
+
+  <h2>Controls and model assumptions</h2>
+  <p>Sixteen primary cases combine one or two complete vertical modes, two vortex signs, two thermal backgrounds and two matched random seeds. Primary cases share the same physical disturbance for each seed, at RMS amplitude 10⁻⁶ of the background flow. Two additional cases reflect both f and the disturbance to check symmetry. There is no continuing random stirring.</p>
+  <p>The finite-f, nonhydrostatic Boussinesq model uses ordinary viscosity and thermal diffusion. Its horizontal box is periodic, 16 selected convective wavelengths wide; the compensated Gaussian vortex has radius two wavelengths and peak |ζ/f| = 0.25. Both prescribed signs pass the centrifugal-stability screen. A complete vertical mode can require several horizontal shape functions to retain its Coriolis coupling.</p>
+  <p>The convective background uses the measured day-100 mean stratification of the earlier heated f-plane run, including its stable cap. The <strong>gradient-removed control</strong> replaces negative N² by zero and retains positive stratification. It is not instantaneous bottom-heating switch-off. The Boussinesq reduction also omits the source atmosphere’s nearly tenfold density variation, vertical-velocity sponge and global enthalpy controller.</p>
+  <p>The interval |f|t = 0–10 corresponds to approximately 9.64 hours at Jupiter’s 55°N value of f. This bounded campaign runs on one Unity CPU, with a 30 CPU-minute projected-cost release gate and a 45-minute production allocation. It is designed to screen a mechanism before a longer nonlinear experiment.</p>
+
+  <h2>Data, equations and validation</h2>
+  <p class="links">
+    <a href="report.json">Completed analysis report</a>
+    <a href="derived_scalars.csv.gz">All derived scalar histories (.csv.gz)</a>
+    <a href="https://github.com/npizzo/jupiter-ffr-breeze/blob/main/experiments/convective-response-v1/README.md">Experiment protocol</a>
+    <a href="https://github.com/npizzo/jupiter-ffr-breeze/blob/main/experiments/convective-response-v1/DERIVATION.md">Equation derivation</a>
+    <a href="https://github.com/npizzo/jupiter-ffr-breeze/blob/main/experiments/convective-response-v1/response-validation.json">Independent response checks</a>
+    <a href="https://github.com/npizzo/jupiter-ffr-breeze/blob/main/experiments/convective-response-v1/mode-validation.json">Vertical-mode checks</a>
+    <a href="https://github.com/npizzo/jupiter-ffr-breeze/tree/main/scripts/convective_response_v1">Source code</a>
+  </p>
+  <footer>All simulation, scientific analysis, rendering and media validation take place on Unity. This page presents a proposed mechanism test, with its limitations and numerical residuals retained.</footer>
+</main>
+<script>
+  const videos = [document.getElementById('vorticity'), document.getElementById('buoyancy')];
+  document.getElementById('play-both').addEventListener('click', async () => {
+    for (const video of videos) video.currentTime = 0;
+    const attempts = await Promise.allSettled(videos.map(video => video.play()));
+    document.getElementById('playback-status').textContent = attempts.every(a => a.status === 'fulfilled') ? 'Both movies started together.' : 'Use the individual player controls to start playback.';
+  });
+  document.getElementById('pause-both').addEventListener('click', () => {
+    videos.forEach(video => video.pause());
+    document.getElementById('playback-status').textContent = 'Both movies paused.';
+  });
+  const number = value => Number.isFinite(value) ? value.toExponential(3) : 'Not available';
+  fetch('report.json', {cache: 'no-store'}).then(response => {
+    if (!response.ok) throw new Error('Report unavailable');
+    return response.json();
+  }).then(report => {
+    if (report.status !== 'ANALYZED_MEDIA_VERIFIED') throw new Error('Completed verification not recorded');
+    document.getElementById('report-status').textContent = `${report.case_count} completed cases analyzed through |f|t = 10. Both movies passed full decoding and frame-count checks on Unity.`;
+    const flags = document.getElementById('interpretation-flags');
+    for (const message of report.interpretation_flags || []) {
+      const li = document.createElement('li'); li.textContent = message; flags.append(li);
+    }
+    if (!(report.interpretation_flags || []).length) {
+      const li = document.createElement('li');
+      li.textContent = 'The declared comparisons found no qualitative contradiction across the tested pairs. This does not establish a statistically robust sign preference or LSV formation.';
+      flags.append(li);
+    }
+    for (const row of report.paired_comparisons || []) {
+      const work = row.late_mean_bt_power_over_K0;
+      const tr = document.createElement('tr');
+      const cells = [row.selected_modes, row.seed, number(work.heated_cyclone_minus_anticyclone), number(work.gradient_removed_cyclone_minus_anticyclone), number(work.heated_minus_gradient_removed_difference)];
+      for (const value of cells) { const td = document.createElement('td'); td.className = 'number'; td.textContent = value; tr.append(td); }
+      document.getElementById('comparison-rows').append(tr);
+    }
+    document.getElementById('comparison-block').hidden = !(report.paired_comparisons || []).length;
+    for (const movie of report.movies || []) {
+      const id = movie.file.includes('vorticity') ? 'vorticity-scale' : 'buoyancy-scale';
+      document.getElementById(id).textContent = `Fixed asinh scale: limits ${number(movie.scale.limits[0])} to ${number(movie.scale.limits[1])} ${movie.units}; linear width ${number(movie.scale.width)}. Shared across all times, cases and heights, with no clipping. ${movie.frames} frames at ${movie.fps} fps.`;
+    }
+  }).catch(() => {
+    document.getElementById('report-status').textContent = 'The completed summary is not available on this page yet. Results will appear only after the verified report is published.';
+  });
+</script>
+</body>
+</html>
