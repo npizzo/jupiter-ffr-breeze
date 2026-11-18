@@ -50,4 +50,14 @@ The first complete response validation passed the physical and numerical checks 
 
 ## Launch record
 
-Vertical reference 1956711, complete-mode check 1956981 and response validation 1957540 passed. The revised timestep changes the checked response by 1.8e-6 relative to its half-step reference. Measured projected cost is 779.6 CPU-seconds for all 18 cases. Production 1957606 was submitted on one Unity CPU, with analysis/rendering dependent on its successful completion. See [execution.json](execution.json), [mode validation](mode-validation.json) and [response validation](response-validation.json). This record identifies submission, not completed results.
+Vertical reference 1956711, complete-mode check 1956981 and response validation 1957540 passed. The revised timestep changes the checked response by 1.8e-6 relative to its half-step reference. Measured projected cost is 779.6 CPU-seconds for all 18 cases. Production 1957606 was submitted on one Unity CPU, with analysis/rendering dependent on its successful completion. See [execution.json](execution.json), [mode validation](mode-validation.json) and [response validation](response-validation.json). Production subsequently completed all 18 cases in 739 seconds on one CPU; analysis and rendering completed in 25 seconds. Both jobs exited successfully.
+
+## Completed result
+
+[Watch the three-depth movies and inspect the work curves](https://npizzo.github.io/jupiter-ffr-breeze/gallery/convective-response-v1/). The completed report and derived scalar histories are published there.
+
+Over the declared late window, 5≤|f|t≤10, the convective disturbances extract energy from both prescribed vortices, more strongly from the cyclone. The two-mode mean P_BT/K₀ values are −0.01007 (cyclone) versus −0.002072 (anticyclone) for seed 20261118, and −0.008763 versus −0.002941 for seed 20261119, in units of |f|. Normalization by current perturbation energy preserves the ordering. Disturbance kinetic energy grows by approximately 12 times while gradient-removed disturbances decay strongly. Growth of convection therefore does not imply reinforcement of the large vortex.
+
+The convection-specific sign contrast changes by approximately 1–2% between one and two modes. Reflected-f power histories agree to approximately 1.4×10⁻¹⁴ relative; the maximum integrated kinetic residual is approximately 1.1×10⁻⁶ of initial perturbation energy. The independently refined timestep check remains separate evidence for integration accuracy. Small accounting residuals do not quantify ensemble uncertainty or establish vertical/horizontal convergence.
+
+This is a **negative result for cyclone reinforcement by this particular linear, frozen-profile response**. It does not rule out nonlinear saturated convection, other profiles or scales, or the mechanism in the original anelastic Breeze flow. The machine report's no-qualitative-contradiction status means the tested pairs agree with each other; it does not mean the physical hypothesis is supported. No longer nonlinear campaign has been launched from this outcome.

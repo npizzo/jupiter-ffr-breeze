@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="Matched cyclone and anticyclone response experiments: perturbation vorticity, buoyancy and convective stress work, computed on Unity.">
+  <meta name="description" content="A negative result for cyclone reinforcement: linear convective disturbances extract energy from both prescribed vortex signs, more strongly from cyclones in these matched Unity tests.">
   <title>Convective vortex response · Jupiter Flow Gallery</title>
   <style>
     :root{color-scheme:light}*{box-sizing:border-box}body{margin:0;background:#f5f3ed;color:#192c36;font:17px/1.6 system-ui,sans-serif}main{max-width:1100px;margin:auto;padding:32px 24px}a{color:#166c70}a:focus-visible,button:focus-visible{outline:3px solid #166c70;outline-offset:4px}h1{line-height:1.15;font-size:clamp(30px,5vw,40px)}h2{margin-top:42px;line-height:1.25}video,img{display:block;width:100%;height:auto;background:white;border-radius:6px}.note{padding:16px;border-left:3px solid #b17a36;background:#eee9dd}.caption{font-size:14px;color:#52666d}.eyebrow{font-size:14px;letter-spacing:.04em}.table-wrap{overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:14px}th,td{text-align:left;padding:10px;border-bottom:1px solid #c8ceca}th{vertical-align:bottom}td.number{font-variant-numeric:tabular-nums;white-space:nowrap}button{padding:9px 15px;margin:8px 6px 8px 0;font:inherit;border:1px solid #aabbb9;border-radius:5px;background:white;cursor:pointer}footer{margin-top:40px;border-top:1px solid #c8ceca;padding-top:20px}.links{display:flex;flex-wrap:wrap;gap:8px 20px}.flags li{margin-bottom:8px}@media(max-width:600px){main{padding:24px 16px}.note{padding:12px}}
@@ -13,8 +13,9 @@
 <main>
   <a href="../../#convective-response-v1">← Gallery landing page</a>
   <p class="eyebrow">UNITY · 128² HORIZONTAL GRID · 0 ≤ |f|t ≤ 10</p>
-  <h1>How convection acts on matched vortices</h1>
-  <p>Small disturbances evolve around a prescribed cyclone or anticyclone. These short experiments measure whether their stresses would reinforce the large flow, and whether that response changes with the thermal gradient or the retained vertical modes.</p>
+  <h1>This convective response does not reinforce cyclones</h1>
+  <p><strong>The tested mechanism gives the opposite of the proposed cyclone-reinforcing feedback.</strong> Over the late measurement window, disturbances extract energy from both prescribed vortex signs, with greater extraction from the cyclone. This ordering holds for both initial seeds and for one or two retained vertical modes, including when power is normalized by the current disturbance energy.</p>
+  <p>All 18 cases completed on Unity. The unstable thermal profile amplifies disturbance kinetic energy by about 11.8–12.3 times; removing its unstable gradients leaves about 0.0013 of the initial energy. Growing disturbances therefore do not imply a reinforcing stress on the large vortex.</p>
   <p class="note"><strong>The background vortices remain fixed.</strong> The movies show the evolving disturbances, not a growing large-scale vortex. This is a linear, frozen-profile mechanism test; it does not simulate saturated convection, spontaneous LSV formation or a sustained inverse cascade.</p>
 
   <h2>Perturbation vorticity at three heights</h2>
@@ -38,10 +39,19 @@
 
   <h2>Measured response</h2>
   <p>Positive stress work means the disturbances would supply energy to the prescribed vortex; negative work means they extract energy from it. Disturbance growth and vortex reinforcement are separate measurements. The figures show actual power, power per current disturbance energy and power per initial disturbance energy.</p>
-  <p id="report-status" role="status">The verified numerical summary will appear here when the completed report is published.</p>
+  <div class="table-wrap">
+    <table>
+      <caption class="caption">Two-mode convective-gradient cases: late mean prospective power P<sub>BT</sub>/K₀ over 5 ≤ |f|t ≤ 10, in units of |f|.</caption>
+      <thead><tr><th scope="col">Seed</th><th scope="col">Cyclone</th><th scope="col">Anticyclone</th></tr></thead>
+      <tbody><tr><td>20261118</td><td class="number">−0.010070</td><td class="number">−0.002072</td></tr><tr><td>20261119</td><td class="number">−0.008763</td><td class="number">−0.002941</td></tr></tbody>
+    </table>
+  </div>
+  <p>Both signs lose prospective energy in every heated pair. The cyclone-minus-anticyclone contrasts agree to about 1–2% between the retained one- and two-mode models. Reflected-f checks agree to about 1.4 × 10⁻¹⁴, and the largest retained kinetic-energy accounting residual is about 1.1 × 10⁻⁶ K₀. These checks support the measured ordering within this model; they do not establish general vertical or statistical convergence.</p>
+  <p class="note"><strong>This is a negative result for this specific finite-window mechanism test.</strong> It does not rule out nonlinear convection-driven LSV formation in Breeze. The background vortex and thermal profile remain fixed, disturbance interactions are linearized, and the Boussinesq reduction omits the original atmosphere’s density variation.</p>
+  <p id="report-status" role="status">All 18 cases are complete; the numerical analysis and both movies were verified on Unity.</p>
   <ul id="interpretation-flags" class="flags"></ul>
   <div id="comparison-block" hidden>
-    <p>Late-window comparison, 5 ≤ |f|t ≤ 10. Each entry is mean prospective power divided by initial disturbance energy K₀, in units of |f|. A positive cyclone-minus-anticyclone difference can still occur when both vortices lose energy; inspect the individual power curves below.</p>
+    <p>Late-window comparison, 5 ≤ |f|t ≤ 10. Each entry is mean prospective power divided by initial disturbance energy K₀, in units of |f|. The negative cyclone-minus-anticyclone differences show greater prospective energy extraction from the cyclone; subtracting the gradient-removed control preserves that sign.</p>
     <div class="table-wrap">
       <table>
         <caption class="caption">Paired sign differences, kept separate for each vertical truncation and random seed.</caption>
@@ -72,7 +82,7 @@
     <a href="https://github.com/npizzo/jupiter-ffr-breeze/blob/main/experiments/convective-response-v1/mode-validation.json">Vertical-mode checks</a>
     <a href="https://github.com/npizzo/jupiter-ffr-breeze/tree/main/scripts/convective_response_v1">Source code</a>
   </p>
-  <footer>All simulation, scientific analysis, rendering and media validation take place on Unity. This page presents a proposed mechanism test, with its limitations and numerical residuals retained.</footer>
+  <footer>All simulation, scientific analysis, rendering and media validation took place on Unity. This completed mechanism test retains its negative finding, limitations and numerical residuals.</footer>
 </main>
 <script>
   const videos = [document.getElementById('vorticity'), document.getElementById('buoyancy')];
@@ -98,7 +108,7 @@
     }
     if (!(report.interpretation_flags || []).length) {
       const li = document.createElement('li');
-      li.textContent = 'The declared comparisons found no qualitative contradiction across the tested pairs. This does not establish a statistically robust sign preference or LSV formation.';
+      li.textContent = 'The report’s “no qualitative contradiction” flag means the declared comparisons agree with each other. It does not mean that cyclone reinforcement is supported: the measured heated response extracts more energy from the cyclone.';
       flags.append(li);
     }
     for (const row of report.paired_comparisons || []) {

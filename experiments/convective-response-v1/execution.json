@@ -28,5 +28,13 @@
       "projected_18_case_cpu_seconds": 4610.959670890321,
       "limit_cpu_seconds": 1800
     }
-  ]
+  ],
+  "status": "COMPLETED_ANALYZED_MEDIA_VERIFIED",
+  "production_elapsed_seconds": 739,
+  "analysis_elapsed_seconds": 25,
+  "production_exit_code": "0:0",
+  "analysis_exit_code": "0:0",
+  "gallery_url": "https://npizzo.github.io/jupiter-ffr-breeze/gallery/convective-response-v1/",
+  "report_path": "../../gallery/convective-response-v1/report.json",
+  "scientific_outcome": "Over the declared late window, growing convective disturbances extract energy from both prescribed vortex signs, more strongly from the cyclone. This does not support cyclone reinforcement by this linear response."
 }
