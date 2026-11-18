@@ -1,0 +1,144 @@
+{
+  "status": "COMPLETE",
+  "simulation_days": [
+    0,
+    50
+  ],
+  "frames": 401,
+  "fps": 12,
+  "movies": [
+    {
+      "case": "stable_cyclonic",
+      "file": "stable_cyclonic_0_50.mp4",
+      "bytes": 12881305,
+      "sha256": "f67f694e5c83d3d018fa7edbd4cc112ec7dd96984708a86fb47ce3aedce35b9b",
+      "decode_check": "PASS",
+      "duration_seconds": 33.416666666666664
+    },
+    {
+      "case": "stable_none",
+      "file": "stable_none_0_50.mp4",
+      "bytes": 12823384,
+      "sha256": "1c2ea50fe723d05f2aedee1c56f1c5c1318672b2305dd744248a7efe0e79db33",
+      "decode_check": "PASS",
+      "duration_seconds": 33.416666666666664
+    },
+    {
+      "case": "stable_anticyclonic",
+      "file": "stable_anticyclonic_0_50.mp4",
+      "bytes": 12885116,
+      "sha256": "26dea909cba82b4ab08142a756242c602aae927ac12888c8766edae7815ba659",
+      "decode_check": "PASS",
+      "duration_seconds": 33.416666666666664
+    }
+  ],
+  "source_simulations": {
+    "stable_cyclonic": {
+      "status": "COMPLETE",
+      "simulated_seconds": 4320000.0,
+      "nx": 128,
+      "ny": 128,
+      "nz": 64,
+      "f": 0.0002880957739764384,
+      "shear_rossby": 0.05,
+      "heat_flux": 162.0,
+      "cap_n2": 2.5e-05,
+      "video_heights_actual_m": [
+        19687.5,
+        59062.5,
+        100312.5
+      ],
+      "script_sha256": "c50d52cd0fbc1302468cbeee0e58ab6078c4d18690c9416e4dbe72f0d6d4caaf",
+      "configuration_sha256": "79e23de0e78e1f8c1be45cf81151228a156b1294f754e7093049d133e5f07508",
+      "gpu_name": "NVIDIA L40S"
+    },
+    "stable_none": {
+      "status": "COMPLETE",
+      "simulated_seconds": 4320000.0,
+      "nx": 128,
+      "ny": 128,
+      "nz": 64,
+      "f": 0.0002880957739764384,
+      "shear_rossby": 0.0,
+      "heat_flux": 162.0,
+      "cap_n2": 2.5e-05,
+      "video_heights_actual_m": [
+        19687.5,
+        59062.5,
+        100312.5
+      ],
+      "script_sha256": "c50d52cd0fbc1302468cbeee0e58ab6078c4d18690c9416e4dbe72f0d6d4caaf",
+      "configuration_sha256": "b7f029c3e7b6e1ff8c3024da7465671975123f7e16d9eff109a849ab64f42d3b",
+      "gpu_name": "NVIDIA L40S"
+    },
+    "stable_anticyclonic": {
+      "status": "COMPLETE",
+      "simulated_seconds": 4320000.0,
+      "nx": 128,
+      "ny": 128,
+      "nz": 64,
+      "f": 0.0002880957739764384,
+      "shear_rossby": -0.05,
+      "heat_flux": 162.0,
+      "cap_n2": 2.5e-05,
+      "video_heights_actual_m": [
+        19687.5,
+        59062.5,
+        100312.5
+      ],
+      "script_sha256": "c50d52cd0fbc1302468cbeee0e58ab6078c4d18690c9416e4dbe72f0d6d4caaf",
+      "configuration_sha256": "e74e092dd079783914af05d5e10e5be4fa7954e035743b0a7beff236008b0e12",
+      "gpu_name": "NVIDIA L40S"
+    }
+  },
+  "assets": {
+    "stable_anticyclonic_0_50.json": {
+      "bytes": 7414,
+      "sha256": "c90ebc2a2d329d002516a8b85fdd1ae73e6083636295cf9c65b102dcae688ae8"
+    },
+    "stable_anticyclonic_0_50.mp4": {
+      "bytes": 12885116,
+      "sha256": "26dea909cba82b4ab08142a756242c602aae927ac12888c8766edae7815ba659"
+    },
+    "stable_anticyclonic_0_50.png": {
+      "bytes": 326941,
+      "sha256": "5762c55ff4a42384fc818f295f49c71447272077205d199bd560bb551cd73c05"
+    },
+    "stable_anticyclonic_contact.jpg": {
+      "bytes": 106102,
+      "sha256": "1072ef7a0d7706fce88c1b682163032f87d220163c1670b90a4971ed415f259b"
+    },
+    "stable_cyclonic_0_50.json": {
+      "bytes": 7398,
+      "sha256": "2be35e300bed1c575fc84aa8dd1bf4264c58930d9660bf29646d741e512dc529"
+    },
+    "stable_cyclonic_0_50.mp4": {
+      "bytes": 12881305,
+      "sha256": "f67f694e5c83d3d018fa7edbd4cc112ec7dd96984708a86fb47ce3aedce35b9b"
+    },
+    "stable_cyclonic_0_50.png": {
+      "bytes": 334935,
+      "sha256": "412643064b7f7fac39482c9d30d9e18e88d96de708df96fbd6ecc78438a23af3"
+    },
+    "stable_cyclonic_contact.jpg": {
+      "bytes": 105965,
+      "sha256": "7ca33d1fc8c37b43902fda242b97ac9d19270744b6c3b550304736826ac282d8"
+    },
+    "stable_none_0_50.json": {
+      "bytes": 7376,
+      "sha256": "df0ba57197718ed4745eac6a9c50c129a4e61fab0ba3bd4f7694540db42a5ed3"
+    },
+    "stable_none_0_50.mp4": {
+      "bytes": 12823384,
+      "sha256": "1c2ea50fe723d05f2aedee1c56f1c5c1318672b2305dd744248a7efe0e79db33"
+    },
+    "stable_none_0_50.png": {
+      "bytes": 336396,
+      "sha256": "97f84ca22cb909cfd2920d07614755b5110a0f919400232a67c7f031eb6e5452"
+    },
+    "stable_none_contact.jpg": {
+      "bytes": 104467,
+      "sha256": "7ccd2ab2bc2e612f20e2370146d3633a50a3f5ee699b549e1ede144eeb20615a"
+    }
+  }
+}
