@@ -1,0 +1,1093 @@
+{
+  "purpose": "Independent implementation and bounded-cost release gate",
+  "scope": "Nonlinear stress-free fixed-temperature reference layer; not Breeze validation",
+  "configuration": {
+    "output": "data/galerkin-convection-v1-1958245/validation",
+    "K": 4,
+    "Nv": 2,
+    "refined_K": 6,
+    "refined_Nv": 3,
+    "kfund": 20.0,
+    "nu": 1e-05,
+    "kappa": 1e-05,
+    "G": 0.008096490400532239,
+    "f": 1.0,
+    "dt": 0.02,
+    "duration": 200.0,
+    "base_runs": 4,
+    "refined_runs": 1,
+    "cpu_budget_seconds": 1800.0,
+    "cost_safety_factor": 2.0,
+    "diagnostic_interval": 0.5,
+    "snapshot_interval": 1.0,
+    "snapshot_nxy": 64,
+    "seed": 20261118,
+    "velocity_rms": 0.0001,
+    "temperature_rms": 1e-05
+  },
+  "environment": {
+    "hostname": "uri-cpu064",
+    "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+    "numpy": "2.5.4",
+    "platform": "Linux-6.8.0-149-generic-x86_64-with-glibc2.39"
+  },
+  "checks": [
+    {
+      "name": "configuration/positive_step_and_budget",
+      "error": 0.0,
+      "tolerance": 0.0,
+      "passed": true
+    },
+    {
+      "name": "base/divergence",
+      "error": 7.739853752902709e-17,
+      "tolerance": 2e-13,
+      "passed": true
+    },
+    {
+      "name": "base/projection_idempotent",
+      "error": 3.7148843543236403e-17,
+      "tolerance": 2e-13,
+      "passed": true
+    },
+    {
+      "name": "base/reality",
+      "error": 8.139521411049878e-17,
+      "tolerance": 2e-13,
+      "passed": true
+    },
+    {
+      "name": "base/impermeable_fixed_temperature",
+      "error": 1.695318159850087e-17,
+      "tolerance": 2e-13,
+      "passed": true
+    },
+    {
+      "name": "base/stress_free",
+      "error": 9.71335498273806e-19,
+      "tolerance": 2e-13,
+      "passed": true
+    },
+    {
+      "name": "base/rhs_term_sum",
+      "error": 3.217065402111608e-16,
+      "tolerance": 3e-13,
+      "passed": true
+    },
+    {
+      "name": "base/nonlinear_kinetic_conservation",
+      "error": 2.075372224790287e-18,
+      "tolerance": 3e-13,
+      "passed": true
+    },
+    {
+      "name": "base/nonlinear_thermal_variance_conservation",
+      "error": 1.2647138459197949e-17,
+      "tolerance": 3e-13,
+      "passed": true
+    },
+    {
+      "name": "base/coriolis_no_work",
+      "error": 1.8310014689927395e-17,
+      "tolerance": 3e-13,
+      "passed": true
+    },
+    {
+      "name": "base/buoyancy_conversion",
+      "error": 5.879104434958473e-18,
+      "tolerance": 3e-13,
+      "passed": true
+    },
+    {
+      "name": "base/viscous_dissipation",
+      "error": 0.0,
+      "tolerance": 3e-13,
+      "passed": true
+    },
+    {
+      "name": "base/thermal_dissipation",
+      "error": 2.617704290930858e-16,
+      "tolerance": 3e-13,
+      "passed": true
+    },
+    {
+      "name": "base/background_thermal_power",
+      "error": 1.8909634967719565e-17,
+      "tolerance": 3e-13,
+      "passed": true
+    },
+    {
+      "name": "base/pressure_no_work",
+      "error": 1.3489919461136866e-17,
+      "tolerance": 4e-13,
+      "passed": true
+    },
+    {
+      "name": "base/pressure_curl_free",
+      "error": 3.3750623049718503e-16,
+      "tolerance": 4e-13,
+      "passed": true
+    },
+    {
+      "name": "base/nonlinear_potential_exchange",
+      "error": 1.9988955078858807e-16,
+      "tolerance": 5e-13,
+      "passed": true
+    },
+    {
+      "name": "base/engine_potential_moment",
+      "error": 0.0,
+      "tolerance": 3e-13,
+      "passed": true
+    },
+    {
+      "name": "base/barotropic_stress_exchange",
+      "error": 1.181786664331266e-17,
+      "tolerance": 4e-13,
+      "passed": true
+    },
+    {
+      "name": "base/barotropic_fluctuation_exchange",
+      "error": 0.0,
+      "tolerance": 4e-13,
+      "passed": true
+    },
+    {
+      "name": "base/whole_layer_vorticity_balance",
+      "error": 2.0600895135381887e-15,
+      "tolerance": 3e-12,
+      "passed": true,
+      "actual": [
+        0.0015975176949805014,
+        -0.000648521587773763,
+        0.0
+      ],
+      "expected": [
+        0.0015975176949805023,
+        -0.0006485215877737609,
+        -3.0166190966207993e-18
+      ]
+    },
+    {
+      "name": "base/diagnostic_kinetic",
+      "error": 2.710505431213761e-16,
+      "tolerance": 3e-11,
+      "passed": true
+    },
+    {
+      "name": "base/diagnostic_thermal_variance",
+      "error": 2.1175823681357513e-16,
+      "tolerance": 3e-11,
+      "passed": true
+    },
+    {
+      "name": "base/diagnostic_potential_moment",
+      "error": 0.0,
+      "tolerance": 3e-11,
+      "passed": true
+    },
+    {
+      "name": "base/diagnostic_buoyancy_power",
+      "error": 3.1219585482866916e-16,
+      "tolerance": 3e-11,
+      "passed": true
+    },
+    {
+      "name": "base/diagnostic_barotropic_power",
+      "error": 1.3322158511804534e-15,
+      "tolerance": 3e-11,
+      "passed": true
+    },
+    {
+      "name": "base/diagnostic_barotropic_stress_power",
+      "error": 6.055526596274801e-16,
+      "tolerance": 3e-11,
+      "passed": true
+    },
+    {
+      "name": "base/third_moment_actual_projected_tendency",
+      "error": 0.0,
+      "tolerance": 3e-12,
+      "passed": true
+    },
+    {
+      "name": "base/third_moment_source_sum",
+      "error": 2.338651113478925e-17,
+      "tolerance": 3e-12,
+      "passed": true,
+      "note": "Projected barotropic self-advection is retained; cubic vorticity is not assumed invariant."
+    },
+    {
+      "name": "base/roll_generates_2Nv_mean_temperature",
+      "error": 1.4301069687769954e-15,
+      "tolerance": 2e-12,
+      "passed": true
+    },
+    {
+      "name": "base/roll_potential_conversion",
+      "error": 8.372217548150613e-16,
+      "tolerance": 2e-12,
+      "passed": true
+    },
+    {
+      "name": "base/mean_temperature_feeds_back_on_roll",
+      "error": 1.069575752030996e-15,
+      "tolerance": 3e-12,
+      "passed": true
+    },
+    {
+      "name": "base/saturation_feedback_sign",
+      "error": 0.0,
+      "tolerance": 0.0,
+      "passed": true,
+      "feedback_coefficient": -0.003719645701850315
+    },
+    {
+      "name": "base/linear_wave_operator",
+      "error": 1.1098290509035079e-16,
+      "tolerance": 3e-13,
+      "passed": true,
+      "observed": [
+        [
+          -0.004098696044010894,
+          -0.15329717646080923,
+          0.9759201358307333
+        ],
+        [
+          0.15707963267948966,
+          -0.004098696044010894,
+          -1.8232422340630041e-53
+        ],
+        [
+          0.008096490400532239,
+          -2.535332179006822e-53,
+          -0.004098696044010894
+        ]
+      ],
+      "analytic": [
+        [
+          -0.004098696044010894,
+          -0.15329717646080923,
+          0.9759201358307332
+        ],
+        [
+          0.15707963267948966,
+          -0.004098696044010894,
+          0.0
+        ],
+        [
+          0.008096490400532239,
+          0.0,
+          -0.004098696044010894
+        ]
+      ]
+    },
+    {
+      "name": "base/linear_wave_subspace",
+      "error": 3.5966226500452466e-16,
+      "tolerance": 3e-13,
+      "passed": true
+    },
+    {
+      "name": "base/Pr1_analytic_linear_dispersion",
+      "error": 6.8138939929543045e-18,
+      "tolerance": 4e-12,
+      "passed": true,
+      "eigenvalues": [
+        [
+          -0.004098696044010893,
+          0.12719408853334013
+        ],
+        [
+          -0.004098696044010893,
+          -0.12719408853334013
+        ],
+        [
+          -0.004098696044010894,
+          0.0
+        ]
+      ],
+      "analytic": [
+        [
+          -0.004098696044010894,
+          0.0
+        ],
+        [
+          -0.004098696044010894,
+          0.12719408853334013
+        ],
+        [
+          -0.004098696044010894,
+          -0.12719408853334013
+        ]
+      ]
+    },
+    {
+      "name": "base/signed_vorticity_is_representable",
+      "error": 1.1102230246251565e-16,
+      "tolerance": 3e-13,
+      "passed": true,
+      "observed_skewness": -0.8164965809277259,
+      "analytic_skewness": -0.816496580927726
+    },
+    {
+      "name": "base/reflection_flips_vorticity_skewness",
+      "error": 1.1102230246251565e-16,
+      "tolerance": 3e-13,
+      "passed": true
+    },
+    {
+      "name": "base/reflection_involution",
+      "error": 1.11849719772267e-17,
+      "tolerance": 2e-13,
+      "passed": true
+    },
+    {
+      "name": "base/f_reversal_equivariance",
+      "error": 3.8032346333281362e-16,
+      "tolerance": 5e-13,
+      "passed": true
+    },
+    {
+      "name": "base/reflection_energy",
+      "error": 3.452228746654533e-16,
+      "tolerance": 2e-13,
+      "passed": true
+    },
+    {
+      "name": "base/quadrature_doubling_rhs",
+      "error": 3.9506498095898457e-16,
+      "tolerance": 2e-12,
+      "passed": true,
+      "original_grid": [
+        14,
+        14,
+        14
+      ],
+      "doubled_grid": [
+        28,
+        28,
+        28
+      ]
+    },
+    {
+      "name": "base/quadrature_doubling_potential",
+      "error": 0.0,
+      "tolerance": 3e-13,
+      "passed": true
+    },
+    {
+      "name": "base/time_refinement_accuracy",
+      "error": 7.808482127143732e-11,
+      "tolerance": 1e-05,
+      "passed": true,
+      "dt": 0.02,
+      "endpoint": 0.48,
+      "full_half": 7.808482127143732e-11,
+      "half_quarter": 4.880029699291319e-12,
+      "observed_error_ratio": 16.0008905853128
+    },
+    {
+      "name": "base/time_refinement_fourth_order",
+      "error": 0.06249652134474933,
+      "tolerance": 0.15,
+      "passed": true,
+      "expected_ratio": 0.0625,
+      "observed_ratio": 16.0008905853128
+    },
+    {
+      "name": "base/rk_stage_budget_closure",
+      "error": 1.232759279571615e-12,
+      "tolerance": 1e-05,
+      "passed": true,
+      "kinetic_thermal_potential_residual": [
+        1.6155035886507643e-17,
+        5.948321959317826e-19,
+        4.711620769102046e-21
+      ]
+    },
+    {
+      "name": "base/rk_stage_budget_refinement",
+      "error": 0.06631676752728197,
+      "tolerance": 0.2,
+      "passed": true
+    },
+    {
+      "name": "base/linear_potential_time_integral",
+      "error": 4.800084493684848e-17,
+      "tolerance": 3e-12,
+      "passed": true
+    },
+    {
+      "name": "base/f_reversed_trajectory",
+      "error": 4.3465427982266975e-17,
+      "tolerance": 3e-12,
+      "passed": true
+    },
+    {
+      "name": "base/nonlinear_feedback_is_active",
+      "error": 0.0,
+      "tolerance": 0.0,
+      "passed": true,
+      "relative_full_vs_linear_difference": 0.08907803369900712
+    },
+    {
+      "name": "base/work_api_same_trajectory",
+      "error": 0.0,
+      "tolerance": 2e-13,
+      "passed": true
+    },
+    {
+      "name": "base/work_api_kinetic",
+      "error": 1.3222389706959556e-16,
+      "tolerance": 3e-12,
+      "passed": true
+    },
+    {
+      "name": "base/work_api_thermal_variance",
+      "error": 0.0,
+      "tolerance": 3e-12,
+      "passed": true
+    },
+    {
+      "name": "base/work_api_potential_moment",
+      "error": 0.0,
+      "tolerance": 3e-12,
+      "passed": true
+    },
+    {
+      "name": "base/work_api_barotropic",
+      "error": 0.0,
+      "tolerance": 3e-12,
+      "passed": true
+    },
+    {
+      "name": "base/work_sources_kinetic",
+      "error": 1.3222389706959554e-16,
+      "tolerance": 3e-12,
+      "passed": true
+    },
+    {
+      "name": "base/work_sources_thermal_variance",
+      "error": 2.081224648560713e-16,
+      "tolerance": 3e-12,
+      "passed": true
+    },
+    {
+      "name": "base/work_sources_potential_moment",
+      "error": 0.0,
+      "tolerance": 3e-12,
+      "passed": true
+    },
+    {
+      "name": "base/work_sources_barotropic_kinetic",
+      "error": 1.6109603843688695e-16,
+      "tolerance": 3e-12,
+      "passed": true
+    },
+    {
+      "name": "refined/divergence",
+      "error": 6.812451837830775e-17,
+      "tolerance": 2e-13,
+      "passed": true
+    },
+    {
+      "name": "refined/projection_idempotent",
+      "error": 3.2267390906521426e-17,
+      "tolerance": 2e-13,
+      "passed": true
+    },
+    {
+      "name": "refined/reality",
+      "error": 6.81027995104224e-17,
+      "tolerance": 2e-13,
+      "passed": true
+    },
+    {
+      "name": "refined/impermeable_fixed_temperature",
+      "error": 1.2238324089736975e-17,
+      "tolerance": 2e-13,
+      "passed": true
+    },
+    {
+      "name": "refined/stress_free",
+      "error": 9.238006498580627e-19,
+      "tolerance": 2e-13,
+      "passed": true
+    },
+    {
+      "name": "refined/rhs_term_sum",
+      "error": 3.2236094121455895e-16,
+      "tolerance": 3e-13,
+      "passed": true
+    },
+    {
+      "name": "refined/nonlinear_kinetic_conservation",
+      "error": 5.161954319348487e-18,
+      "tolerance": 3e-13,
+      "passed": true
+    },
+    {
+      "name": "refined/nonlinear_thermal_variance_conservation",
+      "error": 7.290920031741809e-18,
+      "tolerance": 3e-13,
+      "passed": true
+    },
+    {
+      "name": "refined/coriolis_no_work",
+      "error": 2.9067618094895176e-17,
+      "tolerance": 3e-13,
+      "passed": true
+    },
+    {
+      "name": "refined/buoyancy_conversion",
+      "error": 3.992500958061092e-18,
+      "tolerance": 3e-13,
+      "passed": true
+    },
+    {
+      "name": "refined/viscous_dissipation",
+      "error": 3.0884657502512345e-16,
+      "tolerance": 3e-13,
+      "passed": true
+    },
+    {
+      "name": "refined/thermal_dissipation",
+      "error": 1.251074156688365e-16,
+      "tolerance": 3e-13,
+      "passed": true
+    },
+    {
+      "name": "refined/background_thermal_power",
+      "error": 3.85246102839841e-18,
+      "tolerance": 3e-13,
+      "passed": true
+    },
+    {
+      "name": "refined/pressure_no_work",
+      "error": 1.6741473468157255e-18,
+      "tolerance": 4e-13,
+      "passed": true
+    },
+    {
+      "name": "refined/pressure_curl_free",
+      "error": 3.5263071187913067e-16,
+      "tolerance": 4e-13,
+      "passed": true
+    },
+    {
+      "name": "refined/nonlinear_potential_exchange",
+      "error": 1.5570753736438258e-16,
+      "tolerance": 5e-13,
+      "passed": true
+    },
+    {
+      "name": "refined/engine_potential_moment",
+      "error": 0.0,
+      "tolerance": 3e-13,
+      "passed": true
+    },
+    {
+      "name": "refined/barotropic_stress_exchange",
+      "error": 4.359758715665952e-18,
+      "tolerance": 4e-13,
+      "passed": true
+    },
+    {
+      "name": "refined/barotropic_fluctuation_exchange",
+      "error": 8.719517431331903e-18,
+      "tolerance": 4e-13,
+      "passed": true
+    },
+    {
+      "name": "refined/whole_layer_vorticity_balance",
+      "error": 5.046128221900272e-15,
+      "tolerance": 3e-12,
+      "passed": true,
+      "actual": [
+        -0.0009683080126454162,
+        -9.99671703898323e-05,
+        0.0
+      ],
+      "expected": [
+        -0.0009683080126454183,
+        -9.996717038983351e-05,
+        4.981094470725815e-18
+      ]
+    },
+    {
+      "name": "refined/diagnostic_kinetic",
+      "error": 4.0657581468206416e-16,
+      "tolerance": 3e-11,
+      "passed": true
+    },
+    {
+      "name": "refined/diagnostic_thermal_variance",
+      "error": 2.1175823681357508e-16,
+      "tolerance": 3e-11,
+      "passed": true
+    },
+    {
+      "name": "refined/diagnostic_potential_moment",
+      "error": 0.0,
+      "tolerance": 3e-11,
+      "passed": true
+    },
+    {
+      "name": "refined/diagnostic_buoyancy_power",
+      "error": 1.537913234983531e-16,
+      "tolerance": 3e-11,
+      "passed": true
+    },
+    {
+      "name": "refined/diagnostic_barotropic_power",
+      "error": 2.1844478267774205e-16,
+      "tolerance": 3e-11,
+      "passed": true
+    },
+    {
+      "name": "refined/diagnostic_barotropic_stress_power",
+      "error": 2.1844478267774215e-16,
+      "tolerance": 3e-11,
+      "passed": true
+    },
+    {
+      "name": "refined/third_moment_actual_projected_tendency",
+      "error": 3.2354268567969835e-17,
+      "tolerance": 3e-12,
+      "passed": true
+    },
+    {
+      "name": "refined/third_moment_source_sum",
+      "error": 3.2354268567969835e-17,
+      "tolerance": 3e-12,
+      "passed": true,
+      "note": "Projected barotropic self-advection is retained; cubic vorticity is not assumed invariant."
+    },
+    {
+      "name": "refined/roll_generates_2Nv_mean_temperature",
+      "error": 1.1249493186449602e-15,
+      "tolerance": 2e-12,
+      "passed": true
+    },
+    {
+      "name": "refined/roll_potential_conversion",
+      "error": 2.790739182716871e-16,
+      "tolerance": 2e-12,
+      "passed": true
+    },
+    {
+      "name": "refined/mean_temperature_feeds_back_on_roll",
+      "error": 1.5678187807259997e-15,
+      "tolerance": 3e-12,
+      "passed": true
+    },
+    {
+      "name": "refined/saturation_feedback_sign",
+      "error": 0.0,
+      "tolerance": 0.0,
+      "passed": true,
+      "feedback_coefficient": -0.005579468552775472
+    },
+    {
+      "name": "refined/linear_wave_operator",
+      "error": 1.1098290509035079e-16,
+      "tolerance": 3e-13,
+      "passed": true,
+      "observed": [
+        [
+          -0.004098696044010894,
+          -0.15329717646080923,
+          0.9759201358307333
+        ],
+        [
+          0.15707963267948966,
+          -0.004098696044010894,
+          8.579823908068985e-52
+        ],
+        [
+          0.008096490400532239,
+          -2.151115189025355e-54,
+          -0.004098696044010894
+        ]
+      ],
+      "analytic": [
+        [
+          -0.004098696044010894,
+          -0.15329717646080923,
+          0.9759201358307332
+        ],
+        [
+          0.15707963267948966,
+          -0.004098696044010894,
+          0.0
+        ],
+        [
+          0.008096490400532239,
+          0.0,
+          -0.004098696044010894
+        ]
+      ]
+    },
+    {
+      "name": "refined/linear_wave_subspace",
+      "error": 5.70760231803941e-16,
+      "tolerance": 3e-13,
+      "passed": true
+    },
+    {
+      "name": "refined/Pr1_analytic_linear_dispersion",
+      "error": 6.8138939929543045e-18,
+      "tolerance": 4e-12,
+      "passed": true,
+      "eigenvalues": [
+        [
+          -0.004098696044010893,
+          0.12719408853334013
+        ],
+        [
+          -0.004098696044010893,
+          -0.12719408853334013
+        ],
+        [
+          -0.004098696044010894,
+          0.0
+        ]
+      ],
+      "analytic": [
+        [
+          -0.004098696044010894,
+          0.0
+        ],
+        [
+          -0.004098696044010894,
+          0.12719408853334013
+        ],
+        [
+          -0.004098696044010894,
+          -0.12719408853334013
+        ]
+      ]
+    },
+    {
+      "name": "refined/signed_vorticity_is_representable",
+      "error": 2.220446049250313e-16,
+      "tolerance": 3e-13,
+      "passed": true,
+      "observed_skewness": -0.8164965809277258,
+      "analytic_skewness": -0.816496580927726
+    },
+    {
+      "name": "refined/reflection_flips_vorticity_skewness",
+      "error": 1.1102230246251565e-16,
+      "tolerance": 3e-13,
+      "passed": true
+    },
+    {
+      "name": "refined/reflection_involution",
+      "error": 1.6831047699867407e-17,
+      "tolerance": 2e-13,
+      "passed": true
+    },
+    {
+      "name": "refined/f_reversal_equivariance",
+      "error": 3.753624616038189e-16,
+      "tolerance": 5e-13,
+      "passed": true
+    },
+    {
+      "name": "refined/reflection_energy",
+      "error": 0.0,
+      "tolerance": 2e-13,
+      "passed": true
+    },
+    {
+      "name": "refined/quadrature_doubling_rhs",
+      "error": 3.749273406292481e-16,
+      "tolerance": 2e-12,
+      "passed": true,
+      "original_grid": [
+        20,
+        20,
+        20
+      ],
+      "doubled_grid": [
+        40,
+        40,
+        40
+      ]
+    },
+    {
+      "name": "refined/quadrature_doubling_potential",
+      "error": 0.0,
+      "tolerance": 3e-13,
+      "passed": true
+    },
+    {
+      "name": "refined/time_refinement_accuracy",
+      "error": 7.282273403379054e-11,
+      "tolerance": 1e-05,
+      "passed": true,
+      "dt": 0.02,
+      "endpoint": 0.48,
+      "full_half": 7.282273403379054e-11,
+      "half_quarter": 4.55067231265514e-12,
+      "observed_error_ratio": 16.00263192567722
+    },
+    {
+      "name": "refined/time_refinement_fourth_order",
+      "error": 0.062489720731215316,
+      "tolerance": 0.15,
+      "passed": true,
+      "expected_ratio": 0.0625,
+      "observed_ratio": 16.00263192567722
+    },
+    {
+      "name": "refined/rk_stage_budget_closure",
+      "error": 1.0814559368079294e-11,
+      "tolerance": 1e-05,
+      "passed": true,
+      "kinetic_thermal_potential_residual": [
+        3.865299329523439e-16,
+        3.781287425441205e-18,
+        -7.332128949670037e-21
+      ]
+    },
+    {
+      "name": "refined/rk_stage_budget_refinement",
+      "error": 0.06345543710244757,
+      "tolerance": 0.2,
+      "passed": true
+    },
+    {
+      "name": "refined/linear_potential_time_integral",
+      "error": 5.685552646195808e-16,
+      "tolerance": 3e-12,
+      "passed": true
+    },
+    {
+      "name": "refined/f_reversed_trajectory",
+      "error": 6.652730044351585e-17,
+      "tolerance": 3e-12,
+      "passed": true
+    },
+    {
+      "name": "refined/nonlinear_feedback_is_active",
+      "error": 0.0,
+      "tolerance": 0.0,
+      "passed": true,
+      "relative_full_vs_linear_difference": 0.11348412223002495
+    },
+    {
+      "name": "refined/work_api_same_trajectory",
+      "error": 0.0,
+      "tolerance": 2e-13,
+      "passed": true
+    },
+    {
+      "name": "refined/work_api_kinetic",
+      "error": 1.2309806249602761e-16,
+      "tolerance": 3e-12,
+      "passed": true
+    },
+    {
+      "name": "refined/work_api_thermal_variance",
+      "error": 0.0,
+      "tolerance": 3e-12,
+      "passed": true
+    },
+    {
+      "name": "refined/work_api_potential_moment",
+      "error": 2.0547721813592555e-16,
+      "tolerance": 3e-12,
+      "passed": true
+    },
+    {
+      "name": "refined/work_api_barotropic",
+      "error": 1.208159598321713e-16,
+      "tolerance": 3e-12,
+      "passed": true
+    },
+    {
+      "name": "refined/work_sources_kinetic",
+      "error": 2.461961249920553e-16,
+      "tolerance": 3e-12,
+      "passed": true
+    },
+    {
+      "name": "refined/work_sources_thermal_variance",
+      "error": 1.9888000253874497e-16,
+      "tolerance": 3e-12,
+      "passed": true
+    },
+    {
+      "name": "refined/work_sources_potential_moment",
+      "error": 2.054772181359255e-16,
+      "tolerance": 3e-12,
+      "passed": true
+    },
+    {
+      "name": "refined/work_sources_barotropic_kinetic",
+      "error": 0.0,
+      "tolerance": 3e-12,
+      "passed": true
+    },
+    {
+      "name": "initial_condition/refinement_preserves_norm",
+      "error": 1.3485268541619266e-16,
+      "tolerance": 3e-13,
+      "passed": true
+    },
+    {
+      "name": "initial_condition/zero_barotropic_velocity",
+      "error": 0.0,
+      "tolerance": 1e-20,
+      "passed": true
+    },
+    {
+      "name": "initial_condition/zero_mean_temperature_and_shear",
+      "error": 0.0,
+      "tolerance": 1e-20,
+      "passed": true
+    },
+    {
+      "name": "cost/bounded_campaign",
+      "error": 939.09207532275,
+      "tolerance": 1800.0,
+      "passed": true
+    }
+  ],
+  "source_sha256": {
+    "model.py": "9b1da734bd58d119ed8ac84ed1d6ea7d5040b9082e3cbe7c6b3ff20ac659b943",
+    "validate.py": "ca773a77a5226ad109d6cd3812de105e173fa9f9a5513427981fec006713dfa3"
+  },
+  "models": [
+    {
+      "equations": "nonlinear Boussinesq-Coriolis with conductive buoyancy B0=-G*z",
+      "K": 4,
+      "Nv": 2,
+      "kfund": 20.0,
+      "nu": 1e-05,
+      "kappa": 1e-05,
+      "G": 0.008096490400532239,
+      "f": 1.0,
+      "quadrature_grid": [
+        14,
+        14,
+        14
+      ],
+      "horizontal_period": 0.3141592653589793,
+      "physical_depth": 1.0,
+      "vertical_extension_period": 2.0,
+      "nonzero_horizontal_vertical_cutoff": 2,
+      "mean_velocity_vertical_cutoff": 4,
+      "mean_temperature_vertical_cutoff": 4,
+      "velocity_real_degrees_of_freedom": 408,
+      "thermal_real_degrees_of_freedom": 164,
+      "total_real_degrees_of_freedom": 572,
+      "momentum_boundaries": "impermeable and stress-free",
+      "buoyancy_boundaries": "B(0)=0, B(1)=-G; theta(0)=theta(1)=0",
+      "nonlinear_projection": "orthogonal Galerkin with alias-free quadratic quadrature",
+      "reference": "https://arxiv.org/abs/2505.07678",
+      "cap": false,
+      "anelastic": false,
+      "beta": 0.0,
+      "drag": 0.0,
+      "hyperviscosity": 0.0,
+      "passive_tracer": false,
+      "caveat": "reference-layer reduced model; not a quantitative reproduction of the Breeze atmosphere"
+    },
+    {
+      "equations": "nonlinear Boussinesq-Coriolis with conductive buoyancy B0=-G*z",
+      "K": 6,
+      "Nv": 3,
+      "kfund": 20.0,
+      "nu": 1e-05,
+      "kappa": 1e-05,
+      "G": 0.008096490400532239,
+      "f": 1.0,
+      "quadrature_grid": [
+        20,
+        20,
+        20
+      ],
+      "horizontal_period": 0.3141592653589793,
+      "physical_depth": 1.0,
+      "vertical_extension_period": 2.0,
+      "nonzero_horizontal_vertical_cutoff": 3,
+      "mean_velocity_vertical_cutoff": 6,
+      "mean_temperature_vertical_cutoff": 6,
+      "velocity_real_degrees_of_freedom": 1188,
+      "thermal_real_degrees_of_freedom": 510,
+      "total_real_degrees_of_freedom": 1698,
+      "momentum_boundaries": "impermeable and stress-free",
+      "buoyancy_boundaries": "B(0)=0, B(1)=-G; theta(0)=theta(1)=0",
+      "nonlinear_projection": "orthogonal Galerkin with alias-free quadratic quadrature",
+      "reference": "https://arxiv.org/abs/2505.07678",
+      "cap": false,
+      "anelastic": false,
+      "beta": 0.0,
+      "drag": 0.0,
+      "hyperviscosity": 0.0,
+      "passive_tracer": false,
+      "caveat": "reference-layer reduced model; not a quantitative reproduction of the Breeze atmosphere"
+    }
+  ],
+  "cost": {
+    "measurements": [
+      {
+        "K": 4,
+        "Nv": 2,
+        "runs": 4,
+        "steps_per_run": 10000,
+        "diagnostics_per_run": 401,
+        "plane_exports_per_run": 201,
+        "step": {
+          "wall_seconds": 0.004690777033829363,
+          "cpu_seconds": 0.004685085531249994
+        },
+        "diagnostics": {
+          "wall_seconds": 0.003389891382539645,
+          "cpu_seconds": 0.0033899259999999876
+        },
+        "planes": {
+          "wall_seconds": 0.00043115424341522157,
+          "cpu_seconds": 0.0004313035000000909
+        },
+        "estimated_cpu_seconds": 193.1876305679998,
+        "estimated_serial_wall_seconds": 193.41511514247395
+      },
+      {
+        "K": 6,
+        "Nv": 3,
+        "runs": 1,
+        "steps_per_run": 10000,
+        "diagnostics_per_run": 401,
+        "plane_exports_per_run": 201,
+        "step": {
+          "wall_seconds": 0.020784996373549802,
+          "cpu_seconds": 0.02077667028125002
+        },
+        "diagnostics": {
+          "wall_seconds": 0.013489608507370576,
+          "cpu_seconds": 0.013489026625000067
+        },
+        "planes": {
+          "wall_seconds": 0.0006850789941381663,
+          "cpu_seconds": 0.000685274749999909
+        },
+        "estimated_cpu_seconds": 213.31354271387522,
+        "estimated_serial_wall_seconds": 213.3969976247754
+      }
+    ],
+    "safety_factor": 2.0,
+    "validation_cpu_seconds": 6.089728759000001,
+    "publication_cpu_reserve_seconds": 120.0,
+    "conservative_total_cpu_seconds": 939.09207532275,
+    "cpu_budget_seconds": 1800.0,
+    "excludes": "scheduler wait; scientific publication must remain on Unity"
+  },
+  "passed": true,
+  "validation_wall_seconds": 6.133158344891854,
+  "validation_cpu_seconds": 6.089757779
+}

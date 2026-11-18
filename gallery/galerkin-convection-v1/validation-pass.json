@@ -1,0 +1,33 @@
+{
+  "passed": true,
+  "source_sha256": {
+    "model.py": "9b1da734bd58d119ed8ac84ed1d6ea7d5040b9082e3cbe7c6b3ff20ac659b943",
+    "validate.py": "ca773a77a5226ad109d6cd3812de105e173fa9f9a5513427981fec006713dfa3"
+  },
+  "configuration": {
+    "output": "data/galerkin-convection-v1-1958245/validation",
+    "K": 4,
+    "Nv": 2,
+    "refined_K": 6,
+    "refined_Nv": 3,
+    "kfund": 20.0,
+    "nu": 1e-05,
+    "kappa": 1e-05,
+    "G": 0.008096490400532239,
+    "f": 1.0,
+    "dt": 0.02,
+    "duration": 200.0,
+    "base_runs": 4,
+    "refined_runs": 1,
+    "cpu_budget_seconds": 1800.0,
+    "cost_safety_factor": 2.0,
+    "diagnostic_interval": 0.5,
+    "snapshot_interval": 1.0,
+    "snapshot_nxy": 64,
+    "seed": 20261118,
+    "velocity_rms": 0.0001,
+    "temperature_rms": 1e-05
+  },
+  "conservative_total_cpu_seconds": 939.09207532275,
+  "validation": "validation.json"
+}

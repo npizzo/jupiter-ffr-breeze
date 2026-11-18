@@ -1,0 +1,72 @@
+{
+  "campaign": "galerkin-convection-v1",
+  "kfund": 20.0,
+  "nu": 1e-05,
+  "kappa": 1e-05,
+  "G": 0.008096490400532239,
+  "f": 1.0,
+  "dt": 0.02,
+  "duration": 200.0,
+  "diagnostic_interval": 0.5,
+  "snapshot_interval": 1.0,
+  "heights": [
+    0.2,
+    0.5,
+    0.8
+  ],
+  "nxy": 64,
+  "velocity_rms": 0.0001,
+  "temperature_rms": 1e-05,
+  "discrete_onset_G": 0.0040482452002661195,
+  "one_critical_mode": [
+    -3,
+    0,
+    1
+  ],
+  "cpu_budget_seconds": 1800,
+  "cases": [
+    {
+      "name": "plus-seed18",
+      "K": 4,
+      "Nv": 2,
+      "seed": 20261118,
+      "f_sign": 1,
+      "gradient": true
+    },
+    {
+      "name": "minus-reflected18",
+      "K": 4,
+      "Nv": 2,
+      "seed": 20261118,
+      "f_sign": -1,
+      "gradient": true
+    },
+    {
+      "name": "plus-seed19",
+      "K": 4,
+      "Nv": 2,
+      "seed": 20261119,
+      "f_sign": 1,
+      "gradient": true
+    },
+    {
+      "name": "zero-gradient18",
+      "K": 4,
+      "Nv": 2,
+      "seed": 20261118,
+      "f_sign": 1,
+      "gradient": false
+    },
+    {
+      "name": "refined-plus18",
+      "K": 6,
+      "Nv": 3,
+      "seed": 20261118,
+      "f_sign": 1,
+      "gradient": true
+    }
+  ],
+  "meaning": "Finite-mode nonlinear rotating-convection reference, not the capped Breeze atmosphere or a resolved Jupiter simulation.",
+  "control_caveat": "Zero-gradient control retains matched initial buoyancy disturbances, which remain dynamically active.",
+  "initial_condition": "Broad real divergence-free convective disturbance, zero barotropic and horizontally averaged modes; refined run embeds the identical base coefficients."
+}
