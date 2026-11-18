@@ -1,0 +1,219 @@
+{
+  "status": "COMPLETED_MEDIA_VERIFIED",
+  "grid": [
+    256,
+    256
+  ],
+  "domain": [
+    6.283185307179586,
+    6.283185307179586
+  ],
+  "time_range": [
+    0,
+    400
+  ],
+  "time_units": "dimensionless",
+  "compute_location": "Unity",
+  "viscosity": 0.0001,
+  "cutoff": 16,
+  "beta": 0,
+  "cases": {
+    "decay": {
+      "nu0": 0.0,
+      "nu1": 0.0,
+      "nu2": 0.0,
+      "f": 100.0,
+      "reflected_initial_condition": false
+    },
+    "symmetric": {
+      "nu0": -0.0002,
+      "nu1": 0.0,
+      "nu2": 0.01,
+      "f": 100.0,
+      "reflected_initial_condition": false
+    },
+    "biased_plus": {
+      "nu0": -0.0002,
+      "nu1": -0.001,
+      "nu2": 0.01,
+      "f": 100.0,
+      "reflected_initial_condition": false
+    },
+    "biased_minus": {
+      "nu0": -0.0002,
+      "nu1": -0.001,
+      "nu2": 0.01,
+      "f": -100.0,
+      "reflected_initial_condition": true
+    }
+  },
+  "movies": {
+    "stress_controls_256_0_400": {
+      "frames": 401,
+      "duration_seconds": 33.41,
+      "full_decode_passed": true
+    },
+    "stress_plus_256_0_400": {
+      "frames": 401,
+      "duration_seconds": 33.41,
+      "full_decode_passed": true
+    }
+  },
+  "color_scale": {
+    "type": "symmetric asinh",
+    "width": 0.1,
+    "limits": [
+      -47.53387451171875,
+      47.53387451171875
+    ],
+    "fixed_across_cases_and_time": true,
+    "clipping": false
+  },
+  "summary": {
+    "decay": {
+      "final": {
+        "t": 400.0,
+        "dt": 0.005,
+        "cubic_energy_identity": -0.0,
+        "cubic_energy_rate": 0.0,
+        "cubic_lowk_energy_rate": 0.0,
+        "cubic_m3_rate": 0.0,
+        "energy": 0.008758206327363832,
+        "energy_k_le_2": 0.008053451247577564,
+        "enstrophy": 0.013431524868852678,
+        "filtered_fraction_abs_ro_gt_02": 0.0,
+        "filtered_rossby_max": 0.010262978037360397,
+        "filtered_rossby_rms": 0.0016380406209678567,
+        "filtered_strain_max_over_f": 0.002079338204710185,
+        "highk_enstrophy_fraction": 1.1272152492269883e-07,
+        "linear_energy_identity": -0.0,
+        "linear_energy_rate": 0.0,
+        "linear_lowk_energy_rate": 0.0,
+        "linear_m3_rate": 0.0,
+        "mean_zeta": -6.938893903907228e-18,
+        "quadratic_energy_identity": -0.0,
+        "quadratic_energy_rate": 0.0,
+        "quadratic_lowk_energy_rate": 0.0,
+        "quadratic_m3_rate": 0.0,
+        "skewness": -0.6438409487153842,
+        "third_moment": -0.0028347291452891672,
+        "viscous_energy_rate": -2.6863049737705354e-06
+      },
+      "maximum_filtered_abs_rossby": 0.10652265118990549,
+      "maximum_fraction_abs_rossby_gt_02": 0.0,
+      "maximum_filtered_strain_over_f": 0.06369999225004007,
+      "maximum_highk_enstrophy_fraction": 0.038835589842727884
+    },
+    "symmetric": {
+      "final": {
+        "t": 400.0,
+        "dt": 0.001629899139440503,
+        "cubic_energy_identity": -0.00019675513868644206,
+        "cubic_energy_rate": -0.00019675513868644206,
+        "cubic_lowk_energy_rate": -1.6094376161352545e-06,
+        "cubic_m3_rate": 1.6173259726428175,
+        "energy": 0.11021993326735799,
+        "energy_k_le_2": 0.015482078262142894,
+        "enstrophy": 3.7564046183453366,
+        "filtered_fraction_abs_ro_gt_02": 0.0047760009765625,
+        "filtered_rossby_max": 0.3517654657457923,
+        "filtered_rossby_rms": 0.027010029660260643,
+        "filtered_strain_max_over_f": 0.0982309620290501,
+        "highk_enstrophy_fraction": 0.0006972917711530835,
+        "linear_energy_identity": 0.0014590834044963196,
+        "linear_energy_rate": 0.0014590834044963194,
+        "linear_lowk_energy_rate": 1.2649843672926519e-05,
+        "linear_m3_rate": -6.072558508095553,
+        "mean_zeta": -6.938893903907228e-18,
+        "quadratic_energy_identity": -0.0,
+        "quadratic_energy_rate": 0.0,
+        "quadratic_lowk_energy_rate": 0.0,
+        "quadratic_m3_rate": 0.0,
+        "skewness": -6.372140750938981,
+        "third_moment": -131.2166368499047,
+        "viscous_energy_rate": -0.0007512809236690673
+      },
+      "maximum_filtered_abs_rossby": 0.3517654657457923,
+      "maximum_fraction_abs_rossby_gt_02": 0.0048828125,
+      "maximum_filtered_strain_over_f": 0.11853633550977612,
+      "maximum_highk_enstrophy_fraction": 0.0424426644487706
+    },
+    "biased_plus": {
+      "final": {
+        "t": 400.0,
+        "dt": 0.0012928878077115894,
+        "cubic_energy_identity": -0.00044268011940812145,
+        "cubic_energy_rate": -0.00044268011940812145,
+        "cubic_lowk_energy_rate": -2.8305136067767384e-06,
+        "cubic_m3_rate": -4.15370574944929,
+        "energy": 0.12618315422204548,
+        "energy_k_le_2": 0.02008213134700041,
+        "enstrophy": 5.054460407515407,
+        "filtered_fraction_abs_ro_gt_02": 0.0076446533203125,
+        "filtered_rossby_max": 0.39151044998211804,
+        "filtered_rossby_rms": 0.030750909619623613,
+        "filtered_strain_max_over_f": 0.1154376103693239,
+        "highk_enstrophy_fraction": 0.0049375465480579915,
+        "linear_energy_identity": 0.00189123688486852,
+        "linear_energy_rate": 0.0018912368848685197,
+        "linear_lowk_energy_rate": 1.3932179126133346e-05,
+        "linear_m3_rate": 12.557814391860262,
+        "mean_zeta": 1.3877787807814457e-17,
+        "quadratic_energy_identity": 6.777222447710383e-05,
+        "quadratic_energy_rate": 6.777222447710382e-05,
+        "quadratic_lowk_energy_rate": 1.2702934296153645e-06,
+        "quadratic_m3_rate": 2.1515135363090416,
+        "skewness": 7.732885116443063,
+        "third_moment": 248.5414055980613,
+        "viscous_energy_rate": -0.0010108920815030816
+      },
+      "maximum_filtered_abs_rossby": 0.41695444019404887,
+      "maximum_fraction_abs_rossby_gt_02": 0.0076751708984375,
+      "maximum_filtered_strain_over_f": 0.19906427852363276,
+      "maximum_highk_enstrophy_fraction": 0.04253283449319165
+    },
+    "biased_minus": {
+      "final": {
+        "t": 400.0,
+        "dt": 0.0013490435688534286,
+        "cubic_energy_identity": -0.0003934965621278743,
+        "cubic_energy_rate": -0.0003934965621278744,
+        "cubic_lowk_energy_rate": -1.2327515890929275e-06,
+        "cubic_m3_rate": 3.654782961971467,
+        "energy": 0.11794746206585449,
+        "energy_k_le_2": 0.006926883626805875,
+        "enstrophy": 4.0801126175870746,
+        "filtered_fraction_abs_ro_gt_02": 0.0054931640625,
+        "filtered_rossby_max": 0.4005448816801012,
+        "filtered_rossby_rms": 0.0281360840370278,
+        "filtered_strain_max_over_f": 0.11186256495988962,
+        "highk_enstrophy_fraction": 0.0003617965764569019,
+        "linear_energy_identity": 0.0015832784498773813,
+        "linear_energy_rate": 0.0015832784498773813,
+        "linear_lowk_energy_rate": 6.0700125194577016e-06,
+        "linear_m3_rate": -8.603553104763062,
+        "mean_zeta": 0.0,
+        "quadratic_energy_identity": 6.685742281414906e-05,
+        "quadratic_energy_rate": 6.685742281414909e-05,
+        "quadratic_lowk_energy_rate": 3.3340909121101915e-07,
+        "quadratic_m3_rate": -1.7713844930481362,
+        "skewness": -7.277393783271871,
+        "third_moment": -169.6403245419895,
+        "viscous_energy_rate": -0.000816022523517415
+      },
+      "maximum_filtered_abs_rossby": 0.4005448816801012,
+      "maximum_fraction_abs_rossby_gt_02": 0.0055084228515625,
+      "maximum_filtered_strain_over_f": 0.13210566817842573,
+      "maximum_highk_enstrophy_fraction": 0.04253283449319157
+    }
+  },
+  "source_work_identity_passed": true,
+  "matched_or_reflected_initial_fields": true,
+  "limitations": [
+    "Constitutive hypothesis, not resolved convection or a closure derived from Breeze.",
+    "Stress acts directly on low modes; large-scale growth and morphology do not alone demonstrate an inverse cascade.",
+    "Only one resolution and one initial realization; reflected minus-f case is a symmetry check, not an independent sample.",
+    "Small Rossby number is only one requirement of the formal expansion; scale separation and rapid adjustment are assumptions.",
+    "Source-work checks are algebraic identities, not an integrated budget of all numerical tendencies."
+  ]
+}
