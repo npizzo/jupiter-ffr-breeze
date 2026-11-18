@@ -1,0 +1,31 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Nonlinear stress · Jupiter Flow Gallery</title><style>
+:root{color-scheme:light}body{margin:0;background:#f5f3ed;color:#192c36;font:17px/1.6 system-ui,sans-serif}main{max-width:1100px;margin:auto;padding:32px 24px}a{color:#166c70}h1{line-height:1.15;font-size:40px}h2{margin-top:44px}video,img{width:100%;height:auto;background:white;border-radius:6px}.note{padding:16px;border-left:3px solid #b17a36;background:#eee9dd}table{border-collapse:collapse;width:100%;font-size:15px}th,td{text-align:left;padding:10px;border-bottom:1px solid #c8ceca}.caption{font-size:14px;color:#52666d}button{padding:8px 14px;margin:10px 6px 10px 0;font:inherit;border:1px solid #aabbb9;border-radius:5px;background:white;cursor:pointer}footer{margin-top:40px;border-top:1px solid #c8ceca;padding-top:20px}</style></head><body><main>
+<a href="../../#stress2d-v1">← Gallery landing page</a>
+<p>COMPLETED ON UNITY · 256² · DIMENSIONLESS t = 0–400</p>
+<h1>Can a nonlinear stress select vortex sign?</h1>
+<p>Four matched horizontal 2D Oceananigans experiments test a projected, strain-aligned stress. These are a minimal-model hypothesis, not resolved convection or a closure derived from the Breeze runs.</p>
+<h2>All four controls</h2>
+<video id="controls" controls playsinline preload="metadata" poster="stress_controls_256_0_400.png" aria-label="Four-case vorticity comparison"><source src="stress_controls_256_0_400.mp4" type="video/mp4"></video>
+<button onclick="document.getElementById('controls').play()">Play four-case movie</button>
+<p class="caption">Top: ordinary decay and symmetric stress. Bottom: sign-biased +f and reflected −f. One horizontal plane; no tracer or depth layers. Positive ζ is cyclonic for +f; negative ζ is cyclonic for −f. Fixed shared asinh scale, width 0.1, full range ±47.5339; no clipping or framewise rescaling. Each movie has 401 frames at 12 fps (33.42 seconds).</p>
+<h2>What this test shows</h2>
+<p>The sign-biased cases end with strong skewness aligned with f: +7.73 for +f and −7.28 for −f. The symmetric case also develops strong skewness (−6.37 in this realization), so skewness alone is not evidence of an imposed sign preference. Final images contain several intense cores, rather than a demonstrated single domain-scale vortex.</p>
+<table><thead><tr><th>Case</th><th>Final skewness</th><th>Final energy, |k| ≤ 2</th><th>Peak filtered |Z/f|</th></tr></thead><tbody>
+<tr><td>Decay</td><td>−0.64</td><td>0.00805</td><td>0.107</td></tr>
+<tr><td>Symmetric</td><td>−6.37</td><td>0.01548</td><td>0.352</td></tr>
+<tr><td>Biased +f</td><td>+7.73</td><td>0.02008</td><td>0.417</td></tr>
+<tr><td>Biased −f, reflected IC</td><td>−7.28</td><td>0.00693</td><td>0.401</td></tr></tbody></table>
+<p class="note">This supports sign selection as a possible behavior of the chosen closure; it does not establish the Breeze mechanism or a robust LSV regime. The reflected run is not an independent realization. Short-time reflection symmetry passed validation; the long trajectories do not remain pointwise matched. One seed and one resolution cannot establish statistical sign selection. The stress injects directly into low modes, so neither low-mode growth nor these movies proves an inverse cascade.</p>
+<h2>Individual +f evolution</h2>
+<video id="plus" controls playsinline preload="metadata" poster="stress_plus_256_0_400.png" aria-label="Positive f vorticity evolution"><source src="stress_plus_256_0_400.mp4" type="video/mp4"></video>
+<button onclick="document.getElementById('plus').play()">Play +f movie</button>
+<h2>Model and numerical checks</h2>
+<p>Periodic 2π × 2π domain; molecular viscosity ν = 10⁻⁴. With Z = curl(PU), the deviatoric stress is P[−2ν<sub>T</sub>(Z)S(PU)], where ν<sub>T</sub> = ν₀ + ν₁ Z/f + ν₂(Z/f)². P retains |k| ≤ 16. The stress replaces the earlier instability forcing; there is no beta, drag, hyperviscosity or moist physics.</p>
+<p>Forced cases use ν₀ = −2×10⁻⁴ and ν₂ = 10⁻². The biased pair additionally uses ν₁ = −10⁻³; the symmetric case uses ν₁ = 0. The decay case has no modeled stress. f = ±100 and time are dimensionless, not Jupiter's dimensional rotation rate or Earth days.</p>
+<p>All 49 implementation checks passed before production. Recorded linear, quadratic and cubic stress work agrees with the independent work identity; cubic total energy work is nonpositive. This is an algebraic source check, not closure of a fully integrated numerical energy budget. Both movies passed complete decode and frame-count checks on Unity.</p>
+<p>Filtered RMS |Z/f| finishes near 0.027–0.031 in stress cases, but localized maxima reach 0.35–0.42. Fewer than 0.8% of cells exceed |Z/f| = 0.2 at any saved frame. Those intense cores are precisely where truncating a weak-vorticity expansion is least secure; scale separation and fast convective adjustment are assumed rather than demonstrated.</p>
+<img src="diagnostics.png" alt="Time series of absolute low-mode energy, skewness, and filtered Rossby numbers">
+<p><a href="report.json">Machine-readable report</a> · <a href="https://github.com/npizzo/jupiter-ffr-breeze/tree/main/experiments/stress2d-v1">Protocol and validation</a> · <a href="https://github.com/npizzo/jupiter-ffr-breeze/tree/main/scripts/stress2d_v1">Source code</a></p>
+<p>Scalar histories: <a href="decay_scalars.csv">decay</a> · <a href="symmetric_scalars.csv">symmetric</a> · <a href="biased_plus_scalars.csv">biased +f</a> · <a href="biased_minus_scalars.csv">biased −f</a>.</p>
+<footer>All simulation, analysis, rendering and media validation performed on Unity. Published November 17, 2026.</footer>
+</main></body></html>
