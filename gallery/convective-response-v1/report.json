@@ -1,0 +1,938 @@
+{
+  "status": "ANALYZED_MEDIA_VERIFIED",
+  "compute_location": "Unity",
+  "interpretation_status": "NO_QUALITATIVE_CONTRADICTION_IN_TESTED_PAIRS",
+  "case_count": 18,
+  "time_range_fabs_t": [
+    0.0,
+    10.0
+  ],
+  "time_hours": [
+    0.0,
+    9.64185534358083
+  ],
+  "late_window_fabs_t": [
+    5.0,
+    10.0
+  ],
+  "seed_count": 2,
+  "mode_counts": [
+    1,
+    2
+  ],
+  "source_code_sha256": {
+    "model.py": "bbf362816fb9bdbeb5af49105cb6d0817cdec3944829b37bf6c8d9a5543ddf17",
+    "optimized.py": "35c5fbaa060f03a65826d9ac8e55230a735deb799ede58ac5af092c4aa0e7a8f",
+    "response.py": "67c360dfbe4b074378be837353c062b6e74a443e73372bbbe764829fa0ab2a08",
+    "run.py": "90937a784e3d5784d37b6765ddc63e43620b44248baae0aaf4da63f20d758358",
+    "check_response.py": "5b98f9b686289c356a899a26939b6657c22468850aa7842cbd6ceefed66de96c"
+  },
+  "basis_sha256": "5617bb8edf181277cbe4a9d15e8f6e270dd079831bd8b7d425b78b5c5f5aaba5",
+  "cases": {
+    "m1_heated_seed20261118_plus_fplus": {
+      "case": "m1_heated_seed20261118_plus_fplus",
+      "initial_kinetic": 6.73472539432778e-17,
+      "final_kinetic": 7.931444464947891e-16,
+      "amplification_final": 11.776938183148534,
+      "final_bt_power": -1.2752549465285204e-18,
+      "integrated_virtual_bt_work": -3.719936904415005e-18,
+      "integrated_virtual_bt_work_over_K0": -0.055235168274983634,
+      "late_window_fabs_t": [
+        5.0,
+        10.0
+      ],
+      "late_virtual_bt_work": -3.4156519360712914e-18,
+      "late_mean_bt_power": -6.831303872142607e-19,
+      "late_mean_bt_power_over_K0": -0.010143403735356707,
+      "late_mean_bt_power_over_K": -0.002045637639467785,
+      "late_fraction_samples_positive_bt_power": 0.0,
+      "late_fraction_samples_growing_kinetic": 1.0,
+      "late_trapezoidal_minus_RK_work": -5.163833551020406e-22,
+      "kinetic_residual_final": 5.3337804587341926e-24,
+      "kinetic_residual_maximum_absolute": 4.417823373849405e-23,
+      "kinetic_residual_max_over_K0": 6.559767644825206e-07,
+      "kinetic_residual_max_over_work_scale": 1.2552496210028734e-08,
+      "thermal_variance_residual_final": 3.5589387301893326e-22,
+      "thermal_variance_residual_maximum_absolute": 4.076378924923911e-22,
+      "thermal_variance_residual_max_over_work_scale": 1.0503482141463717e-07,
+      "maximum_relative_divergence": 2.8162529041747604e-14,
+      "maximum_perturbation_rms_over_background": 3.431754388523242e-06,
+      "final_integrated_terms": {
+        "bt_power": -3.719936904415005e-18,
+        "buoyancy_power": 2.085244009108011e-15,
+        "viscous_power": -1.3631667587946953e-15,
+        "thermal_gradient_power": 2.4685864309582968e-15,
+        "thermal_diffusion_power": -1.4123738208779008e-15,
+        "thermal_relaxation_power": -1.833223920257889e-20
+      }
+    },
+    "m1_heated_seed20261118_minus_fplus": {
+      "case": "m1_heated_seed20261118_minus_fplus",
+      "initial_kinetic": 6.73472539432778e-17,
+      "final_kinetic": 8.142375181674067e-16,
+      "amplification_final": 12.090136872591508,
+      "final_bt_power": -5.880540597401708e-19,
+      "integrated_virtual_bt_work": -7.003012481452498e-19,
+      "integrated_virtual_bt_work_over_K0": -0.010398363810573002,
+      "late_window_fabs_t": [
+        5.0,
+        10.0
+      ],
+      "late_virtual_bt_work": -6.870286107778278e-19,
+      "late_mean_bt_power": -1.3740572215556603e-19,
+      "late_mean_bt_power_over_K0": -0.0020402572356000427,
+      "late_mean_bt_power_over_K": -0.00022562623163470457,
+      "late_fraction_samples_positive_bt_power": 0.2692307692307692,
+      "late_fraction_samples_growing_kinetic": 1.0,
+      "late_trapezoidal_minus_RK_work": -1.224028942749031e-21,
+      "kinetic_residual_final": -1.0530866015127944e-23,
+      "kinetic_residual_maximum_absolute": 4.269863666588602e-23,
+      "kinetic_residual_max_over_K0": 6.340070925809135e-07,
+      "kinetic_residual_max_over_work_scale": 1.1764483242074165e-08,
+      "thermal_variance_residual_final": 3.345589304526372e-22,
+      "thermal_variance_residual_maximum_absolute": 4.0686095208896077e-22,
+      "thermal_variance_residual_max_over_work_scale": 1.011445982201037e-07,
+      "maximum_relative_divergence": 2.7156903825995106e-14,
+      "maximum_perturbation_rms_over_background": 3.4770874122735978e-06,
+      "final_integrated_terms": {
+        "bt_power": -7.003012481452498e-19,
+        "buoyancy_power": 2.1537976101091733e-15,
+        "viscous_power": -1.4076076366023237e-15,
+        "thermal_gradient_power": 2.553034664061684e-15,
+        "thermal_diffusion_power": -1.469513697935066e-15,
+        "thermal_relaxation_power": -1.8925319758820557e-20
+      }
+    },
+    "m1_heated_seed20261119_plus_fplus": {
+      "case": "m1_heated_seed20261119_plus_fplus",
+      "initial_kinetic": 6.734725394327781e-17,
+      "final_kinetic": 8.25152096266051e-16,
+      "amplification_final": 12.2522010616947,
+      "final_bt_power": -1.120611552201616e-18,
+      "integrated_virtual_bt_work": -3.0729624678997587e-18,
+      "integrated_virtual_bt_work_over_K0": -0.045628623113392476,
+      "late_window_fabs_t": [
+        5.0,
+        10.0
+      ],
+      "late_virtual_bt_work": -2.9667719790057536e-18,
+      "late_mean_bt_power": -5.933543958011528e-19,
+      "late_mean_bt_power_over_K0": -0.008810372525372697,
+      "late_mean_bt_power_over_K": -0.001698436778784108,
+      "late_fraction_samples_positive_bt_power": 0.0,
+      "late_fraction_samples_growing_kinetic": 1.0,
+      "late_trapezoidal_minus_RK_work": -3.9423071194577576e-22,
+      "kinetic_residual_final": 6.020893394146506e-24,
+      "kinetic_residual_maximum_absolute": 4.122298990054255e-23,
+      "kinetic_residual_max_over_K0": 6.120960764823756e-07,
+      "kinetic_residual_max_over_work_scale": 1.127360254353056e-08,
+      "thermal_variance_residual_final": 3.389335787184934e-22,
+      "thermal_variance_residual_maximum_absolute": 3.8614353028300597e-22,
+      "thermal_variance_residual_max_over_work_scale": 9.541351900189136e-08,
+      "maximum_relative_divergence": 2.7819903842624897e-14,
+      "maximum_perturbation_rms_over_background": 3.500314423261816e-06,
+      "final_integrated_terms": {
+        "bt_power": -3.0729624678997587e-18,
+        "buoyancy_power": 2.1704529387686767e-15,
+        "viscous_power": -1.4157210649346968e-15,
+        "thermal_gradient_power": 2.5722229535984206e-15,
+        "thermal_diffusion_power": -1.4748106117310978e-15,
+        "thermal_relaxation_power": -1.9036046095749815e-20
+      }
+    },
+    "m1_heated_seed20261119_minus_fplus": {
+      "case": "m1_heated_seed20261119_minus_fplus",
+      "initial_kinetic": 6.734725394327781e-17,
+      "final_kinetic": 8.167202063394571e-16,
+      "amplification_final": 12.127000857782964,
+      "final_bt_power": -7.413703954399664e-19,
+      "integrated_virtual_bt_work": -1.086485668470062e-18,
+      "integrated_virtual_bt_work_over_K0": -0.016132590489660318,
+      "late_window_fabs_t": [
+        5.0,
+        10.0
+      ],
+      "late_virtual_bt_work": -9.821583310424484e-19,
+      "late_mean_bt_power": -1.9643166620849036e-19,
+      "late_mean_bt_power_over_K0": -0.002916698969997083,
+      "late_mean_bt_power_over_K": -0.00039299178989512926,
+      "late_fraction_samples_positive_bt_power": 0.11538461538461539,
+      "late_fraction_samples_growing_kinetic": 1.0,
+      "late_trapezoidal_minus_RK_work": -1.4983993951242251e-21,
+      "kinetic_residual_final": 3.541524769673694e-24,
+      "kinetic_residual_maximum_absolute": 4.702180577342703e-23,
+      "kinetic_residual_max_over_K0": 6.981993031672891e-07,
+      "kinetic_residual_max_over_work_scale": 1.2862268968007269e-08,
+      "thermal_variance_residual_final": 3.2719842788330136e-22,
+      "thermal_variance_residual_maximum_absolute": 3.8695855253987943e-22,
+      "thermal_variance_residual_max_over_work_scale": 9.539459891526014e-08,
+      "maximum_relative_divergence": 2.8000409658538224e-14,
+      "maximum_perturbation_rms_over_background": 3.4823843638781407e-06,
+      "final_integrated_terms": {
+        "bt_power": -1.086485668470062e-18,
+        "buoyancy_power": 2.1678233638786015e-15,
+        "viscous_power": -1.419536900692417e-15,
+        "thermal_gradient_power": 2.5711111378642974e-15,
+        "thermal_diffusion_power": -1.4852687023723388e-15,
+        "thermal_relaxation_power": -1.912721033760914e-20
+      }
+    },
+    "m1_neutral_seed20261118_plus_fplus": {
+      "case": "m1_neutral_seed20261118_plus_fplus",
+      "initial_kinetic": 6.73472539432778e-17,
+      "final_kinetic": 9.143157806960389e-20,
+      "amplification_final": 0.0013576140483264655,
+      "final_bt_power": -1.8735030362989916e-22,
+      "integrated_virtual_bt_work": 2.1235726338285794e-20,
+      "integrated_virtual_bt_work_over_K0": 0.00031531688517205556,
+      "late_window_fabs_t": [
+        5.0,
+        10.0
+      ],
+      "late_virtual_bt_work": 1.1215592567046305e-21,
+      "late_mean_bt_power": 2.243118513409269e-22,
+      "late_mean_bt_power_over_K0": 3.330675539196448e-06,
+      "late_mean_bt_power_over_K": -0.0011369778162932135,
+      "late_fraction_samples_positive_bt_power": 0.4230769230769231,
+      "late_fraction_samples_growing_kinetic": 0.0,
+      "late_trapezoidal_minus_RK_work": -1.077628170104804e-23,
+      "kinetic_residual_final": 4.498920643954031e-23,
+      "kinetic_residual_maximum_absolute": 4.498920643954031e-23,
+      "kinetic_residual_max_over_K0": 6.680184239944183e-07,
+      "kinetic_residual_max_over_work_scale": 3.341278365962693e-07,
+      "thermal_variance_residual_final": 6.393522439866776e-28,
+      "thermal_variance_residual_maximum_absolute": 6.393522439866776e-28,
+      "thermal_variance_residual_max_over_work_scale": 2.0780129985800604e-07,
+      "maximum_relative_divergence": 2.415063851078208e-13,
+      "maximum_perturbation_rms_over_background": 1e-06,
+      "final_integrated_terms": {
+        "bt_power": 2.1235726338285794e-20,
+        "buoyancy_power": -1.5697463819110124e-22,
+        "viscous_power": -6.723447465343816e-17,
+        "thermal_gradient_power": 1.682948981384027e-21,
+        "thermal_diffusion_power": -2.6673628325312315e-22,
+        "thermal_relaxation_power": -7.42499667416329e-22
+      }
+    },
+    "m1_neutral_seed20261118_minus_fplus": {
+      "case": "m1_neutral_seed20261118_minus_fplus",
+      "initial_kinetic": 6.73472539432778e-17,
+      "final_kinetic": 8.775536426398263e-20,
+      "amplification_final": 0.0013030280987832593,
+      "final_bt_power": -1.1718279639246277e-22,
+      "integrated_virtual_bt_work": -6.413689763586705e-20,
+      "integrated_virtual_bt_work_over_K0": -0.0009523312960894498,
+      "late_window_fabs_t": [
+        5.0,
+        10.0
+      ],
+      "late_virtual_bt_work": 1.22078820316607e-21,
+      "late_mean_bt_power": 2.4415764063321487e-22,
+      "late_mean_bt_power_over_K0": 3.62535406178332e-06,
+      "late_mean_bt_power_over_K": -0.0003636672443553009,
+      "late_fraction_samples_positive_bt_power": 0.34615384615384615,
+      "late_fraction_samples_growing_kinetic": 0.0,
+      "late_trapezoidal_minus_RK_work": 1.334898160162277e-23,
+      "kinetic_residual_final": 4.3727941099282403e-23,
+      "kinetic_residual_maximum_absolute": 4.3727941099282403e-23,
+      "kinetic_residual_max_over_K0": 6.492906323413215e-07,
+      "kinetic_residual_max_over_work_scale": 3.244847203944888e-07,
+      "thermal_variance_residual_final": 6.278601327398184e-28,
+      "thermal_variance_residual_maximum_absolute": 6.278601327398184e-28,
+      "thermal_variance_residual_max_over_work_scale": 2.0077063339645714e-07,
+      "maximum_relative_divergence": 2.4563687894722386e-13,
+      "maximum_perturbation_rms_over_background": 1e-06,
+      "final_integrated_terms": {
+        "bt_power": -6.413689763586705e-20,
+        "buoyancy_power": -1.604294716641485e-22,
+        "viscous_power": -6.732351877511912e-17,
+        "thermal_gradient_power": 1.712613219710095e-21,
+        "thermal_diffusion_power": -2.7124702542797344e-22,
+        "thermal_relaxation_power": -7.546181632289602e-22
+      }
+    },
+    "m1_neutral_seed20261119_plus_fplus": {
+      "case": "m1_neutral_seed20261119_plus_fplus",
+      "initial_kinetic": 6.734725394327781e-17,
+      "final_kinetic": 8.711731876359287e-20,
+      "amplification_final": 0.0012935541341739945,
+      "final_bt_power": -1.4267087542388913e-22,
+      "integrated_virtual_bt_work": 5.464344991389515e-20,
+      "integrated_virtual_bt_work_over_K0": 0.0008113686411017999,
+      "late_window_fabs_t": [
+        5.0,
+        10.0
+      ],
+      "late_virtual_bt_work": -4.73681591020183e-22,
+      "late_mean_bt_power": -9.473631820403693e-23,
+      "late_mean_bt_power_over_K0": -1.4066842025040419e-06,
+      "late_mean_bt_power_over_K": -0.00035579367486675756,
+      "late_fraction_samples_positive_bt_power": 0.4230769230769231,
+      "late_fraction_samples_growing_kinetic": 0.0,
+      "late_trapezoidal_minus_RK_work": -7.493097754978764e-24,
+      "kinetic_residual_final": 4.182748815738638e-23,
+      "kinetic_residual_maximum_absolute": 4.182748815738638e-23,
+      "kinetic_residual_max_over_K0": 6.210719176852398e-07,
+      "kinetic_residual_max_over_work_scale": 3.1072553295277116e-07,
+      "thermal_variance_residual_final": 5.80061557306202e-28,
+      "thermal_variance_residual_maximum_absolute": 5.80061557306202e-28,
+      "thermal_variance_residual_max_over_work_scale": 1.8138643638965202e-07,
+      "maximum_relative_divergence": 2.4372443448020777e-13,
+      "maximum_perturbation_rms_over_background": 1e-06,
+      "final_integrated_terms": {
+        "bt_power": 5.464344991389515e-20,
+        "buoyancy_power": -1.6623083771430672e-22,
+        "viscous_power": -6.720536877125077e-17,
+        "thermal_gradient_power": 1.7808840238585773e-21,
+        "thermal_diffusion_power": -2.782315311794087e-22,
+        "thermal_relaxation_power": -7.742204713416912e-22
+      }
+    },
+    "m1_neutral_seed20261119_minus_fplus": {
+      "case": "m1_neutral_seed20261119_minus_fplus",
+      "initial_kinetic": 6.734725394327781e-17,
+      "final_kinetic": 8.8734155227886e-20,
+      "amplification_final": 0.001317561593567289,
+      "final_bt_power": -2.444050561837098e-23,
+      "integrated_virtual_bt_work": -7.544909507187787e-20,
+      "integrated_virtual_bt_work_over_K0": -0.0011202995022695907,
+      "late_window_fabs_t": [
+        5.0,
+        10.0
+      ],
+      "late_virtual_bt_work": 1.0968877686261095e-21,
+      "late_mean_bt_power": 2.1937755372522267e-22,
+      "late_mean_bt_power_over_K0": 3.257409038681667e-06,
+      "late_mean_bt_power_over_K": -0.0010294323928274804,
+      "late_fraction_samples_positive_bt_power": 0.34615384615384615,
+      "late_fraction_samples_growing_kinetic": 0.0,
+      "late_trapezoidal_minus_RK_work": 6.870401472920801e-24,
+      "kinetic_residual_final": 4.963396186263555e-23,
+      "kinetic_residual_maximum_absolute": 4.963396186263555e-23,
+      "kinetic_residual_max_over_K0": 7.369856817686878e-07,
+      "kinetic_residual_max_over_work_scale": 3.6830615764973365e-07,
+      "thermal_variance_residual_final": 5.957942671507995e-28,
+      "thermal_variance_residual_maximum_absolute": 5.957942671507995e-28,
+      "thermal_variance_residual_max_over_work_scale": 1.8551520934455333e-07,
+      "maximum_relative_divergence": 2.451915869398874e-13,
+      "maximum_perturbation_rms_over_background": 1e-06,
+      "final_integrated_terms": {
+        "bt_power": -7.544909507187787e-20,
+        "buoyancy_power": -1.6793083389709868e-22,
+        "viscous_power": -6.733385058624977e-17,
+        "thermal_gradient_power": 1.797900611531654e-21,
+        "thermal_diffusion_power": -2.801751206294855e-22,
+        "thermal_relaxation_power": -7.787632656082685e-22
+      }
+    },
+    "m2_heated_seed20261118_plus_fplus": {
+      "case": "m2_heated_seed20261118_plus_fplus",
+      "initial_kinetic": 6.73472539432778e-17,
+      "final_kinetic": 7.945411598605835e-16,
+      "amplification_final": 11.79767716334468,
+      "final_bt_power": -1.2637357659283596e-18,
+      "integrated_virtual_bt_work": -3.695288194487214e-18,
+      "integrated_virtual_bt_work_over_K0": -0.05486917399185294,
+      "late_window_fabs_t": [
+        5.0,
+        10.0
+      ],
+      "late_virtual_bt_work": -3.390869875270338e-18,
+      "late_mean_bt_power": -6.7817397505407e-19,
+      "late_mean_bt_power_over_K0": -0.010069808868899861,
+      "late_mean_bt_power_over_K": -0.002029867733028785,
+      "late_fraction_samples_positive_bt_power": 0.0,
+      "late_fraction_samples_growing_kinetic": 1.0,
+      "late_trapezoidal_minus_RK_work": -5.062961905363422e-22,
+      "kinetic_residual_final": 2.8895024479462484e-23,
+      "kinetic_residual_maximum_absolute": 6.796292651795287e-23,
+      "kinetic_residual_max_over_K0": 1.0091417621154028e-06,
+      "kinetic_residual_max_over_work_scale": 1.9270642829043442e-08,
+      "thermal_variance_residual_final": 4.1470340222720085e-22,
+      "thermal_variance_residual_maximum_absolute": 4.717895638507951e-22,
+      "thermal_variance_residual_max_over_work_scale": 1.2032967686937435e-07,
+      "maximum_relative_divergence": 2.0813317843360116e-14,
+      "maximum_perturbation_rms_over_background": 3.4347746888762118e-06,
+      "final_integrated_terms": {
+        "bt_power": -3.695288194487214e-18,
+        "buoyancy_power": 2.0896078732253628e-15,
+        "viscous_power": -1.3661092843975688e-15,
+        "thermal_gradient_power": 2.500076450312937e-15,
+        "thermal_diffusion_power": -1.4176747641813538e-15,
+        "thermal_relaxation_power": -3.056819943907419e-18
+      }
+    },
+    "m2_heated_seed20261118_minus_fplus": {
+      "case": "m2_heated_seed20261118_minus_fplus",
+      "initial_kinetic": 6.73472539432778e-17,
+      "final_kinetic": 8.158365316787186e-16,
+      "amplification_final": 12.113879689375969,
+      "final_bt_power": -5.950831063111416e-19,
+      "integrated_virtual_bt_work": -7.109876641039187e-19,
+      "integrated_virtual_bt_work_over_K0": -0.010557040153452095,
+      "late_window_fabs_t": [
+        5.0,
+        10.0
+      ],
+      "late_virtual_bt_work": -6.97767278181593e-19,
+      "late_mean_bt_power": -1.395534556363191e-19,
+      "late_mean_bt_power_over_K0": -0.0020721476744078662,
+      "late_mean_bt_power_over_K": -0.00023036051373015657,
+      "late_fraction_samples_positive_bt_power": 0.2692307692307692,
+      "late_fraction_samples_growing_kinetic": 1.0,
+      "late_trapezoidal_minus_RK_work": -1.2375966880837766e-21,
+      "kinetic_residual_final": 1.3165904013294478e-23,
+      "kinetic_residual_maximum_absolute": 6.670033208265513e-23,
+      "kinetic_residual_max_over_K0": 9.903942355070998e-07,
+      "kinetic_residual_max_over_work_scale": 1.833498587730421e-08,
+      "thermal_variance_residual_final": 3.924694915226853e-22,
+      "thermal_variance_residual_maximum_absolute": 4.714450641149875e-22,
+      "thermal_variance_residual_max_over_work_scale": 1.159496538054455e-07,
+      "maximum_relative_divergence": 2.1307741375023943e-14,
+      "maximum_perturbation_rms_over_background": 3.4804999194621405e-06,
+      "final_integrated_terms": {
+        "bt_power": -7.109876641039187e-19,
+        "buoyancy_power": 2.158796026899502e-15,
+        "viscous_power": -1.411017749994069e-15,
+        "thermal_gradient_power": 2.587390437076577e-15,
+        "thermal_diffusion_power": -1.4754427732498755e-15,
+        "thermal_relaxation_power": -3.1130744812251772e-18
+      }
+    },
+    "m2_heated_seed20261119_plus_fplus": {
+      "case": "m2_heated_seed20261119_plus_fplus",
+      "initial_kinetic": 6.734725394327783e-17,
+      "final_kinetic": 8.268612577214123e-16,
+      "amplification_final": 12.27757940090361,
+      "final_bt_power": -1.11258347767789e-18,
+      "integrated_virtual_bt_work": -3.058346127067959e-18,
+      "integrated_virtual_bt_work_over_K0": -0.045411593613658,
+      "late_window_fabs_t": [
+        5.0,
+        10.0
+      ],
+      "late_virtual_bt_work": -2.950663049094527e-18,
+      "late_mean_bt_power": -5.901326098189075e-19,
+      "late_mean_bt_power_over_K0": -0.008762534108902754,
+      "late_mean_bt_power_over_K": -0.0016878829126652517,
+      "late_fraction_samples_positive_bt_power": 0.0,
+      "late_fraction_samples_growing_kinetic": 1.0,
+      "late_trapezoidal_minus_RK_work": -3.8647503738841553e-22,
+      "kinetic_residual_final": 2.977977478037196e-23,
+      "kinetic_residual_maximum_absolute": 6.51507145636232e-23,
+      "kinetic_residual_max_over_K0": 9.67384870933199e-07,
+      "kinetic_residual_max_over_work_scale": 1.7774489358031957e-08,
+      "thermal_variance_residual_final": 4.007698690069113e-22,
+      "thermal_variance_residual_maximum_absolute": 4.511708517291985e-22,
+      "thermal_variance_residual_max_over_work_scale": 1.1035889834614507e-07,
+      "maximum_relative_divergence": 2.060924283991643e-14,
+      "maximum_perturbation_rms_over_background": 3.5039376993467805e-06,
+      "final_integrated_terms": {
+        "bt_power": -3.058346127067959e-18,
+        "buoyancy_power": 2.1757278626656564e-15,
+        "viscous_power": -1.4192722347943647e-15,
+        "thermal_gradient_power": 2.6042309998581233e-15,
+        "thermal_diffusion_power": -1.4808878454419809e-15,
+        "thermal_relaxation_power": -3.0956846608890324e-18
+      }
+    },
+    "m2_heated_seed20261119_minus_fplus": {
+      "case": "m2_heated_seed20261119_minus_fplus",
+      "initial_kinetic": 6.734725394327783e-17,
+      "final_kinetic": 8.185666890788641e-16,
+      "amplification_final": 12.154418200455346,
+      "final_bt_power": -7.459504170846279e-19,
+      "integrated_virtual_bt_work": -1.094254159451289e-18,
+      "integrated_virtual_bt_work_over_K0": -0.016247940270480925,
+      "late_window_fabs_t": [
+        5.0,
+        10.0
+      ],
+      "late_virtual_bt_work": -9.901885581534506e-19,
+      "late_mean_bt_power": -1.9803771163069081e-19,
+      "late_mean_bt_power_over_K0": -0.002940546199515202,
+      "late_mean_bt_power_over_K": -0.00039626179979172587,
+      "late_fraction_samples_positive_bt_power": 0.11538461538461539,
+      "late_fraction_samples_growing_kinetic": 1.0,
+      "late_trapezoidal_minus_RK_work": -1.5054727898521536e-21,
+      "kinetic_residual_final": 2.757343259152556e-23,
+      "kinetic_residual_maximum_absolute": 7.133227264523432e-23,
+      "kinetic_residual_max_over_K0": 1.0591712129096284e-06,
+      "kinetic_residual_max_over_work_scale": 1.9460705368135256e-08,
+      "thermal_variance_residual_final": 3.878815492703384e-22,
+      "thermal_variance_residual_maximum_absolute": 4.526572929466943e-22,
+      "thermal_variance_residual_max_over_work_scale": 1.103590607200669e-07,
+      "maximum_relative_divergence": 2.0158621844770505e-14,
+      "maximum_perturbation_rms_over_background": 3.4863187175666176e-06,
+      "final_integrated_terms": {
+        "bt_power": -1.094254159451289e-18,
+        "buoyancy_power": 2.17356759738046e-15,
+        "viscous_power": -1.4234424439777574e-15,
+        "thermal_gradient_power": 2.606448651296249e-15,
+        "thermal_diffusion_power": -1.4919287164347258e-15,
+        "thermal_relaxation_power": -3.3002833219794775e-18
+      }
+    },
+    "m2_neutral_seed20261118_plus_fplus": {
+      "case": "m2_neutral_seed20261118_plus_fplus",
+      "initial_kinetic": 6.73472539432778e-17,
+      "final_kinetic": 8.766349502659845e-20,
+      "amplification_final": 0.0013016639861876433,
+      "final_bt_power": -1.9105963384483874e-22,
+      "integrated_virtual_bt_work": 2.087694676609946e-20,
+      "integrated_virtual_bt_work_over_K0": 0.0003099895770610447,
+      "late_window_fabs_t": [
+        5.0,
+        10.0
+      ],
+      "late_virtual_bt_work": 1.0684348143422578e-21,
+      "late_mean_bt_power": 2.1368696286845233e-22,
+      "late_mean_bt_power_over_K0": 3.1729127819885114e-06,
+      "late_mean_bt_power_over_K": -0.0011352708656861964,
+      "late_fraction_samples_positive_bt_power": 0.4230769230769231,
+      "late_fraction_samples_growing_kinetic": 0.0,
+      "late_trapezoidal_minus_RK_work": -1.0803470177611204e-23,
+      "kinetic_residual_final": 6.694344831471822e-23,
+      "kinetic_residual_maximum_absolute": 6.694344831471822e-23,
+      "kinetic_residual_max_over_K0": 9.940041263018729e-07,
+      "kinetic_residual_max_over_work_scale": 4.97099881647306e-07,
+      "thermal_variance_residual_final": 6.015308534923302e-23,
+      "thermal_variance_residual_maximum_absolute": 6.015308534923302e-23,
+      "thermal_variance_residual_max_over_work_scale": 7.3597584814119145e-06,
+      "maximum_relative_divergence": 3.561977923457955e-13,
+      "maximum_perturbation_rms_over_background": 1e-06,
+      "final_integrated_terms": {
+        "bt_power": 2.087694676609946e-20,
+        "buoyancy_power": -2.501726297263752e-20,
+        "viscous_power": -6.721376318196077e-17,
+        "thermal_gradient_power": 3.165901840008115e-18,
+        "thermal_diffusion_power": -7.202515931094933e-19,
+        "thermal_relaxation_power": -1.4516906944152635e-18
+      }
+    },
+    "m2_neutral_seed20261118_minus_fplus": {
+      "case": "m2_neutral_seed20261118_minus_fplus",
+      "initial_kinetic": 6.73472539432778e-17,
+      "final_kinetic": 8.419775515885497e-20,
+      "amplification_final": 0.0012502032410967973,
+      "final_bt_power": -1.2082664378195273e-22,
+      "integrated_virtual_bt_work": -6.400378667368462e-20,
+      "integrated_virtual_bt_work_over_K0": -0.0009503548092338084,
+      "late_window_fabs_t": [
+        5.0,
+        10.0
+      ],
+      "late_virtual_bt_work": 1.2501713856960052e-21,
+      "late_mean_bt_power": 2.500342771392019e-22,
+      "late_mean_bt_power_over_K0": 3.712612801552228e-06,
+      "late_mean_bt_power_over_K": -0.00035682074589235606,
+      "late_fraction_samples_positive_bt_power": 0.34615384615384615,
+      "late_fraction_samples_growing_kinetic": 0.0,
+      "late_trapezoidal_minus_RK_work": 1.2910432937292971e-23,
+      "kinetic_residual_final": 6.59143049630209e-23,
+      "kinetic_residual_maximum_absolute": 6.59143049630209e-23,
+      "kinetic_residual_max_over_K0": 9.787229783494396e-07,
+      "kinetic_residual_max_over_work_scale": 4.890457864307818e-07,
+      "thermal_variance_residual_final": 6.072066947188498e-23,
+      "thermal_variance_residual_maximum_absolute": 6.072066947188498e-23,
+      "thermal_variance_residual_max_over_work_scale": 7.487431866826339e-06,
+      "maximum_relative_divergence": 3.562567274835881e-13,
+      "maximum_perturbation_rms_over_background": 1e-06,
+      "final_integrated_terms": {
+        "bt_power": -6.400378667368462e-20,
+        "buoyancy_power": -2.497211430443524e-20,
+        "viscous_power": -6.730215377479317e-17,
+        "thermal_gradient_power": 3.162486863334461e-18,
+        "thermal_diffusion_power": -7.172265144526167e-19,
+        "thermal_relaxation_power": -1.445108313028171e-18
+      }
+    },
+    "m2_neutral_seed20261119_plus_fplus": {
+      "case": "m2_neutral_seed20261119_plus_fplus",
+      "initial_kinetic": 6.734725394327783e-17,
+      "final_kinetic": 8.36087947063771e-20,
+      "amplification_final": 0.0012414581116669628,
+      "final_bt_power": -1.4323875173507528e-22,
+      "integrated_virtual_bt_work": 5.4134742748374863e-20,
+      "integrated_virtual_bt_work_over_K0": 0.00080381514581083,
+      "late_window_fabs_t": [
+        5.0,
+        10.0
+      ],
+      "late_virtual_bt_work": -5.057537450006489e-22,
+      "late_mean_bt_power": -1.0115074900013015e-22,
+      "late_mean_bt_power_over_K0": -1.5019283352714393e-06,
+      "late_mean_bt_power_over_K": -0.0003802321348621972,
+      "late_fraction_samples_positive_bt_power": 0.38461538461538464,
+      "late_fraction_samples_growing_kinetic": 0.0,
+      "late_trapezoidal_minus_RK_work": -7.314227374552811e-24,
+      "kinetic_residual_final": 6.436784485976212e-23,
+      "kinetic_residual_maximum_absolute": 6.436784485976212e-23,
+      "kinetic_residual_max_over_K0": 9.557604963964075e-07,
+      "kinetic_residual_max_over_work_scale": 4.781012358223944e-07,
+      "thermal_variance_residual_final": 6.188882210322578e-23,
+      "thermal_variance_residual_maximum_absolute": 6.188882210322578e-23,
+      "thermal_variance_residual_max_over_work_scale": 8.090080444202725e-06,
+      "maximum_relative_divergence": 3.5460006966783935e-13,
+      "maximum_perturbation_rms_over_background": 1e-06,
+      "final_integrated_terms": {
+        "bt_power": 5.4134742748374863e-20,
+        "buoyancy_power": -2.35918532814288e-20,
+        "viscous_power": -6.718598292038651e-17,
+        "thermal_gradient_power": 2.9769264195312512e-18,
+        "thermal_diffusion_power": -6.778020214861926e-19,
+        "thermal_relaxation_power": -1.3655249344856367e-18
+      }
+    },
+    "m2_neutral_seed20261119_minus_fplus": {
+      "case": "m2_neutral_seed20261119_minus_fplus",
+      "initial_kinetic": 6.734725394327783e-17,
+      "final_kinetic": 8.503339522742792e-20,
+      "amplification_final": 0.0012626111719276033,
+      "final_bt_power": -3.7466821788251615e-23,
+      "integrated_virtual_bt_work": -7.54177555244067e-20,
+      "integrated_virtual_bt_work_over_K0": -0.0011198341596515,
+      "late_window_fabs_t": [
+        5.0,
+        10.0
+      ],
+      "late_virtual_bt_work": 1.0689155360535054e-21,
+      "late_mean_bt_power": 2.1378310721070184e-22,
+      "late_mean_bt_power_over_K0": 3.1743403731168804e-06,
+      "late_mean_bt_power_over_K": -0.0010385106120803728,
+      "late_fraction_samples_positive_bt_power": 0.34615384615384615,
+      "late_fraction_samples_growing_kinetic": 0.0,
+      "late_trapezoidal_minus_RK_work": 6.4659517160498654e-24,
+      "kinetic_residual_final": 7.267515760231044e-23,
+      "kinetic_residual_maximum_absolute": 7.267515760231044e-23,
+      "kinetic_residual_max_over_K0": 1.0791109265348808e-06,
+      "kinetic_residual_max_over_work_scale": 5.392036505245789e-07,
+      "thermal_variance_residual_final": 6.209229855493584e-23,
+      "thermal_variance_residual_maximum_absolute": 6.209229855493584e-23,
+      "thermal_variance_residual_max_over_work_scale": 8.169385247458149e-06,
+      "maximum_relative_divergence": 3.4522617484743344e-13,
+      "maximum_perturbation_rms_over_background": 1e-06,
+      "final_integrated_terms": {
+        "bt_power": -7.54177555244067e-20,
+        "buoyancy_power": -2.349029306288009e-20,
+        "viscous_power": -6.731422068566952e-17,
+        "thermal_gradient_power": 2.9652402748202225e-18,
+        "thermal_diffusion_power": -6.740948837504308e-19,
+        "thermal_relaxation_power": -1.358262459548134e-18
+      }
+    },
+    "m1_heated_seed20261118_minus_fminus": {
+      "case": "m1_heated_seed20261118_minus_fminus",
+      "initial_kinetic": 6.734725394327778e-17,
+      "final_kinetic": 7.931444464947892e-16,
+      "amplification_final": 11.776938183148541,
+      "final_bt_power": -1.2752549465285032e-18,
+      "integrated_virtual_bt_work": -3.719936904414977e-18,
+      "integrated_virtual_bt_work_over_K0": -0.055235168274983246,
+      "late_window_fabs_t": [
+        5.0,
+        10.0
+      ],
+      "late_virtual_bt_work": -3.415651936071269e-18,
+      "late_mean_bt_power": -6.831303872142562e-19,
+      "late_mean_bt_power_over_K0": -0.010143403735356642,
+      "late_mean_bt_power_over_K": -0.0020456376394677746,
+      "late_fraction_samples_positive_bt_power": 0.0,
+      "late_fraction_samples_growing_kinetic": 1.0,
+      "late_trapezoidal_minus_RK_work": -5.163833551004999e-22,
+      "kinetic_residual_final": 5.333780853164645e-24,
+      "kinetic_residual_maximum_absolute": 4.4178233775471907e-23,
+      "kinetic_residual_max_over_K0": 6.559767650315835e-07,
+      "kinetic_residual_max_over_work_scale": 1.2552496220535366e-08,
+      "thermal_variance_residual_final": 3.5589387282171803e-22,
+      "thermal_variance_residual_maximum_absolute": 4.0763789250471703e-22,
+      "thermal_variance_residual_max_over_work_scale": 1.0503482141781316e-07,
+      "maximum_relative_divergence": 2.8160795007525208e-14,
+      "maximum_perturbation_rms_over_background": 3.4317543885232424e-06,
+      "final_integrated_terms": {
+        "bt_power": -3.719936904414977e-18,
+        "buoyancy_power": 2.085244009108011e-15,
+        "viscous_power": -1.3631667587946955e-15,
+        "thermal_gradient_power": 2.468586430958297e-15,
+        "thermal_diffusion_power": -1.4123738208779008e-15,
+        "thermal_relaxation_power": -1.8332239202578897e-20
+      }
+    },
+    "m2_heated_seed20261118_minus_fminus": {
+      "case": "m2_heated_seed20261118_minus_fminus",
+      "initial_kinetic": 6.73472539432778e-17,
+      "final_kinetic": 7.945411598605835e-16,
+      "amplification_final": 11.79767716334468,
+      "final_bt_power": -1.2637357659283421e-18,
+      "integrated_virtual_bt_work": -3.695288194487182e-18,
+      "integrated_virtual_bt_work_over_K0": -0.054869173991852475,
+      "late_window_fabs_t": [
+        5.0,
+        10.0
+      ],
+      "late_virtual_bt_work": -3.3908698752703113e-18,
+      "late_mean_bt_power": -6.781739750540647e-19,
+      "late_mean_bt_power_over_K0": -0.010069808868899783,
+      "late_mean_bt_power_over_K": -0.0020298677330287734,
+      "late_fraction_samples_positive_bt_power": 0.0,
+      "late_fraction_samples_growing_kinetic": 1.0,
+      "late_trapezoidal_minus_RK_work": -5.062961905390385e-22,
+      "kinetic_residual_final": 2.8895024479462484e-23,
+      "kinetic_residual_maximum_absolute": 6.796292651795287e-23,
+      "kinetic_residual_max_over_K0": 1.0091417621154028e-06,
+      "kinetic_residual_max_over_work_scale": 1.9270642829043442e-08,
+      "thermal_variance_residual_final": 4.1470340242441607e-22,
+      "thermal_variance_residual_maximum_absolute": 4.717895638384692e-22,
+      "thermal_variance_residual_max_over_work_scale": 1.203296768662306e-07,
+      "maximum_relative_divergence": 2.1254564652624705e-14,
+      "maximum_perturbation_rms_over_background": 3.4347746888762118e-06,
+      "final_integrated_terms": {
+        "bt_power": -3.695288194487182e-18,
+        "buoyancy_power": 2.0896078732253628e-15,
+        "viscous_power": -1.3661092843975688e-15,
+        "thermal_gradient_power": 2.5000764503129372e-15,
+        "thermal_diffusion_power": -1.4176747641813542e-15,
+        "thermal_relaxation_power": -3.05681994390742e-18
+      }
+    }
+  },
+  "paired_comparisons": [
+    {
+      "selected_modes": 1,
+      "seed": 20261118,
+      "window_fabs_t": [
+        5.0,
+        10.0
+      ],
+      "late_mean_bt_power": {
+        "heated_cyclone_minus_anticyclone": -5.457246650586946e-19,
+        "gradient_removed_cyclone_minus_anticyclone": -1.9845789292287974e-23,
+        "heated_minus_gradient_removed_difference": -5.457048192694023e-19
+      },
+      "late_mean_bt_power_over_K0": {
+        "heated_cyclone_minus_anticyclone": -0.008103146499756663,
+        "gradient_removed_cyclone_minus_anticyclone": -2.94678522586872e-07,
+        "heated_minus_gradient_removed_difference": -0.008102851821234077
+      },
+      "late_mean_bt_power_over_K": {
+        "heated_cyclone_minus_anticyclone": -0.0018200114078330805,
+        "gradient_removed_cyclone_minus_anticyclone": -0.0007733105719379126,
+        "heated_minus_gradient_removed_difference": -0.001046700835895168
+      },
+      "work_over_K0_accounting_tolerance": 5.214585826798348e-06,
+      "effect_sign_above_accounting_tolerance": -1
+    },
+    {
+      "selected_modes": 1,
+      "seed": 20261119,
+      "window_fabs_t": [
+        5.0,
+        10.0
+      ],
+      "late_mean_bt_power": {
+        "heated_cyclone_minus_anticyclone": -3.9692272959266243e-19,
+        "gradient_removed_cyclone_minus_anticyclone": -3.141138719292596e-22,
+        "heated_minus_gradient_removed_difference": -3.9660861572073317e-19
+      },
+      "late_mean_bt_power_over_K0": {
+        "heated_cyclone_minus_anticyclone": -0.005893673555375614,
+        "gradient_removed_cyclone_minus_anticyclone": -4.664093241185709e-06,
+        "heated_minus_gradient_removed_difference": -0.0058890094621344286
+      },
+      "late_mean_bt_power_over_K": {
+        "heated_cyclone_minus_anticyclone": -0.0013054449888889787,
+        "gradient_removed_cyclone_minus_anticyclone": 0.0006736387179607228,
+        "heated_minus_gradient_removed_difference": -0.0019790837068497016
+      },
+      "work_over_K0_accounting_tolerance": 5.336705958207185e-06,
+      "effect_sign_above_accounting_tolerance": -1
+    },
+    {
+      "selected_modes": 2,
+      "seed": 20261118,
+      "window_fabs_t": [
+        5.0,
+        10.0
+      ],
+      "late_mean_bt_power": {
+        "heated_cyclone_minus_anticyclone": -5.386205194177509e-19,
+        "gradient_removed_cyclone_minus_anticyclone": -3.634731427074958e-23,
+        "heated_minus_gradient_removed_difference": -5.385841721034802e-19
+      },
+      "late_mean_bt_power_over_K0": {
+        "heated_cyclone_minus_anticyclone": -0.007997661194491995,
+        "gradient_removed_cyclone_minus_anticyclone": -5.397000195637168e-07,
+        "heated_minus_gradient_removed_difference": -0.007997121494472431
+      },
+      "late_mean_bt_power_over_K": {
+        "heated_cyclone_minus_anticyclone": -0.0017995072192986286,
+        "gradient_removed_cyclone_minus_anticyclone": -0.0007784501197938404,
+        "heated_minus_gradient_removed_difference": -0.0010210570995047882
+      },
+      "work_over_K0_accounting_tolerance": 7.944526204547631e-06,
+      "effect_sign_above_accounting_tolerance": -1
+    },
+    {
+      "selected_modes": 2,
+      "seed": 20261119,
+      "window_fabs_t": [
+        5.0,
+        10.0
+      ],
+      "late_mean_bt_power": {
+        "heated_cyclone_minus_anticyclone": -3.9209489818821667e-19,
+        "gradient_removed_cyclone_minus_anticyclone": -3.1493385621083197e-22,
+        "heated_minus_gradient_removed_difference": -3.9177996433200584e-19
+      },
+      "late_mean_bt_power_over_K0": {
+        "heated_cyclone_minus_anticyclone": -0.005821987909387552,
+        "gradient_removed_cyclone_minus_anticyclone": -4.67626870838832e-06,
+        "heated_minus_gradient_removed_difference": -0.005817311640679164
+      },
+      "late_mean_bt_power_over_K": {
+        "heated_cyclone_minus_anticyclone": -0.0012916211128735258,
+        "gradient_removed_cyclone_minus_anticyclone": 0.0006582784772181756,
+        "heated_minus_gradient_removed_difference": -0.0019498995900917014
+      },
+      "work_over_K0_accounting_tolerance": 8.122855013548231e-06,
+      "effect_sign_above_accounting_tolerance": -1
+    }
+  ],
+  "reflection_checks": {
+    "1": {
+      "scalar_relative_differences": {
+        "kinetic": 1.2432491154468964e-16,
+        "thermal_variance": 2.800836417921841e-16,
+        "bt_power": 1.3441058630438376e-14,
+        "buoyancy_power": 2.362446875107067e-16,
+        "viscous_power": 1.860928019814754e-16,
+        "integral_bt_power": 7.455339139290464e-15
+      },
+      "Float32_plane_relative_differences": {
+        "perturbation_vorticity": 7.546267877309543e-17,
+        "buoyancy": 1.9997761788761852e-10
+      },
+      "numerically_consistent": true
+    },
+    "2": {
+      "scalar_relative_differences": {
+        "kinetic": 2.4821272486356517e-16,
+        "thermal_variance": 2.740761873843152e-16,
+        "bt_power": 1.3868375784275605e-14,
+        "buoyancy_power": 2.356284943147366e-16,
+        "viscous_power": 3.71149009689809e-16,
+        "integral_bt_power": 8.547439178105479e-15
+      },
+      "Float32_plane_relative_differences": {
+        "perturbation_vorticity": 0.0,
+        "buoyancy": 1.4890553833483178e-10
+      },
+      "numerically_consistent": true
+    }
+  },
+  "interpretation_flags": [],
+  "movies": [
+    {
+      "file": "convective_response_vorticity.mp4",
+      "poster": "convective_response_vorticity.png",
+      "frames": 21,
+      "fps": 4,
+      "duration_seconds": 5.25,
+      "decode_verified": true,
+      "layout": "2 rows (cyclone, anticyclone) \u00d7 3 heights",
+      "heights_m": [
+        20000.0,
+        60000.0,
+        100000.0
+      ],
+      "field": "perturbation vertical vorticity",
+      "units": "\u03b6\u2032 / |f|",
+      "passive_tracer": false,
+      "scale": {
+        "type": "asinh",
+        "width": 3.063154281335301e-08,
+        "limits": [
+          -3.0631542813353008e-06,
+          3.0631542813353008e-06
+        ],
+        "fixed_across_all_frames_cases_and_depths": true,
+        "clipping": false
+      },
+      "decoded_size": [
+        1728,
+        1092
+      ]
+    },
+    {
+      "file": "convective_response_buoyancy.mp4",
+      "poster": "convective_response_buoyancy.png",
+      "frames": 21,
+      "fps": 4,
+      "duration_seconds": 5.25,
+      "decode_verified": true,
+      "layout": "2 rows (cyclone, anticyclone) \u00d7 3 heights",
+      "heights_m": [
+        20000.0,
+        60000.0,
+        100000.0
+      ],
+      "field": "buoyancy perturbation",
+      "units": "b\u2032 (m s\u207b\u00b2)",
+      "passive_tracer": false,
+      "scale": {
+        "type": "asinh",
+        "width": 4.4834398532581825e-12,
+        "limits": [
+          -4.4834398532581827e-10,
+          4.4834398532581827e-10
+        ],
+        "fixed_across_all_frames_cases_and_depths": true,
+        "clipping": false
+      },
+      "decoded_size": [
+        1728,
+        1092
+      ]
+    }
+  ],
+  "plots": [
+    "response_work_modes1.png",
+    "response_work_modes2.png",
+    "response_amplification_and_residual.png"
+  ],
+  "derived_scalars": "derived_scalars.csv.gz",
+  "normalization": "Dimensionless H and |f| units. PBT/K and PBT/K0 are rates per unit |f|t; buoyancy movies convert to m/s\u00b2.",
+  "work_semantics": "Integral PBT is prospective barotropic work from actual RK-stage accumulation. The imposed vortex never evolves.",
+  "scalar_interval_fabs_by_case": {
+    "m1_heated_seed20261118_plus_fplus": 0.2,
+    "m1_heated_seed20261118_minus_fplus": 0.2,
+    "m1_heated_seed20261119_plus_fplus": 0.2,
+    "m1_heated_seed20261119_minus_fplus": 0.2,
+    "m1_neutral_seed20261118_plus_fplus": 0.2,
+    "m1_neutral_seed20261118_minus_fplus": 0.2,
+    "m1_neutral_seed20261119_plus_fplus": 0.2,
+    "m1_neutral_seed20261119_minus_fplus": 0.2,
+    "m2_heated_seed20261118_plus_fplus": 0.2,
+    "m2_heated_seed20261118_minus_fplus": 0.2,
+    "m2_heated_seed20261119_plus_fplus": 0.2,
+    "m2_heated_seed20261119_minus_fplus": 0.2,
+    "m2_neutral_seed20261118_plus_fplus": 0.2,
+    "m2_neutral_seed20261118_minus_fplus": 0.2,
+    "m2_neutral_seed20261119_plus_fplus": 0.2,
+    "m2_neutral_seed20261119_minus_fplus": 0.2,
+    "m1_heated_seed20261118_minus_fminus": 0.2,
+    "m2_heated_seed20261118_minus_fminus": 0.2
+  },
+  "late_window_semantics": "PBT and PBT/K0 means use differences of RK-stage work integrals; PBT/K uses trapezoidal scalar samples at each case's recorded cadence.",
+  "limitations": [
+    "Linear frozen-profile Boussinesq response; no saturated convection or freely forming LSV is simulated.",
+    "Perturbation growth can occur while stresses extract energy from the prescribed vortex.",
+    "Gradient removal changes the frozen stratification; it is not instantaneous bottom-heating switch-off.",
+    "Two seeds and one horizontal resolution do not establish statistical or spatial convergence.",
+    "One/two vertical-mode comparisons test sensitivity within the selected subspaces, not general vertical convergence.",
+    "Numerical accounting tolerances are not physical sampling uncertainty.",
+    "Original atmospheric density variation is omitted by the Boussinesq approximation.",
+    "Movies reconstruct actual truncated-model fields at three heights; the scalar is buoyancy, not passive tracer.",
+    "Selected modes can be concentrated below the displayed heights. Weak upper-plane signals are retained with the same fixed scale; they do not imply a rendering failure."
+  ]
+}
