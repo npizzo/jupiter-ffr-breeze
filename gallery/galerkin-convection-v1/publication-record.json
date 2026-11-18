@@ -1,0 +1,20 @@
+{
+  "validation_job": "1958245",
+  "production_job": "1958269",
+  "failed_encoder_path_job": "1958322",
+  "successful_render_job": "1958406",
+  "simulation_elapsed_seconds": 426.7248616430443,
+  "render_elapsed_seconds": 16.172563513042405,
+  "publication_page_edit": "Added accessible play/pause buttons and playback status after rendering; scientific metrics and all movie files are unchanged.",
+  "model_scope": "Uncapped, fixed-temperature Boussinesq reference; not the capped Breeze atmosphere.",
+  "production_source_commit": "36331d86aff76d4aed553dfa8836c61de5cd8351",
+  "cpu_seconds": {
+    "validation": 6.325,
+    "production": 424.768,
+    "failed_render": 0.148,
+    "successful_render": 14.039
+  },
+  "binary_publication_commit": "0630868da15e8a499f3c8d080670d31872b20e20",
+  "validation_publication_commit": "426dd1ac6c3989957cd10db44bc636b0755cc0e3",
+  "render_completion_marker_scope": "PUBLICATION_READY.json hashes the Unity-rendered HTML before the documented playback-control enhancement; movie hashes are unchanged."
+}

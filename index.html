@@ -3,6 +3,18 @@
 </style></head><body><header><div class="brand"><span>JUPITER</span> / FLOW GALLERY</div><nav aria-label="Main"><a href="#ferrel35-wide100">Wider channel: 100 days</a><a href="gallery/fplane-analysis/">F-plane analysis</a><a href="#ferrel35-resolution301">Resolution comparison</a><a href="#completed-nov14">Completed long runs</a><a href="#beta35-200">200-day 35°N movie</a><a href="#latitude100">100-day latitude comparison</a><a href="#beta55-f100">100-day beta/f comparison</a><a href="#latitude-previews">Beta-plane previews</a><a href="#latest">Watch movies</a><a href="#earlier-archive">Earlier runs</a><a href="#legacy-archive">Historical archive</a><a href="#gamma75">Gamma reference</a><a href="https://github.com/npizzo/jupiter-ffr-breeze">Code &amp; records ↗</a></nav></header><main><p class="eyebrow">Breeze · Regional Jovian convection</p><h1>Watch convection shape<br>the flow.</h1><p class="intro">Three-depth convection experiments in an idealized hydrogen–helium atmosphere, alongside a separate two-dimensional polar-flow reference. Play the matched movies to compare their evolution.</p>
 
 
+<section class="film" id="galerkin-convection-v1">
+  <p class="eyebrow">Nonlinear Galerkin convection · five completed cases · 0 ≤ |f₀|t ≤ 200</p>
+  <h2>Convection supplies the depth-averaged flow; sign selection remains preliminary</h2>
+  <p>All five finite-mode rotating-convection tests completed on Unity in about seven CPU-minutes. Convection supplies energy to the depth-averaged flow, and the two seeds and larger mode set have positive late-window rotation-aligned vorticity skewness. The magnitude varies substantially with the retained modes. This is a preliminary cyclonic statistical bias, not an established single persistent large-scale vortex.</p>
+  <p>The reflected −f experiment reverses the vorticity evolution to numerical precision. Energy, thermal and barotropic-energy budgets close with a maximum integrated relative defect of 7.1 × 10⁻¹¹. The separate vorticity-moment diagnostic retains the contribution from finite-mode projected advection rather than attributing it to convection.</p>
+  <div class="note"><strong>This is a reference model:</strong> fully coupled, three-dimensional Boussinesq convection with fixed-temperature, stress-free walls. It has no stable cap, β, drag or imposed sign-dependent forcing. It does not yet reproduce the capped Breeze atmosphere. The narrow domain contains only a few convective wavelengths.</div>
+  <video id="galerkin-seed18" controls playsinline preload="none" poster="gallery/galerkin-convection-v1/plus-seed18-poster.png" aria-label="Nonlinear Galerkin convection: vorticity and buoyancy at three heights"><source src="gallery/galerkin-convection-v1/plus-seed18.mp4" type="video/mp4"></video>
+  <p><button data-play="galerkin-seed18">Play / pause three-depth movie</button> · <a href="gallery/galerkin-convection-v1/plus-seed18.mp4">Open movie</a></p>
+  <p class="caption">Top: vertical vorticity. Bottom: buoyancy perturbation, not a passive tracer. Columns: z/H = 0.2, 0.5 and 0.8. Fixed shared asinh scales cover all cases, depths and times. Time is dimensionless. Positive vorticity is cyclonic for positive f.</p>
+  <div class="controls"><a href="gallery/galerkin-convection-v1/">Watch all five movies, including −f, zero-gradient and larger-mode controls; inspect budgets and derivation →</a></div>
+</section>
+
 <section class="film" id="convective-response-v1">
   <p class="eyebrow">Finite-window convective response · 128 × 128 · 0 ≤ |f|t ≤ 10</p>
   <h2>This convective response does not reinforce cyclones</h2>

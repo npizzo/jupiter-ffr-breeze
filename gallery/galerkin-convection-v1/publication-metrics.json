@@ -1,0 +1,645 @@
+{
+  "campaign": "galerkin-convection-v1",
+  "config": {
+    "campaign": "galerkin-convection-v1",
+    "kfund": 20.0,
+    "nu": 1e-05,
+    "kappa": 1e-05,
+    "G": 0.008096490400532239,
+    "f": 1.0,
+    "dt": 0.02,
+    "duration": 200.0,
+    "diagnostic_interval": 0.5,
+    "snapshot_interval": 1.0,
+    "heights": [
+      0.2,
+      0.5,
+      0.8
+    ],
+    "nxy": 64,
+    "velocity_rms": 0.0001,
+    "temperature_rms": 1e-05,
+    "discrete_onset_G": 0.0040482452002661195,
+    "one_critical_mode": [
+      -3,
+      0,
+      1
+    ],
+    "cpu_budget_seconds": 1800,
+    "cases": [
+      {
+        "name": "plus-seed18",
+        "K": 4,
+        "Nv": 2,
+        "seed": 20261118,
+        "f_sign": 1,
+        "gradient": true
+      },
+      {
+        "name": "minus-reflected18",
+        "K": 4,
+        "Nv": 2,
+        "seed": 20261118,
+        "f_sign": -1,
+        "gradient": true
+      },
+      {
+        "name": "plus-seed19",
+        "K": 4,
+        "Nv": 2,
+        "seed": 20261119,
+        "f_sign": 1,
+        "gradient": true
+      },
+      {
+        "name": "zero-gradient18",
+        "K": 4,
+        "Nv": 2,
+        "seed": 20261118,
+        "f_sign": 1,
+        "gradient": false
+      },
+      {
+        "name": "refined-plus18",
+        "K": 6,
+        "Nv": 3,
+        "seed": 20261118,
+        "f_sign": 1,
+        "gradient": true
+      }
+    ],
+    "meaning": "Finite-mode nonlinear rotating-convection reference, not the capped Breeze atmosphere or a resolved Jupiter simulation.",
+    "control_caveat": "Zero-gradient control retains matched initial buoyancy disturbances, which remain dynamically active.",
+    "initial_condition": "Broad real divergence-free convective disturbance, zero barotropic and horizontally averaged modes; refined run embeds the identical base coefficients."
+  },
+  "meaning": "Finite-mode nonlinear rotating-convection reference, not the capped Breeze atmosphere or a resolved Jupiter simulation.",
+  "control_caveat": "Zero-gradient control retains matched initial buoyancy disturbances, which remain dynamically active.",
+  "statistical_window": "final quarter of each completed interval",
+  "third_moment_integral_method": "trapezoidal quadrature of saved diagnostic samples; not an RK-stage closure test",
+  "cases": {
+    "plus-seed18": {
+      "title": "Convective seed A, f = +1",
+      "duration": 200.0,
+      "frames": 201,
+      "saved_heights": [
+        0.2,
+        0.5,
+        0.8
+      ],
+      "K": 4,
+      "Nv": 2,
+      "f": 1.0,
+      "G": 0.008096490400532239,
+      "final_kinetic": 8.07471229391409e-05,
+      "final_barotropic_kinetic": 8.010041776695055e-06,
+      "final_barotropic_energy_fraction": 0.09919909818622545,
+      "final_lowest_barotropic_shell_kinetic": 3.1651105579452045e-06,
+      "final_lowest_horizontal_shell_kinetic": 2.5896917573817787e-05,
+      "final_vorticity_skewness": 0.06447711434834529,
+      "final_quarter_f_aligned_skewness_mean": 0.08286308951868343,
+      "final_quarter_f_aligned_skewness_min": -0.12456132145159962,
+      "final_quarter_f_aligned_skewness_max": 0.4188315923314089,
+      "final_quarter_barotropic_power_mean": 5.142063332917102e-07,
+      "final_quarter_barotropic_energy_mean": 8.467835474480621e-06,
+      "final_quarter_outer_band_energy_fraction_mean": 0.1771131340844622,
+      "max_integrated_budget_relative_defect": {
+        "kinetic": 1.0140490801090393e-11,
+        "thermal_variance": 4.832577660793805e-12,
+        "potential_moment": 2.09222507028304e-15,
+        "barotropic_kinetic": 1.8245038617896066e-11
+      },
+      "max_relative_divergence": 3.7140814369535615e-17,
+      "max_advective_cfl": 0.06130135663921589,
+      "max_potential_exchange_absolute_residual": 5.082197683525802e-21,
+      "max_stress_exchange_absolute_residual": 8.470329472543003e-22,
+      "max_third_moment_rhs_absolute_residual": 1.0842021724855044e-18,
+      "third_moment_contributions": {
+        "convective": {
+          "signed_integral": 0.0077961026990264,
+          "f_aligned_integral": 0.0077961026990264,
+          "absolute_integral": 0.02127524970487025,
+          "final_quarter_mean": 0.00014237533495466178
+        },
+        "projected_barotropic_self_advection": {
+          "signed_integral": 0.000789699186550389,
+          "f_aligned_integral": 0.000789699186550389,
+          "absolute_integral": 0.005644587724406873,
+          "final_quarter_mean": 1.9694224964468527e-05
+        },
+        "viscous": {
+          "signed_integral": -0.00810854666937552,
+          "f_aligned_integral": -0.00810854666937552,
+          "absolute_integral": 0.008500377128323655,
+          "final_quarter_mean": -0.0001504837401961779
+        }
+      },
+      "integration_elapsed_seconds": 55.03985407890286,
+      "source_sha256": {
+        "campaign.py": "af48f63fc1aceb91ea61ab819cf9cdb2ecb70e978f480bb74bb32dcb5e2a122f",
+        "check_campaign.py": "3402c3d9aa9c186f96747afc86319d725b72ba6cc0ab10ea34e3aa45ee10c45c",
+        "model.py": "9b1da734bd58d119ed8ac84ed1d6ea7d5040b9082e3cbe7c6b3ff20ac659b943",
+        "run.py": "0c9b8f30a29d03e008622d794c5caaa1680d7d515f609a896733ecb1a653ea04",
+        "validate.py": "ca773a77a5226ad109d6cd3812de105e173fa9f9a5513427981fec006713dfa3"
+      },
+      "input_sha256": {
+        "diagnostics.json": "828324ee355114f3c66c26a93cf88021a7d7ece10ef0be6e5b73e7a9c383b329",
+        "metadata.json": "678e03ab01d8c915a479cc127d2ea63838a2cb23cbaf94bf7d3aed8b01d7ab40",
+        "COMPLETE.json": "67206faf39dfa829f8a5140206f5135d24cc912823f71bd2cfb0be535a3cc306",
+        "planes.npz": "69a12b2a5b95480f1c55e8ba72c92587a11ed34c78c53558558b3db5b8aa24a9"
+      },
+      "movie": {
+        "decoded_metadata": {
+          "ffmpeg_version": "n9.0.2-17-g2a571b6068-20260930 built with gcc 16.2.0 (crosstool-NG 1.29.0.7_b1a94f6)",
+          "codec": "h264",
+          "pix_fmt": "yuv420p(progressive)",
+          "fps": 12.0,
+          "source_size": [
+            1100,
+            840
+          ],
+          "size": [
+            1100,
+            840
+          ],
+          "rotate": 0,
+          "duration": 16.75
+        },
+        "decoded_frames": 201,
+        "full_decode_passed": true,
+        "sha256": "cca00f3f5601ac81b177827b05138329e54c586662cc50bece05158705e30474",
+        "bytes": 5865167,
+        "file": "plus-seed18.mp4",
+        "poster": "plus-seed18-poster.png",
+        "fps": 12.0,
+        "field_pixels": [
+          64,
+          64
+        ],
+        "displayed_panel_pixels": [
+          256,
+          256
+        ],
+        "spatial_display_interpolation": "nearest; no additional dynamical resolution"
+      }
+    },
+    "minus-reflected18": {
+      "title": "Reflected seed A, f = -1",
+      "duration": 200.0,
+      "frames": 201,
+      "saved_heights": [
+        0.2,
+        0.5,
+        0.8
+      ],
+      "K": 4,
+      "Nv": 2,
+      "f": -1.0,
+      "G": 0.008096490400532239,
+      "final_kinetic": 8.07471229391408e-05,
+      "final_barotropic_kinetic": 8.010041776695055e-06,
+      "final_barotropic_energy_fraction": 0.09919909818622556,
+      "final_lowest_barotropic_shell_kinetic": 3.165110557945213e-06,
+      "final_lowest_horizontal_shell_kinetic": 2.5896917573817624e-05,
+      "final_vorticity_skewness": -0.06447711434833046,
+      "final_quarter_f_aligned_skewness_mean": 0.08286308951868174,
+      "final_quarter_f_aligned_skewness_min": -0.12456132145160372,
+      "final_quarter_f_aligned_skewness_max": 0.4188315923314071,
+      "final_quarter_barotropic_power_mean": 5.142063332917094e-07,
+      "final_quarter_barotropic_energy_mean": 8.467835474480618e-06,
+      "final_quarter_outer_band_energy_fraction_mean": 0.17711313408446233,
+      "max_integrated_budget_relative_defect": {
+        "kinetic": 1.0140490801090391e-11,
+        "thermal_variance": 4.832090898338047e-12,
+        "potential_moment": 1.6831379193565997e-15,
+        "barotropic_kinetic": 1.8245158338353934e-11
+      },
+      "max_relative_divergence": 3.436365316975155e-17,
+      "max_advective_cfl": 0.061301356639216084,
+      "max_potential_exchange_absolute_residual": 5.082197683525802e-21,
+      "max_stress_exchange_absolute_residual": 9.529120656610879e-22,
+      "max_third_moment_rhs_absolute_residual": 1.3010426069826053e-18,
+      "third_moment_contributions": {
+        "convective": {
+          "signed_integral": -0.007796102699026159,
+          "f_aligned_integral": 0.007796102699026159,
+          "absolute_integral": 0.02127524970487021,
+          "final_quarter_mean": -0.00014237533495465692
+        },
+        "projected_barotropic_self_advection": {
+          "signed_integral": -0.0007896991865504005,
+          "f_aligned_integral": 0.0007896991865504005,
+          "absolute_integral": 0.005644587724406815,
+          "final_quarter_mean": -1.9694224964468777e-05
+        },
+        "viscous": {
+          "signed_integral": 0.008108546669375397,
+          "f_aligned_integral": -0.008108546669375397,
+          "absolute_integral": 0.008500377128323532,
+          "final_quarter_mean": 0.00015048374019617535
+        }
+      },
+      "integration_elapsed_seconds": 51.52454057801515,
+      "source_sha256": {
+        "campaign.py": "af48f63fc1aceb91ea61ab819cf9cdb2ecb70e978f480bb74bb32dcb5e2a122f",
+        "check_campaign.py": "3402c3d9aa9c186f96747afc86319d725b72ba6cc0ab10ea34e3aa45ee10c45c",
+        "model.py": "9b1da734bd58d119ed8ac84ed1d6ea7d5040b9082e3cbe7c6b3ff20ac659b943",
+        "run.py": "0c9b8f30a29d03e008622d794c5caaa1680d7d515f609a896733ecb1a653ea04",
+        "validate.py": "ca773a77a5226ad109d6cd3812de105e173fa9f9a5513427981fec006713dfa3"
+      },
+      "input_sha256": {
+        "diagnostics.json": "90d269ace7a0cd896fabdf1f80a45e794e0eeffea6cd339d0fa7998e899c02a6",
+        "metadata.json": "47ecd19eb49845957e2b96ad8a599ba283fab73a310fd1c5c6ed4d96e7c29d9c",
+        "COMPLETE.json": "00e8a57434078d001aed8aae1422245b81db3d7e1e7923b087d1339bac17c663",
+        "planes.npz": "cfe86b89b67c6529f91393b9ce01ca9c8d38774799af213323212a8f55159c49"
+      },
+      "movie": {
+        "decoded_metadata": {
+          "ffmpeg_version": "n9.0.2-17-g2a571b6068-20260930 built with gcc 16.2.0 (crosstool-NG 1.29.0.7_b1a94f6)",
+          "codec": "h264",
+          "pix_fmt": "yuv420p(progressive)",
+          "fps": 12.0,
+          "source_size": [
+            1100,
+            840
+          ],
+          "size": [
+            1100,
+            840
+          ],
+          "rotate": 0,
+          "duration": 16.75
+        },
+        "decoded_frames": 201,
+        "full_decode_passed": true,
+        "sha256": "0bdfe97ff53267f9b8e81d5d3c955768ee0d8fea5dbc00f53266f7d8d7f4d47f",
+        "bytes": 5866443,
+        "file": "minus-reflected18.mp4",
+        "poster": "minus-reflected18-poster.png",
+        "fps": 12.0,
+        "field_pixels": [
+          64,
+          64
+        ],
+        "displayed_panel_pixels": [
+          256,
+          256
+        ],
+        "spatial_display_interpolation": "nearest; no additional dynamical resolution"
+      }
+    },
+    "plus-seed19": {
+      "title": "Convective seed B, f = +1",
+      "duration": 200.0,
+      "frames": 201,
+      "saved_heights": [
+        0.2,
+        0.5,
+        0.8
+      ],
+      "K": 4,
+      "Nv": 2,
+      "f": 1.0,
+      "G": 0.008096490400532239,
+      "final_kinetic": 6.29583151299704e-05,
+      "final_barotropic_kinetic": 7.50679336012235e-06,
+      "final_barotropic_energy_fraction": 0.11923434330517603,
+      "final_lowest_barotropic_shell_kinetic": 2.7737577891620024e-06,
+      "final_lowest_horizontal_shell_kinetic": 1.2895428515291528e-05,
+      "final_vorticity_skewness": 0.0105137899064084,
+      "final_quarter_f_aligned_skewness_mean": 0.14596661161502414,
+      "final_quarter_f_aligned_skewness_min": -0.1640344224501285,
+      "final_quarter_f_aligned_skewness_max": 0.6179659138001367,
+      "final_quarter_barotropic_power_mean": 3.4271147899705364e-07,
+      "final_quarter_barotropic_energy_mean": 6.0928866456514745e-06,
+      "final_quarter_outer_band_energy_fraction_mean": 0.2229992755286321,
+      "max_integrated_budget_relative_defect": {
+        "kinetic": 8.041939957204844e-12,
+        "thermal_variance": 2.4958274629477693e-12,
+        "potential_moment": 4.358993003599772e-15,
+        "barotropic_kinetic": 6.618142311492851e-11
+      },
+      "max_relative_divergence": 3.579283236696985e-17,
+      "max_advective_cfl": 0.0461678572258961,
+      "max_potential_exchange_absolute_residual": 4.235164736271502e-21,
+      "max_stress_exchange_absolute_residual": 5.293955920339377e-22,
+      "max_third_moment_rhs_absolute_residual": 3.2526065174565133e-19,
+      "third_moment_contributions": {
+        "convective": {
+          "signed_integral": 0.006196703384808852,
+          "f_aligned_integral": 0.006196703384808852,
+          "absolute_integral": 0.01751685847563817,
+          "final_quarter_mean": 4.769454195546107e-05
+        },
+        "projected_barotropic_self_advection": {
+          "signed_integral": -0.00015019090185949518,
+          "f_aligned_integral": -0.00015019090185949518,
+          "absolute_integral": 0.0027810295951269963,
+          "final_quarter_mean": -2.172611635228999e-06
+        },
+        "viscous": {
+          "signed_integral": -0.005971929061368229,
+          "f_aligned_integral": -0.005971929061368229,
+          "absolute_integral": 0.008117098128232756,
+          "final_quarter_mean": -7.326033160514131e-05
+        }
+      },
+      "integration_elapsed_seconds": 51.6626885299338,
+      "source_sha256": {
+        "campaign.py": "af48f63fc1aceb91ea61ab819cf9cdb2ecb70e978f480bb74bb32dcb5e2a122f",
+        "check_campaign.py": "3402c3d9aa9c186f96747afc86319d725b72ba6cc0ab10ea34e3aa45ee10c45c",
+        "model.py": "9b1da734bd58d119ed8ac84ed1d6ea7d5040b9082e3cbe7c6b3ff20ac659b943",
+        "run.py": "0c9b8f30a29d03e008622d794c5caaa1680d7d515f609a896733ecb1a653ea04",
+        "validate.py": "ca773a77a5226ad109d6cd3812de105e173fa9f9a5513427981fec006713dfa3"
+      },
+      "input_sha256": {
+        "diagnostics.json": "37d867fcab1875e2b47538f89f4a34e8300724da14e2db8e396885eb1fa11c06",
+        "metadata.json": "3ab1c64a8d3f81467a713d4c0edc6829c69460fb14f93eb887d60fb11249143b",
+        "COMPLETE.json": "81c42b5756e7994e573c2144b5eb228008569310ee56987bb7055878c6134248",
+        "planes.npz": "02c028260ff31df48eceb483bc7d083b1bb47c13790b89e8393036db2c2369d2"
+      },
+      "movie": {
+        "decoded_metadata": {
+          "ffmpeg_version": "n9.0.2-17-g2a571b6068-20260930 built with gcc 16.2.0 (crosstool-NG 1.29.0.7_b1a94f6)",
+          "codec": "h264",
+          "pix_fmt": "yuv420p(progressive)",
+          "fps": 12.0,
+          "source_size": [
+            1100,
+            840
+          ],
+          "size": [
+            1100,
+            840
+          ],
+          "rotate": 0,
+          "duration": 16.75
+        },
+        "decoded_frames": 201,
+        "full_decode_passed": true,
+        "sha256": "5813b099e90a9d76ce1c83e49866afc1979070bcf39272aee85441959f16e17f",
+        "bytes": 6216813,
+        "file": "plus-seed19.mp4",
+        "poster": "plus-seed19-poster.png",
+        "fps": 12.0,
+        "field_pixels": [
+          64,
+          64
+        ],
+        "displayed_panel_pixels": [
+          256,
+          256
+        ],
+        "spatial_display_interpolation": "nearest; no additional dynamical resolution"
+      }
+    },
+    "zero-gradient18": {
+      "title": "Zero imposed gradient, seed A",
+      "duration": 200.0,
+      "frames": 201,
+      "saved_heights": [
+        0.2,
+        0.5,
+        0.8
+      ],
+      "K": 4,
+      "Nv": 2,
+      "f": 1.0,
+      "G": 0.0,
+      "final_kinetic": 7.742122415665697e-11,
+      "final_barotropic_kinetic": 1.6953577215569135e-14,
+      "final_barotropic_energy_fraction": 0.00021897841838905362,
+      "final_lowest_barotropic_shell_kinetic": 1.5724757885493286e-14,
+      "final_lowest_horizontal_shell_kinetic": 7.586057426518502e-11,
+      "final_vorticity_skewness": 0.16842375475457508,
+      "final_quarter_f_aligned_skewness_mean": 0.16570843123109014,
+      "final_quarter_f_aligned_skewness_min": 0.1541900249066444,
+      "final_quarter_f_aligned_skewness_max": 0.180142026772448,
+      "final_quarter_barotropic_power_mean": 7.92481509128747e-18,
+      "final_quarter_barotropic_energy_mean": 2.3763499550614735e-14,
+      "final_quarter_outer_band_energy_fraction_mean": 1.438653883149939e-08,
+      "max_integrated_budget_relative_defect": {
+        "kinetic": 1.3636834433492916e-12,
+        "thermal_variance": 9.745221591640359e-14,
+        "potential_moment": 2.7461615585939838e-15,
+        "barotropic_kinetic": 1.9098350940256675e-11
+      },
+      "max_relative_divergence": 6.003160319313474e-17,
+      "max_advective_cfl": 0.0004899659609404418,
+      "max_potential_exchange_absolute_residual": 4.3943970041879595e-25,
+      "max_stress_exchange_absolute_residual": 1.5777218104420236e-29,
+      "max_third_moment_rhs_absolute_residual": 1.9721522630525295e-30,
+      "third_moment_contributions": {
+        "convective": {
+          "signed_integral": 3.903408329400507e-15,
+          "f_aligned_integral": 3.903408329400507e-15,
+          "absolute_integral": 4.270270668375779e-14,
+          "final_quarter_mean": 1.2347580922066028e-20
+        },
+        "projected_barotropic_self_advection": {
+          "signed_integral": -1.109773681080083e-18,
+          "f_aligned_integral": -1.109773681080083e-18,
+          "absolute_integral": 3.183852330839454e-18,
+          "final_quarter_mean": 4.151476633567123e-25
+        },
+        "viscous": {
+          "signed_integral": -3.885855611025285e-15,
+          "f_aligned_integral": -3.885855611025285e-15,
+          "absolute_integral": 2.5270259414132904e-14,
+          "final_quarter_mean": -9.705630417646321e-19
+        }
+      },
+      "integration_elapsed_seconds": 51.41792007407639,
+      "source_sha256": {
+        "campaign.py": "af48f63fc1aceb91ea61ab819cf9cdb2ecb70e978f480bb74bb32dcb5e2a122f",
+        "check_campaign.py": "3402c3d9aa9c186f96747afc86319d725b72ba6cc0ab10ea34e3aa45ee10c45c",
+        "model.py": "9b1da734bd58d119ed8ac84ed1d6ea7d5040b9082e3cbe7c6b3ff20ac659b943",
+        "run.py": "0c9b8f30a29d03e008622d794c5caaa1680d7d515f609a896733ecb1a653ea04",
+        "validate.py": "ca773a77a5226ad109d6cd3812de105e173fa9f9a5513427981fec006713dfa3"
+      },
+      "input_sha256": {
+        "diagnostics.json": "b9704864f5afce8549ea554386f8a3eba3a030e5fdd4a5d52d285f79b3370aa6",
+        "metadata.json": "029869f807cc85a112a701c508ccef3f9968fe9f048d0d4be9be9176fd7d5664",
+        "COMPLETE.json": "7fa56da28d4d36907cef8c64b900c3ab12ca024d9da1f633de93519f8fed95da",
+        "planes.npz": "8753192d5100ab0cad248f6be84b0ff520cec4c0da4d169919a8651c49454ff1"
+      },
+      "movie": {
+        "decoded_metadata": {
+          "ffmpeg_version": "n9.0.2-17-g2a571b6068-20260930 built with gcc 16.2.0 (crosstool-NG 1.29.0.7_b1a94f6)",
+          "codec": "h264",
+          "pix_fmt": "yuv420p(progressive)",
+          "fps": 12.0,
+          "source_size": [
+            1100,
+            840
+          ],
+          "size": [
+            1100,
+            840
+          ],
+          "rotate": 0,
+          "duration": 16.75
+        },
+        "decoded_frames": 201,
+        "full_decode_passed": true,
+        "sha256": "03ec4a2ca0ee78db15e68d20207fd8631b9ec8f30a62a635f78e95d18b54efdc",
+        "bytes": 1041050,
+        "file": "zero-gradient18.mp4",
+        "poster": "zero-gradient18-poster.png",
+        "fps": 12.0,
+        "field_pixels": [
+          64,
+          64
+        ],
+        "displayed_panel_pixels": [
+          256,
+          256
+        ],
+        "spatial_display_interpolation": "nearest; no additional dynamical resolution"
+      }
+    },
+    "refined-plus18": {
+      "title": "Nested extension, seed A, f = +1",
+      "duration": 200.0,
+      "frames": 201,
+      "saved_heights": [
+        0.2,
+        0.5,
+        0.8
+      ],
+      "K": 6,
+      "Nv": 3,
+      "f": 1.0,
+      "G": 0.008096490400532239,
+      "final_kinetic": 3.2877957779874295e-05,
+      "final_barotropic_kinetic": 4.326344164255909e-06,
+      "final_barotropic_energy_fraction": 0.1315879834514603,
+      "final_lowest_barotropic_shell_kinetic": 3.1751847357383716e-06,
+      "final_lowest_horizontal_shell_kinetic": 1.4113408907327603e-05,
+      "final_vorticity_skewness": 0.16356705839059313,
+      "final_quarter_f_aligned_skewness_mean": 0.4421022319917387,
+      "final_quarter_f_aligned_skewness_min": 0.1613277771856029,
+      "final_quarter_f_aligned_skewness_max": 1.015125965620861,
+      "final_quarter_barotropic_power_mean": 2.0369194422812056e-07,
+      "final_quarter_barotropic_energy_mean": 4.247956648368074e-06,
+      "final_quarter_outer_band_energy_fraction_mean": 0.03351951345793792,
+      "max_integrated_budget_relative_defect": {
+        "kinetic": 2.059391759490865e-11,
+        "thermal_variance": 2.0579464044551772e-11,
+        "potential_moment": 4.136870413849452e-15,
+        "barotropic_kinetic": 7.062844266752604e-11
+      },
+      "max_relative_divergence": 3.326944292558769e-17,
+      "max_advective_cfl": 0.061161627825158556,
+      "max_potential_exchange_absolute_residual": 3.3881317890172014e-21,
+      "max_stress_exchange_absolute_residual": 2.117582368135751e-22,
+      "max_third_moment_rhs_absolute_residual": 2.168404344971009e-19,
+      "third_moment_contributions": {
+        "convective": {
+          "signed_integral": 0.0067217039374314,
+          "f_aligned_integral": 0.0067217039374314,
+          "absolute_integral": 0.009480789528684072,
+          "final_quarter_mean": 0.0001138855414113207
+        },
+        "projected_barotropic_self_advection": {
+          "signed_integral": 6.5659309836579e-05,
+          "f_aligned_integral": 6.5659309836579e-05,
+          "absolute_integral": 0.0006035878796966622,
+          "final_quarter_mean": 1.8476685119235411e-06
+        },
+        "viscous": {
+          "signed_integral": -0.006548112755314936,
+          "f_aligned_integral": -0.006548112755314936,
+          "absolute_integral": 0.006563977541537731,
+          "final_quarter_mean": -0.00011801077935572601
+        }
+      },
+      "integration_elapsed_seconds": 216.77290607104078,
+      "source_sha256": {
+        "campaign.py": "af48f63fc1aceb91ea61ab819cf9cdb2ecb70e978f480bb74bb32dcb5e2a122f",
+        "check_campaign.py": "3402c3d9aa9c186f96747afc86319d725b72ba6cc0ab10ea34e3aa45ee10c45c",
+        "model.py": "9b1da734bd58d119ed8ac84ed1d6ea7d5040b9082e3cbe7c6b3ff20ac659b943",
+        "run.py": "0c9b8f30a29d03e008622d794c5caaa1680d7d515f609a896733ecb1a653ea04",
+        "validate.py": "ca773a77a5226ad109d6cd3812de105e173fa9f9a5513427981fec006713dfa3"
+      },
+      "input_sha256": {
+        "diagnostics.json": "72507c97685382fb7691bee13339fcd16e939cb458ba19df2e8f5f75278b442f",
+        "metadata.json": "803de06a62691d9249604137e51c54975284e6c6cfddc27ac2592c4ef2351deb",
+        "COMPLETE.json": "feaa3064b62ac80010c30faf7f028c11628f6eef11f97b1bc41b5a4e7015fb55",
+        "planes.npz": "e806741997553b697313e35a2afa9eb228131875dc9a8b60c8f3542536836ca0"
+      },
+      "movie": {
+        "decoded_metadata": {
+          "ffmpeg_version": "n9.0.2-17-g2a571b6068-20260930 built with gcc 16.2.0 (crosstool-NG 1.29.0.7_b1a94f6)",
+          "codec": "h264",
+          "pix_fmt": "yuv420p(progressive)",
+          "fps": 12.0,
+          "source_size": [
+            1100,
+            840
+          ],
+          "size": [
+            1100,
+            840
+          ],
+          "rotate": 0,
+          "duration": 16.75
+        },
+        "decoded_frames": 201,
+        "full_decode_passed": true,
+        "sha256": "d805643e733a1f159eb18d7d16e0e81211a2d44a3ef1824bbfaee2b228608098",
+        "bytes": 6101084,
+        "file": "refined-plus18.mp4",
+        "poster": "refined-plus18-poster.png",
+        "fps": 12.0,
+        "field_pixels": [
+          64,
+          64
+        ],
+        "displayed_panel_pixels": [
+          256,
+          256
+        ],
+        "spatial_display_interpolation": "nearest; no additional dynamical resolution"
+      }
+    }
+  },
+  "reflected_pair_saved_fields": {
+    "vorticity": {
+      "relative_l2_over_saved_sequence": 1.4627005674064944e-14,
+      "max_absolute_residual": 5.2735593669694936e-14
+    },
+    "buoyancy_perturbation": {
+      "relative_l2_over_saved_sequence": 8.007472610628455e-15,
+      "max_absolute_residual": 1.0451708942760263e-16
+    }
+  },
+  "color_scales": {
+    "vorticity": {
+      "label": "Vertical vorticity zeta / |f0|",
+      "colormap": "RdBu_r",
+      "physical_min": -2.0324679886048815,
+      "physical_max": 2.0324679886048815,
+      "actual_global_absolute_max": 2.0324679886048815,
+      "linear_width": 0.0020324679886048816,
+      "mapping": "asinh(value / linear_width) / asinh(physical_max / linear_width)",
+      "fixed_over": "all cases, all times, all three heights",
+      "clipping": false,
+      "zero_field_fallback": false
+    },
+    "buoyancy_perturbation": {
+      "label": "Buoyancy perturbation theta / (|f0|^2 H)",
+      "colormap": "BrBG",
+      "physical_min": -0.004935955780751624,
+      "physical_max": 0.004935955780751624,
+      "actual_global_absolute_max": 0.004935955780751624,
+      "linear_width": 4.935955780751624e-06,
+      "mapping": "asinh(value / linear_width) / asinh(physical_max / linear_width)",
+      "fixed_over": "all cases, all times, all three heights",
+      "clipping": false,
+      "zero_field_fallback": false
+    }
+  },
+  "analysis_source_sha256": "7c83bc28e210ac345fb4a0f2ecf1e0696341c5027794c4b0992f88b836342fa7",
+  "validation_record_sha256": "b4d6e8ee71d33059509acb390b7e43f92b59b4593d6caee23fd01db3e6d2a268",
+  "analysis_render_elapsed_seconds": 16.13391595997382
+}

@@ -1,0 +1,14 @@
+{
+  "status": "verified_finished_assets",
+  "cases": [
+    "plus-seed18",
+    "minus-reflected18",
+    "plus-seed19",
+    "zero-gradient18",
+    "refined-plus18"
+  ],
+  "metrics_sha256": "e53dec4f758e818ee577c9444191e201040dc932176915a41046a1755c87ba1e",
+  "index_sha256": "127956c744f05752b321eab29a133bea5ba58dde76e93aa15c848d1ea4f64c33",
+  "elapsed_seconds": 16.167042033048347,
+  "uploaded": false
+}

@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Nonlinear Galerkin convection · Jupiter flow experiments</title>
+<style>body{font:16px/1.55 system-ui,sans-serif;color:#192b3f;background:#f5f7fa;margin:0}main{max-width:1160px;margin:auto;padding:28px 22px 60px}h1{font-size:2rem;line-height:1.2}h2{font-size:1.25rem}a{color:#165caa}.notice,.movie,.overview{background:white;border:1px solid #d7e0e9;border-radius:10px;padding:20px;margin:24px 0}.small{font-size:.88rem;color:#516172}video,img{display:block;width:100%;height:auto;border-radius:5px}table{border-collapse:collapse;width:100%;font-size:.88rem}td,th{text-align:right;padding:9px;border-bottom:1px solid #d7e0e9}th:first-child{text-align:left}.tablewrap{overflow-x:auto}nav{margin:15px 0}nav a{margin-right:14px}code{font-size:.9em}button{font:inherit;padding:8px 12px;border:1px solid #9ab;background:#edf4fc;border-radius:5px;cursor:pointer}output{margin-left:12px;font-size:.9em}</style></head>
+<body><main><a href="https://npizzo.github.io/jupiter-ffr-breeze/">← Gallery landing page</a>
+<h1>Fully coupled nonlinear Galerkin convection</h1>
+<p>Completed finite-mode reference tests · dimensionless time 0–200</p>
+<div class="notice"><p>All 5 declared cases completed through |f0|t=200. These are finite-mode, fixed-temperature rotating Boussinesq experiments, not the capped Breeze atmosphere.</p><p>The movies show actual reconstructed vertical vorticity above buoyancy perturbation at three saved heights. There is no passive tracer. Each field has one common symmetric asinh scale across all cases, times and depths.</p><p>Over the final quarter, rotation-aligned barotropic skewness averaged 0.08286 for seed A and 0.146 for seed B. Positive aligned skewness means a cyclonic statistical bias; it does not establish a single persistent vortex.</p><p>The nested extension&#x27;s final-quarter aligned skewness was 0.4421; its mean power into the barotropic flow was 2.037e-07. This comparison is a truncation-sensitivity check, not a converged DNS result.</p><p>The largest recorded integrated relative budget defect was 7.06e-11 across kinetic energy, thermal variance, potential moment and barotropic kinetic energy. The cubic-moment plot separates convective production from projected barotropic self-advection; the latter need not vanish in a finite Galerkin model.</p><p>The completed reflected pair&#x27;s saved-field relative L2 mismatch was 1.46e-14 for vorticity and 8.01e-15 for buoyancy. Reflection reverses both f and vorticity, while preserving scalar buoyancy.</p><p>The zero-imposed-gradient control retains the same initial buoyancy perturbation and its force. It has a finite thermal reservoir and is not pure velocity-only decay.</p><p>The narrow box contains only a few critical convective wavelengths. Two seeds and one extension cannot establish a robust Jovian sign-selection mechanism or a broad inverse cascade. Absolute low-shell energy and signed stress power are provided so morphology and energy fractions are not mistaken for transfer evidence.</p></div>
+<nav><a href="#plus-seed18">Convective seed A, f = +1</a><a href="#minus-reflected18">Reflected seed A, f = -1</a><a href="#plus-seed19">Convective seed B, f = +1</a><a href="#zero-gradient18">Zero imposed gradient, seed A</a><a href="#refined-plus18">Nested extension, seed A, f = +1</a></nav>
+<section class="overview"><h2>Transfer, sign and numerical checks</h2>
+<img src="diagnostics.png" alt="Five-case barotropic energy, aligned skewness, low-shell energy, cubic-moment production, stress power and integrated budget defects">
+<p class="small">Solid cumulative-production curves: convective stress. Dashed: projected barotropic self-advection.
+Colors match cases in the legend. Cumulative third-moment terms use diagnostic-sample quadrature; they are not RK-stage closure tests.</p>
+<div class="tablewrap"><table><thead><tr><th>Case</th><th>Final E<sub>BT</sub></th><th>Final low-shell E<sub>BT</sub></th><th>Late aligned skewness</th><th>Late mean P<sub>BT</sub></th></tr></thead><tbody><tr><th>Convective seed A, f = +1</th><td>8.01e-06</td><td>3.165e-06</td><td>0.08286</td><td>5.142e-07</td></tr><tr><th>Reflected seed A, f = -1</th><td>8.01e-06</td><td>3.165e-06</td><td>0.08286</td><td>5.142e-07</td></tr><tr><th>Convective seed B, f = +1</th><td>7.507e-06</td><td>2.774e-06</td><td>0.146</td><td>3.427e-07</td></tr><tr><th>Zero imposed gradient, seed A</th><td>1.695e-14</td><td>1.572e-14</td><td>0.1657</td><td>7.925e-18</td></tr><tr><th>Nested extension, seed A, f = +1</th><td>4.326e-06</td><td>3.175e-06</td><td>0.4421</td><td>2.037e-07</td></tr></tbody></table></div></section>
+<section class="movie" id="plus-seed18"><h2>Convective seed A, f = +1</h2>
+<p>Cutoff K<sub>h</sub>=4, N<sub>v</sub>=2; G=0.00809649;
+three actual heights z/H=0.2, 0.5, 0.8.</p>
+<video id="movie-plus-seed18" controls playsinline preload="metadata" poster="plus-seed18-poster.png">
+<source src="plus-seed18.mp4" type="video/mp4">Your browser cannot display this video.</video><p><button type="button" data-video="movie-plus-seed18">Play / pause plus-seed18</button> <output id="status-plus-seed18">Not started</output></p>
+<p class="small">Top: vertical vorticity. Bottom: buoyancy perturbation, not passive tracer.
+201 frames, 12 frames/s. <a href="plus-seed18.mp4">Open movie</a>.</p></section><section class="movie" id="minus-reflected18"><h2>Reflected seed A, f = -1</h2>
+<p>Cutoff K<sub>h</sub>=4, N<sub>v</sub>=2; G=0.00809649;
+three actual heights z/H=0.2, 0.5, 0.8.</p>
+<video id="movie-minus-reflected18" controls playsinline preload="metadata" poster="minus-reflected18-poster.png">
+<source src="minus-reflected18.mp4" type="video/mp4">Your browser cannot display this video.</video><p><button type="button" data-video="movie-minus-reflected18">Play / pause minus-reflected18</button> <output id="status-minus-reflected18">Not started</output></p>
+<p class="small">Top: vertical vorticity. Bottom: buoyancy perturbation, not passive tracer.
+201 frames, 12 frames/s. <a href="minus-reflected18.mp4">Open movie</a>.</p></section><section class="movie" id="plus-seed19"><h2>Convective seed B, f = +1</h2>
+<p>Cutoff K<sub>h</sub>=4, N<sub>v</sub>=2; G=0.00809649;
+three actual heights z/H=0.2, 0.5, 0.8.</p>
+<video id="movie-plus-seed19" controls playsinline preload="metadata" poster="plus-seed19-poster.png">
+<source src="plus-seed19.mp4" type="video/mp4">Your browser cannot display this video.</video><p><button type="button" data-video="movie-plus-seed19">Play / pause plus-seed19</button> <output id="status-plus-seed19">Not started</output></p>
+<p class="small">Top: vertical vorticity. Bottom: buoyancy perturbation, not passive tracer.
+201 frames, 12 frames/s. <a href="plus-seed19.mp4">Open movie</a>.</p></section><section class="movie" id="zero-gradient18"><h2>Zero imposed gradient, seed A</h2>
+<p>Cutoff K<sub>h</sub>=4, N<sub>v</sub>=2; G=0;
+three actual heights z/H=0.2, 0.5, 0.8.</p>
+<video id="movie-zero-gradient18" controls playsinline preload="metadata" poster="zero-gradient18-poster.png">
+<source src="zero-gradient18.mp4" type="video/mp4">Your browser cannot display this video.</video><p><button type="button" data-video="movie-zero-gradient18">Play / pause zero-gradient18</button> <output id="status-zero-gradient18">Not started</output></p>
+<p class="small">Top: vertical vorticity. Bottom: buoyancy perturbation, not passive tracer.
+201 frames, 12 frames/s. <a href="zero-gradient18.mp4">Open movie</a>.</p></section><section class="movie" id="refined-plus18"><h2>Nested extension, seed A, f = +1</h2>
+<p>Cutoff K<sub>h</sub>=6, N<sub>v</sub>=3; G=0.00809649;
+three actual heights z/H=0.2, 0.5, 0.8.</p>
+<video id="movie-refined-plus18" controls playsinline preload="metadata" poster="refined-plus18-poster.png">
+<source src="refined-plus18.mp4" type="video/mp4">Your browser cannot display this video.</video><p><button type="button" data-video="movie-refined-plus18">Play / pause refined-plus18</button> <output id="status-refined-plus18">Not started</output></p>
+<p class="small">Top: vertical vorticity. Bottom: buoyancy perturbation, not passive tracer.
+201 frames, 12 frames/s. <a href="refined-plus18.mp4">Open movie</a>.</p></section>
+<section class="notice"><h2>Scales and provenance</h2><p>vorticity: full physical range [-2.032, 2.032], asinh linear width 0.002032. buoyancy_perturbation: full physical range [-0.004936, 0.004936], asinh linear width 4.936e-06.</p>
+<p>The same mapping is fixed across all movies, times and depths; no framewise normalization or field clipping.
+Saved 64×64 samples are exact retained-mode reconstructions, enlarged for display. They do not imply a 64³ dynamical calculation.
+Each movie passed frame-count, duration and full-decode checks on Unity.</p>
+<p><a href="publication-metrics.json">Metrics, configuration, checksums and media verification</a> ·
+<a href="diagnostics.pdf">Diagnostic figure PDF</a> ·
+<a href="https://github.com/npizzo/jupiter-ffr-breeze/tree/main/experiments/galerkin-convection-v1">Equations and experiment plan</a> ·
+<a href="https://github.com/npizzo/jupiter-ffr-breeze/tree/main/scripts/galerkin_convection_v1">Implementation</a> ·
+<a href="https://arxiv.org/abs/2505.07678">Mode-selection reference</a></p></section>
+</main><script>
+document.querySelectorAll('button[data-video]').forEach(button => {
+ const video=document.getElementById(button.dataset.video);
+ const status=document.getElementById('status-'+video.id.slice(6));
+ const update=()=>{status.textContent=(video.ended?'Ended':video.paused?'Paused':'Playing')+' · '+video.currentTime.toFixed(1)+' / '+(Number.isFinite(video.duration)?video.duration.toFixed(1):'?')+' s';};
+ button.addEventListener('click',()=>{if(video.paused||video.ended) video.play().catch(e=>{status.textContent='Playback failed: '+e.message;}); else video.pause();});
+ ['play','pause','timeupdate','ended','loadedmetadata'].forEach(event=>video.addEventListener(event,update));
+});
+</script></body></html>
