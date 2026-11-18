@@ -2,7 +2,7 @@
 #SBATCH --job-name=ffr-shear-layer
 #SBATCH --partition=uri-gpu
 #SBATCH --gpus=1
-#SBATCH --constraint=vram48
+#SBATCH --constraint=l40s
 #SBATCH --cpus-per-task=4
 #SBATCH --mem=24G
 #SBATCH --time=01:00:00

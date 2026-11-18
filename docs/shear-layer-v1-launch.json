@@ -1,0 +1,37 @@
+{
+  "preflight_job": "1962488",
+  "production_job": "1962565",
+  "review_job": "1962571",
+  "root": "data/shear-layer-v1-1962402",
+  "review_output": "rendered/shear-layer-v1-1962488",
+  "cases": [
+    "stable_cyclonic",
+    "stable_none",
+    "stable_anticyclonic",
+    "neutral_cyclonic",
+    "neutral_none",
+    "neutral_anticyclonic"
+  ],
+  "grid": [
+    128,
+    128,
+    64
+  ],
+  "days": 10,
+  "hard_gpu_hours": 6.75,
+  "production_gpu_constraint": "l40s",
+  "restart_max_velocity_difference_m_s": 4.075527552301422e-12,
+  "initialization_checks_passed": 105,
+  "validation_status": "PASS",
+  "scope": "Shear sign versus upper-layer stratification factorial; dry anelastic f55N; no beta; no maintained shear; no auto-extension",
+  "source_publication_commit": "5466679d1a0e7118b6ae3fdcdeda44ce0b8ca9ce",
+  "early_throughput_forecast_10day_minutes": 19.35179920196533,
+  "production_status_at_record": "SUBMITTED; check Unity for current state",
+  "notes": [
+    "6 cases; one GPU at a time; production hard ceiling six GPU-hours.",
+    "Validation: 45-minute total allowance; 30-minute single-CPU review/render ceiling.",
+    "No long-run or LSV result yet. No automatic extensions.",
+    "All simulation, analysis and rendering on Unity.",
+    "Each comparison movie has stable and neutral cases, three depth columns, vorticity and tracer rows."
+  ]
+}
