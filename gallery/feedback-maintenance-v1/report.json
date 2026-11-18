@@ -1,0 +1,231 @@
+{
+  "status": "COMPLETED_MEDIA_VERIFIED",
+  "compute_location": "Unity",
+  "grid": [
+    512,
+    512
+  ],
+  "domain": [
+    6.283185307179586,
+    6.283185307179586
+  ],
+  "time_range": [
+    400,
+    450
+  ],
+  "elapsed_range": [
+    0,
+    50
+  ],
+  "time_units": "dimensionless",
+  "matched_initial_fields": true,
+  "parameters": {
+    "f": 1.0,
+    "beta": 0.0,
+    "a": 0.0002,
+    "b": 0.002,
+    "c": 0.0002,
+    "viscosity": 0.0001,
+    "forcing_band": [
+      12,
+      16
+    ],
+    "allow_zonal_forcing": false,
+    "drag": 0.0,
+    "hyperviscosity": 0.0
+  },
+  "intervention": "Remove only the quadratic source output in 0<|k|\u22642; cubic source and all other terms remain unchanged",
+  "movie": {
+    "file": "maintenance_controls_512_400_450.mp4",
+    "frames": 101,
+    "frames_per_second": 6,
+    "duration_seconds": 16.83,
+    "full_decode_passed": true,
+    "layout": "1 row \u00d7 2 synchronized horizontal 2D vorticity panels",
+    "frame_interval": 0.5,
+    "tracer": false,
+    "depth_layers": false
+  },
+  "color_scale": {
+    "type": "symmetric asinh",
+    "width": 0.1,
+    "limits": [
+      -10.550562858581543,
+      10.550562858581543
+    ],
+    "fixed_across_cases_and_time": true,
+    "clipping": false
+  },
+  "diagnostic_interval": 0.25,
+  "summary": {
+    "full": {
+      "initial": {
+        "t": 400.0,
+        "dt": 0.0017716860309479703,
+        "advection_energy_rate": -4.4858864886587746e-18,
+        "advection_lowk_energy_rate": 0.0002004533176650967,
+        "cubic_energy_rate": -0.0006071332093964623,
+        "cubic_lowk_energy_rate": -0.00037656894094118817,
+        "energy": 0.06220476511333864,
+        "energy_k_le_2": 0.044748661154010806,
+        "enstrophy": 0.316833333752831,
+        "enstrophy_k_ge_128": 1.6461743159383593e-06,
+        "linear_energy_rate": 8.829700934128025e-06,
+        "linear_lowk_energy_rate": 6.720573467549972e-22,
+        "lowk_total_rate": 0.0004473497732347129,
+        "mean_zeta": 1.0408340855860843e-17,
+        "quadratic_energy_rate": 0.0010001378050221443,
+        "quadratic_lowk_energy_rate": 0.0006410624519128388,
+        "skewness": 6.921017273065591,
+        "viscous_energy_rate": -6.336666675056622e-05,
+        "viscous_lowk_energy_rate": -1.759705540203441e-05,
+        "integral_advection_lowk_work": 0.0,
+        "integral_linear_lowk_work": 0.0,
+        "integral_quadratic_lowk_work": 0.0,
+        "integral_cubic_lowk_work": 0.0,
+        "integral_viscous_lowk_work": 0.0,
+        "lowk_energy_change": 0.0,
+        "sampled_lowk_budget_residual": 0.0
+      },
+      "final": {
+        "t": 450.0,
+        "dt": 0.0015481750869166678,
+        "advection_energy_rate": -1.4094628242311558e-18,
+        "advection_lowk_energy_rate": 0.0003383925275960292,
+        "cubic_energy_rate": -0.0009039481294633006,
+        "cubic_lowk_energy_rate": -0.0005705132519775983,
+        "energy": 0.08179397302335939,
+        "energy_k_le_2": 0.05857907542439215,
+        "enstrophy": 0.38997615719398626,
+        "enstrophy_k_ge_128": 3.3557408694899567e-06,
+        "linear_energy_rate": 8.18222090654526e-06,
+        "linear_lowk_energy_rate": 3.2789158826759057e-21,
+        "lowk_total_rate": 0.000669854629712525,
+        "mean_zeta": 6.938893903907228e-18,
+        "quadratic_energy_rate": 0.0014244070085070943,
+        "quadratic_lowk_energy_rate": 0.0009245616163103113,
+        "skewness": 6.411772911098467,
+        "viscous_energy_rate": -7.799523143879726e-05,
+        "viscous_lowk_energy_rate": -2.2586262216217273e-05,
+        "integral_advection_lowk_work": -0.0004977808826358578,
+        "integral_linear_lowk_work": -6.173240745386774e-21,
+        "integral_quadratic_lowk_work": 0.038563201611570126,
+        "integral_cubic_lowk_work": -0.023251574704284527,
+        "integral_viscous_lowk_work": -0.0009836593848588343,
+        "lowk_energy_change": 0.013830414270381342,
+        "sampled_lowk_budget_residual": 2.2763059043251488e-07
+      },
+      "low_energy_change": 0.013830414270381342,
+      "low_energy_final_over_initial": 1.309068783595143,
+      "sampled_cumulative_lowmode_work": {
+        "advection": -0.0004977808826358578,
+        "linear": -6.173240745386774e-21,
+        "quadratic": 0.038563201611570126,
+        "cubic": -0.023251574704284527,
+        "viscous": -0.0009836593848588343
+      },
+      "sampled_budget_residual_final": 2.2763059043251488e-07,
+      "sampled_budget_residual_maximum_absolute": 4.934222564017404e-06,
+      "final_residual_over_sum_absolute_final_term_integrals": 3.5962748284136023e-06,
+      "final_residual_over_initial_low_energy": 5.086869295353487e-06,
+      "maximum_absolute_quadratic_lowmode_power": 0.0009245616163103113
+    },
+    "no_low_quadratic": {
+      "initial": {
+        "t": 400.0,
+        "dt": 0.0017716860309479703,
+        "advection_energy_rate": -4.4858864886587746e-18,
+        "advection_lowk_energy_rate": 0.0002004533176650967,
+        "cubic_energy_rate": -0.0006071332093964623,
+        "cubic_lowk_energy_rate": -0.00037656894094118817,
+        "energy": 0.06220476511333864,
+        "energy_k_le_2": 0.044748661154010806,
+        "enstrophy": 0.316833333752831,
+        "enstrophy_k_ge_128": 1.6461743159383593e-06,
+        "linear_energy_rate": 8.829700934128025e-06,
+        "linear_lowk_energy_rate": 6.720573467549972e-22,
+        "lowk_total_rate": -0.0001937126786781259,
+        "mean_zeta": 1.0408340855860843e-17,
+        "quadratic_energy_rate": 0.0003590753531093056,
+        "quadratic_lowk_energy_rate": 1.1183664746389182e-20,
+        "skewness": 6.921017273065591,
+        "viscous_energy_rate": -6.336666675056622e-05,
+        "viscous_lowk_energy_rate": -1.759705540203441e-05,
+        "integral_advection_lowk_work": 0.0,
+        "integral_linear_lowk_work": 0.0,
+        "integral_quadratic_lowk_work": 0.0,
+        "integral_cubic_lowk_work": 0.0,
+        "integral_viscous_lowk_work": 0.0,
+        "lowk_energy_change": 0.0,
+        "sampled_lowk_budget_residual": 0.0
+      },
+      "final": {
+        "t": 450.0,
+        "dt": 0.0017015204173093583,
+        "advection_energy_rate": -3.469446951953614e-18,
+        "advection_lowk_energy_rate": 3.4228248198370464e-07,
+        "cubic_energy_rate": -0.0005806711089692842,
+        "cubic_lowk_energy_rate": -0.0003073523921100748,
+        "energy": 0.04938488607945372,
+        "energy_k_le_2": 0.027650224068297074,
+        "enstrophy": 0.3227936403332418,
+        "enstrophy_k_ge_128": 3.071904255357143e-06,
+        "linear_energy_rate": 7.699166154878368e-06,
+        "linear_lowk_energy_rate": 1.9124502021504125e-21,
+        "lowk_total_rate": -0.0003181704129193654,
+        "mean_zeta": 6.938893903907228e-18,
+        "quadratic_energy_rate": 0.0004227540131505167,
+        "quadratic_lowk_energy_rate": -2.076286746733317e-20,
+        "skewness": 6.949603622708416,
+        "viscous_energy_rate": -6.455872806664838e-05,
+        "viscous_lowk_energy_rate": -1.1160303291274295e-05,
+        "integral_advection_lowk_work": 0.0006362179590210138,
+        "integral_linear_lowk_work": -8.081449099356337e-22,
+        "integral_quadratic_lowk_work": 2.6450314279973905e-19,
+        "integral_cubic_lowk_work": -0.017037805873788385,
+        "integral_viscous_lowk_work": -0.0006977129746035765,
+        "lowk_energy_change": -0.017098437085713732,
+        "sampled_lowk_budget_residual": 8.638036572174157e-07
+      },
+      "low_energy_change": -0.017098437085713732,
+      "low_energy_final_over_initial": 0.6179005886485343,
+      "sampled_cumulative_lowmode_work": {
+        "advection": 0.0006362179590210138,
+        "linear": -8.081449099356337e-22,
+        "quadratic": 2.6450314279973905e-19,
+        "cubic": -0.017037805873788385,
+        "viscous": -0.0006977129746035765
+      },
+      "sampled_budget_residual_final": 8.638036572174157e-07,
+      "sampled_budget_residual_maximum_absolute": 4.779423048249104e-06,
+      "final_residual_over_sum_absolute_final_term_integrals": 4.701807272074962e-05,
+      "final_residual_over_initial_low_energy": 1.930345254899304e-05,
+      "maximum_absolute_quadratic_lowmode_power": 4.0261828498662786e-20
+    }
+  },
+  "independent_saved_field_checks": {
+    "full": {
+      "sampled_frame_indices": [
+        0,
+        50,
+        100
+      ],
+      "maximum_source_work_absolute_difference": 7.376840024247988e-13
+    },
+    "no_low_quadratic": {
+      "sampled_frame_indices": [
+        0,
+        50,
+        100
+      ],
+      "maximum_source_work_absolute_difference": 9.479911430507193e-13
+    }
+  },
+  "limitations": [
+    "This tests maintenance from a mature shared state, not spontaneous formation or independence from initial conditions.",
+    "The imposed polynomial closure is phenomenological, not a derived or validated convection closure.",
+    "Direct low-mode stress drive can be physically legitimate; dependence on it would identify this model's mechanism, not falsify convective LSV formation.",
+    "Native instantaneous tendency work is sampled every 0.25 model time units. Cumulative trapezoidal work is not exact every-stage accounting; the unassigned residual is explicitly reported and plotted.",
+    "Skewness and low-mode energy do not alone establish a single LSV or an inverse cascade. One initial state and one resolution do not establish robustness."
+  ]
+}
