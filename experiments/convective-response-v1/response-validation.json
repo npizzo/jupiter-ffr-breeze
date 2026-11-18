@@ -1,0 +1,93 @@
+{
+  "status": "PASS",
+  "compute_location": "Unity",
+  "checks": {
+    "real_matrix_complex_field_relative": 0.0,
+    "modes_1_projection": {
+      "continuity_relative": 8.810329015783881e-17,
+      "projection_idempotence": 3.9496245194725395e-17,
+      "real_field_hermitian_relative": 3.36197667287787e-16,
+      "projection_work_orthogonality": 9.301601814925132e-17
+    },
+    "modes_1_energy": {
+      "kinetic_balance_relative": 1.2738102995085828e-16,
+      "buoyancy_variance_balance_relative": 2.71368490942131e-16,
+      "stress_divergence_strain_relative": 1.7956478353807973e-15,
+      "native_report_independent_power_relative": 2.8039090861574136e-15
+    },
+    "modes_1_cyclone_centrifugal_margin": 0.9988551946160116,
+    "modes_1_anticyclone_centrifugal_margin": 0.5625,
+    "modes_1_linearity_relative": 2.983899042696085e-16,
+    "modes_1_quadratic_power_scaling_relative": 0.0,
+    "modes_1_reflected_f_rhs_relative": 4.3250758370508077e-16,
+    "modes_1_reflected_f_power_relative": 1.7717058642423872e-14,
+    "modes_2_projection": {
+      "continuity_relative": 1.0779705167202123e-16,
+      "projection_idempotence": 7.555230859710128e-17,
+      "real_field_hermitian_relative": 3.36168437200309e-16,
+      "projection_work_orthogonality": 2.2975003245588753e-17
+    },
+    "modes_2_energy": {
+      "kinetic_balance_relative": 1.334252974754307e-16,
+      "buoyancy_variance_balance_relative": 0.0,
+      "stress_divergence_strain_relative": 1.0749265649540214e-14,
+      "native_report_independent_power_relative": 1.1024887845682266e-14
+    },
+    "modes_2_cyclone_centrifugal_margin": 0.9988551946160116,
+    "modes_2_anticyclone_centrifugal_margin": 0.5625,
+    "modes_2_linearity_relative": 2.963095303027706e-16,
+    "modes_2_quadratic_power_scaling_relative": 0.0,
+    "modes_2_reflected_f_rhs_relative": 4.3443685677653225e-16,
+    "modes_2_reflected_f_power_relative": 9.619214645356852e-14,
+    "nested_initial_physical_relative": {
+      "31415": 8.275974512976796e-16,
+      "27182": 7.050521474153649e-16
+    },
+    "timestep": {
+      "coarse_dt": 0.1,
+      "coarse_half_dt_relative_state_difference": 1.7927420610131491e-06,
+      "half_quarter_dt_relative_state_difference": 9.784650236237594e-08,
+      "coarse_dt_kinetic_work_residual": 6.095895000451021e-23,
+      "half_dt_kinetic_work_residual": 3.637834289260968e-24
+    },
+    "actual_driver_pilot": {
+      "status": "PASS",
+      "target": 0.4,
+      "scalar_times": [
+        0.0,
+        0.2,
+        0.4
+      ],
+      "frame_times": [
+        0.0,
+        0.4
+      ],
+      "elapsed_seconds": 2.3736775730503723
+    },
+    "throughput": {
+      "seconds_per_full_rk4_step": 0.3691937228490133,
+      "seconds_per_diagnostic": 0.09710511402226985,
+      "actual_driver_pilot_seconds": 2.3736775730503723,
+      "production_dt": 0.1,
+      "steps_per_case_including_event_alignment": 100,
+      "frame_output_seconds_per_frame": 0.03526941455521749,
+      "checkpoint_seconds_per_case": 0.15599962513820798,
+      "projected_18_case_cpu_seconds": 779.5763860659002,
+      "release_limit_cpu_seconds": 1800.0
+    }
+  },
+  "numerical_checks_status": "PASS",
+  "cost_gate_pass": true,
+  "basis_sha256": "5617bb8edf181277cbe4a9d15e8f6e270dd079831bd8b7d425b78b5c5f5aaba5",
+  "code_sha256": {
+    "model.py": "bbf362816fb9bdbeb5af49105cb6d0817cdec3944829b37bf6c8d9a5543ddf17",
+    "optimized.py": "35c5fbaa060f03a65826d9ac8e55230a735deb799ede58ac5af092c4aa0e7a8f",
+    "response.py": "67c360dfbe4b074378be837353c062b6e74a443e73372bbbe764829fa0ab2a08",
+    "run.py": "90937a784e3d5784d37b6765ddc63e43620b44248baae0aaf4da63f20d758358",
+    "check_response.py": "5b98f9b686289c356a899a26939b6657c22468850aa7842cbd6ceefed66de96c"
+  },
+  "elapsed_seconds": 37.862281262059696,
+  "budget_semantics": "Separate kinetic-energy and buoyancy-variance balances; RK-stage work integrals have a measured finite-step residual.",
+  "maximum_campaign_time": 10.0,
+  "maximum_case_count": 18
+}

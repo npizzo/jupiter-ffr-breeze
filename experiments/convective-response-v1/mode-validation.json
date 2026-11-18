@@ -1,0 +1,314 @@
+{
+  "status": "PASS",
+  "compute_location": "Unity",
+  "provenance": {
+    "source_sha256": "04870112a717099dfd445164513a86bad3afb6f6ac1b23cbb5d07fe157691ef8",
+    "source_day": 100.0,
+    "source_public_path": "gallery/fplane-centrifugal-v1/analysis.json",
+    "height_m": 120000.0,
+    "f_abs_s_inv": 0.0002880957739764384
+  },
+  "code_sha256": {
+    "model.py": "bbf362816fb9bdbeb5af49105cb6d0817cdec3944829b37bf6c8d9a5543ddf17",
+    "optimized.py": "35c5fbaa060f03a65826d9ac8e55230a735deb799ede58ac5af092c4aa0e7a8f",
+    "optimized_screen.py": "1d97df4593e1cf786e471e6a0a67e3e127443539b000110b8ed8a717547f8cc3"
+  },
+  "reference_report_sha256": "5439c1faf5c51bbe7d22914e5a11313648b60e07b13fa6837c46026e446a47b6",
+  "checks": {
+    "horizontal_mass_condition": 1.5975224479849595,
+    "vertical_mass_condition": 1.8688379186084754,
+    "derivative_span_relative": 1.1440138201387825e-15,
+    "residuals": {
+      "nonzero_divergence": 1.4667618357043356e-16,
+      "nonzero_idempotence": 9.840484363528095e-17,
+      "nonzero_energy_adjoint": 5.278085862377742e-17,
+      "nonzero_uniform_N2_energy": 6.681143967549795e-18,
+      "nonzero_pressure_work": 0.0,
+      "zero_divergence": 0.0,
+      "zero_idempotence": 0.0,
+      "zero_energy_adjoint": 0.0,
+      "zero_uniform_N2_energy": 1.0368664500377621e-17,
+      "zero_pressure_work": 0.0,
+      "zero_horizontal_preserved": 0.0,
+      "zero_vertical_removed": 0.0,
+      "finite_thermal_dispersion_N2_0.7": 3.3306690738754696e-16,
+      "finite_thermal_dispersion_N2_-2.0": 2.416959830823691e-16,
+      "independent_physical_kinetic_work": 2.6037620848067766e-16,
+      "independent_physical_thermal_work": 0.0,
+      "equal_opposite_mean_strain_work": 0.0
+    },
+    "dispersion": [
+      {
+        "N2_over_f2": 0.7,
+        "overlap_squared": 0.9999451558827522,
+        "omega_squared": 0.8568944287044635,
+        "relative_error": 3.3306690738754696e-16
+      },
+      {
+        "N2_over_f2": -2.0,
+        "overlap_squared": 0.9999451558827522,
+        "omega_squared": -0.4308202881206594,
+        "relative_error": 2.416959830823691e-16
+      }
+    ],
+    "kinetic_work_components": {
+      "kinetic": -2.558351312748788,
+      "buoyancy": -0.5226609688323041,
+      "viscous_loss": 2.035690343916485
+    },
+    "thermal_work_components": {
+      "variance": -8.492708668612577,
+      "gradient": 0.13791305010330257,
+      "loss": 8.63062171871588
+    },
+    "basis_1_derivative_span": 1.795963372026774e-15,
+    "basis_2_derivative_span": 1.1686989177749045e-15
+  },
+  "selected_kh_H": 29.98668214576479,
+  "selected_wavelength_m": 25143.90332336384,
+  "band_kh_H": [
+    23.989345716611833,
+    29.98668214576479,
+    35.98401857491775
+  ],
+  "reference_growth_over_f": [
+    0.17432808008744013,
+    0.2062244894129934,
+    0.19950478426753987
+  ],
+  "coarse_reference_growth_over_f": [
+    0.17315246089702918,
+    0.20454580892027235,
+    0.1972673265129046
+  ],
+  "full_reference_relative_difference": 0.011215058139331607,
+  "basis_dimensions": {
+    "1": {
+      "selected_convective_modes": 1,
+      "w_functions": 1,
+      "horizontal_functions": 2,
+      "selected_modes": [
+        {
+          "eigenvalue_real": 0.20622448941299748,
+          "eigenvalue_imag": 6.063497035156854e-16,
+          "w_imaginary_fraction_after_phase": 2.5927093027902014e-15,
+          "cumulative_vertical_velocity_functions": 1,
+          "cumulative_horizontal_velocity_functions": 2
+        }
+      ]
+    },
+    "2": {
+      "selected_convective_modes": 2,
+      "w_functions": 2,
+      "horizontal_functions": 4,
+      "selected_modes": [
+        {
+          "eigenvalue_real": 0.20622448941299748,
+          "eigenvalue_imag": 6.063497035156854e-16,
+          "w_imaginary_fraction_after_phase": 2.5927093027902014e-15,
+          "cumulative_vertical_velocity_functions": 1,
+          "cumulative_horizontal_velocity_functions": 2
+        },
+        {
+          "eigenvalue_real": -0.047569734165720405,
+          "eigenvalue_imag": 3.1899221751571064e-16,
+          "w_imaginary_fraction_after_phase": 4.221252340154054e-12,
+          "cumulative_vertical_velocity_functions": 2,
+          "cumulative_horizontal_velocity_functions": 4
+        }
+      ]
+    }
+  },
+  "growth_over_f": {
+    "modes_1_thermal_33": [
+      0.1703716804211345,
+      0.20525174593610013,
+      0.1798562922953073
+    ],
+    "modes_1_thermal_65": [
+      0.171084861719005,
+      0.20620694838035405,
+      0.18093519205120462
+    ],
+    "modes_1_thermal_97": [
+      0.17109773730360692,
+      0.2062244894130002,
+      0.1809552866185585
+    ],
+    "modes_2_thermal_33": [
+      0.17053757134250866,
+      0.2052525854560582,
+      0.18025345982719002
+    ],
+    "modes_2_thermal_65": [
+      0.1712069873182631,
+      0.2062070082936596,
+      0.18130507020798206
+    ],
+    "modes_2_thermal_97": [
+      0.17122207016687876,
+      0.2062244894130038,
+      0.18128809402880158
+    ]
+  },
+  "relative_growth_errors": {
+    "1": 0.09297770836465817,
+    "2": 0.09130954079932913
+  },
+  "one_two_relative_difference": 0.0016681675653290534,
+  "thermal_refinement_relative": {
+    "1": {
+      "33_to_65": 0.0054078891383902115,
+      "65_to_97": 0.00010072223294122691
+    },
+    "2": {
+      "33_to_65": 0.005271103571039253,
+      "65_to_97": 8.651990320843327e-05
+    }
+  },
+  "eigenstate_checks": {
+    "1": [
+      {
+        "reference_eigenvalue_real": 0.20622448941299748,
+        "reference_eigenvalue_imag": 6.063497035156854e-16,
+        "velocity_containment_relative": 8.538508218528118e-15,
+        "retained_eigenstate_residual_relative": 1.1621092668660638e-12,
+        "nearest_eigenvalue_relative_difference": 1.3658169868529518e-14
+      }
+    ],
+    "2": [
+      {
+        "reference_eigenvalue_real": 0.20622448941299748,
+        "reference_eigenvalue_imag": 6.063497035156854e-16,
+        "velocity_containment_relative": 8.560838199800873e-15,
+        "retained_eigenstate_residual_relative": 1.1650611557284725e-12,
+        "nearest_eigenvalue_relative_difference": 3.0852343915201924e-14
+      },
+      {
+        "reference_eigenvalue_real": -0.047569734165720405,
+        "reference_eigenvalue_imag": 3.1899221751571064e-16,
+        "velocity_containment_relative": 4.130539345103686e-12,
+        "retained_eigenstate_residual_relative": 9.17672953340792e-13,
+        "nearest_eigenvalue_relative_difference": 2.2950460769836156e-13
+      }
+    ]
+  },
+  "thermal_basis_candidates": {
+    "32": [
+      {
+        "modes": 1,
+        "heated_relative_error": 0.005508611371331439,
+        "control_relative_error": 0.4902103590745718,
+        "control_max_growth": -0.008891788544549199
+      },
+      {
+        "modes": 2,
+        "heated_relative_error": 0.00518601198166808,
+        "control_relative_error": 0.42984183459390524,
+        "control_max_growth": -0.00855203955432262
+      }
+    ],
+    "64": [
+      {
+        "modes": 1,
+        "heated_relative_error": 0.00010072223294122691,
+        "control_relative_error": 0.07786627808833313,
+        "control_max_growth": -0.005214665396177873
+      },
+      {
+        "modes": 2,
+        "heated_relative_error": 8.651990320843327e-05,
+        "control_relative_error": 0.07777415638987899,
+        "control_max_growth": -0.005255505226806678
+      }
+    ],
+    "96": [
+      {
+        "modes": 1,
+        "heated_relative_error": 0.0,
+        "control_relative_error": 0.0,
+        "control_max_growth": -0.004480491713353691
+      },
+      {
+        "modes": 2,
+        "heated_relative_error": 0.0,
+        "control_relative_error": 0.0,
+        "control_max_growth": -0.004531782621454003
+      }
+    ]
+  },
+  "selected_thermal_nb": 96,
+  "reflection_checks": {
+    "1": [
+      {
+        "kh_H": 23.989345716611833,
+        "matched_spectrum_relative": 3.306315939058112e-16,
+        "reflected_operator_relative": 0.0
+      },
+      {
+        "kh_H": 29.98668214576479,
+        "matched_spectrum_relative": 3.0492105389359733e-16,
+        "reflected_operator_relative": 0.0
+      },
+      {
+        "kh_H": 35.98401857491775,
+        "matched_spectrum_relative": 1.6676340018046167e-16,
+        "reflected_operator_relative": 0.0
+      }
+    ],
+    "2": [
+      {
+        "kh_H": 23.989345716611833,
+        "matched_spectrum_relative": 3.2567283517411684e-16,
+        "reflected_operator_relative": 0.0
+      },
+      {
+        "kh_H": 29.98668214576479,
+        "matched_spectrum_relative": 3.294007688446678e-16,
+        "reflected_operator_relative": 0.0
+      },
+      {
+        "kh_H": 35.98401857491775,
+        "matched_spectrum_relative": 3.3174010597433924e-16,
+        "reflected_operator_relative": 0.0
+      }
+    ]
+  },
+  "gradient_removed_control_growth_over_f": {
+    "1": [
+      -0.004480491713353691,
+      -0.004589487458238079,
+      -0.004712072320879331
+    ],
+    "2": [
+      -0.004531782621454003,
+      -0.0046517455899736816,
+      -0.0047680074401962634
+    ]
+  },
+  "gates": {
+    "reference_has_positive_growth": true,
+    "full_reference_band_convergence_below_10pct": true,
+    "one_mode_band_growth_error_below_20pct": true,
+    "two_mode_band_growth_error_below_20pct": true,
+    "one_two_band_growth_difference_below_20pct": true,
+    "thermal_65_97_difference_below_5pct": true,
+    "full_eigenstate_containment_and_growth": true,
+    "reflection_operator_and_spectrum": true,
+    "gradient_removed_control_growth_below_001": true,
+    "frozen_source_unchanged": true
+  },
+  "elapsed_seconds": 0.4968886529095471,
+  "limitations": [
+    "Frozen measured profile; finite-window linear response only.",
+    "Boussinesq approximation omits the original density contrast.",
+    "One/two selected convective modes retain their required horizontal poloidal/toroidal shapes.",
+    "Gradient-removed control is not switching off heating with an unchanged profile.",
+    "No nonlinear or saturated convection claim follows from this gate."
+  ],
+  "basis_sha256": "5617bb8edf181277cbe4a9d15e8f6e270dd079831bd8b7d425b78b5c5f5aaba5",
+  "individual_basis_sha256": {
+    "1": "c1425c048a854d5981b9332784934bd28f31bbf39eb3674aa6ec80bcb7776f07",
+    "2": "2848fdaa871e3284838e0b84647f1910be8b704cf4a9ddf4dfe61ba832d4f340"
+  }
+}

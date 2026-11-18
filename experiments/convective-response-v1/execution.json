@@ -1,0 +1,32 @@
+{
+  "date": "2026-11-18",
+  "compute_location": "Unity",
+  "reference_job": "1956711",
+  "mode_validation_job": "1956981",
+  "response_validation_job": "1957540",
+  "response_job": "1957606",
+  "analysis_job": "1957629",
+  "status_at_submission": "SUBMITTED",
+  "case_count": 18,
+  "grid": [
+    128,
+    128
+  ],
+  "target_time_fabs": 10,
+  "production_dt_fabs": 0.1,
+  "scalar_interval_fabs": 0.2,
+  "frame_interval_fabs": 0.5,
+  "cpus": 1,
+  "memory_gb": 4,
+  "hard_wall_limit_seconds": 2700,
+  "projected_cpu_seconds": 779.5763860659002,
+  "earlier_checks": [
+    {
+      "job": "1957266",
+      "status": "PHYSICS_PASS_COST_LIMIT_FAIL",
+      "elapsed_seconds": 85,
+      "projected_18_case_cpu_seconds": 4610.959670890321,
+      "limit_cpu_seconds": 1800
+    }
+  ]
+}
