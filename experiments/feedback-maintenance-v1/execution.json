@@ -1,0 +1,46 @@
+{
+  "date": "2026-11-18",
+  "compute_location": "Unity",
+  "status_at_submission": "SUBMITTED",
+  "t_start": 400,
+  "t_target": 450,
+  "grid": [
+    512,
+    512
+  ],
+  "production_cpus_per_case": 1,
+  "production_memory_gb_per_case": 4,
+  "production_wall_limit_seconds_per_case": 3600,
+  "validation_job": "1956155",
+  "driver_validation_job": "1956236",
+  "existing_output_analysis_job": "1955945",
+  "production_jobs": [
+    {
+      "case": "full",
+      "job": "1956335"
+    },
+    {
+      "case": "no_low_quadratic",
+      "job": "1956337"
+    }
+  ],
+  "render_job": "1956341",
+  "render_dependency": "afterok:1956335:1956337",
+  "prior_validation_attempts": [
+    {
+      "job": "1955946",
+      "state": "FAILED_PARSE_ONLY"
+    },
+    {
+      "job": "1956000",
+      "state": "FAILED_DIAGNOSTIC_DISPATCH"
+    }
+  ],
+  "driver_validation": {
+    "status": "PASS",
+    "t_target": 400.5,
+    "frames": 2,
+    "scalar_samples": 3
+  },
+  "interpretation": "Maintenance intervention, not spontaneous formation or a derived convection closure."
+}

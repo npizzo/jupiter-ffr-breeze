@@ -1,0 +1,32 @@
+bytes_per_step = 4847.36
+force_curl_max_relative_error = 5.336032486642275e-13
+half_dt_relative_difference = 4.3288394261241845e-11
+independent_ablation_relative_error = 3.7536916060213277e-16
+native_advection_diffusion_curl_relative_error = 1.376095351692781e-14
+old_model_relative_error = 0.0
+old_output_flux_reconstruction_relative_error = 6.983156076005659e-13
+restart_relative_error = 0.0
+seconds_per_step = 0.05116676674
+source_checkpoint_sha256 = "a927a2e73202637435b55ba0634e3e51885843c7d99f886760f83caa7bbaa102"
+status = "PASS"
+target_limit = 450.0
+
+[code_sha256]
+"../instability2d_v1/core.jl" = "7b03014ba4500f05c7f978e9a80bfc3d525b8300dd245acdc5500fe3bf78430c"
+"../viscous2d_fast512_v1/model.jl" = "7a2eabe0cc129a6810f0a14e85e51a22a019c38a66acf51c9216858276e36e4a"
+"../viscous2d_feedback512_v1/model.jl" = "ca5af8ebbad116beb25b4b7598389c3c931578aae4e0c2caafd6bfb7c454c9ee"
+"check.jl" = "20eec69a20a744d9b582573f42e47ba5ac4030b1e10c33d3bcc01fef877c5531"
+"model.jl" = "c8ec93d6013c497609b0a8c6fc3c106284c88fd0139c8d11cfc99682bd878f64"
+"run.jl" = "e47bcebb4cd14e8457c497d930d5fcb0b07a20cd4c3bd830a6a072dfc2cda23d"
+
+[pilots.full]
+dt = 0.001772296079860574
+energy = 0.06237420039551544
+lowk_energy = 0.044919622278782656
+t = 400.5
+
+[pilots.no_low_quadratic]
+dt = 0.001773851060599868
+energy = 0.062053495827511046
+lowk_energy = 0.04459895105543363
+t = 400.5
