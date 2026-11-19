@@ -1,0 +1,934 @@
+{
+  "stable": {
+    "status": "COMPLETE",
+    "final_time": 7200.0,
+    "movie": {
+      "file": "stable_plume.mp4",
+      "frame_count": 121,
+      "fps": 12,
+      "decode": "PASS",
+      "sha256": "3309fccc4011c73e1181e1a5d69c05c278596212de0d6e695dd95e34a4b02db2"
+    },
+    "heights": [
+      74950.0,
+      80450.0,
+      81950.0
+    ],
+    "budget": {
+      "checks": 5931,
+      "max_step_absolute_residual": 3.2132194854091883e-18,
+      "cumulative_max_absolute_residual": 1.2728533504979822e-16,
+      "change_max_abs": 0.0014996615488596186,
+      "cumulative_terms_max_abs_by_layer_and_term": [
+        [
+          0.002365555148744289,
+          0.001358849618408186,
+          0.0005227736710118304,
+          0.00047808897973637823
+        ],
+        [
+          0.004524485082113472,
+          0.0036428671097623443,
+          0.0012326765664796406,
+          0.00039567154933740754
+        ],
+        [
+          0.0008837861762979686,
+          0.00036530217905526944,
+          0.00024657678661473904,
+          0.00046922377458914906
+        ]
+      ],
+      "layers_m": [
+        [
+          70000,
+          80000
+        ],
+        [
+          80000,
+          84000
+        ],
+        [
+          84000,
+          110000
+        ]
+      ],
+      "term_order": [
+        "horizontal_advection",
+        "vertical_advection",
+        "coriolis",
+        "viscosity"
+      ]
+    },
+    "scales": {
+      "vorticity": "zeta/f, fixed across both cases, depths and time",
+      "vorticity_asinh_width": 0.01,
+      "vorticity_limits": [
+        -41.80457702542005,
+        41.80457702542005
+      ],
+      "tracer_asinh_width": 0.01,
+      "tracer_limits": [
+        0,
+        1.0
+      ]
+    },
+    "top_tracer_first_gt_0_001": null,
+    "side_tracer_first_gt_0_001": null,
+    "final_diagnostics": {
+      "time": 7200.0,
+      "wall_seconds": 941.9969260692596,
+      "dt": 2.0,
+      "w_max": 5.487798553605182,
+      "u_rms": 2.57133683733792,
+      "plume_Ro": 0.22313212042709568,
+      "w_over_N_cells": 3.5737498799506846,
+      "tracer_top_fraction": 1.5052968165912113e-06,
+      "tracer_side_fraction": 5.356947292469518e-09,
+      "max_layer_step_residual": 3.2132194854091883e-18
+    },
+    "full_field_screen": [
+      {
+        "time": 0.0,
+        "height_of_tracer_C_gt_0_01_m": 79650.0,
+        "tracer_penetration_cells": 0.0,
+        "characteristic_w_over_N_cells": 0.0,
+        "top_5km_w_max_relative_to_global": 0.0,
+        "spectra": [
+          {
+            "height_m": 74950.0,
+            "w_near_grid_fraction": null
+          },
+          {
+            "height_m": 79450.0,
+            "w_near_grid_fraction": null
+          },
+          {
+            "height_m": 80450.0,
+            "w_near_grid_fraction": null
+          },
+          {
+            "height_m": 81950.0,
+            "w_near_grid_fraction": null
+          }
+        ]
+      },
+      {
+        "time": 600.0,
+        "height_of_tracer_C_gt_0_01_m": 83950.0,
+        "tracer_penetration_cells": 39.5,
+        "characteristic_w_over_N_cells": 40.52289009094238,
+        "top_5km_w_max_relative_to_global": 0.016244423421201453,
+        "spectra": [
+          {
+            "height_m": 74950.0,
+            "w_near_grid_fraction": 4.227229822070473e-05
+          },
+          {
+            "height_m": 79450.0,
+            "w_near_grid_fraction": 2.1972489179597758e-07
+          },
+          {
+            "height_m": 80450.0,
+            "w_near_grid_fraction": 1.7209584873322633e-07
+          },
+          {
+            "height_m": 81950.0,
+            "w_near_grid_fraction": 1.8371807457551601e-07
+          }
+        ]
+      },
+      {
+        "time": 1200.0,
+        "height_of_tracer_C_gt_0_01_m": 94750.0,
+        "tracer_penetration_cells": 147.5,
+        "characteristic_w_over_N_cells": 51.560014724731445,
+        "top_5km_w_max_relative_to_global": 0.021710431936938123,
+        "spectra": [
+          {
+            "height_m": 74950.0,
+            "w_near_grid_fraction": 0.0014168195396401695
+          },
+          {
+            "height_m": 79450.0,
+            "w_near_grid_fraction": 0.030596778869548303
+          },
+          {
+            "height_m": 80450.0,
+            "w_near_grid_fraction": 0.0338398210511657
+          },
+          {
+            "height_m": 81950.0,
+            "w_near_grid_fraction": 0.03401115009498298
+          }
+        ]
+      },
+      {
+        "time": 1800.0,
+        "height_of_tracer_C_gt_0_01_m": 93750.0,
+        "tracer_penetration_cells": 137.5,
+        "characteristic_w_over_N_cells": 29.677363395690918,
+        "top_5km_w_max_relative_to_global": 0.1356381329254107,
+        "spectra": [
+          {
+            "height_m": 74950.0,
+            "w_near_grid_fraction": 0.0021675602311773514
+          },
+          {
+            "height_m": 79450.0,
+            "w_near_grid_fraction": 0.018448360478310413
+          },
+          {
+            "height_m": 80450.0,
+            "w_near_grid_fraction": 0.04840844102435382
+          },
+          {
+            "height_m": 81950.0,
+            "w_near_grid_fraction": 0.0966169677009726
+          }
+        ]
+      },
+      {
+        "time": 2400.0,
+        "height_of_tracer_C_gt_0_01_m": 90550.0,
+        "tracer_penetration_cells": 105.5,
+        "characteristic_w_over_N_cells": 23.36826229095459,
+        "top_5km_w_max_relative_to_global": 0.5614926103455162,
+        "spectra": [
+          {
+            "height_m": 74950.0,
+            "w_near_grid_fraction": 0.0004551789012167429
+          },
+          {
+            "height_m": 79450.0,
+            "w_near_grid_fraction": 0.001992827386140837
+          },
+          {
+            "height_m": 80450.0,
+            "w_near_grid_fraction": 0.0024641013001699416
+          },
+          {
+            "height_m": 81950.0,
+            "w_near_grid_fraction": 0.021397331345528365
+          }
+        ]
+      },
+      {
+        "time": 3000.0,
+        "height_of_tracer_C_gt_0_01_m": 92950.0,
+        "tracer_penetration_cells": 129.5,
+        "characteristic_w_over_N_cells": 14.568982124328613,
+        "top_5km_w_max_relative_to_global": 0.16746717512692832,
+        "spectra": [
+          {
+            "height_m": 74950.0,
+            "w_near_grid_fraction": 0.0009640558938282144
+          },
+          {
+            "height_m": 79450.0,
+            "w_near_grid_fraction": 0.0013034809617392825
+          },
+          {
+            "height_m": 80450.0,
+            "w_near_grid_fraction": 0.0033540996801925405
+          },
+          {
+            "height_m": 81950.0,
+            "w_near_grid_fraction": 0.018470671371381364
+          }
+        ]
+      },
+      {
+        "time": 3600.0,
+        "height_of_tracer_C_gt_0_01_m": 98850.0,
+        "tracer_penetration_cells": 188.5,
+        "characteristic_w_over_N_cells": 12.25774621963501,
+        "top_5km_w_max_relative_to_global": 0.6972958805416595,
+        "spectra": [
+          {
+            "height_m": 74950.0,
+            "w_near_grid_fraction": 0.0011462632602580677
+          },
+          {
+            "height_m": 79450.0,
+            "w_near_grid_fraction": 0.0011385633941440943
+          },
+          {
+            "height_m": 80450.0,
+            "w_near_grid_fraction": 0.003377940664152755
+          },
+          {
+            "height_m": 81950.0,
+            "w_near_grid_fraction": 0.00761870249693101
+          }
+        ]
+      },
+      {
+        "time": 4200.0,
+        "height_of_tracer_C_gt_0_01_m": 97650.0,
+        "tracer_penetration_cells": 176.5,
+        "characteristic_w_over_N_cells": 8.52286958694458,
+        "top_5km_w_max_relative_to_global": 0.9628563044225331,
+        "spectra": [
+          {
+            "height_m": 74950.0,
+            "w_near_grid_fraction": 0.0016045996738848576
+          },
+          {
+            "height_m": 79450.0,
+            "w_near_grid_fraction": 0.0010913713387804877
+          },
+          {
+            "height_m": 80450.0,
+            "w_near_grid_fraction": 0.002472671387578511
+          },
+          {
+            "height_m": 81950.0,
+            "w_near_grid_fraction": 0.002857818225769329
+          }
+        ]
+      },
+      {
+        "time": 4800.0,
+        "height_of_tracer_C_gt_0_01_m": 96350.0,
+        "tracer_penetration_cells": 163.5,
+        "characteristic_w_over_N_cells": 8.081481456756592,
+        "top_5km_w_max_relative_to_global": 0.989582572902009,
+        "spectra": [
+          {
+            "height_m": 74950.0,
+            "w_near_grid_fraction": 0.0018671294751037024
+          },
+          {
+            "height_m": 79450.0,
+            "w_near_grid_fraction": 0.001173011827481392
+          },
+          {
+            "height_m": 80450.0,
+            "w_near_grid_fraction": 0.0017815166009201458
+          },
+          {
+            "height_m": 81950.0,
+            "w_near_grid_fraction": 0.0011256956440436885
+          }
+        ]
+      },
+      {
+        "time": 5400.0,
+        "height_of_tracer_C_gt_0_01_m": 96750.0,
+        "tracer_penetration_cells": 167.5,
+        "characteristic_w_over_N_cells": 5.279805421829224,
+        "top_5km_w_max_relative_to_global": 1.0,
+        "spectra": [
+          {
+            "height_m": 74950.0,
+            "w_near_grid_fraction": 0.0022837159786082664
+          },
+          {
+            "height_m": 79450.0,
+            "w_near_grid_fraction": 0.0020360992438368678
+          },
+          {
+            "height_m": 80450.0,
+            "w_near_grid_fraction": 0.0036282249640170925
+          },
+          {
+            "height_m": 81950.0,
+            "w_near_grid_fraction": 0.0012060437692344801
+          }
+        ]
+      },
+      {
+        "time": 6000.0,
+        "height_of_tracer_C_gt_0_01_m": 97550.0,
+        "tracer_penetration_cells": 175.5,
+        "characteristic_w_over_N_cells": 5.772676229476929,
+        "top_5km_w_max_relative_to_global": 0.28396321400378866,
+        "spectra": [
+          {
+            "height_m": 74950.0,
+            "w_near_grid_fraction": 0.0017533080814027423
+          },
+          {
+            "height_m": 79450.0,
+            "w_near_grid_fraction": 0.0015303441260442465
+          },
+          {
+            "height_m": 80450.0,
+            "w_near_grid_fraction": 0.001223914067501999
+          },
+          {
+            "height_m": 81950.0,
+            "w_near_grid_fraction": 0.0003900460049426493
+          }
+        ]
+      },
+      {
+        "time": 6600.0,
+        "height_of_tracer_C_gt_0_01_m": 98950.0,
+        "tracer_penetration_cells": 189.5,
+        "characteristic_w_over_N_cells": 5.695676565170288,
+        "top_5km_w_max_relative_to_global": 1.0,
+        "spectra": [
+          {
+            "height_m": 74950.0,
+            "w_near_grid_fraction": 0.0008705606831593037
+          },
+          {
+            "height_m": 79450.0,
+            "w_near_grid_fraction": 0.0005396843240967569
+          },
+          {
+            "height_m": 80450.0,
+            "w_near_grid_fraction": 0.00031367502478624805
+          },
+          {
+            "height_m": 81950.0,
+            "w_near_grid_fraction": 0.0002116120741118155
+          }
+        ]
+      },
+      {
+        "time": 7200.0,
+        "height_of_tracer_C_gt_0_01_m": 94850.0,
+        "tracer_penetration_cells": 148.5,
+        "characteristic_w_over_N_cells": 3.5737498998641968,
+        "top_5km_w_max_relative_to_global": 0.8974146449292312,
+        "spectra": [
+          {
+            "height_m": 74950.0,
+            "w_near_grid_fraction": 0.0007366338601614134
+          },
+          {
+            "height_m": 79450.0,
+            "w_near_grid_fraction": 0.0005448360362860235
+          },
+          {
+            "height_m": 80450.0,
+            "w_near_grid_fraction": 0.00045506728959716203
+          },
+          {
+            "height_m": 81950.0,
+            "w_near_grid_fraction": 0.0002639170323158298
+          }
+        ]
+      }
+    ],
+    "interface_samples": [
+      {
+        "time": 600.0,
+        "height_m": 80450.0,
+        "area_fraction": 0.026909722222222224,
+        "mean_zeta_over_f": -0.2911002039909363,
+        "mean_divergence_over_f": 4.667114734649658,
+        "mean_reconstructed_stretching_over_f2": -3.153674840927124
+      },
+      {
+        "time": 1200.0,
+        "height_m": 80450.0,
+        "area_fraction": 0.03428819444444445,
+        "mean_zeta_over_f": -0.3690491020679474,
+        "mean_divergence_over_f": 0.9174492955207825,
+        "mean_reconstructed_stretching_over_f2": 7.482938289642334
+      },
+      {
+        "time": 1800.0,
+        "height_m": 80450.0,
+        "area_fraction": 0.059027777777777776,
+        "mean_zeta_over_f": -1.3547245264053345,
+        "mean_divergence_over_f": 0.8961933851242065,
+        "mean_reconstructed_stretching_over_f2": -1.8152968883514404
+      },
+      {
+        "time": 2400.0,
+        "height_m": 80450.0,
+        "area_fraction": 0.040364583333333336,
+        "mean_zeta_over_f": -2.117746353149414,
+        "mean_divergence_over_f": 0.7528116106987,
+        "mean_reconstructed_stretching_over_f2": 3.429697036743164
+      },
+      {
+        "time": 3600.0,
+        "height_m": 80450.0,
+        "area_fraction": 0.016493055555555556,
+        "mean_zeta_over_f": -0.79112708568573,
+        "mean_divergence_over_f": 1.9856109619140625,
+        "mean_reconstructed_stretching_over_f2": 1.6381875276565552
+      },
+      {
+        "time": 7200.0,
+        "height_m": 80450.0,
+        "area_fraction": 0.007378472222222222,
+        "mean_zeta_over_f": 0.024230310693383217,
+        "mean_divergence_over_f": -0.3031916618347168,
+        "mean_reconstructed_stretching_over_f2": 0.31197962164878845
+      }
+    ]
+  },
+  "neutral": {
+    "status": "COMPLETE",
+    "final_time": 7200.0,
+    "movie": {
+      "file": "neutral_plume.mp4",
+      "frame_count": 121,
+      "fps": 12,
+      "decode": "PASS",
+      "sha256": "3afc6223578bd6bfaebeb6ed7324c8f375e953bde2494adbcea63b5170f16a90"
+    },
+    "heights": [
+      74950.0,
+      80450.0,
+      81950.0
+    ],
+    "budget": {
+      "checks": 13046,
+      "max_step_absolute_residual": 2.0965759510438442e-17,
+      "cumulative_max_absolute_residual": 1.0174153186603974e-15,
+      "change_max_abs": 0.008881159553106803,
+      "cumulative_terms_max_abs_by_layer_and_term": [
+        [
+          0.0223226229014376,
+          0.010743649824140295,
+          0.0013070941619802699,
+          0.00385893205526286
+        ],
+        [
+          0.030683144631196625,
+          0.027539526163607594,
+          0.0015336674036519418,
+          0.003517177459428479
+        ],
+        [
+          0.007919193747429012,
+          0.009519286928295822,
+          0.0010261535442291489,
+          0.002177961666288967
+        ]
+      ],
+      "layers_m": [
+        [
+          70000,
+          80000
+        ],
+        [
+          80000,
+          84000
+        ],
+        [
+          84000,
+          110000
+        ]
+      ],
+      "term_order": [
+        "horizontal_advection",
+        "vertical_advection",
+        "coriolis",
+        "viscosity"
+      ]
+    },
+    "scales": {
+      "vorticity": "zeta/f, fixed across both cases, depths and time",
+      "vorticity_asinh_width": 0.01,
+      "vorticity_limits": [
+        -41.80457702542005,
+        41.80457702542005
+      ],
+      "tracer_asinh_width": 0.01,
+      "tracer_limits": [
+        0,
+        1.0
+      ]
+    },
+    "top_tracer_first_gt_0_001": 1260.0,
+    "side_tracer_first_gt_0_001": 2760.0,
+    "final_diagnostics": {
+      "time": 7200.0,
+      "wall_seconds": 1880.0963819026947,
+      "dt": 1.352447979826939,
+      "w_max": 13.096376941038256,
+      "u_rms": 4.13851910036441,
+      "plume_Ro": 0.3591270225212392,
+      "w_over_N_cells": -1.0,
+      "tracer_top_fraction": 0.6564398502255566,
+      "tracer_side_fraction": 0.43923436460089804,
+      "max_layer_step_residual": 2.0965759510438442e-17
+    },
+    "full_field_screen": [
+      {
+        "time": 0.0,
+        "height_of_tracer_C_gt_0_01_m": 79650.0,
+        "tracer_penetration_cells": 0.0,
+        "characteristic_w_over_N_cells": null,
+        "top_5km_w_max_relative_to_global": 0.0,
+        "spectra": [
+          {
+            "height_m": 74950.0,
+            "w_near_grid_fraction": null
+          },
+          {
+            "height_m": 79450.0,
+            "w_near_grid_fraction": null
+          },
+          {
+            "height_m": 80450.0,
+            "w_near_grid_fraction": null
+          },
+          {
+            "height_m": 81950.0,
+            "w_near_grid_fraction": null
+          }
+        ]
+      },
+      {
+        "time": 600.0,
+        "height_of_tracer_C_gt_0_01_m": 84550.0,
+        "tracer_penetration_cells": 45.5,
+        "characteristic_w_over_N_cells": null,
+        "top_5km_w_max_relative_to_global": 0.06651091030721008,
+        "spectra": [
+          {
+            "height_m": 74950.0,
+            "w_near_grid_fraction": 3.375129578937757e-05
+          },
+          {
+            "height_m": 79450.0,
+            "w_near_grid_fraction": 3.15830821436054e-07
+          },
+          {
+            "height_m": 80450.0,
+            "w_near_grid_fraction": 3.351912458958689e-07
+          },
+          {
+            "height_m": 81950.0,
+            "w_near_grid_fraction": 6.224014474355859e-07
+          }
+        ]
+      },
+      {
+        "time": 1200.0,
+        "height_of_tracer_C_gt_0_01_m": 105550.0,
+        "tracer_penetration_cells": 255.5,
+        "characteristic_w_over_N_cells": null,
+        "top_5km_w_max_relative_to_global": 0.6609653871611721,
+        "spectra": [
+          {
+            "height_m": 74950.0,
+            "w_near_grid_fraction": 0.0002491995690903694
+          },
+          {
+            "height_m": 79450.0,
+            "w_near_grid_fraction": 0.005341793172709248
+          },
+          {
+            "height_m": 80450.0,
+            "w_near_grid_fraction": 0.006343331715983949
+          },
+          {
+            "height_m": 81950.0,
+            "w_near_grid_fraction": 0.007487567055555895
+          }
+        ]
+      },
+      {
+        "time": 1800.0,
+        "height_of_tracer_C_gt_0_01_m": 109950.0,
+        "tracer_penetration_cells": 299.5,
+        "characteristic_w_over_N_cells": null,
+        "top_5km_w_max_relative_to_global": 0.8316512384128384,
+        "spectra": [
+          {
+            "height_m": 74950.0,
+            "w_near_grid_fraction": 0.0015544152906097602
+          },
+          {
+            "height_m": 79450.0,
+            "w_near_grid_fraction": 0.007550581015121833
+          },
+          {
+            "height_m": 80450.0,
+            "w_near_grid_fraction": 0.007895176659333973
+          },
+          {
+            "height_m": 81950.0,
+            "w_near_grid_fraction": 0.0077559234097488335
+          }
+        ]
+      },
+      {
+        "time": 2400.0,
+        "height_of_tracer_C_gt_0_01_m": 109950.0,
+        "tracer_penetration_cells": 299.5,
+        "characteristic_w_over_N_cells": null,
+        "top_5km_w_max_relative_to_global": 1.0,
+        "spectra": [
+          {
+            "height_m": 74950.0,
+            "w_near_grid_fraction": 0.005003762052735699
+          },
+          {
+            "height_m": 79450.0,
+            "w_near_grid_fraction": 0.01653420031856545
+          },
+          {
+            "height_m": 80450.0,
+            "w_near_grid_fraction": 0.015730959854789502
+          },
+          {
+            "height_m": 81950.0,
+            "w_near_grid_fraction": 0.013924659083121724
+          }
+        ]
+      },
+      {
+        "time": 3000.0,
+        "height_of_tracer_C_gt_0_01_m": 109950.0,
+        "tracer_penetration_cells": 299.5,
+        "characteristic_w_over_N_cells": null,
+        "top_5km_w_max_relative_to_global": 1.0,
+        "spectra": [
+          {
+            "height_m": 74950.0,
+            "w_near_grid_fraction": 0.006482073921934526
+          },
+          {
+            "height_m": 79450.0,
+            "w_near_grid_fraction": 0.01923875477852918
+          },
+          {
+            "height_m": 80450.0,
+            "w_near_grid_fraction": 0.01698300485751285
+          },
+          {
+            "height_m": 81950.0,
+            "w_near_grid_fraction": 0.013473356839247946
+          }
+        ]
+      },
+      {
+        "time": 3600.0,
+        "height_of_tracer_C_gt_0_01_m": 109950.0,
+        "tracer_penetration_cells": 299.5,
+        "characteristic_w_over_N_cells": null,
+        "top_5km_w_max_relative_to_global": 0.9574803936167785,
+        "spectra": [
+          {
+            "height_m": 74950.0,
+            "w_near_grid_fraction": 0.013660321573220635
+          },
+          {
+            "height_m": 79450.0,
+            "w_near_grid_fraction": 0.027227759473145624
+          },
+          {
+            "height_m": 80450.0,
+            "w_near_grid_fraction": 0.02105568734414757
+          },
+          {
+            "height_m": 81950.0,
+            "w_near_grid_fraction": 0.013002250216469044
+          }
+        ]
+      },
+      {
+        "time": 4200.0,
+        "height_of_tracer_C_gt_0_01_m": 109950.0,
+        "tracer_penetration_cells": 299.5,
+        "characteristic_w_over_N_cells": null,
+        "top_5km_w_max_relative_to_global": 1.0,
+        "spectra": [
+          {
+            "height_m": 74950.0,
+            "w_near_grid_fraction": 0.011860760790548222
+          },
+          {
+            "height_m": 79450.0,
+            "w_near_grid_fraction": 0.02477520183061389
+          },
+          {
+            "height_m": 80450.0,
+            "w_near_grid_fraction": 0.016837584049694036
+          },
+          {
+            "height_m": 81950.0,
+            "w_near_grid_fraction": 0.009857578005220646
+          }
+        ]
+      },
+      {
+        "time": 4800.0,
+        "height_of_tracer_C_gt_0_01_m": 109950.0,
+        "tracer_penetration_cells": 299.5,
+        "characteristic_w_over_N_cells": null,
+        "top_5km_w_max_relative_to_global": 0.9990344064947719,
+        "spectra": [
+          {
+            "height_m": 74950.0,
+            "w_near_grid_fraction": 0.00545612865067128
+          },
+          {
+            "height_m": 79450.0,
+            "w_near_grid_fraction": 0.015599366782196982
+          },
+          {
+            "height_m": 80450.0,
+            "w_near_grid_fraction": 0.017116492783451197
+          },
+          {
+            "height_m": 81950.0,
+            "w_near_grid_fraction": 0.02825982098723767
+          }
+        ]
+      },
+      {
+        "time": 5400.0,
+        "height_of_tracer_C_gt_0_01_m": 109950.0,
+        "tracer_penetration_cells": 299.5,
+        "characteristic_w_over_N_cells": null,
+        "top_5km_w_max_relative_to_global": 0.9263115019886184,
+        "spectra": [
+          {
+            "height_m": 74950.0,
+            "w_near_grid_fraction": 0.0083891195251894
+          },
+          {
+            "height_m": 79450.0,
+            "w_near_grid_fraction": 0.012739208620574045
+          },
+          {
+            "height_m": 80450.0,
+            "w_near_grid_fraction": 0.01132375995120474
+          },
+          {
+            "height_m": 81950.0,
+            "w_near_grid_fraction": 0.011934834418391006
+          }
+        ]
+      },
+      {
+        "time": 6000.0,
+        "height_of_tracer_C_gt_0_01_m": 109950.0,
+        "tracer_penetration_cells": 299.5,
+        "characteristic_w_over_N_cells": null,
+        "top_5km_w_max_relative_to_global": 1.0,
+        "spectra": [
+          {
+            "height_m": 74950.0,
+            "w_near_grid_fraction": 0.012692225916287056
+          },
+          {
+            "height_m": 79450.0,
+            "w_near_grid_fraction": 0.006455378480291722
+          },
+          {
+            "height_m": 80450.0,
+            "w_near_grid_fraction": 0.0043000329031763216
+          },
+          {
+            "height_m": 81950.0,
+            "w_near_grid_fraction": 0.002976365138756152
+          }
+        ]
+      },
+      {
+        "time": 6600.0,
+        "height_of_tracer_C_gt_0_01_m": 109950.0,
+        "tracer_penetration_cells": 299.5,
+        "characteristic_w_over_N_cells": null,
+        "top_5km_w_max_relative_to_global": 0.9778119045397858,
+        "spectra": [
+          {
+            "height_m": 74950.0,
+            "w_near_grid_fraction": 0.006845788446984159
+          },
+          {
+            "height_m": 79450.0,
+            "w_near_grid_fraction": 0.001917775778713701
+          },
+          {
+            "height_m": 80450.0,
+            "w_near_grid_fraction": 0.0015940929169110329
+          },
+          {
+            "height_m": 81950.0,
+            "w_near_grid_fraction": 0.00120112389582064
+          }
+        ]
+      },
+      {
+        "time": 7200.0,
+        "height_of_tracer_C_gt_0_01_m": 109950.0,
+        "tracer_penetration_cells": 299.5,
+        "characteristic_w_over_N_cells": null,
+        "top_5km_w_max_relative_to_global": 1.0,
+        "spectra": [
+          {
+            "height_m": 74950.0,
+            "w_near_grid_fraction": 0.003626499456707264
+          },
+          {
+            "height_m": 79450.0,
+            "w_near_grid_fraction": 0.0022067491606621156
+          },
+          {
+            "height_m": 80450.0,
+            "w_near_grid_fraction": 0.0021626868917568125
+          },
+          {
+            "height_m": 81950.0,
+            "w_near_grid_fraction": 0.0018100878008719394
+          }
+        ]
+      }
+    ],
+    "interface_samples": [
+      {
+        "time": 600.0,
+        "height_m": 80450.0,
+        "area_fraction": 0.027777777777777776,
+        "mean_zeta_over_f": -0.25624799728393555,
+        "mean_divergence_over_f": 3.6884877681732178,
+        "mean_reconstructed_stretching_over_f2": -2.4867966175079346
+      },
+      {
+        "time": 1200.0,
+        "height_m": 80450.0,
+        "area_fraction": 0.027777777777777776,
+        "mean_zeta_over_f": -0.17194882035255432,
+        "mean_divergence_over_f": -5.555124282836914,
+        "mean_reconstructed_stretching_over_f2": 11.706570625305176
+      },
+      {
+        "time": 1800.0,
+        "height_m": 80450.0,
+        "area_fraction": 0.024739583333333332,
+        "mean_zeta_over_f": -0.05180780217051506,
+        "mean_divergence_over_f": -2.2163169384002686,
+        "mean_reconstructed_stretching_over_f2": 7.84138822555542
+      },
+      {
+        "time": 2400.0,
+        "height_m": 80450.0,
+        "area_fraction": 0.019965277777777776,
+        "mean_zeta_over_f": -0.3638747036457062,
+        "mean_divergence_over_f": -1.3162921667099,
+        "mean_reconstructed_stretching_over_f2": 1.4890860319137573
+      },
+      {
+        "time": 3600.0,
+        "height_m": 80450.0,
+        "area_fraction": 0.013888888888888888,
+        "mean_zeta_over_f": -4.2768354415893555,
+        "mean_divergence_over_f": -1.0370559692382812,
+        "mean_reconstructed_stretching_over_f2": -1.829787015914917
+      },
+      {
+        "time": 7200.0,
+        "height_m": 80450.0,
+        "area_fraction": 0.0013020833333333333,
+        "mean_zeta_over_f": 22.995716094970703,
+        "mean_divergence_over_f": -1.0270824432373047,
+        "mean_reconstructed_stretching_over_f2": 25.02245330810547
+      }
+    ]
+  }
+}
