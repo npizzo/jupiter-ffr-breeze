@@ -1,0 +1,14 @@
+# Three 256 x 256 x 64 resolution checks
+
+Authorized November 18, 2026: rerun all three completed 128 x 128 x 64 fixed-Ro cases under the same physical conditions at higher resolution, with speed improvements that preserve the equations.
+
+- No shear, cyclonic initial shear, and anticyclonic initial shear: peak background zeta/f = 0, +0.05, -0.05. No maintained shear and no beta.
+- Horizontal grid doubled to 256 x 256, spacing 23.4375 km; keep 64 vertical cells. The 6000 x 6000 x 120 km domain, 1200-km random eddies, random RMS 5.5022 m/s, random Ro=0.1, mode selection and random seed are unchanged. The same streamfunction-mode coefficients are evaluated on the finer grid and normalized to the same RMS. Tiny thermal noise is regenerated with the same seed on the new grid; pointwise grid fields are not bitwise identical across resolutions.
+- Keep the same dry anelastic equations, 55 N rotation, heating 162 W/m2, cap, sponge, thermal controller, boundary conditions, ordinary viscosity, diffusivities, Float64, WENO5, SSPRK3 and adaptive timestep settings. No added drag or smoothing.
+- Only configuration differences versus each corresponding coarse case: name, nx, ny, diagnostic_seconds, wall_time_limit. Diagnostic cadence increases from 1800 to 10800 seconds to avoid six redundant full-field host transfers/calculations per movie interval. Bulk diagnostic and cap-stability checks become three-hourly. Movie cadence remains three-hourly; daily full fields and two-day checkpoints are retained; the heat controller stays at 600 seconds. CFL and NaN checks remain unchanged.
+- One GPU per independent job, eligible A100/H100/L40S on uri-gpu; four CPUs, 32 GB RAM. Choice broadens availability rather than promising a hardware speedup. One simulated day benchmarks the assigned GPU and checks finite evolution, cap stability, initialization and source integrity before continuing to day 50.
+- Hard allocation limit six GPU-hours per case (18 combined); continuation forecast plus 25% margin must fit the remaining internal budget. No automatic retry, extension or further cases. Failed gates retain the completed first day for inspection.
+- Existing frozen model/initializer/thermal controller/diagnostics are reused unchanged, with hash checks. Successful segments are days 0-1 and 1-50. A dependent Unity CPU job renders and verifies all three three-depth vorticity/tracer movies using the existing shared-scale renderer (45 CPU-minute maximum).
+- This is a horizontal resolution comparison, not proof of convergence. At fixed physical wavelength 175 km the suspected stripes span about 7.5 fine cells instead of 3.7 coarse cells; whether their physical wavelength or their cell count persists must be checked in saved output. Initial stability and timing gates do not establish late-time spatial fidelity.
+
+Inherited driver metadata retains older pilot labels; this file, each configuration and experiment.toml identify the new campaign.

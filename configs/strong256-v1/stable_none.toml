@@ -1,0 +1,70 @@
+name = "stable_none_strong256"
+nx = 256
+ny = 256
+nz = 64
+lx = 6000000.0
+ly = 6000000.0
+height = 120000.0
+cap_height = 80000.0
+cap_n2 = 2.5e-05
+convective_n2 = 0.0
+theta0 = 170.0
+base_pressure = 2000000.0
+gravity = 25.0
+molar_mass = 0.0023
+heat_capacity = 13000.0
+latitude = 55.0
+rotation_rate = 0.00017585
+heat_flux = 162.0
+cooling_time = 86400.0
+sponge_time = 3600.0
+viscosity = 1000.0
+thermal_diffusivity = 1000.0
+perturbation = 0.00001
+seed = 42
+stop_seconds = 4320000.0
+output_seconds = 10800.0
+diagnostic_seconds = 10800.0
+max_dt = 30.0
+initial_dt = 1.0
+jet_speed = 0.0
+
+cooling_model = "stable_cap"
+upper_cooling_flux = 0.0
+mixing_model = "tapered"
+cap_diffusivity = 1.0
+diffusivity_taper_width = 20000.0
+
+
+initial_velocity = "turbulence"
+turbulence_seed = 31415
+turbulence_rossby = 0.1
+turbulence_wavelength = 1200000.0
+turbulence_vertical_ratio = 0.0
+diagnostic_height = 20000.0
+
+forcing_multiplier = 30
+
+
+meridional_boundary = "channel"
+rotation_model = "f-plane"
+beta = 0.0
+planet_radius = 71492000.0
+
+cap_relaxation_transition = 10000.0
+cap_core_bottom = 90000.0
+cap_core_top = 115000.0
+cap_min_fraction = 0.2
+video_heights = [20000.0, 60000.0, 100000.0]
+checkpoint_seconds = 172800.0
+
+shear_rossby = 0.0
+tracer_diffusivity = 100.0
+controller_seconds = 600.0
+balance_heat = true
+
+initial_flow_family = "barotropic_random_streamfunction"
+
+
+full_field_seconds = 86400.0
+wall_time_limit = 21000.0
