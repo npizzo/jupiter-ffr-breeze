@@ -1,0 +1,35 @@
+[
+  {
+    "job": "1990851",
+    "model_status": "COMPLETE",
+    "days": 50,
+    "frames": 401,
+    "complete_timeline": true,
+    "checkpoint_provenance": "PASS",
+    "duplicate_restart_frame": "not emitted; prior segment supplies exact day 1",
+    "restart_field_equality_check": "UNAVAILABLE: continuation does not re-emit its start frame",
+    "gpu": "NVIDIA A100-SXM4-80GB"
+  },
+  {
+    "job": "1990854",
+    "model_status": "COMPLETE",
+    "days": 50,
+    "frames": 401,
+    "complete_timeline": true,
+    "checkpoint_provenance": "PASS",
+    "duplicate_restart_frame": "not emitted; prior segment supplies exact day 1",
+    "restart_field_equality_check": "UNAVAILABLE: continuation does not re-emit its start frame",
+    "gpu": "NVIDIA A100-SXM4-80GB"
+  },
+  {
+    "job": "1990856",
+    "model_status": "COMPLETE",
+    "days": 50,
+    "frames": 401,
+    "complete_timeline": true,
+    "checkpoint_provenance": "PASS",
+    "duplicate_restart_frame": "not emitted; prior segment supplies exact day 1",
+    "restart_field_equality_check": "UNAVAILABLE: continuation does not re-emit its start frame",
+    "gpu": "NVIDIA A100-SXM4-80GB"
+  }
+]
