@@ -1,0 +1,67 @@
+{
+  "status": "QUEUED_AFTER_GPU_VALIDATION",
+  "validation_job": "2005414",
+  "validation_root": "data/cai-benchmark-v1-validation-2005414",
+  "submitted_utc": "2026-11-19T14:18:56.581727+00:00",
+  "production_gpu_hours_limit": 12,
+  "validation_gpu_hours_limit": 0.3333333333333333,
+  "source_files": [
+    "configs/cai-benchmark-v1/B0_nonrotating.toml",
+    "configs/cai-benchmark-v1/B5_cyclone.toml",
+    "configs/cai-benchmark-v1/B7_anticyclone.toml",
+    "scripts/cai_benchmark_v1/README.md",
+    "scripts/cai_benchmark_v1/cpu_check.jl",
+    "scripts/cai_benchmark_v1/launch.jl",
+    "scripts/cai_benchmark_v1/model.jl",
+    "scripts/cai_benchmark_v1/review.py",
+    "scripts/cai_benchmark_v1/validate.jl",
+    "slurm/cai-benchmark-v1-cpu.sbatch",
+    "slurm/cai-benchmark-v1-review.sbatch",
+    "slurm/cai-benchmark-v1-validate.sbatch",
+    "slurm/cai-benchmark-v1.sbatch"
+  ],
+  "production_jobs": {
+    "B0_nonrotating": "2005574",
+    "B5_cyclone": "2005575",
+    "B7_anticyclone": "2005576"
+  },
+  "planned_cases": [
+    "B0_nonrotating",
+    "B5_cyclone",
+    "B7_anticyclone"
+  ],
+  "target_time": 5000,
+  "grid": [
+    128,
+    128,
+    64
+  ],
+  "reference": "Cai et al 2022, B0/B5/B7; preliminary adaptation not exact replication",
+  "downstream": "GRS jets/stratification experiments require a coherent resolved benchmark vortex, not skewness alone",
+  "superseded_validation_job": "2005391",
+  "superseded_elapsed_seconds": 0,
+  "cpu_check_job": "2005489",
+  "cpu_check_previous_job": "2005437",
+  "validation_held_for_cpu_compatibility_check": false,
+  "source_revision": "momentum-name adapter, native SGS strain import; no physical change; full state retained for spectra",
+  "cpu_check_status": "PASS",
+  "cpu_check_elapsed_seconds": 133,
+  "production_roots": {
+    "B0_nonrotating": "data/cai-benchmark-v1-2005574",
+    "B5_cyclone": "data/cai-benchmark-v1-2005575",
+    "B7_anticyclone": "data/cai-benchmark-v1-2005576"
+  },
+  "validation_eligible_gpus": [
+    "a100",
+    "h100",
+    "l40s"
+  ],
+  "validation_partitions": [
+    "uri-gpu",
+    "gpu"
+  ],
+  "validation_cost_gate": "Actual target-grid forecast with 25% margin +300s must fit 4h; implementation pass alone does not release costly runs",
+  "submitted_production_utc": "2026-11-19T14:31:52.596576+00:00",
+  "review_job": "2005577",
+  "review_root": "rendered/cai-benchmark-v1-2005577"
+}

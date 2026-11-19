@@ -1,0 +1,12 @@
+{
+  "status": "COMPLETE",
+  "job": "2005323",
+  "root": "rendered/lsv-regime-v1-2005323",
+  "submitted_utc": "2026-11-19T14:15:01.051219+00:00",
+  "cpu_hours_limit": 0.3333333333333333,
+  "source_files": [
+    "scripts/lsv_regime_v1/audit.py",
+    "slurm/lsv-regime-v1.sbatch"
+  ],
+  "elapsed_seconds": 54
+}

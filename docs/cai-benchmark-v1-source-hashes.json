@@ -1,0 +1,18 @@
+{
+  "configs/cai-benchmark-v1/B0_nonrotating.toml": "9e61a45e48625291c89df41658c321c66c7076351091a5992f8a0d45558d0eed",
+  "configs/cai-benchmark-v1/B5_cyclone.toml": "74b9c1612eac2174d5e790538a44e4b2dc2ea498e2758f974cc9a6358482340d",
+  "configs/cai-benchmark-v1/B7_anticyclone.toml": "8ebb7291d64060f4b51f9b31442bc5b1bc88f3921ad56eee28c37538912392ac",
+  "scripts/cai_benchmark_v1/README.md": "6668a4b72085499f26138302751ae69fc51bf6202e64f71cac2332d1c023ebfb",
+  "scripts/cai_benchmark_v1/cpu_check.jl": "f40fd0f49b8fd4997f35e06d6eb8285b59ca8e1e701b2fcb2c00a0dcae1362df",
+  "scripts/cai_benchmark_v1/launch.jl": "b8a5006d24ebe7aa342153fa659637b2dbf6ff3f1e8b945795fa53fd05197ecc",
+  "scripts/cai_benchmark_v1/model.jl": "9fc2f5cdf4904014d12f737920c4fe8255ad590f216bd3214e0d1fe23eba9f56",
+  "scripts/cai_benchmark_v1/review.py": "3a2534267080cd398d657eddfcde03714dac43792272c4e1a4c1e9288db21b39",
+  "scripts/cai_benchmark_v1/validate.jl": "c03e113d652a31f90d98bb5309bfad8e1a1d4f7f33a8cbf667201df7ea07d777",
+  "slurm/cai-benchmark-v1-cpu.sbatch": "0a2947ad0d953dfec3af1a14398a3f969e29e4143025f0e25960e7b737d07bd1",
+  "slurm/cai-benchmark-v1-review.sbatch": "3e488d4cd33bed5006a4d082f0cbcfcf6cf4490469572cfaaf7b4c23e190649b",
+  "slurm/cai-benchmark-v1-validate.sbatch": "4efdea76edd222acd082fd6fee7066377261fdcc68fb79c37f09f3468157cef6",
+  "slurm/cai-benchmark-v1.sbatch": "d2684b40283619309c29883fd12e403a7cf36d6acf8e769a194fff7b4cabba65",
+  "scripts/lsv_regime_v1/audit.py": "5ce7a833c19e71050b1be1d3b033fd9677a71daa643d02790291b3c1344345ca",
+  "slurm/lsv-regime-v1.sbatch": "ea9065219f6b90a091a429aeac855ac09804994044a50fd05e9c2a0768330f38",
+  "docs/cai-benchmark-v1-launch.json": "d4b7eb7c03166278a5c02dd10d90c244ca1b9067a28c4fc0bede0ed9d8c412a4"
+}
