@@ -1,0 +1,58 @@
+{
+  "status": "SUBMITTED_DIRECT_TO_DAY50",
+  "jobs": {
+    "stable_none": "1990851",
+    "stable_cyclonic": "1990854",
+    "stable_anticyclonic": "1990856"
+  },
+  "roots": {
+    "stable_none": "data/strong256-direct-v1-1990851",
+    "stable_cyclonic": "data/strong256-direct-v1-1990854",
+    "stable_anticyclonic": "data/strong256-direct-v1-1990856"
+  },
+  "original_day1_jobs": {
+    "stable_none": "1988407",
+    "stable_cyclonic": "1988408",
+    "stable_anticyclonic": "1988409"
+  },
+  "original_day1_roots": {
+    "stable_none": "data/strong256-v1-1988407",
+    "stable_cyclonic": "data/strong256-v1-1988408",
+    "stable_anticyclonic": "data/strong256-v1-1988409"
+  },
+  "superseded_unstarted_jobs": [
+    "1989997",
+    "1989999",
+    "1990000",
+    "1990001"
+  ],
+  "prior_allocated_gpu_seconds": {
+    "1988407": 568,
+    "1988408": 564,
+    "1988409": 553
+  },
+  "source_files": [
+    "scripts/strong256_direct_v1/launch.jl",
+    "scripts/strong256_direct_v1/README.md",
+    "slurm/strong256-direct-v1.sbatch",
+    "slurm/strong256-direct-gallery-v1.sbatch"
+  ],
+  "grid": [
+    256,
+    256,
+    64
+  ],
+  "target_days": 50,
+  "start_days": 1,
+  "intermediate_runtime_gate": false,
+  "physical_changes": [],
+  "eligible_gpus": [
+    "a100",
+    "h100"
+  ],
+  "new_allocation_limit_seconds_per_case": 21000,
+  "total_campaign_gpu_hours_limit": 18,
+  "submitted_utc": "2026-11-19T04:10:45.709916+00:00",
+  "render_job": "1990858",
+  "render_root": "rendered/strong256-direct-gallery-1990858"
+}
