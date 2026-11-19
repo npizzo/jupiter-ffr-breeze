@@ -1,0 +1,64 @@
+{
+  "status": "QUEUED_A100",
+  "jobs": {
+    "B0_nonrotating": "2007781",
+    "B5_cyclone": "2007785",
+    "B7_anticyclone": "2007786"
+  },
+  "roots": {
+    "B0_nonrotating": "data/cai-a100-v1-2007781",
+    "B5_cyclone": "data/cai-a100-v1-2007785",
+    "B7_anticyclone": "data/cai-a100-v1-2007786"
+  },
+  "review_job": "2007787",
+  "previous_cancelled_jobs": {
+    "B0_nonrotating": "2005574",
+    "B5_cyclone": "2005575",
+    "B7_anticyclone": "2005576"
+  },
+  "reused_validation": {
+    "status": "IMPLEMENTATION_PASS_COST_CHECK_FAILED",
+    "validation_job": "2005414",
+    "validation_gpu": "NVIDIA L40S",
+    "model_sha256": "9fc2f5cdf4904014d12f737920c4fe8255ad590f216bd3214e0d1fe23eba9f56",
+    "validation_log_sha256": "e4ac0beef7ed7697d21b2bc70681cc6437b28d97b421cc773f6e8539ff85c272",
+    "conduction_initialization_coriolis": "PASS",
+    "serialized_restart": "PASS",
+    "target_grid_smoke": "COMPLETE t=2; 128x128x64",
+    "cost_check": "FAILED on L40S; not reused as an A100 runtime prediction"
+  },
+  "source_files": [
+    "scripts/cai_a100_v1/frozen-source.toml",
+    "scripts/cai_a100_v1/implementation-pass.toml",
+    "scripts/cai_a100_v1/launch.jl",
+    "scripts/cai_a100_v1/README.md",
+    "scripts/cai_a100_v1/progress.py",
+    "slurm/cai-a100-v1.sbatch",
+    "slurm/cai-a100-v1-review.sbatch"
+  ],
+  "physical_changes": [],
+  "numerical_configuration_changes": [],
+  "operational_changes": [
+    "A100 only",
+    "independent production jobs; no separate timing allocation",
+    "runtime forecast informational; four-hour hard allocation unchanged"
+  ],
+  "target_time": 5000,
+  "grid": [
+    128,
+    128,
+    64
+  ],
+  "gpu_hours_limit_per_case": 4,
+  "total_gpu_hours_limit": 12,
+  "submitted_utc": "2026-11-19T15:40:38.881085+00:00",
+  "review_root": "rendered/cai-a100-v1-2007787",
+  "last_verified_utc": "2026-11-19T15:41:53.206608+00:00",
+  "queue_status": {
+    "B0_nonrotating": "PENDING Priority",
+    "B5_cyclone": "PENDING Priority",
+    "B7_anticyclone": "PENDING Priority"
+  },
+  "review_status": "PENDING Dependency",
+  "production_dependencies": []
+}

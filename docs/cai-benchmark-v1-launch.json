@@ -1,5 +1,5 @@
 {
-  "status": "QUEUED_AFTER_GPU_VALIDATION",
+  "status": "SUPERSEDED_BY_AUTHORIZED_A100_RELAUNCH",
   "validation_job": "2005414",
   "validation_root": "data/cai-benchmark-v1-validation-2005414",
   "submitted_utc": "2026-11-19T14:18:56.581727+00:00",
@@ -63,5 +63,33 @@
   "validation_cost_gate": "Actual target-grid forecast with 25% margin +300s must fit 4h; implementation pass alone does not release costly runs",
   "submitted_production_utc": "2026-11-19T14:31:52.596576+00:00",
   "review_job": "2005577",
-  "review_root": "rendered/cai-benchmark-v1-2005577"
+  "review_root": "rendered/cai-benchmark-v1-2005577",
+  "publication_commit": "96f5c5327d39c3074072da1157b9908154936ce3",
+  "setup_url": "https://github.com/npizzo/jupiter-ffr-breeze/tree/main/scripts/cai_benchmark_v1",
+  "last_verified_utc": "2026-11-19T15:34:36.416774+00:00",
+  "latest_status": "Validation implementation checks passed; runtime gate failed on L40S. All production and review dependencies cancelled without running.",
+  "scheduler_estimated_validation_start": "2026-11-19T17:25:30 UTC (estimate, not guarantee)",
+  "validation_elapsed_seconds": 211,
+  "validation_gpu": "NVIDIA L40S",
+  "validation_forecast_seconds": 29167.188096046448,
+  "implementation_checks": {
+    "conduction_initialization_coriolis": "PASS",
+    "serialized_restart": "PASS (zero recorded velocity, density and temperature differences)",
+    "target_grid_smoke_test": "COMPLETE through nondimensional t=2"
+  },
+  "production_gpu_seconds_consumed": 0,
+  "review_status": "CANCELLED_DEPENDENCY",
+  "production_status": {
+    "B0_nonrotating": "CANCELLED_BEFORE_START",
+    "B5_cyclone": "CANCELLED_BEFORE_START",
+    "B7_anticyclone": "CANCELLED_BEFORE_START"
+  },
+  "next_step": "Measure sustained target-grid timing on intended A100/H100 hardware before deciding whether production fits the four-hour budget. Current forecast was measured on L40S and during startup timestep growth; no expensive retry submitted.",
+  "relaunch_state": "work/cai-a100-v1-state.json",
+  "relaunch_jobs": {
+    "B0_nonrotating": "2007781",
+    "B5_cyclone": "2007785",
+    "B7_anticyclone": "2007786"
+  },
+  "relaunch_review_job": "2007787"
 }

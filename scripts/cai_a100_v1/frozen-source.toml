@@ -1,0 +1,5 @@
+"scripts/cai_benchmark_v1/model.jl" = "9fc2f5cdf4904014d12f737920c4fe8255ad590f216bd3214e0d1fe23eba9f56"
+"scripts/cai_benchmark_v1/review.py" = "3a2534267080cd398d657eddfcde03714dac43792272c4e1a4c1e9288db21b39"
+"configs/cai-benchmark-v1/B0_nonrotating.toml" = "9e61a45e48625291c89df41658c321c66c7076351091a5992f8a0d45558d0eed"
+"configs/cai-benchmark-v1/B5_cyclone.toml" = "74b9c1612eac2174d5e790538a44e4b2dc2ea498e2758f974cc9a6358482340d"
+"configs/cai-benchmark-v1/B7_anticyclone.toml" = "8ebb7291d64060f4b51f9b31442bc5b1bc88f3921ad56eee28c37538912392ac"
