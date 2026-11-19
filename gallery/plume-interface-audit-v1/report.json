@@ -1,0 +1,1161 @@
+{
+  "status": "COMPLETE",
+  "window_days": [
+    40,
+    50
+  ],
+  "daily_volume_states_per_case": 11,
+  "layer_history_states_per_case": 81,
+  "compute_location": "Unity",
+  "slurm_job": "2009617",
+  "analysis_seconds": 165.27588033676147,
+  "source_sha256": "9b72b47aa09f3a5b3ae8369cc837296af836a99f13abaaec05f9ab3ac36c94cd",
+  "validation": {
+    "operators": "PASS analytic derivative, zero curl, constant-wall extension, spectral projection and Parseval"
+  },
+  "cases": {
+    "none": {
+      "initial_shear_rossby": 0.0,
+      "initial_jet_rms_m_s": 5.783929898780694e-16,
+      "late_jet_rms_m_s": 1.226320755209071,
+      "late_jet_projection_on_initial": null,
+      "late_horizontal_stress_work": -5.857172242976733e-08,
+      "late_barotropic_advection_work": -7.479778302435159e-07,
+      "layers": {
+        "lower": {
+          "signed_skew_nonzonal": -0.11411943003168136,
+          "rms_zeta_nonzonal_over_f": 0.06735857896449006,
+          "large_nonzonal_ke": 4.2088541799514125
+        },
+        "interface": {
+          "signed_skew_nonzonal": -0.17984875984737891,
+          "rms_zeta_nonzonal_over_f": 0.13743090715961748,
+          "large_nonzonal_ke": 4.24089853528636
+        },
+        "upper": {
+          "signed_skew_nonzonal": -0.25253538470953035,
+          "rms_zeta_nonzonal_over_f": 0.03470161480997507,
+          "large_nonzonal_ke": 4.230583471077376
+        },
+        "full": {
+          "signed_skew_nonzonal": -0.20338967032595104,
+          "rms_zeta_nonzonal_over_f": 0.054082227999381866,
+          "large_nonzonal_ke": 4.213312185908155
+        }
+      },
+      "vertical_velocity_resolution": [
+        {
+          "day": 40.0,
+          "z_km": 19.6875,
+          "w_variance_wavelength_below_4dx": 0.982032283308881
+        },
+        {
+          "day": 40.0,
+          "z_km": 59.0625,
+          "w_variance_wavelength_below_4dx": 0.9066905799622591
+        },
+        {
+          "day": 40.0,
+          "z_km": 79.6875,
+          "w_variance_wavelength_below_4dx": 0.8379120543107594
+        },
+        {
+          "day": 40.0,
+          "z_km": 89.0625,
+          "w_variance_wavelength_below_4dx": 0.5036026936816687
+        },
+        {
+          "day": 40.0,
+          "z_km": 100.3125,
+          "w_variance_wavelength_below_4dx": 0.5858970585451093
+        },
+        {
+          "day": 41.0,
+          "z_km": 19.6875,
+          "w_variance_wavelength_below_4dx": 0.983826333072448
+        },
+        {
+          "day": 41.0,
+          "z_km": 59.0625,
+          "w_variance_wavelength_below_4dx": 0.9114376978002583
+        },
+        {
+          "day": 41.0,
+          "z_km": 79.6875,
+          "w_variance_wavelength_below_4dx": 0.8295150327299974
+        },
+        {
+          "day": 41.0,
+          "z_km": 89.0625,
+          "w_variance_wavelength_below_4dx": 0.49817313922213086
+        },
+        {
+          "day": 41.0,
+          "z_km": 100.3125,
+          "w_variance_wavelength_below_4dx": 0.574991909803757
+        },
+        {
+          "day": 42.0,
+          "z_km": 19.6875,
+          "w_variance_wavelength_below_4dx": 0.9851016043565112
+        },
+        {
+          "day": 42.0,
+          "z_km": 59.0625,
+          "w_variance_wavelength_below_4dx": 0.9157851755551033
+        },
+        {
+          "day": 42.0,
+          "z_km": 79.6875,
+          "w_variance_wavelength_below_4dx": 0.8329182781689789
+        },
+        {
+          "day": 42.0,
+          "z_km": 89.0625,
+          "w_variance_wavelength_below_4dx": 0.5257897032567382
+        },
+        {
+          "day": 42.0,
+          "z_km": 100.3125,
+          "w_variance_wavelength_below_4dx": 0.6058428374822298
+        },
+        {
+          "day": 43.0,
+          "z_km": 19.6875,
+          "w_variance_wavelength_below_4dx": 0.9853892194060264
+        },
+        {
+          "day": 43.0,
+          "z_km": 59.0625,
+          "w_variance_wavelength_below_4dx": 0.9160052924162928
+        },
+        {
+          "day": 43.0,
+          "z_km": 79.6875,
+          "w_variance_wavelength_below_4dx": 0.8311737813594345
+        },
+        {
+          "day": 43.0,
+          "z_km": 89.0625,
+          "w_variance_wavelength_below_4dx": 0.5226286799578386
+        },
+        {
+          "day": 43.0,
+          "z_km": 100.3125,
+          "w_variance_wavelength_below_4dx": 0.6117578670327796
+        },
+        {
+          "day": 44.0,
+          "z_km": 19.6875,
+          "w_variance_wavelength_below_4dx": 0.9856579582198609
+        },
+        {
+          "day": 44.0,
+          "z_km": 59.0625,
+          "w_variance_wavelength_below_4dx": 0.9145069545318082
+        },
+        {
+          "day": 44.0,
+          "z_km": 79.6875,
+          "w_variance_wavelength_below_4dx": 0.8240792596689931
+        },
+        {
+          "day": 44.0,
+          "z_km": 89.0625,
+          "w_variance_wavelength_below_4dx": 0.5099972961494783
+        },
+        {
+          "day": 44.0,
+          "z_km": 100.3125,
+          "w_variance_wavelength_below_4dx": 0.602909869838424
+        },
+        {
+          "day": 45.0,
+          "z_km": 19.6875,
+          "w_variance_wavelength_below_4dx": 0.9857207115019432
+        },
+        {
+          "day": 45.0,
+          "z_km": 59.0625,
+          "w_variance_wavelength_below_4dx": 0.9177325592512537
+        },
+        {
+          "day": 45.0,
+          "z_km": 79.6875,
+          "w_variance_wavelength_below_4dx": 0.8391834742628136
+        },
+        {
+          "day": 45.0,
+          "z_km": 89.0625,
+          "w_variance_wavelength_below_4dx": 0.5073434631183334
+        },
+        {
+          "day": 45.0,
+          "z_km": 100.3125,
+          "w_variance_wavelength_below_4dx": 0.6109415347253471
+        },
+        {
+          "day": 46.0,
+          "z_km": 19.6875,
+          "w_variance_wavelength_below_4dx": 0.9857575909042867
+        },
+        {
+          "day": 46.0,
+          "z_km": 59.0625,
+          "w_variance_wavelength_below_4dx": 0.9161896956133904
+        },
+        {
+          "day": 46.0,
+          "z_km": 79.6875,
+          "w_variance_wavelength_below_4dx": 0.8352888627772844
+        },
+        {
+          "day": 46.0,
+          "z_km": 89.0625,
+          "w_variance_wavelength_below_4dx": 0.5346616945531207
+        },
+        {
+          "day": 46.0,
+          "z_km": 100.3125,
+          "w_variance_wavelength_below_4dx": 0.62487602389378
+        },
+        {
+          "day": 47.0,
+          "z_km": 19.6875,
+          "w_variance_wavelength_below_4dx": 0.985099423247461
+        },
+        {
+          "day": 47.0,
+          "z_km": 59.0625,
+          "w_variance_wavelength_below_4dx": 0.9133640638740176
+        },
+        {
+          "day": 47.0,
+          "z_km": 79.6875,
+          "w_variance_wavelength_below_4dx": 0.8233945707356207
+        },
+        {
+          "day": 47.0,
+          "z_km": 89.0625,
+          "w_variance_wavelength_below_4dx": 0.5206847451653719
+        },
+        {
+          "day": 47.0,
+          "z_km": 100.3125,
+          "w_variance_wavelength_below_4dx": 0.6109698578359734
+        },
+        {
+          "day": 48.0,
+          "z_km": 19.6875,
+          "w_variance_wavelength_below_4dx": 0.9844370011369623
+        },
+        {
+          "day": 48.0,
+          "z_km": 59.0625,
+          "w_variance_wavelength_below_4dx": 0.9110960512220849
+        },
+        {
+          "day": 48.0,
+          "z_km": 79.6875,
+          "w_variance_wavelength_below_4dx": 0.8221306788861412
+        },
+        {
+          "day": 48.0,
+          "z_km": 89.0625,
+          "w_variance_wavelength_below_4dx": 0.5478614925108202
+        },
+        {
+          "day": 48.0,
+          "z_km": 100.3125,
+          "w_variance_wavelength_below_4dx": 0.6140963420891756
+        },
+        {
+          "day": 49.0,
+          "z_km": 19.6875,
+          "w_variance_wavelength_below_4dx": 0.9849353176388517
+        },
+        {
+          "day": 49.0,
+          "z_km": 59.0625,
+          "w_variance_wavelength_below_4dx": 0.9139138252008149
+        },
+        {
+          "day": 49.0,
+          "z_km": 79.6875,
+          "w_variance_wavelength_below_4dx": 0.8344534807502396
+        },
+        {
+          "day": 49.0,
+          "z_km": 89.0625,
+          "w_variance_wavelength_below_4dx": 0.541552121738186
+        },
+        {
+          "day": 49.0,
+          "z_km": 100.3125,
+          "w_variance_wavelength_below_4dx": 0.6049033369598621
+        },
+        {
+          "day": 50.0,
+          "z_km": 19.6875,
+          "w_variance_wavelength_below_4dx": 0.9842634324704976
+        },
+        {
+          "day": 50.0,
+          "z_km": 59.0625,
+          "w_variance_wavelength_below_4dx": 0.9104929431311408
+        },
+        {
+          "day": 50.0,
+          "z_km": 79.6875,
+          "w_variance_wavelength_below_4dx": 0.8293480354830205
+        },
+        {
+          "day": 50.0,
+          "z_km": 89.0625,
+          "w_variance_wavelength_below_4dx": 0.5251449567142167
+        },
+        {
+          "day": 50.0,
+          "z_km": 100.3125,
+          "w_variance_wavelength_below_4dx": 0.5885731750757602
+        }
+      ],
+      "checks": {
+        "movie_curl_max_relative_difference": 7.690105660986538e-08,
+        "column_mass_divergence_relative": 1.3152462292228229e-08
+      }
+    },
+    "cyclonic": {
+      "initial_shear_rossby": 0.05,
+      "initial_jet_rms_m_s": 17.03866429912532,
+      "late_jet_rms_m_s": 17.809249132641387,
+      "late_jet_projection_on_initial": 1.0440917279623,
+      "late_horizontal_stress_work": -2.676635605713352e-08,
+      "late_barotropic_advection_work": -3.648091549332524e-08,
+      "layers": {
+        "lower": {
+          "signed_skew_nonzonal": 0.04109182218353528,
+          "rms_zeta_nonzonal_over_f": 0.05364474925615277,
+          "large_nonzonal_ke": 1.589676310407267
+        },
+        "interface": {
+          "signed_skew_nonzonal": -0.19287581780704235,
+          "rms_zeta_nonzonal_over_f": 0.10156961882708121,
+          "large_nonzonal_ke": 1.5941520549599233
+        },
+        "upper": {
+          "signed_skew_nonzonal": -0.08270496041081186,
+          "rms_zeta_nonzonal_over_f": 0.025809415281466852,
+          "large_nonzonal_ke": 1.5866081771750122
+        },
+        "full": {
+          "signed_skew_nonzonal": 0.010307161143451902,
+          "rms_zeta_nonzonal_over_f": 0.041183132213690334,
+          "large_nonzonal_ke": 1.5836920207252752
+        }
+      },
+      "vertical_velocity_resolution": [
+        {
+          "day": 40.0,
+          "z_km": 19.6875,
+          "w_variance_wavelength_below_4dx": 0.9860396406465713
+        },
+        {
+          "day": 40.0,
+          "z_km": 59.0625,
+          "w_variance_wavelength_below_4dx": 0.9266934345059271
+        },
+        {
+          "day": 40.0,
+          "z_km": 79.6875,
+          "w_variance_wavelength_below_4dx": 0.733491295642018
+        },
+        {
+          "day": 40.0,
+          "z_km": 89.0625,
+          "w_variance_wavelength_below_4dx": 0.5620152199615268
+        },
+        {
+          "day": 40.0,
+          "z_km": 100.3125,
+          "w_variance_wavelength_below_4dx": 0.7360098881504313
+        },
+        {
+          "day": 41.0,
+          "z_km": 19.6875,
+          "w_variance_wavelength_below_4dx": 0.9851900641544994
+        },
+        {
+          "day": 41.0,
+          "z_km": 59.0625,
+          "w_variance_wavelength_below_4dx": 0.9174155755569438
+        },
+        {
+          "day": 41.0,
+          "z_km": 79.6875,
+          "w_variance_wavelength_below_4dx": 0.7472847305071262
+        },
+        {
+          "day": 41.0,
+          "z_km": 89.0625,
+          "w_variance_wavelength_below_4dx": 0.5033509613874658
+        },
+        {
+          "day": 41.0,
+          "z_km": 100.3125,
+          "w_variance_wavelength_below_4dx": 0.7187486736232089
+        },
+        {
+          "day": 42.0,
+          "z_km": 19.6875,
+          "w_variance_wavelength_below_4dx": 0.9863407965359035
+        },
+        {
+          "day": 42.0,
+          "z_km": 59.0625,
+          "w_variance_wavelength_below_4dx": 0.9222945557494965
+        },
+        {
+          "day": 42.0,
+          "z_km": 79.6875,
+          "w_variance_wavelength_below_4dx": 0.7361620237725995
+        },
+        {
+          "day": 42.0,
+          "z_km": 89.0625,
+          "w_variance_wavelength_below_4dx": 0.5625319486661726
+        },
+        {
+          "day": 42.0,
+          "z_km": 100.3125,
+          "w_variance_wavelength_below_4dx": 0.7717497436149052
+        },
+        {
+          "day": 43.0,
+          "z_km": 19.6875,
+          "w_variance_wavelength_below_4dx": 0.9849533962955731
+        },
+        {
+          "day": 43.0,
+          "z_km": 59.0625,
+          "w_variance_wavelength_below_4dx": 0.9220737462033111
+        },
+        {
+          "day": 43.0,
+          "z_km": 79.6875,
+          "w_variance_wavelength_below_4dx": 0.7373646525120253
+        },
+        {
+          "day": 43.0,
+          "z_km": 89.0625,
+          "w_variance_wavelength_below_4dx": 0.5296113521763669
+        },
+        {
+          "day": 43.0,
+          "z_km": 100.3125,
+          "w_variance_wavelength_below_4dx": 0.792177426247799
+        },
+        {
+          "day": 44.0,
+          "z_km": 19.6875,
+          "w_variance_wavelength_below_4dx": 0.9868803694127674
+        },
+        {
+          "day": 44.0,
+          "z_km": 59.0625,
+          "w_variance_wavelength_below_4dx": 0.9271340625605226
+        },
+        {
+          "day": 44.0,
+          "z_km": 79.6875,
+          "w_variance_wavelength_below_4dx": 0.7510948336591599
+        },
+        {
+          "day": 44.0,
+          "z_km": 89.0625,
+          "w_variance_wavelength_below_4dx": 0.5585802138634693
+        },
+        {
+          "day": 44.0,
+          "z_km": 100.3125,
+          "w_variance_wavelength_below_4dx": 0.786465549397221
+        },
+        {
+          "day": 45.0,
+          "z_km": 19.6875,
+          "w_variance_wavelength_below_4dx": 0.9868145148422739
+        },
+        {
+          "day": 45.0,
+          "z_km": 59.0625,
+          "w_variance_wavelength_below_4dx": 0.9291092212228945
+        },
+        {
+          "day": 45.0,
+          "z_km": 79.6875,
+          "w_variance_wavelength_below_4dx": 0.7488538987239922
+        },
+        {
+          "day": 45.0,
+          "z_km": 89.0625,
+          "w_variance_wavelength_below_4dx": 0.599867328236104
+        },
+        {
+          "day": 45.0,
+          "z_km": 100.3125,
+          "w_variance_wavelength_below_4dx": 0.8119012249210287
+        },
+        {
+          "day": 46.0,
+          "z_km": 19.6875,
+          "w_variance_wavelength_below_4dx": 0.9866858997546971
+        },
+        {
+          "day": 46.0,
+          "z_km": 59.0625,
+          "w_variance_wavelength_below_4dx": 0.9264035675427102
+        },
+        {
+          "day": 46.0,
+          "z_km": 79.6875,
+          "w_variance_wavelength_below_4dx": 0.7383278948223575
+        },
+        {
+          "day": 46.0,
+          "z_km": 89.0625,
+          "w_variance_wavelength_below_4dx": 0.5280581569301213
+        },
+        {
+          "day": 46.0,
+          "z_km": 100.3125,
+          "w_variance_wavelength_below_4dx": 0.7808771700668706
+        },
+        {
+          "day": 47.0,
+          "z_km": 19.6875,
+          "w_variance_wavelength_below_4dx": 0.9876541906749995
+        },
+        {
+          "day": 47.0,
+          "z_km": 59.0625,
+          "w_variance_wavelength_below_4dx": 0.9322599837120212
+        },
+        {
+          "day": 47.0,
+          "z_km": 79.6875,
+          "w_variance_wavelength_below_4dx": 0.7313249987187742
+        },
+        {
+          "day": 47.0,
+          "z_km": 89.0625,
+          "w_variance_wavelength_below_4dx": 0.5817371698739805
+        },
+        {
+          "day": 47.0,
+          "z_km": 100.3125,
+          "w_variance_wavelength_below_4dx": 0.7974831410105707
+        },
+        {
+          "day": 48.0,
+          "z_km": 19.6875,
+          "w_variance_wavelength_below_4dx": 0.9838189625384716
+        },
+        {
+          "day": 48.0,
+          "z_km": 59.0625,
+          "w_variance_wavelength_below_4dx": 0.9213785001687725
+        },
+        {
+          "day": 48.0,
+          "z_km": 79.6875,
+          "w_variance_wavelength_below_4dx": 0.7446004758753845
+        },
+        {
+          "day": 48.0,
+          "z_km": 89.0625,
+          "w_variance_wavelength_below_4dx": 0.5493968887879994
+        },
+        {
+          "day": 48.0,
+          "z_km": 100.3125,
+          "w_variance_wavelength_below_4dx": 0.7900042226744626
+        },
+        {
+          "day": 49.0,
+          "z_km": 19.6875,
+          "w_variance_wavelength_below_4dx": 0.9852998541332341
+        },
+        {
+          "day": 49.0,
+          "z_km": 59.0625,
+          "w_variance_wavelength_below_4dx": 0.9267593055801122
+        },
+        {
+          "day": 49.0,
+          "z_km": 79.6875,
+          "w_variance_wavelength_below_4dx": 0.7551714216707637
+        },
+        {
+          "day": 49.0,
+          "z_km": 89.0625,
+          "w_variance_wavelength_below_4dx": 0.5801370845789096
+        },
+        {
+          "day": 49.0,
+          "z_km": 100.3125,
+          "w_variance_wavelength_below_4dx": 0.8007023336417404
+        },
+        {
+          "day": 50.0,
+          "z_km": 19.6875,
+          "w_variance_wavelength_below_4dx": 0.9834890031930362
+        },
+        {
+          "day": 50.0,
+          "z_km": 59.0625,
+          "w_variance_wavelength_below_4dx": 0.9154628758261871
+        },
+        {
+          "day": 50.0,
+          "z_km": 79.6875,
+          "w_variance_wavelength_below_4dx": 0.7160449036956468
+        },
+        {
+          "day": 50.0,
+          "z_km": 89.0625,
+          "w_variance_wavelength_below_4dx": 0.5844081711756649
+        },
+        {
+          "day": 50.0,
+          "z_km": 100.3125,
+          "w_variance_wavelength_below_4dx": 0.8017422035169824
+        }
+      ],
+      "checks": {
+        "movie_curl_max_relative_difference": 1.7923160433618155e-07,
+        "column_mass_divergence_relative": 6.067976017756124e-08
+      }
+    },
+    "anticyclonic": {
+      "initial_shear_rossby": -0.05,
+      "initial_jet_rms_m_s": 17.03866429912532,
+      "late_jet_rms_m_s": 16.99273595871568,
+      "late_jet_projection_on_initial": 0.9966938394529441,
+      "late_horizontal_stress_work": -1.1354217328148923e-08,
+      "late_barotropic_advection_work": -8.597126047592087e-08,
+      "layers": {
+        "lower": {
+          "signed_skew_nonzonal": 0.05165461559372064,
+          "rms_zeta_nonzonal_over_f": 0.06246430126321136,
+          "large_nonzonal_ke": 0.3433550071789068
+        },
+        "interface": {
+          "signed_skew_nonzonal": -0.007059511010680201,
+          "rms_zeta_nonzonal_over_f": 0.11498002973701445,
+          "large_nonzonal_ke": 0.3403784913651867
+        },
+        "upper": {
+          "signed_skew_nonzonal": 0.255763082915038,
+          "rms_zeta_nonzonal_over_f": 0.03220723788475779,
+          "large_nonzonal_ke": 0.33874768715154624
+        },
+        "full": {
+          "signed_skew_nonzonal": 0.17202152689629588,
+          "rms_zeta_nonzonal_over_f": 0.05181298133465222,
+          "large_nonzonal_ke": 0.336960743881213
+        }
+      },
+      "vertical_velocity_resolution": [
+        {
+          "day": 40.0,
+          "z_km": 19.6875,
+          "w_variance_wavelength_below_4dx": 0.9891069358131718
+        },
+        {
+          "day": 40.0,
+          "z_km": 59.0625,
+          "w_variance_wavelength_below_4dx": 0.9430363817322077
+        },
+        {
+          "day": 40.0,
+          "z_km": 79.6875,
+          "w_variance_wavelength_below_4dx": 0.8028495651351201
+        },
+        {
+          "day": 40.0,
+          "z_km": 89.0625,
+          "w_variance_wavelength_below_4dx": 0.750110331768021
+        },
+        {
+          "day": 40.0,
+          "z_km": 100.3125,
+          "w_variance_wavelength_below_4dx": 0.8011075209396109
+        },
+        {
+          "day": 41.0,
+          "z_km": 19.6875,
+          "w_variance_wavelength_below_4dx": 0.9895895979761518
+        },
+        {
+          "day": 41.0,
+          "z_km": 59.0625,
+          "w_variance_wavelength_below_4dx": 0.9466596853636176
+        },
+        {
+          "day": 41.0,
+          "z_km": 79.6875,
+          "w_variance_wavelength_below_4dx": 0.8034590915443869
+        },
+        {
+          "day": 41.0,
+          "z_km": 89.0625,
+          "w_variance_wavelength_below_4dx": 0.757460745296543
+        },
+        {
+          "day": 41.0,
+          "z_km": 100.3125,
+          "w_variance_wavelength_below_4dx": 0.7936485033126766
+        },
+        {
+          "day": 42.0,
+          "z_km": 19.6875,
+          "w_variance_wavelength_below_4dx": 0.9887203844639837
+        },
+        {
+          "day": 42.0,
+          "z_km": 59.0625,
+          "w_variance_wavelength_below_4dx": 0.9426966423503487
+        },
+        {
+          "day": 42.0,
+          "z_km": 79.6875,
+          "w_variance_wavelength_below_4dx": 0.7939260249231848
+        },
+        {
+          "day": 42.0,
+          "z_km": 89.0625,
+          "w_variance_wavelength_below_4dx": 0.7201165445803145
+        },
+        {
+          "day": 42.0,
+          "z_km": 100.3125,
+          "w_variance_wavelength_below_4dx": 0.7973181570054173
+        },
+        {
+          "day": 43.0,
+          "z_km": 19.6875,
+          "w_variance_wavelength_below_4dx": 0.9895713570195299
+        },
+        {
+          "day": 43.0,
+          "z_km": 59.0625,
+          "w_variance_wavelength_below_4dx": 0.9437088270954045
+        },
+        {
+          "day": 43.0,
+          "z_km": 79.6875,
+          "w_variance_wavelength_below_4dx": 0.796285410658757
+        },
+        {
+          "day": 43.0,
+          "z_km": 89.0625,
+          "w_variance_wavelength_below_4dx": 0.7254858464052141
+        },
+        {
+          "day": 43.0,
+          "z_km": 100.3125,
+          "w_variance_wavelength_below_4dx": 0.7920125143590457
+        },
+        {
+          "day": 44.0,
+          "z_km": 19.6875,
+          "w_variance_wavelength_below_4dx": 0.9902324134406318
+        },
+        {
+          "day": 44.0,
+          "z_km": 59.0625,
+          "w_variance_wavelength_below_4dx": 0.9463678430727436
+        },
+        {
+          "day": 44.0,
+          "z_km": 79.6875,
+          "w_variance_wavelength_below_4dx": 0.8056028372559337
+        },
+        {
+          "day": 44.0,
+          "z_km": 89.0625,
+          "w_variance_wavelength_below_4dx": 0.7588173592280295
+        },
+        {
+          "day": 44.0,
+          "z_km": 100.3125,
+          "w_variance_wavelength_below_4dx": 0.7905862609854956
+        },
+        {
+          "day": 45.0,
+          "z_km": 19.6875,
+          "w_variance_wavelength_below_4dx": 0.9897718324685989
+        },
+        {
+          "day": 45.0,
+          "z_km": 59.0625,
+          "w_variance_wavelength_below_4dx": 0.9445396977855337
+        },
+        {
+          "day": 45.0,
+          "z_km": 79.6875,
+          "w_variance_wavelength_below_4dx": 0.7864674264646919
+        },
+        {
+          "day": 45.0,
+          "z_km": 89.0625,
+          "w_variance_wavelength_below_4dx": 0.7404020467456515
+        },
+        {
+          "day": 45.0,
+          "z_km": 100.3125,
+          "w_variance_wavelength_below_4dx": 0.7884828373359044
+        },
+        {
+          "day": 46.0,
+          "z_km": 19.6875,
+          "w_variance_wavelength_below_4dx": 0.989267489058282
+        },
+        {
+          "day": 46.0,
+          "z_km": 59.0625,
+          "w_variance_wavelength_below_4dx": 0.9456085701462728
+        },
+        {
+          "day": 46.0,
+          "z_km": 79.6875,
+          "w_variance_wavelength_below_4dx": 0.7934779433397786
+        },
+        {
+          "day": 46.0,
+          "z_km": 89.0625,
+          "w_variance_wavelength_below_4dx": 0.7336105641827698
+        },
+        {
+          "day": 46.0,
+          "z_km": 100.3125,
+          "w_variance_wavelength_below_4dx": 0.7782940506204918
+        },
+        {
+          "day": 47.0,
+          "z_km": 19.6875,
+          "w_variance_wavelength_below_4dx": 0.9888063518789643
+        },
+        {
+          "day": 47.0,
+          "z_km": 59.0625,
+          "w_variance_wavelength_below_4dx": 0.9407012094861709
+        },
+        {
+          "day": 47.0,
+          "z_km": 79.6875,
+          "w_variance_wavelength_below_4dx": 0.7807611808904783
+        },
+        {
+          "day": 47.0,
+          "z_km": 89.0625,
+          "w_variance_wavelength_below_4dx": 0.7469856638513988
+        },
+        {
+          "day": 47.0,
+          "z_km": 100.3125,
+          "w_variance_wavelength_below_4dx": 0.8073416278355375
+        },
+        {
+          "day": 48.0,
+          "z_km": 19.6875,
+          "w_variance_wavelength_below_4dx": 0.988769974226656
+        },
+        {
+          "day": 48.0,
+          "z_km": 59.0625,
+          "w_variance_wavelength_below_4dx": 0.9411876779438044
+        },
+        {
+          "day": 48.0,
+          "z_km": 79.6875,
+          "w_variance_wavelength_below_4dx": 0.7969997266836238
+        },
+        {
+          "day": 48.0,
+          "z_km": 89.0625,
+          "w_variance_wavelength_below_4dx": 0.7645878963821797
+        },
+        {
+          "day": 48.0,
+          "z_km": 100.3125,
+          "w_variance_wavelength_below_4dx": 0.8015691549032848
+        },
+        {
+          "day": 49.0,
+          "z_km": 19.6875,
+          "w_variance_wavelength_below_4dx": 0.9889845712422015
+        },
+        {
+          "day": 49.0,
+          "z_km": 59.0625,
+          "w_variance_wavelength_below_4dx": 0.9393509598284948
+        },
+        {
+          "day": 49.0,
+          "z_km": 79.6875,
+          "w_variance_wavelength_below_4dx": 0.7860504422143431
+        },
+        {
+          "day": 49.0,
+          "z_km": 89.0625,
+          "w_variance_wavelength_below_4dx": 0.7718060157736953
+        },
+        {
+          "day": 49.0,
+          "z_km": 100.3125,
+          "w_variance_wavelength_below_4dx": 0.7926429213736643
+        },
+        {
+          "day": 50.0,
+          "z_km": 19.6875,
+          "w_variance_wavelength_below_4dx": 0.9882718581877811
+        },
+        {
+          "day": 50.0,
+          "z_km": 59.0625,
+          "w_variance_wavelength_below_4dx": 0.9377046477321884
+        },
+        {
+          "day": 50.0,
+          "z_km": 79.6875,
+          "w_variance_wavelength_below_4dx": 0.7740899233547203
+        },
+        {
+          "day": 50.0,
+          "z_km": 89.0625,
+          "w_variance_wavelength_below_4dx": 0.7793013430978933
+        },
+        {
+          "day": 50.0,
+          "z_km": 100.3125,
+          "w_variance_wavelength_below_4dx": 0.808685486570921
+        }
+      ],
+      "checks": {
+        "movie_curl_max_relative_difference": 2.8514484287832495e-07,
+        "column_mass_divergence_relative": 5.469449247937146e-08
+      }
+    }
+  },
+  "inputs": [
+    {
+      "case": "none",
+      "path": "data/strong256-direct-v1-1990851/day1_50/fields3d/frame_00320.jld2",
+      "bytes": 84221514,
+      "time_days": 40.0
+    },
+    {
+      "case": "none",
+      "path": "data/strong256-direct-v1-1990851/day1_50/fields3d/frame_00328.jld2",
+      "bytes": 84221514,
+      "time_days": 41.0
+    },
+    {
+      "case": "none",
+      "path": "data/strong256-direct-v1-1990851/day1_50/fields3d/frame_00336.jld2",
+      "bytes": 84221514,
+      "time_days": 42.0
+    },
+    {
+      "case": "none",
+      "path": "data/strong256-direct-v1-1990851/day1_50/fields3d/frame_00344.jld2",
+      "bytes": 84221514,
+      "time_days": 43.0
+    },
+    {
+      "case": "none",
+      "path": "data/strong256-direct-v1-1990851/day1_50/fields3d/frame_00352.jld2",
+      "bytes": 84221514,
+      "time_days": 44.0
+    },
+    {
+      "case": "none",
+      "path": "data/strong256-direct-v1-1990851/day1_50/fields3d/frame_00360.jld2",
+      "bytes": 84221514,
+      "time_days": 45.0
+    },
+    {
+      "case": "none",
+      "path": "data/strong256-direct-v1-1990851/day1_50/fields3d/frame_00368.jld2",
+      "bytes": 84221514,
+      "time_days": 46.0
+    },
+    {
+      "case": "none",
+      "path": "data/strong256-direct-v1-1990851/day1_50/fields3d/frame_00376.jld2",
+      "bytes": 84221514,
+      "time_days": 47.0
+    },
+    {
+      "case": "none",
+      "path": "data/strong256-direct-v1-1990851/day1_50/fields3d/frame_00384.jld2",
+      "bytes": 84221514,
+      "time_days": 48.0
+    },
+    {
+      "case": "none",
+      "path": "data/strong256-direct-v1-1990851/day1_50/fields3d/frame_00392.jld2",
+      "bytes": 84221514,
+      "time_days": 49.0
+    },
+    {
+      "case": "none",
+      "path": "data/strong256-direct-v1-1990851/day1_50/fields3d/frame_00400.jld2",
+      "bytes": 84221514,
+      "time_days": 50.0
+    },
+    {
+      "case": "cyclonic",
+      "path": "data/strong256-direct-v1-1990854/day1_50/fields3d/frame_00320.jld2",
+      "bytes": 84221514,
+      "time_days": 40.0
+    },
+    {
+      "case": "cyclonic",
+      "path": "data/strong256-direct-v1-1990854/day1_50/fields3d/frame_00328.jld2",
+      "bytes": 84221514,
+      "time_days": 41.0
+    },
+    {
+      "case": "cyclonic",
+      "path": "data/strong256-direct-v1-1990854/day1_50/fields3d/frame_00336.jld2",
+      "bytes": 84221514,
+      "time_days": 42.0
+    },
+    {
+      "case": "cyclonic",
+      "path": "data/strong256-direct-v1-1990854/day1_50/fields3d/frame_00344.jld2",
+      "bytes": 84221514,
+      "time_days": 43.0
+    },
+    {
+      "case": "cyclonic",
+      "path": "data/strong256-direct-v1-1990854/day1_50/fields3d/frame_00352.jld2",
+      "bytes": 84221514,
+      "time_days": 44.0
+    },
+    {
+      "case": "cyclonic",
+      "path": "data/strong256-direct-v1-1990854/day1_50/fields3d/frame_00360.jld2",
+      "bytes": 84221514,
+      "time_days": 45.0
+    },
+    {
+      "case": "cyclonic",
+      "path": "data/strong256-direct-v1-1990854/day1_50/fields3d/frame_00368.jld2",
+      "bytes": 84221514,
+      "time_days": 46.0
+    },
+    {
+      "case": "cyclonic",
+      "path": "data/strong256-direct-v1-1990854/day1_50/fields3d/frame_00376.jld2",
+      "bytes": 84221514,
+      "time_days": 47.0
+    },
+    {
+      "case": "cyclonic",
+      "path": "data/strong256-direct-v1-1990854/day1_50/fields3d/frame_00384.jld2",
+      "bytes": 84221514,
+      "time_days": 48.0
+    },
+    {
+      "case": "cyclonic",
+      "path": "data/strong256-direct-v1-1990854/day1_50/fields3d/frame_00392.jld2",
+      "bytes": 84221514,
+      "time_days": 49.0
+    },
+    {
+      "case": "cyclonic",
+      "path": "data/strong256-direct-v1-1990854/day1_50/fields3d/frame_00400.jld2",
+      "bytes": 84221514,
+      "time_days": 50.0
+    },
+    {
+      "case": "anticyclonic",
+      "path": "data/strong256-direct-v1-1990856/day1_50/fields3d/frame_00320.jld2",
+      "bytes": 84221514,
+      "time_days": 40.0
+    },
+    {
+      "case": "anticyclonic",
+      "path": "data/strong256-direct-v1-1990856/day1_50/fields3d/frame_00328.jld2",
+      "bytes": 84221514,
+      "time_days": 41.0
+    },
+    {
+      "case": "anticyclonic",
+      "path": "data/strong256-direct-v1-1990856/day1_50/fields3d/frame_00336.jld2",
+      "bytes": 84221514,
+      "time_days": 42.0
+    },
+    {
+      "case": "anticyclonic",
+      "path": "data/strong256-direct-v1-1990856/day1_50/fields3d/frame_00344.jld2",
+      "bytes": 84221514,
+      "time_days": 43.0
+    },
+    {
+      "case": "anticyclonic",
+      "path": "data/strong256-direct-v1-1990856/day1_50/fields3d/frame_00352.jld2",
+      "bytes": 84221514,
+      "time_days": 44.0
+    },
+    {
+      "case": "anticyclonic",
+      "path": "data/strong256-direct-v1-1990856/day1_50/fields3d/frame_00360.jld2",
+      "bytes": 84221514,
+      "time_days": 45.0
+    },
+    {
+      "case": "anticyclonic",
+      "path": "data/strong256-direct-v1-1990856/day1_50/fields3d/frame_00368.jld2",
+      "bytes": 84221514,
+      "time_days": 46.0
+    },
+    {
+      "case": "anticyclonic",
+      "path": "data/strong256-direct-v1-1990856/day1_50/fields3d/frame_00376.jld2",
+      "bytes": 84221514,
+      "time_days": 47.0
+    },
+    {
+      "case": "anticyclonic",
+      "path": "data/strong256-direct-v1-1990856/day1_50/fields3d/frame_00384.jld2",
+      "bytes": 84221514,
+      "time_days": 48.0
+    },
+    {
+      "case": "anticyclonic",
+      "path": "data/strong256-direct-v1-1990856/day1_50/fields3d/frame_00392.jld2",
+      "bytes": 84221514,
+      "time_days": 49.0
+    },
+    {
+      "case": "anticyclonic",
+      "path": "data/strong256-direct-v1-1990856/day1_50/fields3d/frame_00400.jld2",
+      "bytes": 84221514,
+      "time_days": 50.0
+    }
+  ],
+  "limitations": [
+    "Single initial seed; time samples are correlated.",
+    "Up/down events use w > RMS(w) and w < -RMS(w), with RMS on fixed interior y cells. Conditional averages do not track plume trajectories.",
+    "Centered stretching and tilting are instantaneous reconstructed terms, not native WENO/RK tendencies. No closed layerwise causal budget is claimed.",
+    "Daily 3D fields cannot resolve individual plume growth or rapid instability. Three-hourly barotropic fields do not supply missing native terms.",
+    "Large-scale projection uses wavelengths >2400 km, nonzonal kx != 0, and free-slip parity across channel walls. Stress work is a resolved reconstruction, not proof of an inverse cascade.",
+    "Full-column horizontal baroclinic stress work excludes decomposition corrections from numerical operators; no complete kinetic-energy budget is claimed.",
+    "Mass-continuity check uses native horizontal divergence and saved Float32 face velocities. It is not a vorticity budget.",
+    "Near-grid vertical-velocity power is a warning about resolved plume physics, not a measured physical plume size."
+  ]
+}

@@ -1,0 +1,201 @@
+{
+  "status": "COMPLETE",
+  "analysis_seconds": 165.27588033676147,
+  "validation": {
+    "operators": "PASS analytic derivative, zero curl, constant-wall extension, spectral projection and Parseval"
+  },
+  "cases": {
+    "none": {
+      "initial_shear_rossby": 0.0,
+      "initial_jet_rms_m_s": 5.783929898780694e-16,
+      "late_jet_rms_m_s": 1.226320755209071,
+      "late_jet_projection_on_initial": null,
+      "late_horizontal_stress_work": -5.857172242976733e-08,
+      "late_barotropic_advection_work": -7.479778302435159e-07,
+      "layers": {
+        "lower": {
+          "signed_skew_nonzonal": -0.11411943003168136,
+          "rms_zeta_nonzonal_over_f": 0.06735857896449006,
+          "large_nonzonal_ke": 4.2088541799514125
+        },
+        "interface": {
+          "signed_skew_nonzonal": -0.17984875984737891,
+          "rms_zeta_nonzonal_over_f": 0.13743090715961748,
+          "large_nonzonal_ke": 4.24089853528636
+        },
+        "upper": {
+          "signed_skew_nonzonal": -0.25253538470953035,
+          "rms_zeta_nonzonal_over_f": 0.03470161480997507,
+          "large_nonzonal_ke": 4.230583471077376
+        },
+        "full": {
+          "signed_skew_nonzonal": -0.20338967032595104,
+          "rms_zeta_nonzonal_over_f": 0.054082227999381866,
+          "large_nonzonal_ke": 4.213312185908155
+        }
+      },
+      "checks": {
+        "movie_curl_max_relative_difference": 7.690105660986538e-08,
+        "column_mass_divergence_relative": 1.3152462292228229e-08
+      },
+      "grid_power_by_height": {
+        "19.6875": 0.9847473522967027,
+        "59.0625": 0.9133831671416749,
+        "79.6875": 0.8308543190121167,
+        "89.0625": 0.5215854532789004,
+        "100.3125": 0.6032508921165635
+      },
+      "conditional_layers": {
+        "lower": {
+          "w_rms": 1.8089990504050395,
+          "up_divergence_over_f": 0.00975912452663958,
+          "up_zeta_prime_over_f": -0.05453562851460629,
+          "up_stretch_over_f2": -0.005592874130074325,
+          "up_tilt_over_f2": -0.008595022529055588
+        },
+        "interface": {
+          "w_rms": 0.10346469738752787,
+          "up_divergence_over_f": 0.0927767657114636,
+          "up_zeta_prime_over_f": -0.10964641072965585,
+          "up_stretch_over_f2": -0.06585635252722184,
+          "up_tilt_over_f2": 0.0013795209093707538
+        },
+        "upper": {
+          "w_rms": 0.0018642020024161943,
+          "up_divergence_over_f": 0.0004125047250701342,
+          "up_zeta_prime_over_f": 0.0027216205665623657,
+          "up_stretch_over_f2": -0.00041766009373401803,
+          "up_tilt_over_f2": 5.075260115372278e-07
+        }
+      }
+    },
+    "cyclonic": {
+      "initial_shear_rossby": 0.05,
+      "initial_jet_rms_m_s": 17.03866429912532,
+      "late_jet_rms_m_s": 17.809249132641387,
+      "late_jet_projection_on_initial": 1.0440917279623,
+      "late_horizontal_stress_work": -2.676635605713352e-08,
+      "late_barotropic_advection_work": -3.648091549332524e-08,
+      "layers": {
+        "lower": {
+          "signed_skew_nonzonal": 0.04109182218353528,
+          "rms_zeta_nonzonal_over_f": 0.05364474925615277,
+          "large_nonzonal_ke": 1.589676310407267
+        },
+        "interface": {
+          "signed_skew_nonzonal": -0.19287581780704235,
+          "rms_zeta_nonzonal_over_f": 0.10156961882708121,
+          "large_nonzonal_ke": 1.5941520549599233
+        },
+        "upper": {
+          "signed_skew_nonzonal": -0.08270496041081186,
+          "rms_zeta_nonzonal_over_f": 0.025809415281466852,
+          "large_nonzonal_ke": 1.5866081771750122
+        },
+        "full": {
+          "signed_skew_nonzonal": 0.010307161143451902,
+          "rms_zeta_nonzonal_over_f": 0.041183132213690334,
+          "large_nonzonal_ke": 1.5836920207252752
+        }
+      },
+      "checks": {
+        "movie_curl_max_relative_difference": 1.7923160433618155e-07,
+        "column_mass_divergence_relative": 6.067976017756124e-08
+      },
+      "grid_power_by_height": {
+        "19.6875": 0.9857424265620025,
+        "59.0625": 0.9242713480571726,
+        "79.6875": 0.7399746481454407,
+        "89.0625": 0.55815404505798,
+        "100.3125": 0.7807146888059292
+      },
+      "conditional_layers": {
+        "lower": {
+          "w_rms": 1.7764228219868,
+          "up_divergence_over_f": 0.004258527226403831,
+          "up_zeta_prime_over_f": -0.0380052390184972,
+          "up_stretch_over_f2": -0.0028102015877888155,
+          "up_tilt_over_f2": -0.0029720811234689687
+        },
+        "interface": {
+          "w_rms": 0.0773501723151683,
+          "up_divergence_over_f": 0.055977942799130216,
+          "up_zeta_prime_over_f": -0.05964491656625314,
+          "up_stretch_over_f2": -0.047413464927664836,
+          "up_tilt_over_f2": 0.0005657437157661423
+        },
+        "upper": {
+          "w_rms": 0.0016917329598260284,
+          "up_divergence_over_f": 0.0003479483433483607,
+          "up_zeta_prime_over_f": -0.00034427901400265414,
+          "up_stretch_over_f2": -0.00036361765639436334,
+          "up_tilt_over_f2": 3.176497897684313e-07
+        }
+      }
+    },
+    "anticyclonic": {
+      "initial_shear_rossby": -0.05,
+      "initial_jet_rms_m_s": 17.03866429912532,
+      "late_jet_rms_m_s": 16.99273595871568,
+      "late_jet_projection_on_initial": 0.9966938394529441,
+      "late_horizontal_stress_work": -1.1354217328148923e-08,
+      "late_barotropic_advection_work": -8.597126047592087e-08,
+      "layers": {
+        "lower": {
+          "signed_skew_nonzonal": 0.05165461559372064,
+          "rms_zeta_nonzonal_over_f": 0.06246430126321136,
+          "large_nonzonal_ke": 0.3433550071789068
+        },
+        "interface": {
+          "signed_skew_nonzonal": -0.007059511010680201,
+          "rms_zeta_nonzonal_over_f": 0.11498002973701445,
+          "large_nonzonal_ke": 0.3403784913651867
+        },
+        "upper": {
+          "signed_skew_nonzonal": 0.255763082915038,
+          "rms_zeta_nonzonal_over_f": 0.03220723788475779,
+          "large_nonzonal_ke": 0.33874768715154624
+        },
+        "full": {
+          "signed_skew_nonzonal": 0.17202152689629588,
+          "rms_zeta_nonzonal_over_f": 0.05181298133465222,
+          "large_nonzonal_ke": 0.336960743881213
+        }
+      },
+      "checks": {
+        "movie_curl_max_relative_difference": 2.8514484287832495e-07,
+        "column_mass_divergence_relative": 5.469449247937146e-08
+      },
+      "grid_power_by_height": {
+        "19.6875": 0.9891902514341775,
+        "59.0625": 0.9428692856851625,
+        "79.6875": 0.792724506587729,
+        "89.0625": 0.7498803961192464,
+        "100.3125": 0.7956080941129137
+      },
+      "conditional_layers": {
+        "lower": {
+          "w_rms": 2.0689113606287166,
+          "up_divergence_over_f": 0.006625549272655229,
+          "up_zeta_prime_over_f": -0.04235211182207399,
+          "up_stretch_over_f2": -0.004520621805319605,
+          "up_tilt_over_f2": -0.0023706913578873477
+        },
+        "interface": {
+          "w_rms": 0.0807152008060244,
+          "up_divergence_over_f": 0.05245508625945082,
+          "up_zeta_prime_over_f": -0.07436742006506054,
+          "up_stretch_over_f2": -0.03900776697383183,
+          "up_tilt_over_f2": 0.0004230526853761661
+        },
+        "upper": {
+          "w_rms": 0.00207644181905617,
+          "up_divergence_over_f": 0.00017174496914979594,
+          "up_zeta_prime_over_f": -0.0017668601654133318,
+          "up_stretch_over_f2": -0.0001725456356991544,
+          "up_tilt_over_f2": 2.0518535710346204e-06
+        }
+      }
+    }
+  }
+}
