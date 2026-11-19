@@ -1,0 +1,22 @@
+{
+  "status": "PUBLISHED_PENDING_LIVE_CHECK",
+  "simulation_jobs": {
+    "stable": 2014448,
+    "neutral": 2014449
+  },
+  "renderer": 2018657,
+  "simulated_seconds": 7200,
+  "asset_commit": "2f2ff75b9f2368b27e8fb9b9a1642aea07dad41a",
+  "asset_sha": {
+    "neutral_plume.png": "30632c3a0d205b60c256225d78fa4db8b4f5ca00",
+    "stable_plume.mp4": "968ef1c0d08104b8ad90dcdb65808e4b86504788",
+    "neutral_plume.mp4": "9116605555d6b1e94f5f71ac5cd43646e1d0337e",
+    "stable_plume.png": "9d6d50a0d42124d9ad80a39948a7ba03075eaf3f"
+  },
+  "url": "https://npizzo.github.io/jupiter-ffr-breeze/gallery/lsv-models/#plume-pair",
+  "media_validation": "Both movies fully decoded on Unity; browser-uploaded Git blob identities match finished assets",
+  "notes": [
+    "Original renderer failed on Julia coordinate range records; repaired without rerunning simulations.",
+    "Boundary and late-time resolution limits included on gallery."
+  ]
+}
