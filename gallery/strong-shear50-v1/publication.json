@@ -1,0 +1,162 @@
+{
+  "status": "COMPLETE",
+  "simulation_days": [
+    0,
+    50
+  ],
+  "frames": 401,
+  "fps": 12,
+  "movies": [
+    {
+      "case": "stable_cyclonic",
+      "file": "stable_cyclonic_0_50.mp4",
+      "bytes": 3243018,
+      "sha256": "c6cb3453793bbdd62442d63cae89ae600fdcf4a9fa954e1ccd5612c66afca43b",
+      "decode_check": "PASS",
+      "duration_seconds": 33.416666666666664
+    },
+    {
+      "case": "stable_none",
+      "file": "stable_none_0_50.mp4",
+      "bytes": 3153612,
+      "sha256": "1867265d1393fc94e6f674b1c115bd30d9d13a56fff4d04bdaeed42df7e45f62",
+      "decode_check": "PASS",
+      "duration_seconds": 33.416666666666664
+    },
+    {
+      "case": "stable_anticyclonic",
+      "file": "stable_anticyclonic_0_50.mp4",
+      "bytes": 3671039,
+      "sha256": "80e96941e87ca91fa13e19c7969d2e47e98fe738888e29b03f77dd5dccaf5950",
+      "decode_check": "PASS",
+      "duration_seconds": 33.416666666666664
+    }
+  ],
+  "source_simulations": {
+    "stable_cyclonic": {
+      "status": "COMPLETE",
+      "simulated_seconds": 4320000.0,
+      "nx": 128,
+      "ny": 128,
+      "nz": 64,
+      "f": 0.0002880957739764384,
+      "shear_rossby": 0.05,
+      "heat_flux": 162.0,
+      "cap_n2": 2.5e-05,
+      "lx": 6000000.0,
+      "ly": 6000000.0,
+      "turbulence_wavelength": 1200000.0,
+      "turbulence_rossby": 0.1,
+      "initial_horizontal_rms_lower_m_s": 5.502223981468273,
+      "background_max_speed_m_s": 27.511119907341364,
+      "video_heights_actual_m": [
+        19687.5,
+        59062.5,
+        100312.5
+      ],
+      "script_sha256": "c50d52cd0fbc1302468cbeee0e58ab6078c4d18690c9416e4dbe72f0d6d4caaf",
+      "configuration_sha256": "df71044cff57823cbb60e239117b334534c993cb724178596bb8809e9f017e52",
+      "gpu_name": "NVIDIA L40S"
+    },
+    "stable_none": {
+      "status": "COMPLETE",
+      "simulated_seconds": 4320000.0,
+      "nx": 128,
+      "ny": 128,
+      "nz": 64,
+      "f": 0.0002880957739764384,
+      "shear_rossby": 0.0,
+      "heat_flux": 162.0,
+      "cap_n2": 2.5e-05,
+      "lx": 6000000.0,
+      "ly": 6000000.0,
+      "turbulence_wavelength": 1200000.0,
+      "turbulence_rossby": 0.1,
+      "initial_horizontal_rms_lower_m_s": 5.502223981468273,
+      "background_max_speed_m_s": 0.0,
+      "video_heights_actual_m": [
+        19687.5,
+        59062.5,
+        100312.5
+      ],
+      "script_sha256": "c50d52cd0fbc1302468cbeee0e58ab6078c4d18690c9416e4dbe72f0d6d4caaf",
+      "configuration_sha256": "6e35e15e5568957357d921bfae7449177ff9b035b58acf89a1f2765a161d1d8d",
+      "gpu_name": "NVIDIA L40S"
+    },
+    "stable_anticyclonic": {
+      "status": "COMPLETE",
+      "simulated_seconds": 4320000.0,
+      "nx": 128,
+      "ny": 128,
+      "nz": 64,
+      "f": 0.0002880957739764384,
+      "shear_rossby": -0.05,
+      "heat_flux": 162.0,
+      "cap_n2": 2.5e-05,
+      "lx": 6000000.0,
+      "ly": 6000000.0,
+      "turbulence_wavelength": 1200000.0,
+      "turbulence_rossby": 0.1,
+      "initial_horizontal_rms_lower_m_s": 5.502223981468273,
+      "background_max_speed_m_s": 27.511119907341364,
+      "video_heights_actual_m": [
+        19687.5,
+        59062.5,
+        100312.5
+      ],
+      "script_sha256": "c50d52cd0fbc1302468cbeee0e58ab6078c4d18690c9416e4dbe72f0d6d4caaf",
+      "configuration_sha256": "d1913419b313706fabf0bf7e01935c71dac6a69f40b53e1763fc3376a5ed2a86",
+      "gpu_name": "NVIDIA L40S"
+    }
+  },
+  "assets": {
+    "stable_anticyclonic_0_50.json": {
+      "bytes": 7465,
+      "sha256": "4c29e31da726dde358cc2c9e8165a99aac0ae18c307bd5ee4e19da635df8af83"
+    },
+    "stable_anticyclonic_0_50.mp4": {
+      "bytes": 3671039,
+      "sha256": "80e96941e87ca91fa13e19c7969d2e47e98fe738888e29b03f77dd5dccaf5950"
+    },
+    "stable_anticyclonic_0_50.png": {
+      "bytes": 254774,
+      "sha256": "516897db52898a67f71166a977ca07d724fcf0cbc8a98248d38bb0add8e70a7f"
+    },
+    "stable_anticyclonic_contact.jpg": {
+      "bytes": 88786,
+      "sha256": "13a19bf52b40b1f4600c9fcd40b0c7d4a09e6f0982936d4319b8ad18147b8eb4"
+    },
+    "stable_cyclonic_0_50.json": {
+      "bytes": 7449,
+      "sha256": "78c94e19a974244b8056fcc80178d9d2988a135a66f2f58a2de3d1c13af14c3c"
+    },
+    "stable_cyclonic_0_50.mp4": {
+      "bytes": 3243018,
+      "sha256": "c6cb3453793bbdd62442d63cae89ae600fdcf4a9fa954e1ccd5612c66afca43b"
+    },
+    "stable_cyclonic_0_50.png": {
+      "bytes": 259588,
+      "sha256": "c19a85bf6807f6a33cd9ee1682390fcfe78cc2e6fff69d1e628f2be58985353a"
+    },
+    "stable_cyclonic_contact.jpg": {
+      "bytes": 86619,
+      "sha256": "21d6ee271c3697f99a8b14ee02dec1847cfb48051382365542871c3c8fb3c7f5"
+    },
+    "stable_none_0_50.json": {
+      "bytes": 7427,
+      "sha256": "e9ef6dc7a2ac05e135e5dd2ad83b376b3344e6bd46d66b0251e3a61beb5c078a"
+    },
+    "stable_none_0_50.mp4": {
+      "bytes": 3153612,
+      "sha256": "1867265d1393fc94e6f674b1c115bd30d9d13a56fff4d04bdaeed42df7e45f62"
+    },
+    "stable_none_0_50.png": {
+      "bytes": 314336,
+      "sha256": "7799eb64d690ec73d67f602487637eae443362a46da3a7fd952fde060ba7b9a1"
+    },
+    "stable_none_contact.jpg": {
+      "bytes": 88466,
+      "sha256": "9f215eaefb0e871e5bde0865c3ffe06829397c35a0859e1d42b0442a86bdfbb9"
+    }
+  }
+}
