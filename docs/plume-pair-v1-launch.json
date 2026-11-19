@@ -1,0 +1,36 @@
+{
+  "status": "SUBMITTED",
+  "validation_job": "2014402",
+  "validation_root": "data/plume-pair-v1-validation-2014402",
+  "production_jobs": {
+    "stable": "2014448",
+    "neutral": "2014449"
+  },
+  "files": [
+    "scripts/plume_pair_v1/validate.jl",
+    "scripts/plume_pair_v1/budget.jl",
+    "scripts/plume_pair_v1/run.jl",
+    "configs/plume-pair-v1/neutral.toml",
+    "configs/plume-pair-v1/stable.toml",
+    "slurm/plume-pair-v1.sbatch",
+    "slurm/plume-pair-v1-validate.sbatch",
+    "scripts/plume_pair_v1/review.py",
+    "scripts/plume_pair_v1/README.md",
+    "slurm/plume-pair-v1-review.sbatch"
+  ],
+  "submitted_utc": "2026-11-19T20:14:22.570029+00:00",
+  "physical_target_seconds": 7200,
+  "production_gpu_hours_per_case": 2,
+  "combined_gpu_hour_cap": 4,
+  "initial_pulse_kelvin": 2,
+  "initial_plan_correction": "Raised proposed anomaly from 0.02 K to 2 K before submission; disclosed to user to improve interface penetration resolution",
+  "scope": "Two isolated plumes, stable and neutral upper layer; no beta/shear or other running-job changes",
+  "review_job": "2014450",
+  "review_root": "rendered/plume-pair-v1-2014450",
+  "roots": {
+    "stable": "data/plume-pair-v1-2014448",
+    "neutral": "data/plume-pair-v1-2014449"
+  },
+  "launched_utc": "2026-11-19T20:17:46.829613+00:00",
+  "validation_status": "PASS"
+}

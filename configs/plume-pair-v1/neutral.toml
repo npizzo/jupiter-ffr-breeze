@@ -1,0 +1,11 @@
+name = "neutral"
+nx = 96
+ny = 96
+nz = 400
+lx = 200000.0
+cap_n2 = 0.0
+pulse_kelvin = 2.0
+dt = 2.0
+stop_seconds = 7200.0
+output_seconds = 60.0
+wall_time_limit = 6600.0
