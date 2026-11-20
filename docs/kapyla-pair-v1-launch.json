@@ -1,0 +1,57 @@
+{
+  "status": "GPU_VALIDATION_QUEUED_PRODUCTION_GATED",
+  "validation_job": "2020718",
+  "validation_root": "data/kapyla-pair-v1-validation-2020718",
+  "production_jobs": {
+    "A9_target": "2020719",
+    "A1_target": "2020720"
+  },
+  "files": [
+    "scripts/kapyla_pair_v1/launch.jl",
+    "scripts/kapyla_pair_v1/validate.jl",
+    "scripts/kapyla_pair_v1/model.jl",
+    "configs/kapyla-pair-v1/A9_target.toml",
+    "configs/kapyla-pair-v1/A1_target.toml",
+    "slurm/kapyla-pair-v1.sbatch",
+    "slurm/kapyla-pair-v1-validate.sbatch",
+    "scripts/kapyla_pair_v1/preflight_cpu.jl",
+    "slurm/kapyla-pair-v1-cpu.sbatch",
+    "scripts/kapyla_pair_v1/README.md"
+  ],
+  "submitted_utc": "2026-11-20T00:26:08.288854+00:00",
+  "target_time": 30000,
+  "grid": [
+    256,
+    256,
+    128
+  ],
+  "initial_gpu_hour_cap_per_case": 8,
+  "scope": "Two compressible f-plane reconstructions targeting KMH2011 A9 and A1; no beta or shear; production requires validation PASS",
+  "cpu_preflight_job": "2020697",
+  "cancelled_pending_validation": "2020667",
+  "reason": "CPU syntax check caught ambiguous Julia dotted numeric literal before GPU allocation; corrected, validation to be resubmitted",
+  "cpu_preflight_status": "PASS",
+  "cpu_preflight_elapsed": "00:01:40",
+  "production_roots": {
+    "A9_target": "data/kapyla-pair-v1-2020719",
+    "A1_target": "data/kapyla-pair-v1-2020720"
+  },
+  "source_hashes": {
+    "scripts/kapyla_pair_v1/launch.jl": "e5030b1b99c8f0cbba689787764d23f661f8bd1b3a029b17c6d105a552d773ba",
+    "scripts/kapyla_pair_v1/validate.jl": "3819ab67afb4c12b8bcba98ee7902bae4cd4b57d31b6c0f44c84fc39d17e8856",
+    "scripts/kapyla_pair_v1/model.jl": "91b682d967a6127be5a7850c9b5fc22ebd98eca679ba02db6e2962404cdfec60",
+    "configs/kapyla-pair-v1/A9_target.toml": "892474f9cff33049ed61577282902f0c764cc5c4fb5fdcbca6dab4ba31cbc9f7",
+    "configs/kapyla-pair-v1/A1_target.toml": "2d67eb3f5af20c201cad19c083547cfec8ee3499f52758c2a06028eeca9ee901",
+    "slurm/kapyla-pair-v1.sbatch": "a43d37a204ad7e6d04cc22f8143f514e3117442e0f233e1b8cdb5ca2a932d1e0",
+    "slurm/kapyla-pair-v1-validate.sbatch": "30431eea749f6eedae742aa7fbca9a00ec83237f71c1639c8b85fe7e6fce6c7e",
+    "scripts/kapyla_pair_v1/preflight_cpu.jl": "95877b6419c81a092f29344a56d1ceda20bbcc808d41e1e6a18d972df2066cd0",
+    "slurm/kapyla-pair-v1-cpu.sbatch": "08ae7a1b392a62a0a8e6cd31e99f1b6293a25e4a573aee796fc672dca4a3fa54"
+  },
+  "last_verified_utc": "2026-11-20T00:32:36.195446+00:00",
+  "caveats": [
+    "Cooling timescale/width chosen explicitly; not given numerically in paper",
+    "Printed parameter reconstruction does not independently match quoted normalized flux/density contrast",
+    "No closed discrete split-explicit vorticity budget yet",
+    "First eight-hour segments may not reach t=30000; no automatic continuation"
+  ]
+}
