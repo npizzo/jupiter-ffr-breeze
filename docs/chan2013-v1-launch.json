@@ -1,0 +1,55 @@
+{
+  "campaign": "chan2013-v1",
+  "status": "GPU_VALIDATION_QUEUED_PRODUCTION_GATED",
+  "cpu_job": "2023148",
+  "existing_kapyla_jobs_preserved": [
+    "2020718",
+    "2020719",
+    "2020720"
+  ],
+  "cases": [
+    "case0",
+    "case3",
+    "case4"
+  ],
+  "source_directory": "scripts/chan2013_v1",
+  "updated_utc": "2026-11-20T03:14:37.915272+00:00",
+  "source_hashes": {
+    "configs/chan2013-v1/case0.toml": "d01139b082f278f6ce73f48863b4c2019ac411f8492ddd60e122ae92400c2bb2",
+    "configs/chan2013-v1/case3.toml": "bcb270d50e6cc3d285a418f44b6f6f75e6872e73a501bd882b794aac8c1a8e0a",
+    "configs/chan2013-v1/case4.toml": "3ca71bb20f108b50572089eef178346933118a973b818ddc4677fdaff00e9ef3",
+    "scripts/chan2013_v1/README.md": "42149f8bdfdc84c734faac12b2a4270747cade2d0663243f144aabd8f7b6775b",
+    "scripts/chan2013_v1/checks.jl": "155002bfbd2bec463a952c3b9f03f4244fbe2c8026579903129b51ac7cf72573",
+    "scripts/chan2013_v1/launch.jl": "cbdde4b0e27634327b048b6b9f248f6382f02d173458fdf68bf7abd00233839d",
+    "scripts/chan2013_v1/model.jl": "eeb2d07fe1556a76405ca2293e25f6bd53f7d4d476d155983d7025903b9457be",
+    "scripts/chan2013_v1/preflight_cpu.jl": "0f3718790dea684f3d39185f4b6166e83dbd037f5b831151fe181a2b0c08026f",
+    "scripts/chan2013_v1/validate.jl": "196ff67fce03d3142aac819526785eee91f599f72ba4aecef95229b8375932cd",
+    "slurm/chan2013-v1-cpu.sbatch": "b3b6cf92ac55fd09146552f7ed6c7e5f98639dcd32c59fd544e8be1d45a6d951",
+    "slurm/chan2013-v1-validate.sbatch": "9731205620d4ef77cd4c393a33216c4fc89fa641ee55260f40c5b8577dbbd303",
+    "slurm/chan2013-v1.sbatch": "33cf7bcd1690614f238562f6a7e8d89196711305279fd939a877caa03234eb02"
+  },
+  "grid": [
+    256,
+    256,
+    80
+  ],
+  "target_time": 20000,
+  "first_gpu_hours_per_case": 8,
+  "automatic_continuation": false,
+  "cpu_preflight_status": "PASS",
+  "cpu_preflight_elapsed": "00:02:59",
+  "validation_job": "2023191",
+  "validation_root": "data/chan2013-v1-validation-2023191",
+  "production_jobs": {
+    "case0": "2023193",
+    "case3": "2023194",
+    "case4": "2023196"
+  },
+  "production_roots": {
+    "case0": "data/chan2013-v1-2023193",
+    "case3": "data/chan2013-v1-2023194",
+    "case4": "data/chan2013-v1-2023196"
+  },
+  "follow_up": "Check validation, do not duplicate submissions. Three first segments release only after validation PASS and matching source/config hashes. No automatic continuation. Preserve kapyla_pair_v1.",
+  "scope": "Chan--Mayr reconstruction: nonrotating control, Omega=1.5 and 3 at 67.5N; reduced grid, explicit SGS/cooling choices; not an exact numerical reproduction."
+}
