@@ -1,0 +1,36 @@
+{
+  "status": "RUNNING",
+  "job_id": "2023457",
+  "node": "uri-cpu029",
+  "qos": "short",
+  "architecture": "CPU",
+  "cores": 16,
+  "started_utc": "2026-11-20T03:32:45+00:00",
+  "allocation_minutes": 62,
+  "per_case_process_limit_seconds": 1800,
+  "per_case_integration_wall_limit_seconds": 1200,
+  "target_time_per_case": 500,
+  "data_root": "data/compressible-pilots-v1-2023457",
+  "cases": [
+    "kapyla_A1_64x64x128",
+    "chan_case4_64x64x80"
+  ],
+  "held_production_jobs": [
+    "2020719",
+    "2020720",
+    "2023193",
+    "2023194",
+    "2023196"
+  ],
+  "gpu_validation_jobs": [
+    "2020718",
+    "2023191"
+  ],
+  "automatic_production_release_authorized": false,
+  "follow_up": "Review logs, profiles, time achieved, budgets, convection and cost. Render actual three-depth vorticity/tracer pilot output on Unity. No automatic extension or release of production holds. Discuss findings before committing long compute.",
+  "source_hashes": {
+    "scripts/compressible_pilots_v1/README.md": "f65437af381fa481b27165baea34fac286b1737dc0a533c7b0c24fcaae6c424c",
+    "scripts/compressible_pilots_v1/run.jl": "cab80063ede9f8c760e0fca23595553d11b09c1c4229c7c2569e88606a45e805",
+    "slurm/compressible-pilots-v1.sbatch": "2fddde06f2dd818c7fdd2d55e14d0b9b6d1543e70b84a3286ca265fb3e6f2552"
+  }
+}
