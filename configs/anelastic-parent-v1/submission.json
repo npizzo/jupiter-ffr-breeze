@@ -1,0 +1,10 @@
+{
+  "campaign": "anelastic-parent-v1",
+  "cpu_job_id": "2029786",
+  "cpu_status": "PASS",
+  "gpu_status": "SUBMITTED",
+  "gpu_allocation_limit_seconds": 3600,
+  "automatic_extension": false,
+  "automatic_seeded_branches": false,
+  "gpu_job_id": "2029809"
+}
