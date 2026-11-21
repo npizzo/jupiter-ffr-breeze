@@ -1,0 +1,6 @@
+start_time = 6000.0
+stop_time = 12000.0
+checkpoint = "data/anelastic-sequence-v3-extendfix-2071578/parent/checkpoints/checkpoint_iteration63484.jld2"
+checkpoint_sha256 = "82061a662c1cfb54f6045f800ea40c837ba024b2d218818e847f5fdb7f2d697a"
+source_frame = "data/anelastic-sequence-v3-extendfix-2071578/parent/frame_00600000.jld2"
+scope = "One unchanged-physics weak-cap continuation from t6000 to t12000; no new branches or automatic extension."
