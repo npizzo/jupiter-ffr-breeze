@@ -1,0 +1,5 @@
+start_time = 2000.0
+status = "PASS"
+scope = "Production-grid checkpoint restored; velocity depth means, theta profile and tracer planes equal saved t2000 fields before advancement"
+checkpoint = "data/anelastic-sequence-v3-launchfix-2058241/parent/checkpoints/checkpoint_iteration15674.jld2"
+source_frame = "data/anelastic-sequence-v3-launchfix-2058241/parent/frame_00200000.jld2"

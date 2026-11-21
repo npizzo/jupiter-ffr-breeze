@@ -1,0 +1,10 @@
+physics = "Unchanged weak-cap baseline; no other branches"
+status = "PASS"
+gpu = "NVIDIA A100-SXM4-80GB"
+model_sha256 = "85517e9afffb1410fbf4d63f0a28e1c4827048697f8d822a205d132ca40b0a4d"
+
+[restart_errors]
+v = 0.0
+theta = 0.0
+w = 0.0
+u = 0.0
