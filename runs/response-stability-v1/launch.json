@@ -1,0 +1,149 @@
+{
+  "status": "ALL_SIX_TESTS_RELEASED_FORMED_TRIO_RUNNING_RESPONSE_CONTROL_STARTING",
+  "authorization": "Matched response plan preceding large-eddy comment, plus formed-vortex stability tests; execute on Unity",
+  "parent_response": "data/anelastic-sequence-v3-to12000-2077087/parent/checkpoints/checkpoint_iteration149158.jld2",
+  "parent_stability": "data/fplane-point4-v2/late_heated/checkpoints/checkpoint_iteration289093.jld2",
+  "response_cpu_job": "2084129",
+  "response_screen_job": "2084242",
+  "stability_cpu_job": "2084205",
+  "response_production_released": true,
+  "gpu_hard_ceiling_minutes": 255,
+  "sources": [
+    "scripts/anelastic_response_v1",
+    "scripts/formed_stability_v1",
+    "scripts/response_stability_review_v1"
+  ],
+  "configuration": [
+    "configs/anelastic-response-v1.toml",
+    "configs/formed-stability-v1.toml"
+  ],
+  "queue_decision": "Normal QoS authorized for account, preserves all hard wall limits; short QoS allows only one submitted job per user",
+  "failed_preflight": {
+    "job": "2083927",
+    "reason": "Julia ambiguous numeric/broadcast syntax caught before integration",
+    "archived_source": "data/anelastic-response-v1-preflight-failure-2083927/source",
+    "gpu_seconds": 0
+  },
+  "cpu_validation": {
+    "response": "PASS; restart error 0 and observer bitwise unchanged",
+    "stability": "PASS"
+  },
+  "notes": [
+    "No beta or new large-eddy initialization",
+    "No modifications to other queued jobs",
+    "No scientific fields downloaded",
+    "Local planning README not published"
+  ],
+  "source_commit": "31c99e5883d1d68791f93ad5aa8ce0da2d02fa3c",
+  "stability_jobs": {
+    "control": "2084284",
+    "half": "2084407",
+    "full": "2084408"
+  },
+  "stability_dependency": "Not applied: SBATCH_DEPENDENCY is not supported as an sbatch input option. Cases started concurrently; control actual restart and healthy advancement predated both starts.",
+  "screen_review_job": "2084431",
+  "stability_review_job": "2084458",
+  "media_preflight_job": "2084328",
+  "media_preflight_status": "COMPLETE; movie fully decoded and comparison generated",
+  "stability_gpu_pickup": "PASS; actual day-100 checkpoint matches saved native fields",
+  "stability_control_qos": "short (updated while pending to avoid priority delay)",
+  "updated_at_utc": "2026-11-21T20:22:43Z",
+  "response_jobs": {
+    "control": "2084628",
+    "plus": "2084629",
+    "minus": "2084630"
+  },
+  "screen_validation": {
+    "status": "PASS",
+    "gpu_elapsed": "00:12:17",
+    "native_energy_closure_over_convective_max": 9.166171765167279e-11,
+    "coarse_fine_mean_convective_work_difference": 0.04167623268446345,
+    "native_vs_reconstructed_flux_work_fraction": {
+      "128": 0.026738287148208216,
+      "256": 0.008304964693914469
+    },
+    "scope": "Only t12005\u201312020, not long-time convergence"
+  },
+  "public_code": "https://github.com/npizzo/jupiter-ffr-breeze/tree/main/scripts/anelastic_response_v1",
+  "response_review_job": "2084676",
+  "scheduler_lesson": "Pass --dependency explicitly; query retained Dependency after submission. Do not use an unverified environment variable for release gates.",
+  "review_dependencies": "Explicit --dependency=afterok lists for jobs 2084458 and 2084676",
+  "response_settings": {
+    "parent_time": 12000,
+    "target_time": 14000,
+    "grid": [
+      128,
+      128,
+      64
+    ],
+    "domain": [
+      2,
+      2,
+      1
+    ],
+    "f": 0.5,
+    "peak_seed_zeta_over_f": [
+      0,
+      0.1,
+      -0.1
+    ],
+    "seed_streamfunction": "negative periodic Gaussian-like corner streamfunction, exponent 2(cos(2pi(x-1)/2)+cos(2pi(y-1)/2)-2); reversed for anticyclone",
+    "seed_vertical_structure": "depth independent",
+    "adjustment_exclusion": 50,
+    "unchanged": "dry anelastic equations, bottom heat flux, viscosity and thermal diffusion, weak cap and full local cap relaxation",
+    "budget": "Actual native RK-stage low-mode projected energy, sampled every 100 steps; reconstructed convective work and native-minus-centered discrepancy separated"
+  },
+  "stability_settings": {
+    "parent_day": 100,
+    "target_day": 102,
+    "grid": [
+      256,
+      256,
+      64
+    ],
+    "domain_m": [
+      6000000,
+      6000000,
+      120000
+    ],
+    "perturbation_velocity_rms_fraction": [
+      0,
+      0.005,
+      0.01
+    ],
+    "parent_barotropic_rms_m_s": 3.4187944806409987,
+    "nominal_added_rms_m_s": [
+      0,
+      0.017093972403204993,
+      0.03418794480640999
+    ],
+    "shape_radius_m": 900000,
+    "core_center_m": [
+      5425781.25,
+      -105468.75
+    ],
+    "unchanged": "Full existing channel physics, f, heat flux, cap, thermal controller, viscosity and vertical sponge",
+    "interpretation": "Initial finite-time deformation response; two days cannot establish long-term stability"
+  },
+  "source_sha256": {
+    "scripts/anelastic_response_v1/driver.jl": "5e15401b0405544726a0fc8d70f1ed3a304f483eb35459bb54545f72f9c652d3",
+    "scripts/anelastic_response_v1/calibration.jl": "e44be5d0cbcc5fc747dbe012dd5b82903de38b14a6a9f28073394c2fddd6e7dd",
+    "scripts/anelastic_response_v1/model.jl": "85517e9afffb1410fbf4d63f0a28e1c4827048697f8d822a205d132ca40b0a4d",
+    "scripts/anelastic_response_v1/budget.jl": "d6d5bbc8beb9d8a1c80be988cfa570f9c824545c785e96931d30ce4fdaf355e3",
+    "scripts/anelastic_response_v1/gate.py": "bf5d24636328d4acdf6dba316110b6d1d9d6c2a5da65bf7192056b72301b4503",
+    "scripts/anelastic_response_v1/remap.jl": "dfbd8703bc0401ae607e16d4f30b9f942fc2788042a8b726d94dd1633ccadeb2",
+    "scripts/formed_stability_v1/driver.jl": "65e0c9caffd9b1f8a359cac57494c9ab1d3b17a011bdf8ab4d55ae41d58bf26f",
+    "scripts/formed_stability_v1/initial_flow.jl": "1a40b5bf61f236f846e88292ee0be8617d446fb1fd63fb73dc89f96445436989",
+    "scripts/formed_stability_v1/thermal_budget_controller.jl": "35404ad7bb8a5071c9d51a3992c8c4ecbb452133c9ffdff1376928b1e6679c27",
+    "scripts/formed_stability_v1/deformation.jl": "7b1f564747637fe52cb2127946756beb38fb909dcaba8040b9dc29d8aa086930",
+    "scripts/formed_stability_v1/reflect_state.jl": "e27ad09d651a12ed47981c1d59e02053c02c5d2656b681cdfe5388b2a3b342b8",
+    "scripts/formed_stability_v1/gate.py": "d22bb9e201fa9e595e9ff5a184385160b10ed7a5f5c8a3783ab08b6f8e2c343d",
+    "scripts/formed_stability_v1/run.jl": "cc386bf76cd75a2f19ef2631bde080f1a8686d017859cf91c8d1e69164376bd8",
+    "scripts/formed_stability_v1/point4_state.jl": "07d0371862795ffd4d26c07655694d24c8d5f1312790ac99d4242853cf43138c",
+    "scripts/formed_stability_v1/remap.jl": "e0905463814958227ea63aa72b0bf93d3d70e5c15c9b5cf9bf5710fd72a9df94",
+    "scripts/formed_stability_v1/native_vorticity.jl": "de559e6bcbfaedf1f0cb8af05c60934f14104a7c86806625094ecdd7bb345bf3",
+    "scripts/response_stability_review_v1/screen.py": "a8c06b4205333b3b1d5677a98d6b37e66abc3cfce5c13b278cb9a9a259da1ea4",
+    "scripts/response_stability_review_v1/movie.py": "b14cdb27b533072cdee2ebe7c65e4a630cdeb9a6657e4366e38e8862f86c2443",
+    "scripts/response_stability_review_v1/compare.py": "f1947a1c1058e939054a3672d40b44b6cfba3aeea5a0d0cb752fc27f868e65b8"
+  }
+}
