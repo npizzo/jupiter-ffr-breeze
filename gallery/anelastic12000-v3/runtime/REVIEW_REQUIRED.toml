@@ -1,0 +1,5 @@
+status = "TARGET_REACHED_REVIEW_REQUIRED"
+final_time = 12000.0
+next = "Review thermal equilibration, cap and large-scale energy. No automatic continuation or parameter change."
+elapsed_total_seconds = 1597.4946720600128
+additional_turnovers_depth = 47.845089250302934

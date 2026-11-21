@@ -75,3 +75,8 @@ For later campaigns: reuse valid implementation checks when source/configuration
 ## Full-driver parsing and continuation validation
 
 Before GPU submission, execute the actual driver in CPU preflight mode using the production project/load path. Cover imports, diagnostic output/readback and restart. Bind the passing receipt to source, configuration, batch scripts and runtime environment, and verify it again on the GPU node. Julia must parse the complete driver before any preflight early return: a top-level exit can leave production statements unparsed. Define the complete driver body in a function before imports execute, then call it with CPU or GPU dispatch inside. Preserve failed sources; do not alter active jobs. Check actual GPU validation, checkpoint restoration and scientific output before reporting a resumed simulation.
+
+
+## Completed runs discovered during status checks
+
+On November 21, the user instructed that when they ask to check a simulation and it has completed, continue in that task with analysis, rendering and publication to the GitHub gallery rather than returning status alone. Keep scientific computation and rendering on Unity, verify finished media, preserve prior results, and provide the actual GitHub Pages movie link. This does not authorize new simulations, parameter changes, a monitoring automation, or the previously declined workflow redesign. Report failures and partial output explicitly; do not label them completed.
