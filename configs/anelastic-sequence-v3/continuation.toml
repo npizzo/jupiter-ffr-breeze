@@ -1,0 +1,6 @@
+start_time = 2000.0
+stop_time = 6000.0
+checkpoint = "data/anelastic-sequence-v3-launchfix-2058241/parent/checkpoints/checkpoint_iteration15674.jld2"
+checkpoint_sha256 = "bc96b73cb9ff450a984f8adbe810fa45ad0b7acf6ed184f68903ae52f603fd44"
+source_frame = "data/anelastic-sequence-v3-launchfix-2058241/parent/frame_00200000.jld2"
+scope = "One unchanged-physics weak-cap baseline continuation; investigate slow thermal adjustment and large-scale growth. No automatic branches."
