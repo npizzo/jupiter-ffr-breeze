@@ -1,0 +1,45 @@
+[strong]
+flux_Re_depth_estimate = 269.89845289655983
+flux_velocity_scale_bottom = 0.008434326653017495
+cap_min_tau_f = 50.0
+bottom_layer_theta_excess = 0.00375
+Ek = 7.812499999999999e-5
+density_contrast_full = 12.05474676980739
+onset_wavelength_cells_screen = 10.506092216381628
+N_over_f_max = 2.442202994992433
+note = "Reference-state diffusion may dominate cap thermal balance. This is a source calculation, not developed convection or a launch approval."
+reference_downward_diffusion_peak_over_input = 7.756614214989107
+Tmin_reference = 0.28618992134891635
+Pr = 1.0
+initial_cap_cooling_over_bottom_input = 1.0000445514543257
+flux_Ro_depth_estimate = 0.021085816632543736
+bottom_layer_diffusive_time = 400.00000000000006
+bottom_layer_cells = 6.4
+onset_wavelength_screen = 0.16415769088096294
+N_over_f_rms_cap = 2.0
+cap_log_theta = 0.25
+density_contrast_convective = 4.660789952997119
+theta_top_over_base = 1.2840254166877414
+
+[weak]
+flux_Re_depth_estimate = 269.89845289655983
+flux_velocity_scale_bottom = 0.008434326653017495
+cap_min_tau_f = 50.0
+bottom_layer_theta_excess = 0.00375
+Ek = 7.812499999999999e-5
+density_contrast_full = 10.62480931443929
+onset_wavelength_cells_screen = 10.506092216381628
+N_over_f_max = 0.48722606761118453
+note = "Reference-state diffusion may dominate cap thermal balance. This is a source calculation, not developed convection or a launch approval."
+reference_downward_diffusion_peak_over_input = 0.30605994445988255
+Tmin_reference = 0.2090418422670535
+Pr = 1.0
+initial_cap_cooling_over_bottom_input = 1.000049247441231
+flux_Ro_depth_estimate = 0.021085816632543736
+bottom_layer_diffusive_time = 400.00000000000006
+bottom_layer_cells = 6.4
+onset_wavelength_screen = 0.16415769088096294
+N_over_f_rms_cap = 0.39900538047837086
+cap_log_theta = 0.009950330853168092
+density_contrast_convective = 4.658975354750449
+theta_top_over_base = 1.01

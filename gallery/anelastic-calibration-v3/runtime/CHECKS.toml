@@ -1,0 +1,32 @@
+[strong_cap_wave]
+measured_frequency = 0.8441024381464913
+status = "PASS"
+predicted_frequency = 0.8494112585121926
+fit_rms = 0.0012182515235429135
+relative_error = 0.006250000000000089
+
+[thermal_integral]
+error_over_imposed_input = 1.6400479352532647e-9
+status = "PASS"
+
+[reflected_f]
+status = "PASS"
+scope = "Full heated weak-cap model; x-reflected temperature and staggered velocities, opposite vertical f"
+
+    [reflected_f.absolute_errors]
+    v = 6.865029983928693e-18
+    theta = 1.1102230246251565e-15
+    w = 1.261446463676427e-17
+    u = 6.838348446090183e-18
+
+[strong_rest]
+status = "PASS"
+speed = 2.3119006742944454e-33
+mass_divergence = 4.211085150440148e-32
+theta_error = 2.220446049250313e-16
+
+[weak_rest]
+status = "PASS"
+speed = 2.3129416980162595e-33
+mass_divergence = 3.743186800391245e-32
+theta_error = 2.220446049250313e-16
