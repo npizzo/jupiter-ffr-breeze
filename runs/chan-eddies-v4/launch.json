@@ -1,0 +1,53 @@
+{
+  "status": "BOTH_RUNNING_PAST_PREVIOUS_CUTOFF",
+  "cpu_job": "2089980",
+  "physics_unchanged_from": "chan_eddies_v3",
+  "energy_policy": "Warning only at 10% of heating input; cumulative energy defect and native KE logged.",
+  "restart_time": 5.0,
+  "nominal_target_time": 263.0668208823282,
+  "allocation_minutes": 90,
+  "production_released": true,
+  "source_checkpoint_gate": "data/chan-eddies-v3-screen-2089476/PRODUCTION_PASS_FIELD_REVIEW.toml",
+  "production_jobs": {
+    "case3": "2090025",
+    "case4": "2090026"
+  },
+  "cpu_restart_error": 0.0,
+  "cross_version_restart_error": 0.0,
+  "scope": "Exploratory finite-amplitude LSV response to rotation; energy residual remains visible and is not a stand-alone stop condition.",
+  "initialization_and_configs_identical_to_v3": true,
+  "physics_prefix_identical_to_v3": true,
+  "automatic_extension": false,
+  "output_roots": {
+    "case3": "data/chan-eddies-v4-case3-2090025/parent",
+    "case4": "data/chan-eddies-v4-case4-2090026/parent"
+  },
+  "guards_retained": [
+    "finite diagnostics",
+    "positive density and temperature",
+    "relative mass error < 1e-7",
+    "max Mach < 3",
+    "advective CFL and explicit diffusion timestep limits"
+  ],
+  "no_new_short_gpu_screen": true,
+  "checked_at_utc": "2026-11-21T23:55:49Z",
+  "observed_progress": {
+    "case3": {
+      "job": "2090025",
+      "state": "RUNNING",
+      "node": "uri-gpu008",
+      "verified_time": 13.5,
+      "cumulative_energy_defect_since_restart": -1.2279766324116954,
+      "energy_defect_over_restart_ke": -0.16725584341965205
+    },
+    "case4": {
+      "job": "2090026",
+      "state": "RUNNING",
+      "node": "uri-gpu012",
+      "verified_time": 11.5,
+      "cumulative_energy_defect_since_restart": -1.2002489607480982,
+      "energy_defect_over_restart_ke": -0.1643682363094465
+    }
+  },
+  "energy_caution": "Energy defect is growing: about 16\u201317% of restart kinetic energy at these observations. This is not a closed energy-budget validation. User authorized continued exploratory integration with the residual visible and warning-only."
+}

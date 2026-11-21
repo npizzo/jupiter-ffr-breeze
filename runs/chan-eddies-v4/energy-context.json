@@ -1,0 +1,55 @@
+{
+  "case3": {
+    "first_time": 0.0,
+    "last_time": 7.0,
+    "integrated_external_heat": 3.4430733560618028,
+    "total_energy_change": 3.3746030183092444,
+    "energy_defect": -0.0684703377525584,
+    "defect_over_initial_kinetic_energy": -0.01122523674927596,
+    "defect_over_integrated_heat": -0.019886401093375184,
+    "last_power_defect": -0.05198778830812811,
+    "states": [
+      {
+        "time": 0.0,
+        "kinetic_energy": 6.099678722319581,
+        "coriolis_power_horizontal": -5.599373294945925e-10,
+        "coriolis_power_tilted": 0.0,
+        "coriolis_power_over_heating": -1.119874658989185e-09
+      },
+      {
+        "time": 5.0,
+        "kinetic_energy": 7.339597165001149,
+        "coriolis_power_horizontal": 6.849111503564907e-06,
+        "coriolis_power_tilted": -3.311165238677472e-05,
+        "coriolis_power_over_heating": -5.252508176641962e-05
+      }
+    ]
+  },
+  "case4": {
+    "first_time": 0.0,
+    "last_time": 7.0,
+    "integrated_external_heat": 3.440950753621629,
+    "total_energy_change": 3.3704083021966653,
+    "energy_defect": -0.07054245142496374,
+    "defect_over_initial_kinetic_energy": -0.011564945407495112,
+    "defect_over_integrated_heat": -0.020500860510926297,
+    "last_power_defect": -0.05723057452740554,
+    "states": [
+      {
+        "time": 0.0,
+        "kinetic_energy": 6.09967872215341,
+        "coriolis_power_horizontal": -3.2907999639217692e-09,
+        "coriolis_power_tilted": 0.0,
+        "coriolis_power_over_heating": -6.5815999278435385e-09
+      },
+      {
+        "time": 5.0,
+        "kinetic_energy": 7.299855381234171,
+        "coriolis_power_horizontal": -2.1955048729454678e-05,
+        "coriolis_power_tilted": 2.8553683146448352e-05,
+        "coriolis_power_over_heating": 1.3197268833987348e-05
+      }
+    ]
+  },
+  "limitations": "Coriolis-work estimate uses saved Float32 face velocities/density and the constant-Cartesian staggered interpolation. It excludes time-discretization errors and is not a full energy-operator decomposition."
+}
