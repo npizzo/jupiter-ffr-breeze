@@ -1,0 +1,7 @@
+checkpoint = "data/anelastic-sequence-v3-to12000-2077087/parent/checkpoints/checkpoint_iteration149158.jld2"
+checkpoint_sha256 = "cf628b0f2f902497480c35b61ba7a200e21f10e7c5cddf55729a748f8535fdd2"
+source_frame = "data/anelastic-sequence-v3-to12000-2077087/parent/frame_01200000.jld2"
+start_time = 12000.0
+screen_stop = 12020.0
+response_stop = 14000.0
+seed_peak_zeta_over_f = 0.1
