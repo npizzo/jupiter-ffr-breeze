@@ -1,0 +1,32 @@
+{
+  "status": "ALL_SIX_COMPLETE",
+  "simulation_jobs": {
+    "response": {
+      "control": "2084628",
+      "plus": "2084629",
+      "minus": "2084630"
+    },
+    "stability": {
+      "control": "2084284",
+      "half": "2084407",
+      "full": "2084408"
+    }
+  },
+  "targets": {
+    "response": 14000,
+    "stability_day": 102
+  },
+  "review_jobs": [
+    "2084676",
+    "2084458",
+    "2086510"
+  ],
+  "gpu_seconds_including_screen": 5999,
+  "gallery_url": "https://npizzo.github.io/jupiter-ffr-breeze/gallery/response-stability-v1/",
+  "asset_commit": "167fcb7168e6130ede3c69f33da2a7fbb8b49921",
+  "verified_git_blobs": 35,
+  "summary": {
+    "stability": "No rapid growing response over two days for this template; perturbation norm remains about 98.7% of initial, not strongly damped.",
+    "signed_response": "Cyclonic-seed branch is more energetic, but parent/seed overlap already makes initial energies unequal; sign selection is not isolated."
+  }
+}
