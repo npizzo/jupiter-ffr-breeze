@@ -1,0 +1,128 @@
+{
+  "simulation_job": "2058241",
+  "review_job": "2061144",
+  "stage": "calibration only; no LSV detection or inverse-transfer claim",
+  "time_units": "nondimensional, not Earth days",
+  "frame_count": 401,
+  "time_range": [
+    0.0,
+    2000.0
+  ],
+  "geometry": "2 x 2 x 1, horizontally doubly periodic; impermeable stress-free top and bottom",
+  "resolution": [
+    128,
+    128,
+    64
+  ],
+  "f": 0.5,
+  "bottom_theta_flux": 9.375e-07,
+  "final": {
+    "time": 2000.0,
+    "iteration": 15674.0,
+    "dt": 0.0994217464141449,
+    "wall_seconds": 627.4447660446167,
+    "theta_content": 1.9865873023386755,
+    "theta_source": 2.7557783438329775e-06,
+    "budget_residual_over_flux": -3.7561794992005285e-07,
+    "urms_conv": 0.004338915650158,
+    "wrms_conv": 0.002813290082911737,
+    "Ro_depth": 0.010847289125395,
+    "Re_depth": 138.845300805056,
+    "turnovers_depth": 6.710341340302204,
+    "lambda_w": 0.15943955687026243,
+    "lambda_cells": 10.204131639696795,
+    "Ro_gradient": 0.2217319623908457,
+    "max_mach": 0.08451012469718047,
+    "max_relative_theta": 0.015929723829313236,
+    "max_mass_divergence": 1.3322676295501878e-15,
+    "wall_w_max": 0.0,
+    "barotropic_ke": 1.969555449462449e-06,
+    "convective_theta_flux_mid": 4.843859415122628e-07,
+    "cap_min_dtheta_dz": -0.005912455092015989,
+    "lambda_spectral_volume": 0.16559512591705378,
+    "Ro_spectral_volume": 0.0339779334365301,
+    "lambda_spectral_mass": 0.16171297626082493,
+    "Ro_spectral_mass": 0.03167270813874839
+  },
+  "windows": [
+    {
+      "start": 0,
+      "end": 500,
+      "heat_storage_fraction": 0.7169319908573611,
+      "urms_mean": 2.6822252711017013e-06,
+      "wrms_mean": 1.9103777363202963e-06,
+      "Ro_spectral_volume_mean": 2.7127520238745386e-05
+    },
+    {
+      "start": 500,
+      "end": 1000,
+      "heat_storage_fraction": 0.8933558575980289,
+      "urms_mean": 0.0030977088083365876,
+      "wrms_mean": 0.0019839067702136864,
+      "Ro_spectral_volume_mean": 0.025172047619909342
+    },
+    {
+      "start": 1000,
+      "end": 1500,
+      "heat_storage_fraction": 0.842677867633057,
+      "urms_mean": 0.00367990309799499,
+      "wrms_mean": 0.0023407126902111807,
+      "Ro_spectral_volume_mean": 0.02902070000050291
+    },
+    {
+      "start": 1500,
+      "end": 2000,
+      "heat_storage_fraction": 0.7769490831520897,
+      "urms_mean": 0.003951379271732047,
+      "wrms_mean": 0.0025154651188635225,
+      "Ro_spectral_volume_mean": 0.030853689437895123
+    }
+  ],
+  "max_mach": 0.11364801433178834,
+  "max_budget_residual_after_t5_over_input": 8.305447015207718e-06,
+  "max_circulation_relative_imbalance": 9.185729015035592e-10,
+  "final_mode_diagnostics": {
+    "t": 2000.0,
+    "barotropic_ke_saved_centered": 1.969555450053037e-06,
+    "gravest_ke": 2.389945271127697e-08,
+    "low_k_le2_ke": 2.7667431176076997e-07,
+    "barotropic_skew": 0.33005340059203514,
+    "cap_negative_gradient_fraction_above_085": 0.3333333333333333,
+    "gamma_plus_0": 0.09105534120942993,
+    "gamma_minus_0": -0.09105534127786363,
+    "gamma_imbalance_0": 3.757808285269571e-10,
+    "skew_0": 0.7277298389823023,
+    "gamma_plus_1": 0.13944774958878378,
+    "gamma_minus_1": -0.1394477496381814,
+    "gamma_imbalance_1": 1.7711875959401108e-10,
+    "skew_1": 0.5414129987870032,
+    "gamma_plus_2": 0.326580456049844,
+    "gamma_minus_2": -0.32658045598495633,
+    "gamma_imbalance_2": 9.934405077285893e-11,
+    "skew_2": 0.3156040864603344
+  },
+  "vertical_Re_final": 90.02528265317558,
+  "video_heights": [
+    0.1953125,
+    0.6015625,
+    0.8984375
+  ],
+  "scale": {
+    "vorticity": "zeta/f symmetric asinh, fixed all frames/depths, full extrema",
+    "vorticity_limit": 2.8127875328063965,
+    "vorticity_linear_width": 0.02,
+    "tracer": "absolute concentration, asinh centered at 0.1; tick labels are physical concentrations; fixed full extrema",
+    "tracer_linear_width": 0.01,
+    "tracer_center": 0.1,
+    "tracer_range": [
+      0.049696195870637894,
+      0.1500433385372162
+    ]
+  },
+  "limitations": [
+    "Thermal storage and cap erosion must be reviewed before production.",
+    "Saved centered Float32 vorticity permits circulation checks only to serialization precision.",
+    "Barotropic spectra use saved density-weighted depth-mean centered velocity; they are not an energy-transfer budget.",
+    "Window means are calibration summaries, not independent statistical ensembles."
+  ]
+}

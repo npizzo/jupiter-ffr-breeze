@@ -1,0 +1,16 @@
+{
+  "input_root_on_unity": "data/anelastic-sequence-v3-launchfix-2058241",
+  "simulation_job": "2058241",
+  "review_job": "2061144",
+  "render_script_sha256": "ccad060716b0a97d67d42c520484d6b455146f8cac44563126a668266b875b95",
+  "first_saved_frame_sha256": "50fde054bddf47b17bab128aa9e9b9a14eca11f3c1885cedb56ca00343f8092e",
+  "last_saved_frame_sha256": "a8230cc1a91af7e05d9862ee200c0bf4e09930eaf3108a6b284490f20dc7cf80",
+  "movie_sha256": "5e9bf1edd60c540007cae3afa5f3e1dc1d41aa91ba87a0e73f62bd83eef66e02",
+  "movie_frames": 401,
+  "fps": 12,
+  "duration_seconds": 33.416666666666664,
+  "full_movie_decode": "PASS",
+  "source_frame_times": "exact saved times 0:5:2000; restart t=5 deduplicated",
+  "array_orientation": "HDF5 depth,y,x; displayed origin lower; no interpolation",
+  "diagnostic_note": "Cap minimum gradient and net heating are physical transient diagnostics; potential-temperature residual is a separate discrete-time budget check."
+}
