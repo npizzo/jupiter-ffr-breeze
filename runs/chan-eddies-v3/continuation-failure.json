@@ -1,0 +1,29 @@
+{
+  "case3": {
+    "status": "FAILED_ENERGY_GUARD",
+    "job_id": "2089750",
+    "start_time": 5.004483215798225,
+    "last_time": 7.0,
+    "last_energy_residual_over_heating_input": -0.10397557661625623,
+    "continuation_integrated_residual_over_heating_input": -0.06470434013774348,
+    "continuation_advanced": true,
+    "latest_verified_restart_time": 5.0,
+    "checkpoints": [],
+    "scheduler": "2089750|FAILED|00:02:51|1:0",
+    "note": "Budget residual is normalized by heating input, not total stored energy. Original metadata can say RUNNING because the intentional error interrupted final metadata writing; scheduler and this terminal record supersede that status. No continuation or threshold relaxation is queued."
+  },
+  "case4": {
+    "status": "FAILED_ENERGY_GUARD",
+    "job_id": "2089751",
+    "start_time": 5.003826714277006,
+    "last_time": 7.0,
+    "last_energy_residual_over_heating_input": -0.11446114905481108,
+    "continuation_integrated_residual_over_heating_input": -0.06867917765643104,
+    "continuation_advanced": true,
+    "latest_verified_restart_time": 5.0,
+    "checkpoints": [],
+    "scheduler": "2089751|FAILED|00:02:51|1:0",
+    "note": "Budget residual is normalized by heating input, not total stored energy. Original metadata can say RUNNING because the intentional error interrupted final metadata writing; scheduler and this terminal record supersede that status. No continuation or threshold relaxation is queued."
+  },
+  "recorded_utc": "2026-11-21T23:25:49.962689+00:00"
+}

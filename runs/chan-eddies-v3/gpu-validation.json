@@ -1,0 +1,138 @@
+{
+  "SCREEN_REVIEW.json": {
+    "case3": {
+      "passed": true,
+      "final_time": 5.0,
+      "max_energy_residual_over_input": 0.018222810532471656,
+      "integrated_energy_residual_over_input": -0.0015466757758614946,
+      "max_mass_error": 2.220446049250313e-16,
+      "barotropic_ke_ratio_min": 0.9757698065184246,
+      "barotropic_ke_ratio_max": 1.0004938338795828,
+      "median_seconds_per_time_unit": 22.924369573593168,
+      "conditional_remaining_seconds": 5916.019176588763,
+      "allocation_wall_limit_seconds": 5400,
+      "integration_wall_limit_seconds": 5100,
+      "full_target_within_first_allocation": false,
+      "initialization": {
+        "N2_deep_min": -0.01423445351935726,
+        "N2_deep_max": 0.014876804697578905,
+        "pressure_offset": 0.0,
+        "turnover_time": 13.15334104411641,
+        "status": "INITIALIZED",
+        "velocity_divergence_max": 4.052314039881821e-15,
+        "thermal_equilibrium": false,
+        "balanced_energy_difference": 0.7364889741866136,
+        "mass": 659.567336022521,
+        "pressure_readback_error": 6.663290334881378e-16,
+        "total_energy": 5722.217551307942,
+        "native_vorticity_skewness": -3.183758199699388e-17,
+        "note": "Finite-amplitude mixed-sign flow; mass and kinetic energy matched; pressure/density and balanced thermal/potential energy differ for rotation-dependent balance. No mature thermal parent.",
+        "density_relative_departure_max": 0.27806004053457734,
+        "initial_rms": 0.136,
+        "wavelength": 1.7888543819998317,
+        "max_abs_zeta_over_f": 0.4611869024879983,
+        "matching_coefficients": [
+          -0.0002163569089505272,
+          0.002912516958900936
+        ],
+        "N2_cap_max": 52.21996673252653,
+        "kinetic_energy": 6.099678723536275,
+        "N2_cap_min": 47.92969207502985
+      }
+    },
+    "case4": {
+      "passed": false,
+      "final_time": 5.0,
+      "max_energy_residual_over_input": 0.01691033802697106,
+      "integrated_energy_residual_over_input": -0.000783610407902735,
+      "max_mass_error": 4.440892098500626e-16,
+      "barotropic_ke_ratio_min": 0.9775639822405315,
+      "barotropic_ke_ratio_max": 1.0008546593351413,
+      "median_seconds_per_time_unit": 23.040404319763212,
+      "conditional_remaining_seconds": 5945.963894644754,
+      "allocation_wall_limit_seconds": 5400,
+      "integration_wall_limit_seconds": 5100,
+      "full_target_within_first_allocation": false,
+      "initialization": {
+        "N2_deep_min": -0.016288381763480686,
+        "N2_deep_max": 0.022191944165612654,
+        "pressure_offset": 0.0,
+        "turnover_time": 13.15334104411641,
+        "status": "INITIALIZED",
+        "velocity_divergence_max": 4.052314039881821e-15,
+        "thermal_equilibrium": false,
+        "balanced_energy_difference": 3.0786595672097974,
+        "mass": 659.567336022521,
+        "pressure_readback_error": 6.291739307975109e-16,
+        "total_energy": 5724.559721900965,
+        "native_vorticity_skewness": -3.183758199699388e-17,
+        "note": "Finite-amplitude mixed-sign flow; mass and kinetic energy matched; pressure/density and balanced thermal/potential energy differ for rotation-dependent balance. No mature thermal parent.",
+        "density_relative_departure_max": 0.6487388884121921,
+        "initial_rms": 0.136,
+        "wavelength": 1.7888543819998317,
+        "max_abs_zeta_over_f": 0.23059345124399916,
+        "matching_coefficients": [
+          -0.0008780014840024441,
+          0.002567961120910176
+        ],
+        "N2_cap_max": 52.82776665689243,
+        "kinetic_energy": 6.099678723536275,
+        "N2_cap_min": 47.42551444689919
+      }
+    },
+    "status": "FAIL",
+    "scope": "Short numerical/adjustment screen only; no thermal equilibrium or long-time validity claim."
+  },
+  "MACH_FIELD_REVIEW.json": {
+    "case3": {
+      "accepted": true,
+      "max_mach": 0.4664209945450972,
+      "density_weighted_rms_mach": 0.06742302106671257,
+      "mass_fraction_above_mach_half": 0.0,
+      "volume_fraction_above_mach_half": 0.0,
+      "horizontal_divergent_ke_fraction_proxy": 0.007900899732055468,
+      "vertical_ke_fraction": 0.023240373982121792,
+      "conservation_and_initial_stability_pass": true
+    },
+    "case4": {
+      "accepted": true,
+      "max_mach": 0.6027526188692315,
+      "density_weighted_rms_mach": 0.06726324877995013,
+      "mass_fraction_above_mach_half": 8.260987183887214e-05,
+      "volume_fraction_above_mach_half": 0.00027523040771484377,
+      "horizontal_divergent_ke_fraction_proxy": 0.002057886374277291,
+      "vertical_ke_fraction": 0.011507256763535607,
+      "conservation_and_initial_stability_pass": true
+    },
+    "status": "PASS",
+    "interpretation": "The original max-Mach 0.5 screen flag is retained, not relabeled as passed. This secondary acceptance requires subsonic local flow, low density-weighted RMS Mach, localized fast flow, small horizontal divergent-velocity energy and small vertical kinetic energy, plus unchanged mass/energy/initial-stability gates. The horizontal projection uses layer-mean density and centered velocity; it is a wave-content proxy, not a mode identification. No long-time low-Mach or LSV conclusion is implied."
+  },
+  "SCREEN_COMPLETE.toml": {
+    "status": "COMPLETE_REVIEW_REQUIRED",
+    "gpu": "NVIDIA H100 80GB HBM3"
+  },
+  "video_heights": {
+    "case3": [
+      0.19375,
+      0.49375,
+      0.89375
+    ],
+    "case4": [
+      0.19375,
+      0.49375,
+      0.89375
+    ]
+  },
+  "release_origin": {
+    "cpu_receipt": "data/chan-eddies-v3-cpu-2089424/LAUNCH_PASS.json",
+    "cpu_receipt_sha256": "e21fab406313229f732ea22d0397aee77daf009da733b61bbdcad9822d218a6d",
+    "field_review": "data/chan-eddies-v3-screen-2089476/MACH_FIELD_REVIEW.json",
+    "field_review_sha256": "e6fca6b5e6f2ccdeefd9a736a216ad562f6952b0136b70ac369b0818d0fb9c35",
+    "previous_cancelled_unstarted_jobs": [
+      "2089586",
+      "2089587"
+    ],
+    "reason": "Conservation and stable-initialization gates passed. Initial peak-Mach 0.5 flag adjudicated by saved-field diagnostics; source, configuration and 10% energy threshold unchanged."
+  },
+  "continuation_outcome": "FAILED_ENERGY_GUARD_AT_T7; short-screen passes do not imply long-time validity"
+}

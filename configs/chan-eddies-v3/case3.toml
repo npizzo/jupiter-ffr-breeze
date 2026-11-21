@@ -1,0 +1,26 @@
+name = "case3"
+nx = 256
+ny = 256
+nz = 80
+omega = 1.5
+latitude = 67.5
+pr = 0.3333333333333333
+bottom_flux = 0.03125
+cooling_time = 20.0
+smagorinsky_coefficient = 0.16
+heat = 1.0
+seed = 314159
+perturbation = 0.00001
+initial_dt = 0.0001
+max_dt = 0.02
+stop_time = 0.0 # computed as 20 initial eddy turnover times by the driver
+wall_seconds = 5100.0
+diagnostic_interval = 0.5
+movie_interval = 1.0
+checkpoint_interval = 10.0
+field_interval = 20.0
+save_3d = true
+
+initial_rms = 0.136
+initial_turnovers = 20.0
+initial_mode_radius_squared = 5

@@ -1,0 +1,133 @@
+{
+  "BALANCE_PASS.toml": {
+    "case3": {
+      "N2_deep_min": -0.00980951803029484,
+      "N2_deep_max": 0.01028634896822922,
+      "pressure_offset": 0.0,
+      "turnover_time": 13.15334104411641,
+      "status": "INITIALIZED",
+      "velocity_divergence_max": 8.881784197001252e-16,
+      "thermal_equilibrium": false,
+      "balanced_energy_difference": 0.7280667396571516,
+      "mass": 659.5673360225209,
+      "vertical_imbalance_max_over_fU": 1.051653402777009e-12,
+      "pressure_readback_error": 5.553906534786833e-16,
+      "total_energy": 5722.2091290734115,
+      "native_vorticity_skewness": -1.598004966926898e-16,
+      "note": "Finite-amplitude mixed-sign flow; mass and kinetic energy matched; pressure/density and balanced thermal/potential energy differ for rotation-dependent balance. No mature thermal parent.",
+      "density_relative_departure_max": 0.2757701289623731,
+      "initial_rms": 0.136,
+      "horizontal_imbalance_rms_over_fU": 0.046824404161792905,
+      "wavelength": 1.7888543819998317,
+      "max_abs_zeta_over_f": 0.45924308669844965,
+      "matching_coefficients": [
+        -0.00021484567354095778,
+        0.002907941534510778
+      ],
+      "N2_cap_max": 52.215104741292045,
+      "coriolis_work_over_bottom_power": -1.8415416565327623e-08,
+      "kinetic_energy": 6.099678723536274,
+      "N2_cap_min": 47.931749026061645
+    },
+    "case4": {
+      "N2_deep_min": -0.012613795394003091,
+      "N2_deep_max": 0.016008128393103505,
+      "pressure_offset": 0.0,
+      "turnover_time": 13.15334104411641,
+      "status": "INITIALIZED",
+      "velocity_divergence_max": 8.881784197001252e-16,
+      "thermal_equilibrium": false,
+      "balanced_energy_difference": 3.0454386251931282,
+      "mass": 659.567336022521,
+      "vertical_imbalance_max_over_fU": 4.602488752431407e-13,
+      "pressure_readback_error": 5.245985166746158e-16,
+      "total_energy": 5724.5265009589475,
+      "native_vorticity_skewness": -1.598004966926898e-16,
+      "note": "Finite-amplitude mixed-sign flow; mass and kinetic energy matched; pressure/density and balanced thermal/potential energy differ for rotation-dependent balance. No mature thermal parent.",
+      "density_relative_departure_max": 0.6433105096157907,
+      "initial_rms": 0.136,
+      "horizontal_imbalance_rms_over_fU": 0.030379924492452186,
+      "wavelength": 1.7888543819998317,
+      "max_abs_zeta_over_f": 0.22962154334922483,
+      "matching_coefficients": [
+        -0.0008720202725000128,
+        0.0025644943012836296
+      ],
+      "N2_cap_max": 52.81887346406556,
+      "coriolis_work_over_bottom_power": -1.028091522123516e-07,
+      "kinetic_energy": 6.0996787235362735,
+      "N2_cap_min": 47.43052736796528
+    }
+  },
+  "DRIVER_PASS.toml": {
+    "restart_error": 0.0,
+    "status": "PASS",
+    "scope": "Actual driver; matched velocity, mass and KE; stable initialized cap; balance; output/restart"
+  },
+  "PROFILE.toml": {
+    "radiative_conductivity": 2.604166666666667e-06,
+    "note": "Printed polytropes/g/interface give ~6.2 scale heights TOTAL, not 6.2 in lower region as text states. Use explicit printed model parameters.",
+    "pressure_scale_heights_upper": 2.5097043507817083,
+    "pressure_scale_heights_total": 6.205974484007041,
+    "density_contrast": 102.21498146317532,
+    "pressure_scale_heights_lower": 3.696270133225333
+  },
+  "case3_INITIAL_BALANCE.toml": {
+    "N2_deep_min": -0.00980951803029484,
+    "N2_deep_max": 0.01028634896822922,
+    "pressure_offset": 0.0,
+    "turnover_time": 13.15334104411641,
+    "status": "INITIALIZED",
+    "velocity_divergence_max": 8.881784197001252e-16,
+    "thermal_equilibrium": false,
+    "balanced_energy_difference": 0.7280667396571516,
+    "mass": 659.5673360225209,
+    "vertical_imbalance_max_over_fU": 1.051653402777009e-12,
+    "pressure_readback_error": 5.553906534786833e-16,
+    "total_energy": 5722.2091290734115,
+    "native_vorticity_skewness": -1.598004966926898e-16,
+    "note": "Finite-amplitude mixed-sign flow; mass and kinetic energy matched; pressure/density and balanced thermal/potential energy differ for rotation-dependent balance. No mature thermal parent.",
+    "density_relative_departure_max": 0.2757701289623731,
+    "initial_rms": 0.136,
+    "horizontal_imbalance_rms_over_fU": 0.046824404161792905,
+    "wavelength": 1.7888543819998317,
+    "max_abs_zeta_over_f": 0.45924308669844965,
+    "matching_coefficients": [
+      -0.00021484567354095778,
+      0.002907941534510778
+    ],
+    "N2_cap_max": 52.215104741292045,
+    "coriolis_work_over_bottom_power": -1.8415416565327623e-08,
+    "kinetic_energy": 6.099678723536274,
+    "N2_cap_min": 47.931749026061645
+  },
+  "case4_INITIAL_BALANCE.toml": {
+    "N2_deep_min": -0.012613795394003091,
+    "N2_deep_max": 0.016008128393103505,
+    "pressure_offset": 0.0,
+    "turnover_time": 13.15334104411641,
+    "status": "INITIALIZED",
+    "velocity_divergence_max": 8.881784197001252e-16,
+    "thermal_equilibrium": false,
+    "balanced_energy_difference": 3.0454386251931282,
+    "mass": 659.567336022521,
+    "vertical_imbalance_max_over_fU": 4.602488752431407e-13,
+    "pressure_readback_error": 5.245985166746158e-16,
+    "total_energy": 5724.5265009589475,
+    "native_vorticity_skewness": -1.598004966926898e-16,
+    "note": "Finite-amplitude mixed-sign flow; mass and kinetic energy matched; pressure/density and balanced thermal/potential energy differ for rotation-dependent balance. No mature thermal parent.",
+    "density_relative_departure_max": 0.6433105096157907,
+    "initial_rms": 0.136,
+    "horizontal_imbalance_rms_over_fU": 0.030379924492452186,
+    "wavelength": 1.7888543819998317,
+    "max_abs_zeta_over_f": 0.22962154334922483,
+    "matching_coefficients": [
+      -0.0008720202725000128,
+      0.0025644943012836296
+    ],
+    "N2_cap_max": 52.81887346406556,
+    "coriolis_work_over_bottom_power": -1.028091522123516e-07,
+    "kinetic_energy": 6.0996787235362735,
+    "N2_cap_min": 47.43052736796528
+  }
+}

@@ -1,0 +1,250 @@
+{
+  "SCREEN_REVIEW.json": {
+    "case3": {
+      "passed": true,
+      "final_time": 5.0,
+      "max_energy_residual_over_input": 0.0192553693135471,
+      "integrated_energy_residual_over_input": 0.001068392778388727,
+      "max_mass_error": 2.220446049250313e-16,
+      "barotropic_ke_ratio_min": 0.9758713327296681,
+      "barotropic_ke_ratio_max": 1.0005816777223544,
+      "median_seconds_per_time_unit": 39.79986429214474,
+      "conditional_remaining_seconds": 10271.024449421888,
+      "allocation_wall_limit_seconds": 5400,
+      "integration_wall_limit_seconds": 5100,
+      "full_target_within_first_allocation": false,
+      "initialization": {
+        "pressure_offset": -0.03348924577191307,
+        "turnover_time": 13.15334104411641,
+        "status": "INITIALIZED",
+        "velocity_divergence_max": 4.052314039881821e-15,
+        "thermal_equilibrium": false,
+        "mass": 659.567336022521,
+        "pressure_readback_error": 6.663693814062269e-16,
+        "total_energy": 5721.481062333755,
+        "native_vorticity_skewness": -3.183758199699388e-17,
+        "note": "Finite-amplitude mixed-sign flow; mass, kinetic and total energy matched; pressure/density differ for rotation-dependent balance. No mature thermal parent.",
+        "density_relative_departure_max": 0.3333578746151922,
+        "initial_rms": 0.136,
+        "wavelength": 1.7888543819998317,
+        "max_abs_zeta_over_f": 0.4611869024879983,
+        "matching_coefficients": [
+          -0.0002331386983056522,
+          0.002914634196410624
+        ],
+        "kinetic_energy": 6.099678723536273
+      }
+    },
+    "case4": {
+      "passed": false,
+      "final_time": 5.0,
+      "max_energy_residual_over_input": 0.019259705822882278,
+      "integrated_energy_residual_over_input": 0.0018685086461834644,
+      "max_mass_error": 2.220446049250313e-16,
+      "barotropic_ke_ratio_min": 0.9778737533752205,
+      "barotropic_ke_ratio_max": 1.0011570951460511,
+      "median_seconds_per_time_unit": 39.141484498977626,
+      "conditional_remaining_seconds": 10101.118469266085,
+      "allocation_wall_limit_seconds": 5400,
+      "integration_wall_limit_seconds": 5100,
+      "full_target_within_first_allocation": false,
+      "initialization": {
+        "pressure_offset": -0.1312462631787715,
+        "turnover_time": 13.15334104411641,
+        "status": "INITIALIZED",
+        "velocity_divergence_max": 4.052314039881821e-15,
+        "thermal_equilibrium": false,
+        "mass": 659.567336022521,
+        "pressure_readback_error": 6.29314940122162e-16,
+        "total_energy": 5721.481062333756,
+        "native_vorticity_skewness": -3.183758199699388e-17,
+        "note": "Finite-amplitude mixed-sign flow; mass, kinetic and total energy matched; pressure/density differ for rotation-dependent balance. No mature thermal parent.",
+        "density_relative_departure_max": 0.6933865163113502,
+        "initial_rms": 0.136,
+        "wavelength": 1.7888543819998317,
+        "max_abs_zeta_over_f": 0.23059345124399916,
+        "matching_coefficients": [
+          -0.0008941584980500185,
+          0.0025682720866634884
+        ],
+        "kinetic_energy": 6.099678723536274
+      }
+    },
+    "status": "FAIL",
+    "scope": "Short numerical/adjustment screen only; no thermal equilibrium or long-time validity claim."
+  },
+  "FIELD_REVIEW.json": {
+    "case3": [
+      {
+        "time": 0.0,
+        "max_mach_depth": 0.99375,
+        "max_mach": 0.2060760985742875,
+        "max_mach_velocity": [
+          0.008721121121197939,
+          0.24935227632522583,
+          0.0
+        ],
+        "layers": {
+          "lower": {
+            "horizontal_rms": 0.13598361522934183,
+            "vertical_rms": 0.0,
+            "mach_max": 0.13863240581139566,
+            "mass_weighted_ke": 5.468819765172292,
+            "N2_mean": -0.00127316324866029,
+            "N2_min": -0.4392906248380868,
+            "fraction_N2_below_minus_point1": 0.006719271341959636,
+            "divergence_rms": 3.090570799366943e-07
+          },
+          "transition": {
+            "horizontal_rms": 0.13598361522934183,
+            "vertical_rms": 0.0,
+            "mach_max": 0.18306786020831894,
+            "mass_weighted_ke": 0.4819272453558211,
+            "N2_mean": 0.6260943415808892,
+            "N2_min": -0.4094270435231451,
+            "fraction_N2_below_minus_point1": 0.31220790318080355,
+            "divergence_rms": 3.090570799366943e-07
+          },
+          "cap": {
+            "horizontal_rms": 0.13598361522934183,
+            "vertical_rms": 0.0,
+            "mach_max": 0.2060760985742875,
+            "mass_weighted_ke": 0.14746103875950403,
+            "N2_mean": 41.92148927028528,
+            "N2_min": -242.37225258586653,
+            "fraction_N2_below_minus_point1": 0.041008843315972224,
+            "divergence_rms": 3.090570799366943e-07
+          }
+        }
+      },
+      {
+        "time": 5.0,
+        "max_mach_depth": 0.7562500000000001,
+        "max_mach": 0.4688609547442081,
+        "max_mach_velocity": [
+          -0.04454730451107025,
+          0.6620529890060425,
+          -0.02964917290955782
+        ],
+        "layers": {
+          "lower": {
+            "horizontal_rms": 0.14533511582297445,
+            "vertical_rms": 0.025568585936702325,
+            "mach_max": 0.3488127702708686,
+            "mass_weighted_ke": 6.369724941545856,
+            "N2_mean": -0.21117614119705252,
+            "N2_min": -9.774507747398182,
+            "fraction_N2_below_minus_point1": 0.2065871556599935,
+            "divergence_rms": 0.06598077261503456
+          },
+          "transition": {
+            "horizontal_rms": 0.1747389500337428,
+            "vertical_rms": 0.024136894220684255,
+            "mach_max": 0.4688609547442081,
+            "mass_weighted_ke": 0.7950243893832649,
+            "N2_mean": 1.4333290138857682,
+            "N2_min": -1.1453516841798717,
+            "fraction_N2_below_minus_point1": 0.18796539306640625,
+            "divergence_rms": 0.10402511846978296
+          },
+          "cap": {
+            "horizontal_rms": 0.13760424724589282,
+            "vertical_rms": 0.006294117454753028,
+            "mach_max": 0.44533576459793484,
+            "mass_weighted_ke": 0.18709192521167023,
+            "N2_mean": 43.78782932362805,
+            "N2_min": -11.009848073568858,
+            "fraction_N2_below_minus_point1": 0.005122714572482639,
+            "divergence_rms": 0.06436772442073424
+          }
+        }
+      }
+    ],
+    "case4": [
+      {
+        "time": 0.0,
+        "max_mach_depth": 0.99375,
+        "max_mach": 0.2223362351950467,
+        "max_mach_velocity": [
+          -0.008883008733391762,
+          -0.24550649523735046,
+          0.0
+        ],
+        "layers": {
+          "lower": {
+            "horizontal_rms": 0.13598361522934183,
+            "vertical_rms": 0.0,
+            "mach_max": 0.13927957905355254,
+            "mass_weighted_ke": 5.467725357129025,
+            "N2_mean": -0.022069733751921127,
+            "N2_min": -0.487642900620493,
+            "fraction_N2_below_minus_point1": 0.05224959055582682,
+            "divergence_rms": 3.090570799366943e-07
+          },
+          "transition": {
+            "horizontal_rms": 0.13598361522934183,
+            "vertical_rms": 0.0,
+            "mach_max": 0.18511805701901698,
+            "mass_weighted_ke": 0.48192898429033837,
+            "N2_mean": 1.2735329723158162,
+            "N2_min": -0.893929856712603,
+            "fraction_N2_below_minus_point1": 0.813795907156808,
+            "divergence_rms": 3.090570799366943e-07
+          },
+          "cap": {
+            "horizontal_rms": 0.13598361522934183,
+            "vertical_rms": 0.0,
+            "mach_max": 0.2223362351950467,
+            "mass_weighted_ke": 0.14855394709802505,
+            "N2_mean": 38.20158926919663,
+            "N2_min": -322.9930083478052,
+            "fraction_N2_below_minus_point1": 0.054247538248697914,
+            "divergence_rms": 3.090570799366943e-07
+          }
+        }
+      },
+      {
+        "time": 5.0,
+        "max_mach_depth": 0.74375,
+        "max_mach": 0.6122968975026992,
+        "max_mach_velocity": [
+          0.009688940102932975,
+          0.881161630153656,
+          -0.04880445450544357
+        ],
+        "layers": {
+          "lower": {
+            "horizontal_rms": 0.14631259999294666,
+            "vertical_rms": 0.01827385312004014,
+            "mach_max": 0.44322847957440886,
+            "mass_weighted_ke": 6.349701082606812,
+            "N2_mean": -0.23437616921204818,
+            "N2_min": -9.761847412131424,
+            "fraction_N2_below_minus_point1": 0.34536266326904297,
+            "divergence_rms": 0.046714132786525336
+          },
+          "transition": {
+            "horizontal_rms": 0.17102963464241533,
+            "vertical_rms": 0.016554542043334095,
+            "mach_max": 0.6122968975026992,
+            "mass_weighted_ke": 0.7559259236205328,
+            "N2_mean": 1.7608256323462652,
+            "N2_min": -1.8128218065674773,
+            "fraction_N2_below_minus_point1": 0.5738863263811383,
+            "divergence_rms": 0.06926946785798621
+          },
+          "cap": {
+            "horizontal_rms": 0.15474919732378295,
+            "vertical_rms": 0.0065230860765258065,
+            "mach_max": 0.603070426667504,
+            "mass_weighted_ke": 0.21719439485334968,
+            "N2_mean": 41.30619201212948,
+            "N2_min": -18.016728977793157,
+            "fraction_N2_below_minus_point1": 0.012297736273871528,
+            "divergence_rms": 0.05526521441956574
+          }
+        }
+      }
+    ]
+  }
+}

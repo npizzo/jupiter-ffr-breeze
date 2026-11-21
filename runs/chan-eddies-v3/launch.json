@@ -1,0 +1,92 @@
+{
+  "status": "FAILED_ENERGY_GUARD",
+  "cpu_job": "2089424",
+  "production_released": true,
+  "initial_rms": 0.136,
+  "turnovers": 20,
+  "rotation": [
+    1.5,
+    3.0
+  ],
+  "cpu_restart_error": 0.0,
+  "initialization_change": "Integrate pressure from smooth density; no total-energy-matching pressure offset; cap stability checked before GPU.",
+  "screen_job": "2089476",
+  "strict_release_job": "2089585",
+  "strict_release_result": "FAIL: peak Mach exceeds 0.5 flag; mass/energy/initial-stability checks passed",
+  "invalidated_dependent_jobs": [
+    "2089586",
+    "2089587"
+  ],
+  "field_review_job": "2089660",
+  "field_review_status": "PASS",
+  "field_review_failed_launcher_job": "2089656",
+  "production_jobs": {
+    "case3": "2089750",
+    "case4": "2089751"
+  },
+  "release_receipt": "data/chan-eddies-v3-field-release/LAUNCH_PASS.json",
+  "screen_root": "data/chan-eddies-v3-screen-2089476",
+  "scope": "Finite-amplitude mixed-sign large-eddy response to rotation; no spontaneous-formation, thermal-equilibrium or preferred-sign conclusion.",
+  "initialization": {
+    "rms_speed": 0.136,
+    "wavelength": 1.7888543819998317,
+    "turnover_time": 13.15334104411641,
+    "identical_velocity_and_mass_and_kinetic_energy": true,
+    "total_energy_matched": false,
+    "balanced_energy_difference_reported": true
+  },
+  "resolution": [
+    256,
+    256,
+    80
+  ],
+  "rotation_rates": [
+    1.5,
+    3.0
+  ],
+  "nominal_stop_time": 263.0668208823282,
+  "allocation_minutes": 90,
+  "integration_wall_seconds": 5100,
+  "automatic_extension": false,
+  "output": {
+    "requested_fractional_heights": [
+      0.2,
+      0.5,
+      0.9
+    ],
+    "actual_video_heights": {
+      "case3": [
+        0.19375,
+        0.49375,
+        0.89375
+      ],
+      "case4": [
+        0.19375,
+        0.49375,
+        0.89375
+      ]
+    },
+    "vorticity_and_tracer": true,
+    "screen_root": "data/chan-eddies-v3-screen-2089476",
+    "continuation_roots": [
+      "data/chan-eddies-v3-case3-2089750/parent",
+      "data/chan-eddies-v3-case4-2089751/parent"
+    ]
+  },
+  "previous_bounded_gpu_screen_seconds": 704,
+  "corrected_gpu_screen_seconds": 394,
+  "limits": "The initial background is not thermally equilibrated. The peak-Mach 0.5 screen failed and was retained; a separate saved-field review passed. Neither continuation was released on the failed initializer. Runtime energy-error guard remains 10% of bottom input. Full nominal duration may exceed the first allocation.",
+  "scheduler_nodes": {
+    "case3": "uri-gpu012",
+    "case4": "uri-gpu012"
+  },
+  "continuation_first_advance_verified": true,
+  "currently_running": false,
+  "final_times": {
+    "case3": 7.0,
+    "case4": 7.0
+  },
+  "failure_record": "runs/chan-eddies-v3/continuation-failure.json",
+  "further_extensions_queued": false,
+  "latest_verified_restart_time": 5.0
+}
