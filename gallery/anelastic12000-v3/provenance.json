@@ -1,0 +1,37 @@
+{
+  "input_roots_on_unity": [
+    "data/anelastic-sequence-v3-launchfix-2058241",
+    "data/anelastic-sequence-v3-extendfix-2071578",
+    "data/anelastic-sequence-v3-to12000-2077087"
+  ],
+  "simulation_jobs": [
+    "2058241",
+    "2071578",
+    "2077087"
+  ],
+  "review_job": "2080738",
+  "render_script_sha256": "0a27db4bd849c9ce8b0a704b5bfcebfd38016e6feb97d4a9364611c929a305ea",
+  "first_saved_frame_sha256": "50fde054bddf47b17bab128aa9e9b9a14eca11f3c1885cedb56ca00343f8092e",
+  "last_saved_frame_sha256": "5935337c92b31ecc4430ebbec46a4861a4ef99423b93438ee1122d3ee5a433f4",
+  "movie_sha256": "1d9369ab5f20bdb1ae1be1fbb01edc3b7f99bc2b69107635d18bd01114006df2",
+  "movie_frames": 2401,
+  "fps": 12,
+  "duration_seconds": 200.08333333333334,
+  "full_movie_decode": "PASS",
+  "source_frame_times": "exact saved times 0:5:12000; any overlapping saved frames checked; actual restart equality recorded by simulation pickup receipts",
+  "array_orientation": "HDF5 depth,y,x; displayed origin lower; no interpolation",
+  "diagnostic_note": "Cap minimum gradient and net heating are physical transient diagnostics; potential-temperature residual is a separate discrete-time budget check.",
+  "duplicate_frame_checks": [],
+  "all_frames_finite": true,
+  "web_encoding": {
+    "codec": "H264",
+    "resolution": [
+      1080,
+      720
+    ],
+    "target_video_bitrate": 900000,
+    "passes": 2,
+    "all_saved_frames_retained": true,
+    "bytes": 22537585
+  }
+}
