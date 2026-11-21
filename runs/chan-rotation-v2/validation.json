@@ -1,0 +1,127 @@
+{
+  "coarse": {
+    "omega1p5": {
+      "final_time": 40.0,
+      "wall_seconds": 50.90428590774536,
+      "dt": 0.011618971807690797,
+      "max_mach": 0.06883854308528914,
+      "Re": 441.9732333317258,
+      "urms": 0.03264251092848941,
+      "max_native_residual_after_t10": 0.21974258317380946,
+      "max_centered_residual_after_t10": 0.22030109512082918,
+      "cumulative_native_error_over_bottom_input": -0.0845068894115931,
+      "cumulative_centered_error_over_bottom_input": -0.0891890485951782
+    },
+    "omega1p5_dt2": {
+      "final_time": 40.0,
+      "wall_seconds": 27.047671794891357,
+      "dt": 0.008333333333333333,
+      "max_mach": 0.07428210522704999,
+      "Re": 441.8418178338662,
+      "urms": 0.032632476089233683,
+      "max_native_residual_after_t10": 0.21970363285086048,
+      "max_centered_residual_after_t10": 0.22025907150614354,
+      "cumulative_native_error_over_bottom_input": -0.08451554908054018,
+      "cumulative_centered_error_over_bottom_input": -0.08919975140945749
+    },
+    "omega1p5_grid2": {
+      "final_time": 40.0,
+      "wall_seconds": 61.925435066223145,
+      "dt": 0.01681609566107185,
+      "max_mach": 0.06345555007735737,
+      "Re": 670.7972648263915,
+      "urms": 0.023224339035799728,
+      "max_native_residual_after_t10": 0.1385410481828352,
+      "max_centered_residual_after_t10": 0.13926198136805623,
+      "cumulative_native_error_over_bottom_input": -0.06638422929056649,
+      "cumulative_centered_error_over_bottom_input": -0.06822590448857771
+    },
+    "omega3": {
+      "final_time": 40.0,
+      "wall_seconds": 21.70549511909485,
+      "dt": 0.014174209959332803,
+      "max_mach": 0.03467569995942983,
+      "Re": 426.241689610814,
+      "urms": 0.030310799870186218,
+      "max_native_residual_after_t10": 0.20405580942520452,
+      "max_centered_residual_after_t10": 0.2039905291151225,
+      "cumulative_native_error_over_bottom_input": -0.07196708942462457,
+      "cumulative_centered_error_over_bottom_input": -0.07709733357066391
+    },
+    "omega3_dt2": {
+      "final_time": 40.0,
+      "wall_seconds": 26.90911602973938,
+      "dt": 0.008333333333333333,
+      "max_mach": 0.034761163108403104,
+      "Re": 426.32046418584116,
+      "urms": 0.030320013127790365,
+      "max_native_residual_after_t10": 0.20414983485995508,
+      "max_centered_residual_after_t10": 0.20409408081565816,
+      "cumulative_native_error_over_bottom_input": -0.07197675168471633,
+      "cumulative_centered_error_over_bottom_input": -0.07710978828430726
+    },
+    "omega3_grid2": {
+      "final_time": 40.0,
+      "wall_seconds": 47.19257116317749,
+      "dt": 0.016666666666666666,
+      "max_mach": 0.031381533835206116,
+      "Re": 707.6339934810868,
+      "urms": 0.027446281165969397,
+      "max_native_residual_after_t10": 0.17647685024079496,
+      "max_centered_residual_after_t10": 0.17662802102953523,
+      "cumulative_native_error_over_bottom_input": -0.06925260697569122,
+      "cumulative_centered_error_over_bottom_input": -0.07077584558585279
+    }
+  },
+  "target": {
+    "case3": {
+      "final_time": 18.0,
+      "wall_seconds": 368.1089549064636,
+      "dt": 0.02,
+      "max_mach": 0.025205473791299737,
+      "Re": 2362.4956382684964,
+      "urms": 0.009899808840712239,
+      "max_native_residual_after_t10": 0.03742699164487484,
+      "max_centered_residual_after_t10": 0.038299376638146976,
+      "cumulative_native_error_over_bottom_input": -0.014132049045380136,
+      "cumulative_centered_error_over_bottom_input": -0.014729133570579873
+    }
+  },
+  "status": "PRODUCTION_NOT_RELEASED_COST_GATE_FAILED_ENERGY_UNRESOLVED",
+  "updated_utc": "2026-11-21T22:09:31.278958+00:00",
+  "rotation_rates": [
+    1.5,
+    3.0
+  ],
+  "cap_experiments": false,
+  "initialization": "zero velocity; hydrostatic stratified reference; same small random thermal perturbations; no vortex seed",
+  "target_grid": [
+    256,
+    256,
+    80
+  ],
+  "target_case3_final_time": 18.02,
+  "target_case4_started": false,
+  "target_seconds_per_unit_median": 15.554059982299805,
+  "linear_extrapolation_hours_per_case_to_t20000": 86.41144434611003,
+  "timing_scope": "early t3 onward only; not a developed-flow forecast",
+  "gpu_jobs": {
+    "coarse_audit": {
+      "job": "2087747",
+      "elapsed_seconds": 352,
+      "status": "COMPLETED"
+    },
+    "target_grid_check": {
+      "job": "2087827",
+      "elapsed_seconds": 539,
+      "status": "stopped at prescribed model wall limit; driver intentionally returned nonzero because target not reached"
+    }
+  },
+  "total_gpu_seconds": 891,
+  "cpu_jobs": {
+    "2087681": "PASS",
+    "2087806": "PASS"
+  },
+  "conclusion": "Smaller timestep and native face kinetic energy do not remove coarse energy discrepancy. Full-grid long runs withheld on cost; target-grid energy accuracy over the requested interval was not established. No conclusion about LSV formation or sign selection.",
+  "automatic_continuation": false
+}
