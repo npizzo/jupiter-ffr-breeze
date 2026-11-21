@@ -1,0 +1,24 @@
+{
+  "frame_count": 49,
+  "start": 8640000.0,
+  "end": 8812800.0,
+  "heights": [
+    19687.5,
+    59062.5,
+    100312.5
+  ],
+  "f": 0.0002880957739764384,
+  "vorticity_limit": 1.1938559303906755,
+  "tracer_center": 0.0793082,
+  "tracer_width": 0.01,
+  "tracer_data_range": [
+    0.03396867588162422,
+    0.10084596276283264
+  ],
+  "tracer_color_range": [
+    0.03396867588162422,
+    0.10084596276283264
+  ],
+  "fixed_across_depth_and_time": true,
+  "fully_decoded": true
+}
