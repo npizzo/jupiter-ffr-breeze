@@ -16,12 +16,12 @@ for folder in paths:
  frames.append(d)
 times=sorted(set.intersection(*(set(d) for d in frames)));assert len(times)>1
 assert all(set(times)==set(d) for d in frames),'Do not silently truncate unequal completed timelines'
-def low(a):
+def low(a,parity=1):
  n=a.shape[1];m=a.shape[0]
- ext=np.concatenate((a,a[::-1,:]),axis=0) if channel else a
+ ext=np.concatenate((a,parity*a[::-1,:]),axis=0) if channel else a
  kx=np.fft.fftfreq(n)*n;ky=np.fft.fftfreq(ext.shape[0])*ext.shape[0]*(.5 if channel else 1.)
  K=ky[:,None]**2+kx[None,:]**2
- return np.fft.ifft2(np.fft.fft2(ext)*(K<=4)).real[:m]
+ return np.fft.ifft2(np.fft.fft2(ext)*((K>0)&(K<=4))).real[:m]
 def zeta(u,v):
  dx=length/u.shape[1];dy=length/u.shape[0]
  du=np.gradient(u,dy,axis=0,edge_order=2) if channel else (np.roll(u,-1,0)-np.roll(u,1,0))/(2*dy)
@@ -40,7 +40,7 @@ def align_error(a,b):
  return best
 rows=[];initial=None
 for t in times:
- uv=[state(d[t]) for d in frames];lp=[tuple(low(a) for a in v) for v in uv];z=[low(zeta(*a)) for a in uv]
+ uv=[state(d[t]) for d in frames];lp=[(low(a[0],1),low(a[1],-1)) for a in uv];z=[low(zeta(*a),-1) for a in uv]
  diff=[(a[0]-lp[0][0],a[1]-lp[0][1]) for a in lp[1:]]
  if initial is None:initial=[tuple(a.copy() for a in v) for v in diff]
  row={'time':t,'elapsed_days_or_units':(t-times[0])/86400 if channel else t-times[0]}
@@ -71,5 +71,5 @@ ax[0,0].set_title('Absolute low-mode kinetic energy');ax[0,1].set_title('Low-mod
 for a in ax.flat:a.set_xlabel('Additional Earth days' if channel else 'Additional nondimensional time');a.grid(alpha=.2)
 for a in [ax[0,0],ax[0,1],ax[1,0]]:a.legend()
 fig.savefig(out/'response.png',dpi=140)
-(out/'summary.json').write_text(json.dumps({'mode':mode,'paths':[str(p) for p in paths],'time_range':[times[0],times[-1]],'frames':len(times),'final':rows[-1],'limitations':['One parent and one spatial template; not an ensemble.','Low-mode response and displacement-corrected shape are separated from small-scale decorrelation.','Finite-time response does not establish a stationary eigenmode or spontaneous LSV formation.','The y reflection used for scalar-vorticity smoothing is a diagnostic filter, not a boundary condition change.','Heat drift and early pressure adjustment remain possible confounders.','Native transfer CSV samples selected timesteps; no claim of an uninterrupted integrated budget.']},indent=2)+'\n')
+(out/'summary.json').write_text(json.dumps({'mode':mode,'paths':[str(p) for p in paths],'time_range':[times[0],times[-1]],'frames':len(times),'final':rows[-1],'limitations':['One parent and one spatial template; not an ensemble.','Low-mode response and displacement-corrected shape are separated from small-scale decorrelation.','Finite-time response does not establish a stationary eigenmode or spontaneous LSV formation.','Channel spectral filters use free-slip parity: u even, v and zeta odd; periodic filters are used for the doubly periodic box.','Heat drift and early pressure adjustment remain possible confounders.','Native transfer CSV samples selected timesteps; no claim of an uninterrupted integrated budget.']},indent=2)+'\n')
 print('COMPARISON_COMPLETE',out)
