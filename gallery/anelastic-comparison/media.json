@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "frames": 11,
+  "duration": 5.5,
+  "heights": [
+    0.19375,
+    0.49375,
+    0.89375
+  ],
+  "vorticity_limits": [
+    0.6680858731269836,
+    2.219024181365967,
+    0.38851696252822876
+  ],
+  "vorticity_scale": "asinh width 0.05, fixed per-depth symmetric full extrema over all frames",
+  "tracer_scale": "asinh width 0.01; fixed range 0\u20131; BrBG",
+  "source": "data/omega3-anelastic-v4-run-2113277/parent"
+}
