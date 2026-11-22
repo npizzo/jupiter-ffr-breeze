@@ -1,0 +1,119 @@
+{
+  "cases": {
+    "beta": {
+      "source": "data/rotation-channel-v1-beta-2109125/parent",
+      "final_time": 1000,
+      "frames": 1001,
+      "f0": 5.54327719506772,
+      "beta": 0.003211688852166031,
+      "actual_heights": [
+        0.19375,
+        0.49375,
+        0.89375
+      ],
+      "late_window_950_1000": {
+        "skew_0": 0.7534175904951627,
+        "anticyclonic_enstrophy_share_0": 0.3344573336764449,
+        "skew_1": 0.5635791328857995,
+        "anticyclonic_enstrophy_share_1": 0.37569237946423967,
+        "skew_2": 1.2652679014549288,
+        "anticyclonic_enstrophy_share_2": 0.2981841587649026
+      },
+      "final_diagnostics": {
+        "time": 1000.0,
+        "iteration": 150204.0,
+        "dt": 0.006568697849900977,
+        "wall_seconds": 19831.886313915253,
+        "mass": 659.5673360225222,
+        "total_energy": 6151.568034712314,
+        "urms_conv": 0.13377859357121064,
+        "Ro": 0.028585169566498002,
+        "Re": 10712.971889777142,
+        "max_mach": 0.36854141957293884,
+        "barotropic_ke": 0.008447015350611431,
+        "skew_lower": 0.7233630511406979,
+        "skew_mid": 0.5493831010842711,
+        "skew_upper": 1.200345215004933,
+        "top_heat_flux": -3.933616751858553e-05,
+        "cooling_power": 0.007617000738377925,
+        "min_density": 0.7988231659168227,
+        "min_temperature": 0.8114154421582311,
+        "wall_w_max": 0.0,
+        "nu_mean": 9.740275999894834e-06,
+        "external_power": 0.49301237794191943,
+        "energy_residual_over_input": -0.17018308010908068,
+        "centered_energy": 6151.554199809842,
+        "centered_residual_over_input": -0.17028763803197644,
+        "kinetic_energy": 6.333622780174007,
+        "cumulative_external_heat_since_restart": 500.16126296524345,
+        "cumulative_energy_defect_since_restart": -73.16080868396313,
+        "energy_defect_over_restart_ke": -11.994206908253084
+      },
+      "max_relative_mass_change": 2.4424906541753444e-15
+    },
+    "control": {
+      "source": "data/rotation-channel-v1-control-2109124/parent",
+      "final_time": 1000,
+      "frames": 1001,
+      "f0": 5.54327719506772,
+      "beta": 0,
+      "actual_heights": [
+        0.19375,
+        0.49375,
+        0.89375
+      ],
+      "late_window_950_1000": {
+        "skew_0": 0.6973200628577445,
+        "anticyclonic_enstrophy_share_0": 0.34950536837161916,
+        "skew_1": 0.5143142751142951,
+        "anticyclonic_enstrophy_share_1": 0.38834806827927304,
+        "skew_2": 0.9723997537216679,
+        "anticyclonic_enstrophy_share_2": 0.3397202166964602
+      },
+      "final_diagnostics": {
+        "time": 1000.0,
+        "iteration": 143989.0,
+        "dt": 0.007129927062224507,
+        "wall_seconds": 20877.09574699402,
+        "mass": 659.5673360225215,
+        "total_energy": 6149.657997840489,
+        "urms_conv": 0.12604219152605745,
+        "Ro": 0.026932092206422533,
+        "Re": 10088.060761046288,
+        "max_mach": 0.38746750198186186,
+        "barotropic_ke": 0.007316081104986523,
+        "skew_lower": 0.7330789402946125,
+        "skew_mid": 0.5060921436097967,
+        "skew_upper": 1.0460320915031367,
+        "top_heat_flux": -4.158345368149238e-05,
+        "cooling_power": 0.007874513378880588,
+        "min_density": 0.7004044919745377,
+        "min_temperature": 0.7326884358307834,
+        "wall_w_max": 0.0,
+        "nu_mean": 9.745471574670436e-06,
+        "external_power": 0.4927908218800233,
+        "energy_residual_over_input": -0.17736994634522918,
+        "centered_energy": 6149.644044566834,
+        "centered_residual_over_input": -0.17713094429253462,
+        "kinetic_energy": 5.4180940818250605,
+        "cumulative_external_heat_since_restart": 500.00118746055443,
+        "cumulative_energy_defect_since_restart": -74.91077005109958,
+        "energy_defect_over_restart_ke": -12.281100931111048
+      },
+      "max_relative_mass_change": 1.1102230246251565e-15
+    }
+  },
+  "geometry": "x periodic; y impermeable, stress-free, insulated walls; 4 x 4 x 1",
+  "omega": 3,
+  "latitude_degrees_north": 67.5,
+  "depth_mapping_km": 100,
+  "width_mapping_km": 400,
+  "beta_fractional_f_change_across_box": 0.0023175379755670292,
+  "limitations": [
+    "One realization per case.",
+    "Plane enstrophy and skewness are not coherent-vortex tracking or inverse-cascade diagnostics.",
+    "Channel boundaries and wall-compatible initial eddies differ from the original doubly periodic runs.",
+    "Original compressible energy-budget residual remains unresolved.",
+    "Nondimensional times, not seconds or Earth days."
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "frames": 1001,
+  "duration_seconds": 50.05,
+  "sha256": "95a23d122deaf34930ce5fed8f65ee4668612fd1f76b5d2c9afa21f6048f3c40",
+  "bytes": 7111399,
+  "vorticity_limits_per_depth": [
+    3.426991735795142,
+    5.022737166648231,
+    4.729431344873862
+  ],
+  "vorticity_asinh_width": 0.02,
+  "tracer_asinh_width": 0.01,
+  "tracer_range": [
+    0,
+    1
+  ],
+  "shared_scales_between_cases": true,
+  "location": "Unity"
+}
