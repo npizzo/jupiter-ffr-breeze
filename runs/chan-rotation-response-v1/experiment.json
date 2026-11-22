@@ -1,0 +1,19 @@
+{
+  "status": "CONTROL_RUNNING",
+  "omega": 3,
+  "constant_in_time": true,
+  "start_time": 263.06682088232816,
+  "target_time": 500,
+  "initial_state": "Saved developed dipole at Omega=3",
+  "rotation_ramp": "Cancelled; no ramp branch is active.",
+  "separate_fixed_rotation_test": "Independent Omega=4.5 run starts at t=0 from original mixed-sign eddies, balanced for that rotation.",
+  "diagnostic_correction": {
+    "invalid_initial_sample": 263.06682088232816,
+    "valid_budget_start": 263.5,
+    "reason": "Manual restart output preceded the derived velocity/temperature refresh. Exclude this sample and its movie frame, and rebase cumulative budgets at the first valid post-step sample.",
+    "effect_on_evolution": "None: reporting-only correction. CPU restarted control matched the prior implementation exactly.",
+    "analysis_script": "scripts/chan_restart_output_review/rebase_budget.py",
+    "raw_output_preserved": true
+  },
+  "energy_budget": "Physical/numerical energy residual remains unresolved after removing the reporting offset."
+}

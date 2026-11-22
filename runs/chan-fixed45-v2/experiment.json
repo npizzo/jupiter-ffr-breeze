@@ -1,0 +1,68 @@
+{
+  "status": "SUBMITTED",
+  "omega": 4.5,
+  "constant_in_time": true,
+  "start_time": 0.0,
+  "target_time": 500.0,
+  "initial_state": "Original mixed-sign eddies, balanced for Omega=4.5; no restart from the Omega=3 dipole and no ramp.",
+  "resolution": [
+    256,
+    256,
+    80
+  ],
+  "domain": [
+    4,
+    4,
+    1
+  ],
+  "latitude_degrees": 67.5,
+  "initial_rms": 0.136,
+  "initial_wavelength": 1.7888543819998317,
+  "unchanged_physics": "Same heating, cap/cooling, SGS dissipation, transport, periodic horizontal and impermeable stress-free vertical boundaries as the original seeded pair.",
+  "validation_change": "Peak density departure exceeds the old 0.75 small-perturbation heuristic; it is reported as a warning. Initialized fields are unchanged by this reporting adjustment. Positivity, stable cap, near-neutral bulk, discrete balance, mass/KE matching, output and restart checks are mandatory.",
+  "cpu_validation": {
+    "omega_constant": 4.5,
+    "density_departure_gate": "Old amplitude heuristic reported, not enforced; positivity, stable cap, near-neutral bulk, discrete force balance and exact restart remain mandatory",
+    "status": "PASS",
+    "scope": "Original mixed-sign velocity field at constant Omega=4.5; balanced thermodynamic initialization, full-vector Coriolis, actual driver output and restart",
+    "restart_max_abs_error": 0.0,
+    "initial_velocity_difference_from_omega3": 0.0,
+    "balance": {
+      "N2_deep_min": -0.01593093225540798,
+      "N2_deep_max": 0.019351050928584357,
+      "pressure_offset": 0.0,
+      "density_departure_heuristic_exceeded": true,
+      "turnover_time": 13.15334104411641,
+      "status": "INITIALIZED",
+      "velocity_divergence_max": 8.881784197001252e-16,
+      "thermal_equilibrium": false,
+      "balanced_energy_difference": 6.898482933880587,
+      "mass": 659.567336022521,
+      "vertical_imbalance_max_over_fU": 3.028970012375894e-13,
+      "pressure_readback_error": 4.962689922240584e-16,
+      "total_energy": 5728.379545267635,
+      "native_vorticity_skewness": -1.598004966926898e-16,
+      "note": "Finite-amplitude mixed-sign flow; mass and kinetic energy matched; pressure/density and balanced thermal/potential energy differ for rotation-dependent balance. No mature thermal parent.",
+      "density_relative_departure_max": 1.145578599885837,
+      "density_ratio_min": 0.41153676541104667,
+      "initial_rms": 0.136,
+      "horizontal_imbalance_rms_over_fU": 0.035989347276561355,
+      "wavelength": 1.7888543819998317,
+      "max_abs_zeta_over_f": 0.15308102889948322,
+      "matching_coefficients": [
+        -0.0019670935349219184,
+        0.001987607030821826
+      ],
+      "N2_cap_max": 53.441307423148814,
+      "coriolis_work_over_bottom_power": 1.5062291607460115e-07,
+      "kinetic_energy": 6.099678723536272,
+      "N2_cap_min": 33.56774147511512
+    }
+  },
+  "max_allocation_hours": 3,
+  "integration_wall_minutes": 170,
+  "automatic_extension": false,
+  "energy_policy": "Warning-only energy residual; existing finite-state, positivity, mass, Mach and timestep guards retained.",
+  "output": "Three-depth vorticity and tracer every time unit; checkpoint every 10; full fields every 20.",
+  "control": "Separate existing Omega=3 continuation remains at Omega=3 throughout. The previously proposed ramp branch was cancelled."
+}
