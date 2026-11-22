@@ -1,0 +1,46 @@
+{
+  "status": "GPU_PILOT_SUBMITTED",
+  "cpu_job": "2133948",
+  "pilot_job": "2134379",
+  "production_submitted": false,
+  "omega": 3,
+  "latitude_degrees_north": 67.5,
+  "beta": 0.003211688852166031,
+  "domain": [
+    4,
+    8,
+    1
+  ],
+  "production_grid": [
+    256,
+    512,
+    80
+  ],
+  "pilot_grid": [
+    128,
+    256,
+    80
+  ],
+  "pilot_target_time": 250,
+  "production_target_time": 1000,
+  "jet_peak": 0.25,
+  "central_jet_du_dy": 0.4119791068820187,
+  "jet_relaxation_time": 200,
+  "initial_eddy_rms": 0.136,
+  "cpu_validation": {
+    "status": "PASS",
+    "control_restart_error": 0,
+    "pilot_restart_error": 1.6045906194462473e-13,
+    "shear_restart_error": 3.907985046680551e-13,
+    "original_no_shear_initial_state_error": 1.4210854715202004e-14,
+    "shear_initial_max_mach": 0.36146508159818214,
+    "pilot_horizontal_balance_error_over_fU": 0.001491078526451609
+  },
+  "notes": [
+    "Northern-hemisphere qualitative GRS shear analogue, not a reconstruction at the GRS latitude.",
+    "Balanced jets require finite-amplitude pressure/density changes in the cap; the original heating/cooling law is retained.",
+    "Uniform mass normalization preserves imposed velocities; no artificial total KE matching in the sheared case.",
+    "Pilot retains buoyancy and dissipation with external heating/cooling disabled; stratification is not frozen.",
+    "Pilot failure withholds both long integrations."
+  ]
+}
