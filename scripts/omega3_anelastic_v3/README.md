@@ -1,3 +1,5 @@
+**Superseded by `omega3_anelastic_v4`.** CPU preflight passed, but GPU validation caught a diagnostic reduction using a host-only `mean` on a GPU view. No full-resolution integration was performed with v3. V4 corrects that readout; physics is unchanged.
+
 # Matched Ω=3 anelastic comparison
 
 Purpose: test whether the finite-amplitude anticyclonic preference in the original compressible Ω=3 periodic box also occurs with Breeze's anelastic dynamics. This is not a beta/channel experiment, and not a new cap experiment.
