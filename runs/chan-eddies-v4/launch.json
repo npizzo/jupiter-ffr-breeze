@@ -1,5 +1,5 @@
 {
-  "status": "BOTH_RUNNING_PAST_PREVIOUS_CUTOFF",
+  "status": "JOBS_ENDED_CASE3_WALL_LIMIT_CASE4_TARGET_COMPLETE",
   "cpu_job": "2089980",
   "physics_unchanged_from": "chan_eddies_v3",
   "energy_policy": "Warning only at 10% of heating input; cumulative energy defect and native KE logged.",
@@ -49,5 +49,24 @@
       "energy_defect_over_restart_ke": -0.1643682363094465
     }
   },
-  "energy_caution": "Energy defect is growing: about 16\u201317% of restart kinetic energy at these observations. This is not a closed energy-budget validation. User authorized continued exploratory integration with the residual visible and warning-only."
+  "energy_caution": "Energy defect is growing: about 16\u201317% of restart kinetic energy at these observations. This is not a closed energy-budget validation. User authorized continued exploratory integration with the residual visible and warning-only.",
+  "analysis_job": "2092393",
+  "gallery": "https://npizzo.github.io/jupiter-ffr-breeze/gallery/chan-eddies-v4/",
+  "final_status": {
+    "case3": {
+      "job": "2090025",
+      "status": "WALL_LIMIT",
+      "final_time": 237.29182539260233,
+      "last_movie_time": 237.0,
+      "checkpoint": "data/chan-eddies-v4-case3-2090025/parent/checkpoints/checkpoint_iteration36726.jld2"
+    },
+    "case4": {
+      "job": "2090026",
+      "status": "COMPLETE",
+      "final_time": 263.06682088232816,
+      "last_movie_time": 263.0,
+      "checkpoint": "data/chan-eddies-v4-case4-2090026/parent/checkpoints/checkpoint_iteration42834.jld2"
+    }
+  }
 }
+
