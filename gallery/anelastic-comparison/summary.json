@@ -1,0 +1,316 @@
+{
+  "cases": {
+    "anelastic": {
+      "final_time": 1000,
+      "frame_count": 1001,
+      "heights": [
+        0.19375,
+        0.49375,
+        0.89375
+      ],
+      "f": 5.54327719506772,
+      "final_modes": {
+        "barotropic_ke": 0.01419116687878097,
+        "gravest_ke": 0.013126354135410696,
+        "low_k_le2_ke": 0.013600528013649938,
+        "low_k_anticyclonic_enstrophy_fraction": 0.3558265502387333,
+        "low_k_positive_peak": 0.7115209714575552,
+        "low_k_negative_peak": 0.33038186157089783,
+        "barotropic_skew": 0.7591869695510663,
+        "low_k_skew": 0.8730902210169104,
+        "time": 1000.0,
+        "skew_0": 0.3780020533407717,
+        "skew_1": 0.02361085975661752,
+        "skew_2": 1.8412656531151703
+      },
+      "windows": {
+        "450-500": {
+          "barotropic_ke": 0.015691550202348945,
+          "gravest_ke": 0.013583811953321777,
+          "low_k_le2_ke": 0.014479302331501805,
+          "low_k_anticyclonic_enstrophy_fraction": 0.343985140336087,
+          "low_k_positive_peak": 0.7817699977390705,
+          "low_k_negative_peak": 0.41984466358736205,
+          "barotropic_skew": 1.1439835530664708,
+          "low_k_skew": 0.9495849032141637,
+          "skew_0": 0.43057757560421145,
+          "skew_1": 0.03664113714714178,
+          "skew_2": 2.242584708694744
+        },
+        "700-750": {
+          "barotropic_ke": 0.014908349599074125,
+          "gravest_ke": 0.013469975299479534,
+          "low_k_le2_ke": 0.014026926854582253,
+          "low_k_anticyclonic_enstrophy_fraction": 0.3479514837896733,
+          "low_k_positive_peak": 0.7355803702682205,
+          "low_k_negative_peak": 0.32497516291396356,
+          "barotropic_skew": 0.9553739113070567,
+          "low_k_skew": 0.921500582044379,
+          "skew_0": 0.34591563801208924,
+          "skew_1": 0.03332186990799941,
+          "skew_2": 2.2947001323318763
+        },
+        "950-1000": {
+          "barotropic_ke": 0.014260728103793963,
+          "gravest_ke": 0.013136351964234615,
+          "low_k_le2_ke": 0.013664941431840553,
+          "low_k_anticyclonic_enstrophy_fraction": 0.3536517263129898,
+          "low_k_positive_peak": 0.7194411610453386,
+          "low_k_negative_peak": 0.3486317134947599,
+          "barotropic_skew": 0.775495756820309,
+          "low_k_skew": 0.8855621202026694,
+          "skew_0": 0.28285507507955415,
+          "skew_1": 0.017107311556811645,
+          "skew_2": 2.005934945066919
+        }
+      },
+      "max_parseval_error": 7.32776395118151e-10,
+      "final_diagnostics": {
+        "time": 1000.0,
+        "iteration": 149571.0,
+        "dt": 0.00700010444673764,
+        "wall_seconds": 11577.295986175537,
+        "kinetic_energy": 9.69602823445112,
+        "urms": 0.17178555692277309,
+        "max_mach": 0.2375633883370128,
+        "skew_lower": 0.3780020515083496,
+        "skew_mid": 0.023610858826894756,
+        "skew_upper": 1.841265662089289,
+        "constraint_absolute": 5.0963677722393186e-12,
+        "constraint_relative": 2.3796184274717837e-15,
+        "theta_departure_max": 0.11445439614391328,
+        "thermodynamic_density_departure_max": 0.12592414080216452,
+        "min_temperature": 0.8940242356970365,
+        "wall_w_max": 0.0,
+        "top_heat_flux": -3.211068824740231e-05,
+        "cooling_power": -0.005336080198821853,
+        "theta_mass": 288.09161829678555,
+        "barotropic_ke": 0.014191166876450039,
+        "nu_mean": 6.696154642637776e-06
+      },
+      "sources": [
+        "data/omega3-anelastic-v4-run-2113277/parent",
+        "data/omega3-anelastic-long-v1-run-2113514/parent"
+      ],
+      "max_constraint_relative": 6.2991506896165e-15,
+      "max_mach": 0.7102272140539122,
+      "mapping": {
+        "velocity_max_abs_error": 8.326672684688674e-17,
+        "reference_max_abs_error": 0.0,
+        "temperature_mapping_mass_weighted_rms_fraction": 0.03159551245296704,
+        "mass_weighting": "All stresses, flux conductances, cooling and prognostic weights use rho0. Entropy is cp*log(T)-log(pref), not cv*log(T)-log(rho0). This is the anelastic approximation of the original constitutive laws.",
+        "temperature_mapping_max_fraction": 0.28759474489903836,
+        "compressible_pressure_mass_weighted_departure_rms": 0.07758629514074258,
+        "mapping": "Identical face velocities, specific potential temperature/entropy and dye; identical hydrostatic reference. Continuity density frozen to rho0; thermodynamic pressure fixed to pref. Initial T and thermodynamic density cannot also match.",
+        "compressible_pressure_departure_max": 0.6790077674270478,
+        "tracer_max_abs_error": 2.7755575615628914e-17,
+        "anelastic_thermodynamic_density_departure_max": 0.21300666244459898,
+        "temperature_mapping_rms_fraction": 0.051334369054123564,
+        "theta_max_abs_error": 1.1102230246251565e-16,
+        "compressible_density_departure_max": 0.6487388884121921,
+        "theta_departure_max": 0.26158407183087573,
+        "compressible_density_mass_weighted_departure_rms": 0.054958562417423834,
+        "anelastic_initial_constraint_relative": 2.3847608050697107e-16,
+        "compressible_initialization": {
+          "N2_deep_min": -0.016288381763480686,
+          "N2_deep_max": 0.022191944165612654,
+          "pressure_offset": 0.0,
+          "turnover_time": 13.15334104411641,
+          "status": "INITIALIZED",
+          "velocity_divergence_max": 4.052314039881821e-15,
+          "thermal_equilibrium": false,
+          "balanced_energy_difference": 3.0786595672097974,
+          "mass": 659.567336022521,
+          "pressure_readback_error": 6.291739307975109e-16,
+          "total_energy": 5724.559721900965,
+          "native_vorticity_skewness": -3.183758199699388e-17,
+          "note": "Finite-amplitude mixed-sign flow; mass and kinetic energy matched; pressure/density and balanced thermal/potential energy differ for rotation-dependent balance. No mature thermal parent.",
+          "density_relative_departure_max": 0.6487388884121921,
+          "initial_rms": 0.136,
+          "wavelength": 1.7888543819998317,
+          "max_abs_zeta_over_f": 0.23059345124399916,
+          "matching_coefficients": [
+            -0.0008780014840024441,
+            0.002567961120910176
+          ],
+          "N2_cap_max": 52.82776665689243,
+          "kinetic_energy": 6.099678723536275,
+          "N2_cap_min": 47.42551444689919
+        }
+      }
+    },
+    "compressible": {
+      "final_time": 1000,
+      "frame_count": 1001,
+      "heights": [
+        0.19375,
+        0.49375,
+        0.89375
+      ],
+      "f": 5.54327719506772,
+      "final_modes": {
+        "barotropic_ke": 0.007263065486363557,
+        "gravest_ke": 0.004994621713297554,
+        "low_k_le2_ke": 0.005925141272602667,
+        "low_k_anticyclonic_enstrophy_fraction": 0.5169342479598272,
+        "low_k_positive_peak": 0.493805454349961,
+        "low_k_negative_peak": 0.5086488275221477,
+        "barotropic_skew": 0.2990723746548885,
+        "low_k_skew": -0.0948772648479066,
+        "time": 1000.0,
+        "skew_0": 0.07234815615604938,
+        "skew_1": 0.15594582393546694,
+        "skew_2": -0.6505212764525014
+      },
+      "windows": {
+        "450-500": {
+          "barotropic_ke": 0.007139009210534659,
+          "gravest_ke": 0.004583918120782946,
+          "low_k_le2_ke": 0.005610429229060007,
+          "low_k_anticyclonic_enstrophy_fraction": 0.5287295825165723,
+          "low_k_positive_peak": 0.4821383788906842,
+          "low_k_negative_peak": 0.5130077559459534,
+          "barotropic_skew": 0.45218238885041506,
+          "low_k_skew": -0.17522137962871875,
+          "skew_0": 0.1277203894544228,
+          "skew_1": 0.09398726123708802,
+          "skew_2": -1.3689306828850334
+        },
+        "700-750": {
+          "barotropic_ke": 0.007133555759549356,
+          "gravest_ke": 0.004674384889980961,
+          "low_k_le2_ke": 0.005837426113668367,
+          "low_k_anticyclonic_enstrophy_fraction": 0.5186761733383868,
+          "low_k_positive_peak": 0.49261958693689323,
+          "low_k_negative_peak": 0.5221657242192267,
+          "barotropic_skew": 0.4139444902967415,
+          "low_k_skew": -0.12795014162960233,
+          "skew_0": 0.14302458665768938,
+          "skew_1": 0.14806503838415333,
+          "skew_2": -1.3526686221625626
+        },
+        "950-1000": {
+          "barotropic_ke": 0.007276848835748972,
+          "gravest_ke": 0.004913930869973827,
+          "low_k_le2_ke": 0.006072819408721773,
+          "low_k_anticyclonic_enstrophy_fraction": 0.519713592754302,
+          "low_k_positive_peak": 0.5214020755808889,
+          "low_k_negative_peak": 0.5450612487634793,
+          "barotropic_skew": 0.3142502339432471,
+          "low_k_skew": -0.12099894295386654,
+          "skew_0": 0.09496907639815039,
+          "skew_1": 0.14957393114400336,
+          "skew_2": -0.6026707128074541
+        }
+      },
+      "max_parseval_error": 8.6441032109974e-10,
+      "final_diagnostics": {
+        "time": 1000.0,
+        "iteration": 137301.0,
+        "dt": 0.006276389785739995,
+        "wall_seconds": 9747.470545053482,
+        "mass": 659.567336022521,
+        "total_energy": 6145.356448695558,
+        "urms_conv": 0.12553763258167638,
+        "Ro": 0.026824280466170167,
+        "Re": 10447.420945952383,
+        "max_mach": 0.315982189571569,
+        "barotropic_ke": 0.007263065486026814,
+        "skew_lower": 0.07234815649887134,
+        "skew_mid": 0.1559458240196703,
+        "skew_upper": -0.6505212729996532,
+        "top_heat_flux": -4.138936485524876e-05,
+        "cooling_power": 0.009896761489314093,
+        "min_density": 0.6191430522327651,
+        "min_temperature": 0.798119781764579,
+        "wall_w_max": 0.0,
+        "nu_mean": 9.3725862028795e-06,
+        "external_power": 0.49076546834836987,
+        "energy_residual_over_input": -0.1941000432644775,
+        "centered_energy": 6145.343502697858,
+        "centered_residual_over_input": -0.19455530693186818,
+        "kinetic_energy": 5.268760741808396,
+        "cumulative_external_heat_since_restart": 248.14862162434144,
+        "cumulative_energy_defect_since_restart": -44.12121996968597,
+        "energy_defect_over_restart_ke": -8.65667369098362
+      },
+      "sources": [
+        "data/chan-eddies-v3-screen-2089476/case4",
+        "data/chan-eddies-v4-case4-2090026/parent",
+        "data/chan-rotation-response-v1-control-2093290/parent",
+        "data/omega3-long-v1-run-2096858/parent"
+      ]
+    }
+  },
+  "common_fixed_density_weighting": {
+    "anelastic_960": {
+      "barotropic_ke": 0.014303687107497352,
+      "gravest_ke": 0.013149955581180619,
+      "low_k_le2_ke": 0.013709084051012432,
+      "low_k_anticyclonic_enstrophy_fraction": 0.35286750231610686,
+      "low_k_positive_peak": 0.7251274738147169,
+      "low_k_negative_peak": 0.35330429773418626,
+      "barotropic_skew": 0.8747943501951825,
+      "low_k_skew": 0.8918939347571407
+    },
+    "compressible_960": {
+      "barotropic_ke": 0.0073161513190886885,
+      "gravest_ke": 0.004861121341159262,
+      "low_k_le2_ke": 0.006250263118700142,
+      "low_k_anticyclonic_enstrophy_fraction": 0.5153296947061178,
+      "low_k_positive_peak": 0.5464968363491507,
+      "low_k_negative_peak": 0.5720377550384748,
+      "barotropic_skew": 0.27252246721773715,
+      "low_k_skew": -0.10712312105408392
+    },
+    "anelastic_980": {
+      "barotropic_ke": 0.014246363110525889,
+      "gravest_ke": 0.013090677545413237,
+      "low_k_le2_ke": 0.013662160572464733,
+      "low_k_anticyclonic_enstrophy_fraction": 0.35207840654968164,
+      "low_k_positive_peak": 0.7124893894979535,
+      "low_k_negative_peak": 0.3684125448381258,
+      "barotropic_skew": 0.7052611437802428,
+      "low_k_skew": 0.8810303612113987
+    },
+    "compressible_980": {
+      "barotropic_ke": 0.007356340585627159,
+      "gravest_ke": 0.004963891548457932,
+      "low_k_le2_ke": 0.006085480636638171,
+      "low_k_anticyclonic_enstrophy_fraction": 0.5275339672197912,
+      "low_k_positive_peak": 0.5182924838915538,
+      "low_k_negative_peak": 0.5515008409380752,
+      "barotropic_skew": 0.3134145211564963,
+      "low_k_skew": -0.16755758440420562
+    },
+    "anelastic_1000": {
+      "barotropic_ke": 0.014191166876497893,
+      "gravest_ke": 0.01312635413351046,
+      "low_k_le2_ke": 0.013600528011179244,
+      "low_k_anticyclonic_enstrophy_fraction": 0.355826550306183,
+      "low_k_positive_peak": 0.7115209713579922,
+      "low_k_negative_peak": 0.33038186163726224,
+      "barotropic_skew": 0.7591869685068506,
+      "low_k_skew": 0.8730902206750084
+    },
+    "compressible_1000": {
+      "barotropic_ke": 0.007329709412075596,
+      "gravest_ke": 0.005017332396073845,
+      "low_k_le2_ke": 0.005979320294594318,
+      "low_k_anticyclonic_enstrophy_fraction": 0.5177409679829544,
+      "low_k_positive_peak": 0.4981481285579988,
+      "low_k_negative_peak": 0.514256563583756,
+      "barotropic_skew": 0.27785842402795596,
+      "low_k_skew": -0.10073362133054874
+    }
+  },
+  "limitations": [
+    "Same velocity and entropy but thermodynamic pressure/density mapping differs; not an acoustics-only intervention.",
+    "One realization per equation set; no ensemble or resolution-robust causal attribution.",
+    "Anelastic dynamics retains stratification-driven expansion.",
+    "Native depth means have different density weights; common fixed-reference weighting checked at t=960,980,1000.",
+    "Filtered signed enstrophy depends on cutoff and does not uniquely identify a persistent material vortex.",
+    "Spectral occupancy is not an inverse-transfer budget.",
+    "Original compressible energy-budget residual is unresolved; no cross-model energy-closure claim."
+  ]
+}

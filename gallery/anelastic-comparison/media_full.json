@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "frame_count": 1001,
+  "duration": 50.05,
+  "sha256": "b3a6c9a38cbd192ed86c262ca43389bc443b6e55c77e3abaacd080648610cc8e",
+  "bytes": 4432432,
+  "vorticity_limits_per_depth": [
+    3.098829596286365,
+    6.570056325977162,
+    2.0180525226000134
+  ],
+  "vorticity_asinh_width": 0.02,
+  "tracer_asinh_width": 0.01,
+  "tracer_range": [
+    0,
+    1
+  ],
+  "actual_heights": [
+    0.19375,
+    0.49375,
+    0.89375
+  ],
+  "all_integer_time_frames": true,
+  "location": "Unity"
+}
