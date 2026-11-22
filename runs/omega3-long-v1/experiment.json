@@ -1,0 +1,28 @@
+{
+  "restart_time": 500.0,
+  "target_time": 1000.0,
+  "constant_omega": 3.0,
+  "physics_unchanged": true,
+  "cpu_validation": "PASS",
+  "restart_max_abs_error": 0.0,
+  "previous_model_max_abs_error": 0.0,
+  "refreshed_output_max_abs_error": 0.0,
+  "initial_state": "Own final t=500 checkpoint; no reseeding",
+  "grid": [
+    256,
+    256,
+    80
+  ],
+  "geometry": "4 x 4 x 1 periodic horizontal box, impermeable stress-free vertical boundaries",
+  "forcing": "Existing bottom heating and upper cooling/cap, unchanged",
+  "dissipation": "Existing closure and numerical transport, unchanged",
+  "budget_initialization": "First refreshed scheduled diagnostic after restart; no manual stale restart output",
+  "simulation_location": "Unity",
+  "gpu_submission": "Running; advancement beyond restart verified",
+  "allocation_hours": 3.5,
+  "wall_limit_minutes": 200,
+  "automatic_continuation": false,
+  "gpu_validation": "PASS",
+  "verified_time": 501.0,
+  "budget_start_time": 500.5
+}
