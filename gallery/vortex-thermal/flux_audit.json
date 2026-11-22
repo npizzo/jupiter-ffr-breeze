@@ -1,0 +1,113 @@
+{
+  "status": "PASS",
+  "cases": {
+    "omega3": {
+      "initial_full_seed_vorticity_conditioned": {
+        "cyclone": {
+          "temperature_anomaly_bulk": -0.16503030774516225,
+          "w_rms": 0.0
+        },
+        "anticyclone": {
+          "temperature_anomaly_bulk": 0.14413704464935798,
+          "w_rms": 0.0
+        },
+        "background": {
+          "temperature_anomaly_bulk": 0.001060149270332332,
+          "w_rms": 0.0
+        }
+      },
+      "matched_400_480": {
+        "cyclone": {
+          "within_region_covariance_flux": 0.006741057054673063,
+          "smallscale_enthalpy_flux": 0.006194260826111253,
+          "conditional_mean_transport": -0.032026089943019635
+        },
+        "anticyclone": {
+          "within_region_covariance_flux": 0.010850017822425909,
+          "smallscale_enthalpy_flux": 0.009190009128488955,
+          "conditional_mean_transport": -0.017233137427349738
+        },
+        "background": {
+          "within_region_covariance_flux": 0.007247058508514415,
+          "smallscale_enthalpy_flux": 0.007246728506577768,
+          "conditional_mean_transport": 0.015573041226631818
+        }
+      },
+      "last_100": {
+        "cyclone": {
+          "within_region_covariance_flux": 0.010996909055644277,
+          "smallscale_enthalpy_flux": 0.008111265019880777,
+          "conditional_mean_transport": 0.005494970245924817
+        },
+        "anticyclone": {
+          "within_region_covariance_flux": 0.011837202046797519,
+          "smallscale_enthalpy_flux": 0.01164458323696778,
+          "conditional_mean_transport": 0.042479086547916815
+        },
+        "background": {
+          "within_region_covariance_flux": 0.008012031382117975,
+          "smallscale_enthalpy_flux": 0.008982578139944656,
+          "conditional_mean_transport": 0.0014278652489382172
+        }
+      },
+      "decomposition_error_max": 6.25888230132432e-15
+    },
+    "omega45": {
+      "initial_full_seed_vorticity_conditioned": {
+        "cyclone": {
+          "temperature_anomaly_bulk": -0.24011428010325697,
+          "w_rms": 0.0
+        },
+        "anticyclone": {
+          "temperature_anomaly_bulk": 0.22186930680100023,
+          "w_rms": 0.0
+        },
+        "background": {
+          "temperature_anomaly_bulk": 0.000925771864592307,
+          "w_rms": 0.0
+        }
+      },
+      "matched_400_480": {
+        "cyclone": {
+          "within_region_covariance_flux": 0.007659001555065626,
+          "smallscale_enthalpy_flux": 0.006544051878726905,
+          "conditional_mean_transport": -0.07756711930377726
+        },
+        "anticyclone": {
+          "within_region_covariance_flux": 0.007026860723689874,
+          "smallscale_enthalpy_flux": 0.00683016368690648,
+          "conditional_mean_transport": -0.04478818505855331
+        },
+        "background": {
+          "within_region_covariance_flux": 0.005396568139026682,
+          "smallscale_enthalpy_flux": 0.005776398499968806,
+          "conditional_mean_transport": -0.0021677037845561713
+        }
+      },
+      "last_100": {
+        "cyclone": {
+          "within_region_covariance_flux": 0.006980652596131924,
+          "smallscale_enthalpy_flux": 0.0059282188481544545,
+          "conditional_mean_transport": -0.07845572840305245
+        },
+        "anticyclone": {
+          "within_region_covariance_flux": 0.006313881155836213,
+          "smallscale_enthalpy_flux": 0.006498164985667179,
+          "conditional_mean_transport": -0.06041271856885632
+        },
+        "background": {
+          "within_region_covariance_flux": 0.004813348033516065,
+          "smallscale_enthalpy_flux": 0.0058819857720608885,
+          "conditional_mean_transport": 0.0002466028318579095
+        }
+      },
+      "decomposition_error_max": 6.742002789383861e-15
+    }
+  },
+  "definitions": {
+    "within_region_covariance_flux": "Cp mean_region[rho(w-Favre_region_mean(w))(T-Favre_region_mean(T))] at each height",
+    "smallscale_enthalpy_flux": "Cp mean_region[rho w_highpass T_highpass], horizontal Fourier |k|>2; cutoff-dependent diagnostic",
+    "initial": "At t=0 use full depth-mean vorticity of seeded eddies; later use tracked low-pass LSV cores. These are different spatial masks, not a Lagrangian temperature comparison."
+  },
+  "limitation": "Conditional associations and scale-filtered fluxes do not close a vortex energy budget or demonstrate causality."
+}

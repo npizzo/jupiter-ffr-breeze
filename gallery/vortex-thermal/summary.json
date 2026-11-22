@@ -1,0 +1,219 @@
+{
+  "cases": {
+    "omega3": {
+      "last_time": 1000.0,
+      "last_3d_time": 1000.0,
+      "field_velocity_parity_max": 1.7254785544817963e-08,
+      "last_100_bulk_means": {
+        "cyclone": {
+          "temperature_anomaly": -0.2279745121340012,
+          "w_fluct_rms": 0.018715274395621075,
+          "convective_enthalpy_flux": 0.011672552399268,
+          "mass_flux": -0.0003153289399728714
+        },
+        "anticyclone": {
+          "temperature_anomaly": 0.21566554996525336,
+          "w_fluct_rms": 0.0224787068669266,
+          "convective_enthalpy_flux": 0.013818606831271486,
+          "mass_flux": 0.004676566156671996
+        },
+        "background": {
+          "temperature_anomaly": 0.0018378647780922612,
+          "w_fluct_rms": 0.019850547994934062,
+          "convective_enthalpy_flux": 0.008022989947723769,
+          "mass_flux": 0.0003912758188972895
+        }
+      },
+      "matched_400_480_bulk_means": {
+        "cyclone": {
+          "temperature_anomaly": -0.21104113712043526,
+          "w_fluct_rms": 0.016464439464535716,
+          "convective_enthalpy_flux": 0.008881307643814408,
+          "mass_flux": -0.003443207600711161
+        },
+        "anticyclone": {
+          "temperature_anomaly": 0.20894397306623563,
+          "w_fluct_rms": 0.01876269166458333,
+          "convective_enthalpy_flux": 0.009581340103600164,
+          "mass_flux": -0.0019498658589651625
+        },
+        "background": {
+          "temperature_anomaly": 0.001153027752457732,
+          "w_fluct_rms": 0.01749478044269242,
+          "convective_enthalpy_flux": 0.007222920847407449,
+          "mass_flux": 0.0017920266618680547
+        }
+      },
+      "last_100_convective_scales": {
+        "rms": 0.059970006799767724,
+        "horizontal_wavelength": 0.3576921761365517,
+        "rossby_2omega": 0.027951426594142983,
+        "rossby_f": 0.030254406132545764
+      },
+      "ambiguous_identity_samples": 1
+    },
+    "omega45": {
+      "last_time": 491.0,
+      "last_3d_time": 480.0,
+      "field_velocity_parity_max": 1.744008792936569e-08,
+      "last_100_bulk_means": {
+        "cyclone": {
+          "temperature_anomaly": -0.19893008496350115,
+          "w_fluct_rms": 0.013460782022005997,
+          "convective_enthalpy_flux": 0.011863257849704394,
+          "mass_flux": -0.011795921245820148
+        },
+        "anticyclone": {
+          "temperature_anomaly": 0.15761203764130277,
+          "w_fluct_rms": 0.013449217912407859,
+          "convective_enthalpy_flux": 0.004783247406701215,
+          "mass_flux": -0.007110427460600066
+        },
+        "background": {
+          "temperature_anomaly": 0.011399031555778967,
+          "w_fluct_rms": 0.013729939954974889,
+          "convective_enthalpy_flux": 0.004696462967230904,
+          "mass_flux": -0.00019669350358191237
+        }
+      },
+      "matched_400_480_bulk_means": {
+        "cyclone": {
+          "temperature_anomaly": -0.19603195810473448,
+          "w_fluct_rms": 0.013694064355051293,
+          "convective_enthalpy_flux": 0.0126691909350607,
+          "mass_flux": -0.01182891565661725
+        },
+        "anticyclone": {
+          "temperature_anomaly": 0.1561704111265029,
+          "w_fluct_rms": 0.013558730476056964,
+          "convective_enthalpy_flux": 0.006287028866589128,
+          "mass_flux": -0.004611025291756706
+        },
+        "background": {
+          "temperature_anomaly": 0.02157908332762551,
+          "w_fluct_rms": 0.013860714389260217,
+          "convective_enthalpy_flux": 0.005420803763378421,
+          "mass_flux": -0.0006217201246687855
+        }
+      },
+      "last_100_convective_scales": {
+        "rms": 0.08000050762831777,
+        "horizontal_wavelength": 0.7343602742183308,
+        "rossby_2omega": 0.012119226640625416,
+        "rossby_f": 0.013117756389388743
+      },
+      "ambiguous_identity_samples": 0
+    }
+  },
+  "methods": {
+    "core": "Curl of density-weighted depth-mean velocity filtered to 0<|k|<=2; periodic connected regions above 40% of each signed peak; overlap tracking, ambiguous below IoU=.2. Threshold sensitivity .25,.55 retained. Core columns used at every height, not independently tracked slice vortices.",
+    "flux": "Cp*rho*(w-Favre_plane_mean(w))*(T-Favre_plane_mean(T)), Cp=2.5. Also save raw enthalpy, plane-T-anomaly flux and mass flux to expose mean advection.",
+    "rossby": "Remove horizontal |k|<=2 (also <=3 sensitivity) separately at each depth for u,v,w. RMS in z<.78. Horizontal wavelength=4/energy-weighted integer k. Ro=uprime/(2Omega*wavelength), also f convention. Definition explicitly operational, not assumed equal to any paper threshold.",
+    "limitations": [
+      "One realization per rotation; finite-amplitude initial eddies.",
+      "Energy budget is unclosed; conditional correlations cannot establish causality or a closed maintenance budget.",
+      "Core membership threshold and identity ambiguity must be considered.",
+      "3D samples every20; tracks every1; exclude known invalid restart sample."
+    ]
+  },
+  "provenance": {
+    "omega3": {
+      "segments": [
+        "data/chan-eddies-v3-screen-2089476/case4",
+        "data/chan-eddies-v4-case4-2090026/parent",
+        "data/chan-rotation-response-v1-control-2093290/parent",
+        "data/omega3-long-v1-run-2096858/parent"
+      ],
+      "frames": 1001,
+      "fields3d": 52,
+      "sample_times": [
+        0.0,
+        5.0,
+        20.0,
+        40.0,
+        60.0,
+        80.0,
+        100.0,
+        120.0,
+        140.0,
+        160.0,
+        180.0,
+        200.0,
+        220.0,
+        240.0,
+        260.0,
+        280.0,
+        300.0,
+        320.0,
+        340.0,
+        360.0,
+        380.0,
+        400.0,
+        420.0,
+        440.0,
+        460.0,
+        480.0,
+        500.0,
+        520.0,
+        540.0,
+        560.0,
+        580.0,
+        600.0,
+        620.0,
+        640.0,
+        660.0,
+        680.0,
+        700.0,
+        720.0,
+        740.0,
+        760.0,
+        780.0,
+        800.0,
+        820.0,
+        840.0,
+        860.0,
+        880.0,
+        900.0,
+        920.0,
+        940.0,
+        960.0,
+        980.0,
+        1000.0
+      ]
+    },
+    "omega45": {
+      "segments": [
+        "data/chan-fixed45-v2-run-2093564/parent"
+      ],
+      "frames": 492,
+      "fields3d": 25,
+      "sample_times": [
+        0.0,
+        20.0,
+        40.0,
+        60.0,
+        80.0,
+        100.0,
+        120.0,
+        140.0,
+        160.0,
+        180.0,
+        200.0,
+        220.0,
+        240.0,
+        260.0,
+        280.0,
+        300.0,
+        320.0,
+        340.0,
+        360.0,
+        380.0,
+        400.0,
+        420.0,
+        440.0,
+        460.0,
+        480.0
+      ]
+    }
+  }
+}
