@@ -1,0 +1,218 @@
+{
+  "analysis_location": "Unity",
+  "cases": {
+    "omega3": {
+      "omega": 3.0,
+      "f": 5.54327719506772,
+      "status": "COMPLETE",
+      "final_time": 500.0,
+      "last_saved_movie_time": 500.0,
+      "frame_count": 501,
+      "heights": [
+        0.19375,
+        0.49375,
+        0.89375
+      ],
+      "initial_turnovers": 38.01315561749642,
+      "final_diagnostics": {
+        "time": 500.0,
+        "iteration": 71622.0,
+        "dt": 0.008332426719018007,
+        "wall_seconds": 4443.317036867142,
+        "mass": 659.567336022521,
+        "total_energy": 5941.122395340389,
+        "urms_conv": 0.12334930071974193,
+        "Ro": 0.026356688187979045,
+        "Re": 10833.456946163,
+        "max_mach": 0.2135841929734019,
+        "barotropic_ke": 0.007124144498717793,
+        "skew_lower": 0.12259982425710682,
+        "skew_mid": 0.09546879035371712,
+        "skew_upper": -1.8633240538053106,
+        "top_heat_flux": -3.570138341795073e-05,
+        "cooling_power": 0.0006385902146560866,
+        "min_density": 0.4151466110539109,
+        "min_temperature": 0.8442702493339952,
+        "wall_w_max": 0.0,
+        "nu_mean": 8.881048315374097e-06,
+        "external_power": 0.4999326319200311,
+        "energy_residual_over_input": -0.17468396904345718,
+        "centered_energy": 5941.110549445759,
+        "centered_residual_over_input": -0.17425177759045618,
+        "kinetic_energy": 5.099460062444589,
+        "cumulative_external_heat_since_restart": 118.30072904102995,
+        "cumulative_energy_defect_since_restart": -17.928633064899586,
+        "energy_defect_over_restart_ke": -3.3895949216922707,
+        "omega_actual": 3.0,
+        "f_actual": 5.54327719506772
+      },
+      "initial_modes": {
+        "time": 0.0,
+        "barotropic_ke": 0.009245771808777031,
+        "gravest_ke": 2.6911779288911497e-22,
+        "low_k_le2_ke": 2.6911779288911497e-22,
+        "barotropic_skew": 0.0,
+        "low_k_skew": -2.7169983657977797e-17,
+        "skew_0": 0.0,
+        "skew_1": 0.0,
+        "skew_2": 0.0
+      },
+      "final_modes": {
+        "time": 500.0,
+        "barotropic_ke": 0.007124144500069108,
+        "gravest_ke": 0.0046244331027441975,
+        "low_k_le2_ke": 0.005598344084528519,
+        "barotropic_skew": 0.44333357734642137,
+        "low_k_skew": -0.15807242536297694,
+        "skew_0": 0.12259982336200671,
+        "skew_1": 0.09546878914785353,
+        "skew_2": -1.8633240679907643
+      },
+      "last_50_time_units_means": {
+        "barotropic_ke": 0.007139009210534659,
+        "gravest_ke": 0.004583918120782946,
+        "low_k_le2_ke": 0.005610429229060007,
+        "barotropic_skew": 0.45218238885041506,
+        "low_k_skew": -0.17522137962871875,
+        "skew_0": 0.1277203894544228,
+        "skew_1": 0.09398726123708802,
+        "skew_2": -1.3689306828850334
+      },
+      "energy_budget_interval": [
+        263.5,
+        500.0
+      ],
+      "energy_defect_corrected_interval": -17.928633064899586,
+      "net_heat_corrected_interval": 118.30072904102995,
+      "defect_over_net_heat": -0.15155133201826204,
+      "defect_over_initial_ke": -2.9392749811100707,
+      "max_mass_relative_error": 4.440892098500626e-16,
+      "max_parseval_error": 8.126740417877727e-10,
+      "checkpoint_present": true,
+      "restart_output_correction": {
+        "excluded_time": 263.06682088232816,
+        "excluded_movie_frame": "frame_0026307.jld2",
+        "valid_budget_start_time": 263.5,
+        "last_time": 500.0,
+        "reason": "Manual restart output preceded the derived-state update. Restored prognostic state is advanced normally by run initialization; CPU control comparison matched previous implementation exactly. Raw first output and cumulative offsets are invalid diagnostics, not a physical energy jump.",
+        "missing_budget_interval": [
+          263.06682088232816,
+          263.5
+        ],
+        "corrected_final_energy_defect": -17.928633064899586,
+        "corrected_net_heat": 118.30072904102995,
+        "raw_output_modified": false,
+        "recompute_after_completion": true
+      },
+      "grid": [
+        256,
+        256,
+        80
+      ],
+      "domain": [
+        4,
+        4,
+        1
+      ],
+      "initial_rms": 0.136,
+      "windows": {
+        "213-263": {
+          "barotropic_ke": 0.007572968363475054,
+          "gravest_ke": 0.004524710905406731,
+          "low_k_le2_ke": 0.005608930365150909,
+          "barotropic_skew": 0.4566789144753674,
+          "low_k_skew": -0.18652059423664877,
+          "skew_0": 0.08466905637407574,
+          "skew_1": -0.1612084090113805,
+          "skew_2": -0.054090486265969594
+        },
+        "300-350": {
+          "barotropic_ke": 0.007332682720151273,
+          "gravest_ke": 0.004520705883041358,
+          "low_k_le2_ke": 0.005750419827575945,
+          "barotropic_skew": 0.49573515077987634,
+          "low_k_skew": -0.21171716334068474,
+          "skew_0": 0.13956161703248227,
+          "skew_1": -0.0209283236162027,
+          "skew_2": -0.29549986303115017
+        },
+        "400-450": {
+          "barotropic_ke": 0.007199029840462856,
+          "gravest_ke": 0.004549818252316067,
+          "low_k_le2_ke": 0.005674430630010542,
+          "barotropic_skew": 0.4676350708296371,
+          "low_k_skew": -0.1547671037284906,
+          "skew_0": 0.12974765456555257,
+          "skew_1": 0.0883705533982508,
+          "skew_2": -1.0904447813352316
+        },
+        "450-500": {
+          "barotropic_ke": 0.007139009210534659,
+          "gravest_ke": 0.004583918120782946,
+          "low_k_le2_ke": 0.005610429229060007,
+          "barotropic_skew": 0.45218238885041506,
+          "low_k_skew": -0.17522137962871875,
+          "skew_0": 0.1277203894544228,
+          "skew_1": 0.09398726123708802,
+          "skew_2": -1.3689306828850334
+        }
+      },
+      "final_gravest_fraction": 0.6491211825783907,
+      "final_ke_over_initial": 0.7705299944030787,
+      "last50_skew_ranges": {
+        "barotropic_skew": [
+          0.39433094112113426,
+          0.5158771600650406
+        ],
+        "low_k_skew": [
+          -0.1871332583017903,
+          -0.15720208748884115
+        ],
+        "skew_0": [
+          0.04799699816275989,
+          0.19538158405848066
+        ],
+        "skew_1": [
+          0.03884488713309926,
+          0.1651850812194692
+        ],
+        "skew_2": [
+          -1.8719046297696011,
+          -0.766019134556997
+        ]
+      },
+      "movie": {
+        "file": "omega3.mp4",
+        "fps": 10,
+        "duration_seconds": 50.1,
+        "full_decode": "PASS",
+        "bytes": 8357643,
+        "sha256": "639d99145f223189923297aab51ae3fb6232e64e22a15a03354f72a8bbf73a2d"
+      }
+    }
+  },
+  "scales": {
+    "vorticity_limits_per_depth": [
+      3.6358306338887045,
+      5.370106719323283,
+      2.826487388402012
+    ],
+    "vorticity_asinh_width": 0.02,
+    "tracer_center": 0.1,
+    "tracer_asinh_width": 0.01,
+    "tracer_full_range": [
+      0.04628906399011612,
+      0.15438155829906464
+    ],
+    "fixed_across_cases_and_time": true
+  },
+  "limitations": [
+    "Finite-amplitude seeded response, not spontaneous formation from weak noise.",
+    "One realization per rotation; no ensemble sign-transition claim.",
+    "Pressure and density balance depend on rotation; thermal background not equilibrated.",
+    "Energy budget not closed; numerical loss remains substantial.",
+    "Density-weighted depth-mean spectra are not an energy-transfer budget.",
+    "Movie includes every integer-time saved frame; half-time screen frames omitted to keep a constant playback cadence.",
+    "Invalid derived-state restart sample at t=263.06682088232816 omitted. Energy budget rebased at t=263.5; omitted interval is not assigned an energy defect."
+  ]
+}
