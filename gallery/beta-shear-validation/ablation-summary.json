@@ -1,0 +1,390 @@
+{
+  "source_job": 2136871,
+  "cases": {
+    "baseline": {
+      "status": "COMPLETE",
+      "last": {
+        "time": 30.0,
+        "dt": 0.016666666666666666,
+        "min_temperature": 0.844240634148091,
+        "max_mach": 0.20978581488027243,
+        "nonzonal_velocity_rms": 0.007422426168951699,
+        "jet_profile_rms_error": 0.014893242533644853,
+        "kinetic_energy": 0.8725003195274383,
+        "energy_defect_over_restart_ke": -0.019385369234427945
+      },
+      "samples": [
+        {
+          "time": 0.0,
+          "dt": 0.011000000000000001,
+          "min_temperature": 0.9437069770927887,
+          "max_mach": 0.1975184543856866,
+          "nonzonal_velocity_rms": 1.5271213493101237e-17,
+          "jet_profile_rms_error": 1.690204199439291e-17,
+          "kinetic_energy": 0.8603888147029406,
+          "energy_defect_over_restart_ke": 0.0
+        },
+        {
+          "time": 5.0,
+          "dt": 0.016666666666666666,
+          "min_temperature": 0.9274598807853371,
+          "max_mach": 0.19713118569260143,
+          "nonzonal_velocity_rms": 0.00022415098427845505,
+          "jet_profile_rms_error": 0.00045308988921985633,
+          "kinetic_energy": 0.8597208049251881,
+          "energy_defect_over_restart_ke": 1.4601384464603743e-05
+        },
+        {
+          "time": 10.0,
+          "dt": 0.016666666666666666,
+          "min_temperature": 0.9087365583357083,
+          "max_mach": 0.19773618112815733,
+          "nonzonal_velocity_rms": 0.00030461493338577956,
+          "jet_profile_rms_error": 0.0007738217210548625,
+          "kinetic_energy": 0.859840781818496,
+          "energy_defect_over_restart_ke": 2.074681434728733e-05
+        },
+        {
+          "time": 15.0,
+          "dt": 0.016666666666666666,
+          "min_temperature": 0.8873339367912163,
+          "max_mach": 0.19696766669932672,
+          "nonzonal_velocity_rms": 0.0008063686970206227,
+          "jet_profile_rms_error": 0.0015798832145547913,
+          "kinetic_energy": 0.8596348950099304,
+          "energy_defect_over_restart_ke": 2.2102850865238712e-05
+        },
+        {
+          "time": 20.0,
+          "dt": 0.016666666666666666,
+          "min_temperature": 0.872134615176487,
+          "max_mach": 0.20274437349482247,
+          "nonzonal_velocity_rms": 0.0034705847099852053,
+          "jet_profile_rms_error": 0.004712388491387874,
+          "kinetic_energy": 0.8609549479678651,
+          "energy_defect_over_restart_ke": -0.00022397494906672264
+        },
+        {
+          "time": 25.0,
+          "dt": 0.016666666666666666,
+          "min_temperature": 0.8568123419137452,
+          "max_mach": 0.2064477505167426,
+          "nonzonal_velocity_rms": 0.0071111063498334815,
+          "jet_profile_rms_error": 0.0110533271036666,
+          "kinetic_energy": 0.8673919660874119,
+          "energy_defect_over_restart_ke": -0.005371584341521497
+        },
+        {
+          "time": 30.0,
+          "dt": 0.016666666666666666,
+          "min_temperature": 0.844240634148091,
+          "max_mach": 0.20978581488027243,
+          "nonzonal_velocity_rms": 0.007422426168951699,
+          "jet_profile_rms_error": 0.014893242533644853,
+          "kinetic_energy": 0.8725003195274383,
+          "energy_defect_over_restart_ke": -0.019385369234427945
+        }
+      ],
+      "grid": [
+        8,
+        256,
+        80
+      ],
+      "dx": 0.03125,
+      "dy": 0.03125,
+      "initial_rms": 0.0,
+      "perturbation": 0.0,
+      "entropy_diffusion_factor": 1,
+      "horizontal_rotation_factor": 1
+    },
+    "half_dt": {
+      "status": "COMPLETE",
+      "last": {
+        "time": 30.0,
+        "dt": 0.008333333333333333,
+        "min_temperature": 0.8442304880382074,
+        "max_mach": 0.2097855141834795,
+        "nonzonal_velocity_rms": 0.007422295447869265,
+        "jet_profile_rms_error": 0.014895187098158638,
+        "kinetic_energy": 0.8725025719646645,
+        "energy_defect_over_restart_ke": -0.019388414464604466
+      },
+      "samples": [
+        {
+          "time": 0.0,
+          "dt": 0.008333333333333333,
+          "min_temperature": 0.9437069770927887,
+          "max_mach": 0.1975184543856866,
+          "nonzonal_velocity_rms": 1.5271213493101237e-17,
+          "jet_profile_rms_error": 1.690204199439291e-17,
+          "kinetic_energy": 0.8603888147029406,
+          "energy_defect_over_restart_ke": 0.0
+        },
+        {
+          "time": 5.0,
+          "dt": 0.008333333333333333,
+          "min_temperature": 0.92745925081058,
+          "max_mach": 0.19712921485308676,
+          "nonzonal_velocity_rms": 0.0002241463765965392,
+          "jet_profile_rms_error": 0.000453122800530489,
+          "kinetic_energy": 0.8597207824477664,
+          "energy_defect_over_restart_ke": 1.4603216118675955e-05
+        },
+        {
+          "time": 10.0,
+          "dt": 0.008333333333333333,
+          "min_temperature": 0.908736087481,
+          "max_mach": 0.1977381221255309,
+          "nonzonal_velocity_rms": 0.0003047623086293548,
+          "jet_profile_rms_error": 0.0007739051065330882,
+          "kinetic_energy": 0.8598409886060843,
+          "energy_defect_over_restart_ke": 2.064198669569289e-05
+        },
+        {
+          "time": 15.0,
+          "dt": 0.008333333333333333,
+          "min_temperature": 0.8873251984733623,
+          "max_mach": 0.19696193529542522,
+          "nonzonal_velocity_rms": 0.0008065523679088243,
+          "jet_profile_rms_error": 0.0015800147778543897,
+          "kinetic_energy": 0.8596348452995279,
+          "energy_defect_over_restart_ke": 2.2167735899091504e-05
+        },
+        {
+          "time": 20.0,
+          "dt": 0.008333333333333333,
+          "min_temperature": 0.8721267948302805,
+          "max_mach": 0.20273921885158067,
+          "nonzonal_velocity_rms": 0.0034710787750949624,
+          "jet_profile_rms_error": 0.004713118703246763,
+          "kinetic_energy": 0.8609554228736658,
+          "energy_defect_over_restart_ke": -0.0002238999630099607
+        },
+        {
+          "time": 25.0,
+          "dt": 0.008333333333333333,
+          "min_temperature": 0.8568048584687736,
+          "max_mach": 0.2064421556675971,
+          "nonzonal_velocity_rms": 0.007112123419451277,
+          "jet_profile_rms_error": 0.011055696319965839,
+          "kinetic_energy": 0.8673941990313102,
+          "energy_defect_over_restart_ke": -0.005372412123580637
+        },
+        {
+          "time": 30.0,
+          "dt": 0.008333333333333333,
+          "min_temperature": 0.8442304880382074,
+          "max_mach": 0.2097855141834795,
+          "nonzonal_velocity_rms": 0.007422295447869265,
+          "jet_profile_rms_error": 0.014895187098158638,
+          "kinetic_energy": 0.8725025719646645,
+          "energy_defect_over_restart_ke": -0.019388414464604466
+        }
+      ],
+      "grid": [
+        8,
+        256,
+        80
+      ],
+      "dx": 0.03125,
+      "dy": 0.03125,
+      "initial_rms": 0.0,
+      "perturbation": 0.0,
+      "entropy_diffusion_factor": 1,
+      "horizontal_rotation_factor": 1
+    },
+    "no_entropy_diffusion": {
+      "status": "COMPLETE",
+      "last": {
+        "time": 30.0,
+        "dt": 0.016666666666666666,
+        "min_temperature": 0.9427106283970224,
+        "max_mach": 0.25072045254924835,
+        "nonzonal_velocity_rms": 0.011581971967302979,
+        "jet_profile_rms_error": 0.01877613832798711,
+        "kinetic_energy": 0.883173687511159,
+        "energy_defect_over_restart_ke": -0.050527734449719905
+      },
+      "samples": [
+        {
+          "time": 0.0,
+          "dt": 0.011000000000000001,
+          "min_temperature": 0.9437069770927887,
+          "max_mach": 0.1975184543856866,
+          "nonzonal_velocity_rms": 1.5271213493101237e-17,
+          "jet_profile_rms_error": 1.690204199439291e-17,
+          "kinetic_energy": 0.8603888147029406,
+          "energy_defect_over_restart_ke": 0.0
+        },
+        {
+          "time": 5.0,
+          "dt": 0.016666666666666666,
+          "min_temperature": 0.9433206847195803,
+          "max_mach": 0.1974056128797021,
+          "nonzonal_velocity_rms": 0.00021788826456288393,
+          "jet_profile_rms_error": 0.000322616154853622,
+          "kinetic_energy": 0.8598131144006373,
+          "energy_defect_over_restart_ke": 1.6345948982732186e-05
+        },
+        {
+          "time": 10.0,
+          "dt": 0.016666666666666666,
+          "min_temperature": 0.9430193714472143,
+          "max_mach": 0.19772151752760983,
+          "nonzonal_velocity_rms": 0.00024273917675918678,
+          "jet_profile_rms_error": 0.0003666333147857543,
+          "kinetic_energy": 0.860008931335991,
+          "energy_defect_over_restart_ke": 2.7438173911558322e-05
+        },
+        {
+          "time": 15.0,
+          "dt": 0.016666666666666666,
+          "min_temperature": 0.9431164529908288,
+          "max_mach": 0.19705740420300655,
+          "nonzonal_velocity_rms": 0.0009049372261713468,
+          "jet_profile_rms_error": 0.0011397504666223958,
+          "kinetic_energy": 0.8599163032114309,
+          "energy_defect_over_restart_ke": 3.505664574875135e-05
+        },
+        {
+          "time": 20.0,
+          "dt": 0.016666666666666666,
+          "min_temperature": 0.9431882014334161,
+          "max_mach": 0.19764992307052462,
+          "nonzonal_velocity_rms": 0.004916165416123061,
+          "jet_profile_rms_error": 0.005453653941668462,
+          "kinetic_energy": 0.8625266902557627,
+          "energy_defect_over_restart_ke": -0.0005464111977722946
+        },
+        {
+          "time": 25.0,
+          "dt": 0.016666666666666666,
+          "min_temperature": 0.9431996176715824,
+          "max_mach": 0.2271594927877121,
+          "nonzonal_velocity_rms": 0.010002835720620613,
+          "jet_profile_rms_error": 0.013751131934009722,
+          "kinetic_energy": 0.8740277891158762,
+          "energy_defect_over_restart_ke": -0.014940171273165687
+        },
+        {
+          "time": 30.0,
+          "dt": 0.016666666666666666,
+          "min_temperature": 0.9427106283970224,
+          "max_mach": 0.25072045254924835,
+          "nonzonal_velocity_rms": 0.011581971967302979,
+          "jet_profile_rms_error": 0.01877613832798711,
+          "kinetic_energy": 0.883173687511159,
+          "energy_defect_over_restart_ke": -0.050527734449719905
+        }
+      ],
+      "grid": [
+        8,
+        256,
+        80
+      ],
+      "dx": 0.03125,
+      "dy": 0.03125,
+      "initial_rms": 0.0,
+      "perturbation": 0.0,
+      "entropy_diffusion_factor": 0.0,
+      "horizontal_rotation_factor": 1
+    },
+    "no_horizontal_rotation": {
+      "status": "COMPLETE",
+      "last": {
+        "time": 30.0,
+        "dt": 0.016666666666666666,
+        "min_temperature": 0.8661049488277082,
+        "max_mach": 0.19751715368924425,
+        "nonzonal_velocity_rms": 0.0008302507354448464,
+        "jet_profile_rms_error": 0.002403692886209234,
+        "kinetic_energy": 0.8585543380509789,
+        "energy_defect_over_restart_ke": 1.581575812416362e-05
+      },
+      "samples": [
+        {
+          "time": 0.0,
+          "dt": 0.011000000000000001,
+          "min_temperature": 0.9554779812205917,
+          "max_mach": 0.19275604320833523,
+          "nonzonal_velocity_rms": 1.5297937149216573e-17,
+          "jet_profile_rms_error": 1.6952544662803555e-17,
+          "kinetic_energy": 0.8599261167144494,
+          "energy_defect_over_restart_ke": 0.0
+        },
+        {
+          "time": 5.0,
+          "dt": 0.016666666666666666,
+          "min_temperature": 0.9485738821782757,
+          "max_mach": 0.19296163992502355,
+          "nonzonal_velocity_rms": 0.00035676863090771294,
+          "jet_profile_rms_error": 0.0006741591259750297,
+          "kinetic_energy": 0.8592628277727568,
+          "energy_defect_over_restart_ke": 1.6171489546154416e-05
+        },
+        {
+          "time": 10.0,
+          "dt": 0.016666666666666666,
+          "min_temperature": 0.9360111343550572,
+          "max_mach": 0.19291353973466088,
+          "nonzonal_velocity_rms": 0.000444985352621326,
+          "jet_profile_rms_error": 0.0009307150812540701,
+          "kinetic_energy": 0.8594004041399291,
+          "energy_defect_over_restart_ke": 2.0520092979682534e-05
+        },
+        {
+          "time": 15.0,
+          "dt": 0.016666666666666666,
+          "min_temperature": 0.9126938882507057,
+          "max_mach": 0.19294750214662862,
+          "nonzonal_velocity_rms": 0.0005577930697021983,
+          "jet_profile_rms_error": 0.0011873111809913238,
+          "kinetic_energy": 0.8593581931421599,
+          "energy_defect_over_restart_ke": 2.161831166607799e-05
+        },
+        {
+          "time": 20.0,
+          "dt": 0.016666666666666666,
+          "min_temperature": 0.8947473362722549,
+          "max_mach": 0.19182934657699752,
+          "nonzonal_velocity_rms": 0.0006203993852668364,
+          "jet_profile_rms_error": 0.0015671881418189615,
+          "kinetic_energy": 0.8587691347850775,
+          "energy_defect_over_restart_ke": 2.133526212435258e-05
+        },
+        {
+          "time": 25.0,
+          "dt": 0.016666666666666666,
+          "min_temperature": 0.8803054784633103,
+          "max_mach": 0.19516774229325848,
+          "nonzonal_velocity_rms": 0.0007226283268695926,
+          "jet_profile_rms_error": 0.0019292573219656022,
+          "kinetic_energy": 0.8590794748716741,
+          "energy_defect_over_restart_ke": 2.013328172564131e-05
+        },
+        {
+          "time": 30.0,
+          "dt": 0.016666666666666666,
+          "min_temperature": 0.8661049488277082,
+          "max_mach": 0.19751715368924425,
+          "nonzonal_velocity_rms": 0.0008302507354448464,
+          "jet_profile_rms_error": 0.002403692886209234,
+          "kinetic_energy": 0.8585543380509789,
+          "energy_defect_over_restart_ke": 1.581575812416362e-05
+        }
+      ],
+      "grid": [
+        8,
+        256,
+        80
+      ],
+      "dx": 0.03125,
+      "dy": 0.03125,
+      "initial_rms": 0.0,
+      "perturbation": 0.0,
+      "entropy_diffusion_factor": 1,
+      "horizontal_rotation_factor": 0.0
+    }
+  },
+  "scope": "Short x-uniform cross-sections; diagnostic ablations, not production nor a converged nonlinear failure replay."
+}

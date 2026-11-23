@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "simulation_status": "FAILED",
+  "frames": 159,
+  "duration_seconds": 13.25,
+  "bytes": 1378202,
+  "sha256": "3494fb73c1965c7055d94e545a8da090b9f69fe0a4a0f3cbde9cd90fa54368ce",
+  "vorticity_limits": [
+    1.5427016019821167,
+    1.8206206560134888,
+    2.1470491886138916
+  ],
+  "vorticity_asinh_width": 0.02,
+  "tracer_asinh_width": 0.01,
+  "tracer_range": [
+    0,
+    1
+  ],
+  "heights": [
+    0.19375,
+    0.49375,
+    0.89375
+  ],
+  "source": "data/beta-shear-v1-pilot-2134379/parent"
+}

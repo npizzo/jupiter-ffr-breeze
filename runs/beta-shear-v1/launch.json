@@ -1,5 +1,5 @@
 {
-  "status": "GPU_PILOT_SUBMITTED",
+  "status": "GPU_PILOT_FAILED",
   "cpu_job": "2133948",
   "pilot_job": "2134379",
   "production_submitted": false,
@@ -42,5 +42,10 @@
     "Uniform mass normalization preserves imposed velocities; no artificial total KE matching in the sheared case.",
     "Pilot retains buoyancy and dissipation with external heating/cooling disabled; stratification is not frozen.",
     "Pilot failure withholds both long integrations."
-  ]
+  ],
+  "diagnosis_url": "https://npizzo.github.io/jupiter-ffr-breeze/gallery/beta-shear-validation/",
+  "diagnostic_gpu_job": 2136871,
+  "diagnostic_status": "FOUR_CASES_COMPLETE_T30",
+  "pilot_last_finite_time": 158.5,
+  "pilot_elapsed": "00:27:17"
 }
