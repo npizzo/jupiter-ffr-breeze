@@ -1,0 +1,17 @@
+{
+  "parent": "scripts/beta_shear_damping_v1",
+  "parent_job": 2159330,
+  "equations_unchanged_sha256": "b2c22be372f176a882b066d41fd3ca410a044e0777f2c0b2aa542da2216b4490",
+  "cases": [
+    "same nojet",
+    "same modest jet from earlier matched pair"
+  ],
+  "target_times": [
+    20,
+    100
+  ],
+  "guards": "Same as diagnostic extension: Mach0.8 globally,outsideMach0.5; retain all other checks",
+  "changes": "Longer times and case selection; remove1percent energy-continuation gate; continuous energy accounting across t20 restart; add three-plane total/nonzonal sign metrics",
+  "resources": "One fp64GPU allocation30min; main pilots180s each, continuation480s each",
+  "fidelity": "Exploratory. No convergence or inverse-cascade inference from sign metrics. Record actual energy residual, cap profiles, wall extent and jet evolution."
+}
