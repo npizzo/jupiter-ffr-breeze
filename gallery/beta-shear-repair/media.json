@@ -1,0 +1,191 @@
+[
+  {
+    "simulation_status": "COMPLETE",
+    "simulation_final_time": 10.0,
+    "movie": "centered_both.mp4",
+    "source": "data/beta-shear-repair-v5-run-2140541/centered_both",
+    "frames": 11,
+    "duration_seconds": 2.75,
+    "final_time": 10.0,
+    "sha256": "b2a3f84a131d7903723a36cb3623090f99e7d3994d37f16671d3113d93daeb00",
+    "bytes": 263151,
+    "heights": [
+      0.1875,
+      0.48750000000000004,
+      0.8875000000000001
+    ],
+    "vorticity_limits": [
+      0.27770429849624634,
+      0.4445134103298187,
+      0.3393232226371765
+    ],
+    "vorticity_asinh_width": 0.002,
+    "tracer_range": [
+      0,
+      1
+    ],
+    "tracer_asinh_width": 0.01
+  },
+  {
+    "simulation_status": "COMPLETE",
+    "simulation_final_time": 10.0,
+    "movie": "centered_momentum.mp4",
+    "source": "data/beta-shear-repair-v5-run-2140541/centered_momentum",
+    "frames": 11,
+    "duration_seconds": 2.75,
+    "final_time": 10.0,
+    "sha256": "20d6f05260d78800356b173e56a6c5ef07b6f2025bf10d77879139f1f8304d33",
+    "bytes": 260079,
+    "heights": [
+      0.1875,
+      0.48750000000000004,
+      0.8875000000000001
+    ],
+    "vorticity_limits": [
+      0.23999086022377014,
+      0.3197759687900543,
+      0.30451950430870056
+    ],
+    "vorticity_asinh_width": 0.002,
+    "tracer_range": [
+      0,
+      1
+    ],
+    "tracer_asinh_width": 0.01
+  },
+  {
+    "simulation_status": "COMPLETE",
+    "simulation_final_time": 10.0,
+    "movie": "weno.mp4",
+    "source": "data/beta-shear-repair-v5-run-2140541/weno",
+    "frames": 11,
+    "duration_seconds": 2.75,
+    "final_time": 10.0,
+    "sha256": "5114c82b0f6391f4f1fd6f274b6ab2caebc83c28c7c2d5496b1ee2e788d776d1",
+    "bytes": 254300,
+    "heights": [
+      0.1875,
+      0.48750000000000004,
+      0.8875000000000001
+    ],
+    "vorticity_limits": [
+      0.23684673011302948,
+      0.2861739695072174,
+      0.26200634241104126
+    ],
+    "vorticity_asinh_width": 0.002,
+    "tracer_range": [
+      0,
+      1
+    ],
+    "tracer_asinh_width": 0.01
+  },
+  {
+    "simulation_status": "STOPPED",
+    "simulation_final_time": 29.644444444444435,
+    "movie": "cap_anticyclonic.mp4",
+    "source": "data/beta-shear-profile-v1-run-2140644/cap_anticyclonic",
+    "frames": 30,
+    "duration_seconds": 7.5,
+    "final_time": 29.0,
+    "sha256": "69ffd8a3bb5feb78c86b2a1eeb721d6d0a82bcef898b4c0bebafdec5a41ea717",
+    "bytes": 283389,
+    "heights": [
+      0.19375,
+      0.49375,
+      0.89375
+    ],
+    "vorticity_limits": [
+      0.00011469684250187129,
+      0.00020850077271461487,
+      0.031021006405353546
+    ],
+    "vorticity_asinh_width": 0.002,
+    "tracer_range": [
+      0,
+      1
+    ],
+    "tracer_asinh_width": 0.01
+  },
+  {
+    "simulation_status": "STOPPED",
+    "simulation_final_time": 20.99444444444443,
+    "movie": "cap_cyclonic.mp4",
+    "source": "data/beta-shear-profile-v1-run-2140644/cap_cyclonic",
+    "frames": 21,
+    "duration_seconds": 5.25,
+    "final_time": 20.0,
+    "sha256": "ba1617639d3fa75accb9c080b75c274b6ad85d8a71019fd54c7750b14035de94",
+    "bytes": 211842,
+    "heights": [
+      0.19375,
+      0.49375,
+      0.89375
+    ],
+    "vorticity_limits": [
+      0.0001,
+      0.00026395879103802145,
+      0.01659337989985943
+    ],
+    "vorticity_asinh_width": 0.002,
+    "tracer_range": [
+      0,
+      1
+    ],
+    "tracer_asinh_width": 0.01
+  },
+  {
+    "simulation_status": "STOPPED",
+    "simulation_final_time": 22.14999999999999,
+    "movie": "traditional_anticyclonic.mp4",
+    "source": "data/beta-shear-profile-v1-run-2140644/traditional_anticyclonic",
+    "frames": 23,
+    "duration_seconds": 5.75,
+    "final_time": 22.0,
+    "sha256": "3a8507390cbd071c869d060d004195bf72cf3861ed696386c4d42ab477c949bd",
+    "bytes": 340646,
+    "heights": [
+      0.19375,
+      0.49375,
+      0.89375
+    ],
+    "vorticity_limits": [
+      0.0743030533194542,
+      0.07845091819763184,
+      0.08349474519491196
+    ],
+    "vorticity_asinh_width": 0.002,
+    "tracer_range": [
+      0,
+      1
+    ],
+    "tracer_asinh_width": 0.01
+  },
+  {
+    "simulation_status": "STOPPED",
+    "simulation_final_time": 16.236111111111097,
+    "movie": "traditional_cyclonic.mp4",
+    "source": "data/beta-shear-profile-v1-run-2140644/traditional_cyclonic",
+    "frames": 17,
+    "duration_seconds": 4.25,
+    "final_time": 16.0,
+    "sha256": "1a19136c5afd482ecc95a786c839071c2a44201fbf893973c80a249c2605aacc",
+    "bytes": 241430,
+    "heights": [
+      0.19375,
+      0.49375,
+      0.89375
+    ],
+    "vorticity_limits": [
+      0.07430457323789597,
+      0.07484882324934006,
+      0.07717034965753555
+    ],
+    "vorticity_asinh_width": 0.002,
+    "tracer_range": [
+      0,
+      1
+    ],
+    "tracer_asinh_width": 0.01
+  }
+]
