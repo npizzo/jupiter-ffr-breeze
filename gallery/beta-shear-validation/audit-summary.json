@@ -1,0 +1,1360 @@
+{
+  "scope": "Diagnostic audit of rejected shear pilot. No production release.",
+  "jobs": {
+    "native_operators": 2138128,
+    "paired_refinement": 2138365,
+    "forensic_replay": 2138558
+  },
+  "energy_audits": [
+    {
+      "predicted_energy_derivative": 2.6860733529252346e-10,
+      "thermodynamic_advection": 0.0,
+      "thermal_source_identity_error": 0.0,
+      "physical_source_power": -8.186105518015446e-12,
+      "time": 0.0,
+      "vertical_coriolis_work": 0.0,
+      "semidiscrete_energy_defect": 2.7679344081053893e-10,
+      "native_viscosity_work": -1.1599051720240487e-05,
+      "external_heat": 0.0,
+      "momentum_advection_work": 0.0,
+      "potential_energy_advection": 0.0,
+      "trace_viscosity_work": 0.0,
+      "viscous_energy_defect": 2.7679345692748966e-10,
+      "horizontal_coriolis_work": 0.0,
+      "mass_tendency": 0.0,
+      "pressure_gravity_work": 0.0,
+      "top_viscous_heat": 7.695239580388447e-09,
+      "viscous_heat": 1.1599328513697414e-05,
+      "inviscid_non_coriolis_defect": 0.0,
+      "coriolis_work": 0.0,
+      "entropy_heat": -1.611695075612668e-17,
+      "Tmin": 0.9437069892883301,
+      "jet_work": -8.186105518015446e-12,
+      "top_entropy_heat": -0.00021087942136585526,
+      "advective_mass_kinetic": -0.0,
+      "case": "baseline",
+      "measured_energy_derivative": 8.717534456081921e-06,
+      "comparison_window": [
+        0.0,
+        0.5
+      ],
+      "kinetic_advection_defect": 0.0,
+      "thermodynamic_pressure_defect": 0.0,
+      "relative_derivative_mismatch": 0.9999691876944512
+    },
+    {
+      "predicted_energy_derivative": 3.819844180765758e-06,
+      "thermodynamic_advection": -0.00012412531385670402,
+      "thermal_source_identity_error": 0.0,
+      "physical_source_power": 2.7073842237312153e-06,
+      "time": 10.0,
+      "vertical_coriolis_work": -4.220987498115196e-08,
+      "semidiscrete_energy_defect": 1.1124599570345418e-06,
+      "native_viscosity_work": -1.1798643252692324e-05,
+      "external_heat": 0.0,
+      "momentum_advection_work": -1.9771943696021078e-05,
+      "potential_energy_advection": 0.0014393489621263667,
+      "trace_viscosity_work": 6.081270922424466e-11,
+      "viscous_energy_defect": 2.597647644590615e-10,
+      "horizontal_coriolis_work": 7.726508377720612e-09,
+      "mass_tendency": -8.673617379884036e-20,
+      "pressure_gravity_work": -0.0013140572446425289,
+      "top_viscous_heat": 1.748704703955134e-08,
+      "viscous_heat": 1.1798842204747558e-05,
+      "inviscid_non_coriolis_defect": 1.1466835588740468e-06,
+      "coriolis_work": -3.4483366603494176e-08,
+      "entropy_heat": -4.697869718598964e-19,
+      "Tmin": 0.9087365865707399,
+      "jet_work": 2.7073842237312153e-06,
+      "top_entropy_heat": -0.0001943943037748438,
+      "advective_mass_kinetic": 1.9752223627761474e-05,
+      "case": "baseline",
+      "measured_energy_derivative": 4.606249717653554e-06,
+      "comparison_window": [
+        9.5,
+        10.5
+      ],
+      "kinetic_advection_defect": -1.9720068259604113e-08,
+      "thermodynamic_pressure_defect": 1.1664036271338135e-06,
+      "relative_derivative_mismatch": 0.17072577152599436
+    },
+    {
+      "predicted_energy_derivative": -0.00018306839539937398,
+      "thermodynamic_advection": -0.0059688678052786555,
+      "thermal_source_identity_error": 0.0,
+      "physical_source_power": -2.448502371895151e-06,
+      "time": 20.0,
+      "vertical_coriolis_work": 2.9318925815008513e-06,
+      "semidiscrete_energy_defect": -0.00018061989302747884,
+      "native_viscosity_work": -0.00014815519525763292,
+      "external_heat": 0.0,
+      "momentum_advection_work": -0.00014160149124515893,
+      "potential_energy_advection": 0.005741289371174432,
+      "trace_viscosity_work": 6.192213293751397e-08,
+      "viscous_energy_defect": 3.869166497285671e-09,
+      "horizontal_coriolis_work": 2.5949206443200504e-06,
+      "mass_tendency": -3.4694469519536144e-19,
+      "pressure_gravity_work": 0.00020120832232499498,
+      "top_viscous_heat": 3.921859974622761e-08,
+      "viscous_heat": 0.0001480971422911927,
+      "inviscid_non_coriolis_defect": -0.0001861505754197941,
+      "coriolis_work": 5.5268132258215705e-06,
+      "entropy_heat": -3.60525280317808e-18,
+      "Tmin": 0.8721346259117125,
+      "jet_work": -2.448502371895151e-06,
+      "top_entropy_heat": -0.00017961352043131137,
+      "advective_mass_kinetic": -1.8178972395406262e-05,
+      "case": "baseline",
+      "measured_energy_derivative": -0.00018602421494051669,
+      "comparison_window": [
+        19.5,
+        20.5
+      ],
+      "kinetic_advection_defect": -0.0001597804636405652,
+      "thermodynamic_pressure_defect": -2.637011177922892e-05,
+      "relative_derivative_mismatch": 0.015889434298044784
+    },
+    {
+      "predicted_energy_derivative": -0.002751779760343219,
+      "thermodynamic_advection": -0.009624016428218888,
+      "thermal_source_identity_error": 0.0,
+      "physical_source_power": -9.137852371858398e-05,
+      "time": 30.0,
+      "vertical_coriolis_work": 1.0365290781028022e-05,
+      "semidiscrete_energy_defect": -0.002660401236624635,
+      "native_viscosity_work": -0.002397420355152389,
+      "external_heat": 0.0,
+      "momentum_advection_work": -0.0025985115783964488,
+      "potential_energy_advection": 0.005478666361138486,
+      "trace_viscosity_work": 5.867423076127808e-07,
+      "viscous_energy_defect": 6.255395291641583e-08,
+      "horizontal_coriolis_work": 1.1499057098795398e-05,
+      "mass_tendency": -4.6837533851373795e-18,
+      "pressure_gravity_work": 0.00406329615886245,
+      "top_viscous_heat": 7.387204758271548e-08,
+      "viscous_heat": 0.0023968961667976928,
+      "inviscid_non_coriolis_defect": -0.002682328138457338,
+      "coriolis_work": 2.1864347879819772e-05,
+      "entropy_heat": -3.346147806893154e-17,
+      "Tmin": 0.8442406058311462,
+      "jet_work": -9.137852371858398e-05,
+      "top_entropy_heat": -0.00019635762919396413,
+      "advective_mass_kinetic": -1.7626518429375571e-06,
+      "case": "baseline",
+      "measured_energy_derivative": -0.0027621104218269465,
+      "comparison_window": [
+        29.5,
+        30.0
+      ],
+      "kinetic_advection_defect": -0.0026002742302393862,
+      "thermodynamic_pressure_defect": -8.20539082179517e-05,
+      "relative_derivative_mismatch": 0.003740133414685999
+    },
+    {
+      "predicted_energy_derivative": -0.00046892225555582735,
+      "thermodynamic_advection": -0.005236586282363358,
+      "thermal_source_identity_error": 0.0,
+      "physical_source_power": -8.092955446335733e-06,
+      "time": 20.0,
+      "vertical_coriolis_work": 5.173027664914916e-06,
+      "semidiscrete_energy_defect": -0.0004608293001094916,
+      "native_viscosity_work": -0.0003386804126003789,
+      "external_heat": 0.0,
+      "momentum_advection_work": -0.00040903951690131226,
+      "potential_energy_advection": 0.0037819394534680164,
+      "trace_viscosity_work": 1.6870236774066338e-07,
+      "viscous_energy_defect": 9.166351933184106e-09,
+      "horizontal_coriolis_work": 4.4332324017754064e-06,
+      "mass_tendency": -3.382710778154774e-18,
+      "pressure_gravity_work": 0.0014106194530636635,
+      "top_viscous_heat": 8.030166279822193e-09,
+      "viscous_heat": 0.0003385208765845714,
+      "inviscid_non_coriolis_defect": -0.0004704447265281163,
+      "coriolis_work": 9.606260066691487e-06,
+      "entropy_heat": 0.0,
+      "Tmin": 0.9431881904602053,
+      "jet_work": -8.092955446335733e-06,
+      "top_entropy_heat": 0.0,
+      "advective_mass_kinetic": -1.737783379512599e-05,
+      "case": "no_entropy_diffusion",
+      "measured_energy_derivative": -0.00048039588307347003,
+      "comparison_window": [
+        19.5,
+        20.5
+      ],
+      "kinetic_advection_defect": -0.00042641735069643826,
+      "thermodynamic_pressure_defect": -4.402737583167815e-05,
+      "relative_derivative_mismatch": 0.02388369243349229
+    },
+    {
+      "predicted_energy_derivative": -0.007151920393125557,
+      "thermodynamic_advection": -0.011261329174580196,
+      "thermal_source_identity_error": 0.0,
+      "physical_source_power": -0.00014148333637372342,
+      "time": 30.0,
+      "vertical_coriolis_work": 1.5096819811999076e-05,
+      "semidiscrete_energy_defect": -0.007010437056751834,
+      "native_viscosity_work": -0.0060198288167547034,
+      "external_heat": 0.0,
+      "momentum_advection_work": -0.006905227395092148,
+      "potential_energy_advection": -0.001015335111318634,
+      "trace_viscosity_work": 1.953957354191328e-06,
+      "viscous_energy_defect": 1.1579665519165228e-07,
+      "horizontal_coriolis_work": 2.6626377463019322e-05,
+      "mass_tendency": -2.0122792321330965e-17,
+      "pressure_gravity_work": 0.012122808998425882,
+      "top_viscous_heat": 1.0684764256247442e-08,
+      "viscous_heat": 0.006017990656055704,
+      "inviscid_non_coriolis_defect": -0.007052276050682042,
+      "coriolis_work": 4.172319727501636e-05,
+      "entropy_heat": 0.0,
+      "Tmin": 0.9427106380462646,
+      "jet_work": -0.00014148333637372342,
+      "top_entropy_heat": 0.0,
+      "advective_mass_kinetic": 6.806631883054672e-06,
+      "case": "no_entropy_diffusion",
+      "measured_energy_derivative": -0.007144765270368225,
+      "comparison_window": [
+        29.5,
+        30.0
+      ],
+      "kinetic_advection_defect": -0.006898420763209094,
+      "thermodynamic_pressure_defect": -0.00015385528747294784,
+      "relative_derivative_mismatch": 0.001001449660915638
+    },
+    {
+      "predicted_energy_derivative": 5.664495549768362e-06,
+      "thermodynamic_advection": -0.004042596439855177,
+      "thermal_source_identity_error": 0.0,
+      "physical_source_power": 5.750017004701226e-06,
+      "time": 20.0,
+      "vertical_coriolis_work": 3.0954340221290504e-08,
+      "semidiscrete_energy_defect": -8.552145493286444e-08,
+      "native_viscosity_work": -1.2410181053310207e-05,
+      "external_heat": 0.0,
+      "momentum_advection_work": 5.006828888975119e-06,
+      "potential_energy_advection": 0.006079776076386387,
+      "trace_viscosity_work": 3.6979365874938557e-10,
+      "viscous_energy_defect": 1.163649669176192e-10,
+      "horizontal_coriolis_work": 0.0,
+      "mass_tendency": 0.0,
+      "pressure_gravity_work": -0.0020369458239961535,
+      "top_viscous_heat": 3.5894208666158296e-08,
+      "viscous_heat": 1.2409927624618375e-05,
+      "inviscid_non_coriolis_defect": -1.165921601226777e-07,
+      "coriolis_work": 3.0954340221290504e-08,
+      "entropy_heat": 1.6051433169146603e-18,
+      "Tmin": 0.8947473168373109,
+      "jet_work": 5.750017004701226e-06,
+      "top_entropy_heat": -0.0001730242219732146,
+      "advective_mass_kinetic": -5.357233584154474e-06,
+      "case": "no_horizontal_rotation",
+      "measured_energy_derivative": 4.581775215228845e-06,
+      "comparison_window": [
+        19.5,
+        20.5
+      ],
+      "kinetic_advection_defect": -3.5040469517935483e-07,
+      "thermodynamic_pressure_defect": 2.3381253505625615e-07,
+      "relative_derivative_mismatch": 0.23631022555204914
+    },
+    {
+      "predicted_energy_derivative": 5.792949996466929e-06,
+      "thermodynamic_advection": -0.005343291846332653,
+      "thermal_source_identity_error": 0.0,
+      "physical_source_power": 6.806992963409277e-06,
+      "time": 30.0,
+      "vertical_coriolis_work": -4.901491300535322e-09,
+      "semidiscrete_energy_defect": -1.0140429669423478e-06,
+      "native_viscosity_work": -1.397454142210426e-05,
+      "external_heat": 0.0,
+      "momentum_advection_work": -1.2814043917916836e-05,
+      "potential_energy_advection": 0.005530616710487354,
+      "trace_viscosity_work": 9.790403554979654e-10,
+      "viscous_energy_defect": -3.460253943846878e-10,
+      "horizontal_coriolis_work": 0.0,
+      "mass_tendency": -1.7347234759768072e-19,
+      "pressure_gravity_work": -0.00018749959200290236,
+      "top_viscous_heat": 5.129603444362219e-08,
+      "viscous_heat": 1.3973216356354376e-05,
+      "inviscid_non_coriolis_defect": -1.0087954502745926e-06,
+      "coriolis_work": -4.901491300535322e-09,
+      "entropy_heat": 2.7164685431624315e-17,
+      "Tmin": 0.8661049604415895,
+      "jet_work": 6.806992963409277e-06,
+      "top_entropy_heat": -0.00016098093232448066,
+      "advective_mass_kinetic": 1.1979976315843724e-05,
+      "case": "no_horizontal_rotation",
+      "measured_energy_derivative": 4.512334726314293e-06,
+      "comparison_window": [
+        29.5,
+        30.0
+      ],
+      "kinetic_advection_defect": -8.340676020731118e-07,
+      "thermodynamic_pressure_defect": -1.747278482014435e-07,
+      "relative_derivative_mismatch": 0.283803252157814
+    },
+    {
+      "predicted_energy_derivative": -0.06767849844262656,
+      "thermodynamic_advection": -0.2812168746857162,
+      "thermal_source_identity_error": 0.0,
+      "physical_source_power": 0.010093294233432372,
+      "time": 100.0,
+      "vertical_coriolis_work": 0.0003134106618838595,
+      "semidiscrete_energy_defect": -0.07777179267605894,
+      "native_viscosity_work": -0.028800400213946576,
+      "external_heat": 0.0,
+      "momentum_advection_work": -0.03152180755132085,
+      "potential_energy_advection": 0.08115133234292556,
+      "trace_viscosity_work": 2.0843664748559705e-05,
+      "viscous_energy_defect": -4.148787650939956e-06,
+      "horizontal_coriolis_work": 4.940094986622822e-06,
+      "mass_tendency": 1.665334536937735e-17,
+      "pressure_gravity_work": 0.20067846399159972,
+      "top_viscous_heat": 0.00024524901830039224,
+      "viscous_heat": 0.028775407761547075,
+      "inviscid_non_coriolis_defect": -0.07808599464527743,
+      "coriolis_work": 0.00031835075687065676,
+      "entropy_heat": -1.2204050598160841e-15,
+      "Tmin": 0.30302923917770386,
+      "jet_work": 0.010093294233432372,
+      "top_entropy_heat": -0.006248578485636555,
+      "advective_mass_kinetic": -0.047177108742765636,
+      "case": "original_3d",
+      "measured_energy_derivative": -0.0684692249778891,
+      "comparison_window": [
+        99.5,
+        100.5
+      ],
+      "kinetic_advection_defect": -0.07869891629408649,
+      "thermodynamic_pressure_defect": 0.0006129216488090505,
+      "relative_derivative_mismatch": 0.01154864153227797
+    },
+    {
+      "predicted_energy_derivative": -0.09613195101102444,
+      "thermodynamic_advection": -0.11547115590634123,
+      "thermal_source_identity_error": 0.0,
+      "physical_source_power": 0.006836978334372457,
+      "time": 140.0,
+      "vertical_coriolis_work": -0.00012265409725647415,
+      "semidiscrete_energy_defect": -0.10296892934539689,
+      "native_viscosity_work": -0.03216969582752838,
+      "external_heat": 0.0,
+      "momentum_advection_work": -0.10655960855576829,
+      "potential_energy_advection": 0.0010662637618578997,
+      "trace_viscosity_work": 1.9434665666351465e-05,
+      "viscous_energy_defect": -4.2949718665960535e-06,
+      "horizontal_coriolis_work": 3.10578143115536e-05,
+      "mass_tendency": -2.636779683484747e-17,
+      "pressure_gravity_work": 0.11535171946575487,
+      "top_viscous_heat": 0.00024099080765742077,
+      "viscous_heat": 0.03214596618999543,
+      "inviscid_non_coriolis_defect": -0.10287303809058518,
+      "coriolis_work": -9.159628294486531e-05,
+      "entropy_heat": -2.4822143553494236e-16,
+      "Tmin": 0.05682946369051933,
+      "jet_work": 0.006836978334372457,
+      "top_entropy_heat": -0.0059804031990253045,
+      "advective_mass_kinetic": 0.002739743143911578,
+      "case": "original_3d",
+      "measured_energy_derivative": -0.095846774200254,
+      "comparison_window": [
+        139.5,
+        140.5
+      ],
+      "kinetic_advection_defect": -0.10381986541185671,
+      "thermodynamic_pressure_defect": 0.0009468273212715345,
+      "relative_derivative_mismatch": 0.002975340726382832
+    },
+    {
+      "predicted_energy_derivative": -0.0029524722380668954,
+      "thermodynamic_advection": -0.09573880079650682,
+      "thermal_source_identity_error": 0.0,
+      "physical_source_power": -3.9213653631994957e-05,
+      "time": 20.0,
+      "vertical_coriolis_work": 4.7075199323887174e-05,
+      "semidiscrete_energy_defect": -0.0029132585844349004,
+      "native_viscosity_work": -0.0023900532979988787,
+      "external_heat": 0.0,
+      "momentum_advection_work": -0.0022883170993537984,
+      "potential_energy_advection": 0.09194531552378347,
+      "trace_viscosity_work": 1.0013400369320414e-06,
+      "viscous_energy_defect": 6.204952510309447e-08,
+      "horizontal_coriolis_work": 4.178298557898911e-05,
+      "mass_tendency": -1.8041124150158794e-17,
+      "pressure_gravity_work": 0.0033702753139472036,
+      "top_viscous_heat": 6.275613661138849e-07,
+      "viscous_heat": 0.0023891140074870495,
+      "inviscid_non_coriolis_defect": -0.0030021788188627258,
+      "coriolis_work": 8.885818490288663e-05,
+      "entropy_heat": -1.6441447769174172e-16,
+      "Tmin": 0.8717894554138184,
+      "jet_work": -3.9213653631994957e-05,
+      "top_entropy_heat": -0.0028746908668752817,
+      "advective_mass_kinetic": -0.00029065176073279426,
+      "case": "original_3d",
+      "measured_energy_derivative": -0.003002458510309225,
+      "comparison_window": [
+        19.5,
+        20.5
+      ],
+      "kinetic_advection_defect": -0.0025789688600865927,
+      "thermodynamic_pressure_defect": -0.00042320995877613956,
+      "relative_derivative_mismatch": 0.01664844728768005
+    }
+  ],
+  "original_end": {
+    "time": 158.5,
+    "min_temperature": 0.015577807083557903,
+    "max_mach": 1.4987021758657326,
+    "total_energy": 11183.625218843785,
+    "kinetic_energy": 24.451170665589814,
+    "cumulative_energy_defect_since_restart": -18.625968194919448,
+    "energy_defect_over_restart_ke": -1.3530190478639808
+  },
+  "original_initial_energy": 11201.928576711098,
+  "original_initial_ke": 13.766227625785739,
+  "paired_tests": {
+    "coarse": {
+      "samples": [
+        {
+          "time": 0,
+          "cross_plane_difference_rms": 1e-05,
+          "velocity_difference_rms": 1e-05,
+          "temperature_difference_rms": 0.0,
+          "doubling_relative_error": 0.0
+        },
+        {
+          "time": 1,
+          "cross_plane_difference_rms": 7.876942592296554e-06,
+          "velocity_difference_rms": 1.2734726525619415e-05,
+          "temperature_difference_rms": 2.222172751189199e-06,
+          "doubling_relative_error": 0.00019301565684238497
+        },
+        {
+          "time": 2,
+          "cross_plane_difference_rms": 1.1547697728762268e-05,
+          "velocity_difference_rms": 1.5252450735034776e-05,
+          "temperature_difference_rms": 2.450061702580082e-06,
+          "doubling_relative_error": 0.001286770809878135
+        },
+        {
+          "time": 3,
+          "cross_plane_difference_rms": 1.08138853387542e-05,
+          "velocity_difference_rms": 1.5597206275322944e-05,
+          "temperature_difference_rms": 2.6890153919348504e-06,
+          "doubling_relative_error": 0.0032554935898520864
+        },
+        {
+          "time": 4,
+          "cross_plane_difference_rms": 1.1764905563746736e-05,
+          "velocity_difference_rms": 1.686437250493714e-05,
+          "temperature_difference_rms": 3.7026883773296023e-06,
+          "doubling_relative_error": 0.004216342394754318
+        },
+        {
+          "time": 5,
+          "cross_plane_difference_rms": 1.1762416124289274e-05,
+          "velocity_difference_rms": 1.5992991416992073e-05,
+          "temperature_difference_rms": 2.772766972910255e-06,
+          "doubling_relative_error": 0.009426080370164187
+        },
+        {
+          "time": 6,
+          "cross_plane_difference_rms": 1.2276335575180337e-05,
+          "velocity_difference_rms": 1.6953050253002313e-05,
+          "temperature_difference_rms": 2.7271712935434867e-06,
+          "doubling_relative_error": 0.009747594680991456
+        },
+        {
+          "time": 7,
+          "cross_plane_difference_rms": 1.3678870074012462e-05,
+          "velocity_difference_rms": 1.9202670585073012e-05,
+          "temperature_difference_rms": 3.3052575796830612e-06,
+          "doubling_relative_error": 0.008585285171892174
+        },
+        {
+          "time": 8,
+          "cross_plane_difference_rms": 1.4260369060466851e-05,
+          "velocity_difference_rms": 2.0412469815319227e-05,
+          "temperature_difference_rms": 2.971110457379265e-06,
+          "doubling_relative_error": 0.009170484493548448
+        },
+        {
+          "time": 9,
+          "cross_plane_difference_rms": 1.4196816995306774e-05,
+          "velocity_difference_rms": 2.0321383269798115e-05,
+          "temperature_difference_rms": 3.2758470687547742e-06,
+          "doubling_relative_error": 0.00979438390113869
+        },
+        {
+          "time": 10,
+          "cross_plane_difference_rms": 1.3153946008855933e-05,
+          "velocity_difference_rms": 1.870673429157216e-05,
+          "temperature_difference_rms": 2.4651476289022556e-06,
+          "doubling_relative_error": 0.011310805017628558
+        },
+        {
+          "time": 11,
+          "cross_plane_difference_rms": 1.2668021454022711e-05,
+          "velocity_difference_rms": 1.782968317743978e-05,
+          "temperature_difference_rms": 2.1353080401016186e-06,
+          "doubling_relative_error": 0.012310954201039802
+        },
+        {
+          "time": 12,
+          "cross_plane_difference_rms": 1.3065628272762035e-05,
+          "velocity_difference_rms": 1.836237564787682e-05,
+          "temperature_difference_rms": 2.766477606660649e-06,
+          "doubling_relative_error": 0.012244875816538716
+        },
+        {
+          "time": 13,
+          "cross_plane_difference_rms": 1.3468698327036995e-05,
+          "velocity_difference_rms": 1.9103919847159782e-05,
+          "temperature_difference_rms": 2.818306991029165e-06,
+          "doubling_relative_error": 0.012430376513783592
+        },
+        {
+          "time": 14,
+          "cross_plane_difference_rms": 1.3536758326524258e-05,
+          "velocity_difference_rms": 1.9321651174502537e-05,
+          "temperature_difference_rms": 3.0051746830906306e-06,
+          "doubling_relative_error": 0.013224656506645695
+        },
+        {
+          "time": 15,
+          "cross_plane_difference_rms": 1.2950501525817296e-05,
+          "velocity_difference_rms": 1.8502166024176676e-05,
+          "temperature_difference_rms": 2.842530190811129e-06,
+          "doubling_relative_error": 0.015436708399887523
+        },
+        {
+          "time": 16,
+          "cross_plane_difference_rms": 1.2363651513176831e-05,
+          "velocity_difference_rms": 1.7574747900760242e-05,
+          "temperature_difference_rms": 2.323449936482157e-06,
+          "doubling_relative_error": 0.01912044246778917
+        },
+        {
+          "time": 17,
+          "cross_plane_difference_rms": 1.2495794391280031e-05,
+          "velocity_difference_rms": 1.7612067618210168e-05,
+          "temperature_difference_rms": 2.5074800464130217e-06,
+          "doubling_relative_error": 0.023445965681803935
+        },
+        {
+          "time": 18,
+          "cross_plane_difference_rms": 1.3249106560784151e-05,
+          "velocity_difference_rms": 1.8673833210980082e-05,
+          "temperature_difference_rms": 2.937518953500309e-06,
+          "doubling_relative_error": 0.02818700098261175
+        },
+        {
+          "time": 19,
+          "cross_plane_difference_rms": 1.4144389600632902e-05,
+          "velocity_difference_rms": 1.986203085272302e-05,
+          "temperature_difference_rms": 3.347541047210219e-06,
+          "doubling_relative_error": 0.03467194265143254
+        },
+        {
+          "time": 20,
+          "cross_plane_difference_rms": 1.494136580994386e-05,
+          "velocity_difference_rms": 2.0639760158840093e-05,
+          "temperature_difference_rms": 3.5562545058802737e-06,
+          "doubling_relative_error": 0.04419736428360716
+        },
+        {
+          "time": 21,
+          "cross_plane_difference_rms": 1.684978193123014e-05,
+          "velocity_difference_rms": 2.2678095631108777e-05,
+          "temperature_difference_rms": 4.317868409543109e-06,
+          "doubling_relative_error": 0.0525446012551126
+        },
+        {
+          "time": 22,
+          "cross_plane_difference_rms": 2.0412517720893266e-05,
+          "velocity_difference_rms": 2.6768031169357275e-05,
+          "temperature_difference_rms": 5.824624218034013e-06,
+          "doubling_relative_error": 0.05724837956143182
+        },
+        {
+          "time": 23,
+          "cross_plane_difference_rms": 2.5110014343556086e-05,
+          "velocity_difference_rms": 3.217623786140677e-05,
+          "temperature_difference_rms": 7.723987238095622e-06,
+          "doubling_relative_error": 0.05867858061081728
+        },
+        {
+          "time": 24,
+          "cross_plane_difference_rms": 3.0780978660401084e-05,
+          "velocity_difference_rms": 3.8802755932416854e-05,
+          "temperature_difference_rms": 9.70552146911624e-06,
+          "doubling_relative_error": 0.06015360584349723
+        },
+        {
+          "time": 25,
+          "cross_plane_difference_rms": 3.733619022052191e-05,
+          "velocity_difference_rms": 4.6984317917695224e-05,
+          "temperature_difference_rms": 1.2013868376545386e-05,
+          "doubling_relative_error": 0.061355856647022845
+        },
+        {
+          "time": 26,
+          "cross_plane_difference_rms": 4.427288141043735e-05,
+          "velocity_difference_rms": 5.6251053667626665e-05,
+          "temperature_difference_rms": 1.464187351718361e-05,
+          "doubling_relative_error": 0.06390801549951923
+        },
+        {
+          "time": 27,
+          "cross_plane_difference_rms": 5.301343363375223e-05,
+          "velocity_difference_rms": 6.794074755899194e-05,
+          "temperature_difference_rms": 1.8556206832801222e-05,
+          "doubling_relative_error": 0.06675467608441604
+        },
+        {
+          "time": 28,
+          "cross_plane_difference_rms": 5.7092932600318295e-05,
+          "velocity_difference_rms": 7.448173894550728e-05,
+          "temperature_difference_rms": 2.2192670705137042e-05,
+          "doubling_relative_error": 0.07624346221692377
+        },
+        {
+          "time": 29,
+          "cross_plane_difference_rms": 5.5692956670349155e-05,
+          "velocity_difference_rms": 7.2550071284854e-05,
+          "temperature_difference_rms": 2.2949948520818513e-05,
+          "doubling_relative_error": 0.09242965476263632
+        },
+        {
+          "time": 30,
+          "cross_plane_difference_rms": 5.524948713349933e-05,
+          "velocity_difference_rms": 7.418791406384148e-05,
+          "temperature_difference_rms": 2.3916229405149915e-05,
+          "doubling_relative_error": 0.10624206157230377
+        }
+      ],
+      "fits": {
+        "10-25": {
+          "amplitude_growth_rate": 0.05179787041161365,
+          "r_squared": 0.6556583658636035
+        },
+        "15-30": {
+          "amplitude_growth_rate": 0.11756313921581932,
+          "r_squared": 0.9384095339831797
+        }
+      },
+      "amplification_t30": 7.418791406384147
+    },
+    "fine": {
+      "samples": [
+        {
+          "time": 0,
+          "cross_plane_difference_rms": 1e-05,
+          "velocity_difference_rms": 1e-05,
+          "temperature_difference_rms": 0.0
+        },
+        {
+          "time": 1,
+          "cross_plane_difference_rms": 7.930620439221177e-06,
+          "velocity_difference_rms": 1.2754532470009596e-05,
+          "temperature_difference_rms": 2.237808133789263e-06
+        },
+        {
+          "time": 2,
+          "cross_plane_difference_rms": 1.1556614223104237e-05,
+          "velocity_difference_rms": 1.5279499229929816e-05,
+          "temperature_difference_rms": 2.4759961482643248e-06
+        },
+        {
+          "time": 3,
+          "cross_plane_difference_rms": 1.0822085604314552e-05,
+          "velocity_difference_rms": 1.555018991060181e-05,
+          "temperature_difference_rms": 2.668046033067091e-06
+        },
+        {
+          "time": 4,
+          "cross_plane_difference_rms": 1.1639157353241975e-05,
+          "velocity_difference_rms": 1.6770235765836264e-05,
+          "temperature_difference_rms": 3.639335385901609e-06
+        },
+        {
+          "time": 5,
+          "cross_plane_difference_rms": 1.1586275997158562e-05,
+          "velocity_difference_rms": 1.57913185786017e-05,
+          "temperature_difference_rms": 2.588716766754289e-06
+        },
+        {
+          "time": 6,
+          "cross_plane_difference_rms": 1.2096184952716629e-05,
+          "velocity_difference_rms": 1.671417150384596e-05,
+          "temperature_difference_rms": 2.5162455825355473e-06
+        },
+        {
+          "time": 7,
+          "cross_plane_difference_rms": 1.3569373718307452e-05,
+          "velocity_difference_rms": 1.9002413333053038e-05,
+          "temperature_difference_rms": 3.2075262971268883e-06
+        },
+        {
+          "time": 8,
+          "cross_plane_difference_rms": 1.4052944200444458e-05,
+          "velocity_difference_rms": 2.0046684098383014e-05,
+          "temperature_difference_rms": 2.8866841428301995e-06
+        },
+        {
+          "time": 9,
+          "cross_plane_difference_rms": 1.3816694025376507e-05,
+          "velocity_difference_rms": 1.9752824044608354e-05,
+          "temperature_difference_rms": 3.1268629034046245e-06
+        },
+        {
+          "time": 10,
+          "cross_plane_difference_rms": 1.2600315175871507e-05,
+          "velocity_difference_rms": 1.7946879175908416e-05,
+          "temperature_difference_rms": 2.3285837677888453e-06
+        },
+        {
+          "time": 11,
+          "cross_plane_difference_rms": 1.2026649012197252e-05,
+          "velocity_difference_rms": 1.7009808143204922e-05,
+          "temperature_difference_rms": 2.035709303788618e-06
+        },
+        {
+          "time": 12,
+          "cross_plane_difference_rms": 1.2392719441480698e-05,
+          "velocity_difference_rms": 1.7500539061424644e-05,
+          "temperature_difference_rms": 2.6502821512658133e-06
+        },
+        {
+          "time": 13,
+          "cross_plane_difference_rms": 1.2776201937491412e-05,
+          "velocity_difference_rms": 1.815347527224104e-05,
+          "temperature_difference_rms": 2.7795459425562874e-06
+        },
+        {
+          "time": 14,
+          "cross_plane_difference_rms": 1.2760890368322014e-05,
+          "velocity_difference_rms": 1.8170004722962917e-05,
+          "temperature_difference_rms": 2.9257610240562486e-06
+        },
+        {
+          "time": 15,
+          "cross_plane_difference_rms": 1.2013412163202902e-05,
+          "velocity_difference_rms": 1.7124426400751067e-05,
+          "temperature_difference_rms": 2.6975536757416303e-06
+        },
+        {
+          "time": 16,
+          "cross_plane_difference_rms": 1.1321050320137657e-05,
+          "velocity_difference_rms": 1.609387585413635e-05,
+          "temperature_difference_rms": 2.2764347518315122e-06
+        },
+        {
+          "time": 17,
+          "cross_plane_difference_rms": 1.1448058868845338e-05,
+          "velocity_difference_rms": 1.616673199560027e-05,
+          "temperature_difference_rms": 2.4682982458538516e-06
+        },
+        {
+          "time": 18,
+          "cross_plane_difference_rms": 1.2251621531905993e-05,
+          "velocity_difference_rms": 1.7258380679443487e-05,
+          "temperature_difference_rms": 2.8789072258273876e-06
+        },
+        {
+          "time": 19,
+          "cross_plane_difference_rms": 1.2979732551404633e-05,
+          "velocity_difference_rms": 1.8075304385828553e-05,
+          "temperature_difference_rms": 3.201644386900478e-06
+        },
+        {
+          "time": 20,
+          "cross_plane_difference_rms": 1.3579231524483646e-05,
+          "velocity_difference_rms": 1.8312992912315735e-05,
+          "temperature_difference_rms": 3.188172183203369e-06
+        },
+        {
+          "time": 21,
+          "cross_plane_difference_rms": 1.4969580604656294e-05,
+          "velocity_difference_rms": 1.9469073460035295e-05,
+          "temperature_difference_rms": 3.5873659745189053e-06
+        },
+        {
+          "time": 22,
+          "cross_plane_difference_rms": 1.695354720880928e-05,
+          "velocity_difference_rms": 2.155191467447513e-05,
+          "temperature_difference_rms": 4.497906397055583e-06
+        },
+        {
+          "time": 23,
+          "cross_plane_difference_rms": 1.9536051740267985e-05,
+          "velocity_difference_rms": 2.4585914136455384e-05,
+          "temperature_difference_rms": 5.657756697259242e-06
+        },
+        {
+          "time": 24,
+          "cross_plane_difference_rms": 2.2990521592228076e-05,
+          "velocity_difference_rms": 2.8786353723144307e-05,
+          "temperature_difference_rms": 6.965344206877056e-06
+        },
+        {
+          "time": 25,
+          "cross_plane_difference_rms": 2.7181591981014318e-05,
+          "velocity_difference_rms": 3.375706766458813e-05,
+          "temperature_difference_rms": 8.414677095872027e-06
+        },
+        {
+          "time": 26,
+          "cross_plane_difference_rms": 3.15678292869016e-05,
+          "velocity_difference_rms": 3.905725220607627e-05,
+          "temperature_difference_rms": 9.796126515363694e-06
+        },
+        {
+          "time": 27,
+          "cross_plane_difference_rms": 3.622840338691116e-05,
+          "velocity_difference_rms": 4.481295432547552e-05,
+          "temperature_difference_rms": 1.1240871730231724e-05
+        },
+        {
+          "time": 28,
+          "cross_plane_difference_rms": 4.064008211287569e-05,
+          "velocity_difference_rms": 5.020178145298435e-05,
+          "temperature_difference_rms": 1.2540788247527556e-05
+        },
+        {
+          "time": 29,
+          "cross_plane_difference_rms": 4.5195587182115786e-05,
+          "velocity_difference_rms": 5.60431580292463e-05,
+          "temperature_difference_rms": 1.4014320056368478e-05
+        },
+        {
+          "time": 30,
+          "cross_plane_difference_rms": 5.206842941297844e-05,
+          "velocity_difference_rms": 6.640896488340079e-05,
+          "temperature_difference_rms": 1.6322223221446827e-05
+        }
+      ],
+      "fits": {
+        "10-25": {
+          "amplitude_growth_rate": 0.033577076963079835,
+          "r_squared": 0.5658886487481593
+        },
+        "15-30": {
+          "amplitude_growth_rate": 0.09905560955901885,
+          "r_squared": 0.928892819442683
+        }
+      },
+      "amplification_t30": 6.640896488340078
+    },
+    "traditional": {
+      "samples": [
+        {
+          "time": 0,
+          "cross_plane_difference_rms": 1e-05,
+          "velocity_difference_rms": 1e-05,
+          "temperature_difference_rms": 0.0
+        },
+        {
+          "time": 1,
+          "cross_plane_difference_rms": 6.8863535418410476e-06,
+          "velocity_difference_rms": 1.2093747728428854e-05,
+          "temperature_difference_rms": 1.7915605005209805e-06
+        },
+        {
+          "time": 2,
+          "cross_plane_difference_rms": 1.102080360207843e-05,
+          "velocity_difference_rms": 1.5393586709446593e-05,
+          "temperature_difference_rms": 2.4184091270382242e-06
+        },
+        {
+          "time": 3,
+          "cross_plane_difference_rms": 1.1220516577832798e-05,
+          "velocity_difference_rms": 1.5467565123643112e-05,
+          "temperature_difference_rms": 2.4451367246545823e-06
+        },
+        {
+          "time": 4,
+          "cross_plane_difference_rms": 8.528201281981024e-06,
+          "velocity_difference_rms": 1.2484377224244164e-05,
+          "temperature_difference_rms": 1.6429014644877427e-06
+        },
+        {
+          "time": 5,
+          "cross_plane_difference_rms": 8.304567592146442e-06,
+          "velocity_difference_rms": 1.1799779109847826e-05,
+          "temperature_difference_rms": 1.8636315905647218e-06
+        },
+        {
+          "time": 6,
+          "cross_plane_difference_rms": 9.105886257953874e-06,
+          "velocity_difference_rms": 1.3045966555457978e-05,
+          "temperature_difference_rms": 1.8274647988212921e-06
+        },
+        {
+          "time": 7,
+          "cross_plane_difference_rms": 1.208901258396129e-05,
+          "velocity_difference_rms": 1.742517458910734e-05,
+          "temperature_difference_rms": 3.5582035566691237e-06
+        },
+        {
+          "time": 8,
+          "cross_plane_difference_rms": 1.262489078907144e-05,
+          "velocity_difference_rms": 1.8359404413376134e-05,
+          "temperature_difference_rms": 3.6368509373278327e-06
+        },
+        {
+          "time": 9,
+          "cross_plane_difference_rms": 1.0038583680313816e-05,
+          "velocity_difference_rms": 1.4528349031949488e-05,
+          "temperature_difference_rms": 2.1078718922355733e-06
+        },
+        {
+          "time": 10,
+          "cross_plane_difference_rms": 9.247307090085868e-06,
+          "velocity_difference_rms": 1.3298486549754086e-05,
+          "temperature_difference_rms": 2.48749291824421e-06
+        },
+        {
+          "time": 11,
+          "cross_plane_difference_rms": 9.216735685733185e-06,
+          "velocity_difference_rms": 1.3323349616200688e-05,
+          "temperature_difference_rms": 2.210174769306482e-06
+        },
+        {
+          "time": 12,
+          "cross_plane_difference_rms": 1.0724505396314443e-05,
+          "velocity_difference_rms": 1.560129112856376e-05,
+          "temperature_difference_rms": 3.1702554220270003e-06
+        },
+        {
+          "time": 13,
+          "cross_plane_difference_rms": 1.1033682406829343e-05,
+          "velocity_difference_rms": 1.6145323927123127e-05,
+          "temperature_difference_rms": 3.2151155706619176e-06
+        },
+        {
+          "time": 14,
+          "cross_plane_difference_rms": 9.606911648535504e-06,
+          "velocity_difference_rms": 1.3951206237845321e-05,
+          "temperature_difference_rms": 2.534889953287817e-06
+        },
+        {
+          "time": 15,
+          "cross_plane_difference_rms": 9.067890765897178e-06,
+          "velocity_difference_rms": 1.3056993318429832e-05,
+          "temperature_difference_rms": 2.652276370806736e-06
+        },
+        {
+          "time": 16,
+          "cross_plane_difference_rms": 9.061218644631536e-06,
+          "velocity_difference_rms": 1.3493366341244266e-05,
+          "temperature_difference_rms": 2.5777493158855134e-06
+        },
+        {
+          "time": 17,
+          "cross_plane_difference_rms": 1.0164870339436645e-05,
+          "velocity_difference_rms": 1.539721704825512e-05,
+          "temperature_difference_rms": 3.3256017723169314e-06
+        },
+        {
+          "time": 18,
+          "cross_plane_difference_rms": 1.0512685988063055e-05,
+          "velocity_difference_rms": 1.5516201249648868e-05,
+          "temperature_difference_rms": 3.3131324004379964e-06
+        },
+        {
+          "time": 19,
+          "cross_plane_difference_rms": 9.431832177318635e-06,
+          "velocity_difference_rms": 1.3109407222891739e-05,
+          "temperature_difference_rms": 2.417167172552443e-06
+        },
+        {
+          "time": 20,
+          "cross_plane_difference_rms": 9.314864706252473e-06,
+          "velocity_difference_rms": 1.2407179253905783e-05,
+          "temperature_difference_rms": 2.4549140461911824e-06
+        },
+        {
+          "time": 21,
+          "cross_plane_difference_rms": 8.58488733223549e-06,
+          "velocity_difference_rms": 1.3141200597056513e-05,
+          "temperature_difference_rms": 2.8371961200174248e-06
+        },
+        {
+          "time": 22,
+          "cross_plane_difference_rms": 9.286734690994364e-06,
+          "velocity_difference_rms": 1.4691492419179925e-05,
+          "temperature_difference_rms": 3.046742223814216e-06
+        },
+        {
+          "time": 23,
+          "cross_plane_difference_rms": 1.0995751570837543e-05,
+          "velocity_difference_rms": 1.516437058400306e-05,
+          "temperature_difference_rms": 3.379061563973336e-06
+        },
+        {
+          "time": 24,
+          "cross_plane_difference_rms": 1.020844669052649e-05,
+          "velocity_difference_rms": 1.3185054036067936e-05,
+          "temperature_difference_rms": 2.3356166356809946e-06
+        },
+        {
+          "time": 25,
+          "cross_plane_difference_rms": 8.740842198821548e-06,
+          "velocity_difference_rms": 1.3032544655265902e-05,
+          "temperature_difference_rms": 2.6322826549984402e-06
+        },
+        {
+          "time": 26,
+          "cross_plane_difference_rms": 1.0053997391469391e-05,
+          "velocity_difference_rms": 1.3586851041743774e-05,
+          "temperature_difference_rms": 2.7555453717861487e-06
+        },
+        {
+          "time": 27,
+          "cross_plane_difference_rms": 1.0105423961378568e-05,
+          "velocity_difference_rms": 1.413577638767448e-05,
+          "temperature_difference_rms": 2.9541950197387735e-06
+        },
+        {
+          "time": 28,
+          "cross_plane_difference_rms": 8.326680899624886e-06,
+          "velocity_difference_rms": 1.4618923219146706e-05,
+          "temperature_difference_rms": 3.5813391069500534e-06
+        },
+        {
+          "time": 29,
+          "cross_plane_difference_rms": 1.0434246236673769e-05,
+          "velocity_difference_rms": 1.3113782422343439e-05,
+          "temperature_difference_rms": 2.621899628803509e-06
+        },
+        {
+          "time": 30,
+          "cross_plane_difference_rms": 8.430884206069708e-06,
+          "velocity_difference_rms": 1.3653758241023926e-05,
+          "temperature_difference_rms": 3.1987374754094067e-06
+        }
+      ],
+      "fits": {
+        "10-25": {
+          "amplitude_growth_rate": -0.0034606029045167685,
+          "r_squared": 0.03940125257582905
+        },
+        "15-30": {
+          "amplitude_growth_rate": -0.0008408556992006704,
+          "r_squared": 0.0034017358792648444
+        }
+      },
+      "amplification_t30": 1.3653758241023926
+    }
+  },
+  "energy_functional_derivative_check": [
+    {
+      "epsilon": 0.01,
+      "analytic": 0.05188732684712726,
+      "finite_difference": 0.051887327072108747,
+      "relative_error": 4.335962141465035e-09
+    },
+    {
+      "epsilon": 0.001,
+      "analytic": 0.05188732684712726,
+      "finite_difference": 0.05188732711758348,
+      "relative_error": 5.2123752822426684e-09
+    },
+    {
+      "epsilon": 0.0001,
+      "analytic": 0.05188732684712726,
+      "finite_difference": 0.05188732757233083,
+      "relative_error": 1.3976506690019e-08
+    }
+  ],
+  "forensic": {
+    "health_last_rows": [
+      {
+        "iteration": 22218.0,
+        "time": 158.7322007815491,
+        "min_rho": 0.0010034295031975768,
+        "min_rhotheta": 0.0006686342610927896,
+        "min_temperature": 0.005095195405485031,
+        "min_pressure": 5.112669394420421e-06,
+        "max_speed": 0.7622980446981239,
+        "max_nu": 0.00032457575635868723
+      },
+      {
+        "iteration": 22219.0,
+        "time": 158.73511914717577,
+        "min_rho": 0.000951744339293139,
+        "min_rhotheta": 0.0006275911352651779,
+        "min_temperature": 0.004833640704067047,
+        "min_pressure": 4.600390178272715e-06,
+        "max_speed": 0.7620586149360583,
+        "max_nu": 0.0003246479204108199
+      },
+      {
+        "iteration": 22219.0,
+        "time": 158.73706375575517,
+        "min_rho": 0.0009160877646080715,
+        "min_rhotheta": 0.0006147285553456907,
+        "min_temperature": 0.0048514165232171275,
+        "min_pressure": 4.44432331793664e-06,
+        "max_speed": 0.7618942584150036,
+        "max_nu": 0.00032468446492141164
+      },
+      {
+        "iteration": 22219.0,
+        "time": 158.73803606004486,
+        "min_rho": 0.0008979593388308912,
+        "min_rhotheta": 0.0005751830237377731,
+        "min_temperature": 0.004430166966337391,
+        "min_pressure": 3.978109800002779e-06,
+        "max_speed": 0.7618170042281904,
+        "max_nu": 0.0003246882618495127
+      },
+      {
+        "iteration": 22220.0,
+        "time": 158.74095297291396,
+        "min_rho": 0.0008418474821208495,
+        "min_rhotheta": 0.0007032383952789347,
+        "min_temperature": 0.006605984339074361,
+        "min_pressure": 5.561231282779515e-06,
+        "max_speed": 0.7615636013672283,
+        "max_nu": 0.00032471248262354015
+      },
+      {
+        "iteration": 22220.0,
+        "time": 158.74289719484904,
+        "min_rho": 0.0008032065328443541,
+        "min_rhotheta": 0.0004140450588862569,
+        "min_temperature": 0.002863642361627355,
+        "min_pressure": 2.3000962525889257e-06,
+        "max_speed": 0.7613898001966293,
+        "max_nu": 0.00032471764693607446
+      },
+      {
+        "iteration": 22220.0,
+        "time": 158.7438693058166,
+        "min_rho": 0.0007833315893398543,
+        "min_rhotheta": 0.0012844792432936082,
+        "min_temperature": 0.008345279173564991,
+        "min_pressure": 1.5177904563010106e-05,
+        "max_speed": 0.7613081611994623,
+        "max_nu": 0.00032470516161510346
+      },
+      {
+        "iteration": 22221.0,
+        "time": 158.74678563871922,
+        "min_rho": 0.0007280910783754189,
+        "min_rhotheta": -0.0015325480072728068,
+        "min_temperature": null,
+        "min_pressure": null,
+        "max_speed": 0.7610410850531839,
+        "max_nu": 0.0003246832294803205
+      }
+    ],
+    "first_bad_health": {
+      "iteration": 22221.0,
+      "time": 158.74678563871922,
+      "min_rho": 0.0007280910783754189,
+      "min_rhotheta": -0.0015325480072728068,
+      "min_temperature": null,
+      "min_pressure": null,
+      "max_speed": 0.7610410850531839,
+      "max_nu": 0.0003246832294803205
+    },
+    "capture": {
+      "time": 158.74678563871922,
+      "iteration": 22221,
+      "reason": "Nonfinite or nonpositive state in state-update guard"
+    },
+    "fields": {
+      "rho": {
+        "shape": [
+          80,
+          256,
+          128
+        ],
+        "nonfinite_count": 0,
+        "nonpositive_count": 0,
+        "finite_min": 0.0007280910783754189,
+        "finite_max": 141.73289587926615,
+        "first_bad_zyx_indices": [],
+        "bad_z_index_range": null
+      },
+      "rhotheta": {
+        "shape": [
+          80,
+          256,
+          128
+        ],
+        "nonfinite_count": 0,
+        "nonpositive_count": 1,
+        "finite_min": -0.0015325480072728068,
+        "finite_max": 53.66691885757459,
+        "first_bad_zyx_indices": [
+          [
+            79,
+            201,
+            84
+          ]
+        ],
+        "bad_z_index_range": [
+          79,
+          79
+        ]
+      },
+      "T": {
+        "shape": [
+          80,
+          256,
+          128
+        ],
+        "nonfinite_count": 1,
+        "nonpositive_count": 0,
+        "finite_min": 0.008021514057311425,
+        "finite_max": 5.389428587668078,
+        "first_bad_zyx_indices": [
+          [
+            79,
+            201,
+            84
+          ]
+        ],
+        "bad_z_index_range": [
+          79,
+          79
+        ]
+      },
+      "P": {
+        "shape": [
+          80,
+          256,
+          128
+        ],
+        "nonfinite_count": 1,
+        "nonpositive_count": 0,
+        "finite_min": 1.583690320215801e-05,
+        "finite_max": 763.5622287014683,
+        "first_bad_zyx_indices": [
+          [
+            79,
+            201,
+            84
+          ]
+        ],
+        "bad_z_index_range": [
+          79,
+          79
+        ]
+      },
+      "u": {
+        "shape": [
+          80,
+          256,
+          128
+        ],
+        "nonfinite_count": 0,
+        "nonpositive_count": 1261973,
+        "finite_min": -0.6835062988694567,
+        "finite_max": 0.5721599877837181,
+        "first_bad_zyx_indices": [],
+        "bad_z_index_range": null
+      },
+      "v": {
+        "shape": [
+          80,
+          257,
+          128
+        ],
+        "nonfinite_count": 0,
+        "nonpositive_count": 1347989,
+        "finite_min": -0.6099332408826372,
+        "finite_max": 0.7610410850531839,
+        "first_bad_zyx_indices": [],
+        "bad_z_index_range": null
+      },
+      "w": {
+        "shape": [
+          81,
+          256,
+          128
+        ],
+        "nonfinite_count": 0,
+        "nonpositive_count": 1344236,
+        "finite_min": -0.11225297495530472,
+        "finite_max": 0.1256168150873165,
+        "first_bad_zyx_indices": [],
+        "bad_z_index_range": null
+      },
+      "nu": {
+        "shape": [
+          80,
+          256,
+          128
+        ],
+        "nonfinite_count": 0,
+        "nonpositive_count": 0,
+        "finite_min": 3.4478657558486034e-07,
+        "finite_max": 0.0003246832294803205,
+        "first_bad_zyx_indices": [],
+        "bad_z_index_range": null
+      }
+    },
+    "diagnostic_last": {
+      "time": 158.70000000000002,
+      "iteration": 22213.0,
+      "dt": 0.005873894184573527,
+      "wall_seconds": 228.28108501434326,
+      "mass": 1319.1346720450422,
+      "total_energy": 11183.611096609478,
+      "urms_conv": 0.1827182294894368,
+      "Ro": 0.03904235672851214,
+      "Re": 12821.737635741973,
+      "max_mach": 1.4894079267155416,
+      "barotropic_ke": 0.015326524696321129,
+      "skew_lower": 0.8275469693402696,
+      "skew_mid": 0.4551351234040308,
+      "skew_upper": 1.7457332153010754,
+      "top_heat_flux": -0.0002091237722075642,
+      "cooling_power": -0.028242959213069185,
+      "min_density": 0.0014395814061474435,
+      "min_temperature": 0.006466754582113178,
+      "wall_w_max": 0.0,
+      "nu_mean": 1.1115515154862495e-05,
+      "external_power": -0.009721899766599333,
+      "energy_residual_over_input": -0.060888900480361614,
+      "centered_energy": 11183.582995827648,
+      "centered_residual_over_input": -0.0602296509902348,
+      "kinetic_energy": 24.447948031714375,
+      "cumulative_external_heat_since_restart": -0.05785908455305191,
+      "cumulative_energy_defect_since_restart": -0.5553302291440966,
+      "energy_defect_over_restart_ke": -0.021955719253976748,
+      "jet_power": -0.009721899766599333,
+      "jet_profile_rms_error": 0.04138828297781235,
+      "nonzonal_velocity_rms": 0.11882402970010857
+    },
+    "restart_comparison": {
+      "time": {
+        "original": 150.0,
+        "replay": 150.00497785910164
+      },
+      "total_energy": {
+        "original": 11184.224655485163,
+        "replay": 11184.224285923176
+      },
+      "min_temperature": {
+        "original": 0.03930869420726417,
+        "replay": 0.03930041378397591
+      },
+      "max_mach": {
+        "original": 1.5193130533393011,
+        "replay": 1.5176116553007815
+      },
+      "kinetic_energy": {
+        "original": 25.293938205788063,
+        "replay": 25.293192298563024
+      }
+    }
+  }
+}
