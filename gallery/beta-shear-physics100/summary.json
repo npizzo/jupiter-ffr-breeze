@@ -1,0 +1,359 @@
+{
+  "time_unit": "nondimensional",
+  "late_window": [
+    75,
+    100
+  ],
+  "cases": {
+    "nojet": {
+      "status": "COMPLETE",
+      "last_diagnostics": {
+        "time": 100.0,
+        "energy": 11520.134577861287,
+        "kinetic_energy": 4.009401665544281,
+        "external_thermal_power": 0.9904550663674931,
+        "jet_power": 0.0,
+        "cumulative_external_work": 98.69941849478347,
+        "energy_defect": -20.040535479485712,
+        "energy_defect_over_max_initial_ke_bottom_input": -0.2004053547948571,
+        "Tmin": 0.872069133659597,
+        "mach": 0.21535550839564283,
+        "profile_drift": 0.03619139127778692,
+        "theta_departure": 0.23326626558331415,
+        "nonzonal_rms": 0.06716356434446252
+      },
+      "maxima": {
+        "mach_max": 0.5109650219175568,
+        "outside_mach": 0.3609301095740136,
+        "bulk_mach": 0.3287721157867713,
+        "fraction_above04": 4.8828125e-05
+      },
+      "late_metrics": {
+        "0.19375": {
+          "total": {
+            "skewness": 0.43247263308041595,
+            "anticyclonic_enstrophy_share": 0.41469829445051504,
+            "rms_zeta_over_f": 0.04815662258717908
+          },
+          "nonzonal": {
+            "skewness": 0.2286901458901161,
+            "anticyclonic_enstrophy_share": 0.47147967750647396,
+            "rms_zeta_over_f": 0.04437167874675374
+          }
+        },
+        "0.49375": {
+          "total": {
+            "skewness": 0.3889988435484288,
+            "anticyclonic_enstrophy_share": 0.4121816469093779,
+            "rms_zeta_over_f": 0.047765274551539935
+          },
+          "nonzonal": {
+            "skewness": 0.22751722876167657,
+            "anticyclonic_enstrophy_share": 0.46968532746480496,
+            "rms_zeta_over_f": 0.04410082475716507
+          }
+        },
+        "0.89375": {
+          "total": {
+            "skewness": 0.47451310766559057,
+            "anticyclonic_enstrophy_share": 0.3526150001930979,
+            "rms_zeta_over_f": 0.042918934460490714
+          },
+          "nonzonal": {
+            "skewness": 0.3136918619724733,
+            "anticyclonic_enstrophy_share": 0.462955624365638,
+            "rms_zeta_over_f": 0.036779335919714905
+          }
+        }
+      },
+      "late_interior_metrics": {
+        "0.19375": {
+          "total": {
+            "skewness": 0.4085842657547731,
+            "anticyclonic_enstrophy_share": 0.4168247580528259
+          },
+          "nonzonal": {
+            "skewness": 0.21863144944207027,
+            "anticyclonic_enstrophy_share": 0.4723683068385491
+          }
+        },
+        "0.49375": {
+          "total": {
+            "skewness": 0.3991820995624249,
+            "anticyclonic_enstrophy_share": 0.424483427634606
+          },
+          "nonzonal": {
+            "skewness": 0.21332841431005642,
+            "anticyclonic_enstrophy_share": 0.47189486829134136
+          }
+        },
+        "0.89375": {
+          "total": {
+            "skewness": 0.4640157704169934,
+            "anticyclonic_enstrophy_share": 0.42702488601207733
+          },
+          "nonzonal": {
+            "skewness": 0.3082061398487825,
+            "anticyclonic_enstrophy_share": 0.4642877613122647
+          }
+        }
+      },
+      "initial_metrics": [
+        {
+          "time": 0.0,
+          "z": 0.19375,
+          "component": "total",
+          "mean_zeta_over_f": -2.854501032246992e-19,
+          "rms_zeta_over_f": 0.06150956301050442,
+          "skewness": 1.306322615658317e-16,
+          "anticyclonic_enstrophy_share": 0.5000000000000001,
+          "anticyclonic_area_share": 0.5,
+          "min_zeta_over_f": -0.14521858377099867,
+          "max_zeta_over_f": 0.1452185837709996
+        },
+        {
+          "time": 0.0,
+          "z": 0.19375,
+          "component": "nonzonal",
+          "mean_zeta_over_f": -8.326333871509772e-19,
+          "rms_zeta_over_f": 0.06150956301050442,
+          "skewness": 1.044368529206709e-16,
+          "anticyclonic_enstrophy_share": 0.5,
+          "anticyclonic_area_share": 0.5,
+          "min_zeta_over_f": -0.14521858377099867,
+          "max_zeta_over_f": 0.1452185837709996
+        },
+        {
+          "time": 0.0,
+          "z": 0.49375,
+          "component": "total",
+          "mean_zeta_over_f": -3.9217625457874106e-19,
+          "rms_zeta_over_f": 0.06150956301050442,
+          "skewness": 1.1687831689302059e-16,
+          "anticyclonic_enstrophy_share": 0.5000000000000001,
+          "anticyclonic_area_share": 0.5,
+          "min_zeta_over_f": -0.14521858377099867,
+          "max_zeta_over_f": 0.1452185837709996
+        },
+        {
+          "time": 0.0,
+          "z": 0.49375,
+          "component": "nonzonal",
+          "mean_zeta_over_f": -8.987019570368127e-19,
+          "rms_zeta_over_f": 0.06150956301050441,
+          "skewness": 1.1990315393050926e-16,
+          "anticyclonic_enstrophy_share": 0.5000000000000001,
+          "anticyclonic_area_share": 0.5,
+          "min_zeta_over_f": -0.14521858377099867,
+          "max_zeta_over_f": 0.1452185837709996
+        },
+        {
+          "time": 0.0,
+          "z": 0.89375,
+          "component": "total",
+          "mean_zeta_over_f": -5.149960319306146e-19,
+          "rms_zeta_over_f": 0.06150956301050442,
+          "skewness": 1.3008931931262796e-16,
+          "anticyclonic_enstrophy_share": 0.5000000000000001,
+          "anticyclonic_area_share": 0.5,
+          "min_zeta_over_f": -0.14521858377099867,
+          "max_zeta_over_f": 0.1452185837709996
+        },
+        {
+          "time": 0.0,
+          "z": 0.89375,
+          "component": "nonzonal",
+          "mean_zeta_over_f": -5.505714157152952e-19,
+          "rms_zeta_over_f": 0.06150956301050441,
+          "skewness": 1.0552007158950133e-16,
+          "anticyclonic_enstrophy_share": 0.5000000000000001,
+          "anticyclonic_area_share": 0.5,
+          "min_zeta_over_f": -0.14521858377099867,
+          "max_zeta_over_f": 0.1452185837709996
+        }
+      ],
+      "final_cap_mean_N2_min": 43.77650725990773,
+      "first_resumed_sample_increment": {
+        "time": 0.004864280967055379,
+        "energy": 0.00266077109699836,
+        "cumulative_external_work": 0.004785949819400059,
+        "energy_defect": -0.0021251787224016994
+      }
+    },
+    "jet": {
+      "status": "COMPLETE",
+      "last_diagnostics": {
+        "time": 100.0,
+        "energy": 11520.108321094296,
+        "kinetic_energy": 3.806578005695989,
+        "external_thermal_power": 0.9966750089270436,
+        "jet_power": -0.005835569920100989,
+        "cumulative_external_work": 99.554636740674,
+        "energy_defect": -19.939589036663932,
+        "energy_defect_over_max_initial_ke_bottom_input": -0.19939589036663932,
+        "Tmin": 0.8780661517893756,
+        "mach": 0.20323094266953706,
+        "profile_drift": 0.04555475350184324,
+        "theta_departure": 0.22951157077172296,
+        "nonzonal_rms": 0.0681600587004149
+      },
+      "maxima": {
+        "mach_max": 0.539488011335822,
+        "outside_mach": 0.3734066909037369,
+        "bulk_mach": 0.32725106336498255,
+        "fraction_above04": 4.2724609375e-05
+      },
+      "late_metrics": {
+        "0.19375": {
+          "total": {
+            "skewness": 0.4333532376959614,
+            "anticyclonic_enstrophy_share": 0.42202094969032483,
+            "rms_zeta_over_f": 0.04763168944970859
+          },
+          "nonzonal": {
+            "skewness": 0.17984299822354016,
+            "anticyclonic_enstrophy_share": 0.4779370421976399,
+            "rms_zeta_over_f": 0.044341957717129905
+          }
+        },
+        "0.49375": {
+          "total": {
+            "skewness": 0.3750044464961998,
+            "anticyclonic_enstrophy_share": 0.4184421843816777,
+            "rms_zeta_over_f": 0.04722806154471563
+          },
+          "nonzonal": {
+            "skewness": 0.1673700640145488,
+            "anticyclonic_enstrophy_share": 0.4765404428309331,
+            "rms_zeta_over_f": 0.04406599323576328
+          }
+        },
+        "0.89375": {
+          "total": {
+            "skewness": 0.39735871947074847,
+            "anticyclonic_enstrophy_share": 0.3816378288803488,
+            "rms_zeta_over_f": 0.04549562948565024
+          },
+          "nonzonal": {
+            "skewness": 0.22015906481434355,
+            "anticyclonic_enstrophy_share": 0.4745064254890558,
+            "rms_zeta_over_f": 0.04069172228846854
+          }
+        }
+      },
+      "late_interior_metrics": {
+        "0.19375": {
+          "total": {
+            "skewness": 0.4042930935437863,
+            "anticyclonic_enstrophy_share": 0.42310743836256176
+          },
+          "nonzonal": {
+            "skewness": 0.1705176911961574,
+            "anticyclonic_enstrophy_share": 0.4789775036848508
+          }
+        },
+        "0.49375": {
+          "total": {
+            "skewness": 0.38434664618510467,
+            "anticyclonic_enstrophy_share": 0.4302790967317728
+          },
+          "nonzonal": {
+            "skewness": 0.1540324673629724,
+            "anticyclonic_enstrophy_share": 0.4790881023957179
+          }
+        },
+        "0.89375": {
+          "total": {
+            "skewness": 0.4114295141055034,
+            "anticyclonic_enstrophy_share": 0.4395114378287242
+          },
+          "nonzonal": {
+            "skewness": 0.22792127957710853,
+            "anticyclonic_enstrophy_share": 0.47415263606951785
+          }
+        }
+      },
+      "initial_metrics": [
+        {
+          "time": 0.0,
+          "z": 0.19375,
+          "component": "total",
+          "mean_zeta_over_f": -3.4897757426877174e-19,
+          "rms_zeta_over_f": 0.06150956301050441,
+          "skewness": 1.118869803361541e-16,
+          "anticyclonic_enstrophy_share": 0.5000000000000001,
+          "anticyclonic_area_share": 0.5,
+          "min_zeta_over_f": -0.14521858377099867,
+          "max_zeta_over_f": 0.1452185837709996
+        },
+        {
+          "time": 0.0,
+          "z": 0.19375,
+          "component": "nonzonal",
+          "mean_zeta_over_f": -5.404070203482436e-19,
+          "rms_zeta_over_f": 0.06150956301050442,
+          "skewness": 8.34735948268418e-17,
+          "anticyclonic_enstrophy_share": 0.5,
+          "anticyclonic_area_share": 0.5,
+          "min_zeta_over_f": -0.14521858377099867,
+          "max_zeta_over_f": 0.1452185837709996
+        },
+        {
+          "time": 0.0,
+          "z": 0.49375,
+          "component": "total",
+          "mean_zeta_over_f": -3.2271955290388843e-19,
+          "rms_zeta_over_f": 0.06150956301050442,
+          "skewness": 1.1966145132351835e-16,
+          "anticyclonic_enstrophy_share": 0.5000000000000001,
+          "anticyclonic_area_share": 0.5,
+          "min_zeta_over_f": -0.14521858377099867,
+          "max_zeta_over_f": 0.1452185837709996
+        },
+        {
+          "time": 0.0,
+          "z": 0.49375,
+          "component": "nonzonal",
+          "mean_zeta_over_f": -4.938202082492571e-19,
+          "rms_zeta_over_f": 0.06150956301050442,
+          "skewness": 9.289999649948556e-17,
+          "anticyclonic_enstrophy_share": 0.5,
+          "anticyclonic_area_share": 0.5,
+          "min_zeta_over_f": -0.14521858377099867,
+          "max_zeta_over_f": 0.1452185837709996
+        },
+        {
+          "time": 0.0,
+          "z": 0.89375,
+          "component": "total",
+          "mean_zeta_over_f": -1.3129010682441655e-19,
+          "rms_zeta_over_f": 0.06151834065712186,
+          "skewness": 0.001427345125139966,
+          "anticyclonic_enstrophy_share": 0.4997245777565205,
+          "anticyclonic_area_share": 0.50048828125,
+          "min_zeta_over_f": -0.14670371678491786,
+          "max_zeta_over_f": 0.14617669927021243
+        },
+        {
+          "time": 0.0,
+          "z": 0.89375,
+          "component": "nonzonal",
+          "mean_zeta_over_f": -2.600391148070702e-19,
+          "rms_zeta_over_f": 0.06150956301050442,
+          "skewness": 1.9199451091563777e-16,
+          "anticyclonic_enstrophy_share": 0.49999999999999994,
+          "anticyclonic_area_share": 0.5,
+          "min_zeta_over_f": -0.14521858377099864,
+          "max_zeta_over_f": 0.14521858377099964
+        }
+      ],
+      "final_cap_mean_N2_min": 37.36647453600061,
+      "first_resumed_sample_increment": {
+        "time": 0.005053799857698493,
+        "energy": 0.002840772167473915,
+        "cumulative_external_work": 0.0050449200772852976,
+        "energy_defect": -0.0022041479098113825
+      }
+    }
+  }
+}
