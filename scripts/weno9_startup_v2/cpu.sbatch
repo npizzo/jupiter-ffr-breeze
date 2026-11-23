@@ -1,0 +1,11 @@
+#!/bin/bash
+#SBATCH --job-name=ffr-weno9-startup-check
+#SBATCH --partition=uri-cpu,cpu
+#SBATCH --cpus-per-task=4
+#SBATCH --mem=24G
+#SBATCH --time=00:25:00
+#SBATCH --output=logs/weno9-startup-v2-cpu-%j.out
+set -euo pipefail
+source ./local.env
+source scripts/cuda_repair/environment.sh
+python scripts/weno9_startup_v2/gate.py preflight "data/weno9-startup-v2-cpu-$SLURM_JOB_ID"
