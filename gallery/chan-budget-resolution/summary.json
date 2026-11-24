@@ -1,0 +1,109 @@
+{
+  "gpu_array_jobs": [
+    "2221768",
+    "2222246"
+  ],
+  "cases": {
+    "baseline": {
+      "time_start": 200.0,
+      "time_end": 210.0,
+      "grid": [
+        256,
+        256,
+        80
+      ],
+      "initial_energy": 5795.410505188582,
+      "final_incremental_residual": -1.2667467242049257,
+      "residual_over_bottom_heat": -0.25334934484098515,
+      "residual_rates_by_excluded_initial_time": {
+        "0": {
+          "residual_slope": -0.12660788691651167,
+          "slope_over_bottom_power": -0.25321577383302335
+        },
+        "1": {
+          "residual_slope": -0.12647673107830323,
+          "slope_over_bottom_power": -0.25295346215660647
+        },
+        "2": {
+          "residual_slope": -0.1263901818304019,
+          "slope_over_bottom_power": -0.2527803636608038
+        }
+      },
+      "heat_sampling_difference_final": -4.353007304835899e-06,
+      "heat_sampling_difference_max_at_common_samples": 1.316812512142107e-05,
+      "max_mach": 0.1732052185106458,
+      "max_mass_error": 2.220446049250313e-16,
+      "reported_dt_min": 0.008333333333333333,
+      "reported_dt_max": 0.008333333333333333,
+      "wall_seconds": 337.7003848552704
+    },
+    "refined": {
+      "time_start": 200.0,
+      "time_end": 210.0,
+      "grid": [
+        384,
+        384,
+        120
+      ],
+      "initial_energy": 5795.314832122378,
+      "final_incremental_residual": -1.2854028738461984,
+      "residual_over_bottom_heat": -0.2570805747692397,
+      "residual_rates_by_excluded_initial_time": {
+        "0": {
+          "residual_slope": -0.13616336087895695,
+          "slope_over_bottom_power": -0.2723267217579139
+        },
+        "1": {
+          "residual_slope": -0.138424516932065,
+          "slope_over_bottom_power": -0.27684903386413
+        },
+        "2": {
+          "residual_slope": -0.13799042254510413,
+          "slope_over_bottom_power": -0.27598084509020826
+        }
+      },
+      "heat_sampling_difference_final": 5.747093983998752e-05,
+      "heat_sampling_difference_max_at_common_samples": 5.747093983998752e-05,
+      "max_mach": 0.199900002922957,
+      "max_mass_error": 3.3306690738754696e-16,
+      "reported_dt_min": 0.0054752579984197886,
+      "reported_dt_max": 0.005555555555555555,
+      "wall_seconds": 1256.5109949111938
+    },
+    "smaller_dt": {
+      "time_start": 200.0,
+      "time_end": 210.0,
+      "grid": [
+        256,
+        256,
+        80
+      ],
+      "initial_energy": 5795.410505188582,
+      "final_incremental_residual": -1.2667809530043455,
+      "residual_over_bottom_heat": -0.2533561906008691,
+      "residual_rates_by_excluded_initial_time": {
+        "0": {
+          "residual_slope": -0.12661119611362462,
+          "slope_over_bottom_power": -0.25322239222724924
+        },
+        "1": {
+          "residual_slope": -0.12648025236214713,
+          "slope_over_bottom_power": -0.25296050472429427
+        },
+        "2": {
+          "residual_slope": -0.1263939140629004,
+          "slope_over_bottom_power": -0.2527878281258008
+        }
+      },
+      "heat_sampling_difference_final": -4.3511061758039205e-06,
+      "heat_sampling_difference_max_at_common_samples": 1.317048940263632e-05,
+      "max_mach": 0.1732476453412292,
+      "max_mass_error": 2.220446049250313e-16,
+      "reported_dt_min": 0.005555555555555555,
+      "reported_dt_max": 0.005555555555555555,
+      "wall_seconds": 367.89513897895813
+    }
+  },
+  "interpretation_limit": "Short local budget sensitivity; no long-term LSV convergence claim. Spatial transfer can seed adjustment; compare full and late intervals.",
+  "baseline_initial_energy_minus_parent": -9.094947017729282e-13
+}
