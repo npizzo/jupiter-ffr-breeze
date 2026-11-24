@@ -80,3 +80,9 @@ Before GPU submission, execute the actual driver in CPU preflight mode using the
 ## Completed runs discovered during status checks
 
 On November 21, the user instructed that when they ask to check a simulation and it has completed, continue in that task with analysis, rendering and publication to the GitHub gallery rather than returning status alone. Keep scientific computation and rendering on Unity, verify finished media, preserve prior results, and provide the actual GitHub Pages movie link. This does not authorize new simulations, parameter changes, a monitoring automation, or the previously declined workflow redesign. Report failures and partial output explicitly; do not label them completed.
+
+## Four-run comparisons and tracer contrast (24 November 2026)
+
+The user now requests separate movies stacking all four vorticity runs and all four tracer runs. For the compressible/anelastic jet/nojet suite, use four case rows and three depth columns in each movie, with the same case order in every variable. This supersedes interleaving vorticity and tracer rows for new four-case presentations. Retain actual heights, timestamps and shared fixed scales.
+
+Show tracer concentrations with a fixed contrast mapping that resolves the measured late-time variations; the former 0–1 display range with asinh width0.005 hides nearly homogenized concentrations near0.1. Preserve an absolute-concentration version. A supplementary contrast movie may show C minus each instantaneous horizontal-plane mean, explicitly labeled, with the actual mean and RMS concentration variation printed in every panel. Its amplitude scale must remain fixed across all cases, depths and times: no per-frame variance normalization or unreported clipping. Quantify small residual variance rather than implying visible contrast means strong remaining tracer differences. All rendering and scientific analysis stay on Unity.
