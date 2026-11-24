@@ -1,0 +1,6 @@
+lz = 1.0
+cap_low = 0.82
+cap_high = 0.96
+jet_speed = 0.015625
+selection_reason = "Original cap height; previously screened modest cap jet. Same corrected eddies and mean-only restoration in both cases."
+thermal_equilibrium = false
