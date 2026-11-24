@@ -1,0 +1,72 @@
+{
+  "status": "MEDIA_VERIFIED",
+  "full_decode_passed": true,
+  "frames_per_movie": 401,
+  "fps": 12,
+  "times": [
+    0,
+    2000
+  ],
+  "sampling_interval": 5,
+  "heights": [
+    0.19375,
+    0.49375,
+    0.89375
+  ],
+  "vorticity_limits_per_depth": [
+    1.9812119007110596,
+    2.353576421737671,
+    1.481723427772522
+  ],
+  "vorticity_asinh_width": 0.02,
+  "tracer_absolute": {
+    "limits": [
+      0.04733985289931297,
+      0.15152564644813538
+    ],
+    "center": 0.1,
+    "asinh_width": 1e-08
+  },
+  "tracer_anomaly": {
+    "limits": [
+      -0.052678045409777496,
+      0.052678045409777496
+    ],
+    "asinh_width": 1e-08,
+    "definition": "C minus instantaneous horizontal plane mean; no per-frame variance normalization"
+  },
+  "assets": {
+    "metadata.toml": {
+      "bytes": 1584,
+      "sha256": "d5c1dd66c7c6c38f6cd354a23c5bdb8533437ab532b0b283f511fe37d084e8ed"
+    },
+    "structure.svg": {
+      "bytes": 178213,
+      "sha256": "c72fa5db88d8b34c3a453c47143b78a471fffda3ab71b6b3b037d68af5c7cf71"
+    },
+    "structure_diagnostics.csv": {
+      "bytes": 154868,
+      "sha256": "eae651f6f2f727273617000b3f81d2e39cd65cb16f07d8125447c302dd3b308b"
+    },
+    "summary.json": {
+      "bytes": 8953,
+      "sha256": "bd635e1e68a26fd1aa5fe216a6ba7dff3269a1aac3c080821c7e48f00bc1e48e"
+    },
+    "tracer_anomaly_0_2000.mp4": {
+      "bytes": 6175037,
+      "sha256": "6247de4c357d05f3c35581b04ff285c298a6657b3a6b3aece41e70ecb0e98403"
+    },
+    "tracer_anomaly_2000.jpg": {
+      "bytes": 119461,
+      "sha256": "8a13951536a912f870e28275c99cc1ba89c6778ede3c606c7cfbbbf469b9f43e"
+    },
+    "vorticity_tracer_0_2000.mp4": {
+      "bytes": 6511061,
+      "sha256": "82d7fd1aa2aaf551e49b6b2fb42a5bf2ee63d99106f4a0a4d143d3d4099abe7f"
+    },
+    "vorticity_tracer_2000.jpg": {
+      "bytes": 291946,
+      "sha256": "813d08d4367908290b44dc15ba29314203ba669c5503acdb5310c2e102c76928"
+    }
+  }
+}
