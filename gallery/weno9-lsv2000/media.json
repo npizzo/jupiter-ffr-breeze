@@ -1,0 +1,55 @@
+{
+  "status": "MEDIA_VERIFIED",
+  "full_decode_passed": true,
+  "frames_per_movie": 401,
+  "movie_sampling_interval": 5,
+  "integer_states_analyzed_per_case": 2001,
+  "fps": 8,
+  "times": [
+    0,
+    2000
+  ],
+  "heights": [
+    0.19375,
+    0.49375,
+    0.89375
+  ],
+  "layout": "4x3 per movie: jet vorticity,tracer; nojet vorticity,tracer",
+  "vorticity_limits": [
+    1.9691745042800903,
+    3.496616840362549,
+    3.657594919204712
+  ],
+  "vorticity_asinh_width": 0.01,
+  "tracer_transform": "asinh((C-0.1)/0.005), range0..1; fixed across cases,depths,time",
+  "assets": {
+    "anelastic_0_2000.mp4": {
+      "bytes": 9525763,
+      "sha256": "fe4658721f2f0a7cd4c96086aeca47f444ed1a596618dae3f90a9fa0ca4a60e8"
+    },
+    "anelastic_2000.png": {
+      "bytes": 646333,
+      "sha256": "856b84b141e3eadda3cc93e396206acd06f01fcad90d3e45f975babc8d363844"
+    },
+    "compressible_0_2000.mp4": {
+      "bytes": 9724832,
+      "sha256": "249992f58201e864ecb26cc0ead53b11f7581e05ea79559e75daaab62f0947f9"
+    },
+    "compressible_2000.png": {
+      "bytes": 741096,
+      "sha256": "886bf2f3b937839f86428ff6712d0d54a9ff4503a18d2b2e2a1e684e1f77116e"
+    },
+    "depthmean_2000.png": {
+      "bytes": 542587,
+      "sha256": "0a88e3ca2c8c06ac01962014fcdd929f5a375b15c07f3c131312de8940218397"
+    },
+    "large_scale_metrics.csv": {
+      "bytes": 1459533,
+      "sha256": "fd6a254e234111e7b77b94871e4a7e0aec85037a341d19b8df447cd89095ccaf"
+    },
+    "summary.json": {
+      "bytes": 14966,
+      "sha256": "514362c55378bb4a5d745d1ca06e623224d7ae6e6260620460b59bc9d0237ab1"
+    }
+  }
+}
