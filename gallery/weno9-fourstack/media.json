@@ -1,0 +1,82 @@
+{
+  "status": "MEDIA_VERIFIED",
+  "full_decode_passed": true,
+  "frames_per_movie": 401,
+  "fps": 8,
+  "times": [
+    0,
+    2000
+  ],
+  "sampling_interval": 5,
+  "row_order": [
+    "compressible_nojet",
+    "compressible_jet",
+    "anelastic_nojet",
+    "anelastic_jet"
+  ],
+  "heights": [
+    0.19375,
+    0.49375,
+    0.89375
+  ],
+  "vorticity_limits": [
+    1.9691745042800903,
+    3.496616840362549,
+    3.657594919204712
+  ],
+  "absolute_tracer": {
+    "center": 0.1,
+    "width": 1e-06,
+    "limits": [
+      0.008143903838814713,
+      0.21495734978771355
+    ]
+  },
+  "tracer_anomaly": {
+    "definition": "C minus instantaneous horizontal mean of the displayed plane",
+    "width": 1e-07,
+    "limits": [
+      -0.06839110481519128,
+      0.06839110481519128
+    ],
+    "per_frame_normalization": false
+  },
+  "assets": {
+    "mean_flow_tracer.csv": {
+      "bytes": 581378,
+      "sha256": "e0fed693a9cf3f3ef3e488c442eaa2af9bc3ab5c262d6ef7c66256b3333d6ffd"
+    },
+    "profiles.json": {
+      "bytes": 511049,
+      "sha256": "d8153e857a915c7cd379cd70a7e534e1dbeff23fd18cd570f297a6695ac38a7b"
+    },
+    "summary.json": {
+      "bytes": 12876,
+      "sha256": "3162ed439ad16c5876b7254314900f447687758845c9e5ba9cefb0d909a7e200"
+    },
+    "tracer_anomaly_0_2000.mp4": {
+      "bytes": 9317722,
+      "sha256": "ad241103d40c041b31a53829d2f8b98b2d52f2eeb074e1ac2f624b770a4ba761"
+    },
+    "tracer_anomaly_2000.png": {
+      "bytes": 915698,
+      "sha256": "c0a895847cb4d23be34ef17dcd4b13209c1f6c795e43eec2f4d3a0f1a0997c32"
+    },
+    "tracer_concentration_0_2000.mp4": {
+      "bytes": 9100529,
+      "sha256": "c11326cfcfe13a95674a904f2a693e19884bcc6216c197ccb9a192b4226c0b39"
+    },
+    "tracer_concentration_2000.png": {
+      "bytes": 886403,
+      "sha256": "4879da08a195f93f3bd983b46364d47a768b18c8dc892ef5aaae608300c5319c"
+    },
+    "vorticity_0_2000.mp4": {
+      "bytes": 9762391,
+      "sha256": "75710baa262c3d4b3938678366281858c33e949fc903c9dd05c50b8afe8e2a8f"
+    },
+    "vorticity_2000.png": {
+      "bytes": 1282153,
+      "sha256": "c41a4b4eba4fb2e59bdbbeb724e8b3da4f04e5378cc1b20c1f0fb3b9747ca0ce"
+    }
+  }
+}
