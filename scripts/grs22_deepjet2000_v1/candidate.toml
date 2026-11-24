@@ -1,0 +1,6 @@
+lz = 1.0
+cap_low = 0.82
+cap_high = 0.96
+jet_speed = -0.125
+selection_reason = "Fresh22S full-depth opposing jets; original thermodynamic cap retained; exploratory GRS-oriented geometry."
+thermal_equilibrium = false
