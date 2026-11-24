@@ -1,0 +1,141 @@
+{
+  "status": "COMPRESSIBLE_NOJET_COMPLETE_1000",
+  "time_units": "nondimensional",
+  "source_jobs": [
+    2177387,
+    2181508,
+    2187099
+  ],
+  "final_diagnostics": {
+    "time": 1000.0,
+    "iteration": 124488.0,
+    "dt": 0.008333333333333333,
+    "wall_seconds": 6977.320391178131,
+    "kinetic_energy": 12.56917023886121,
+    "energy_proxy": 12200.13293386273,
+    "external_power": 0.9825401057800366,
+    "cumulative_work": 990.292583949439,
+    "energy_defect": -240.26236991990731,
+    "defect_over_bottom_heat": -0.24026236991990732,
+    "mach": 0.420718655543896,
+    "outside_mach": 0.37572320518727537,
+    "Tmin": 0.7916044450838385,
+    "profile_drift": 0.23509097580223193,
+    "mass_error": 4.440892098500626e-16,
+    "constraint": 0.0,
+    "nonzonal_rms": 0.11338816533638564,
+    "tracer_min": 0.09320475290385846,
+    "tracer_max": 0.12828461130056648,
+    "cap_mean_N2_min": 1.7276100716550404,
+    "jet_rms": 0.0786579566875096
+  },
+  "final_spatial_mach": {
+    "time": 1000.0,
+    "mass_rms_mach": 0.059177897567767236,
+    "volume_gt03": 0.000311279296875,
+    "volume_gt05": 0.0,
+    "volume_gt08": 0.0,
+    "volume_gt1": 0.0,
+    "outside_volume_gt05": 0.0,
+    "below09_max_mach": 0.3757232051872753,
+    "below09_volume_gt05": 0.0,
+    "max_x": 3.796875,
+    "max_y": -3.984375,
+    "max_z": 0.99375
+  },
+  "late_900_1000": {
+    "depthmean_total_ke_per_mass": 0.008508126048537174,
+    "depthmean_nonzonal_ke_per_mass": 0.005862810944050255,
+    "smoothed_interior_negative_enstrophy_share": 0.45814632100634056,
+    "smoothed_interior_min_zeta_over_f": -0.12838244497185886,
+    "smoothed_interior_max_zeta_over_f": 0.19376777466570977,
+    "depth0_nonzonal_negative_enstrophy_share": 0.47608386968622113,
+    "depth1_nonzonal_negative_enstrophy_share": 0.4821280612803922,
+    "depth2_nonzonal_negative_enstrophy_share": 0.5591953703672579
+  },
+  "milestones": [
+    {
+      "time": 0,
+      "depthmean_total_ke_per_mass": 0.009239088743925095,
+      "depthmean_nonzonal_ke_per_mass": 0.009239088743925095,
+      "smoothed_interior_negative_enstrophy_share": 0.5,
+      "smoothed_interior_min_zeta_over_f": -0.1393023431301117,
+      "smoothed_interior_max_zeta_over_f": 0.1393023431301117,
+      "depth0_nonzonal_negative_enstrophy_share": 0.5,
+      "depth1_nonzonal_negative_enstrophy_share": 0.5,
+      "depth2_nonzonal_negative_enstrophy_share": 0.5
+    },
+    {
+      "time": 100,
+      "depthmean_total_ke_per_mass": 0.010346628725528717,
+      "depthmean_nonzonal_ke_per_mass": 0.005888098385185003,
+      "smoothed_interior_negative_enstrophy_share": 0.48576974868774414,
+      "smoothed_interior_min_zeta_over_f": -0.14093203842639923,
+      "smoothed_interior_max_zeta_over_f": 0.13276773691177368,
+      "depth0_nonzonal_negative_enstrophy_share": 0.4637426733970642,
+      "depth1_nonzonal_negative_enstrophy_share": 0.4485514461994171,
+      "depth2_nonzonal_negative_enstrophy_share": 0.5406957268714905
+    },
+    {
+      "time": 250,
+      "depthmean_total_ke_per_mass": 0.008637754246592522,
+      "depthmean_nonzonal_ke_per_mass": 0.0057152952067554,
+      "smoothed_interior_negative_enstrophy_share": 0.4119822084903717,
+      "smoothed_interior_min_zeta_over_f": -0.13274893164634705,
+      "smoothed_interior_max_zeta_over_f": 0.18841484189033508,
+      "depth0_nonzonal_negative_enstrophy_share": 0.47419387102127075,
+      "depth1_nonzonal_negative_enstrophy_share": 0.4891979992389679,
+      "depth2_nonzonal_negative_enstrophy_share": 0.51885586977005
+    },
+    {
+      "time": 500,
+      "depthmean_total_ke_per_mass": 0.008033258840441704,
+      "depthmean_nonzonal_ke_per_mass": 0.006251170299947262,
+      "smoothed_interior_negative_enstrophy_share": 0.49938222765922546,
+      "smoothed_interior_min_zeta_over_f": -0.1573495864868164,
+      "smoothed_interior_max_zeta_over_f": 0.1854856014251709,
+      "depth0_nonzonal_negative_enstrophy_share": 0.4799235463142395,
+      "depth1_nonzonal_negative_enstrophy_share": 0.477944940328598,
+      "depth2_nonzonal_negative_enstrophy_share": 0.6111836433410645
+    },
+    {
+      "time": 750,
+      "depthmean_total_ke_per_mass": 0.008231240324676037,
+      "depthmean_nonzonal_ke_per_mass": 0.005431557539850473,
+      "smoothed_interior_negative_enstrophy_share": 0.46073636412620544,
+      "smoothed_interior_min_zeta_over_f": -0.12934570014476776,
+      "smoothed_interior_max_zeta_over_f": 0.18206581473350525,
+      "depth0_nonzonal_negative_enstrophy_share": 0.4832080006599426,
+      "depth1_nonzonal_negative_enstrophy_share": 0.48877808451652527,
+      "depth2_nonzonal_negative_enstrophy_share": 0.5695390701293945
+    },
+    {
+      "time": 1000,
+      "depthmean_total_ke_per_mass": 0.00855693407356739,
+      "depthmean_nonzonal_ke_per_mass": 0.00575140118598938,
+      "smoothed_interior_negative_enstrophy_share": 0.4434419870376587,
+      "smoothed_interior_min_zeta_over_f": -0.12292341887950897,
+      "smoothed_interior_max_zeta_over_f": 0.19380849599838257,
+      "depth0_nonzonal_negative_enstrophy_share": 0.4742261469364166,
+      "depth1_nonzonal_negative_enstrophy_share": 0.4793643653392792,
+      "depth2_nonzonal_negative_enstrophy_share": 0.5540435910224915
+    }
+  ],
+  "configuration": {
+    "nx": 128,
+    "ny": 256,
+    "nz": 80,
+    "equations": "compressible",
+    "jet_speed": 0.0,
+    "initial_rms": 0.136,
+    "advection_order": 9,
+    "closure": "none"
+  },
+  "diagnostic_notes": [
+    "No imposed jet and no jet momentum relaxation in this case.",
+    "Spatial diagnostic removes zonal mean then Gaussian-smooths depth-mean vorticity with sigma0.25H, excluding |y|>=3.5H; negative share is not a vortex count or flux.",
+    "Initial conditions already contain large mixed-sign eddies.",
+    "Temperature-profile drift and compressible energy residual are reported; completion is not quantitative validation.",
+    "All1001 integer states analyzed; movie shows every5 time units,201 frames; no temporal interpolation."
+  ]
+}
