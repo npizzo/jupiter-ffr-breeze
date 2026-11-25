@@ -1,0 +1,64 @@
+{
+  "status": "MEDIA_VERIFIED",
+  "full_decode_passed": true,
+  "frames_per_movie": 1201,
+  "fps": 20,
+  "times": [
+    0,
+    6000
+  ],
+  "sampling_interval": 5,
+  "heights": [
+    0.19375,
+    0.49375,
+    0.89375
+  ],
+  "vorticity_limits_per_depth": [
+    2.4199414253234863,
+    2.6084117889404297,
+    2.8619728088378906
+  ],
+  "vorticity_asinh_width": 0.02,
+  "tracer_absolute": {
+    "limits": [
+      0.04733985289931297,
+      0.15152564644813538
+    ],
+    "center": 0.1,
+    "asinh_width": 1e-08
+  },
+  "assets": {
+    "final_horizontal_ke_spectrum.csv": {
+      "bytes": 4934,
+      "sha256": "117a2abf77a1512df89f2d9c43d25945bdd2a3547d584ad4dde7ebd825b3eca2"
+    },
+    "metadata.toml": {
+      "bytes": 1903,
+      "sha256": "cc81eceb9dfd09c1bcf6324099f113de287c2bd84d45c965a56a0928e83909d6"
+    },
+    "structure_diagnostics.csv": {
+      "bytes": 457302,
+      "sha256": "1526970dd6c0acb1754c412762407c1fd8558ff416dc448f226ab9c91c433fde"
+    },
+    "summary.json": {
+      "bytes": 11885,
+      "sha256": "3c414dac2da0011e7058ded1ada6db8c68c635e6ac81464e7bdddfd44fbd31ea"
+    },
+    "tracer_0_6000.mp4": {
+      "bytes": 13010116,
+      "sha256": "de7db39062008e2d138d20b30816aad6e45a0ccd77c86b4779f9aea5e79b349b"
+    },
+    "tracer_6000.jpg": {
+      "bytes": 116285,
+      "sha256": "b41aa332d9369b4c4c33781b5658d7fc42c462b2121a91933c234344ece4158a"
+    },
+    "vorticity_0_6000.mp4": {
+      "bytes": 13697774,
+      "sha256": "cb77e583f89f8c195537088950d3f5f2d228d9c96f84f0baa2bfada4c14d0589"
+    },
+    "vorticity_6000.jpg": {
+      "bytes": 300505,
+      "sha256": "0ea76cfcd15fc8bfb5a022d5d2d11add80b7a0f49c66894edeb23952b2303809"
+    }
+  }
+}
