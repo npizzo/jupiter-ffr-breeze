@@ -1,0 +1,278 @@
+{
+  "cases": [
+    {
+      "label": "Anelastic",
+      "job": "2214011_1",
+      "configuration": {
+        "f": 5.54327719506772,
+        "energy_note": "Compressible energy proxy is not a conserved anelastic energy invariant",
+        "cooling_time": 20.0,
+        "equations": "anelastic",
+        "nx": 256,
+        "fh": 2.2961005941905386,
+        "omega": 3.0,
+        "final_time": 2000.0,
+        "lx": 4.0,
+        "advection_order": 9,
+        "wall_seconds": 42600.0,
+        "nz": 80,
+        "max_dt": 0.008333333333333333,
+        "topology": "Periodic, Periodic, Bounded",
+        "movie_interval": 5.0,
+        "ny": 256,
+        "initial_rms": 0.0,
+        "stop_time": 2000.0,
+        "latitude": 67.5,
+        "heat": 1.0,
+        "rotation_operator": "Original periodic MomentumCoriolis / ConstantCartesianCoriolis",
+        "ly": 4.0,
+        "checkpoint_interval": 50.0,
+        "momentum_forcing": "none",
+        "time_units": "H / top isothermal sound speed; nondimensional",
+        "compressible_mach_stop": 2.0,
+        "constraint_tolerance": 1e-08,
+        "start_time": 0.0,
+        "cooling": "Local -rho*(T-1)*smoothstep(z)/20; no cv multiplier",
+        "status": "COMPLETE",
+        "thermal_equilibrium": false,
+        "cfl": 0.25,
+        "field_interval": 250.0,
+        "perturbation": 1e-05,
+        "mass_tolerance": 1e-07,
+        "initial_dt": 0.001,
+        "video_heights": [
+          0.19375,
+          0.49375,
+          0.89375
+        ],
+        "beta": 0.0,
+        "bottom_flux": 0.03125,
+        "anelastic_mach_stop": 1.0,
+        "lz": 1.0,
+        "closure": "none",
+        "seed": 314159,
+        "diagnostic_interval": 1.0,
+        "jet_speed": 0.0,
+        "wall_seconds_actual": 18768.35773396492,
+        "initialization": {
+          "relative_theta_noise_coefficient": 1e-05,
+          "temperature_mapping_max_relative": 3.34530890011564e-06,
+          "reference_density_max_error": 0.0,
+          "noise_seed": 314159,
+          "temperature_mapping_mass_rms_relative": 1.325442307505907e-06,
+          "reference_pressure_max_error": 0.0,
+          "description": "Hydrostatic reference plus horizontally zero-mean thermal noise; no seeded eddies",
+          "initial_velocity_rms": 0.0,
+          "theta_mapping_max_error": 0.0
+        }
+      }
+    },
+    {
+      "label": "Compressible \u00b7 potential temperature",
+      "job": "2214011_0",
+      "configuration": {
+        "f": 5.54327719506772,
+        "energy_note": "Staggered KE + internal + gravitational energy minus integrated prescribed heat; unresolved residual is recorded, never compensated",
+        "cooling_time": 20.0,
+        "equations": "compressible",
+        "nx": 256,
+        "fh": 2.2961005941905386,
+        "omega": 3.0,
+        "final_time": 2000.0,
+        "lx": 4.0,
+        "advection_order": 9,
+        "wall_seconds": 42600.0,
+        "nz": 80,
+        "max_dt": 0.008333333333333333,
+        "topology": "Periodic, Periodic, Bounded",
+        "movie_interval": 5.0,
+        "ny": 256,
+        "initial_rms": 0.0,
+        "stop_time": 2000.0,
+        "latitude": 67.5,
+        "heat": 1.0,
+        "rotation_operator": "Original periodic MomentumCoriolis / ConstantCartesianCoriolis",
+        "ly": 4.0,
+        "checkpoint_interval": 50.0,
+        "momentum_forcing": "none",
+        "time_units": "H / top isothermal sound speed; nondimensional",
+        "compressible_mach_stop": 2.0,
+        "constraint_tolerance": 1e-08,
+        "start_time": 0.0,
+        "cooling": "Local -rho*(T-1)*smoothstep(z)/20; no cv multiplier",
+        "status": "COMPLETE",
+        "thermal_equilibrium": false,
+        "cfl": 0.25,
+        "field_interval": 250.0,
+        "perturbation": 1e-05,
+        "mass_tolerance": 1e-07,
+        "initial_dt": 0.001,
+        "video_heights": [
+          0.19375,
+          0.49375,
+          0.89375
+        ],
+        "beta": 0.0,
+        "bottom_flux": 0.03125,
+        "anelastic_mach_stop": 1.0,
+        "lz": 1.0,
+        "closure": "none",
+        "seed": 314159,
+        "diagnostic_interval": 1.0,
+        "jet_speed": 0.0,
+        "wall_seconds_actual": 38406.51860284805,
+        "initialization": {
+          "relative_theta_noise_coefficient": 1e-05,
+          "noise_seed": 314159,
+          "description": "Hydrostatic reference plus horizontally zero-mean thermal noise; no seeded eddies",
+          "initial_velocity_rms": 0.0
+        }
+      }
+    },
+    {
+      "label": "Compressible \u00b7 total energy",
+      "job": "2237362",
+      "configuration": {
+        "f": 5.54327719506772,
+        "energy_note": "Native integral rhoE; independent staggered reconstruction; external power integrated by diagnostic-cadence trapezoid, not exact RK stage quadrature",
+        "cooling_time": 20.0,
+        "budget_relative_tolerance": 0.001,
+        "equations": "compressible",
+        "nx": 256,
+        "fh": 2.2961005941905386,
+        "omega": 3.0,
+        "final_time": 2000.0,
+        "lx": 4.0,
+        "advection_order": 9,
+        "wall_seconds": 85781.70521688461,
+        "formulation": "TotalEnergy",
+        "nz": 80,
+        "max_dt": 0.008333333333333333,
+        "topology": "Periodic, Periodic, Bounded",
+        "movie_interval": 5.0,
+        "ny": 256,
+        "initial_rms": 0.0,
+        "stop_time": 2000.0,
+        "heat_mode": "original",
+        "budget_gate_start": 5.0,
+        "latitude": 67.5,
+        "heat": 1.0,
+        "rotation_operator": "Original periodic MomentumCoriolis / ConstantCartesianCoriolis",
+        "ly": 4.0,
+        "checkpoint_interval": 50.0,
+        "momentum_forcing": "none",
+        "time_units": "H / top isothermal sound speed; nondimensional",
+        "compressible_mach_stop": 2.0,
+        "constraint_tolerance": 1e-08,
+        "start_time": 0.0,
+        "cooling": "Local -rho*(T-1)*smoothstep(z)/20; no cv multiplier",
+        "status": "COMPLETE",
+        "thermal_equilibrium": false,
+        "cfl": 0.25,
+        "field_interval": 250.0,
+        "perturbation": 1e-05,
+        "mass_tolerance": 1e-07,
+        "initial_dt": 0.001,
+        "video_heights": [
+          0.19375,
+          0.49375,
+          0.89375
+        ],
+        "beta": 0.0,
+        "bottom_flux": 0.03125,
+        "anelastic_mach_stop": 1.0,
+        "lz": 1.0,
+        "closure": "none",
+        "seed": 314159,
+        "diagnostic_interval": 1.0,
+        "jet_speed": 0.0,
+        "wall_seconds_actual": 41616.11126089096,
+        "initialization": {
+          "relative_theta_noise_coefficient": 1e-05,
+          "noise_seed": 314159,
+          "description": "Hydrostatic reference plus horizontally zero-mean thermal noise; no seeded eddies",
+          "initial_velocity_rms": 0.0
+        }
+      }
+    }
+  ],
+  "time_range": [
+    0,
+    2000
+  ],
+  "frames": 401,
+  "fps": 12,
+  "interval": 5,
+  "row_order": [
+    "Anelastic",
+    "Compressible \u00b7 potential temperature",
+    "Compressible \u00b7 total energy"
+  ],
+  "heights": [
+    0.19375,
+    0.49375,
+    0.89375
+  ],
+  "vorticity": {
+    "variable": "zeta/f0",
+    "asinh_width": 0.02,
+    "limits": [
+      -4.2419657707214355,
+      4.2419657707214355
+    ],
+    "shared_across": "all cases, depths and times"
+  },
+  "tracer": {
+    "variable": "absolute concentration C",
+    "center": 0.1,
+    "asinh_width": 1.044163865761968e-05,
+    "limits": [
+      0.04733985289931297,
+      0.15152564644813538
+    ],
+    "shared_across": "all cases, depths and times",
+    "mean_subtraction": false,
+    "per_frame_variance_normalization": false
+  },
+  "final_tracer_means": [
+    [
+      0.09999997643535607,
+      0.0999999800067144,
+      0.09998915850815138
+    ],
+    [
+      0.10001495496601365,
+      0.09998638615752498,
+      0.09988257897646236
+    ],
+    [
+      0.10000767722431192,
+      0.09999481588090475,
+      0.09995781822647132
+    ]
+  ],
+  "final_tracer_rms": [
+    [
+      4.28333189945341e-09,
+      4.2449527408234295e-09,
+      3.8473012691680935e-06
+    ],
+    [
+      6.831721441276523e-05,
+      7.480494943118323e-05,
+      0.0002511181919354109
+    ],
+    [
+      2.8273447188584586e-05,
+      2.6385269567464453e-05,
+      0.0001427201241738951
+    ]
+  ],
+  "notes": [
+    "Each movie is3rows by3depth columns. Rows are anelastic, compressible potential temperature, compressible total energy.",
+    "Same nondimensional time at every panel; later output from older cases is deliberately excluded from this matched-time comparison.",
+    "Thermal states evolve differently; neither matching initial parameters nor visual appearance alone isolates a causal mechanism.",
+    "Anelastic and potential-temperature cases use the original solver environment; total energy uses PR1165 pin8273be89d9357ca2ac572347c45db8c647e3c45c and its isolated environment.",
+    "All fields and diagnostics are rendered on Unity. Saved tracer fields areFloat32; gradients below stored precision cannot be recovered."
+  ]
+}
