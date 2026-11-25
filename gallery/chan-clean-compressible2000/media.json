@@ -1,0 +1,76 @@
+{
+  "status": "MEDIA_VERIFIED",
+  "full_decode_passed": true,
+  "frames_per_movie": 401,
+  "fps": 12,
+  "times": [
+    0,
+    2000
+  ],
+  "sampling_interval": 5,
+  "heights": [
+    0.19375,
+    0.49375,
+    0.89375
+  ],
+  "vorticity_limits_per_depth": [
+    2.5098228454589844,
+    2.6032049655914307,
+    3.7888591289520264
+  ],
+  "vorticity_asinh_width": 0.02,
+  "tracer_absolute": {
+    "limits": [
+      0.047757361084222794,
+      0.1509638875722885
+    ],
+    "center": 0.1,
+    "asinh_width": 2.2733298955331537e-05
+  },
+  "tracer_anomaly": {
+    "limits": [
+      -0.05219458926808329,
+      0.05219458926808329
+    ],
+    "asinh_width": 2.2733298955331537e-05,
+    "definition": "C minus instantaneous horizontal plane mean; no per-frame variance normalization"
+  },
+  "assets": {
+    "final_horizontal_ke_spectrum.csv": {
+      "bytes": 4846,
+      "sha256": "53914fbec04ed6045ce0f04cfbfe5a1cdebab829e1534582fb761ff54978d82c"
+    },
+    "metadata.toml": {
+      "bytes": 1432,
+      "sha256": "2fee31195179b1902d7c4a9df97b25ba096e689c76670ee7194ad9e701c8656a"
+    },
+    "structure.svg": {
+      "bytes": 183625,
+      "sha256": "047aec9bc29869ce703fe933e9deb9898d87d91761a7b256a20f88d9bc6d1eb3"
+    },
+    "structure_diagnostics.csv": {
+      "bytes": 155870,
+      "sha256": "4778eb47d1fa3ade7e5baeef7694f0c1c93e869447e1b7b0d4c1384348794636"
+    },
+    "summary.json": {
+      "bytes": 9908,
+      "sha256": "c34cd05db33c5fa15079b1d10973fcb1d60d28089ae7a1f942724f12eab7e989"
+    },
+    "tracer_anomaly_0_2000.mp4": {
+      "bytes": 6695760,
+      "sha256": "31cb75d15a15692b458a8b1fbf41ce51be90fc819c9154a88c30652f4717d22a"
+    },
+    "tracer_anomaly_2000.jpg": {
+      "bytes": 189001,
+      "sha256": "5667cb3c97235bab67b10ed0a585f344a12dfdd0c1fcc1537b50972d1b38b414"
+    },
+    "vorticity_tracer_0_2000.mp4": {
+      "bytes": 6770695,
+      "sha256": "92ffdcebb74663daf8adee4395bdf7451ae19dc7b1620778bc91c365c23fae19"
+    },
+    "vorticity_tracer_2000.jpg": {
+      "bytes": 396902,
+      "sha256": "454769c85e5541cb6d2547be0630de7aff36154d2aa468395fdc3f5d517d6ed5"
+    }
+  }
+}
