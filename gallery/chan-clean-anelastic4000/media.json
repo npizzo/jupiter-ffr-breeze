@@ -1,0 +1,76 @@
+{
+  "status": "MEDIA_VERIFIED",
+  "full_decode_passed": true,
+  "frames_per_movie": 801,
+  "fps": 12,
+  "times": [
+    0,
+    4000
+  ],
+  "sampling_interval": 5,
+  "heights": [
+    0.19375,
+    0.49375,
+    0.89375
+  ],
+  "vorticity_limits_per_depth": [
+    2.198660135269165,
+    2.588533639907837,
+    2.100099563598633
+  ],
+  "vorticity_asinh_width": 0.02,
+  "tracer_absolute": {
+    "limits": [
+      0.04733985289931297,
+      0.15152564644813538
+    ],
+    "center": 0.1,
+    "asinh_width": 1e-08
+  },
+  "tracer_anomaly": {
+    "limits": [
+      -0.052678045409777496,
+      0.052678045409777496
+    ],
+    "asinh_width": 1e-08,
+    "definition": "C minus instantaneous horizontal plane mean; no per-frame variance normalization"
+  },
+  "assets": {
+    "final_horizontal_ke_spectrum.csv": {
+      "bytes": 4918,
+      "sha256": "a886180662ee0073d840e24e1364a1f7f3b2a6a0db14b21d6a4f1121dd05eeaa"
+    },
+    "metadata.toml": {
+      "bytes": 1642,
+      "sha256": "24a8404191de0a62fce196817c267a81ce21e42d645f7eeababf280775802a9c"
+    },
+    "structure.svg": {
+      "bytes": 215064,
+      "sha256": "e92fcba3deaefadf6b1b9f400dae6dc187e71fc47ac29edb7d9772bb7453c2e8"
+    },
+    "structure_diagnostics.csv": {
+      "bytes": 307534,
+      "sha256": "460b4e55e7a18709a48fcc630357d8d6cf7f9182d99dd1d6f08a9fb2173f5ca2"
+    },
+    "summary.json": {
+      "bytes": 9879,
+      "sha256": "05f051349545f87373afcb7a0fe973acb68e8cf9b1fd7da2ca15995e7d08ad2f"
+    },
+    "tracer_anomaly_0_4000.mp4": {
+      "bytes": 12347867,
+      "sha256": "af2094eacbe1b36531bb8842eeac20e366d1733baf52647177dbee88a3c200f5"
+    },
+    "tracer_anomaly_4000.jpg": {
+      "bytes": 114395,
+      "sha256": "ee0375fb6c101ba3a69364687487f706c949516b68869dd1a730c096a62d4cab"
+    },
+    "vorticity_tracer_0_4000.mp4": {
+      "bytes": 13225173,
+      "sha256": "27e45904e4154e82c497503c33b08c128d901117598d618087584a5a61fa12b5"
+    },
+    "vorticity_tracer_4000.jpg": {
+      "bytes": 291261,
+      "sha256": "ad7b6f70fa5d954ae603c2311e8c0df585a6f945ff111d9aa66a35b199a23427"
+    }
+  }
+}
