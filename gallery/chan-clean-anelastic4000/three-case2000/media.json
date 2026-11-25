@@ -1,0 +1,32 @@
+{
+  "status": "MEDIA_VERIFIED",
+  "full_decode_passed": true,
+  "frames_per_movie": 401,
+  "fps": 12,
+  "time_range": [
+    0,
+    2000
+  ],
+  "assets": {
+    "metadata.json": {
+      "bytes": 8929,
+      "sha256": "69415bd54e4a18a5722436e0cb39381dde48180fb5cb521f7b8d3ae41acedb9c"
+    },
+    "tracer_0_2000.mp4": {
+      "bytes": 8741333,
+      "sha256": "a56d7c3b8c954b7c30c6a314bac2481b5d527e66b794f6ece5a93edcd7213191"
+    },
+    "tracer_2000.jpg": {
+      "bytes": 477748,
+      "sha256": "48d8d688505d816fd79193f0b42ced3e13cf6976747c961d6b73841f87b62a09"
+    },
+    "vorticity_0_2000.mp4": {
+      "bytes": 9289943,
+      "sha256": "bb95d6dc45c5a593addc23819cea11cf647db0873e3ee16d56d29ea39a2221ca"
+    },
+    "vorticity_2000.jpg": {
+      "bytes": 945840,
+      "sha256": "c3619e5730a7f1e669c324f0e543f5510620ccf9e654aa80e588e41bccd35f29"
+    }
+  }
+}
