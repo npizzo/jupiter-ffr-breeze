@@ -1,0 +1,71 @@
+{
+  "status": "MEDIA_VERIFIED",
+  "full_decode_passed": true,
+  "frames_per_movie": 2001,
+  "fps": 20,
+  "times": [
+    0,
+    10000
+  ],
+  "sampling_interval": 5,
+  "heights": [
+    0.19375,
+    0.49375,
+    0.89375
+  ],
+  "vorticity_limits_per_depth": [
+    2.4199414253234863,
+    2.9324216842651367,
+    4.598992824554443
+  ],
+  "vorticity_asinh_width": 0.02,
+  "tracer_absolute": {
+    "limits": [
+      0.04733985289931297,
+      0.15152564644813538
+    ],
+    "center": 0.1,
+    "asinh_width": 1e-08
+  },
+  "assets": {
+    "final_horizontal_ke_spectrum.csv": {
+      "bytes": 4900,
+      "sha256": "1191e40311c85142ff4aab54cc27565ec63d47644bf5f606400ad9f6f0820847"
+    },
+    "metadata.toml": {
+      "bytes": 1896,
+      "sha256": "914767ae133c57d2674e837b9e9b8c0cd4a081d495870289f54288c39a785493"
+    },
+    "structure_diagnostics.csv": {
+      "bytes": 759651,
+      "sha256": "04b72d1d9d46fd9e808b943515a52444edd2eadfdbd893cf1d973d0d6bc6b20a"
+    },
+    "summary.json": {
+      "bytes": 14036,
+      "sha256": "5f6a84032cd6f2d63784dc2ec815a9b5025b45c774186171faa3da1a495a45df"
+    },
+    "tracer_0_10000.mp4": {
+      "bytes": 10572206,
+      "sha256": "0780641b73ad4437352c65435f6d33777e2e228f8d13fc125ebcd8dc2fc1a609"
+    },
+    "tracer_10000.jpg": {
+      "bytes": 117759,
+      "sha256": "0514ed784f75ace60911f969059c885775d08b7dd35a974f7e93647b7041794b"
+    },
+    "vorticity_0_10000.mp4": {
+      "bytes": 10683432,
+      "sha256": "7ccc944981519ce4c2436ff6e9367258d5b0a1d78840d960138b6efcc1404523"
+    },
+    "vorticity_10000.jpg": {
+      "bytes": 301723,
+      "sha256": "f3be5b72bcdd5b21f0cf41fa45b2a47acec3d0c95036a096f8d4cbf1ac0dc866"
+    }
+  },
+  "web_encoding": {
+    "bitrate_kbps": 850,
+    "resolution_unchanged": true,
+    "frames_unchanged": true,
+    "source_verified_render": "rendered/chan-nov26-anelastic10000",
+    "reason": "GitHub browser rejected larger movie upload; original renders retained on Unity."
+  }
+}
