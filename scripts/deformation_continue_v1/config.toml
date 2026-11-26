@@ -1,0 +1,26 @@
+nx = 128
+ny = 128
+nz = 64
+lx = 8.0
+lz = 1.0
+f = 0.1
+rossby = 0.1
+reynolds = 2000.0
+seed = 261130
+turnovers = 100.0
+gravity = 12.0
+bottom_temperature = 10.0
+bottom_density = 1.0
+wall_seconds = 3000.0
+diagnostic_turnovers = 0.1
+movie_turnovers = 0.1
+full_turnovers = 5.0
+checkpoint_turnovers = 2.5
+initial_dt = 0.001
+cfl = 0.35
+constraint_tolerance = 1e-8
+mach_stop = 0.2
+
+
+weak_checkpoint = "data/deformation-pair-v1-weak-2308454/parent/checkpoints/checkpoint_iteration5798.jld2"
+strong_checkpoint = "data/deformation-pair-v1-strong-2308455/parent/checkpoints/checkpoint_iteration3500.jld2"
