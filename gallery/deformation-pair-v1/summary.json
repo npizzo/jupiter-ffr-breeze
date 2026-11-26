@@ -1,0 +1,116 @@
+{
+  "scope": "Unforced, stably stratified anelastic evolution of identical mixed-sign velocity fields. Internal deformation; not convection-driven LSV formation or a compressible Lamb-mode test.",
+  "time_note": "Nondimensional time. Integration reached t=2500 (25 turnovers); scheduled saved fields end at t=2490 (24.9 turnovers). No interpolated or invented endpoint.",
+  "resolution": [
+    128,
+    128,
+    64
+  ],
+  "domain": [
+    8,
+    8,
+    1
+  ],
+  "f": 0.1,
+  "Ro": 0.1,
+  "Re": 2000,
+  "seed": 261130,
+  "cases": {
+    "weak": {
+      "job": 2308454,
+      "L_over_Ld": 0.5,
+      "frames_saved": 250,
+      "saved_last_turnovers": 24.900000000000002,
+      "integration_final_turnovers": 25,
+      "heights": [
+        0.2421875,
+        0.6015625,
+        0.8984375
+      ],
+      "KE_initial": 0.00014476672004970216,
+      "KE_last": 0.0001315046579709604,
+      "APE_proxy_initial": 4.327842235928772e-05,
+      "APE_proxy_last": 4.56592466113925e-05,
+      "KE_plus_APE_proxy_fractional_change": -0.05786503010522215,
+      "max_mach": 0.003374516245797463,
+      "max_constraint": 4.808393981566994e-15,
+      "min_local_N2": 0.08417279854558046,
+      "max_scalar_mass_error": 6.550315845288424e-14,
+      "upper_anti_enstrophy_last": 0.4857264344025613,
+      "upper_skew_last": 0.09544552988810906,
+      "last_sign_stats_all_depths": [
+        0.4977120043514958,
+        0.4821470699255579,
+        0.4857264344025613,
+        0.04076089584407879,
+        0.12210080121386699,
+        0.09544552988810906
+      ],
+      "late_upper_anti_mean_last5turnovers": 0.4876700655483473,
+      "source": "data/deformation-pair-v1-weak-2308454/parent",
+      "caveat": "KE + small-amplitude APE is a proxy, not an exact anelastic invariant. Changing N changes initial APE and susceptibility to baroclinic instability.",
+      "media": {
+        "frames": 250,
+        "duration": 25.0,
+        "full_decode_passed": true,
+        "sha256": "d36585001d404351bbccccc03b78785042a184eb552cf2b7e7e0a5b8463c7be9"
+      }
+    },
+    "strong": {
+      "job": 2308455,
+      "L_over_Ld": 2.0,
+      "frames_saved": 250,
+      "saved_last_turnovers": 24.900000000000002,
+      "integration_final_turnovers": 25,
+      "heights": [
+        0.2421875,
+        0.6015625,
+        0.8984375
+      ],
+      "KE_initial": 0.0001450693594818714,
+      "KE_last": 0.0007183790577670056,
+      "APE_proxy_initial": 0.0006939033082560818,
+      "APE_proxy_last": 7.259792489010787e-05,
+      "KE_plus_APE_proxy_fractional_change": -0.0572076861696178,
+      "max_mach": 0.00720755338271212,
+      "max_constraint": 1.828491040276667e-14,
+      "min_local_N2": 0.0009993814729796213,
+      "max_scalar_mass_error": 3.9968028886505635e-14,
+      "upper_anti_enstrophy_last": 0.43287183414224156,
+      "upper_skew_last": 0.560268641075553,
+      "last_sign_stats_all_depths": [
+        0.4395643357711873,
+        0.354392023626616,
+        0.43287183414224156,
+        0.6286595809580287,
+        1.3185461240606506,
+        0.560268641075553
+      ],
+      "late_upper_anti_mean_last5turnovers": 0.4489778576729517,
+      "source": "data/deformation-pair-v1-strong-2308455/parent",
+      "caveat": "KE + small-amplitude APE is a proxy, not an exact anelastic invariant. Changing N changes initial APE and susceptibility to baroclinic instability.",
+      "media": {
+        "frames": 250,
+        "duration": 25.0,
+        "full_decode_passed": true,
+        "sha256": "66f8f33a0cc82772e96fc2b98a29a7663170acd6bd5cc13876c1e44b81fcfda4"
+      }
+    }
+  },
+  "display": {
+    "vorticity": "unfiltered cell-centered zeta/f; fixed symmetric linear limits per depth, shared across both cases",
+    "vorticity_limits": [
+      0.6306649446487427,
+      0.7588213682174683,
+      1.1025248765945435
+    ],
+    "tracer": "absolute concentration, fixed asinh width 0.01; full measured global range, shared across time, depths and cases",
+    "tracer_range": [
+      0.0399818941950798,
+      0.1569863259792328
+    ],
+    "fps": 10,
+    "sample_interval_turnovers": 0.1
+  },
+  "status": "MEDIA_VERIFIED"
+}
