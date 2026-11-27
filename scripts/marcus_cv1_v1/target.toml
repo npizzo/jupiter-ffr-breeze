@@ -1,0 +1,16 @@
+case = "CV1"
+production_enabled = false
+status = "Awaiting quantitative reference inputs; no CV1 production mode exists yet"
+doi = "10.1017/jfm.2024.132"
+latitude = -23.0
+rotation_rate = 0.000175
+beta = 0.0
+horizontal_extent = [105000000.0,70000000.0]
+Rv = 4600000.0
+Lr = 2000000.0
+epsilon = 1.5
+Htop = 50000.0
+Hbot = 120000.0
+z0 = 8200.0
+comparison_days = [0.0,40.0,80.0,120.0]
+missing = ["smoothed hydrostatic reference table with units and thermodynamic constants", "exact vertical domain", "sponge profile and strength", "periodic continuation of shear", "shear/vorticity sign clarification", "numerical dissipation settings or documented cross-code replacement"]
