@@ -1,0 +1,217 @@
+{
+  "status": "MEDIA_VERIFIED",
+  "scope": "Completed short convection/stable-layer pilots. Thermal repair passes; horizontal convection-resolution screening fails. No long extension.",
+  "grid": [
+    256,
+    256,
+    80
+  ],
+  "domain": [
+    8,
+    8,
+    1
+  ],
+  "f": 0.1,
+  "initial_Ro": 0.1,
+  "eddy_Re": 100,
+  "Pr": 1,
+  "seed": 261130,
+  "assessment": [
+    {
+      "source": "data/convective-deformation-v2-weak-2320449",
+      "status": "COMPLETE",
+      "scope": "Pilot screening only; passing is not resolution convergence or a proof of convection-driven LSV formation. No automatic extension.",
+      "gates": {
+        "completed_10_turnovers": true,
+        "active_vertical_flow": true,
+        "resolved_horizontal_w": false,
+        "interior_cap_retained": true,
+        "affordable_100_turnover_projection": true
+      },
+      "all_screening_passed": false,
+      "snapshots": [
+        {
+          "time": 0.0,
+          "convective_w_rms": 1.0136841986830934e-19,
+          "w_energy_wavelength_le_8dx": 0.31279704261828795,
+          "peak_w_wavelength_cells": 64.0,
+          "max_lower_convective_enthalpy_flux_over_input": 8.815050445317125e-21,
+          "min_interior_cap_mean_N2": 0.2148628119962126
+        },
+        {
+          "time": 250.0,
+          "convective_w_rms": 2.325833985095796e-06,
+          "w_energy_wavelength_le_8dx": 0.5146399950305061,
+          "peak_w_wavelength_cells": 28.444444444444443,
+          "max_lower_convective_enthalpy_flux_over_input": 5.721802962401128e-06,
+          "min_interior_cap_mean_N2": 0.21286882665452725
+        },
+        {
+          "time": 500.0,
+          "convective_w_rms": 3.18454147146524e-05,
+          "w_energy_wavelength_le_8dx": 0.6992124750192701,
+          "peak_w_wavelength_cells": 7.111111111111111,
+          "max_lower_convective_enthalpy_flux_over_input": 0.001661518893843838,
+          "min_interior_cap_mean_N2": 0.21287096074289066
+        },
+        {
+          "time": 750.0,
+          "convective_w_rms": 0.0007771036376606557,
+          "w_energy_wavelength_le_8dx": 0.7382003557127901,
+          "peak_w_wavelength_cells": 7.757575757575758,
+          "max_lower_convective_enthalpy_flux_over_input": 0.5181356017978631,
+          "min_interior_cap_mean_N2": 0.21287980540404014
+        },
+        {
+          "time": 999.9999999999999,
+          "convective_w_rms": 0.00048382261424471414,
+          "w_energy_wavelength_le_8dx": 0.752497155898319,
+          "peak_w_wavelength_cells": 6.2439024390243905,
+          "max_lower_convective_enthalpy_flux_over_input": 0.2111824575181833,
+          "min_interior_cap_mean_N2": 0.21288113180361956
+        }
+      ],
+      "initial_N2": 0.21489686324925894,
+      "initial_U": 0.0047385310460830755,
+      "wall_seconds": 290.5060269832611,
+      "note": "Cap retention measured in 0.7<z/H<0.9. V2 uses horizontal-mean cap restoration, not the old top cooling slab. Spectra at t=0 describe roundoff-level w and have no physical significance."
+    },
+    {
+      "source": "data/convective-deformation-v2-strong-2320450",
+      "status": "COMPLETE",
+      "scope": "Pilot screening only; passing is not resolution convergence or a proof of convection-driven LSV formation. No automatic extension.",
+      "gates": {
+        "completed_10_turnovers": true,
+        "active_vertical_flow": true,
+        "resolved_horizontal_w": false,
+        "interior_cap_retained": true,
+        "affordable_100_turnover_projection": false
+      },
+      "all_screening_passed": false,
+      "snapshots": [
+        {
+          "time": 0.0,
+          "convective_w_rms": 1.0250676640222138e-19,
+          "w_energy_wavelength_le_8dx": 0.31177415861756974,
+          "peak_w_wavelength_cells": 64.0,
+          "max_lower_convective_enthalpy_flux_over_input": 8.560243757140525e-21,
+          "min_interior_cap_mean_N2": 0.013391451963755685
+        },
+        {
+          "time": 250.0,
+          "convective_w_rms": 3.168331789524881e-06,
+          "w_energy_wavelength_le_8dx": 0.43510204311410283,
+          "peak_w_wavelength_cells": 25.6,
+          "max_lower_convective_enthalpy_flux_over_input": 8.587414550175511e-06,
+          "min_interior_cap_mean_N2": 0.01328516963295924
+        },
+        {
+          "time": 500.0,
+          "convective_w_rms": 7.439359552984646e-05,
+          "w_energy_wavelength_le_8dx": 0.5841610583185123,
+          "peak_w_wavelength_cells": 8.258064516129032,
+          "max_lower_convective_enthalpy_flux_over_input": 0.007211621747770743,
+          "min_interior_cap_mean_N2": 0.013284064654566522
+        },
+        {
+          "time": 750.0,
+          "convective_w_rms": 0.002446346998347424,
+          "w_energy_wavelength_le_8dx": 0.48184844940983984,
+          "peak_w_wavelength_cells": 8.533333333333333,
+          "max_lower_convective_enthalpy_flux_over_input": 1.5276517751852685,
+          "min_interior_cap_mean_N2": 0.013289730732168253
+        },
+        {
+          "time": 999.9999999999999,
+          "convective_w_rms": 0.0010943027125197024,
+          "w_energy_wavelength_le_8dx": 0.37748963663895063,
+          "peak_w_wavelength_cells": 9.142857142857142,
+          "max_lower_convective_enthalpy_flux_over_input": 0.2782003577166996,
+          "min_interior_cap_mean_N2": 0.013289005519979136
+        }
+      ],
+      "initial_N2": 0.013415292738525262,
+      "initial_U": 0.0047385310460830755,
+      "wall_seconds": 444.9457378387451,
+      "note": "Cap retention measured in 0.7<z/H<0.9. V2 uses horizontal-mean cap restoration, not the old top cooling slab. Spectra at t=0 describe roundoff-level w and have no physical significance."
+    }
+  ],
+  "cases": {
+    "weak": {
+      "job": 2320449,
+      "L_over_Ld": 0.5,
+      "source": "data/convective-deformation-v2-weak-2320449/parent",
+      "frames": 101,
+      "final_time": 999.9999999999999,
+      "final_turnovers": 10.0,
+      "heights": [
+        0.29375,
+        0.6937500000000001,
+        0.84375
+      ],
+      "minimum_core_cap_N2_fraction": 0.990616954007949,
+      "maximum_Mach": 0.0031645472072766587,
+      "cumulative_bottom_heat": 0.023643876238675275,
+      "cumulative_cap_heat": -0.019198627586229654,
+      "net_cap_heat_over_bottom_heat": -0.8119915445516357,
+      "final_cap_positive_power_over_bottom": 8.028789947633564,
+      "final_cap_negative_power_over_bottom": -9.477316852362076,
+      "final_w_energy_wavelength_le_8dx": 0.752497155898319,
+      "final_peak_w_wavelength_cells": 6.2439024390243905,
+      "production_seconds": 290.5060269832611,
+      "source_accounting_note": "Cap power is cp*Pi times the direct rho-theta source. Cumulative cap heat uses per-step trapezoids, not an exact total-energy closure. The cap can heat and cool at different heights; net alone can hide cancellation.",
+      "media": {
+        "frames": 101,
+        "duration": 10.1,
+        "full_decode_passed": true,
+        "sha256": "c15b003812c00bf4af5668b328136176aa430f7f402dac66866d73b2fdce8a8b"
+      }
+    },
+    "strong": {
+      "job": 2320450,
+      "L_over_Ld": 2.0,
+      "source": "data/convective-deformation-v2-strong-2320450/parent",
+      "frames": 101,
+      "final_time": 999.9999999999999,
+      "final_turnovers": 10.0,
+      "heights": [
+        0.29375,
+        0.6937500000000001,
+        0.84375
+      ],
+      "minimum_core_cap_N2_fraction": 0.9905940587253128,
+      "maximum_Mach": 0.004503468065676559,
+      "cumulative_bottom_heat": 0.023643876238675275,
+      "cumulative_cap_heat": -0.0019397035134300143,
+      "net_cap_heat_over_bottom_heat": -0.08203830428858193,
+      "final_cap_positive_power_over_bottom": 0.5045010986249517,
+      "final_cap_negative_power_over_bottom": -0.7375404841302576,
+      "final_w_energy_wavelength_le_8dx": 0.37748963663895063,
+      "final_peak_w_wavelength_cells": 9.142857142857142,
+      "production_seconds": 444.9457378387451,
+      "source_accounting_note": "Cap power is cp*Pi times the direct rho-theta source. Cumulative cap heat uses per-step trapezoids, not an exact total-energy closure. The cap can heat and cool at different heights; net alone can hide cancellation.",
+      "media": {
+        "frames": 101,
+        "duration": 10.1,
+        "full_decode_passed": true,
+        "sha256": "8610efca6a3745693b31e0f36682ac345d5412058276be31d6ef7e6d1618749a"
+      }
+    }
+  },
+  "display": {
+    "vorticity_asinh_width": 0.02,
+    "vorticity_limits_per_depth": [
+      2.002182722091675,
+      1.1953195333480835,
+      0.32489773631095886
+    ],
+    "tracer_center": 0.1,
+    "tracer_asinh_width": 0.006127715110778809,
+    "tracer_limits": [
+      0.05000752955675125,
+      0.1499924659729004
+    ],
+    "fps": 10,
+    "normalization": "Fixed full-extrema limits shared across both cases and all times. Absolute tracer, no mean subtraction or per-frame normalization."
+  }
+}
