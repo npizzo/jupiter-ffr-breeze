@@ -1,0 +1,117 @@
+{
+  "scope": "Unforced, stably stratified anelastic evolution of identical mixed-sign velocity fields. Internal deformation; not convection-driven LSV formation or a compressible Lamb-mode test.",
+  "time_note": "Nondimensional time. Integration reached t=10000 (100 initial turnovers). Original 25-turnover snapshot missing: the movie preserves the gap from 24.9 to 25.1 without interpolation. Restart-segment scalar mass errors are relative to each segment start.",
+  "resolution": [
+    128,
+    128,
+    64
+  ],
+  "domain": [
+    8,
+    8,
+    1
+  ],
+  "f": 0.1,
+  "Ro": 0.1,
+  "Re": 2000,
+  "seed": 261130,
+  "cases": {
+    "weak": {
+      "job": 2311446,
+      "L_over_Ld": 0.5,
+      "frames_saved": 1000,
+      "saved_last_turnovers": 100.0,
+      "integration_final_turnovers": 100,
+      "heights": [
+        0.2421875,
+        0.6015625,
+        0.8984375
+      ],
+      "KE_initial": 0.00014476672004970216,
+      "KE_last": 0.00013910225756042015,
+      "APE_proxy_initial": 4.327842235928772e-05,
+      "APE_proxy_last": 2.110531822673175e-05,
+      "KE_plus_APE_proxy_fractional_change": -0.14803661644868504,
+      "max_mach": 0.0036205864749343578,
+      "max_constraint": 7.566830710239909e-15,
+      "min_local_N2": 0.08300353825950424,
+      "max_scalar_mass_error": 1.6697754290362354e-13,
+      "upper_anti_enstrophy_last": 0.5044406030463875,
+      "upper_skew_last": 0.08982943627893404,
+      "last_sign_stats_all_depths": [
+        0.47965730553398267,
+        0.4465448282187751,
+        0.5044406030463875,
+        0.21438860836049,
+        0.32901396134993816,
+        0.08982943627893404
+      ],
+      "late_upper_anti_mean_last5turnovers": 0.5074267119101922,
+      "source": "data/deformation-continue-v1-weak-2311446/parent",
+      "caveat": "KE + small-amplitude APE is a proxy, not an exact anelastic invariant. Changing N changes initial APE and susceptibility to baroclinic instability.",
+      "media": {
+        "frames": 1000,
+        "duration": 50.0,
+        "full_decode_passed": true,
+        "sha256": "61818c4eb641098e246cce6f4015f94e71bb3fa22d822d9c41357c5bf12ec1c6"
+      }
+    },
+    "strong": {
+      "job": 2311447,
+      "L_over_Ld": 2.0,
+      "frames_saved": 1000,
+      "saved_last_turnovers": 100.0,
+      "integration_final_turnovers": 100,
+      "heights": [
+        0.2421875,
+        0.6015625,
+        0.8984375
+      ],
+      "KE_initial": 0.0001450693594818714,
+      "KE_last": 0.0007242932921480089,
+      "APE_proxy_initial": 0.0006939033082560818,
+      "APE_proxy_last": 3.03964601513643e-05,
+      "KE_plus_APE_proxy_fractional_change": -0.10045966773366355,
+      "max_mach": 0.00720755338271212,
+      "max_constraint": 4.445713077562011e-14,
+      "min_local_N2": 0.0009993814729796213,
+      "max_scalar_mass_error": 9.392486788328824e-14,
+      "upper_anti_enstrophy_last": 0.4080984839676214,
+      "upper_skew_last": 1.2087413060158332,
+      "last_sign_stats_all_depths": [
+        0.2970575734326923,
+        0.30023448736736474,
+        0.4080984839676214,
+        2.5090402011395843,
+        2.6326337630692898,
+        1.2087413060158332
+      ],
+      "late_upper_anti_mean_last5turnovers": 0.4093184027111611,
+      "source": "data/deformation-continue-v1-strong-2311447/parent",
+      "caveat": "KE + small-amplitude APE is a proxy, not an exact anelastic invariant. Changing N changes initial APE and susceptibility to baroclinic instability.",
+      "media": {
+        "frames": 1000,
+        "duration": 50.0,
+        "full_decode_passed": true,
+        "sha256": "d4573aa82f186594294aa89f5a7d2c433cea630c40c060456732444d26c36aac"
+      }
+    }
+  },
+  "display": {
+    "vorticity": "unfiltered cell-centered zeta/f; fixed symmetric asinh width 0.02 with full limits per depth, shared across both cases",
+    "vorticity_limits": [
+      0.6306649446487427,
+      0.7588213682174683,
+      1.1025248765945435
+    ],
+    "tracer": "Absolute concentration, fixed centered asinh about C=0.1; width chosen from the smaller late-time RMS/3 across cases; full global extrema. Mean/RMS shown.",
+    "tracer_range": [
+      0.0399818941950798,
+      0.15844298899173737
+    ],
+    "fps": 20,
+    "sample_interval_turnovers": 0.1,
+    "tracer_width": 0.0005901985180874666
+  },
+  "status": "MEDIA_VERIFIED"
+}
