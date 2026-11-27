@@ -1,0 +1,29 @@
+{
+  "status": "MEDIA_VERIFIED",
+  "frames": 1156,
+  "duration": 57.8,
+  "full_decode_passed": true,
+  "contrast_limits": [
+    -0.051886465143809346,
+    0.051886465143809346
+  ],
+  "asinh_width": 6.343029411221431e-05,
+  "ticks": [
+    -0.051886465143809346,
+    -0.0001,
+    0,
+    0.0001,
+    0.051886465143809346
+  ],
+  "definition": "C minus instantaneous horizontal-plane mean. Fixed full-data range and fixed asinh width; no RMS normalization. Actual mean/RMS printed. Five explicit colorbar ticks to avoid overlap.",
+  "assets": {
+    "tracer_contrast_0_5775.mp4": {
+      "bytes": 12572391,
+      "sha256": "6b92c3aacca3f5c6c344a227e746fca089ea541f3a1ff712815a1e4dcbd915fe"
+    },
+    "tracer_contrast_5775.jpg": {
+      "bytes": 88294,
+      "sha256": "8d6f67559e15f60543652d377772bf36ec0bd33ee01d05f33115fcd2edea4fcd"
+    }
+  }
+}
