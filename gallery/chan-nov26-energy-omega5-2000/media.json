@@ -1,0 +1,80 @@
+{
+  "status": "MEDIA_VERIFIED",
+  "full_decode_passed": true,
+  "frames_per_movie": 401,
+  "fps": 20,
+  "times": [
+    0,
+    2000
+  ],
+  "sampling_interval": 5,
+  "heights": [
+    0.19375,
+    0.49375,
+    0.89375
+  ],
+  "vorticity_limits_per_depth": [
+    1.2928093671798706,
+    1.1927270889282227,
+    2.3935043811798096
+  ],
+  "vorticity_asinh_width": 0.02,
+  "tracer_contrast": {
+    "limits": [
+      -0.05214640478510546,
+      0.05214640478510546
+    ],
+    "asinh_width": 1.4899849501043383e-05,
+    "definition": "C minus instantaneous horizontal-plane mean; actual mean and RMS printed; scale fixed across all depths/times"
+  },
+  "tracer_absolute": {
+    "limits": [
+      0.049046728760004044,
+      0.15212959051132202
+    ],
+    "center": 0.1,
+    "asinh_width": 1.6526912114554615e-05
+  },
+  "assets": {
+    "final_horizontal_ke_spectrum.csv": {
+      "bytes": 4844,
+      "sha256": "5c122999ae56c44639f6e471d905ddae7328a0a45207e355ecdc3e8fa72c006a"
+    },
+    "metadata.toml": {
+      "bytes": 1674,
+      "sha256": "66bd9818377d9627879f02f5d77ec004d92bcd57d1d774c77650698d46d9d6e9"
+    },
+    "structure_diagnostics.csv": {
+      "bytes": 157757,
+      "sha256": "e6763dd1e0c50f1effd4c449f4823107f6ee1d8d810e3c532456041b253b47fa"
+    },
+    "summary.json": {
+      "bytes": 8312,
+      "sha256": "85e54a999ff4ec86d668d0380a2982f6df07f977be1eda632463993e538a1c51"
+    },
+    "tracer_0_2000.mp4": {
+      "bytes": 4121204,
+      "sha256": "141e9d46319b9538d657805abebb44210bd3cc8da286975d8068814118d57ed4"
+    },
+    "tracer_2000.jpg": {
+      "bytes": 173651,
+      "sha256": "2c61b5a29a7d85eb9c2abca42c60ed2db141b9437a2605dad57baabc8f82ecbe"
+    },
+    "tracer_contrast_0_2000.mp4": {
+      "bytes": 4091520,
+      "sha256": "748a31248433a50e0bb1bef3bbc21b807b11aabf2ec597ac818868ba2bed1cfa"
+    },
+    "tracer_contrast_2000.jpg": {
+      "bytes": 178965,
+      "sha256": "1bb2d53ac498c5aa63985afb78513cc31e3dc42443d9a34f49d92905dc8e390b"
+    },
+    "vorticity_0_2000.mp4": {
+      "bytes": 4827973,
+      "sha256": "67a32ceb412210d94a7b2222263146bce17d1740e22b0aa59ba4b23b35093410"
+    },
+    "vorticity_2000.jpg": {
+      "bytes": 335256,
+      "sha256": "aabf9f2332a5589874d2b0827f9c894362390530c704f871c74339ae255d0801"
+    }
+  }
+}
