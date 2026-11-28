@@ -1,0 +1,55 @@
+{
+  "status": "MEDIA_VERIFIED",
+  "full_decode_passed": true,
+  "frames": 75,
+  "duration": 7.5,
+  "unique_saved_times": [
+    0.0,
+    10.0,
+    20.0,
+    30.0,
+    40.0
+  ],
+  "heights": [
+    0.20297029702970298,
+    0.5,
+    0.8960396039603961
+  ],
+  "vorticity_limit_per_depth": [
+    7.652719497680664,
+    7.7611613273620605,
+    13.599055290222168
+  ],
+  "vorticity_asinh_width_per_depth": [
+    0.1530543863773346,
+    0.15522322058677673,
+    0.2719811201095581
+  ],
+  "tracer_absolute_limits": [
+    0.04992057383060455,
+    0.1501130610704422
+  ],
+  "tracer_mapping": "Asinh centered at0.1 with width0.01 over actual full range; fixed across all times/depths, no clipping or plane-mean subtraction.",
+  "assets": {
+    "diagnostics.csv": {
+      "bytes": 3443,
+      "sha256": "e3eafc7f6e13857f491dd1da678d422c7e1450834c52f676d85c5e86c56eb6f9"
+    },
+    "metadata.toml": {
+      "bytes": 2341,
+      "sha256": "31cddeacd365862a0b36364d7def5db017fa1a43c2d535e8e7d5c71e240dad2d"
+    },
+    "snapshot_t40.jpg": {
+      "bytes": 530823,
+      "sha256": "4ac9d57f1e5483c996d8264ef3e3838ef96bad32f7e87d4d55aa85971d442822"
+    },
+    "summary.json": {
+      "bytes": 2555,
+      "sha256": "03b76f5396f4d63da7bd4fdaf5f32cdfcad927e321f403d741427b46fa850954"
+    },
+    "vorticity_tracer_0_40.mp4": {
+      "bytes": 2105428,
+      "sha256": "fb37816065578367a0636ca2e394700da926ae809317276f6871cae9d92ebbf3"
+    }
+  }
+}
