@@ -1,0 +1,98 @@
+{
+  "status": "MEDIA_VERIFIED",
+  "full_decode_pass": true,
+  "frames": 100,
+  "duration": 10.0,
+  "heights": [
+    0.20297029702970298,
+    0.5,
+    0.8960396039603961
+  ],
+  "fixed_extent": [
+    0,
+    4.0,
+    0,
+    4.0
+  ],
+  "vorticity_limits_per_depth": [
+    7.652719497680664,
+    7.7611613273620605,
+    13.599055290222168
+  ],
+  "tracer": {
+    "center": 0.1,
+    "asinh_width": 1.1397054684113824e-05,
+    "min": 0.04992057383060455,
+    "max": 0.1501130610704422
+  },
+  "assets": {
+    "diagnostics_segment00.csv": {
+      "bytes": 3443,
+      "sha256": "e3eafc7f6e13857f491dd1da678d422c7e1450834c52f676d85c5e86c56eb6f9"
+    },
+    "diagnostics_segment01.csv": {
+      "bytes": 2482,
+      "sha256": "367089d54cc4c45138a2be6f2ad2366eefab251101245bdce86e7235f389adb7"
+    },
+    "diagnostics_segment02.csv": {
+      "bytes": 2483,
+      "sha256": "08dd54b9f2a94ecd1d0b4b4c53466ef5e847d147e04e6526732a8ee33950cc96"
+    },
+    "diagnostics_segment03.csv": {
+      "bytes": 1840,
+      "sha256": "0e0e152e44635218661ec0c168bc1930215ea1b4f8bc77ba198a525f9d6536ea"
+    },
+    "diagnostics_segment04.csv": {
+      "bytes": 2487,
+      "sha256": "cea18ed9cc0ec8eaee6b0dc3d0eab296ed6622a11e31d2af8ddfbb1746d9c035"
+    },
+    "diagnostics_segment05.csv": {
+      "bytes": 2479,
+      "sha256": "567b219c67eb41980323b305aec0b3f0830428787b6a0e7e51f3cf978f79cbfc"
+    },
+    "diagnostics_segment06.csv": {
+      "bytes": 1842,
+      "sha256": "6c264c6a865d75dfb91fcf594b300cd8106dac5fe6983183a9c5ab1e7904983d"
+    },
+    "diagnostics_segment07.csv": {
+      "bytes": 2482,
+      "sha256": "9c4e0f1a14ea73799998643de8340da227a079d78a75f169870fba6b61605e6d"
+    },
+    "diagnostics_segment08.csv": {
+      "bytes": 2477,
+      "sha256": "5493ffb79e86e2deeb826a2067724c968a9636b78e49ab5fdb0f3e552e3f0cdb"
+    },
+    "diagnostics_segment09.csv": {
+      "bytes": 1844,
+      "sha256": "4498f932749063060b4c1b86e68a220bb2aa8264ebfdf32696bcf5aad0536b14"
+    },
+    "diagnostics_segment10.csv": {
+      "bytes": 2486,
+      "sha256": "c6e01b9e73b693c4d97129be9f3a04aa63082e83fb8e4ed5eb4c67710e30b179"
+    },
+    "diagnostics_segment11.csv": {
+      "bytes": 2483,
+      "sha256": "93ce2235868452c70154cba0c18fa5c343952513dd8005c370cc08863b015312"
+    },
+    "diagnostics_segment12.csv": {
+      "bytes": 1839,
+      "sha256": "6865ac325bcebbe5eeabbaa110c30531b1bace9be658c036ee4590ed857fa082"
+    },
+    "final.jpg": {
+      "bytes": 388871,
+      "sha256": "1757810f511de687326c0988555cef6a2970f7cf71af43679d840daf8d352b9f"
+    },
+    "metadata.toml": {
+      "bytes": 2791,
+      "sha256": "32357b336547a8d0e66c26d68e11bd6c36d3db226ad8c34fe612d883ed084888"
+    },
+    "summary.json": {
+      "bytes": 3152,
+      "sha256": "1a1812268fa46eee31aff50e7bafef39160b2c2638a7a2b61aee2dc865533077"
+    },
+    "vorticity_tracer.mp4": {
+      "bytes": 2338832,
+      "sha256": "cb8d8773543d29e1ae44a2d8533d607637e0ffc111f83b77476a076898ced023"
+    }
+  }
+}
