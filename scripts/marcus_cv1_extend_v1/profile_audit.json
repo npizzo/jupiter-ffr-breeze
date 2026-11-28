@@ -1,0 +1,32 @@
+{
+  "status": "RECONSTRUCTED_NOT_ORIGINAL_INPUT",
+  "pdf_sha256": "e40379ecf73ec4aeb76d81f7a32acf331b7691e7a11575dc8abe9684053405d9",
+  "pdf_page": 60,
+  "printed_page": 40,
+  "constants": {
+    "g": 25.0,
+    "R": 3600.0,
+    "cp": 12600.0,
+    "T_at_1bar": 162.71551724137933,
+    "fz": -0.0001367558949712458
+  },
+  "assumptions": [
+    "g=25 and cp=12600 are adopted H2-He values, not recovered author inputs",
+    "N2 digitized from red Figure 3.1 curve using N2/fz2 axis; latitude23S",
+    "Gaussian smoothing of digitized curve sigma2 raster rows",
+    "N2=1e-10 below10bar; not imposed convective forcing",
+    "Hydrostatic integration anchored at z=0,p=1bar,T from panel b"
+  ],
+  "z_range_m": [
+    -222185.85103351562,
+    159966.9371869758
+  ],
+  "Nmax": 0.024485947107771227,
+  "temperature_rms_difference_K": 9.024164416211809,
+  "temperature_max_difference_K": 30.64442559321901,
+  "altitude_rms_difference_m": 3855.1166950930046,
+  "altitude_max_difference_m": 11296.867851325253,
+  "hydrostatic_relative_rms": 7.028431320348128e-06,
+  "interior_N2_rms_error": 3.942993922041132e-09,
+  "physical_run_released": false
+}
