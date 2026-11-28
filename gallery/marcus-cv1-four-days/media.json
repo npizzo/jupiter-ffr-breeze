@@ -1,0 +1,54 @@
+{
+  "status": "MEDIA_VERIFIED",
+  "full_decode_pass": true,
+  "frames": 161,
+  "duration": 13.41,
+  "heights": [
+    -40556.640625,
+    7783.203125,
+    50263.671875
+  ],
+  "fixed_extent": [
+    -18046.875,
+    18046.875,
+    -12031.250000000002,
+    12031.249999999998
+  ],
+  "vorticity_limits_per_depth": [
+    1.5745608806610107,
+    2.055647850036621,
+    0.5464258193969727
+  ],
+  "tracer": {
+    "center": 0.5,
+    "asinh_width": 0.01,
+    "min": 0.04100951924920082,
+    "max": 0.9476974606513977
+  },
+  "assets": {
+    "core_circulation.csv": {
+      "bytes": 15006,
+      "sha256": "0b3f08937f78958d232a20beaf267adb6cb1d725f86edc2cd35d3c6dd4f61a69"
+    },
+    "diagnostics_segment00.csv": {
+      "bytes": 51959,
+      "sha256": "dbd6746951e7f32196a2751067d8d2d039e017b9272aab8f4f9f6b4c6c7e1989"
+    },
+    "final.jpg": {
+      "bytes": 400924,
+      "sha256": "cac525ad03e64ca92a1659f99b8bdf29762410fcaaffdef046c5537c90b46911"
+    },
+    "metadata.toml": {
+      "bytes": 1646,
+      "sha256": "c21e17623d1d2fa7b4240e356cf05b9c08db284878559e4daf8e1a5b55b0d9a5"
+    },
+    "summary.json": {
+      "bytes": 5115,
+      "sha256": "9becb12dda1a30380b1e4af268bb23356da9ae1cbde04a4c18f1df4877b09eb7"
+    },
+    "vorticity_tracer.mp4": {
+      "bytes": 3537966,
+      "sha256": "b9ddcda8007c81c4231f15e73d3f6122fd41c8da81a911a77585dc39f1aa8522"
+    }
+  }
+}
